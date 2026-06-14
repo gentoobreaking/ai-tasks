@@ -1,6 +1,6 @@
 # 📁 Projects Dashboard
 
-> 最後更新: 2026-06-15 06:33 · 自動生成
+> 最後更新: 2026-06-15 07:32 · 自動生成
 
 ---
 
@@ -139,8 +139,8 @@
 
 | 指標 | 數值 |
 |------|------|
-| 過去 7 天完成 | 0 |
-| 過去 30 天完成 | 269 |
+| 過去 7 天完成 | 3 |
+| 過去 30 天完成 | 272 |
 | 平均週期時間 | 0.7 天 |
 | 週期時間中位數 | 0.0 天 |
 
@@ -150,10 +150,10 @@ xychart-beta
     title "過去 14 天任務完成趨勢"
     x-axis ["06-02", "06-03", "06-04", "06-05", "06-06", "06-07", "06-08", "06-09", "06-10", "06-11", "06-12", "06-13", "06-14", "06-15"]
     y-axis "完成數" 0 --> 13
-    line [13, 0, 6, 2, 5, 9, 0, 0, 0, 0, 0, 0, 0, 0]
+    line [13, 0, 6, 2, 5, 9, 0, 0, 0, 0, 0, 0, 0, 3]
 ```
 
-📊 總計: 35 | 日均: 2.5 | 本週: 0 | 📉 下降中
+📊 總計: 38 | 日均: 2.7 | 本週: 3 | 📉 下降中
 
 ## 📋 專案列表
 
@@ -234,7 +234,7 @@ xychart-beta
   **[T67-excluded-architectures](https://github.com/gentoobreaking/ai-tasks/blob/main/taolive-ios/tasks/T67-excluded-architectures.md)**: 調整 Excluded Architectures 設定以相容模擬器
 | ✅ | [task-url-repair](https://github.com/gentoobreaking/ai-tasks/tree/main/task-url-repair) | 1 | 1 | 0 | 0 | 0 | ████████████████████ 100% | 2026-04-20 |
 | ✅ | [tasks-executor](https://github.com/gentoobreaking/ai-tasks/tree/main/tasks-executor) | 8 | 8 | 0 | 0 | 0 | ████████████████████ 100% | 2026-05-12 |
-| ⬜ | [tw-quant-selector](https://github.com/gentoobreaking/ai-tasks/tree/main/tw-quant-selector) | 139 | 137 | 2 | 0 | 0 | ███████████████████░ 98% | 2026-06-14T22:30:00Z |
+| ⬜ | [tw-quant-selector](https://github.com/gentoobreaking/ai-tasks/tree/main/tw-quant-selector) | 139 | 137 | 2 | 0 | 0 | ███████████████████░ 98% | 2026-06-15 |
 | ✅ | [twse-monitor](https://github.com/gentoobreaking/ai-tasks/tree/main/twse-monitor) | 11 | 11 | 0 | 0 | 0 | ████████████████████ 100% | 2026-05-07 |
 | ✅ | [twstock-bfp-research](https://github.com/gentoobreaking/ai-tasks/tree/main/twstock-bfp-research) | 1 | 1 | 0 | 0 | 0 | ████████████████████ 100% | 2026-05-06 |
 | ✅ | [ux-improvement](https://github.com/gentoobreaking/ai-tasks/tree/main/ux-improvement) | 2 | 2 | 0 | 0 | 0 | ████████████████████ 100% | 2026-04-04 |

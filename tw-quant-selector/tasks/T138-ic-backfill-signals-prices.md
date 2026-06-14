@@ -5,8 +5,8 @@ type: pending
 priority: high
 status: done
 assignee: "Hermes with DeepSeek V4 Pro"
-created: 2026-06-14T21:52:00Z
-updated: 2026-06-14T21:52:00Z
+created: 2026-06-15
+updated: 2026-06-15
 ---
 
 # T138 - IC 分析歷史資料 Backfill — signals + daily_prices 補全

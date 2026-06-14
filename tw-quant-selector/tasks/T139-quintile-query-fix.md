@@ -5,8 +5,8 @@ type: pending
 priority: medium
 status: done
 assignee: "Hermes with DeepSeek V4 Pro"
-created: 2026-06-14T22:30:00Z
-updated: 2026-06-14T22:30:00Z
+created: 2026-06-15
+updated: 2026-06-15
 ---
 
 # T139 - 分層報酬後端 Query 修復 + 前端說明
