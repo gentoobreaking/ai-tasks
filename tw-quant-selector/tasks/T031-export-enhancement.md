@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/665
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/665
 title: 匯出強化
 type: feature
 priority: medium

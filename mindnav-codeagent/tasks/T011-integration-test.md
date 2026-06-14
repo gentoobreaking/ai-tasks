@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/518
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/518
 title: T011 - 系統整合測試與壓力測試
 type: Feature
 priority: medium

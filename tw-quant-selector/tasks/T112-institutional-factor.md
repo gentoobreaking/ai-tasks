@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/821
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/821
 title: 法人动向因子（第五因子）实作
 type: feature
 priority: high

@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/524
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/524
 title: T022 - ClawHub 擴展性技能整合 (ClawHub Integration)
 type: Feature
 priority: high

@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/735
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/735
 title: T001-建置MNN編譯環境（Metal 加速）
 type: Feature
 priority: high

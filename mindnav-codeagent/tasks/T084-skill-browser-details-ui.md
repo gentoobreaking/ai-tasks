@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/574
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/574
 title: Skill Browser + Details UI
 type: Feature
 priority: medium

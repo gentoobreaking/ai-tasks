@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/754
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/754
 title: Jitsi 語音串接 — 音訊捕獲
 type: Feature
 priority: low

@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/745
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/745
 title: T010-文件補寫
 type: Documentation
 priority: high

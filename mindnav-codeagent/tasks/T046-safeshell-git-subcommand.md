@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/550
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/550
 title: T046 - SafeShell git 子指令過濾
 type: Feature
 priority: low

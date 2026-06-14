@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/825
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/825
 title: WebSocket 即时推播整合
 type: feature
 priority: medium

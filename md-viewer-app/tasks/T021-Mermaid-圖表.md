@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/368
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/368
 title: "[T021] Mermaid 圖表"
 status: done
 type: Feature

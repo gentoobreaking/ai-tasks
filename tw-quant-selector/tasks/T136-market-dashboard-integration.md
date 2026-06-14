@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/847
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/847
 title: Market Dashboard 集成
 type: merge
 priority: medium

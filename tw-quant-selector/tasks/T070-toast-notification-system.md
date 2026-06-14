@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/725
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/725
 title: Toast 通知系統接入各頁面
 type: feature
 priority: high

@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/666
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/666
 title: 資料模型與 DuckDB Schema 實作
 type: task
 priority: high

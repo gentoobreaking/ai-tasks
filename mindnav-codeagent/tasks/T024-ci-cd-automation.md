@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/526
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/526
 title: T024 - GitHub CI/CD 工作流自動化 (Manual-Controlled Pipeline)
 type: Feature
 priority: medium

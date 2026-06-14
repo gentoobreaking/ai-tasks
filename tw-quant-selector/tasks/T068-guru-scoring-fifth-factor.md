@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/711
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/711
 title: 大師策略評分因子（第五因子）+ 每日快照
 type: feature
 priority: high

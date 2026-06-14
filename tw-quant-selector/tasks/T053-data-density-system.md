@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/696
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/696
 title: Data Density System
 type: feature
 priority: low

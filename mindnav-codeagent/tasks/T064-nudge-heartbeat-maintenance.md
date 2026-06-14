@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/587
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/587
 title: T064 - Nudge / Heartbeat 記憶維護
 type: Feature
 priority: medium

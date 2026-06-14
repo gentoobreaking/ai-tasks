@@ -28,7 +28,7 @@
 
 | # | 名稱 | 狀態 |
 |---|------|------|
-| [T001](https://github.com/openclawchen8-lgtm/openclaw-tasks/blob/main/git-maintenance/tasks/T001.md) | 任務 T001 | ✅ done |
+| [T001](https://github.com/gentoobreaking/ai-tasks/blob/main/git-maintenance/tasks/T001.md) | 任務 T001 | ✅ done |
 
 **✅ done: 1 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 0**
 

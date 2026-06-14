@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/537
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/537
 title: T033 - 修復 README.md 檔名尾隨空格
 type: Bug
 priority: medium

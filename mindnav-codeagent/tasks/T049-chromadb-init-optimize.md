@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/553
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/553
 title: T049 - ChromaDB 初始化掃描優化
 type: Performance
 priority: low

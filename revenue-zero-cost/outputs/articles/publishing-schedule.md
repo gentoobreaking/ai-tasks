@@ -62,7 +62,7 @@
 
 ### 諮詢表單位置
 ```
-github.com/openclawchen8-lgtm/automation-portfolio
+github.com/gentoobreaking/automation-portfolio
     └── templates/
         └── inquiry-form.md
 ```

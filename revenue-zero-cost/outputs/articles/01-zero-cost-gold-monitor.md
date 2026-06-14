@@ -156,7 +156,7 @@ Plotly 可以直接輸出圖片，**不需要 Matplotlib 調參數**。
 ## 程式碼開源
 
 這個系統的程式碼已開源至 GitHub：
-👉 [gold-monitor-pro](https://github.com/openclawchen8-lgtm/gold-monitor-pro)
+👉 [gold-monitor-pro](https://github.com/gentoobreaking/gold-monitor-pro)
 
 如果你也在找「零成本自動盯盤」的方案，可以直接 fork、研究、改寫。
 
@@ -171,7 +171,7 @@ Plotly 可以直接輸出圖片，**不需要 Matplotlib 調參數**。
 - 想要**網頁介面**（Dashboard）
 - 想要**Email + Telegram 雙通知**
 
-歡迎填寫[諮詢表單](https://github.com/openclawchen8-lgtm/automation-portfolio/blob/main/templates/inquiry-form.md)，說明你的需求，我會在 48 小時內回覆評估。
+歡迎填寫[諮詢表單](https://github.com/gentoobreaking/automation-portfolio/blob/main/templates/inquiry-form.md)，說明你的需求，我會在 48 小時內回覆評估。
 
 ---
 

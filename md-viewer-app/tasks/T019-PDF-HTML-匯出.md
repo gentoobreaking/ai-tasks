@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/367
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/367
 title: "[T019] PDF/HTML 匯出"
 status: done
 type: Development

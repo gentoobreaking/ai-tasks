@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/730
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/730
 title: BacktestDetail 頁面接上後端回測明細 API
 type: feature
 priority: low

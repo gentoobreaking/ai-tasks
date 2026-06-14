@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/527
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/527
 title: T025 - 數據調研代理 (Research Agent)
 type: Feature
 priority: medium

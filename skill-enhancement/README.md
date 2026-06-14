@@ -31,10 +31,10 @@
 
 | # | 名稱 | 狀態 |
 |---|------|------|
-| [T001](https://github.com/openclawchen8-lgtm/openclaw-tasks/blob/main/skill-enhancement/tasks/T001.md) | 更新 ideas2tasks Skill summary | ✅ done |
-| [T002](https://github.com/openclawchen8-lgtm/openclaw-tasks/blob/main/skill-enhancement/tasks/T002.md) | 拆分 ideas2tasks 中的關鍵 regex | ✅ done |
-| [T003](https://github.com/openclawchen8-lgtm/openclaw-tasks/blob/main/skill-enhancement/tasks/T003.md) | 研究 Skill 自動更新機制 | ✅ done |
-| [T004](https://github.com/openclawchen8-lgtm/openclaw-tasks/blob/main/skill-enhancement/tasks/T004.md) | 設計並實作更新機制 | ✅ done |
+| [T001](https://github.com/gentoobreaking/ai-tasks/blob/main/skill-enhancement/tasks/T001.md) | 更新 ideas2tasks Skill summary | ✅ done |
+| [T002](https://github.com/gentoobreaking/ai-tasks/blob/main/skill-enhancement/tasks/T002.md) | 拆分 ideas2tasks 中的關鍵 regex | ✅ done |
+| [T003](https://github.com/gentoobreaking/ai-tasks/blob/main/skill-enhancement/tasks/T003.md) | 研究 Skill 自動更新機制 | ✅ done |
+| [T004](https://github.com/gentoobreaking/ai-tasks/blob/main/skill-enhancement/tasks/T004.md) | 設計並實作更新機制 | ✅ done |
 
 **✅ done: 4 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 0**
 

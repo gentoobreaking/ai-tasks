@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/591
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/591
 title: T066C - 向後相容整合：Graph 整合與 Hybrid 模式
 type: Feature
 priority: high

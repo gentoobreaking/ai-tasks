@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/757
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/757
 title: SKILL.md 動態掃描載入系統
 type: Feature
 priority: high

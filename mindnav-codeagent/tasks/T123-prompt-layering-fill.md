@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/646
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/646
 title: Prompt Layering 系統配置填充
 type: Feature
 priority: P1

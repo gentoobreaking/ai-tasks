@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/528
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/528
 title: T026 - 測試與質量保證代理 (QA Agent)
 type: Feature
 priority: medium

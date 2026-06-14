@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/580
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/580
 title: T057 - 動態 System Prompt 分層組裝
 type: Feature
 priority: high

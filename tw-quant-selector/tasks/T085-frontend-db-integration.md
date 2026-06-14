@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/798
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/798
 title: 遷移前端投組管理至資料庫驅動架構
 type: feature
 priority: medium

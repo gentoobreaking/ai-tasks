@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/805
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/805
 title: 修改 Backtest 再平衡邏輯（改為每日檢查）
 type: bugfix
 priority: medium

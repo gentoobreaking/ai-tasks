@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/726
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/726
 title: MarketStatus 元件接入側欄
 type: feature
 priority: medium

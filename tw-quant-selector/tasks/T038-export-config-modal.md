@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/716
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/716
 title: 資料匯出欄位選擇彈窗
 type: feature
 priority: low

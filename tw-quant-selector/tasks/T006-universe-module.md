@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/670
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/670
 title: 選股宇宙（Universe）模組
 type: task
 priority: high

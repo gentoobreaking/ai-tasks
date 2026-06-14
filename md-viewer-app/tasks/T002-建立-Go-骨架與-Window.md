@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/275
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/275
 title: 建立 Go 骨架與 Window
 status: done
 type: Development
@@ -9,7 +9,7 @@ created: 2026-04-23
 updated: 2026-04-23
 completed: 2026-04-23
 note: 骨架後因轉向 webview 方案而重構，見 T008
-github_issue: <https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/95>
+github_issue: <https://github.com/gentoobreaking/ai-tasks/issues/95>
 ---
 
 # T002 - 建立 Go 骨架與 Window

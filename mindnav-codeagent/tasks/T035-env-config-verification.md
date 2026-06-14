@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/539
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/539
 title: T035 - 環境變數配置與本地 LLM 端點驗證
 type: Feature
 priority: high

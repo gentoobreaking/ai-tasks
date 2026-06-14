@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/552
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/552
 title: T048 - Config 重複讀取優化
 type: Refactor
 priority: high

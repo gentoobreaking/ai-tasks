@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/845
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/845
 title: 智慧警示啟用及設定值面板
 type: feature
 priority: medium

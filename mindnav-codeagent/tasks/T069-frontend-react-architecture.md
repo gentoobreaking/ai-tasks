@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/559
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/559
 title: Frontend React 基礎架構
 type: Feature
 priority: high

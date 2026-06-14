@@ -28,7 +28,7 @@
 
 | # | 名稱 | 狀態 |
 |---|------|------|
-| [T001](https://github.com/openclawchen8-lgtm/openclaw-tasks/blob/main/gold-analysis-merge/tasks/T001.md) | 合併 ~/gold-analysis 與 ~/Projects/gold-analysis 兩份本地副本 | ✅ done |
+| [T001](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis-merge/tasks/T001.md) | 合併 ~/gold-analysis 與 ~/Projects/gold-analysis 兩份本地副本 | ✅ done |
 
 **✅ done: 1 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 0**
 

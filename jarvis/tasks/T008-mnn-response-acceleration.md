@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/743
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/743
 title: T008-MNN 模型回應加速
 type: Performance
 priority: high

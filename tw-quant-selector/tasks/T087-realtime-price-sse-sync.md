@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/800
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/800
 title: 實作即時價格 SSE 同步機制
 type: feature
 priority: high

@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/532
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/532
 title: T028 - 缺失 Shell Script 與 CI/CD 補全
 type: Feature
 priority: high

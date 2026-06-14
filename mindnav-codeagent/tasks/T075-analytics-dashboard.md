@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/565
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/565
 title: Analytics Dashboard
 type: Feature
 priority: medium

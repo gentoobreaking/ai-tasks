@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/694
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/694
 title: Chart Interaction Deep Spec
 type: feature
 priority: medium

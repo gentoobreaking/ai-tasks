@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/98
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/98
 title: "[T011-FIX-01] 修復 zoomIn/zoomOut 永遠用舊值"
 type: subtask
 status: done

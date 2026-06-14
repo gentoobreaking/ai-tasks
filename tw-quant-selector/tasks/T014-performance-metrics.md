@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/678
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/678
 title: 績效評估指標計算
 type: task
 priority: medium

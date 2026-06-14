@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/535
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/535
 title: T031 - 補全整合測試腳本 Integration Test
 type: Feature
 priority: high

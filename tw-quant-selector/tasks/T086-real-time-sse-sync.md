@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/799
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/799
 title: 實作基於 SSE 的投組即時同步
 type: feature
 priority: high

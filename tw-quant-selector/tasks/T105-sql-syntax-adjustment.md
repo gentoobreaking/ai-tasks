@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/814
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/814
 title: SQL 语法调整（DuckDB → PostgreSQL）
 type: feature
 priority: high

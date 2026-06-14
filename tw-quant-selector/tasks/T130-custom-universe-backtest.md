@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/843
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/843
 title: Support Custom Universe in Backtesting
 type: feature
 priority: medium

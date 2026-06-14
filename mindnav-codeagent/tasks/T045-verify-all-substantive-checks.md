@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/549
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/549
 title: T045 - verify_all.py 實質檢查補全
 type: Feature
 priority: medium

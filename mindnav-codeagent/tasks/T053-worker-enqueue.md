@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/558
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/558
 title: T053 - Coder Worker 實際 Enqueue 邏輯實作
 type: Feature
 priority: high

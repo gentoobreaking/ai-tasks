@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/517
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/517
 title: T010 - Git Hook 代碼自動審查整合 (FastAPI & pre-commit)
 type: Feature
 priority: medium

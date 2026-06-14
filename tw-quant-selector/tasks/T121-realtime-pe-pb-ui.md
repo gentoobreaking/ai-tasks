@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/830
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/830
 title: 即时 PE/PB UI 整合（React）
 type: feature
 priority: high

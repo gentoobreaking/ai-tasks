@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/542
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/542
 title: T038 - 架構師代理 (Architect Agent)
 type: Feature
 priority: medium

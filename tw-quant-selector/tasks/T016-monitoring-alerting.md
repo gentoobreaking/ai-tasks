@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/680
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/680
 title: 告警、監控與 Logging
 type: task
 priority: medium

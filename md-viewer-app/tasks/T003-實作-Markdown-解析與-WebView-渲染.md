@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/276
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/276
 title: 實作 Markdown 解析與 WebView 渲染
 status: done
 type: Development
@@ -8,7 +8,7 @@ parent: T002
 created: 2026-04-23
 updated: 2026-04-28
 completed: 2026-04-25
-github_issue: <https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/91>
+github_issue: <https://github.com/gentoobreaking/ai-tasks/issues/91>
 ---
 
 # T003 - 實作 Markdown 解析與 WebView 渲染

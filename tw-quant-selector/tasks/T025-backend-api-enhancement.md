@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/659
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/659
 title: 後端 API 前端強化
 type: feature
 priority: medium

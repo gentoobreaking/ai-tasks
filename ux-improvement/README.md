@@ -29,8 +29,8 @@
 
 | # | 名稱 | 狀態 |
 |---|------|------|
-| [T001](https://github.com/openclawchen8-lgtm/openclaw-tasks/blob/main/ux-improvement/tasks/T001.md) | 診斷命令截斷原因 | ✅ done |
-| [T002](https://github.com/openclawchen8-lgtm/openclaw-tasks/blob/main/ux-improvement/tasks/T002.md) | 設計輸出完整化的方案 | ✅ done |
+| [T001](https://github.com/gentoobreaking/ai-tasks/blob/main/ux-improvement/tasks/T001.md) | 診斷命令截斷原因 | ✅ done |
+| [T002](https://github.com/gentoobreaking/ai-tasks/blob/main/ux-improvement/tasks/T002.md) | 設計輸出完整化的方案 | ✅ done |
 
 **✅ done: 2 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 0**
 

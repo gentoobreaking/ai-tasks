@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/572
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/572
 title: Parent→Child Auto Promote
 type: Feature
 priority: medium

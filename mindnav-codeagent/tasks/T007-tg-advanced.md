@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/514
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/514
 title: T007 - Telegram 進階功能 (專案切換與按鈕互動)
 type: Feature
 priority: medium

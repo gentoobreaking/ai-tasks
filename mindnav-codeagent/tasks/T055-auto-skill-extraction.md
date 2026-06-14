@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/578
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/578
 title: T055 - 任務完成後技能自動提煉 Pipeline
 type: Feature
 priority: high

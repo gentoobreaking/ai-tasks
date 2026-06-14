@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/585
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/585
 title: T062 - 技能退化偵測
 type: Feature
 priority: medium

@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/649
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/649
 title: 角色檔案版本歷史管理
 type: Feature
 priority: P2

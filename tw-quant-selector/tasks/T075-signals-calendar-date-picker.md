@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/729
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/729
 title: 後端 signals/calendar API 接上 Signals 日期選擇器
 type: feature
 priority: low

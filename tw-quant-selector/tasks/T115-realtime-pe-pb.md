@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/824
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/824
 title: 盘中即时 PE/PB 计算实作
 type: feature
 priority: medium

@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/815
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/815
 title: 整合测试与验证（迁移後）
 type: feature
 priority: high

@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/683
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/683
 title: Product Landing Page 更新（T139-T140 彙整）
 type: Feature
 priority: P1

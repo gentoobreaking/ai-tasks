@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/794
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/794
 title: 統一錯誤處理與重試機制
 type: Feature
 priority: P1

@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/687
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/687
 title: README 完整文件更新
 type: feature
 priority: medium

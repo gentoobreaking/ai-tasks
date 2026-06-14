@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/533
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/533
 title: T029 - Graph.py 與 Import 路徑缺陷修復
 type: Feature
 priority: high

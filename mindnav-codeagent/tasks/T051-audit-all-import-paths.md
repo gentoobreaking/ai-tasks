@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/555
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/555
 title: T051 - 全面清查 Import 路徑
 type: Bug
 priority: critical

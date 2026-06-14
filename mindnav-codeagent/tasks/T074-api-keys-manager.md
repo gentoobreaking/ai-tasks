@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/564
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/564
 title: API Keys Manager
 type: Feature
 priority: medium

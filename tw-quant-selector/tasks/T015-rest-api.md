@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/679
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/679
 title: RESTful API（FastAPI）
 type: task
 priority: medium

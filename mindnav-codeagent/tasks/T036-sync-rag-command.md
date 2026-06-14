@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/540
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/540
 title: T036 - 實作手動強制同步指令 /sync_rag
 type: Feature
 priority: medium

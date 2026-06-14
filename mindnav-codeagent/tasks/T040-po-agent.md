@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/544
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/544
 title: T040 - 產品負責人代理 (Product Owner Agent)
 type: Feature
 priority: medium

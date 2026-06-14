@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/516
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/516
 title: T009 - 安全沙盒與指令限制
 type: Feature
 priority: high

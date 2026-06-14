@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/583
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/583
 title: T060 - 任務成功/失敗信號系統
 type: Feature
 priority: high

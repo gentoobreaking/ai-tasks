@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/355
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/355
 title: "[T011-C] Preferences ⌘, 觸發設定面板"
 type: subtask
 status: done

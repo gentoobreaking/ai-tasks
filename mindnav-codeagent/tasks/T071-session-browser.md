@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/561
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/561
 title: Session Browser
 type: Feature
 priority: medium

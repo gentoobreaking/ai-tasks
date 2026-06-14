@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/529
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/529
 title: T027 - DevOps 自動化代理 (DevOps Agent)
 type: Feature
 priority: medium

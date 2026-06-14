@@ -28,7 +28,7 @@
 
 | # | 名稱 | 狀態 |
 |---|------|------|
-| [T001](https://github.com/openclawchen8-lgtm/openclaw-tasks/blob/main/llm-router/tasks/T001.md) | 研究並給出 2025 Best 自建 LLM Router 評估報告（md+pdf） | ✅ done |
+| [T001](https://github.com/gentoobreaking/ai-tasks/blob/main/llm-router/tasks/T001.md) | 研究並給出 2025 Best 自建 LLM Router 評估報告（md+pdf） | ✅ done |
 
 **✅ done: 1 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 0**
 

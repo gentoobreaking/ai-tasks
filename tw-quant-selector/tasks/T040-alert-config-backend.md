@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/718
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/718
 title: 損益監控告警後端設定與 API
 type: feature
 priority: high

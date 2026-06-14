@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/703
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/703
 title: 四因子滑桿鎖定與權重聯動
 type: feature
 priority: high

@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/354
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/354
 title: "[T011-B] 選單結構與 shortcut 綁定"
 type: subtask
 status: done

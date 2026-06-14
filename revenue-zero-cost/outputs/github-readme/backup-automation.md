@@ -52,7 +52,7 @@
 
 ```bash
 # 1. Clone 此腳本
-git clone https://github.com/openclawchen8-lgtm/openclaw-backup.git ~/scripts/openclaw-backup
+git clone https://github.com/gentoobreaking/openclaw-backup.git ~/scripts/openclaw-backup
 
 # 2. 賦予執行權限
 chmod +x ~/scripts/openclaw-backup/sync_all.sh
@@ -91,8 +91,8 @@ echo "0 */2 * * * ~/scripts/openclaw-backup/sync_all.sh" >> /etc/crontab
 
 ## 📂 相關資源
 
-- [Gold Monitor Pro — 黃金自動監控系統](https://github.com/openclawchen8-lgtm/gold-monitor-pro)
-- [ideas2tasks — 自動將想法轉為任務追蹤](https://github.com/openclawchen8-lgtm/ideas2tasks)
+- [Gold Monitor Pro — 黃金自動監控系統](https://github.com/gentoobreaking/gold-monitor-pro)
+- [ideas2tasks — 自動將想法轉為任務追蹤](https://github.com/gentoobreaking/ideas2tasks)
 
 ---
 

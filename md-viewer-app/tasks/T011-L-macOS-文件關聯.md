@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/102
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/102
 title: "[T011-L] macOS 文件關聯（雙擊 .md 用 md-viewer 開啟）"
 type: subtask
 status: done

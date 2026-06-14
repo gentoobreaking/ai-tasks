@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/808
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/808
 title: SQL f-string 加入白名單驗證
 type: security
 priority: medium

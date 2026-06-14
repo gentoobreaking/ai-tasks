@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/781
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/781
 title: 自訂 Dropdown 元件 + Portal 渲染
 type: feature
 priority: low

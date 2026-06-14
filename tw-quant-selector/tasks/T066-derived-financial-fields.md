@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/709
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/709
 title: 衍生財務欄位計算
 type: feature
 priority: high

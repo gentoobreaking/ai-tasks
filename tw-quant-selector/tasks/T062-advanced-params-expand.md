@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/705
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/705
 title: 各策略進階參數展開調整
 type: feature
 priority: medium

@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/758
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/758
 title: 雲端 AI 外包技能（ask_cloud_ai）
 type: Feature
 priority: medium

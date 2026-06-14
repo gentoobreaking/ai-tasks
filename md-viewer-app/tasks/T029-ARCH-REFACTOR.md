@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/152
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/152
 title: T029-混合架構整合優化與前端解耦
 status: done
 assignee: gemini-cli / opencode

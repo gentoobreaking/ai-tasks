@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/746
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/746
 title: T011-加速方案調研
 type: Research
 priority: low

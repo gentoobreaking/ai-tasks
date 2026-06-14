@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/593
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/593
 title: T068 - Supervisor Graph Redis 持久化 Checkpointer
 type: Feature
 priority: high

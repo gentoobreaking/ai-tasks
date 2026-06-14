@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/274
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/274
 title: 評估 Fyne 環境與建置能力
 status: done
 type: Research
@@ -8,7 +8,7 @@ created: 2026-04-23
 updated: 2026-04-23
 completed: 2026-04-23
 note: 本研究導致後續分裂為 md-viewer-webview（最終方案）與 md-viewer-fyne（對比版），見 T008
-github_issue: <https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/89>
+github_issue: <https://github.com/gentoobreaking/ai-tasks/issues/89>
 ---
 
 # T001 - 評估 Fyne 環境與建置能力

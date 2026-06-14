@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/358
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/358
 title: "[T011-F] Settings Panel UI"
 type: subtask
 status: done

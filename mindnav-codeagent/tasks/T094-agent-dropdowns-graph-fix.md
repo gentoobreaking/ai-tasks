@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/602
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/602
 title: Agent Definitions 下拉選單 + Transitions 截斷修復 + 主題選單 highlight
 type: Feature
 priority: high

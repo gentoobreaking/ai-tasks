@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/510
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/510
 title: T003 - 路由代理開發 (Router Agent)
 type: Feature
 priority: high

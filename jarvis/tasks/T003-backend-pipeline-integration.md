@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/737
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/737
 title: T003-後端流水線整合
 type: Feature
 priority: high

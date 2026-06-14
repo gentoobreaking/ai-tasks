@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/361
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/361
 title: "[T011-FIX-05] Zoom 三個附帶 Bug 修復"
 type: subtask
 status: done

@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/638
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/638
 title: Agent 角色檔案內容前端編輯器
 type: Feature
 priority: P1

@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/655
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/655
 title: 選股訊號與股票詳情頁面
 type: feature
 priority: high

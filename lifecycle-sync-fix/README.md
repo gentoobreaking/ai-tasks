@@ -29,8 +29,8 @@
 
 | # | 名稱 | 狀態 |
 |---|------|------|
-| [T001](https://github.com/openclawchen8-lgtm/openclaw-tasks/blob/main/lifecycle-sync-fix/tasks/T001.md) | 修正 lifecycle.py 子任務統計邏輯 | ✅ done |
-| [T002](https://github.com/openclawchen8-lgtm/openclaw-tasks/blob/main/lifecycle-sync-fix/tasks/T002.md) | sync_issues_cron.py 反向同步機制 | ✅ done |
+| [T001](https://github.com/gentoobreaking/ai-tasks/blob/main/lifecycle-sync-fix/tasks/T001.md) | 修正 lifecycle.py 子任務統計邏輯 | ✅ done |
+| [T002](https://github.com/gentoobreaking/ai-tasks/blob/main/lifecycle-sync-fix/tasks/T002.md) | sync_issues_cron.py 反向同步機制 | ✅ done |
 
 **✅ done: 2 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 0**
 

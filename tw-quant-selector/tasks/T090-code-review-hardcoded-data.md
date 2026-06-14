@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/803
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/803
 task_id: T090
 title: "程式碼審查：找出潛在問題與硬編碼假資料"
 status: done

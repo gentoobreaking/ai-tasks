@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/600
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/600
 title: Supervisor Workflow transitions 流程圖編輯器
 type: Feature
 priority: high

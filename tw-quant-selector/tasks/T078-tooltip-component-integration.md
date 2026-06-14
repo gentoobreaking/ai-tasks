@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/732
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/732
 title: Tooltip 元件接入頁面互動提示
 type: feature
 priority: low

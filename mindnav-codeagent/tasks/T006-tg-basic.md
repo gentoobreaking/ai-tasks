@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/513
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/513
 title: T006 - Telegram 互動基礎建設 (Asyncio Polling)
 type: Feature
 priority: high

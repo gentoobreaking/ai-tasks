@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/364
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/364
 title: "[T016] 自動大綱 TOC"
 status: done
 type: Feature

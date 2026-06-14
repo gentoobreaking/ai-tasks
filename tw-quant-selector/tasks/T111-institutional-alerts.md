@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/820
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/820
 title: 法人相关警示规则实作
 type: feature
 priority: medium

@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/486
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/486
 title: T015 - 模組化配置系統與主管代理設計 (Modular Config & Supervisor)
 type: Feature
 priority: medium

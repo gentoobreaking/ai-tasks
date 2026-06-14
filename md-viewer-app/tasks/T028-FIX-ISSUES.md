@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/151
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/151
 
 title: T028-FIX-ISSUES
 status: done

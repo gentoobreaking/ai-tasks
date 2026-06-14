@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/545
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/545
 title: T041 - Graph.py 節點拆分重構
 type: Refactor
 priority: medium

@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/588
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/588
 title: T066 - 動態任務拆解與平行執行機制
 type: Feature
 priority: high

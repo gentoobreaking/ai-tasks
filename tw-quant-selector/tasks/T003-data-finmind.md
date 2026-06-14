@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/667
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/667
 title: 資料擷取 - FinMind 整合
 type: task
 priority: high

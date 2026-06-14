@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/525
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/525
 title: T023 - Git 自動審計與原子提交流水線 (Git Audit Pipeline)
 type: Feature
 priority: high

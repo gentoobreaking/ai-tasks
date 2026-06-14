@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/596
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/596
 title: 流程圖裁切 (已修復) + 佈景下拉選單無效 (持續調查)
 type: Feature
 priority: high

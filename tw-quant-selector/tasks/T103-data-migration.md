@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/841
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/841
 title: 数据迁移脚本实作（DuckDB → PostgreSQL）
 type: feature
 priority: high

@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/809
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/809
 title: 加入 API 請求參數驗證
 type: enhancement
 priority: medium

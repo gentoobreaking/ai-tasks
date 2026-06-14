@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/573
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/573
 title: Failed Task + Crash Recovery
 type: Feature
 priority: high

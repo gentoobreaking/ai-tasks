@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/832
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/832
 title: React 前端警示整合（useMarketAlerts.ts）
 type: feature
 priority: medium

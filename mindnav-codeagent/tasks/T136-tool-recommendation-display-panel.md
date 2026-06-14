@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/643
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/643
 title: 工具推薦系統前端顯示面板
 type: Feature
 priority: P2

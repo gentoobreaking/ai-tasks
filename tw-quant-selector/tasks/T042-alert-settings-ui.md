@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/720
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/720
 title: 前端告警與系統設定頁面
 type: feature
 priority: medium

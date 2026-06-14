@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/707
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/707
 title: 大師策略庫 UI
 type: feature
 priority: medium

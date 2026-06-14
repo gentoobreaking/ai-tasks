@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/279
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/279
 title: Build 與測試 macOS App
 status: done
 type: Build
@@ -8,7 +8,7 @@ parent: T003, T004, T005
 created: 2026-04-23
 updated: 2026-04-28
 completed: 2026-04-28
-github_issue: <https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/96>
+github_issue: <https://github.com/gentoobreaking/ai-tasks/issues/96>
 ---
 
 # T006 - Build 與測試 macOS App

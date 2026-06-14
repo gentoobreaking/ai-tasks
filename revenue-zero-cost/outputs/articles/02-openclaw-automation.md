@@ -158,15 +158,15 @@ Cron → Python 腳本 → 直接 call Telegram API → 通知
 
 ## 開源連結
 
-- [ideas2tasks](https://github.com/openclawchen8-lgtm/ideas2tasks)
-- [gold-monitor-pro](https://github.com/openclawchen8-lgtm/gold-monitor-pro)
-- [openclaw-backup](https://github.com/openclawchen8-lgtm/openclaw-private-backups)
+- [ideas2tasks](https://github.com/gentoobreaking/ideas2tasks)
+- [gold-monitor-pro](https://github.com/gentoobreaking/gold-monitor-pro)
+- [openclaw-backup](https://github.com/gentoobreaking/openclaw-private-backups)
 
 ---
 
 ## 需要幫你設計自動化架構？
 
-如果你有重複性的工作想自動化（資料監控、工作流程、任務追蹤），歡迎填寫[諮詢表單](https://github.com/openclawchen8-lgtm/automation-portfolio/blob/main/templates/inquiry-form.md)，說明你的需求：
+如果你有重複性的工作想自動化（資料監控、工作流程、任務追蹤），歡迎填寫[諮詢表單](https://github.com/gentoobreaking/automation-portfolio/blob/main/templates/inquiry-form.md)，說明你的需求：
 
 - 目前用什麼方式處理這件事？
 - 頻率多高？

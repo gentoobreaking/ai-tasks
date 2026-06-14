@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/823
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/823
 title: MIS API 即时报价全市场轮询实作
 type: feature
 priority: high

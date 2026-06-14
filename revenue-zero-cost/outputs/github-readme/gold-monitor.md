@@ -57,7 +57,7 @@
 
 ```bash
 # Clone
-git clone https://github.com/openclawchen8-lgtm/gold-monitor-pro.git
+git clone https://github.com/gentoobreaking/gold-monitor-pro.git
 cd gold-monitor-pro
 
 # 安裝依賴
@@ -96,8 +96,8 @@ ENABLE_DAILY_SUMMARY = True  # 22:00 UTC 發送
 
 ## 📂 相關資源
 
-- [ideas2tasks — 自動將想法轉為任務追蹤](https://github.com/openclawchen8-lgtm/ideas2tasks)
-- [OpenClaw 備份自動化](https://github.com/openclawchen8-lgtm/openclaw-backup)
+- [ideas2tasks — 自動將想法轉為任務追蹤](https://github.com/gentoobreaking/ideas2tasks)
+- [OpenClaw 備份自動化](https://github.com/gentoobreaking/openclaw-backup)
 
 ---
 

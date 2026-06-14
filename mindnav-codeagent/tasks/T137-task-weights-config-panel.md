@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/644
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/644
 title: 任務權重表前端配置面板
 type: Feature
 priority: P2

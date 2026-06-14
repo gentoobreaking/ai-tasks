@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/556
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/556
 title: T052 - verify_ac.py stub 檢查補全
 type: Feature
 priority: medium

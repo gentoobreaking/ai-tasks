@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/551
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/551
 title: T047 - API Key 安全處理
 type: Security
 priority: low

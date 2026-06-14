@@ -75,7 +75,7 @@ AI 自動化監控系統是一套基於 OpenClaw Agent Framework 打造的智能
 - **Cron Jobs** — 精準定時執行，確保不漏任何價格變動
 - **GitHub Actions** — 自動備份腳本與數據到雲端
 
-**開源社群：** 所有核心腳本開源於 [GitHub: openclawchen8-lgtm](https://github.com/openclawchen8-lgtm)，歡迎貢獻與客製化。
+**開源社群：** 所有核心腳本開源於 [GitHub: gentoobreaking](https://github.com/gentoobreaking)，歡迎貢獻與客製化。
 
 ---
 
@@ -195,7 +195,7 @@ AI 自動化監控系統是一套基於 OpenClaw Agent Framework 打造的智能
 
 💾 備份完成
 
-- [✅] GitHub: 已同步至 openclawchen8-lgtm/gold-monitor
+- [✅] GitHub: 已同步至 gentoobreaking/gold-monitor
 - [✅] 微雲: 已上傳數據庫備份
 
 📦 備份內容
@@ -210,7 +210,7 @@ AI 自動化監控系統是一套基於 OpenClaw Agent Framework 打造的智能
 
 ## 🔗 相關連結
 
-- **GitHub 開源專案**：[openclawchen8-lgtm](https://github.com/openclawchen8-lgtm)
+- **GitHub 開源專案**：[gentoobreaking](https://github.com/gentoobreaking)
 - **OpenClaw 官方網站**：[openclaw.ai](https://openclaw.ai)
 - **ClawHub 技能市場**：[clawhub.com](https://clawhub.com)
 - **技術文件**：[docs.openclaw.ai](https://docs.openclaw.ai)

@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/673
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/673
 title: 品質策略與成長策略實作
 type: task
 priority: high

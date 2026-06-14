@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/780
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/780
 title: Tooltip Portal 改寫 + Z-index 堆疊管理
 type: refactor
 priority: medium

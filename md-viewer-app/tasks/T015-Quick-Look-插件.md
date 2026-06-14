@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/363
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/363
 title: "[T015] Quick Look 插件"
 status: skip
 type: macOS Extension

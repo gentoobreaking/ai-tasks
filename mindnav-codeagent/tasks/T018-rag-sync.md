@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/488
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/488
 title: T018 - RAG 自動增量同步監聽器 (watchdog based)
 type: Feature
 priority: high

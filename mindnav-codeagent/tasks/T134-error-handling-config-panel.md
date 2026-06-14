@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/641
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/641
 title: 錯誤重試策略前端配置面板
 type: Feature
 priority: P1

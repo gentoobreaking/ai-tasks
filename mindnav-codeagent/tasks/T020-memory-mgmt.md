@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/489
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/489
 title: T020 - 記憶清理與對話重置工具 (Memory Manager)
 type: Feature
 priority: high

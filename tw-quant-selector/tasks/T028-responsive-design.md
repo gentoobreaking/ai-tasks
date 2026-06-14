@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/662
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/662
 title: 響應式設計框架
 type: feature
 priority: high

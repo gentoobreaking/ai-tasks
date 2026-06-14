@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/657
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/657
 title: 策略設定與投組追蹤頁面
 type: feature
 priority: medium

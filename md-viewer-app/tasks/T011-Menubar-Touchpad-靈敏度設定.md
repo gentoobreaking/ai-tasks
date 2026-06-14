@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/360
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/360
 title: Native NSMenu + 設定面板 + 縮放靈敏度持久化
 status: done
 assignee: 碼農2號

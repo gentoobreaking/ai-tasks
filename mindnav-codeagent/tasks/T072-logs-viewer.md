@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/562
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/562
 title: Logs Viewer
 type: Feature
 priority: medium

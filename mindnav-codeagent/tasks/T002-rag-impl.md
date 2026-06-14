@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/509
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/509
 title: T002 - 本地 RAG 知識庫實作 (ChromaDB & AST)
 type: Feature
 priority: high

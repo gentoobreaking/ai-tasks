@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/481
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/481
 title: 下載並將遺失的 miniaudio 程式庫加入專案
 type: Feature
 priority: high

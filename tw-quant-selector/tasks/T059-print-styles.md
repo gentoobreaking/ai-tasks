@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/702
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/702
 title: Print Styles
 type: feature
 priority: low

@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/717
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/717
 title: 完整空狀態診斷與原因提示
 type: feature
 priority: medium

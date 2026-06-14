@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/651
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/651
 title: Implement react-i18next for multi-language support
 type: enhancement
 priority: medium

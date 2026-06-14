@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/848
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/848
 title: 拆分大型檔案 alerting.py（模組化重構）
 type: refactor
 priority: medium

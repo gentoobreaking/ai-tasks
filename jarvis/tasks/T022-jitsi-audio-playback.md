@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/755
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/755
 title: Jitsi 語音串接 — 音訊播放回會議室
 type: Feature
 priority: low

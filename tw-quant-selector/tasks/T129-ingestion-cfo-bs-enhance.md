@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/842
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/842
 title: ingestion 擴展現金流與資產負債表欄位（CFO / CurrentRatio）
 type: feature
 priority: medium

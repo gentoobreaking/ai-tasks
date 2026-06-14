@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/846
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/846
 title: 即時技術分析警示（60分K線 / MA / KD 指標）
 type: feature
 priority: medium

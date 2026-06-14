@@ -28,7 +28,7 @@
 
 | # | 名稱 | 狀態 |
 |---|------|------|
-| [T22-AI程式碼助手評比](https://github.com/openclawchen8-lgtm/openclaw-tasks/blob/main/research/tasks/T022-AI程式碼助手評比.md) | AI 程式碼助手評比（Gemini CLI / OpenClaw / CrewAI / AutoGen / OpenCode / Cursor / Claude CLI / Aider / NxCode） | ✅ done |
+| [T22-AI程式碼助手評比](https://github.com/gentoobreaking/ai-tasks/blob/main/research/tasks/T022-AI程式碼助手評比.md) | AI 程式碼助手評比（Gemini CLI / OpenClaw / CrewAI / AutoGen / OpenCode / Cursor / Claude CLI / Aider / NxCode） | ✅ done |
 
 **✅ done: 1 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 0**
 

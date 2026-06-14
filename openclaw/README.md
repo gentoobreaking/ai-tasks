@@ -33,12 +33,12 @@
 
 | # | 名稱 | 狀態 |
 |---|------|------|
-| [T001](https://github.com/openclawchen8-lgtm/openclaw-tasks/blob/main/openclaw/tasks/T001.md) | QClaw + OpenClaw 雙開配置指南（不同 Port + Local LLM） | ✅ done |
-| [T002](https://github.com/openclawchen8-lgtm/openclaw-tasks/blob/main/openclaw/tasks/T002.md) | How to install openclaw with npm under macbook whe | ✅ done |
-| [T003](https://github.com/openclawchen8-lgtm/openclaw-tasks/blob/main/openclaw/tasks/T003.md) | How to install pre-defined openclaw skills without | ✅ done |
-| [T004](https://github.com/openclawchen8-lgtm/openclaw-tasks/blob/main/openclaw/tasks/T004.md) | How to install pre-defined openclaw plugins withou | ✅ done |
-| [T005](https://github.com/openclawchen8-lgtm/openclaw-tasks/blob/main/openclaw/tasks/T005.md) | How to create pre-defined members with agents's de | ✅ done |
-| [T006](https://github.com/openclawchen8-lgtm/openclaw-tasks/blob/main/openclaw/tasks/T006.md) | OpenClaw Cron 備份與還原 | ✅ done |
+| [T001](https://github.com/gentoobreaking/ai-tasks/blob/main/openclaw/tasks/T001.md) | QClaw + OpenClaw 雙開配置指南（不同 Port + Local LLM） | ✅ done |
+| [T002](https://github.com/gentoobreaking/ai-tasks/blob/main/openclaw/tasks/T002.md) | How to install openclaw with npm under macbook whe | ✅ done |
+| [T003](https://github.com/gentoobreaking/ai-tasks/blob/main/openclaw/tasks/T003.md) | How to install pre-defined openclaw skills without | ✅ done |
+| [T004](https://github.com/gentoobreaking/ai-tasks/blob/main/openclaw/tasks/T004.md) | How to install pre-defined openclaw plugins withou | ✅ done |
+| [T005](https://github.com/gentoobreaking/ai-tasks/blob/main/openclaw/tasks/T005.md) | How to create pre-defined members with agents's de | ✅ done |
+| [T006](https://github.com/gentoobreaking/ai-tasks/blob/main/openclaw/tasks/T006.md) | OpenClaw Cron 備份與還原 | ✅ done |
 
 **✅ done: 6 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 0**
 

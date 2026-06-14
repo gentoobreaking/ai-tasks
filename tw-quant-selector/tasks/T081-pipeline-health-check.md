@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/722
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/722
 title: 整合 Ingestion Pipeline 與系統健康檢查 (Alerting)
 type: feature
 priority: high

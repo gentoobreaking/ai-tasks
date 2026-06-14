@@ -34,13 +34,13 @@
 
 | # | 名稱 | 狀態 |
 |---|------|------|
-| [T001](https://github.com/openclawchen8-lgtm/openclaw-tasks/blob/main/member-config-review/tasks/T001.md) | Review 寶寶（main）設定檔 | ✅ done |
-| [T002](https://github.com/openclawchen8-lgtm/openclaw-tasks/blob/main/member-config-review/tasks/T002.md) | Review 安安（agent-ann）設定檔 | ✅ done |
-| [T003](https://github.com/openclawchen8-lgtm/openclaw-tasks/blob/main/member-config-review/tasks/T003.md) | Review 碼農1號（agent-f937014d）設定檔 | ✅ done |
-| [T004](https://github.com/openclawchen8-lgtm/openclaw-tasks/blob/main/member-config-review/tasks/T004.md) | Review 碼農2號（agent-coder2）設定檔 | ✅ done |
-| [T005](https://github.com/openclawchen8-lgtm/openclaw-tasks/blob/main/member-config-review/tasks/T005.md) | Review 樂樂（agent-lele）設定檔 | ✅ done |
-| [T006](https://github.com/openclawchen8-lgtm/openclaw-tasks/blob/main/member-config-review/tasks/T006.md) | Review 研研（agent-researcher）設定檔 | ✅ done |
-| [T007](https://github.com/openclawchen8-lgtm/openclaw-tasks/blob/main/member-config-review/tasks/T007.md) | Review 豬豬（agent-zhuzhu）設定檔 | ✅ done |
+| [T001](https://github.com/gentoobreaking/ai-tasks/blob/main/member-config-review/tasks/T001.md) | Review 寶寶（main）設定檔 | ✅ done |
+| [T002](https://github.com/gentoobreaking/ai-tasks/blob/main/member-config-review/tasks/T002.md) | Review 安安（agent-ann）設定檔 | ✅ done |
+| [T003](https://github.com/gentoobreaking/ai-tasks/blob/main/member-config-review/tasks/T003.md) | Review 碼農1號（agent-f937014d）設定檔 | ✅ done |
+| [T004](https://github.com/gentoobreaking/ai-tasks/blob/main/member-config-review/tasks/T004.md) | Review 碼農2號（agent-coder2）設定檔 | ✅ done |
+| [T005](https://github.com/gentoobreaking/ai-tasks/blob/main/member-config-review/tasks/T005.md) | Review 樂樂（agent-lele）設定檔 | ✅ done |
+| [T006](https://github.com/gentoobreaking/ai-tasks/blob/main/member-config-review/tasks/T006.md) | Review 研研（agent-researcher）設定檔 | ✅ done |
+| [T007](https://github.com/gentoobreaking/ai-tasks/blob/main/member-config-review/tasks/T007.md) | Review 豬豬（agent-zhuzhu）設定檔 | ✅ done |
 
 **✅ done: 7 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 0**
 

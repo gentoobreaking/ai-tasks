@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/817
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/817
 title: 三大法人买卖超 Ingestion Pipeline 实作
 type: feature
 priority: high

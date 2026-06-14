@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/642
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/642
 title: ReviewGate 審查閾值前端配置面板
 type: Feature
 priority: P2

@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/664
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/664
 title: 效能預算
 type: feature
 priority: medium

@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/100
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/100
 title: "[T011-FIX-03] 修復 menubar 預設顯示英文"
 type: subtask
 status: done

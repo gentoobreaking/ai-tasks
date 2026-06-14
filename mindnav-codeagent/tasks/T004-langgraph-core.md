@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/511
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/511
 title: T004 - LangGraph 多代理核心拓撲 (PM & Coder & Doc)
 type: Feature
 priority: high

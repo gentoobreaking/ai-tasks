@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/445
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/445
 type: Feature
 priority: high
 status: pending

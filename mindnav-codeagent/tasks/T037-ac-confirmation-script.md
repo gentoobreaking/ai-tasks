@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/541
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/541
 title: T037 - 各 AC 未勾項目的驗收確認腳本
 type: Feature
 priority: medium

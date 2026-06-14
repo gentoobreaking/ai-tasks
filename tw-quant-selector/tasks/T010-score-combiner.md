@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/674
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/674
 title: 策略合成器（Score Combiner）
 type: task
 priority: high

@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/682
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/682
 title: 測試框架與測試案例
 type: task
 priority: high

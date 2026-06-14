@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/584
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/584
 title: T061 - 跨 Agent 技能共用機制
 type: Feature
 priority: high

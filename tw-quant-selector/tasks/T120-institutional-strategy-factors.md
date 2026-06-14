@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/829
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/829
 title: 法人策略因子計算（Pandas 向量化重構）
 type: feature
 priority: high

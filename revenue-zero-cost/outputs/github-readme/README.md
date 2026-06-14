@@ -4,7 +4,7 @@
 
 ![Python](https://img.shields.io/badge/Python-3.9+-blue?logo=python)
 ![License](https://img.shields.io/badge/License-MIT-green)
-![GitHub Followers](https://img.shields.io/github/followers/openclawchen8-lgtm?label=Follow)
+![GitHub Followers](https://img.shields.io/github/followers/gentoobreaking?label=Follow)
 
 ---
 
@@ -24,19 +24,19 @@
 
 多金屬（黃金 / 白銀 / 鉑金）自動監控系統。直接抓台灣銀行牌告價，無需 API Key，自訂門檻即時告警，每日 22:00 自動收盤摘要。
 
-[→ 詳細 README](gold-monitor.md) · [→ GitHub](https://github.com/openclawchen8-lgtm/gold-monitor-pro)
+[→ 詳細 README](gold-monitor.md) · [→ GitHub](https://github.com/gentoobreaking/gold-monitor-pro)
 
 ### 💾 OpenClaw 備份自動化
 
 每 2 小時自動將全量資料打包上傳至 GitHub Releases。版本化存檔，失敗 Telegram 即時告警，30 天自動清理。
 
-[→ 詳細 README](backup-automation.md) · [→ GitHub](https://github.com/openclawchen8-lgtm/openclaw-private-backups)
+[→ 詳細 README](backup-automation.md) · [→ GitHub](https://github.com/gentoobreaking/openclaw-private-backups)
 
 ### 💡 ideas2tasks
 
 將臨時想法自動轉為結構化任務。支援多格式解析、三層去重、GitHub Issues + Projects 同步、雙向狀態同步。
 
-[→ 詳細 README](ideas2tasks.md) · [→ GitHub](https://github.com/openclawchen8-lgtm/ideas2tasks)
+[→ 詳細 README](ideas2tasks.md) · [→ GitHub](https://github.com/gentoobreaking/ideas2tasks)
 
 ---
 
@@ -55,10 +55,10 @@ Python · Bash · Git · SQLite · Plotly · Cron · OpenClaw
 
 ## 📬 聯絡與合作
 
-> 💡 **有想法想自動化？** 填寫[諮詢表單](https://github.com/openclawchen8-lgtm/automation-portfolio/blob/main/templates/inquiry-form.md)，48 小時內回覆。
+> 💡 **有想法想自動化？** 填寫[諮詢表單](https://github.com/gentoobreaking/automation-portfolio/blob/main/templates/inquiry-form.md)，48 小時內回覆。
 
 - Telegram：@your_handle（替換為實際帳號）
-- GitHub：[openclawchen8-lgtm](https://github.com/openclawchen8-lgtm)
+- GitHub：[gentoobreaking](https://github.com/gentoobreaking)
 
 ---
 

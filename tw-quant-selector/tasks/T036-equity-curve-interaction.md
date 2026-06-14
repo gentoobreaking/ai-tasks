@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/797
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/797
 title: 淨值曲線進階互動（Brush 縮放與詳細 Tooltip）
 type: feature
 priority: medium

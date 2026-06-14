@@ -28,7 +28,7 @@
 
 | # | 名稱 | 狀態 |
 |---|------|------|
-| [T001](https://github.com/openclawchen8-lgtm/openclaw-tasks/blob/main/elevenlabs-research/tasks/T001.md) | 研究 ElevenLabs 技術架構與使用授權 | ✅ done |
+| [T001](https://github.com/gentoobreaking/ai-tasks/blob/main/elevenlabs-research/tasks/T001.md) | 研究 ElevenLabs 技術架構與使用授權 | ✅ done |
 
 **✅ done: 1 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 0**
 

@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/512
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/512
 title: T005 - 聯網檢索工具整合 (Tavily)
 type: Feature
 priority: medium

@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/579
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/579
 title: T056 - 技能相似度匹配與動態注入引擎
 type: Feature
 priority: high

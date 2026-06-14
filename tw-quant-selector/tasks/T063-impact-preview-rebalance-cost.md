@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/706
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/706
 title: 套用影響預覽與再平衡成本
 type: feature
 priority: high

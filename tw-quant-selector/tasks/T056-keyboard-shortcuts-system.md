@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/699
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/699
 title: Keyboard Shortcuts System
 type: feature
 priority: medium

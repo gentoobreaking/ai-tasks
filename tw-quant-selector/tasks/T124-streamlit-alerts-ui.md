@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/833
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/833
 title: AlertHistory 多頁籤擴充（原 Streamlit，已移植到 React）
 type: feature
 priority: medium

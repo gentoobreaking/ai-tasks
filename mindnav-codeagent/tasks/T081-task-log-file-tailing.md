@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/571
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/571
 title: Task Log File Tailing
 type: Feature
 priority: low

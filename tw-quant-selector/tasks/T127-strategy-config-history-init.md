@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/836
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/836
 title: strategy_config_history 表初始化
 type: feature
 priority: medium

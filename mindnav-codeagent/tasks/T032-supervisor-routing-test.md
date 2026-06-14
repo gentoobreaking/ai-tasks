@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/536
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/536
 title: T032 - Supervisor 路由與圖拓撲驗證測試
 type: Feature
 priority: high

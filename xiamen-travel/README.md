@@ -32,11 +32,11 @@
 
 | # | 名稱 | 狀態 |
 |---|------|------|
-| [T001](https://github.com/openclawchen8-lgtm/openclaw-tasks/blob/main/xiamen-travel/tasks/T001.md) | 上網搜尋廈門旅遊資訊 | ✅ done |
-| [T002](https://github.com/openclawchen8-lgtm/openclaw-tasks/blob/main/xiamen-travel/tasks/T002.md) | 撰寫 7 天旅遊規劃 | ✅ done |
-| [T003](https://github.com/openclawchen8-lgtm/openclaw-tasks/blob/main/xiamen-travel/tasks/T003.md) | 撰寫 14 天旅遊規劃 | ✅ done |
-| [T004](https://github.com/openclawchen8-lgtm/openclaw-tasks/blob/main/xiamen-travel/tasks/T004.md) | 產生 Markdown 旅遊手冊 | ✅ done |
-| [T005](https://github.com/openclawchen8-lgtm/openclaw-tasks/blob/main/xiamen-travel/tasks/T005.md) | 製作 Mac 版 PPT 簡報 | ✅ done |
+| [T001](https://github.com/gentoobreaking/ai-tasks/blob/main/xiamen-travel/tasks/T001.md) | 上網搜尋廈門旅遊資訊 | ✅ done |
+| [T002](https://github.com/gentoobreaking/ai-tasks/blob/main/xiamen-travel/tasks/T002.md) | 撰寫 7 天旅遊規劃 | ✅ done |
+| [T003](https://github.com/gentoobreaking/ai-tasks/blob/main/xiamen-travel/tasks/T003.md) | 撰寫 14 天旅遊規劃 | ✅ done |
+| [T004](https://github.com/gentoobreaking/ai-tasks/blob/main/xiamen-travel/tasks/T004.md) | 產生 Markdown 旅遊手冊 | ✅ done |
+| [T005](https://github.com/gentoobreaking/ai-tasks/blob/main/xiamen-travel/tasks/T005.md) | 製作 Mac 版 PPT 簡報 | ✅ done |
 
 **✅ done: 5 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 0**
 

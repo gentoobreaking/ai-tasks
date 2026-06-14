@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/844
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/844
 title: 加權指數（TAIEX）技術分析警示
 type: feature
 priority: medium

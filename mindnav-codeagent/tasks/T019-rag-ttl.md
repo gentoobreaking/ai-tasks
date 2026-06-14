@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/522
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/522
 title: T019 - RAG 過期與版本化管理 (TTL & Versioning)
 type: Feature
 priority: medium

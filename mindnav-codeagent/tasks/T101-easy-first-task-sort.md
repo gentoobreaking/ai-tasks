@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/613
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/613
 priority: P1
 status: done
 assignee: OpenCode DeepSeek V4 Flash

@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/793
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/793
 title: 語意感知路由系統實作
 type: Feature
 priority: P1

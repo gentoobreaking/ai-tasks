@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/837
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/837
 title: alert_rules 表初始化（默认规则写入）
 type: feature
 priority: medium

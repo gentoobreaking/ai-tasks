@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/640
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/640
 title: 路由規則跳過 LLM 前端開關
 type: Feature
 priority: P1

@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/523
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/523
 title: T021 - 全系統功能驗證框架 (System Verification Framework)
 type: Feature
 priority: high

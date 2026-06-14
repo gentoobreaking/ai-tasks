@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/756
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/756
 title: LangChain Core Agent 整合
 type: Feature
 priority: high

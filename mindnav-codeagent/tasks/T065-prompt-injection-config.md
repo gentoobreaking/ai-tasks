@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/557
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/557
 title: 配置系統提示注入階層與 role-specific 目錄
 type: Feature
 priority: medium

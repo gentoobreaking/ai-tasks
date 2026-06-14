@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/671
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/671
 title: 基礎策略架構與 DataProvider 介面
 type: task
 priority: high

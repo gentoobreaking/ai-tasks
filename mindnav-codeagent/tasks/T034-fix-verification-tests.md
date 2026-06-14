@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/538
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/538
 title: T034 - 修復驗證框架測試使其全部通過
 type: Feature
 priority: high

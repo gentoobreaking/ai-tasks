@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/681
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/681
 title: Docker 化部署
 type: task
 priority: medium

@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/568
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/568
 title: SQLite Kanban Schema
 type: Feature
 priority: high

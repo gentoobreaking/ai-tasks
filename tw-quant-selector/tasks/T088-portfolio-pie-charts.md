@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/801
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/801
 title: Portfolio 頁面新增圓餅圖（權重與總金額）
 type: feature
 priority: medium

@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/546
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/546
 title: T042 - 統一所有節點為 Async 模式
 type: Bug
 priority: critical

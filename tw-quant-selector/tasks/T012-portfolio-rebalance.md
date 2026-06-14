@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/676
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/676
 title: 持倉管理與再平衡模組
 type: task
 priority: high

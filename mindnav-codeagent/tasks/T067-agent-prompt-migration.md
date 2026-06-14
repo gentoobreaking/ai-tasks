@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/592
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/592
 title: T067 - Agent System Prompt 搬移到 config/<role>/SOUL.md
 type: Refactor
 priority: medium

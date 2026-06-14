@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/590
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/590
 title: T066B - 任務圖執行器：DAG 執行與 Send Fan-out
 type: Feature
 priority: high

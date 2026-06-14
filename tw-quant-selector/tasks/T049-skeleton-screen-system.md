@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/692
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/692
 title: Skeleton Screen Design System
 type: feature
 priority: medium

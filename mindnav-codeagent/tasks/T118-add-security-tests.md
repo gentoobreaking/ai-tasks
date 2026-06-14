@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/633
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/633
 type: Test
 priority: P1
 status: done

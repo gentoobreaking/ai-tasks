@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/712
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/712
 title: 策略設定歷史記錄
 type: feature
 priority: low

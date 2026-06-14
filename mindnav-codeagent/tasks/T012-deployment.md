@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/485
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/485
 title: T012 - 部署手冊與 Docker 配置
 type: Feature
 priority: medium

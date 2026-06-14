@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/759
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/759
 title: 設定檔重構（debug/enabled/fix）
 type: Refactor
 priority: medium

@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/577
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/577
 title: T054 - 跨 Session 記憶全文搜尋與 AI 摘要
 type: Feature
 priority: high

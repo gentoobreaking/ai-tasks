@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/480
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/480
 title: 重構 A2BS 原始碼以適應新版 MNN API
 type: Feature
 priority: high

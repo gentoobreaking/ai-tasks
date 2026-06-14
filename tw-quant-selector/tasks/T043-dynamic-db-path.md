@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/721
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/721
 title: 動態資料庫路徑配置與重新連線
 type: feature
 priority: low

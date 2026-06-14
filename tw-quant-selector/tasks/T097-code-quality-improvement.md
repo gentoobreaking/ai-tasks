@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/810
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/810
 title: 程式碼品質提升（問題 11-15）
 type: enhancement
 priority: low

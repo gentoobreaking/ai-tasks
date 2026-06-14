@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/610
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/610
 title: Telegram Bot 整合
 type: Feature
 priority: medium

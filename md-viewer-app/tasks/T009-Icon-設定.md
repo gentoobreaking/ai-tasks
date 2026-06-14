@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/350
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/350
 title: Icon 設定
 status: done
 assignee: 寶寶

@@ -28,7 +28,7 @@
 
 | # | 名稱 | 狀態 |
 |---|------|------|
-| [T001](https://github.com/openclawchen8-lgtm/openclaw-tasks/blob/main/member-backup/tasks/T001.md) | 表列出目前所有備份來源路徑及目的路徑 | ✅ done |
+| [T001](https://github.com/gentoobreaking/ai-tasks/blob/main/member-backup/tasks/T001.md) | 表列出目前所有備份來源路徑及目的路徑 | ✅ done |
 
 **✅ done: 1 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 0**
 

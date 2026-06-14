@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/356
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/356
 title: "[T011-D] Config 持久化"
 type: subtask
 status: done

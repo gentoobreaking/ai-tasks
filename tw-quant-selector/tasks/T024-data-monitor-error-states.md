@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/658
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/658
 title: 資料監控與錯誤/空/載入狀態
 type: feature
 priority: medium

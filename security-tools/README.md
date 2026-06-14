@@ -32,11 +32,11 @@
 
 | # | 名稱 | 狀態 |
 |---|------|------|
-| [T001](https://github.com/openclawchen8-lgtm/openclaw-tasks/blob/main/security-tools/tasks/T001.md) | 讀取並分析兩篇安全文章 | ✅ done |
-| [T1-1](https://github.com/openclawchen8-lgtm/openclaw-tasks/blob/main/security-tools/tasks/T001-1.md) | 逐一檢查 5 個安全設定 | ✅ done |
-| [T002](https://github.com/openclawchen8-lgtm/openclaw-tasks/blob/main/security-tools/tasks/T002.md) | 逐一檢查 5 個安全設定 | ✅ done |
-| [T003](https://github.com/openclawchen8-lgtm/openclaw-tasks/blob/main/security-tools/tasks/T003.md) | 彙整作法寫入 howto | ✅ done |
-| [T004](https://github.com/openclawchen8-lgtm/openclaw-tasks/blob/main/security-tools/tasks/T004.md) | 記錄 exec 審批決策過程 | ✅ done |
+| [T001](https://github.com/gentoobreaking/ai-tasks/blob/main/security-tools/tasks/T001.md) | 讀取並分析兩篇安全文章 | ✅ done |
+| [T1-1](https://github.com/gentoobreaking/ai-tasks/blob/main/security-tools/tasks/T001-1.md) | 逐一檢查 5 個安全設定 | ✅ done |
+| [T002](https://github.com/gentoobreaking/ai-tasks/blob/main/security-tools/tasks/T002.md) | 逐一檢查 5 個安全設定 | ✅ done |
+| [T003](https://github.com/gentoobreaking/ai-tasks/blob/main/security-tools/tasks/T003.md) | 彙整作法寫入 howto | ✅ done |
+| [T004](https://github.com/gentoobreaking/ai-tasks/blob/main/security-tools/tasks/T004.md) | 記錄 exec 審批決策過程 | ✅ done |
 
 **✅ done: 5 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 0**
 

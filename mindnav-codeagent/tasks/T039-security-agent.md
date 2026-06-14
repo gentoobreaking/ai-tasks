@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/543
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/543
 title: T039 - 安全審計代理 (Security Agent)
 type: Feature
 priority: medium

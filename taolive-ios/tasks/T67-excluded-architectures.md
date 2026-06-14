@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/483
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/483
 title: 調整 Excluded Architectures 設定以相容模擬器
 type: Feature
 priority: high

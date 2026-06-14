@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/685
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/685
 title: Docker Multi-stage Build（前端 + API 合一）
 type: feature
 priority: high

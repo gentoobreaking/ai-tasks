@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/669
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/669
 title: 除權息還原模組
 type: task
 priority: high

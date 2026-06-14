@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/740
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/740
 title: T005-TTS 整合
 type: Feature
 priority: high

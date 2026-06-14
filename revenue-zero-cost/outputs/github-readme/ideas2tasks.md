@@ -61,7 +61,7 @@
 
 ```bash
 # 1. Clone
-git clone https://github.com/openclawchen8-lgtm/ideas2tasks.git
+git clone https://github.com/gentoobreaking/ideas2tasks.git
 cd ideas2tasks
 
 # 2. 安裝依賴
@@ -120,8 +120,8 @@ ideas2tasks/
 
 ## 📂 相關資源
 
-- [Gold Monitor Pro — 黃金自動監控系統](https://github.com/openclawchen8-lgtm/gold-monitor-pro)
-- [OpenClaw 備份自動化](https://github.com/openclawchen8-lgtm/openclaw-backup)
+- [Gold Monitor Pro — 黃金自動監控系統](https://github.com/gentoobreaking/gold-monitor-pro)
+- [OpenClaw 備份自動化](https://github.com/gentoobreaking/openclaw-backup)
 
 ---
 

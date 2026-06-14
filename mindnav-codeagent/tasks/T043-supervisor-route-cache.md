@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/547
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/547
 title: T043 - Supervisor 路由快取機制
 type: Feature
 priority: medium

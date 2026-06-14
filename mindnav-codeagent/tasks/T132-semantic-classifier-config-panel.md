@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/639
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/639
 title: 語意分類模型前端配置面板
 type: Feature
 priority: P1

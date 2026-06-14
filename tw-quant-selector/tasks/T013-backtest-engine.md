@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/677
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/677
 title: 回測引擎（含倖存者偏差 / Look-ahead bias 防護）
 type: task
 priority: high

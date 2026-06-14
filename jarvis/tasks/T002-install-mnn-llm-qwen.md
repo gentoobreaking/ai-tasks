@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/736
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/736
 title: T002-安裝MNN-LLM與下載Qwen模型
 type: Feature
 priority: high

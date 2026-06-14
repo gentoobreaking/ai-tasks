@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/560
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/560
 title: REST API 標準化
 type: Feature
 priority: high

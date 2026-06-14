@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/723
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/723
 title: 實作即時損益監控 (Live P/L Monitoring)
 type: feature
 priority: high

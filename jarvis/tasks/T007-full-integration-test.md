@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/742
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/742
 title: T007-全流程整合測試
 type: Verification
 priority: high

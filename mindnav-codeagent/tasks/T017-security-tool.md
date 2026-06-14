@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/487
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/487
 title: T017 - 安全沙盒工具整合 (Security Sandbox Tool Integration)
 type: Feature
 priority: high

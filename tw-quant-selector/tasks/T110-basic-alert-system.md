@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/819
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/819
 title: 基础警示系统实作（资料新鲜度 + 系统健康）
 type: feature
 priority: high

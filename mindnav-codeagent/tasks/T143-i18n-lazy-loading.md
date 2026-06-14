@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/652
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/652
 title: Implement lazy loading for translations using i18next-http-backend
 type: enhancement
 priority: low

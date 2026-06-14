@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/708
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/708
 title: 因子相關性矩陣
 type: feature
 priority: medium

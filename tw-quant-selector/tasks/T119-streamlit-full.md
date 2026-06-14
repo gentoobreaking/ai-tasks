@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/828
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/828
 title: Streamlit 完整版实作（pages 4-6）
 type: feature
 priority: medium

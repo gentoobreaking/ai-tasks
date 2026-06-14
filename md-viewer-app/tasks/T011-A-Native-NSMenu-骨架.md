@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/353
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/353
 title: "[T011-A] Native NSMenu 骨架"
 type: subtask
 status: done

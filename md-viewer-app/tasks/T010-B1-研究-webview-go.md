@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/97
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/97
 title: "[T010-B1] 研究 webview_go 是否暴露 NSWindow"
 type: subtask
 status: done

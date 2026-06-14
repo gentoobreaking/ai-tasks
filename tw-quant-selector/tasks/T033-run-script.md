@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/686
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/686
 title: 多功能執行腳本 run.sh
 type: feature
 priority: medium

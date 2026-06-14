@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/727
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/727
 title: Signals / Dashboard 表格改用 BaseTable 統一元件
 type: refactor
 priority: medium

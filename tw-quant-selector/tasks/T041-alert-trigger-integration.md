@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/719
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/719
 title: 損益告警觸發邏輯與 Telegram/Email 整合
 type: feature
 priority: high

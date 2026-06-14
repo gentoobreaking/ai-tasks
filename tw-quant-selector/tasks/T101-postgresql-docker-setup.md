@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/838
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/838
 title: PostgreSQL 环境建置（Docker 版本）
 type: feature
 priority: high

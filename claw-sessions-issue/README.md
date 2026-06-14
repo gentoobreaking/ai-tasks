@@ -28,7 +28,7 @@
 
 | # | 名稱 | 狀態 |
 |---|------|------|
-| [T001](https://github.com/openclawchen8-lgtm/openclaw-tasks/blob/main/claw-sessions-issue/tasks/T001.md) | 幫我寫一篇howto關於openclaw chat sessions的說明及關聯與實務上會碰到哪些問 | ✅ done |
+| [T001](https://github.com/gentoobreaking/ai-tasks/blob/main/claw-sessions-issue/tasks/T001.md) | 幫我寫一篇howto關於openclaw chat sessions的說明及關聯與實務上會碰到哪些問 | ✅ done |
 
 **✅ done: 1 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 0**
 

@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/753
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/753
 title: 統一模型設定系統（Multi-Backend）
 type: Feature
 priority: medium

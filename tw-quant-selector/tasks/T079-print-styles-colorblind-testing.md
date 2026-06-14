@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/733
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/733
 title: 完成 Print Styles (T059) 與 Color-Blind 人工測試 (T054)
 type: feature
 priority: low

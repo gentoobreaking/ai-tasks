@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/519
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/519
 title: T013 - 統一推理接口與 LLM 資源池化
 type: Feature
 priority: medium

@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/741
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/741
 title: T006-口型同步測試與記憶體優化驗證
 type: Verification
 priority: high

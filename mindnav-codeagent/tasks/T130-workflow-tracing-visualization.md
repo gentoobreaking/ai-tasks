@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/637
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/637
 title: Workflow 執行追蹤與視覺化
 type: Feature
 priority: P3

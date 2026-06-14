@@ -28,7 +28,7 @@
 
 | # | 名稱 | 狀態 |
 |---|------|------|
-| [T001](https://github.com/openclawchen8-lgtm/openclaw-tasks/blob/main/gpt-sovits-voice-presets-research/tasks/T001.md) | 研究 GPT-SoVITS 各版本內建語音/音色選項 | ✅ done |
+| [T001](https://github.com/gentoobreaking/ai-tasks/blob/main/gpt-sovits-voice-presets-research/tasks/T001.md) | 研究 GPT-SoVITS 各版本內建語音/音色選項 | ✅ done |
 
 **✅ done: 1 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 0**
 

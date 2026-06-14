@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/521
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/521
 title: T016 - 分散式持久化與任務隊列擴展 (Distributed Persistence & Scaling)
 type: Feature
 priority: medium

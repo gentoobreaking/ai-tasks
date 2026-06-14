@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/582
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/582
 title: T059 - 技能自動優化迴路
 type: Feature
 priority: medium

@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/534
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/534
 title: T030 - 驗證環境建置與記憶管理 AC 完成
 type: Feature
 priority: medium

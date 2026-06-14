@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/796
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/796
 title: ReviewGate 多類型審查擴展
 type: Feature
 priority: P2

@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/840
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/840
 title: Schema 迁移规划与实作（DuckDB → PostgreSQL）
 type: feature
 priority: high

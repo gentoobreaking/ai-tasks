@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/359
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/359
 title: "[T011-G] Zoom step 動態套用"
 type: subtask
 status: done

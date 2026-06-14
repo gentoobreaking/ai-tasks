@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/661
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/661
 title: 格式化工具與 Tooltip 元件
 type: feature
 priority: high

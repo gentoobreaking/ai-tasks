@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/831
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/831
 title: 10 种智慧警示条件实作（Pandas 筛选）
 type: feature
 priority: high

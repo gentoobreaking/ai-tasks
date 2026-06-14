@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/804
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/804
 title: 移除 Strategy 頁面大師策略庫硬編碼假資料
 type: refactor
 priority: high

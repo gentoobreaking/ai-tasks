@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/818
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/818
 title: institutional_flows 资料表建立与週更新
 type: feature
 priority: medium

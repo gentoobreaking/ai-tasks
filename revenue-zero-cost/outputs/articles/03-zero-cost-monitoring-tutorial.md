@@ -579,8 +579,8 @@ payload.text: "python3 /Users/claw/scripts/gold_monitor.py --check"
 
 ## 相關資源
 
-- 完整程式碼：https://github.com/openclawchen8-lgtm/gold-monitor-pro
-- 諮詢表單：https://github.com/openclawchen8-lgtm/automation-portfolio/blob/main/templates/inquiry-form.md
+- 完整程式碼：https://github.com/gentoobreaking/gold-monitor-pro
+- 諮詢表單：https://github.com/gentoobreaking/automation-portfolio/blob/main/templates/inquiry-form.md
 
 ---
 

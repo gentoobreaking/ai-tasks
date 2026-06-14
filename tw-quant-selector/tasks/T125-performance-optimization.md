@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/834
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/834
 title: 风控与效能优化（Rate Limiting + 向量化）
 type: feature
 priority: high

@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/704
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/704
 title: 策略預設組合與宇宙篩選強化
 type: feature
 priority: high

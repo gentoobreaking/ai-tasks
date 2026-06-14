@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/648
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/648
 title: 動態並行度管理
 type: Feature
 priority: P2

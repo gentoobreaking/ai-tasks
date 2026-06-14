@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/632
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/632
 type: Chore
 priority: P0
 status: done

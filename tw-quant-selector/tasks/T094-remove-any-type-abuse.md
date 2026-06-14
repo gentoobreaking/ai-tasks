@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/807
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/807
 title: 移除前端 any 型別濫用
 type: refactor
 priority: low

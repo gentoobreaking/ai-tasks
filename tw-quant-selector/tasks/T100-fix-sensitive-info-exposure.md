@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/813
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/813
 title: 修復敏感資訊透過 API 暴露
 type: security
 priority: high

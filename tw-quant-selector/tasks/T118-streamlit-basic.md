@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/827
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/827
 title: Streamlit 分析看板基础版实作
 type: feature
 priority: medium

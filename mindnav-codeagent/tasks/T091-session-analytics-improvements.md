@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/599
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/599
 title: Sessions 狀態欄位 + Analytics 統計總覽 tab
 type: Feature
 priority: medium

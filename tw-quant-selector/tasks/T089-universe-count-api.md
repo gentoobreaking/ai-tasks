@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/802
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/802
 task_id: T089
 title: "修正篩選結果預估：新增後端 API 查詢實際數量"
 status: done

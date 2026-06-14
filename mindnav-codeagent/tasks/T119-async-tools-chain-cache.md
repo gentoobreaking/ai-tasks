@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/617
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/617
 type: Refactor
 priority: P1
 status: done

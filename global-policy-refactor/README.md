@@ -30,9 +30,9 @@
 
 | # | 名稱 | 狀態 |
 |---|------|------|
-| [T001](https://github.com/openclawchen8-lgtm/openclaw-tasks/blob/main/global-policy-refactor/tasks/T001.md) | T001 — 建立 GLOBAL-POLICY.md | ✅ done |
-| [T002](https://github.com/openclawchen8-lgtm/openclaw-tasks/blob/main/global-policy-refactor/tasks/T002.md) | T002 — 更新各 AGENTS.md | ✅ done |
-| [T003](https://github.com/openclawchen8-lgtm/openclaw-tasks/blob/main/global-policy-refactor/tasks/T003.md) | T003 — 驗證架構生效 | ✅ done |
+| [T001](https://github.com/gentoobreaking/ai-tasks/blob/main/global-policy-refactor/tasks/T001.md) | T001 — 建立 GLOBAL-POLICY.md | ✅ done |
+| [T002](https://github.com/gentoobreaking/ai-tasks/blob/main/global-policy-refactor/tasks/T002.md) | T002 — 更新各 AGENTS.md | ✅ done |
+| [T003](https://github.com/gentoobreaking/ai-tasks/blob/main/global-policy-refactor/tasks/T003.md) | T003 — 驗證架構生效 | ✅ done |
 
 **✅ done: 3 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 0**
 

@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/710
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/710
 title: 大師策略篩選器模式（後端）
 type: feature
 priority: medium

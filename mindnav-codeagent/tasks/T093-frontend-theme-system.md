@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/601
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/601
 title: 前端主題系統（5 themes + persistence）
 type: Feature
 priority: medium

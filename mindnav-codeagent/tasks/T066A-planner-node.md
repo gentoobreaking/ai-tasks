@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/589
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/589
 title: T066A - 任務拆解引擎：Planner Node 與 Pydantic 模型
 type: Feature
 priority: high

@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/848
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/848
 title: 補齊未完成的測試項目（T123/T124/T130-T133）
 type: test
 priority: medium

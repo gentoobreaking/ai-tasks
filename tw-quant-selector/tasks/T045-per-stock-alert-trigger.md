@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/688
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/688
 title: 個股損益告警觸發 API
 type: feature
 priority: high

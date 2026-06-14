@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/728
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/728
 title: CSS State Classes 接入元件動態行為
 type: feature
 priority: medium

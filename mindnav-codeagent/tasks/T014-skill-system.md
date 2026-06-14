@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/520
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/520
 title: T014 - 擴展性技能系統架構 (Skill System Architecture)
 type: Feature
 priority: low

@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/656
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/656
 title: 回測分析頁面
 type: feature
 priority: high

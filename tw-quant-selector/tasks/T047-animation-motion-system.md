@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/690
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/690
 title: Animation & Motion System
 type: feature
 priority: medium

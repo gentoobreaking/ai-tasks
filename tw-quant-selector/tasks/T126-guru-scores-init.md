@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/835
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/835
 title: guru_scores 表初始化（Piotroski F-Score）
 type: feature
 priority: medium

@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/484
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/484
 title: T001 - 環境建置與本地模型部署 (Ollama & LLM)
 type: Feature
 priority: high

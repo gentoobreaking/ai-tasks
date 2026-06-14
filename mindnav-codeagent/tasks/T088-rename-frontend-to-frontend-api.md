@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/597
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/597
 title: Rename frontend/ → frontend_api/
 type: Feature
 priority: high

@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/806
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/806
 title: 重構 Decimal 與 np.isnan 混用問題
 type: bugfix
 priority: medium

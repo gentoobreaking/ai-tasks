@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/816
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/816
 title: 效能优化与监控（PostgreSQL）
 type: feature
 priority: medium

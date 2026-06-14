@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/724
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/724
 title: 後端 factor-history API 接上 StockDetail 頁面
 type: feature
 priority: medium

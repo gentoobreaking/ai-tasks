@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/XXX
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/XXX
 title: 策略設定歷史分頁 + 批量刪除
 type: feature
 priority: medium

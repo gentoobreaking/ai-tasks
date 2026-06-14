@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/581
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/581
 title: T058 - 技能安全門禁與版本管理
 type: Feature
 priority: medium

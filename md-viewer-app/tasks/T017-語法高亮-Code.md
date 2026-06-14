@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/365
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/365
 title: "[T017] 語法高亮 Code"
 status: done
 type: Development

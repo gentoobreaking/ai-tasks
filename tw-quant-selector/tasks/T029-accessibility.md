@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/663
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/663
 title: 無障礙設計
 type: feature
 priority: high

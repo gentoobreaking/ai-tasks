@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/654
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/654
 title: 儀表板頁面
 type: feature
 priority: high

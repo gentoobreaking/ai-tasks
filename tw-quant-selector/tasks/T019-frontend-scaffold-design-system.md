@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/653
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/653
 title: 前端專案初始化與設計系統
 type: feature
 priority: high

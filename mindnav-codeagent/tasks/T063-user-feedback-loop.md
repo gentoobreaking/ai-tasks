@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/586
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/586
 title: T063 - 人工 Feedback 迴路
 type: Feature
 priority: medium

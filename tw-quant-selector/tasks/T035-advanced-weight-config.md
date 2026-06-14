@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/714
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/714
 title: 進階策略權重調整器（自動平衡與即時預覽）
 type: feature
 priority: medium

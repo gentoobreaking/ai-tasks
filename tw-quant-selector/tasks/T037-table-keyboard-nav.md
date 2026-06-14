@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/715
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/715
 title: 選股表格鍵盤導航與焦點管理
 type: feature
 priority: low

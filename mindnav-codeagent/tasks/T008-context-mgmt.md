@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/515
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/515
 title: T008 - 對話上下文管理 (Message Pruning)
 type: Feature
 priority: medium

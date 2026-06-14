@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/731
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/731
 title: 後端 data/status API 接上 Dashboard 資料狀態面板
 type: feature
 priority: low

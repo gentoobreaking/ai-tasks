@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/822
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/822
 title: 策略设定 UI 新增法人因子
 type: feature
 priority: medium

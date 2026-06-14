@@ -1,5 +1,5 @@
 ---
-github_issue: https://github.com/openclawchen8-lgtm/openclaw-tasks/issues/660
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/660
 title: 可複用 BaseTable 表格元件
 type: feature
 priority: high

@@ -28,7 +28,7 @@
 
 | # | 名稱 | 狀態 |
 |---|------|------|
-| [T001](https://github.com/openclawchen8-lgtm/openclaw-tasks/blob/main/twstock-bfp-research/tasks/T001.md) | 研究 twstock 四大買賣點判斷 | ✅ done |
+| [T001](https://github.com/gentoobreaking/ai-tasks/blob/main/twstock-bfp-research/tasks/T001.md) | 研究 twstock 四大買賣點判斷 | ✅ done |
 
 **✅ done: 1 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 0**
 
