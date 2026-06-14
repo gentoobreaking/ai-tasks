@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>自動化作品集 — 用開源工具打造，省下昂貴訂閱費</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0a0d14;
+      --surface: #111520;
+      --surface2: #181d2a;
+      --border: #1e2535;
+      --gold: #d4a843;
+      --gold-light: #e8c06a;
+      --gold-dim: #8a6b2a;
+      --text: #e8e3d9;
+      --text-muted: #8a8a9a;
+      --green: #4caf82;
+      --blue: #5b9bd5;
+      --radius: 12px;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'DM Sans', sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+    }
+    a { color: var(--gold); text-decoration: none; }
+    a:hover { color: var(--gold-light); }
+    .container { max-width: 960px; margin: 0 auto; padding: 0 24px; }
+
+    /* ── Hero ── */
+    .hero {
+      text-align: center;
+      padding: 80px 24px 60px;
+      border-bottom: 1px solid var(--border);
+    }
+    .hero-badge {
+      display: inline-block;
+      background: rgba(212,168,67,0.12);
+      border: 1px solid var(--gold-dim);
+      color: var(--gold);
+      font-size: 13px;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      padding: 5px 14px;
+      border-radius: 20px;
+      margin-bottom: 24px;
+      text-transform: uppercase;
+    }
+    .hero h1 {
+      font-family: 'Fraunces', serif;
+      font-size: clamp(2.2rem, 5vw, 3.6rem);
+      font-weight: 700;
+      line-height: 1.15;
+      color: var(--text);
+      margin-bottom: 16px;
+    }
+    .hero h1 span { color: var(--gold); }
+    .hero p {
+      font-size: 1.1rem;
+      color: var(--text-muted);
+      max-width: 540px;
+      margin: 0 auto 32px;
+    }
+    .hero-stats {
+      display: flex;
+      justify-content: center;
+      gap: 48px;
+      flex-wrap: wrap;
+    }
+    .hero-stat { text-align: center; }
+    .hero-stat .num {
+      font-family: 'Fraunces', serif;
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--gold);
+      display: block;
+    }
+    .hero-stat .label { font-size: 13px; color: var(--text-muted); }
+
+    /* ── Section titles ── */
+    .section { padding: 64px 0; border-bottom: 1px solid var(--border); }
+    .section-title {
+      font-family: 'Fraunces', serif;
+      font-size: 1.8rem;
+      margin-bottom: 8px;
+    }
+    .section-sub {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      margin-bottom: 40px;
+    }
+
+    /* ── Case cards ── */
+    .cases { display: flex; flex-direction: column; gap: 32px; }
+    .case-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 32px;
+      transition: border-color 0.2s;
+    }
+    .case-card:hover { border-color: var(--gold-dim); }
+    .case-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+    .case-emoji { font-size: 1.8rem; }
+    .case-name {
+      font-family: 'Fraunces', serif;
+      font-size: 1.3rem;
+      font-weight: 700;
+    }
+    .case-tag {
+      margin-left: auto;
+      font-size: 12px;
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      color: var(--text-muted);
+      padding: 3px 10px;
+      border-radius: 20px;
+    }
+    .case-value {
+      color: var(--gold);
+      font-size: 0.9rem;
+      font-weight: 500;
+      margin-bottom: 16px;
+    }
+    .case-body { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+    @media (max-width: 640px) { .case-body { grid-template-columns: 1fr; } }
+    .case-features { list-style: none; }
+    .case-features li {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      padding: 4px 0;
+      padding-left: 18px;
+      position: relative;
+    }
+    .case-features li::before {
+      content: '→';
+      position: absolute;
+      left: 0;
+      color: var(--gold);
+    }
+    .case-arch {
+      background: var(--bg);
+      border-radius: 8px;
+      padding: 16px;
+      font-family: 'Courier New', monospace;
+      font-size: 11px;
+      line-height: 1.6;
+      color: var(--text-muted);
+      overflow-x: auto;
+      white-space: pre;
+    }
+    .case-stats-row {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-top: 16px;
+      padding-top: 16px;
+      border-top: 1px solid var(--border);
+    }
+    .mini-stat {
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 8px 14px;
+    }
+    .mini-stat .num { font-family: 'Fraunces', serif; font-size: 1.2rem; color: var(--gold); }
+    .mini-stat .lbl { font-size: 11px; color: var(--text-muted); }
+
+    /* ── Why section ── */
+    .why-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+    @media (max-width: 640px) { .why-grid { grid-template-columns: 1fr; } }
+    .why-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px;
+      text-align: center;
+    }
+    .why-icon { font-size: 2rem; margin-bottom: 12px; }
+    .why-card h3 { font-size: 1rem; margin-bottom: 8px; }
+    .why-card p { font-size: 0.88rem; color: var(--text-muted); }
+
+    /* ── CTA ── */
+    .cta-section {
+      background: var(--surface);
+      border: 1px solid var(--gold-dim);
+      border-radius: var(--radius);
+      padding: 48px;
+      text-align: center;
+    }
+    .cta-section h2 {
+      font-family: 'Fraunces', serif;
+      font-size: 1.8rem;
+      margin-bottom: 12px;
+    }
+    .cta-section p { color: var(--text-muted); margin-bottom: 28px; }
+    .cta-btn {
+      display: inline-block;
+      background: var(--gold);
+      color: #0a0d14;
+      font-weight: 600;
+      font-size: 1rem;
+      padding: 12px 32px;
+      border-radius: 8px;
+      transition: background 0.2s;
+    }
+    .cta-btn:hover { background: var(--gold-light); color: #0a0d14; }
+
+    /* ── Footer ── */
+    footer {
+      text-align: center;
+      padding: 32px;
+      color: var(--text-muted);
+      font-size: 13px;
+      border-top: 1px solid var(--border);
+    }
+  </style>
+</head>
+<body>
+
+<!-- ═══════════════════ HERO ═══════════════════ -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-badge">Portfolio · 2026</div>
+    <h1>自動化<span>作品集</span></h1>
+    <p>用開源工具打造的自動化系統，無需昂貴訂閱費，<br>從想法到執行，全流程 AI 助力。</p>
+    <div class="hero-stats">
+      <div class="hero-stat">
+        <span class="num">3</span>
+        <span class="label">自動化專案</span>
+      </div>
+      <div class="hero-stat">
+        <span class="num">244</span>
+        <span class="label">個運行營業日</span>
+      </div>
+      <div class="hero-stat">
+        <span class="num">184</span>
+        <span class="label">個任務自動建立</span>
+      </div>
+      <div class="hero-stat">
+        <span class="num">$0</span>
+        <span class="label">額外工具成本</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ CASES ═══════════════════ -->
+<section class="section">
+  <div class="container">
+    <h2 class="section-title">📂 案例展示</h2>
+    <p class="section-sub">三個已實際運行、數據可查的自動化專案</p>
+
+    <div class="cases">
+
+      <!-- Case 1: Gold Monitor -->
+      <div class="case-card">
+        <div class="case-header">
+          <span class="case-emoji">🏆</span>
+          <span class="case-name">Gold Monitor Pro</span>
+          <span class="case-tag">黃金監控</span>
+        </div>
+        <p class="case-value">「告警比你自己盯盤還快，系統化輔助黃金投資決策」</p>
+        <div class="case-body">
+          <div>
+            <ul class="case-features">
+              <li>多金屬監控：黃金、白銀、鉑金</li>
+              <li>台灣銀行牌告直抓，無需 API Key</li>
+              <li>國際現貨價對比，交叉驗證</li>
+              <li>自訂門檻：漲跌 %、偏離均價 %</li>
+              <li>每日 22:00 自動收盤摘要</li>
+              <li>Telegram 即時告警推送</li>
+            </ul>
+          </div>
+          <div class="case-arch">## Gold Monitor Pro 架構
+┌──────────────┐
+│ 台灣銀行官網  │
+│ rate.bot.com │
+└──────┬───────┘
+       │ Python 爬蟲
+       ▼
+┌──────────────┐
+│   SQLite     │
+│  price_history│
+└──────┬───────┘
+       │  分析引擎
+       ▼
+┌──────────────┐
+│  告警觸發    │
+│  (門檻判斷)  │
+└──┬───────┬──┘
+   │       │
+   ▼       ▼
+Telegram   Email</div>
+        </div>
+        <div class="case-stats-row">
+          <div class="mini-stat"><span class="num">264</span><span class="lbl">黃金歷史記錄</span></div>
+          <div class="mini-stat"><span class="num">244</span><span class="lbl">告警觸發</span></div>
+          <div class="mini-stat"><span class="num">244</span><span class="lbl">營業日覆蓋</span></div>
+          <div class="mini-stat"><span class="num">3</span><span class="lbl">支援金屬</span></div>
+        </div>
+      </div>
+
+      <!-- Case 2: Backup -->
+      <div class="case-card">
+        <div class="case-header">
+          <span class="case-emoji">💾</span>
+          <span class="case-name">OpenClaw 備份自動化</span>
+          <span class="case-tag">資料安全</span>
+        </div>
+        <p class="case-value">「每 2 小時自動打包上傳，資料永不丢失」</p>
+        <div class="case-body">
+          <div>
+            <ul class="case-features">
+              <li>全自動打包：Skills、Howto、Tasks</li>
+              <li>GitHub Releases 永久存檔</li>
+              <li>失敗即時 Telegram 告警</li>
+              <li>自動清理 30 天前舊存檔</li>
+              <li>排除敏感目錄，兼顧隱私</li>
+              <li>每次記錄備份大小，異常可察覺</li>
+            </ul>
+          </div>
+          <div class="case-arch">## Backup Automation
+cron (每2小時)
+       │
+       ▼
+┌──────────────────┐
+│   tar.gz 打包    │
+│  ~130 MB/次     │
+└──────┬───────────┘
+       │
+       ├──→ GitHub Releases
+       │     (永久存檔)
+       │
+       └──→ Telegram ✅/❌</div>
+        </div>
+        <div class="case-stats-row">
+          <div class="mini-stat"><span class="num">2h</span><span class="lbl">備份頻率</span></div>
+          <div class="mini-stat"><span class="num">130</span><span class="lbl">MB/次</span></div>
+          <div class="mini-stat"><span class="num">5</span><span class="lbl">覆蓋目錄</span></div>
+          <div class="mini-stat"><span class="num">30d</span><span class="lbl">自動清理</span></div>
+        </div>
+      </div>
+
+      <!-- Case 3: ideas2tasks -->
+      <div class="case-card">
+        <div class="case-header">
+          <span class="case-emoji">💡</span>
+          <span class="case-name">ideas2tasks 工作流</span>
+          <span class="case-tag">創意管理</span>
+        </div>
+        <p class="case-value">「想到就建任務，AI 幫你追蹤到底」</p>
+        <div class="case-body">
+          <div>
+            <ul class="case-features">
+              <li>多格式解析：task.N、[ ]、## Todo</li>
+              <li>自動分類指派至正確專案</li>
+              <li>三層去重防護，精確 + 相似度</li>
+              <li>Tasks 目錄為唯一事實來源</li>
+              <li>GitHub Issues + Projects 同步</li>
+              <li>任務全完成自動歸檔 _done/</li>
+            </ul>
+          </div>
+          <div class="case-arch">## ideas2tasks Workflow
+/Users/claw/Ideas/
+       │ 每小時掃描
+       ▼
+┌──────────────────┐
+│  lifecycle.py    │
+│  分類 + 去重      │
+└──────┬───────────┘
+       │
+       ▼
+┌──────────────────┐
+│ executor.py      │
+│ 建立 Tasks/      │
+└──────┬───────────┘
+       │
+       ├──→ GitHub Issues
+       └──→ GitHub Board
+       │
+       ▼
+   _done/ (歸檔)</div>
+        </div>
+        <div class="case-stats-row">
+          <div class="mini-stat"><span class="num">21</span><span class="lbl">已處理想法</span></div>
+          <div class="mini-stat"><span class="num">184</span><span class="lbl">建立任務</span></div>
+          <div class="mini-stat"><span class="num">28+</span><span class="lbl">涵蓋專案</span></div>
+          <div class="mini-stat"><span class="num">1h</span><span class="lbl">掃描頻率</span></div>
+        </div>
+      </div>
+
+    </div><!-- /.cases -->
+  </div>
+</section>
+
+<!-- ═══════════════════ WHY ═══════════════════ -->
+<section class="section">
+  <div class="container">
+    <h2 class="section-title">為什麼找我？</h2>
+    <p class="section-sub">不是賣軟體，是幫你打造適合自己的自動化系統</p>
+    <div class="why-grid">
+      <div class="why-card">
+        <div class="why-icon">🛠️</div>
+        <h3>開源工具優先</h3>
+        <p>全部使用免費開源工具（Python、OpenClaw、SQLite、GitHub），零訂閱費，無供應商鎖定</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">🔧</div>
+        <h3>按需定制</h3>
+        <p>不做通用產品，針對你的需求、工作流、使用場景設計，部署在你自己環境</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">🔄</div>
+        <h3>長期維護</h3>
+        <p>系統化交付，有完整的程式碼、文件、使用手冊，後續可自行修改</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ CTA ═══════════════════ -->
+<section class="section">
+  <div class="container">
+    <div class="cta-section">
+      <h2>有想法想自動化？</h2>
+      <p>把重複的事丢給系統，你需要做的只剩下決策。</p>
+      <a href="https://t.me/" class="cta-btn">📩 聯絡我</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <p>自動化作品集 · 2026 · 全部專案開源可查</p>
+    <p style="margin-top:8px; font-size:11px; color: var(--text-muted);">
+      GitHub: <a href="https://github.com/openclawchen8-lgtm">openclawchen8-lgtm</a>
+      &nbsp;·&nbsp;
+      Gold Monitor Pro · Backup Automation · ideas2tasks
+    </p>
+  </div>
+</footer>
+
+</body>
+</html>

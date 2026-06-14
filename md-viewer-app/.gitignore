@@ -1,0 +1,21 @@
+# Go
+vendor/
+*.exe
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+*.app
+
+# Fyne / build
+fyne-apps/
+
+# macOS
+.DS_Store
+*.swp
+*~
+
+# IDE
+.idea/
+.vscode/

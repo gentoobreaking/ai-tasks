@@ -1,0 +1,40 @@
+{
+  "generated": "2026-04-20T18:50:00+08:00",
+  "gold_monitor_pro": {
+    "status": "active",
+    "first_record": "2025-04-21",
+    "last_record": "2026-04-17",
+    "business_days": 244,
+    "total_records": 276,
+    "records_by_metal": {
+      "gold": 264,
+      "silver": 6,
+      "platinum": 6
+    },
+    "alert_triggers": 244,
+    "monitoring_frequency": "每10分鐘 (09:00-21:00)",
+    "daily_close_report": "每個交易日 22:00",
+    "alerts_per_month_approx": 60
+  },
+  "backup_automation": {
+    "status": "active",
+    "first_backup": "2026-04-12",
+    "frequency": "每2小時",
+    "coverage": ["Skills", "Howto", "Tasks", "Agents", "Workspace"],
+    "excluded": [".git", "node_modules", "session_logs", ".openclaw"],
+    "typical_size_mb": 130,
+    "recent_backups": [
+      "qclaw-full-20260419_123031.tar.gz"
+    ]
+  },
+  "ideas2tasks": {
+    "status": "active",
+    "processed_ideas_total": 21,
+    "active_ideas": 2,
+    "done_ideas": 21,
+    "tasks_created": 184,
+    "projects_covered": 28,
+    "scan_frequency": "每小時",
+    "active_idea_names": ["gold-monitor-issue", "github-data-review"]
+  }
+}

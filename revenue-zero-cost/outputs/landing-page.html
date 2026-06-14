@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI 自動化監控系統 | Gold Monitor Pro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-dark: #0a0d14;
+            --bg-card: #12161f;
+            --bg-card-hover: #1a1f2a;
+            --gold: #d4a843;
+            --gold-light: #e8c76a;
+            --gold-dark: #b8922f;
+            --cream: #f5f0e8;
+            --cream-muted: #a8a39a;
+            --border: rgba(212, 168, 67, 0.15);
+            --shadow: rgba(0, 0, 0, 0.4);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'DM Sans', sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--cream);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Grain texture overlay */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            opacity: 0.03;
+            z-index: 1000;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* Typography */
+        h1, h2, h3 {
+            font-family: 'Fraunces', serif;
+            font-weight: 600;
+            letter-spacing: -0.02em;
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            padding: 20px 0;
+            background: linear-gradient(to bottom, var(--bg-dark), transparent);
+            backdrop-filter: blur(10px);
+        }
+
+        nav .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: 'Fraunces', serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--gold);
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 32px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--cream-muted);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--gold);
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            padding: 120px 24px 80px;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 150%;
+            height: 100%;
+            background: radial-gradient(ellipse at center top, rgba(212, 168, 67, 0.12) 0%, transparent 60%);
+            pointer-events: none;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(
+                45deg,
+                transparent 40%,
+                rgba(212, 168, 67, 0.03) 45%,
+                rgba(212, 168, 67, 0.05) 50%,
+                rgba(212, 168, 67, 0.03) 55%,
+                transparent 60%
+            );
+            animation: shimmer 8s ease-in-out infinite;
+            pointer-events: none;
+        }
+
+        @keyframes shimmer {
+            0%, 100% { transform: translateX(-30%) translateY(-30%) rotate(0deg); }
+            50% { transform: translateX(30%) translateY(30%) rotate(180deg); }
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
+        }
+
+        .hero h1 {
+            font-size: clamp(2.5rem, 6vw, 4rem);
+            line-height: 1.1;
+            margin-bottom: 24px;
+            background: linear-gradient(135deg, var(--cream) 0%, var(--gold-light) 50%, var(--cream) 100%);
+            background-size: 200% auto;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: gradient-shift 4s ease-in-out infinite;
+        }
+
+        @keyframes gradient-shift {
+            0%, 100% { background-position: 0% center; }
+            50% { background-position: 100% center; }
+        }
+
+        .hero p {
+            font-size: clamp(1.1rem, 2vw, 1.4rem);
+            color: var(--cream-muted);
+            max-width: 600px;
+            margin: 0 auto;
+            font-weight: 400;
+        }
+
+        .hero-cta {
+            margin-top: 40px;
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 14px 28px;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            border: none;
+            font-family: 'DM Sans', sans-serif;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--gold) 0%, var(--gold-dark) 100%);
+            color: var(--bg-dark);
+            box-shadow: 0 4px 20px rgba(212, 168, 67, 0.3);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 30px rgba(212, 168, 67, 0.4);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--cream);
+            border: 1px solid var(--border);
+        }
+
+        .btn-secondary:hover {
+            background: rgba(212, 168, 67, 0.1);
+            border-color: var(--gold);
+        }
+
+        /* Section styles */
+        section {
+            padding: 100px 0;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .section-header h2 {
+            font-size: clamp(2rem, 4vw, 2.8rem);
+            margin-bottom: 16px;
+            color: var(--cream);
+        }
+
+        .section-header p {
+            color: var(--cream-muted);
+            font-size: 1.1rem;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        /* Services Section */
+        .services {
+            background: linear-gradient(180deg, var(--bg-dark) 0%, rgba(18, 22, 31, 0.5) 100%);
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 24px;
+        }
+
+        .service-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 32px;
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--gold-dark), var(--gold), var(--gold-dark));
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-8px);
+            background: var(--bg-card-hover);
+            border-color: rgba(212, 168, 67, 0.3);
+            box-shadow: 0 20px 40px var(--shadow);
+        }
+
+        .service-card:hover::before {
+            opacity: 1;
+        }
+
+        .service-icon {
+            width: 56px;
+            height: 56px;
+            background: linear-gradient(135deg, rgba(212, 168, 67, 0.15) 0%, rgba(212, 168, 67, 0.05) 100%);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+        }
+
+        .service-card h3 {
+            font-size: 1.25rem;
+            margin-bottom: 12px;
+            color: var(--cream);
+        }
+
+        .service-card p {
+            color: var(--cream-muted);
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+
+        /* Feature Comparison Section */
+        .features {
+            background: var(--bg-dark);
+        }
+
+        .table-wrapper {
+            overflow-x: auto;
+            border-radius: 16px;
+            border: 1px solid var(--border);
+        }
+
+        .features-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: var(--bg-card);
+            min-width: 600px;
+        }
+
+        .features-table th,
+        .features-table td {
+            padding: 20px 24px;
+            text-align: left;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .features-table th {
+            font-family: 'Fraunces', serif;
+            font-weight: 600;
+            font-size: 1.1rem;
+            background: var(--bg-card-hover);
+            color: var(--cream);
+        }
+
+        .features-table th:first-child {
+            border-radius: 16px 0 0 0;
+        }
+
+        .features-table th:last-child {
+            border-radius: 0 16px 0 0;
+        }
+
+        .features-table td {
+            color: var(--cream-muted);
+            font-size: 0.95rem;
+        }
+
+        .features-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .features-table tr:hover td {
+            background: rgba(212, 168, 67, 0.03);
+        }
+
+        .features-table .highlight-col {
+            background: rgba(212, 168, 67, 0.08);
+        }
+
+        .features-table .highlight-col td {
+            color: var(--cream);
+        }
+
+        .check {
+            color: var(--gold);
+            font-weight: 600;
+        }
+
+        .cross {
+            color: var(--cream-muted);
+            opacity: 0.5;
+        }
+
+        /* Pricing Section */
+        .pricing {
+            background: linear-gradient(180deg, var(--bg-dark) 0%, rgba(18, 22, 31, 0.3) 100%);
+        }
+
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 24px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .pricing-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            padding: 40px 32px;
+            text-align: center;
+            transition: all 0.4s ease;
+            position: relative;
+        }
+
+        .pricing-card.featured {
+            border-color: var(--gold);
+            background: linear-gradient(180deg, rgba(212, 168, 67, 0.08) 0%, var(--bg-card) 100%);
+            transform: scale(1.05);
+        }
+
+        .pricing-card.featured::before {
+            content: '最受歡迎';
+            position: absolute;
+            top: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: linear-gradient(135deg, var(--gold) 0%, var(--gold-dark) 100%);
+            color: var(--bg-dark);
+            padding: 6px 20px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .pricing-card:hover {
+            transform: translateY(-8px);
+            border-color: rgba(212, 168, 67, 0.4);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+        }
+
+        .pricing-card.featured:hover {
+            transform: scale(1.05) translateY(-8px);
+        }
+
+        .pricing-tier {
+            font-family: 'Fraunces', serif;
+            font-size: 1.5rem;
+            color: var(--cream);
+            margin-bottom: 8px;
+        }
+
+        .pricing-price {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--gold);
+            margin-bottom: 8px;
+        }
+
+        .pricing-price span {
+            font-size: 1rem;
+            color: var(--cream-muted);
+            font-weight: 400;
+        }
+
+        .pricing-desc {
+            color: var(--cream-muted);
+            margin-bottom: 32px;
+            font-size: 0.9rem;
+        }
+
+        .pricing-features {
+            list-style: none;
+            text-align: left;
+            margin-bottom: 32px;
+        }
+
+        .pricing-features li {
+            padding: 10px 0;
+            color: var(--cream-muted);
+            font-size: 0.95rem;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .pricing-features li::before {
+            content: '✓';
+            color: var(--gold);
+            font-weight: 700;
+        }
+
+        .pricing-card .btn {
+            width: 100%;
+            justify-content: center;
+        }
+
+        /* CTA Section */
+        .cta {
+            background: linear-gradient(180deg, rgba(18, 22, 31, 0.3) 0%, var(--bg-dark) 100%);
+            text-align: center;
+            padding: 120px 0;
+        }
+
+        .cta h2 {
+            font-size: clamp(2rem, 4vw, 2.8rem);
+            margin-bottom: 24px;
+            color: var(--cream);
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+
+        .cta .btn {
+            padding: 18px 36px;
+            font-size: 1.1rem;
+        }
+
+        /* Footer */
+        footer {
+            border-top: 1px solid var(--border);
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        footer p {
+            color: var(--cream-muted);
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: var(--gold);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: var(--gold-light);
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-in {
+            animation: fadeInUp 0.8s ease forwards;
+        }
+
+        .delay-1 { animation-delay: 0.1s; }
+        .delay-2 { animation-delay: 0.2s; }
+        .delay-3 { animation-delay: 0.3s; }
+        .delay-4 { animation-delay: 0.4s; }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .hero {
+                padding: 100px 20px 60px;
+            }
+
+            section {
+                padding: 60px 0;
+            }
+
+            .pricing-card.featured {
+                transform: none;
+            }
+
+            .pricing-card.featured:hover {
+                transform: translateY(-8px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <a href="#" class="logo">AI Monitor</a>
+            <ul class="nav-links">
+                <li><a href="#services">服務項目</a></li>
+                <li><a href="#features">功能比較</a></li>
+                <li><a href="#pricing">價格方案</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>用 AI 自動化，釋放你的時間</h1>
+            <p>OpenClaw 驅動的智能監控系統｜從黃金價格追蹤到全自動化工作流</p>
+            <div class="hero-cta">
+                <a href="#pricing" class="btn btn-primary">免費開始</a>
+                <a href="#features" class="btn btn-secondary">了解更多</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>我們的服務</h2>
+                <p>一站式 AI 自動化解決方案</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🔔</div>
+                    <h3>智能監控告警</h3>
+                    <p>每10分鐘自動檢查，觸達目標價即時通知。不錯過任何市場機會。</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">⚙️</div>
+                    <h3>自動化工作流</h3>
+                    <p>定時任務、條件觸發、零人工干預。設定好規則，讓 AI 為你運轉。</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">☁️</div>
+                    <h3>數據備份系統</h3>
+                    <p>多雲端自動備份，永不遺失重要資料。安全可靠的儲存方案。</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">💼</div>
+                    <h3>技術顧問服務</h3>
+                    <p>OpenClaw 部署、優化、客製化開發。專業團隊為你護航。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feature Comparison Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header">
+                <h2>Gold Monitor Pro 功能比較</h2>
+                <p>選擇最適合你的方案</p>
+            </div>
+            <div class="table-wrapper">
+                <table class="features-table">
+                    <thead>
+                        <tr>
+                            <th>功能</th>
+                            <th>免費版</th>
+                            <th class="highlight-col">進階版</th>
+                            <th>企業版</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>數據源</td>
+                            <td>台銀單一</td>
+                            <td class="highlight-col">台銀 + 國際現貨</td>
+                            <td>多源聚合 + API</td>
+                        </tr>
+                        <tr>
+                            <td>歷史數據</td>
+                            <td>7天</td>
+                            <td class="highlight-col">1年</td>
+                            <td>無限</td>
+                        </tr>
+                        <tr>
+                            <td>告警通道</td>
+                            <td>Telegram</td>
+                            <td class="highlight-col">Telegram + Email</td>
+                            <td>全通道 + Webhook</td>
+                        </tr>
+                        <tr>
+                            <td>圖表</td>
+                            <td>基礎線圖</td>
+                            <td class="highlight-col">TradingView</td>
+                            <td>TradingView + 自定義</td>
+                        </tr>
+                        <tr>
+                            <td>API 訪問</td>
+                            <td><span class="cross">✗</span></td>
+                            <td class="highlight-col"><span class="cross">✗</span></td>
+                            <td><span class="check">✓</span></td>
+                        </tr>
+                        <tr>
+                            <td>技術支持</td>
+                            <td>社群</td>
+                            <td class="highlight-col">Email</td>
+                            <td>優先 + 私有部署</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <div class="section-header">
+                <h2>價格方案</h2>
+                <p>透明定價，無隱藏費用</p>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3 class="pricing-tier">免費版</h3>
+                    <div class="pricing-price">$0 <span>/ 終身</span></div>
+                    <p class="pricing-desc">適合入門體驗</p>
+                    <ul class="pricing-features">
+                        <li>台銀單一數據源</li>
+                        <li>7天歷史數據</li>
+                        <li>Telegram 告警</li>
+                        <li>基礎線圖</li>
+                        <li>社群支持</li>
+                    </ul>
+                    <a href="#" class="btn btn-secondary">免費開始</a>
+                </div>
+                <div class="pricing-card featured">
+                    <h3 class="pricing-tier">進階版</h3>
+                    <div class="pricing-price">$9.9 <span>/ 月</span></div>
+                    <p class="pricing-desc">最適合個人投資者</p>
+                    <ul class="pricing-features">
+                        <li>台銀 + 國際現貨</li>
+                        <li>1年歷史數據</li>
+                        <li>Telegram + Email 告警</li>
+                        <li>TradingView 圖表</li>
+                        <li>Email 優先支持</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary">立即升級</a>
+                </div>
+                <div class="pricing-card">
+                    <h3 class="pricing-tier">企業版</h3>
+                    <div class="pricing-price">$299 <span>/ 年</span></div>
+                    <p class="pricing-desc">企業級解決方案</p>
+                    <ul class="pricing-features">
+                        <li>多源聚合 + API</li>
+                        <li>無限歷史數據</li>
+                        <li>全通道 + Webhook</li>
+                        <li>自定義圖表</li>
+                        <li>優先 + 私有部署</li>
+                    </ul>
+                    <a href="#" class="btn btn-secondary">聯繫我們</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <h2>從今天開始，不再錯過任何市場時機</h2>
+            <p style="color: var(--cream-muted); max-width: 500px; margin: 0 auto;">立即開始使用 AI 自動化監控系統，讓科技為你創造財富自由。</p>
+            <div class="cta-buttons">
+                <a href="#" class="btn btn-primary">免費開始</a>
+                <a href="#" class="btn btn-secondary">進階版 $9.9/月</a>
+                <a href="#" class="btn btn-secondary">企業版 $299/年</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>Built with <a href="#">OpenClaw</a> | GitHub: <a href="#">openclawchen8-lgtm</a></p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Intersection Observer for scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.service-card, .pricing-card').forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(30px)';
+            card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(card);
+        });
+    </script>
+</body>
+</html>

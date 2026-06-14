@@ -1,0 +1,118 @@
+# md-viewer-app
+
+## 已實作功能
+
+| 功能 |
+|------|
+| Fyne 環境與建置能力 |
+| Go 骨架與 Window |
+| Markdown 解析與 WebView 渲染 |
+| 深色模式支援 |
+| Build 與測試 macOS App |
+| 自動化測試快捷鍵與縮放功能 |
+| 專案分裂與對比評估 |
+| Icon 設定 |
+| webview_go 是否暴露 NSWindow |
+| 支援拖拉開啟 md 檔案 |
+| Native NSMenu 骨架 |
+| 選單結構與 shortcut 綁定 |
+| Preferences ⌘, 觸發設定面板 |
+| Config 持久化 |
+| 設定結構與預設值 |
+| Settings Panel UI |
+| zoomIn/zoomOut 永遠用舊值 |
+| i18n 語系切換不生效 |
+| menubar 預設顯示英文 |
+| Toggle Full Screen ⌘F 無實現 |
+| Zoom 三個附帶 Bug 修復 |
+| Zoom step 動態套用 |
+| macOS 文件關聯（雙擊 .md 用 md-viewer 開啟） |
+| Native NSMenu + 設定面板 + 縮放靈敏度持久化 |
+| 極速渲染引擎 |
+| 檔案變動監控 |
+| 多主題切換 |
+| 自動大綱 TOC |
+| 語法高亮 Code |
+| PDF/HTML 匯出 |
+| 搜尋文件內容 |
+| 視窗大小/位置/檔案記憶 |
+| 最近開啟的檔案 |
+| T028-FIX-ISSUES |
+| T028 - 翻譯功能 |
+
+## Skip 項目
+
+| Task | 說明 |
+|------|------|
+| [T4-實作-側邊欄-檔案列表](https://github.com/openclawchen8-lgtm/openclaw-tasks/blob/main/md-viewer-app/tasks/T004-實作-側邊欄-檔案列表.md) | 側邊欄檔案列表 |
+| [T15-Quick-Look-插件](https://github.com/openclawchen8-lgtm/openclaw-tasks/blob/main/md-viewer-app/tasks/T015-Quick-Look-插件.md) | Quick Look 插件 |
+| [T18-置頂小窗模式](https://github.com/openclawchen8-lgtm/openclaw-tasks/blob/main/md-viewer-app/tasks/T018-置頂小窗模式.md) | 置頂小窗模式 |
+| [T20-數學公式](https://github.com/openclawchen8-lgtm/openclaw-tasks/blob/main/md-viewer-app/tasks/T020-數學公式.md) | 數學公式 |
+| [T21-Mermaid-圖表](https://github.com/openclawchen8-lgtm/openclaw-tasks/blob/main/md-viewer-app/tasks/T021-Mermaid-圖表.md) | Mermaid 圖表 |
+
+## 開發中
+
+| Task | 名稱 | 說明 |
+|------|------|------|
+| [T26-專注模式](https://github.com/openclawchen8-lgtm/openclaw-tasks/blob/main/md-viewer-app/tasks/T026-專注模式.md) | 專注模式（Focus Mode） | |
+
+## 待實作
+
+| Task | 名稱 | 說明 |
+|------|------|------|
+| [T23-滾動位置保持](https://github.com/openclawchen8-lgtm/openclaw-tasks/blob/main/md-viewer-app/tasks/T023-滾動位置保持.md) | 滾動位置保持 | |
+| [T27-預覽連結懸停](https://github.com/openclawchen8-lgtm/openclaw-tasks/blob/main/md-viewer-app/tasks/T027-預覽連結懸停.md) | 連結懸停預覽 | |
+| [T29-ARCH-REFACTOR](https://github.com/openclawchen8-lgtm/openclaw-tasks/blob/main/md-viewer-app/tasks/T029-ARCH-REFACTOR.md) | T029-混合架構整合優化與前端解耦 | |
+
+## Task 列表
+
+| # | 名稱 | 狀態 |
+|---|------|------|
+| [T1-評估-Fyne-環境](https://github.com/openclawchen8-lgtm/openclaw-tasks/blob/main/md-viewer-app/tasks/T001-評估-Fyne-環境.md) | 評估 Fyne 環境與建置能力 | ✅ done |
+| [T2-建立-Go-骨架與-Window](https://github.com/openclawchen8-lgtm/openclaw-tasks/blob/main/md-viewer-app/tasks/T002-建立-Go-骨架與-Window.md) | 建立 Go 骨架與 Window | ✅ done |
+| [T3-實作-Markdown-解析與-WebView-渲染](https://github.com/openclawchen8-lgtm/openclaw-tasks/blob/main/md-viewer-app/tasks/T003-實作-Markdown-解析與-WebView-渲染.md) | 實作 Markdown 解析與 WebView 渲染 | ✅ done |
+| [T4-實作-側邊欄-檔案列表](https://github.com/openclawchen8-lgtm/openclaw-tasks/blob/main/md-viewer-app/tasks/T004-實作-側邊欄-檔案列表.md) | 實作側邊欄檔案列表 | ⏭️ skip |
+| [T5-實作-深色模式支援](https://github.com/openclawchen8-lgtm/openclaw-tasks/blob/main/md-viewer-app/tasks/T005-實作-深色模式支援.md) | 實作深色模式支援 | ✅ done |
+| [T6-Build-與-測試-macOS-app](https://github.com/openclawchen8-lgtm/openclaw-tasks/blob/main/md-viewer-app/tasks/T006-Build-與-測試-macOS-app.md) | Build 與測試 macOS App | ✅ done |
+| [T7-自動化測試快捷鍵與縮放](https://github.com/openclawchen8-lgtm/openclaw-tasks/blob/main/md-viewer-app/tasks/T007-自動化測試快捷鍵與縮放.md) | 自動化測試快捷鍵與縮放功能 | ✅ done |
+| [T8-專案分裂與對比評估](https://github.com/openclawchen8-lgtm/openclaw-tasks/blob/main/md-viewer-app/tasks/T008-專案分裂與對比評估.md) | 專案分裂與對比評估 | ✅ done |
+| [T9-Icon-設定](https://github.com/openclawchen8-lgtm/openclaw-tasks/blob/main/md-viewer-app/tasks/T009-Icon-設定.md) | Icon 設定 | ✅ done |
+| [T10-B1-研究-webview-go](https://github.com/openclawchen8-lgtm/openclaw-tasks/blob/main/md-viewer-app/tasks/T010-B1-研究-webview-go.md) | 研究 webview_go 是否暴露 NSWindow | ✅ done |
+| [T10-支援拖拉開啟-md-檔案](https://github.com/openclawchen8-lgtm/openclaw-tasks/blob/main/md-viewer-app/tasks/T010-支援拖拉開啟-md-檔案.md) | 支援拖拉開啟 md 檔案 | ✅ done |
+| [T11-A-Native-NSMenu-骨架](https://github.com/openclawchen8-lgtm/openclaw-tasks/blob/main/md-viewer-app/tasks/T011-A-Native-NSMenu-骨架.md) | Native NSMenu 骨架 | ✅ done |
+| [T11-B-選單結構與shortcut綁定](https://github.com/openclawchen8-lgtm/openclaw-tasks/blob/main/md-viewer-app/tasks/T011-B-選單結構與shortcut綁定.md) | 選單結構與 shortcut 綁定 | ✅ done |
+| [T11-C-Preferences觸發設定面板](https://github.com/openclawchen8-lgtm/openclaw-tasks/blob/main/md-viewer-app/tasks/T011-C-Preferences觸發設定面板.md) | Preferences ⌘, 觸發設定面板 | ✅ done |
+| [T11-D-Config持久化](https://github.com/openclawchen8-lgtm/openclaw-tasks/blob/main/md-viewer-app/tasks/T011-D-Config持久化.md) | Config 持久化 | ✅ done |
+| [T11-E-設定結構與預設值](https://github.com/openclawchen8-lgtm/openclaw-tasks/blob/main/md-viewer-app/tasks/T011-E-設定結構與預設值.md) | 設定結構與預設值 | ✅ done |
+| [T11-F-Settings-Panel-UI](https://github.com/openclawchen8-lgtm/openclaw-tasks/blob/main/md-viewer-app/tasks/T011-F-Settings-Panel-UI.md) | Settings Panel UI | ✅ done |
+| [T11-FIX-01-zoom-永遠用舊值](https://github.com/openclawchen8-lgtm/openclaw-tasks/blob/main/md-viewer-app/tasks/T011-FIX-01-zoom-永遠用舊值.md) | 修復 zoomIn/zoomOut 永遠用舊值 | ✅ done |
+| [T11-FIX-02-i18n-語系切換不生效](https://github.com/openclawchen8-lgtm/openclaw-tasks/blob/main/md-viewer-app/tasks/T011-FIX-02-i18n-語系切換不生效.md) | 修復 i18n 語系切換不生效 | ✅ done |
+| [T11-FIX-03-menubar-預設顯示英文](https://github.com/openclawchen8-lgtm/openclaw-tasks/blob/main/md-viewer-app/tasks/T011-FIX-03-menubar-預設顯示英文.md) | 修復 menubar 預設顯示英文 | ✅ done |
+| [T11-FIX-04-⌘F-全螢幕無實現](https://github.com/openclawchen8-lgtm/openclaw-tasks/blob/main/md-viewer-app/tasks/T011-FIX-04-⌘F-全螢幕無實現.md) | 修復 Toggle Full Screen ⌘F 無實現 | ✅ done |
+| [T11-FIX-05-zoom-三個附帶bug](https://github.com/openclawchen8-lgtm/openclaw-tasks/blob/main/md-viewer-app/tasks/T011-FIX-05-zoom-三個附帶bug.md) | Zoom 三個附帶 Bug 修復 | ✅ done |
+| [T11-G-Zoom-step動態套用](https://github.com/openclawchen8-lgtm/openclaw-tasks/blob/main/md-viewer-app/tasks/T011-G-Zoom-step動態套用.md) | Zoom step 動態套用 | ✅ done |
+| [T11-L-macOS-文件關聯](https://github.com/openclawchen8-lgtm/openclaw-tasks/blob/main/md-viewer-app/tasks/T011-L-macOS-文件關聯.md) | macOS 文件關聯（雙擊 .md 用 md-viewer 開啟） | ✅ done |
+| [T11-Menubar-Touchpad-靈敏度設定](https://github.com/openclawchen8-lgtm/openclaw-tasks/blob/main/md-viewer-app/tasks/T011-Menubar-Touchpad-靈敏度設定.md) | Native NSMenu + 設定面板 + 縮放靈敏度持久化 | ✅ done |
+| [T12-極速渲染引擎](https://github.com/openclawchen8-lgtm/openclaw-tasks/blob/main/md-viewer-app/tasks/T012-極速渲染引擎.md) | 極速渲染引擎 | ✅ done |
+| [T13-檔案變動監控](https://github.com/openclawchen8-lgtm/openclaw-tasks/blob/main/md-viewer-app/tasks/T013-檔案變動監控.md) | 檔案變動監控 | ✅ done |
+| [T14-多主題切換](https://github.com/openclawchen8-lgtm/openclaw-tasks/blob/main/md-viewer-app/tasks/T014-多主題切換.md) | 多主題切換 | ✅ done |
+| [T15-Quick-Look-插件](https://github.com/openclawchen8-lgtm/openclaw-tasks/blob/main/md-viewer-app/tasks/T015-Quick-Look-插件.md) | Quick Look 插件 | ⏭️ skip |
+| [T16-自動大綱-TOC](https://github.com/openclawchen8-lgtm/openclaw-tasks/blob/main/md-viewer-app/tasks/T016-自動大綱-TOC.md) | 自動大綱 TOC | ✅ done |
+| [T17-語法高亮-Code](https://github.com/openclawchen8-lgtm/openclaw-tasks/blob/main/md-viewer-app/tasks/T017-語法高亮-Code.md) | 語法高亮 Code | ✅ done |
+| [T18-置頂小窗模式](https://github.com/openclawchen8-lgtm/openclaw-tasks/blob/main/md-viewer-app/tasks/T018-置頂小窗模式.md) | 置頂小窗模式 | ⏭️ skip |
+| [T19-PDF-HTML-匯出](https://github.com/openclawchen8-lgtm/openclaw-tasks/blob/main/md-viewer-app/tasks/T019-PDF-HTML-匯出.md) | PDF/HTML 匯出 | ✅ done |
+| [T20-數學公式](https://github.com/openclawchen8-lgtm/openclaw-tasks/blob/main/md-viewer-app/tasks/T020-數學公式.md) | 數學公式 | ⏭️ skip |
+| [T21-Mermaid-圖表](https://github.com/openclawchen8-lgtm/openclaw-tasks/blob/main/md-viewer-app/tasks/T021-Mermaid-圖表.md) | Mermaid 圖表 | ⏭️ skip |
+| [T22-搜尋文件內容](https://github.com/openclawchen8-lgtm/openclaw-tasks/blob/main/md-viewer-app/tasks/T022-搜尋文件內容.md) | 搜尋文件內容 | ✅ done |
+| [T23-滾動位置保持](https://github.com/openclawchen8-lgtm/openclaw-tasks/blob/main/md-viewer-app/tasks/T023-滾動位置保持.md) | 滾動位置保持 | 📋 pending |
+| [T24-視窗大小位置記憶](https://github.com/openclawchen8-lgtm/openclaw-tasks/blob/main/md-viewer-app/tasks/T024-視窗大小位置記憶.md) | 視窗大小/位置/檔案記憶 | ✅ done |
+| [T25-最近開啟的檔案](https://github.com/openclawchen8-lgtm/openclaw-tasks/blob/main/md-viewer-app/tasks/T025-最近開啟的檔案.md) | 最近開啟的檔案 | ✅ done |
+| [T26-專注模式](https://github.com/openclawchen8-lgtm/openclaw-tasks/blob/main/md-viewer-app/tasks/T026-專注模式.md) | 專注模式（Focus Mode） | 🔧 in-progress |
+| [T27-預覽連結懸停](https://github.com/openclawchen8-lgtm/openclaw-tasks/blob/main/md-viewer-app/tasks/T027-預覽連結懸停.md) | 連結懸停預覽 | 📋 pending |
+| [T28-FIX-ISSUES](https://github.com/openclawchen8-lgtm/openclaw-tasks/blob/main/md-viewer-app/tasks/T028-FIX-ISSUES.md) | T028-FIX-ISSUES | ✅ done |
+| [T28-翻譯功能](https://github.com/openclawchen8-lgtm/openclaw-tasks/blob/main/md-viewer-app/tasks/T028-翻譯功能.md) | T028 - 翻譯功能 | ✅ done |
+| [T29-ARCH-REFACTOR](https://github.com/openclawchen8-lgtm/openclaw-tasks/blob/main/md-viewer-app/tasks/T029-ARCH-REFACTOR.md) | T029-混合架構整合優化與前端解耦 | 📋 pending |
+
+**✅ done: 35 | 🔧 in-progress: 1 | ⏭️ skip: 5 | 📋 pending: 3**
+
+> 自動生成於 2026-05-12 03:23

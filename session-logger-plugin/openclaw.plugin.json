@@ -1,0 +1,47 @@
+{
+  "id": "session-logger",
+  "name": "Session Logger",
+  "description": "Auto-save complete session logs with thinking process and tool calls",
+  "kind": "memory",
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "enabled": {
+        "type": "boolean",
+        "default": true,
+        "description": "Enable/disable session logging"
+      },
+      "outputDir": {
+        "type": "string",
+        "default": "~/sessions",
+        "description": "Directory to save session logs"
+      },
+      "filenameFormat": {
+        "type": "string",
+        "default": "{date}_{sessionKey}.jsonl",
+        "description": "Filename format: {date}, {sessionKey}, {sessionId}, {agentId}"
+      },
+      "retentionDays": {
+        "type": "number",
+        "default": 30,
+        "description": "Days to keep old log files"
+      },
+      "maxFileSizeMb": {
+        "type": "number",
+        "default": 10,
+        "description": "Max file size before rolling"
+      },
+      "includeThinking": {
+        "type": "boolean",
+        "default": true,
+        "description": "Include thinking/reasoning content"
+      },
+      "includeToolCalls": {
+        "type": "boolean",
+        "default": true,
+        "description": "Include tool calls and results"
+      }
+    }
+  }
+}

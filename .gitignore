@@ -1,0 +1,40 @@
+# 敏感配置
+.qclaw/
+.openclaw/
+
+# 環境變數
+.env
+.env.*
+
+# 暫存檔
+*.tmp
+*.log
+/tmp/
+mindnav-codeagent/models/
+xiamen-travel/node_modules/
+xiamen-travel/*/*.pptx
+xiamen-travel/images/*
+
+# Build directories
+.build/
+build/
+bin/
+obj/
+node_modules/
+dist/
+
+# Large files / Models
+*.gguf
+*.bin
+*.model
+*.onnx
+*.weights
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
