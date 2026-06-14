@@ -138,6 +138,8 @@
 | 即時技術分析警示（60分K線 / MA / KD 指標） |
 | 加權指數（TAIEX）技術分析警示 |
 | Market Dashboard 集成 |
+| 因子研究頁面修復 — 初始載入、快取、空狀態與中文化 |
+| IC 分析歷史資料 Backfill — signals + daily_prices 補全 |
 
 ## Skip 項目
 
@@ -298,7 +300,9 @@
 | [T134-alerting-module-split-refactor](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-selector/tasks/T134-alerting-module-split-refactor.md) | 拆分大型檔案 alerting.py（模組化重構） | 📋 pending |
 | [T135-complete-missing-tests](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-selector/tasks/T135-complete-missing-tests.md) | 補齊未完成的測試項目（T123/T124/T130-T133） | 📋 pending |
 | [T136-market-dashboard-integration](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-selector/tasks/T136-market-dashboard-integration.md) | Market Dashboard 集成 | ✅ done |
+| [T137-factor-research-page-fix](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-selector/tasks/T137-factor-research-page-fix.md) | 因子研究頁面修復 — 初始載入、快取、空狀態與中文化 | ✅ done |
+| [T138-ic-backfill-signals-prices](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-selector/tasks/T138-ic-backfill-signals-prices.md) | IC 分析歷史資料 Backfill — signals + daily_prices 補全 | ✅ done |
 
-**✅ done: 134 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 2**
+**✅ done: 136 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 2**
 
-> 自動生成於 2026-06-12 04:32
+> 自動生成於 2026-06-15 06:30
