@@ -140,6 +140,7 @@
 | Market Dashboard 集成 |
 | 因子研究頁面修復 — 初始載入、快取、空狀態與中文化 |
 | IC 分析歷史資料 Backfill — signals + daily_prices 補全 |
+| 分層報酬後端 Query 修復 + 前端說明 |
 
 ## Skip 項目
 
@@ -302,7 +303,8 @@
 | [T136-market-dashboard-integration](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-selector/tasks/T136-market-dashboard-integration.md) | Market Dashboard 集成 | ✅ done |
 | [T137-factor-research-page-fix](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-selector/tasks/T137-factor-research-page-fix.md) | 因子研究頁面修復 — 初始載入、快取、空狀態與中文化 | ✅ done |
 | [T138-ic-backfill-signals-prices](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-selector/tasks/T138-ic-backfill-signals-prices.md) | IC 分析歷史資料 Backfill — signals + daily_prices 補全 | ✅ done |
+| [T139-quintile-query-fix](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-selector/tasks/T139-quintile-query-fix.md) | 分層報酬後端 Query 修復 + 前端說明 | ✅ done |
 
-**✅ done: 136 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 2**
+**✅ done: 137 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 2**
 
-> 自動生成於 2026-06-15 06:30
+> 自動生成於 2026-06-15 06:33
