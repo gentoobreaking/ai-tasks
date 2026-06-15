@@ -16,7 +16,7 @@ IC 分析圖表只有一個點，因為 signals 資料太少且 daily_prices 覆
 
 ## 驗收標準
 - [x] 新增 `scripts/backfill_signals_range.py`：對指定日期範圍計算 composite scores
-- [x] 新增 `scripts/backfill_daily_prices.py`：從 TWSE `www.twse.com.tw` 拉全市場 per-stock 歷史股價
+- [x] 新增 `scripts/backfill_daily_prices_twse.py`：從 TWSE `www.twse.com.tw` 拉全市場 per-stock 歷史股價
 - [x] IC 分析 combo（≥6 valid pairs）從 5 個增至 22 個
 - [x] Q5 涵蓋天數從 1 天增至 4 天（6/5, 6/8, 6/9, 6/10）
 - [x] daily_prices 覆蓋從 140 檔/天增至 344 檔/天
@@ -29,7 +29,7 @@ IC 分析圖表只有一個點，因為 signals 資料太少且 daily_prices 覆
 
 ## 更動檔案
 - `scripts/backfill_signals_range.py`（新檔）
-- `scripts/backfill_daily_prices.py`（新檔）
+- `scripts/backfill_daily_prices_twse.py`（新檔）
 
 ## 備註
 - daily_prices 後續需每週定期 backfill（或改善 hash-bucket 設計）
