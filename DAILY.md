@@ -1,6 +1,6 @@
-# 📅 Daily Dashboard - 2026-06-15
+# 📅 Daily Dashboard - 2026-07-09
 
-> 最後更新: 2026-06-15 08:35 · 自動生成
+> 最後更新: 2026-07-09 15:18 · 自動生成
 
 ---
 
@@ -8,9 +8,9 @@
 
 | 專案 | 任務 | 標題 |
 | -- | -- | -- |
-| tw-quant-selector | [T137-factor-research-page-fix](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-selector/tasks/T137-factor-research-page-fix.md) | 因子研究頁面修復 — 初始載入、快取、空狀態與中文化 |
-| tw-quant-selector | [T138-ic-backfill-signals-prices](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-selector/tasks/T138-ic-backfill-signals-prices.md) | IC 分析歷史資料 Backfill — signals + daily_prices 補全 |
-| tw-quant-selector | [T139-quintile-query-fix](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-selector/tasks/T139-quintile-query-fix.md) | 分層報酬後端 Query 修復 + 前端說明 |
+| tw-quant-selector | [T140-asset-class-prefetch](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-selector/tasks/T140-asset-class-prefetch.md) | 台股資產分類與價格預先下載模組 |
+| tw-quant-selector | [T141-asset-class-analysis](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-selector/tasks/T141-asset-class-analysis.md) | 指標計算引擎 |
+| tw-quant-selector | [T142-asset-class-report](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-selector/tasks/T142-asset-class-report.md) | 表格輸出與圖表繪製 + 主入口腳本 |
 
 ---
 
@@ -18,9 +18,9 @@
 
 | 專案 | 任務 | 標題 |
 | -- | -- | -- |
-| tw-quant-selector | [T137-factor-research-page-fix](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-selector/tasks/T137-factor-research-page-fix.md) | 因子研究頁面修復 — 初始載入、快取、空狀態與中文化 |
-| tw-quant-selector | [T138-ic-backfill-signals-prices](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-selector/tasks/T138-ic-backfill-signals-prices.md) | IC 分析歷史資料 Backfill — signals + daily_prices 補全 |
-| tw-quant-selector | [T139-quintile-query-fix](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-selector/tasks/T139-quintile-query-fix.md) | 分層報酬後端 Query 修復 + 前端說明 |
+| tw-quant-selector | [T140-asset-class-prefetch](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-selector/tasks/T140-asset-class-prefetch.md) | 台股資產分類與價格預先下載模組 |
+| tw-quant-selector | [T141-asset-class-analysis](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-selector/tasks/T141-asset-class-analysis.md) | 指標計算引擎 |
+| tw-quant-selector | [T142-asset-class-report](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-selector/tasks/T142-asset-class-report.md) | 表格輸出與圖表繪製 + 主入口腳本 |
 
 ---
 

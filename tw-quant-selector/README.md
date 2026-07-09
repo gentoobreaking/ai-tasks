@@ -141,6 +141,9 @@
 | 因子研究頁面修復 — 初始載入、快取、空狀態與中文化 |
 | IC 分析歷史資料 Backfill — signals + daily_prices 補全 |
 | 分層報酬後端 Query 修復 + 前端說明 |
+| 台股資產分類與價格預先下載模組 |
+| 指標計算引擎 |
+| 表格輸出與圖表繪製 + 主入口腳本 |
 
 ## Skip 項目
 
@@ -304,7 +307,10 @@
 | [T137-factor-research-page-fix](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-selector/tasks/T137-factor-research-page-fix.md) | 因子研究頁面修復 — 初始載入、快取、空狀態與中文化 | ✅ done |
 | [T138-ic-backfill-signals-prices](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-selector/tasks/T138-ic-backfill-signals-prices.md) | IC 分析歷史資料 Backfill — signals + daily_prices 補全 | ✅ done |
 | [T139-quintile-query-fix](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-selector/tasks/T139-quintile-query-fix.md) | 分層報酬後端 Query 修復 + 前端說明 | ✅ done |
+| [T140-asset-class-prefetch](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-selector/tasks/T140-asset-class-prefetch.md) | 台股資產分類與價格預先下載模組 | ✅ done |
+| [T141-asset-class-analysis](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-selector/tasks/T141-asset-class-analysis.md) | 指標計算引擎 | ✅ done |
+| [T142-asset-class-report](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-selector/tasks/T142-asset-class-report.md) | 表格輸出與圖表繪製 + 主入口腳本 | ✅ done |
 
-**✅ done: 137 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 2**
+**✅ done: 140 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 2**
 
-> 自動生成於 2026-06-15 08:35
+> 自動生成於 2026-07-09 15:18
