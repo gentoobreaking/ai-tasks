@@ -3,7 +3,7 @@ github_issue: ""
 title: "[Phase 2] 分市場狀態運作 — 多空震盪權重切換"
 type: feature
 priority: medium
-status: pending
+status: done
 assignee: OpenCode with DeepSeek V4 Flash
 created: 2026-07-30
 updated: 2026-07-30

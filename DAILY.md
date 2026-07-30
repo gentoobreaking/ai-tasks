@@ -1,6 +1,6 @@
 # 📅 Daily Dashboard - 2026-07-30
 
-> 最後更新: 2026-07-30 21:14 · 自動生成
+> 最後更新: 2026-07-30 22:08 · 自動生成
 
 ---
 
@@ -21,6 +21,7 @@
 | tw-quant-signal | [T011-multi-timeframe-integration](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T011-multi-timeframe-integration.md) | [Phase 3] 多時間框架整合 — 日線+週線 |
 | tw-quant-signal | [T012-structural-change-detection](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T012-structural-change-detection.md) | [Phase 3] 結構變化偵測 — 模型/規則衰退監控 |
 | tw-quant-signal | [T013-env-separation-governance](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T013-env-separation-governance.md) | [Phase 3] 研究/實戰環境分離與操作治理 |
+| tw-quant-signal | [T014-fundamental-data-enrichment](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T014-fundamental-data-enrichment.md) | [Phase 3] 個股基本面資料擴充 — 月營收 / EPS / ROE/ROA / 股利 |
 
 ---
 
@@ -33,16 +34,19 @@
 | tw-quant-signal | [T003-rule-engine](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T003-rule-engine.md) | [Phase 1] 規則引擎 — 條件組合與訊號觸發 |
 | tw-quant-signal | [T004-backtesting-framework](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T004-backtesting-framework.md) | [Phase 1] 回測框架 — 驗證規則有效性 |
 | tw-quant-signal | [T005-signal-output-notification](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T005-signal-output-notification.md) | [Phase 1] 訊號輸出、通知與紀錄 |
+| tw-quant-signal | [T006-four-light-health-check](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T006-four-light-health-check.md) | [Phase 2] 四燈號健診評分系統 |
+| tw-quant-signal | [T007-market-state-segmentation](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T007-market-state-segmentation.md) | [Phase 2] 分市場狀態運作 — 多空震盪權重切換 |
 | tw-quant-signal | [T008-risk-management-module](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T008-risk-management-module.md) | [Phase 2] 風險控管模組 |
 | tw-quant-signal | [T009-dashboard-performance-tracking](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T009-dashboard-performance-tracking.md) | [Phase 2] 儀表板與績效追蹤系統 |
+| tw-quant-signal | [T011-multi-timeframe-integration](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T011-multi-timeframe-integration.md) | [Phase 3] 多時間框架整合 — 日線+週線 |
+| tw-quant-signal | [T012-structural-change-detection](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T012-structural-change-detection.md) | [Phase 3] 結構變化偵測 — 模型/規則衰退監控 |
+| tw-quant-signal | [T013-env-separation-governance](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T013-env-separation-governance.md) | [Phase 3] 研究/實戰環境分離與操作治理 |
 
 ---
 
 ## 🔥 待處理高優先級
 
-| 專案 | 任務 | 標題 | 優先 |
-| -- | -- | -- | -- |
-| tw-quant-signal | [T006-four-light-health-check](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T006-four-light-health-check.md) | [Phase 2] 四燈號健診評分系統 | high |
+_無_
 
 ---
 
@@ -58,17 +62,13 @@
 
 | 專案 | 任務 | 標題 | 優先 |
 | -- | -- | -- | -- |
-| tw-quant-signal | [T006-four-light-health-check](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T006-four-light-health-check.md) | [Phase 2] 四燈號健診評分系統 | high |
 | tw-quant-selector | [T134-alerting-module-split-refactor](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-selector/tasks/T134-alerting-module-split-refactor.md) | 拆分大型檔案 alerting.py（模組化重構） | medium |
 | tw-quant-selector | [T135-complete-missing-tests](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-selector/tasks/T135-complete-missing-tests.md) | 補齊未完成的測試項目（T123/T124/T130-T133） | medium |
-| tw-quant-signal | [T007-market-state-segmentation](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T007-market-state-segmentation.md) | [Phase 2] 分市場狀態運作 — 多空震盪權重切換 | medium |
+| tw-quant-signal | [T014-fundamental-data-enrichment](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T014-fundamental-data-enrichment.md) | [Phase 3] 個股基本面資料擴充 — 月營收 / EPS / ROE/ROA / 股利 | medium |
 | gold-analysis-advanced | [T002](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis-advanced/tasks/T002.md) | ML 模型整合與優化 | low |
 | gold-analysis-advanced | [T004](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis-advanced/tasks/T004.md) | 實盤交易對接 | low |
 | md-viewer-app | [T027-預覽連結懸停](https://github.com/gentoobreaking/ai-tasks/blob/main/md-viewer-app/tasks/T027-預覽連結懸停.md) | [T027] 連結懸停預覽 | low |
 | tw-quant-signal | [T010-stock-pool-signals](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T010-stock-pool-signals.md) | [Phase 3] 個股池訊號 — 精選觀察清單掃描 | low |
-| tw-quant-signal | [T011-multi-timeframe-integration](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T011-multi-timeframe-integration.md) | [Phase 3] 多時間框架整合 — 日線+週線 | low |
-| tw-quant-signal | [T012-structural-change-detection](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T012-structural-change-detection.md) | [Phase 3] 結構變化偵測 — 模型/規則衰退監控 | low |
-| tw-quant-signal | [T013-env-separation-governance](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T013-env-separation-governance.md) | [Phase 3] 研究/實戰環境分離與操作治理 | low |
 
 ---
 

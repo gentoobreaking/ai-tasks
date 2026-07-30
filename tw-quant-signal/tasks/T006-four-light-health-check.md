@@ -3,7 +3,7 @@ github_issue: ""
 title: "[Phase 2] 四燈號健診評分系統"
 type: feature
 priority: high
-status: pending
+status: done
 assignee: OpenCode with DeepSeek V4 Flash
 created: 2026-07-30
 updated: 2026-07-30
