@@ -7,6 +7,8 @@
 | [Phase 1] 資料管線建置 — 擷取、清洗、儲存、健康檢查 |
 | [Phase 1] 特徵工程 — 條件與指標計算 |
 | [Phase 1] 規則引擎 — 條件組合與訊號觸發 |
+| [Phase 1] 回測框架 — 驗證規則有效性 |
+| [Phase 1] 訊號輸出、通知與紀錄 |
 
 ## Skip 項目
 
@@ -24,8 +26,6 @@
 
 | Task | 名稱 | 說明 |
 |------|------|------|
-| [T4-backtesting-framework](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T004-backtesting-framework.md) | [Phase 1] 回測框架 — 驗證規則有效性 | |
-| [T5-signal-output-notification](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T005-signal-output-notification.md) | [Phase 1] 訊號輸出、通知與紀錄 | |
 | [T6-four-light-health-check](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T006-four-light-health-check.md) | [Phase 2] 四燈號健診評分系統 | |
 | [T7-market-state-segmentation](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T007-market-state-segmentation.md) | [Phase 2] 分市場狀態運作 — 多空震盪權重切換 | |
 | [T8-risk-management-module](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T008-risk-management-module.md) | [Phase 2] 風險控管模組 | |
@@ -42,8 +42,8 @@
 | [T1-data-pipeline](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T001-data-pipeline.md) | [Phase 1] 資料管線建置 — 擷取、清洗、儲存、健康檢查 | ✅ done |
 | [T2-feature-engineering](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T002-feature-engineering.md) | [Phase 1] 特徵工程 — 條件與指標計算 | ✅ done |
 | [T3-rule-engine](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T003-rule-engine.md) | [Phase 1] 規則引擎 — 條件組合與訊號觸發 | ✅ done |
-| [T4-backtesting-framework](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T004-backtesting-framework.md) | [Phase 1] 回測框架 — 驗證規則有效性 | 📋 pending |
-| [T5-signal-output-notification](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T005-signal-output-notification.md) | [Phase 1] 訊號輸出、通知與紀錄 | 📋 pending |
+| [T4-backtesting-framework](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T004-backtesting-framework.md) | [Phase 1] 回測框架 — 驗證規則有效性 | ✅ done |
+| [T5-signal-output-notification](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T005-signal-output-notification.md) | [Phase 1] 訊號輸出、通知與紀錄 | ✅ done |
 | [T6-four-light-health-check](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T006-four-light-health-check.md) | [Phase 2] 四燈號健診評分系統 | 📋 pending |
 | [T7-market-state-segmentation](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T007-market-state-segmentation.md) | [Phase 2] 分市場狀態運作 — 多空震盪權重切換 | 📋 pending |
 | [T8-risk-management-module](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T008-risk-management-module.md) | [Phase 2] 風險控管模組 | 📋 pending |
@@ -53,6 +53,6 @@
 | [T12-structural-change-detection](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T012-structural-change-detection.md) | [Phase 3] 結構變化偵測 — 模型/規則衰退監控 | 📋 pending |
 | [T13-env-separation-governance](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T013-env-separation-governance.md) | [Phase 3] 研究/實戰環境分離與操作治理 | 📋 pending |
 
-**✅ done: 3 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 10**
+**✅ done: 5 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 8**
 
-> 自動生成於 2026-07-30 18:18
+> 自動生成於 2026-07-30 19:07

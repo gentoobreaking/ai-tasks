@@ -1,6 +1,6 @@
 # 📅 Daily Dashboard - 2026-07-30
 
-> 最後更新: 2026-07-30 18:18 · 自動生成
+> 最後更新: 2026-07-30 19:07 · 自動生成
 
 ---
 
@@ -31,6 +31,8 @@
 | tw-quant-signal | [T001-data-pipeline](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T001-data-pipeline.md) | [Phase 1] 資料管線建置 — 擷取、清洗、儲存、健康檢查 |
 | tw-quant-signal | [T002-feature-engineering](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T002-feature-engineering.md) | [Phase 1] 特徵工程 — 條件與指標計算 |
 | tw-quant-signal | [T003-rule-engine](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T003-rule-engine.md) | [Phase 1] 規則引擎 — 條件組合與訊號觸發 |
+| tw-quant-signal | [T004-backtesting-framework](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T004-backtesting-framework.md) | [Phase 1] 回測框架 — 驗證規則有效性 |
+| tw-quant-signal | [T005-signal-output-notification](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T005-signal-output-notification.md) | [Phase 1] 訊號輸出、通知與紀錄 |
 
 ---
 
@@ -38,7 +40,6 @@
 
 | 專案 | 任務 | 標題 | 優先 |
 | -- | -- | -- | -- |
-| tw-quant-signal | [T004-backtesting-framework](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T004-backtesting-framework.md) | [Phase 1] 回測框架 — 驗證規則有效性 | high |
 | tw-quant-signal | [T006-four-light-health-check](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T006-four-light-health-check.md) | [Phase 2] 四燈號健診評分系統 | high |
 
 ---
@@ -55,11 +56,9 @@
 
 | 專案 | 任務 | 標題 | 優先 |
 | -- | -- | -- | -- |
-| tw-quant-signal | [T004-backtesting-framework](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T004-backtesting-framework.md) | [Phase 1] 回測框架 — 驗證規則有效性 | high |
 | tw-quant-signal | [T006-four-light-health-check](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T006-four-light-health-check.md) | [Phase 2] 四燈號健診評分系統 | high |
 | tw-quant-selector | [T134-alerting-module-split-refactor](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-selector/tasks/T134-alerting-module-split-refactor.md) | 拆分大型檔案 alerting.py（模組化重構） | medium |
 | tw-quant-selector | [T135-complete-missing-tests](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-selector/tasks/T135-complete-missing-tests.md) | 補齊未完成的測試項目（T123/T124/T130-T133） | medium |
-| tw-quant-signal | [T005-signal-output-notification](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T005-signal-output-notification.md) | [Phase 1] 訊號輸出、通知與紀錄 | medium |
 | tw-quant-signal | [T007-market-state-segmentation](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T007-market-state-segmentation.md) | [Phase 2] 分市場狀態運作 — 多空震盪權重切換 | medium |
 | tw-quant-signal | [T008-risk-management-module](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T008-risk-management-module.md) | [Phase 2] 風險控管模組 | medium |
 | tw-quant-signal | [T009-dashboard-performance-tracking](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T009-dashboard-performance-tracking.md) | [Phase 2] 儀表板與績效追蹤系統 | medium |

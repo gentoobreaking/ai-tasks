@@ -1,6 +1,6 @@
 # 📁 Projects Dashboard
 
-> 最後更新: 2026-07-30 18:18 · 自動生成
+> 最後更新: 2026-07-30 19:07 · 自動生成
 
 ---
 
@@ -10,8 +10,8 @@
 |------|------|
 | 專案數 | 56 |
 | 任務總數 | 732 |
-| ✅ 已完成 | 654 |
-| ⬜ 待處理 | 15 |
+| ✅ 已完成 | 656 |
+| ⬜ 待處理 | 13 |
 | 🔄 進行中 | 1 |
 | ⏭️ 跳過 | 62 |
 | 總完成率 | 97% |
@@ -20,7 +20,6 @@
 
 | 專案 | 任務 | 標題 |
 |------|------|------|
-| tw-quant-signal | [T004-backtesting-framework](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T004-backtesting-framework.md) | [Phase 1] 回測框架 — 驗證規則有效性 |
 | tw-quant-signal | [T006-four-light-health-check](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T006-four-light-health-check.md) | [Phase 2] 四燈號健診評分系統 |
 
 ---
@@ -35,8 +34,6 @@
 | md-viewer-app | [T027-預覽連結懸停](https://github.com/gentoobreaking/ai-tasks/blob/main/md-viewer-app/tasks/T027-預覽連結懸停.md) | [T027] 連結懸停預覽 | ⬜ |
 | tw-quant-selector | [T134-alerting-module-split-refactor](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-selector/tasks/T134-alerting-module-split-refactor.md) | 拆分大型檔案 alerting.py（模組化重構） | ⬜ |
 | tw-quant-selector | [T135-complete-missing-tests](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-selector/tasks/T135-complete-missing-tests.md) | 補齊未完成的測試項目（T123/T124/T130-T133） | ⬜ |
-| tw-quant-signal | [T004-backtesting-framework](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T004-backtesting-framework.md) | [Phase 1] 回測框架 — 驗證規則有效性 | ⬜ |
-| tw-quant-signal | [T005-signal-output-notification](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T005-signal-output-notification.md) | [Phase 1] 訊號輸出、通知與紀錄 | ⬜ |
 | tw-quant-signal | [T006-four-light-health-check](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T006-four-light-health-check.md) | [Phase 2] 四燈號健診評分系統 | ⬜ |
 | tw-quant-signal | [T007-market-state-segmentation](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T007-market-state-segmentation.md) | [Phase 2] 分市場狀態運作 — 多空震盪權重切換 | ⬜ |
 | tw-quant-signal | [T008-risk-management-module](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T008-risk-management-module.md) | [Phase 2] 風險控管模組 | ⬜ |
@@ -125,8 +122,8 @@
 
 | 指標 | 數值 |
 |------|------|
-| 過去 7 天完成 | 3 |
-| 過去 30 天完成 | 6 |
+| 過去 7 天完成 | 5 |
+| 過去 30 天完成 | 8 |
 | 平均週期時間 | 0.7 天 |
 | 週期時間中位數 | 0.0 天 |
 
@@ -136,10 +133,10 @@ xychart-beta
     title "過去 14 天任務完成趨勢"
     x-axis ["07-17", "07-18", "07-19", "07-20", "07-21", "07-22", "07-23", "07-24", "07-25", "07-26", "07-27", "07-28", "07-29", "07-30"]
     y-axis "完成數" 0 --> 10
-    line [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3]
+    line [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5]
 ```
 
-📊 總計: 3 | 日均: 0.2 | 本週: 3 | 📈 成長中
+📊 總計: 5 | 日均: 0.4 | 本週: 5 | 📈 成長中
 
 ## 📋 專案列表
 
@@ -195,8 +192,7 @@ xychart-beta
 | ✅ | [task-url-repair](https://github.com/gentoobreaking/ai-tasks/tree/main/task-url-repair) | 1 | 1 | 0 | 0 | 0 | ████████████████████ 100% | 2026-04-20 |
 | ✅ | [tasks-executor](https://github.com/gentoobreaking/ai-tasks/tree/main/tasks-executor) | 8 | 8 | 0 | 0 | 0 | ████████████████████ 100% | 2026-05-12 |
 | ⬜ | [tw-quant-selector](https://github.com/gentoobreaking/ai-tasks/tree/main/tw-quant-selector) | 142 | 140 | 2 | 0 | 0 | ███████████████████░ 98% | 2026-07-09 |
-| ⬜ | [tw-quant-signal](https://github.com/gentoobreaking/ai-tasks/tree/main/tw-quant-signal) | 13 | 3 | 10 | 0 | 0 | ████░░░░░░░░░░░░░░░░ 23% | 2026-07-30 |
-  **[T004-backtesting-framework](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T004-backtesting-framework.md)**: [Phase 1] 回測框架 — 驗證規則有效性
+| ⬜ | [tw-quant-signal](https://github.com/gentoobreaking/ai-tasks/tree/main/tw-quant-signal) | 13 | 5 | 8 | 0 | 0 | ███████░░░░░░░░░░░░░ 38% | 2026-07-30 |
   **[T006-four-light-health-check](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T006-four-light-health-check.md)**: [Phase 2] 四燈號健診評分系統
 | ✅ | [twse-monitor](https://github.com/gentoobreaking/ai-tasks/tree/main/twse-monitor) | 11 | 11 | 0 | 0 | 0 | ████████████████████ 100% | 2026-05-07 |
 | ✅ | [twstock-bfp-research](https://github.com/gentoobreaking/ai-tasks/tree/main/twstock-bfp-research) | 1 | 1 | 0 | 0 | 0 | ████████████████████ 100% | 2026-05-06 |
