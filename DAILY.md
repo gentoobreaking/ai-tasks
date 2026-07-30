@@ -1,6 +1,6 @@
-# 📅 Daily Dashboard - 2026-07-09
+# 📅 Daily Dashboard - 2026-07-30
 
-> 最後更新: 2026-07-09 15:38 · 自動生成
+> 最後更新: 2026-07-30 18:10 · 自動生成
 
 ---
 
@@ -8,9 +8,19 @@
 
 | 專案 | 任務 | 標題 |
 | -- | -- | -- |
-| tw-quant-selector | [T140-asset-class-prefetch](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-selector/tasks/T140-asset-class-prefetch.md) | 台股資產分類與價格預先下載模組 |
-| tw-quant-selector | [T141-asset-class-analysis](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-selector/tasks/T141-asset-class-analysis.md) | 指標計算引擎 |
-| tw-quant-selector | [T142-asset-class-report](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-selector/tasks/T142-asset-class-report.md) | 表格輸出與圖表繪製 + 主入口腳本 |
+| tw-quant-signal | [T001-data-pipeline](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T001-data-pipeline.md) | [Phase 1] 資料管線建置 — 擷取、清洗、儲存、健康檢查 |
+| tw-quant-signal | [T002-feature-engineering](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T002-feature-engineering.md) | [Phase 1] 特徵工程 — 條件與指標計算 |
+| tw-quant-signal | [T003-rule-engine](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T003-rule-engine.md) | [Phase 1] 規則引擎 — 條件組合與訊號觸發 |
+| tw-quant-signal | [T004-backtesting-framework](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T004-backtesting-framework.md) | [Phase 1] 回測框架 — 驗證規則有效性 |
+| tw-quant-signal | [T005-signal-output-notification](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T005-signal-output-notification.md) | [Phase 1] 訊號輸出、通知與紀錄 |
+| tw-quant-signal | [T006-four-light-health-check](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T006-four-light-health-check.md) | [Phase 2] 四燈號健診評分系統 |
+| tw-quant-signal | [T007-market-state-segmentation](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T007-market-state-segmentation.md) | [Phase 2] 分市場狀態運作 — 多空震盪權重切換 |
+| tw-quant-signal | [T008-risk-management-module](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T008-risk-management-module.md) | [Phase 2] 風險控管模組 |
+| tw-quant-signal | [T009-dashboard-performance-tracking](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T009-dashboard-performance-tracking.md) | [Phase 2] 儀表板與績效追蹤系統 |
+| tw-quant-signal | [T010-stock-pool-signals](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T010-stock-pool-signals.md) | [Phase 3] 個股池訊號 — 精選觀察清單掃描 |
+| tw-quant-signal | [T011-multi-timeframe-integration](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T011-multi-timeframe-integration.md) | [Phase 3] 多時間框架整合 — 日線+週線 |
+| tw-quant-signal | [T012-structural-change-detection](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T012-structural-change-detection.md) | [Phase 3] 結構變化偵測 — 模型/規則衰退監控 |
+| tw-quant-signal | [T013-env-separation-governance](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T013-env-separation-governance.md) | [Phase 3] 研究/實戰環境分離與操作治理 |
 
 ---
 
@@ -18,9 +28,9 @@
 
 | 專案 | 任務 | 標題 |
 | -- | -- | -- |
-| tw-quant-selector | [T140-asset-class-prefetch](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-selector/tasks/T140-asset-class-prefetch.md) | 台股資產分類與價格預先下載模組 |
-| tw-quant-selector | [T141-asset-class-analysis](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-selector/tasks/T141-asset-class-analysis.md) | 指標計算引擎 |
-| tw-quant-selector | [T142-asset-class-report](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-selector/tasks/T142-asset-class-report.md) | 表格輸出與圖表繪製 + 主入口腳本 |
+| tw-quant-signal | [T001-data-pipeline](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T001-data-pipeline.md) | [Phase 1] 資料管線建置 — 擷取、清洗、儲存、健康檢查 |
+| tw-quant-signal | [T002-feature-engineering](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T002-feature-engineering.md) | [Phase 1] 特徵工程 — 條件與指標計算 |
+| tw-quant-signal | [T003-rule-engine](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T003-rule-engine.md) | [Phase 1] 規則引擎 — 條件組合與訊號觸發 |
 
 ---
 
@@ -53,6 +63,8 @@
 | taolive-ios | [T65-add-miniaudio](https://github.com/gentoobreaking/ai-tasks/blob/main/taolive-ios/tasks/T65-add-miniaudio.md) | 下載並將遺失的 miniaudio 程式庫加入專案 | high |
 | taolive-ios | [T66-fix-headers-build-settings](https://github.com/gentoobreaking/ai-tasks/blob/main/taolive-ios/tasks/T66-fix-headers-build-settings.md) | 修正標頭檔路徑並清理重複編譯設定 | high |
 | taolive-ios | [T67-excluded-architectures](https://github.com/gentoobreaking/ai-tasks/blob/main/taolive-ios/tasks/T67-excluded-architectures.md) | 調整 Excluded Architectures 設定以相容模擬器 | high |
+| tw-quant-signal | [T004-backtesting-framework](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T004-backtesting-framework.md) | [Phase 1] 回測框架 — 驗證規則有效性 | high |
+| tw-quant-signal | [T006-four-light-health-check](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T006-four-light-health-check.md) | [Phase 2] 四燈號健診評分系統 | high |
 
 ---
 
@@ -96,6 +108,8 @@
 | taolive-ios | [T65-add-miniaudio](https://github.com/gentoobreaking/ai-tasks/blob/main/taolive-ios/tasks/T65-add-miniaudio.md) | 下載並將遺失的 miniaudio 程式庫加入專案 | high |
 | taolive-ios | [T66-fix-headers-build-settings](https://github.com/gentoobreaking/ai-tasks/blob/main/taolive-ios/tasks/T66-fix-headers-build-settings.md) | 修正標頭檔路徑並清理重複編譯設定 | high |
 | taolive-ios | [T67-excluded-architectures](https://github.com/gentoobreaking/ai-tasks/blob/main/taolive-ios/tasks/T67-excluded-architectures.md) | 調整 Excluded Architectures 設定以相容模擬器 | high |
+| tw-quant-signal | [T004-backtesting-framework](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T004-backtesting-framework.md) | [Phase 1] 回測框架 — 驗證規則有效性 | high |
+| tw-quant-signal | [T006-four-light-health-check](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T006-four-light-health-check.md) | [Phase 2] 四燈號健診評分系統 | high |
 | taolive-ios | [T16-ios-capture](https://github.com/gentoobreaking/ai-tasks/blob/main/taolive-ios/tasks/T16-ios-capture.md) | iOS 音影片擷取 | medium |
 | taolive-ios | [T17-avfoundation-video](https://github.com/gentoobreaking/ai-tasks/blob/main/taolive-ios/tasks/T17-avfoundation-video.md) | AVFoundation 影片播放 | medium |
 | taolive-ios | [T18-coreml-audio](https://github.com/gentoobreaking/ai-tasks/blob/main/taolive-ios/tasks/T18-coreml-audio.md) | CoreML 音頻處理 | medium |
@@ -112,6 +126,10 @@
 | taolive-ios | [T62-documentation](https://github.com/gentoobreaking/ai-tasks/blob/main/taolive-ios/tasks/T62-documentation.md) | 文檔與教學 | medium |
 | tw-quant-selector | [T134-alerting-module-split-refactor](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-selector/tasks/T134-alerting-module-split-refactor.md) | 拆分大型檔案 alerting.py（模組化重構） | medium |
 | tw-quant-selector | [T135-complete-missing-tests](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-selector/tasks/T135-complete-missing-tests.md) | 補齊未完成的測試項目（T123/T124/T130-T133） | medium |
+| tw-quant-signal | [T005-signal-output-notification](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T005-signal-output-notification.md) | [Phase 1] 訊號輸出、通知與紀錄 | medium |
+| tw-quant-signal | [T007-market-state-segmentation](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T007-market-state-segmentation.md) | [Phase 2] 分市場狀態運作 — 多空震盪權重切換 | medium |
+| tw-quant-signal | [T008-risk-management-module](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T008-risk-management-module.md) | [Phase 2] 風險控管模組 | medium |
+| tw-quant-signal | [T009-dashboard-performance-tracking](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T009-dashboard-performance-tracking.md) | [Phase 2] 儀表板與績效追蹤系統 | medium |
 | gold-analysis-advanced | [T002](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis-advanced/tasks/T002.md) | ML 模型整合與優化 | low |
 | gold-analysis-advanced | [T004](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis-advanced/tasks/T004.md) | 實盤交易對接 | low |
 | md-viewer-app | [T027-預覽連結懸停](https://github.com/gentoobreaking/ai-tasks/blob/main/md-viewer-app/tasks/T027-預覽連結懸停.md) | [T027] 連結懸停預覽 | low |
@@ -125,6 +143,10 @@
 | taolive-ios | [T59-user-profile](https://github.com/gentoobreaking/ai-tasks/blob/main/taolive-ios/tasks/T59-user-profile.md) | 用戶個人檔案 | low |
 | taolive-ios | [T60-social-sharing](https://github.com/gentoobreaking/ai-tasks/blob/main/taolive-ios/tasks/T60-social-sharing.md) | 社群分享 | low |
 | taolive-ios | [T61-cloud-sync](https://github.com/gentoobreaking/ai-tasks/blob/main/taolive-ios/tasks/T61-cloud-sync.md) | 雲端同步 | low |
+| tw-quant-signal | [T010-stock-pool-signals](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T010-stock-pool-signals.md) | [Phase 3] 個股池訊號 — 精選觀察清單掃描 | low |
+| tw-quant-signal | [T011-multi-timeframe-integration](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T011-multi-timeframe-integration.md) | [Phase 3] 多時間框架整合 — 日線+週線 | low |
+| tw-quant-signal | [T012-structural-change-detection](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T012-structural-change-detection.md) | [Phase 3] 結構變化偵測 — 模型/規則衰退監控 | low |
+| tw-quant-signal | [T013-env-separation-governance](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T013-env-separation-governance.md) | [Phase 3] 研究/實戰環境分離與操作治理 | low |
 
 ---
 
