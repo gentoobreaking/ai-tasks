@@ -3,7 +3,7 @@ github_issue: https://github.com/gentoobreaking/ai-tasks/issues/483
 title: 調整 Excluded Architectures 設定以相容模擬器
 type: Feature
 priority: high
-status: pending
+status: skip
 assignee: claw
 created: 2026-05-14
 updated: 2026-05-14

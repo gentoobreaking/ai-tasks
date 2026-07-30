@@ -52,21 +52,22 @@
 
 | Task | 說明 |
 |------|------|
-| | |
+| [T21-jitsi-audio-capture](https://github.com/gentoobreaking/ai-tasks/blob/main/jarvis/tasks/T021-jitsi-audio-capture.md) | Jitsi 語音串接 — 音訊捕獲 |
+| [T22-jitsi-audio-playback](https://github.com/gentoobreaking/ai-tasks/blob/main/jarvis/tasks/T022-jitsi-audio-playback.md) | Jitsi 語音串接 — 音訊播放回會議室 |
+| [T43-KlingAI-LivePortrait](https://github.com/gentoobreaking/ai-tasks/blob/main/jarvis/tasks/T043-KlingAI-LivePortrait.md) | 任務 T043-KlingAI-LivePortrait |
+| [T44-uniTalker-MNN](https://github.com/gentoobreaking/ai-tasks/blob/main/jarvis/tasks/T044-uniTalker-MNN.md) | 任務 T044-uniTalker-MNN |
 
 ## 開發中
 
 | Task | 名稱 | 說明 |
 |------|------|------|
-| [T21-jitsi-audio-capture](https://github.com/gentoobreaking/ai-tasks/blob/main/jarvis/tasks/T021-jitsi-audio-capture.md) | Jitsi 語音串接 — 音訊捕獲 | |
-| [T22-jitsi-audio-playback](https://github.com/gentoobreaking/ai-tasks/blob/main/jarvis/tasks/T022-jitsi-audio-playback.md) | Jitsi 語音串接 — 音訊播放回會議室 | |
-| [T43-KlingAI-LivePortrait](https://github.com/gentoobreaking/ai-tasks/blob/main/jarvis/tasks/T043-KlingAI-LivePortrait.md) | 任務 T043-KlingAI-LivePortrait | |
+| | | |
 
 ## 待實作
 
 | Task | 名稱 | 說明 |
 |------|------|------|
-| [T44-uniTalker-MNN](https://github.com/gentoobreaking/ai-tasks/blob/main/jarvis/tasks/T044-uniTalker-MNN.md) | 任務 T044-uniTalker-MNN | |
+| | | |
 
 ## Task 列表
 
@@ -92,8 +93,8 @@
 | [T17-vision-language-integration](https://github.com/gentoobreaking/ai-tasks/blob/main/jarvis/tasks/T017-vision-language-integration.md) | 任務 T017-vision-language-integration | ✅ done |
 | [T19-model-config-system](https://github.com/gentoobreaking/ai-tasks/blob/main/jarvis/tasks/T019-model-config-system.md) | 統一模型設定系統（Multi-Backend） | ✅ done |
 | [T20-telegram-bot](https://github.com/gentoobreaking/ai-tasks/blob/main/jarvis/tasks/T020-telegram-bot.md) | Telegram Bot 整合 | ✅ done |
-| [T21-jitsi-audio-capture](https://github.com/gentoobreaking/ai-tasks/blob/main/jarvis/tasks/T021-jitsi-audio-capture.md) | Jitsi 語音串接 — 音訊捕獲 | 🔧 in-progress |
-| [T22-jitsi-audio-playback](https://github.com/gentoobreaking/ai-tasks/blob/main/jarvis/tasks/T022-jitsi-audio-playback.md) | Jitsi 語音串接 — 音訊播放回會議室 | 🔧 in-progress |
+| [T21-jitsi-audio-capture](https://github.com/gentoobreaking/ai-tasks/blob/main/jarvis/tasks/T021-jitsi-audio-capture.md) | Jitsi 語音串接 — 音訊捕獲 | ⏭️ skip |
+| [T22-jitsi-audio-playback](https://github.com/gentoobreaking/ai-tasks/blob/main/jarvis/tasks/T022-jitsi-audio-playback.md) | Jitsi 語音串接 — 音訊播放回會議室 | ⏭️ skip |
 | [T23-jitsi-chat-bridge](https://github.com/gentoobreaking/ai-tasks/blob/main/jarvis/tasks/T023-jitsi-chat-bridge.md) | Jitsi 聊天室串接 | ✅ done |
 | [T24-langchain-agent](https://github.com/gentoobreaking/ai-tasks/blob/main/jarvis/tasks/T024-langchain-agent.md) | LangChain Core Agent 整合 | ✅ done |
 | [T25-skill-system](https://github.com/gentoobreaking/ai-tasks/blob/main/jarvis/tasks/T025-skill-system.md) | SKILL.md 動態掃描載入系統 | ✅ done |
@@ -114,12 +115,12 @@
 | [T40-hf-image-generation](https://github.com/gentoobreaking/ai-tasks/blob/main/jarvis/tasks/T040-hf-image-generation.md) | 任務 T040-hf-image-generation | ✅ done |
 | [T41-pollinations-image-generation](https://github.com/gentoobreaking/ai-tasks/blob/main/jarvis/tasks/T041-pollinations-image-generation.md) | 任務 T041-pollinations-image-generation | ✅ done |
 | [T42-TANGO-EchoMimic](https://github.com/gentoobreaking/ai-tasks/blob/main/jarvis/tasks/T042-TANGO-EchoMimic.md) | 任務 T042-TANGO-EchoMimic | ✅ done |
-| [T43-KlingAI-LivePortrait](https://github.com/gentoobreaking/ai-tasks/blob/main/jarvis/tasks/T043-KlingAI-LivePortrait.md) | 任務 T043-KlingAI-LivePortrait | 🔧 in-progress |
-| [T44-uniTalker-MNN](https://github.com/gentoobreaking/ai-tasks/blob/main/jarvis/tasks/T044-uniTalker-MNN.md) | 任務 T044-uniTalker-MNN | 📋 pending |
+| [T43-KlingAI-LivePortrait](https://github.com/gentoobreaking/ai-tasks/blob/main/jarvis/tasks/T043-KlingAI-LivePortrait.md) | 任務 T043-KlingAI-LivePortrait | ⏭️ skip |
+| [T44-uniTalker-MNN](https://github.com/gentoobreaking/ai-tasks/blob/main/jarvis/tasks/T044-uniTalker-MNN.md) | 任務 T044-uniTalker-MNN | ⏭️ skip |
 | [T45-digital-human-research](https://github.com/gentoobreaking/ai-tasks/blob/main/jarvis/tasks/T045-digital-human-research.md) | 任務 T045-digital-human-research | ✅ done |
 | [T46-taoavatar-a2bs-macos-port](https://github.com/gentoobreaking/ai-tasks/blob/main/jarvis/tasks/T046-taoavatar-a2bs-macos-port.md) | 任務 T046-taoavatar-a2bs-macos-port | ✅ done |
 | [T47-did-streaming-api-integration](https://github.com/gentoobreaking/ai-tasks/blob/main/jarvis/tasks/T047-did-streaming-api-integration.md) | 任務 T047-did-streaming-api-integration | ✅ done |
 
-**✅ done: 43 | 🔧 in-progress: 3 | ⏭️ skip: 0 | 📋 pending: 1**
+**✅ done: 43 | 🔧 in-progress: 0 | ⏭️ skip: 4 | 📋 pending: 0**
 
-> 自動生成於 2026-07-30 18:15
+> 自動生成於 2026-07-30 18:18

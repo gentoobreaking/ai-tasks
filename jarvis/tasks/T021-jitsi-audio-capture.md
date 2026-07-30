@@ -3,7 +3,7 @@ github_issue: https://github.com/gentoobreaking/ai-tasks/issues/754
 title: Jitsi 語音串接 — 音訊捕獲
 type: Feature
 priority: low
-status: in-progress
+status: skip
 assignee: OpenCode MinniMax-M2.7
 created: 2026-05-13
 updated: 2026-05-23

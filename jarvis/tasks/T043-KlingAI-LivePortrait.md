@@ -2,7 +2,7 @@
 github_issue: https://github.com/gentoobreaking/ai-tasks/issues/775
 type: Feature
 priority: high
-status: in-progress
+status: skip
 assignee: OpenCode MinniMax-M2.7
 created: 2026-05-13
 updated: 2026-05-23

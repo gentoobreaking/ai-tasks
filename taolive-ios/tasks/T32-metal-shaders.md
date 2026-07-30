@@ -2,7 +2,7 @@
 github_issue: https://github.com/gentoobreaking/ai-tasks/issues/453
 type: Feature
 priority: high
-status: pending
+status: skip
 assignee: OpenCode DeepSeek V4 Flash
 created: 2026-05-14
 updated: 2026-05-14

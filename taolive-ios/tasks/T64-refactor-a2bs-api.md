@@ -3,7 +3,7 @@ github_issue: https://github.com/gentoobreaking/ai-tasks/issues/480
 title: 重構 A2BS 原始碼以適應新版 MNN API
 type: Feature
 priority: high
-status: pending
+status: skip
 assignee: claw
 created: 2026-05-14
 updated: 2026-05-14

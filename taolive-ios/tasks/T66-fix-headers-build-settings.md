@@ -3,7 +3,7 @@ github_issue: https://github.com/gentoobreaking/ai-tasks/issues/482
 title: 修正標頭檔路徑並清理重複編譯設定
 type: Feature
 priority: high
-status: pending
+status: skip
 assignee: claw
 created: 2026-05-14
 updated: 2026-05-14
