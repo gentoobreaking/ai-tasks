@@ -1,6 +1,6 @@
 # 📁 Projects Dashboard
 
-> 最後更新: 2026-07-30 22:08 · 自動生成
+> 最後更新: 2026-07-30 23:04 · 自動生成
 
 ---
 
@@ -9,9 +9,9 @@
 | 指標 | 數量 |
 |------|------|
 | 專案數 | 56 |
-| 任務總數 | 733 |
-| ✅ 已完成 | 663 |
-| ⬜ 待處理 | 7 |
+| 任務總數 | 738 |
+| ✅ 已完成 | 669 |
+| ⬜ 待處理 | 6 |
 | 🔄 進行中 | 1 |
 | ⏭️ 跳過 | 62 |
 | 總完成率 | 98% |
@@ -26,7 +26,6 @@
 | tw-quant-selector | [T134-alerting-module-split-refactor](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-selector/tasks/T134-alerting-module-split-refactor.md) | 拆分大型檔案 alerting.py（模組化重構） | ⬜ |
 | tw-quant-selector | [T135-complete-missing-tests](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-selector/tasks/T135-complete-missing-tests.md) | 補齊未完成的測試項目（T123/T124/T130-T133） | ⬜ |
 | tw-quant-signal | [T010-stock-pool-signals](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T010-stock-pool-signals.md) | [Phase 3] 個股池訊號 — 精選觀察清單掃描 | ⬜ |
-| tw-quant-signal | [T014-fundamental-data-enrichment](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T014-fundamental-data-enrichment.md) | [Phase 3] 個股基本面資料擴充 — 月營收 / EPS / ROE/ROA / 股利 | ⬜ |
 
 ## 🔄 進行中
 
@@ -107,8 +106,8 @@
 
 | 指標 | 數值 |
 |------|------|
-| 過去 7 天完成 | 12 |
-| 過去 30 天完成 | 15 |
+| 過去 7 天完成 | 18 |
+| 過去 30 天完成 | 21 |
 | 平均週期時間 | 0.7 天 |
 | 週期時間中位數 | 0.0 天 |
 
@@ -117,11 +116,11 @@
 xychart-beta
     title "過去 14 天任務完成趨勢"
     x-axis ["07-17", "07-18", "07-19", "07-20", "07-21", "07-22", "07-23", "07-24", "07-25", "07-26", "07-27", "07-28", "07-29", "07-30"]
-    y-axis "完成數" 0 --> 12
-    line [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 12]
+    y-axis "完成數" 0 --> 18
+    line [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 18]
 ```
 
-📊 總計: 12 | 日均: 0.9 | 本週: 12 | 📈 成長中
+📊 總計: 18 | 日均: 1.3 | 本週: 18 | 📈 成長中
 
 ## 📋 專案列表
 
@@ -177,7 +176,7 @@ xychart-beta
 | ✅ | [task-url-repair](https://github.com/gentoobreaking/ai-tasks/tree/main/task-url-repair) | 1 | 1 | 0 | 0 | 0 | ████████████████████ 100% | 2026-04-20 |
 | ✅ | [tasks-executor](https://github.com/gentoobreaking/ai-tasks/tree/main/tasks-executor) | 8 | 8 | 0 | 0 | 0 | ████████████████████ 100% | 2026-05-12 |
 | ⬜ | [tw-quant-selector](https://github.com/gentoobreaking/ai-tasks/tree/main/tw-quant-selector) | 142 | 140 | 2 | 0 | 0 | ███████████████████░ 98% | 2026-07-09 |
-| ⬜ | [tw-quant-signal](https://github.com/gentoobreaking/ai-tasks/tree/main/tw-quant-signal) | 14 | 12 | 2 | 0 | 0 | █████████████████░░░ 85% | 2026-07-30 |
+| ⬜ | [tw-quant-signal](https://github.com/gentoobreaking/ai-tasks/tree/main/tw-quant-signal) | 19 | 18 | 1 | 0 | 0 | ██████████████████░░ 94% | 2026-07-30 |
 | ✅ | [twse-monitor](https://github.com/gentoobreaking/ai-tasks/tree/main/twse-monitor) | 11 | 11 | 0 | 0 | 0 | ████████████████████ 100% | 2026-05-07 |
 | ✅ | [twstock-bfp-research](https://github.com/gentoobreaking/ai-tasks/tree/main/twstock-bfp-research) | 1 | 1 | 0 | 0 | 0 | ████████████████████ 100% | 2026-05-06 |
 | ✅ | [ux-improvement](https://github.com/gentoobreaking/ai-tasks/tree/main/ux-improvement) | 2 | 2 | 0 | 0 | 0 | ████████████████████ 100% | 2026-04-04 |

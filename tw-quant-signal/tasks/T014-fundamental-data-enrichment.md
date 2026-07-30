@@ -3,7 +3,7 @@ github_issue: ""
 title: "[Phase 3] 個股基本面資料擴充 — 月營收 / EPS / ROE/ROA / 股利"
 type: feature
 priority: medium
-status: pending
+status: done
 assignee: OpenCode with DeepSeek V4 Flash
 created: 2026-07-30
 updated: 2026-07-30
@@ -123,6 +123,12 @@ updated: 2026-07-30
 
 **註**: 非獨立資料表，邏輯可寫在 API 層或另建聚合查詢。初始版本可用硬編碼類股對照，未來再補即時查詢。
 
+#### 驗收標準
+- [ ] 類股對照表（硬編碼或動態查詢）
+- [ ] `GET /api/stocks/{id}/sector-ranking` 端點回傳該股所屬類股及百分位排名
+- [ ] 前端顯示：類股標籤 + EPS/ROE/ROA 在該類股中的位置
+- [ ] 前端建置無錯誤
+
 ### 5. 法人買賣超與融資融券
 **資料源**: TWSE 三大法人買賣超日報 / 融資融券日報
 
@@ -142,7 +148,15 @@ updated: 2026-07-30
 | total_buy_sell | INTEGER | 合計買賣超張數 |
 - PK: (stock_id, trade_date)
 
-> 現有 `institutional_flows` 表已有外資/投信/自營商買賣超（有記錄時才存），可研究是否直接擴充該表加 `total` 欄位即可，或另建新表。
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        > 現有 `institutional_flows` 表已有外資/投信/自營商買賣超（有記錄時才存），可研究是否直接擴充該表加 `total` 欄位即可，或另建新表。
+
+#### 驗收標準
+- [ ] `institutional_trades` 表（或擴充 `institutional_flows`）及 CRUD
+- [ ] 法人買賣超資料擷取模組
+- [ ] 管線串接：日排程更新
+- [ ] `GET /api/stocks/{id}/institutional-trades` 端點
+- [ ] 前端個股詳細頁面：法人買賣超表格
+- [ ] 前端建置無錯誤
 
 **DB Schema — `margin_trading`**:
 | 欄位 | 型態 | 說明 |
@@ -156,6 +170,14 @@ updated: 2026-07-30
 | short_buy | INTEGER | 融券買進張數 |
 | short_balance | INTEGER | 融券餘額(張數) |
 - PK: (stock_id, trade_date)
+
+#### 驗收標準
+- [ ] `margin_trading` 表建立及 CRUD
+- [ ] 融資融券資料擷取模組
+- [ ] 管線串接：日排程更新
+- [ ] `GET /api/stocks/{id}/margin-trading` 端點
+- [ ] 前端個股詳細頁面：融資融券表格
+- [ ] 前端建置無錯誤
 
 ## 備註
 - 月營收為每月固定資料，TWSE 通常在次月 10 日前公告

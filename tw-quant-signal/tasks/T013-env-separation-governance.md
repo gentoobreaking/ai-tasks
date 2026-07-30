@@ -37,15 +37,26 @@ src/tw_quant_signal/api/app.py            ← + GET /api/environment, /api/compl
 GOVERNANCE.md                             ← 完整治理文件
 ```
 
+## 功能實現
+
+| 需求 | 實現方式 |
+|------|---------|
+| 研究環境自由調整 | `research: true` (YAML) 或 `TW_QUANT_MODE=research` (env) |
+| 實戰白名單鎖定 | `filter_rules_for_production()` 過濾規則引擎產出 |
+| 規則晉升審核 | `check_promotion_eligibility()` — 交易數30+/勝率55%+/Sharpe 1.0+ |
+| 操作日誌 | 5 類：管線執行/訊號產出/規則變更/設定變更/模式切換 |
+| 免責聲明 | 自動附加於每日 Telegram/Discord 報告 |
+| 法規文件 | `GOVERNANCE.md` 完整說明個人定位、非投顧業務、對外服務風險提示 |
+| API | `/api/environment`, `/api/compliance-statement`, `/api/compliance-report`, `/api/operation-log` |
+
 ## 使用方式
 
 ```bash
-# 切換至實戰模式 (環境變數方式，不影響 git)
-export TW_QUANT_MODE=production
+# 研究模式（預設）
+export TW_QUANT_MODE=research   # 或 configs/environments.yaml research: true
 
-# 或修改 configs/environments.yaml
-# research: false
-# production_rule_ids: ["rule_001", "rule_002"]
+# 實戰模式
+export TW_QUANT_MODE=production  # 或 configs/environments.yaml research: false
 ```
 
 ## 備註

@@ -16,6 +16,12 @@
 | [Phase 3] 多時間框架整合 — 日線+週線 |
 | [Phase 3] 結構變化偵測 — 模型/規則衰退監控 |
 | [Phase 3] 研究/實戰環境分離與操作治理 |
+| [014-1] 月營收 — 近三年圖表 |
+| [014-2] EPS/ROE/ROA — 近五年/四季 |
+| [014-3] 股利 — 近五年分派紀錄 |
+| [014-4] 類股排名 — EPS/ROE/ROA 百分位 |
+| [014-5] 法人買賣超 & 融資融券 |
+| [Phase 3] 個股基本面資料擴充 — 月營收 / EPS / ROE/ROA / 股利 |
 
 ## Skip 項目
 
@@ -34,7 +40,6 @@
 | Task | 名稱 | 說明 |
 |------|------|------|
 | [T10-stock-pool-signals](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T010-stock-pool-signals.md) | [Phase 3] 個股池訊號 — 精選觀察清單掃描 | |
-| [T14-fundamental-data-enrichment](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T014-fundamental-data-enrichment.md) | [Phase 3] 個股基本面資料擴充 — 月營收 / EPS / ROE/ROA / 股利 | |
 
 ## Task 列表
 
@@ -53,8 +58,13 @@
 | [T11-multi-timeframe-integration](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T011-multi-timeframe-integration.md) | [Phase 3] 多時間框架整合 — 日線+週線 | ✅ done |
 | [T12-structural-change-detection](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T012-structural-change-detection.md) | [Phase 3] 結構變化偵測 — 模型/規則衰退監控 | ✅ done |
 | [T13-env-separation-governance](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T013-env-separation-governance.md) | [Phase 3] 研究/實戰環境分離與操作治理 | ✅ done |
-| [T14-fundamental-data-enrichment](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T014-fundamental-data-enrichment.md) | [Phase 3] 個股基本面資料擴充 — 月營收 / EPS / ROE/ROA / 股利 | 📋 pending |
+| [T14-1-monthly-revenue](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T014-1-monthly-revenue.md) | [014-1] 月營收 — 近三年圖表 | ✅ done |
+| [T14-2-quarterly-financials](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T014-2-quarterly-financials.md) | [014-2] EPS/ROE/ROA — 近五年/四季 | ✅ done |
+| [T14-3-dividends](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T014-3-dividends.md) | [014-3] 股利 — 近五年分派紀錄 | ✅ done |
+| [T14-4-sector-ranking](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T014-4-sector-ranking.md) | [014-4] 類股排名 — EPS/ROE/ROA 百分位 | ✅ done |
+| [T14-5-institutional-margin](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T014-5-institutional-margin.md) | [014-5] 法人買賣超 & 融資融券 | ✅ done |
+| [T14-fundamental-data-enrichment](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T014-fundamental-data-enrichment.md) | [Phase 3] 個股基本面資料擴充 — 月營收 / EPS / ROE/ROA / 股利 | ✅ done |
 
-**✅ done: 12 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 2**
+**✅ done: 18 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 1**
 
-> 自動生成於 2026-07-30 22:08
+> 自動生成於 2026-07-30 23:04
