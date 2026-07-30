@@ -1,6 +1,6 @@
 # 📁 Projects Dashboard
 
-> 最後更新: 2026-07-30 19:07 · 自動生成
+> 最後更新: 2026-07-30 21:14 · 自動生成
 
 ---
 
@@ -10,11 +10,11 @@
 |------|------|
 | 專案數 | 56 |
 | 任務總數 | 732 |
-| ✅ 已完成 | 656 |
-| ⬜ 待處理 | 13 |
+| ✅ 已完成 | 658 |
+| ⬜ 待處理 | 11 |
 | 🔄 進行中 | 1 |
 | ⏭️ 跳過 | 62 |
-| 總完成率 | 97% |
+| 總完成率 | 98% |
 
 ## 🔥 待處理高優先級任務
 
@@ -36,8 +36,6 @@
 | tw-quant-selector | [T135-complete-missing-tests](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-selector/tasks/T135-complete-missing-tests.md) | 補齊未完成的測試項目（T123/T124/T130-T133） | ⬜ |
 | tw-quant-signal | [T006-four-light-health-check](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T006-four-light-health-check.md) | [Phase 2] 四燈號健診評分系統 | ⬜ |
 | tw-quant-signal | [T007-market-state-segmentation](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T007-market-state-segmentation.md) | [Phase 2] 分市場狀態運作 — 多空震盪權重切換 | ⬜ |
-| tw-quant-signal | [T008-risk-management-module](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T008-risk-management-module.md) | [Phase 2] 風險控管模組 | ⬜ |
-| tw-quant-signal | [T009-dashboard-performance-tracking](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T009-dashboard-performance-tracking.md) | [Phase 2] 儀表板與績效追蹤系統 | ⬜ |
 | tw-quant-signal | [T010-stock-pool-signals](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T010-stock-pool-signals.md) | [Phase 3] 個股池訊號 — 精選觀察清單掃描 | ⬜ |
 | tw-quant-signal | [T011-multi-timeframe-integration](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T011-multi-timeframe-integration.md) | [Phase 3] 多時間框架整合 — 日線+週線 | ⬜ |
 | tw-quant-signal | [T012-structural-change-detection](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T012-structural-change-detection.md) | [Phase 3] 結構變化偵測 — 模型/規則衰退監控 | ⬜ |
@@ -122,8 +120,8 @@
 
 | 指標 | 數值 |
 |------|------|
-| 過去 7 天完成 | 5 |
-| 過去 30 天完成 | 8 |
+| 過去 7 天完成 | 7 |
+| 過去 30 天完成 | 10 |
 | 平均週期時間 | 0.7 天 |
 | 週期時間中位數 | 0.0 天 |
 
@@ -133,10 +131,10 @@ xychart-beta
     title "過去 14 天任務完成趨勢"
     x-axis ["07-17", "07-18", "07-19", "07-20", "07-21", "07-22", "07-23", "07-24", "07-25", "07-26", "07-27", "07-28", "07-29", "07-30"]
     y-axis "完成數" 0 --> 10
-    line [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5]
+    line [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7]
 ```
 
-📊 總計: 5 | 日均: 0.4 | 本週: 5 | 📈 成長中
+📊 總計: 7 | 日均: 0.5 | 本週: 7 | 📈 成長中
 
 ## 📋 專案列表
 
@@ -192,7 +190,7 @@ xychart-beta
 | ✅ | [task-url-repair](https://github.com/gentoobreaking/ai-tasks/tree/main/task-url-repair) | 1 | 1 | 0 | 0 | 0 | ████████████████████ 100% | 2026-04-20 |
 | ✅ | [tasks-executor](https://github.com/gentoobreaking/ai-tasks/tree/main/tasks-executor) | 8 | 8 | 0 | 0 | 0 | ████████████████████ 100% | 2026-05-12 |
 | ⬜ | [tw-quant-selector](https://github.com/gentoobreaking/ai-tasks/tree/main/tw-quant-selector) | 142 | 140 | 2 | 0 | 0 | ███████████████████░ 98% | 2026-07-09 |
-| ⬜ | [tw-quant-signal](https://github.com/gentoobreaking/ai-tasks/tree/main/tw-quant-signal) | 13 | 5 | 8 | 0 | 0 | ███████░░░░░░░░░░░░░ 38% | 2026-07-30 |
+| ⬜ | [tw-quant-signal](https://github.com/gentoobreaking/ai-tasks/tree/main/tw-quant-signal) | 13 | 7 | 6 | 0 | 0 | ██████████░░░░░░░░░░ 53% | 2026-07-30 |
   **[T006-four-light-health-check](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T006-four-light-health-check.md)**: [Phase 2] 四燈號健診評分系統
 | ✅ | [twse-monitor](https://github.com/gentoobreaking/ai-tasks/tree/main/twse-monitor) | 11 | 11 | 0 | 0 | 0 | ████████████████████ 100% | 2026-05-07 |
 | ✅ | [twstock-bfp-research](https://github.com/gentoobreaking/ai-tasks/tree/main/twstock-bfp-research) | 1 | 1 | 0 | 0 | 0 | ████████████████████ 100% | 2026-05-06 |
