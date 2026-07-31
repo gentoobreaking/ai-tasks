@@ -1,6 +1,6 @@
 # 📁 Projects Dashboard
 
-> 最後更新: 2026-07-31 18:21 · 自動生成
+> 最後更新: 2026-07-31 19:36 · 自動生成
 
 ---
 
@@ -10,11 +10,11 @@
 |------|------|
 | 專案數 | 58 |
 | 任務總數 | 773 |
-| ✅ 已完成 | 672 |
-| ⬜ 待處理 | 38 |
+| ✅ 已完成 | 676 |
+| ⬜ 待處理 | 34 |
 | 🔄 進行中 | 1 |
 | ⏭️ 跳過 | 62 |
-| 總完成率 | 94% |
+| 總完成率 | 95% |
 
 ## 🔥 待處理高優先級任務
 
@@ -30,8 +30,6 @@
 | tw-quant-daybrain | [T008-risk-manager](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T008-risk-manager.md) | 風控系統與持倉狀態機 |
 | tw-quant-daybrain | [T009-intraday-loop](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T009-intraday-loop.md) | 盤中監控循環（Phase 2 + Phase 3） |
 | tw-quant-daybrain | [T013-testing](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T013-testing.md) | 測試策略與模擬盤（Mock MCP Server） |
-| tw-quant-mcp | [T004-cache](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T004-cache.md) | 三層快取引擎（L1 Ristretto / L2 SQLite / Single-flight） |
-| tw-quant-mcp | [T006-mis-engine](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T006-mis-engine.md) | MIS Worker、Watchlist、RingBuffer 與重採樣引擎 |
 | tw-quant-mcp | [T008-twse-adapter](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T008-twse-adapter.md) | TWSE Adapter（OpenAPI + Web API 盤後） |
 | tw-quant-mcp | [T009-tpex-adapter](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T009-tpex-adapter.md) | TPEx Adapter（上櫃盤後） |
 | tw-quant-mcp | [T010-mcp-core-a](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T010-mcp-core-a.md) | MCP 基礎層與 A 組盤中工具 |
@@ -65,10 +63,6 @@
 | tw-quant-daybrain | [T013-testing](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T013-testing.md) | 測試策略與模擬盤（Mock MCP Server） | ⬜ |
 | tw-quant-daybrain | [T014-ops](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T014-ops.md) | 部署、失敗處理與紙上交單 | ⬜ |
 | tw-quant-daybrain | [T015-release](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T015-release.md) | 壓測、參數實驗與 v1.1 發布 | ⬜ |
-| tw-quant-mcp | [T004-cache](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T004-cache.md) | 三層快取引擎（L1 Ristretto / L2 SQLite / Single-flight） | ⬜ |
-| tw-quant-mcp | [T005-registry-calendar](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T005-registry-calendar.md) | Symbol Registry 與交易日曆 | ⬜ |
-| tw-quant-mcp | [T006-mis-engine](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T006-mis-engine.md) | MIS Worker、Watchlist、RingBuffer 與重採樣引擎 | ⬜ |
-| tw-quant-mcp | [T007-intraday-compute](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T007-intraday-compute.md) | 盤中衍生計算（VWAP / 爆量偵測 / 支撐壓力） | ⬜ |
 | tw-quant-mcp | [T008-twse-adapter](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T008-twse-adapter.md) | TWSE Adapter（OpenAPI + Web API 盤後） | ⬜ |
 | tw-quant-mcp | [T009-tpex-adapter](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T009-tpex-adapter.md) | TPEx Adapter（上櫃盤後） | ⬜ |
 | tw-quant-mcp | [T010-mcp-core-a](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T010-mcp-core-a.md) | MCP 基礎層與 A 組盤中工具 | ⬜ |
@@ -165,8 +159,8 @@
 
 | 指標 | 數值 |
 |------|------|
-| 過去 7 天完成 | 21 |
-| 過去 30 天完成 | 24 |
+| 過去 7 天完成 | 25 |
+| 過去 30 天完成 | 28 |
 | 平均週期時間 | 0.7 天 |
 | 週期時間中位數 | 0.0 天 |
 
@@ -176,10 +170,10 @@ xychart-beta
     title "過去 14 天任務完成趨勢"
     x-axis ["07-18", "07-19", "07-20", "07-21", "07-22", "07-23", "07-24", "07-25", "07-26", "07-27", "07-28", "07-29", "07-30", "07-31"]
     y-axis "完成數" 0 --> 18
-    line [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 18, 3]
+    line [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 18, 7]
 ```
 
-📊 總計: 21 | 日均: 1.5 | 本週: 21 | 📈 成長中
+📊 總計: 25 | 日均: 1.8 | 本週: 25 | 📈 成長中
 
 ## 📋 專案列表
 
@@ -245,9 +239,7 @@ xychart-beta
   **[T008-risk-manager](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T008-risk-manager.md)**: 風控系統與持倉狀態機
   **[T009-intraday-loop](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T009-intraday-loop.md)**: 盤中監控循環（Phase 2 + Phase 3）
   **[T013-testing](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T013-testing.md)**: 測試策略與模擬盤（Mock MCP Server）
-| ⬜ | [tw-quant-mcp](https://github.com/gentoobreaking/ai-tasks/tree/main/tw-quant-mcp) | 20 | 3 | 17 | 0 | 0 | ███░░░░░░░░░░░░░░░░░ 15% | 2026-07-31 |
-  **[T004-cache](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T004-cache.md)**: 三層快取引擎（L1 Ristretto / L2 SQLite / Single-flight）
-  **[T006-mis-engine](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T006-mis-engine.md)**: MIS Worker、Watchlist、RingBuffer 與重採樣引擎
+| ⬜ | [tw-quant-mcp](https://github.com/gentoobreaking/ai-tasks/tree/main/tw-quant-mcp) | 20 | 7 | 13 | 0 | 0 | ███████░░░░░░░░░░░░░ 35% | 2026-07-31 |
   **[T008-twse-adapter](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T008-twse-adapter.md)**: TWSE Adapter（OpenAPI + Web API 盤後）
   **[T009-tpex-adapter](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T009-tpex-adapter.md)**: TPEx Adapter（上櫃盤後）
   **[T010-mcp-core-a](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T010-mcp-core-a.md)**: MCP 基礎層與 A 組盤中工具
