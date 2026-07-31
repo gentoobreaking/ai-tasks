@@ -1,6 +1,6 @@
-# 📅 Daily Dashboard - 2026-07-30
+# 📅 Daily Dashboard - 2026-07-31
 
-> 最後更新: 2026-07-30 23:26 · 自動生成
+> 最後更新: 2026-07-31 18:21 · 自動生成
 
 ---
 
@@ -8,25 +8,41 @@
 
 | 專案 | 任務 | 標題 |
 | -- | -- | -- |
-| tw-quant-signal | [T001-data-pipeline](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T001-data-pipeline.md) | [Phase 1] 資料管線建置 — 擷取、清洗、儲存、健康檢查 |
-| tw-quant-signal | [T002-feature-engineering](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T002-feature-engineering.md) | [Phase 1] 特徵工程 — 條件與指標計算 |
-| tw-quant-signal | [T003-rule-engine](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T003-rule-engine.md) | [Phase 1] 規則引擎 — 條件組合與訊號觸發 |
-| tw-quant-signal | [T004-backtesting-framework](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T004-backtesting-framework.md) | [Phase 1] 回測框架 — 驗證規則有效性 |
-| tw-quant-signal | [T005-signal-output-notification](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T005-signal-output-notification.md) | [Phase 1] 訊號輸出、通知與紀錄 |
-| tw-quant-signal | [T006-four-light-health-check](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T006-four-light-health-check.md) | [Phase 2] 四燈號健診評分系統 |
-| tw-quant-signal | [T007-market-state-segmentation](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T007-market-state-segmentation.md) | [Phase 2] 分市場狀態運作 — 多空震盪權重切換 |
-| tw-quant-signal | [T008-risk-management-module](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T008-risk-management-module.md) | [Phase 2] 風險控管模組 |
-| tw-quant-signal | [T009-dashboard-performance-tracking](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T009-dashboard-performance-tracking.md) | [Phase 2] 儀表板與績效追蹤系統 |
-| tw-quant-signal | [T010-stock-pool-signals](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T010-stock-pool-signals.md) | [Phase 3] 個股池訊號 — 精選觀察清單掃描 |
-| tw-quant-signal | [T011-multi-timeframe-integration](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T011-multi-timeframe-integration.md) | [Phase 3] 多時間框架整合 — 日線+週線 |
-| tw-quant-signal | [T012-structural-change-detection](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T012-structural-change-detection.md) | [Phase 3] 結構變化偵測 — 模型/規則衰退監控 |
-| tw-quant-signal | [T013-env-separation-governance](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T013-env-separation-governance.md) | [Phase 3] 研究/實戰環境分離與操作治理 |
-| tw-quant-signal | [T014-1-monthly-revenue](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T014-1-monthly-revenue.md) | [014-1] 月營收 — 近三年圖表 |
-| tw-quant-signal | [T014-2-quarterly-financials](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T014-2-quarterly-financials.md) | [014-2] EPS/ROE/ROA — 近五年/四季 |
-| tw-quant-signal | [T014-3-dividends](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T014-3-dividends.md) | [014-3] 股利 — 近五年分派紀錄 |
-| tw-quant-signal | [T014-4-sector-ranking](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T014-4-sector-ranking.md) | [014-4] 類股排名 — EPS/ROE/ROA 百分位 |
-| tw-quant-signal | [T014-5-institutional-margin](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T014-5-institutional-margin.md) | [014-5] 法人買賣超 & 融資融券 |
-| tw-quant-signal | [T014-fundamental-data-enrichment](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T014-fundamental-data-enrichment.md) | [Phase 3] 個股基本面資料擴充 — 月營收 / EPS / ROE/ROA / 股利 |
+| tw-quant-daybrain | [T001-scaffold](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T001-scaffold.md) | 專案初始化與設定骨架 |
+| tw-quant-daybrain | [T002-mcp-client](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T002-mcp-client.md) | MCP Client 連線層 |
+| tw-quant-daybrain | [T003-freshness-gate](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T003-freshness-gate.md) | 資料新鮮度守門（Freshness Gate） |
+| tw-quant-daybrain | [T004-event-logging](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T004-event-logging.md) | 事件日誌與回放讀取器 |
+| tw-quant-daybrain | [T005-calendar-scheduler](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T005-calendar-scheduler.md) | 交易日曆與生命週期排程器 |
+| tw-quant-daybrain | [T006-pre-market](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T006-pre-market.md) | 盤前流程（Phase 0 + Phase 1 選股） |
+| tw-quant-daybrain | [T007-scoring](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T007-scoring.md) | 訊號模型 v1（Config-Driven 評分） |
+| tw-quant-daybrain | [T008-risk-manager](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T008-risk-manager.md) | 風控系統與持倉狀態機 |
+| tw-quant-daybrain | [T009-intraday-loop](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T009-intraday-loop.md) | 盤中監控循環（Phase 2 + Phase 3） |
+| tw-quant-daybrain | [T010-journal-metrics](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T010-journal-metrics.md) | 交易日誌與績效指標（Phase 4） |
+| tw-quant-daybrain | [T011-llm-report](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T011-llm-report.md) | LLM 檢討報告與防幻覺規範 |
+| tw-quant-daybrain | [T012-replay](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T012-replay.md) | 回放工具與滑價驗證 |
+| tw-quant-daybrain | [T013-testing](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T013-testing.md) | 測試策略與模擬盤（Mock MCP Server） |
+| tw-quant-daybrain | [T014-ops](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T014-ops.md) | 部署、失敗處理與紙上交單 |
+| tw-quant-daybrain | [T015-release](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T015-release.md) | 壓測、參數實驗與 v1.1 發布 |
+| tw-quant-mcp | [T001-scaffold](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T001-scaffold.md) | 專案初始化與目錄骨架 |
+| tw-quant-mcp | [T002-model](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T002-model.md) | 資料模型層（Envelope / Lineage / Symbol / Candle） |
+| tw-quant-mcp | [T003-provider-client](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T003-provider-client.md) | Resilient HTTP Client、Rate Limiter 與 Circuit Breaker |
+| tw-quant-mcp | [T004-cache](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T004-cache.md) | 三層快取引擎（L1 Ristretto / L2 SQLite / Single-flight） |
+| tw-quant-mcp | [T005-registry-calendar](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T005-registry-calendar.md) | Symbol Registry 與交易日曆 |
+| tw-quant-mcp | [T006-mis-engine](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T006-mis-engine.md) | MIS Worker、Watchlist、RingBuffer 與重採樣引擎 |
+| tw-quant-mcp | [T007-intraday-compute](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T007-intraday-compute.md) | 盤中衍生計算（VWAP / 爆量偵測 / 支撐壓力） |
+| tw-quant-mcp | [T008-twse-adapter](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T008-twse-adapter.md) | TWSE Adapter（OpenAPI + Web API 盤後） |
+| tw-quant-mcp | [T009-tpex-adapter](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T009-tpex-adapter.md) | TPEx Adapter（上櫃盤後） |
+| tw-quant-mcp | [T010-mcp-core-a](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T010-mcp-core-a.md) | MCP 基礎層與 A 組盤中工具 |
+| tw-quant-mcp | [T011-bc-tools](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T011-bc-tools.md) | B/C 組盤後行情、籌碼與風險工具 |
+| tw-quant-mcp | [T012-mops-adapter](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T012-mops-adapter.md) | MOPS Adapter（財報 / 月營收 / 重大訊息） |
+| tw-quant-mcp | [T013-taifex](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T013-taifex.md) | TAIFEX Adapter 與歷史回溯模組 |
+| tw-quant-mcp | [T014-de-tools](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T014-de-tools.md) | D/E 組基本面、篩選與股利工具 |
+| tw-quant-mcp | [T015-fg-tools](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T015-fg-tools.md) | F/G 組期貨選擇權與基礎設施工具 |
+| tw-quant-mcp | [T016-chart](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T016-chart.md) | Chart 套件（ChartMeta 產生器） |
+| tw-quant-mcp | [T017-composite](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T017-composite.md) | 複合分析引擎（財報體檢 / 篩選） |
+| tw-quant-mcp | [T018-perf-prewarm](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T018-perf-prewarm.md) | 效能最佳化與預熱排程 |
+| tw-quant-mcp | [T019-testing](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T019-testing.md) | 測試策略與測試基建（fixtures / 契約測試 / live smoke） |
+| tw-quant-mcp | [T020-release](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T020-release.md) | 連續運行驗證與 v1.3 發布 |
 
 ---
 
@@ -34,30 +50,35 @@
 
 | 專案 | 任務 | 標題 |
 | -- | -- | -- |
-| tw-quant-signal | [T001-data-pipeline](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T001-data-pipeline.md) | [Phase 1] 資料管線建置 — 擷取、清洗、儲存、健康檢查 |
-| tw-quant-signal | [T002-feature-engineering](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T002-feature-engineering.md) | [Phase 1] 特徵工程 — 條件與指標計算 |
-| tw-quant-signal | [T003-rule-engine](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T003-rule-engine.md) | [Phase 1] 規則引擎 — 條件組合與訊號觸發 |
-| tw-quant-signal | [T004-backtesting-framework](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T004-backtesting-framework.md) | [Phase 1] 回測框架 — 驗證規則有效性 |
-| tw-quant-signal | [T005-signal-output-notification](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T005-signal-output-notification.md) | [Phase 1] 訊號輸出、通知與紀錄 |
-| tw-quant-signal | [T006-four-light-health-check](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T006-four-light-health-check.md) | [Phase 2] 四燈號健診評分系統 |
-| tw-quant-signal | [T007-market-state-segmentation](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T007-market-state-segmentation.md) | [Phase 2] 分市場狀態運作 — 多空震盪權重切換 |
-| tw-quant-signal | [T008-risk-management-module](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T008-risk-management-module.md) | [Phase 2] 風險控管模組 |
-| tw-quant-signal | [T009-dashboard-performance-tracking](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T009-dashboard-performance-tracking.md) | [Phase 2] 儀表板與績效追蹤系統 |
-| tw-quant-signal | [T011-multi-timeframe-integration](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T011-multi-timeframe-integration.md) | [Phase 3] 多時間框架整合 — 日線+週線 |
-| tw-quant-signal | [T012-structural-change-detection](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T012-structural-change-detection.md) | [Phase 3] 結構變化偵測 — 模型/規則衰退監控 |
-| tw-quant-signal | [T013-env-separation-governance](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T013-env-separation-governance.md) | [Phase 3] 研究/實戰環境分離與操作治理 |
-| tw-quant-signal | [T014-1-monthly-revenue](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T014-1-monthly-revenue.md) | [014-1] 月營收 — 近三年圖表 |
-| tw-quant-signal | [T014-2-quarterly-financials](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T014-2-quarterly-financials.md) | [014-2] EPS/ROE/ROA — 近五年/四季 |
-| tw-quant-signal | [T014-3-dividends](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T014-3-dividends.md) | [014-3] 股利 — 近五年分派紀錄 |
-| tw-quant-signal | [T014-4-sector-ranking](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T014-4-sector-ranking.md) | [014-4] 類股排名 — EPS/ROE/ROA 百分位 |
-| tw-quant-signal | [T014-5-institutional-margin](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T014-5-institutional-margin.md) | [014-5] 法人買賣超 & 融資融券 |
-| tw-quant-signal | [T014-fundamental-data-enrichment](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T014-fundamental-data-enrichment.md) | [Phase 3] 個股基本面資料擴充 — 月營收 / EPS / ROE/ROA / 股利 |
+| tw-quant-mcp | [T001-scaffold](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T001-scaffold.md) | 專案初始化與目錄骨架 |
+| tw-quant-mcp | [T002-model](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T002-model.md) | 資料模型層（Envelope / Lineage / Symbol / Candle） |
+| tw-quant-mcp | [T003-provider-client](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T003-provider-client.md) | Resilient HTTP Client、Rate Limiter 與 Circuit Breaker |
 
 ---
 
 ## 🔥 待處理高優先級
 
-_無_
+| 專案 | 任務 | 標題 | 優先 |
+| -- | -- | -- | -- |
+| tw-quant-daybrain | [T001-scaffold](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T001-scaffold.md) | 專案初始化與設定骨架 | high |
+| tw-quant-daybrain | [T002-mcp-client](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T002-mcp-client.md) | MCP Client 連線層 | high |
+| tw-quant-daybrain | [T003-freshness-gate](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T003-freshness-gate.md) | 資料新鮮度守門（Freshness Gate） | high |
+| tw-quant-daybrain | [T004-event-logging](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T004-event-logging.md) | 事件日誌與回放讀取器 | high |
+| tw-quant-daybrain | [T005-calendar-scheduler](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T005-calendar-scheduler.md) | 交易日曆與生命週期排程器 | high |
+| tw-quant-daybrain | [T006-pre-market](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T006-pre-market.md) | 盤前流程（Phase 0 + Phase 1 選股） | high |
+| tw-quant-daybrain | [T007-scoring](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T007-scoring.md) | 訊號模型 v1（Config-Driven 評分） | high |
+| tw-quant-daybrain | [T008-risk-manager](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T008-risk-manager.md) | 風控系統與持倉狀態機 | high |
+| tw-quant-daybrain | [T009-intraday-loop](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T009-intraday-loop.md) | 盤中監控循環（Phase 2 + Phase 3） | high |
+| tw-quant-daybrain | [T013-testing](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T013-testing.md) | 測試策略與模擬盤（Mock MCP Server） | high |
+| tw-quant-mcp | [T004-cache](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T004-cache.md) | 三層快取引擎（L1 Ristretto / L2 SQLite / Single-flight） | high |
+| tw-quant-mcp | [T006-mis-engine](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T006-mis-engine.md) | MIS Worker、Watchlist、RingBuffer 與重採樣引擎 | high |
+| tw-quant-mcp | [T008-twse-adapter](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T008-twse-adapter.md) | TWSE Adapter（OpenAPI + Web API 盤後） | high |
+| tw-quant-mcp | [T009-tpex-adapter](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T009-tpex-adapter.md) | TPEx Adapter（上櫃盤後） | high |
+| tw-quant-mcp | [T010-mcp-core-a](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T010-mcp-core-a.md) | MCP 基礎層與 A 組盤中工具 | high |
+| tw-quant-mcp | [T011-bc-tools](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T011-bc-tools.md) | B/C 組盤後行情、籌碼與風險工具 | high |
+| tw-quant-mcp | [T012-mops-adapter](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T012-mops-adapter.md) | MOPS Adapter（財報 / 月營收 / 重大訊息） | high |
+| tw-quant-mcp | [T013-taifex](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T013-taifex.md) | TAIFEX Adapter 與歷史回溯模組 | high |
+| tw-quant-mcp | [T019-testing](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T019-testing.md) | 測試策略與測試基建（fixtures / 契約測試 / live smoke） | high |
 
 ---
 
@@ -73,6 +94,38 @@ _無_
 
 | 專案 | 任務 | 標題 | 優先 |
 | -- | -- | -- | -- |
+| tw-quant-daybrain | [T001-scaffold](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T001-scaffold.md) | 專案初始化與設定骨架 | high |
+| tw-quant-daybrain | [T002-mcp-client](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T002-mcp-client.md) | MCP Client 連線層 | high |
+| tw-quant-daybrain | [T003-freshness-gate](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T003-freshness-gate.md) | 資料新鮮度守門（Freshness Gate） | high |
+| tw-quant-daybrain | [T004-event-logging](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T004-event-logging.md) | 事件日誌與回放讀取器 | high |
+| tw-quant-daybrain | [T005-calendar-scheduler](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T005-calendar-scheduler.md) | 交易日曆與生命週期排程器 | high |
+| tw-quant-daybrain | [T006-pre-market](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T006-pre-market.md) | 盤前流程（Phase 0 + Phase 1 選股） | high |
+| tw-quant-daybrain | [T007-scoring](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T007-scoring.md) | 訊號模型 v1（Config-Driven 評分） | high |
+| tw-quant-daybrain | [T008-risk-manager](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T008-risk-manager.md) | 風控系統與持倉狀態機 | high |
+| tw-quant-daybrain | [T009-intraday-loop](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T009-intraday-loop.md) | 盤中監控循環（Phase 2 + Phase 3） | high |
+| tw-quant-daybrain | [T013-testing](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T013-testing.md) | 測試策略與模擬盤（Mock MCP Server） | high |
+| tw-quant-mcp | [T004-cache](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T004-cache.md) | 三層快取引擎（L1 Ristretto / L2 SQLite / Single-flight） | high |
+| tw-quant-mcp | [T006-mis-engine](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T006-mis-engine.md) | MIS Worker、Watchlist、RingBuffer 與重採樣引擎 | high |
+| tw-quant-mcp | [T008-twse-adapter](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T008-twse-adapter.md) | TWSE Adapter（OpenAPI + Web API 盤後） | high |
+| tw-quant-mcp | [T009-tpex-adapter](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T009-tpex-adapter.md) | TPEx Adapter（上櫃盤後） | high |
+| tw-quant-mcp | [T010-mcp-core-a](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T010-mcp-core-a.md) | MCP 基礎層與 A 組盤中工具 | high |
+| tw-quant-mcp | [T011-bc-tools](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T011-bc-tools.md) | B/C 組盤後行情、籌碼與風險工具 | high |
+| tw-quant-mcp | [T012-mops-adapter](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T012-mops-adapter.md) | MOPS Adapter（財報 / 月營收 / 重大訊息） | high |
+| tw-quant-mcp | [T013-taifex](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T013-taifex.md) | TAIFEX Adapter 與歷史回溯模組 | high |
+| tw-quant-mcp | [T019-testing](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T019-testing.md) | 測試策略與測試基建（fixtures / 契約測試 / live smoke） | high |
+| tw-quant-daybrain | [T010-journal-metrics](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T010-journal-metrics.md) | 交易日誌與績效指標（Phase 4） | medium |
+| tw-quant-daybrain | [T011-llm-report](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T011-llm-report.md) | LLM 檢討報告與防幻覺規範 | medium |
+| tw-quant-daybrain | [T012-replay](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T012-replay.md) | 回放工具與滑價驗證 | medium |
+| tw-quant-daybrain | [T014-ops](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T014-ops.md) | 部署、失敗處理與紙上交單 | medium |
+| tw-quant-daybrain | [T015-release](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T015-release.md) | 壓測、參數實驗與 v1.1 發布 | medium |
+| tw-quant-mcp | [T005-registry-calendar](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T005-registry-calendar.md) | Symbol Registry 與交易日曆 | medium |
+| tw-quant-mcp | [T007-intraday-compute](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T007-intraday-compute.md) | 盤中衍生計算（VWAP / 爆量偵測 / 支撐壓力） | medium |
+| tw-quant-mcp | [T014-de-tools](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T014-de-tools.md) | D/E 組基本面、篩選與股利工具 | medium |
+| tw-quant-mcp | [T015-fg-tools](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T015-fg-tools.md) | F/G 組期貨選擇權與基礎設施工具 | medium |
+| tw-quant-mcp | [T016-chart](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T016-chart.md) | Chart 套件（ChartMeta 產生器） | medium |
+| tw-quant-mcp | [T017-composite](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T017-composite.md) | 複合分析引擎（財報體檢 / 篩選） | medium |
+| tw-quant-mcp | [T018-perf-prewarm](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T018-perf-prewarm.md) | 效能最佳化與預熱排程 | medium |
+| tw-quant-mcp | [T020-release](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T020-release.md) | 連續運行驗證與 v1.3 發布 | medium |
 | tw-quant-selector | [T134-alerting-module-split-refactor](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-selector/tasks/T134-alerting-module-split-refactor.md) | 拆分大型檔案 alerting.py（模組化重構） | medium |
 | tw-quant-selector | [T135-complete-missing-tests](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-selector/tasks/T135-complete-missing-tests.md) | 補齊未完成的測試項目（T123/T124/T130-T133） | medium |
 | gold-analysis-advanced | [T002](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis-advanced/tasks/T002.md) | ML 模型整合與優化 | low |
