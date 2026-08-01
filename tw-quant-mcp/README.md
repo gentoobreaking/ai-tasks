@@ -22,6 +22,8 @@
 | Chart 套件（ChartMeta 產生器） |
 | 複合分析引擎（財報體檢 / 篩選） |
 | 效能最佳化與預熱排程 |
+| 測試策略與測試基建（fixtures / 契約測試 / live smoke） |
+| 連續運行驗證與 v1.3 發布 |
 
 ## Skip 項目
 
@@ -39,8 +41,6 @@
 
 | Task | 名稱 | 說明 |
 |------|------|------|
-| [T19-testing](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T019-testing.md) | 測試策略與測試基建（fixtures / 契約測試 / live smoke） | |
-| [T20-release](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T020-release.md) | 連續運行驗證與 v1.3 發布 | |
 | [T21-lineage-v21](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T021-lineage-v21.md) | Lineage/SourceRole/DataGrade 通用化升級（v2.1 §4） | |
 | [T22-domain-schema-v21](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T022-domain-schema-v21.md) | 六大正規化 Schema 與 Normalize 層（v2.1 §6） | |
 | [T23-source-role-v21](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T023-source-role-v21.md) | 七來源 Source Role 分級落地（v2.1 §3） | |
@@ -75,8 +75,8 @@
 | [T16-chart](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T016-chart.md) | Chart 套件（ChartMeta 產生器） | ✅ done |
 | [T17-composite](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T017-composite.md) | 複合分析引擎（財報體檢 / 篩選） | ✅ done |
 | [T18-perf-prewarm](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T018-perf-prewarm.md) | 效能最佳化與預熱排程 | ✅ done |
-| [T19-testing](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T019-testing.md) | 測試策略與測試基建（fixtures / 契約測試 / live smoke） | 📋 pending |
-| [T20-release](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T020-release.md) | 連續運行驗證與 v1.3 發布 | 📋 pending |
+| [T19-testing](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T019-testing.md) | 測試策略與測試基建（fixtures / 契約測試 / live smoke） | ✅ done |
+| [T20-release](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T020-release.md) | 連續運行驗證與 v1.3 發布 | ✅ done |
 | [T21-lineage-v21](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T021-lineage-v21.md) | Lineage/SourceRole/DataGrade 通用化升級（v2.1 §4） | 📋 pending |
 | [T22-domain-schema-v21](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T022-domain-schema-v21.md) | 六大正規化 Schema 與 Normalize 層（v2.1 §6） | 📋 pending |
 | [T23-source-role-v21](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T023-source-role-v21.md) | 七來源 Source Role 分級落地（v2.1 §3） | 📋 pending |
@@ -89,6 +89,6 @@
 | [T30-contract-v21](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T030-contract-v21.md) | v2.1 版契約測試與全量回歸（v2.1 §6 / §14） | 📋 pending |
 | [T31-release-v21](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T031-release-v21.md) | 連續運行驗證與 v2.1 發布 | 📋 pending |
 
-**✅ done: 18 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 13**
+**✅ done: 20 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 11**
 
-> 自動生成於 2026-08-01 16:59
+> 自動生成於 2026-08-01 17:35
