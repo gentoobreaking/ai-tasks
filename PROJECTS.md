@@ -1,6 +1,6 @@
 # 📁 Projects Dashboard
 
-> 最後更新: 2026-08-01 14:39 · 自動生成
+> 最後更新: 2026-08-01 16:01 · 自動生成
 
 ---
 
@@ -10,11 +10,11 @@
 |------|------|
 | 專案數 | 58 |
 | 任務總數 | 773 |
-| ✅ 已完成 | 682 |
-| ⬜ 待處理 | 28 |
+| ✅ 已完成 | 687 |
+| ⬜ 待處理 | 23 |
 | 🔄 進行中 | 1 |
 | ⏭️ 跳過 | 62 |
-| 總完成率 | 95% |
+| 總完成率 | 96% |
 
 ## 🔥 待處理高優先級任務
 
@@ -57,11 +57,6 @@
 | tw-quant-daybrain | [T013-testing](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T013-testing.md) | 測試策略與模擬盤（Mock MCP Server） | ⬜ |
 | tw-quant-daybrain | [T014-ops](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T014-ops.md) | 部署、失敗處理與紙上交單 | ⬜ |
 | tw-quant-daybrain | [T015-release](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T015-release.md) | 壓測、參數實驗與 v1.1 發布 | ⬜ |
-| tw-quant-mcp | [T014-de-tools](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T014-de-tools.md) | D/E 組基本面、篩選與股利工具 | ⬜ |
-| tw-quant-mcp | [T015-fg-tools](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T015-fg-tools.md) | F/G 組期貨選擇權與基礎設施工具 | ⬜ |
-| tw-quant-mcp | [T016-chart](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T016-chart.md) | Chart 套件（ChartMeta 產生器） | ⬜ |
-| tw-quant-mcp | [T017-composite](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T017-composite.md) | 複合分析引擎（財報體檢 / 篩選） | ⬜ |
-| tw-quant-mcp | [T018-perf-prewarm](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T018-perf-prewarm.md) | 效能最佳化與預熱排程 | ⬜ |
 | tw-quant-mcp | [T019-testing](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T019-testing.md) | 測試策略與測試基建（fixtures / 契約測試 / live smoke） | ⬜ |
 | tw-quant-mcp | [T020-release](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T020-release.md) | 連續運行驗證與 v1.3 發布 | ⬜ |
 | tw-quant-selector | [T134-alerting-module-split-refactor](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-selector/tasks/T134-alerting-module-split-refactor.md) | 拆分大型檔案 alerting.py（模組化重構） | ⬜ |
@@ -147,8 +142,8 @@
 
 | 指標 | 數值 |
 |------|------|
-| 過去 7 天完成 | 31 |
-| 過去 30 天完成 | 34 |
+| 過去 7 天完成 | 36 |
+| 過去 30 天完成 | 39 |
 | 平均週期時間 | 0.7 天 |
 | 週期時間中位數 | 0.0 天 |
 
@@ -158,10 +153,10 @@ xychart-beta
     title "過去 14 天任務完成趨勢"
     x-axis ["07-19", "07-20", "07-21", "07-22", "07-23", "07-24", "07-25", "07-26", "07-27", "07-28", "07-29", "07-30", "07-31", "08-01"]
     y-axis "完成數" 0 --> 18
-    line [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 18, 11, 2]
+    line [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 18, 11, 7]
 ```
 
-📊 總計: 31 | 日均: 2.2 | 本週: 31 | 📈 成長中
+📊 總計: 36 | 日均: 2.6 | 本週: 36 | 📈 成長中
 
 ## 📋 專案列表
 
@@ -227,7 +222,7 @@ xychart-beta
   **[T008-risk-manager](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T008-risk-manager.md)**: 風控系統與持倉狀態機
   **[T009-intraday-loop](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T009-intraday-loop.md)**: 盤中監控循環（Phase 2 + Phase 3）
   **[T013-testing](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T013-testing.md)**: 測試策略與模擬盤（Mock MCP Server）
-| ⬜ | [tw-quant-mcp](https://github.com/gentoobreaking/ai-tasks/tree/main/tw-quant-mcp) | 20 | 13 | 7 | 0 | 0 | █████████████░░░░░░░ 65% | 2026-08-01 |
+| ⬜ | [tw-quant-mcp](https://github.com/gentoobreaking/ai-tasks/tree/main/tw-quant-mcp) | 20 | 18 | 2 | 0 | 0 | ██████████████████░░ 90% | 2026-08-01 |
   **[T019-testing](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T019-testing.md)**: 測試策略與測試基建（fixtures / 契約測試 / live smoke）
 | ⬜ | [tw-quant-selector](https://github.com/gentoobreaking/ai-tasks/tree/main/tw-quant-selector) | 142 | 140 | 2 | 0 | 0 | ███████████████████░ 98% | 2026-07-09 |
 | ⬜ | [tw-quant-signal](https://github.com/gentoobreaking/ai-tasks/tree/main/tw-quant-signal) | 19 | 18 | 1 | 0 | 0 | ██████████████████░░ 94% | 2026-07-30 |
