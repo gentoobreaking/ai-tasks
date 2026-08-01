@@ -1,6 +1,6 @@
 # 📅 Daily Dashboard - 2026-08-01
 
-> 最後更新: 2026-08-01 14:06 · 自動生成
+> 最後更新: 2026-08-01 14:39 · 自動生成
 
 ---
 
@@ -15,6 +15,7 @@ _無_
 | 專案 | 任務 | 標題 |
 | -- | -- | -- |
 | tw-quant-mcp | [T012-mops-adapter](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T012-mops-adapter.md) | MOPS Adapter（財報 / 月營收 / 重大訊息） |
+| tw-quant-mcp | [T013-taifex](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T013-taifex.md) | TAIFEX Adapter 與歷史回溯模組 |
 
 ---
 
@@ -32,7 +33,6 @@ _無_
 | tw-quant-daybrain | [T008-risk-manager](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T008-risk-manager.md) | 風控系統與持倉狀態機 | high |
 | tw-quant-daybrain | [T009-intraday-loop](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T009-intraday-loop.md) | 盤中監控循環（Phase 2 + Phase 3） | high |
 | tw-quant-daybrain | [T013-testing](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T013-testing.md) | 測試策略與模擬盤（Mock MCP Server） | high |
-| tw-quant-mcp | [T013-taifex](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T013-taifex.md) | TAIFEX Adapter 與歷史回溯模組 | high |
 | tw-quant-mcp | [T019-testing](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T019-testing.md) | 測試策略與測試基建（fixtures / 契約測試 / live smoke） | high |
 
 ---
@@ -59,7 +59,6 @@ _無_
 | tw-quant-daybrain | [T008-risk-manager](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T008-risk-manager.md) | 風控系統與持倉狀態機 | high |
 | tw-quant-daybrain | [T009-intraday-loop](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T009-intraday-loop.md) | 盤中監控循環（Phase 2 + Phase 3） | high |
 | tw-quant-daybrain | [T013-testing](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T013-testing.md) | 測試策略與模擬盤（Mock MCP Server） | high |
-| tw-quant-mcp | [T013-taifex](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T013-taifex.md) | TAIFEX Adapter 與歷史回溯模組 | high |
 | tw-quant-mcp | [T019-testing](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T019-testing.md) | 測試策略與測試基建（fixtures / 契約測試 / live smoke） | high |
 | tw-quant-daybrain | [T010-journal-metrics](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T010-journal-metrics.md) | 交易日誌與績效指標（Phase 4） | medium |
 | tw-quant-daybrain | [T011-llm-report](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T011-llm-report.md) | LLM 檢討報告與防幻覺規範 | medium |
