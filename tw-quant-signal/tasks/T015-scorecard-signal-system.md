@@ -1,0 +1,85 @@
+---
+github_issue: ""
+title: "[Phase 3] 11大指標多空訊號系統"
+type: feature
+priority: high
+status: pending
+assignee: OpenCode with DeepSeek V4 Flash
+created: 2026-08-02
+updated: 2026-08-02
+---
+
+# T015 - 11 大指標多空訊號系統
+
+## 目標
+建立基於「條件符合計數」的個股多空訊號預覽系統。計算每個標的之 11 大多方指標與 11 大空方指標的符合數，產出 `x/11` 格式的計分卡。透過 Web 頁面以顏色分明的文字顯示是否符合（多方紅色、空方綠色、不符合灰色）。
+
+對應規格：`signal.md` / `tw-stock-ai-signal-spec-v1.2.md §3.4`
+
+## 驗收標準
+
+### 後端 — 指標計算
+- [ ] `src/tw_quant_signal/signal_scorecard.py` 新模組：`compute_scorecard(db, stock_id, trade_date)` → dict
+- [ ] 多方 11 項指標的 boolean 計算（全部實現）：
+
+| 指標 | 計算邏輯 | 資料來源 |
+|------|---------|---------|
+| 創 240 日新高 | `close >= max(past 240 days)` | `daily_prices` 表 |
+| 三大法人連續 3 日買超 | `foreign > 0 AND sity > 0 AND dealer > 0` 過去3日 | `institutional_flows` 表 |
+| 外資買超 > 500 張 | `foreign_investors_net` 當日值 > 500 張 | `institutional_flows` 表 |
+| 外資連買 3 日 | `foreign_investors_net > 0` 過去連續3日 | `institutional_flows` 表 |
+| 投信買超 > 500 張 | `sity_investors_net` 當日值 > 500 張 | `institutional_flows` 表 |
+| 投信連買 3 日 | `sity_investors_net > 0` 過去連續3日 | `institutional_flows` 表 |
+| 主力連買 3 日 | `dealer_net > 0` 過去連續3日（自營商代主主力） | `institutional_flows` 表 |
+| 連 3 日收紅 K 棒 | `close > open` 過去連續3日 | `daily_prices` 表 |
+| 站上月線 | `close > ma20` | `tech_indicators` 表 |
+| 月營收成長 > 10% | `yoy_change > 10` (MoM to same month last year) | `monthly_revenue` 表 |
+| 月營收連續成長 | `mom_change > 0` 於最近兩筆月營收 | `monthly_revenue` 表 |
+
+- [ ] 空方 11 項指標的 boolean 計算（對應對標）全部實現
+- [ ] 每日管線自動計算並儲存計分卡（加入 `pipeline.py`）
+- [ ] `GET /api/signals/{stock_id}/scorecard` — JSON API
+- [ ] `GET /api/signals/all/scorecard` — 全標的一次輸出
+
+### 前端 — 網頁顯示
+- [ ] 雙欄佈局：左右邊兩方並排表格
+- [ ] 多方表格 — 標題 `多方指標: x/11` + 每個指標行顯示紅/灰色文字
+- [ ] 空方表格 — 標題 `空方指標: x/11` + 每個指標行顯示綠/灰色文字
+- [ ] 每個指標行含類別說明（價量面／籌碼面／技術面／財務面）
+- [ ] 整合至既有的儀表板（新頁面或新的 Section）
+- [ ] CSS 樣式：符合 = 明顯 ± `font-weight: bold` 彩色，不符合 = `color: gray`
+
+### 資料庫
+- [ ] `scorecard` 表：
+```sql
+CREATE TABLE scorecard (
+    trade_date TEXT NOT NULL,
+    stock_id   TEXT NOT NULL,
+    bullish_score INTEGER NOT NULL,     -- 0–11
+    bearish_score INTEGER NOT NULL,      -- 0–11
+    bullish_detail TEXT NOT NULL,        -- JSON field with 11 boolean fields
+    bearish_detail TEXT NOT NULL,        -- JSON field with 11 boolean fields
+    PRIMARY KEY (trade_date, stock_id)
+)
+```
+
+### 管線整合
+- [ ] 每天在 `miner.py` 中加入 scorecard 計算步驟
+- [ ] scorecard 結果納入 daily report（Markdown + Telegram）
+
+## 已交付檔案（計劃）
+
+```
+src/tw_quant_signal/signal_scorecard.py    ← 核心計算模組
+src/tw_quant_signal/db.py                  ← + signal_bonniaub 表 + 讀寫方法
+src/tw_quant_signal/pipeline.py            ← + scorecard 管線步驟
+src/tw_quant_signal/api/app.py             ← + GET /api/signals/*/scorecard
+frontend/src/components/Scorecard.tsx      ← React 元件呈現 11 指表格
+frontend/src/pages/ScorecardPage.tsx       ← 獨立頁面或作為標籤
+```
+
+## 備註
+- 此系「原理不依賴權重」的設計，是**純標記式符合/不符合**，不使用被規則
+- 不用觸發「信號」但是「情況預覽」，幫助使用者快速掃描多項條件
+- 「主力」指自營商中的自行買賣（`dealer_net`）
+- 「月營收連成長」使用 `  monthly_revenue` 的 `mom_change > 0` 連續兩筆
