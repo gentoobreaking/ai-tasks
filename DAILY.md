@@ -1,22 +1,12 @@
-# 📅 Daily Dashboard - 2026-08-02
+# 📅 Daily Dashboard - 2026-08-03
 
-> 最後更新: 2026-08-02 18:04 · 自動生成
+> 最後更新: 2026-08-03 17:45 · 自動生成
 
 ---
 
 ## 🆕 今日新增任務
 
-| 專案 | 任務 | 標題 |
-| -- | -- | -- |
-| tw-quant-signal | [T015-scorecard-signal-system](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T015-scorecard-signal-system.md) | [Phase 3] 11大指標多空訊號系統 |
-| tw-quant-signal | [T016-code-quality-fixes](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T016-code-quality-fixes.md) | [Phase 3] 程式碼品質改善 — feature stale/latency/redundant API |
-| tw-quant-signal | [T017-test-coverage](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T017-test-coverage.md) | [Phase 3] 測試覆蓋 — 單元測試 + 整合測試 |
-| tw-quant-signal | [T018-stock-pool-expansion](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T018-stock-pool-expansion.md) | [Phase 3] 標的池擴充與管線效率優化 |
-| tw-quant-signal | [T019-performance-tracking-dashboard](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T019-performance-tracking-dashboard.md) | [Phase 3] 績效追蹤儀表板補完 — 訊號後 1/3/5 日表現 |
-| tw-quant-signal | [T020-data-provider-abstraction](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T020-data-provider-abstraction.md) | [Phase 4] DataProvider 抽象層設計 — 定義資料擷取統一介面 |
-| tw-quant-signal | [T021-twse-mcp-migration](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T021-twse-mcp-migration.md) | [Phase 4] TWSE 盤後資料層遷移至 tw-quant-mcp |
-| tw-quant-signal | [T022-mops-mcp-migration](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T022-mops-mcp-migration.md) | [Phase 4] MOPS/基本面資料層遷移至 tw-quant-mcp |
-| tw-quant-signal | [T023-mcp-validation-fallback](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T023-mcp-validation-fallback.md) | [Phase 4] Pipeline 驗證 + mcp fallback — 確認端到端正確性 |
+_無_
 
 ---
 
@@ -24,11 +14,16 @@
 
 | 專案 | 任務 | 標題 |
 | -- | -- | -- |
-| tw-quant-mcp | [T021-lineage-v21](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T021-lineage-v21.md) | Lineage/SourceRole/DataGrade 通用化升級（v2.1 §4） |
-| tw-quant-mcp | [T022-domain-schema-v21](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T022-domain-schema-v21.md) | 六大正規化 Schema 與 Normalize 層（v2.1 §6） |
-| tw-quant-mcp | [T023-source-role-v21](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T023-source-role-v21.md) | 七來源 Source Role 分級落地（v2.1 §3） |
-| tw-quant-mcp | [T024-cache-ttl-v21](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T024-cache-ttl-v21.md) | 雙層快取 TTL 矩陣與環境變數參數化（v2.1 §5） |
-| tw-quant-mcp | [T025-ratelimit-v21](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T025-ratelimit-v21.md) | Per-Source Token Bucket 限流與可調參數（v2.1 §5.3） |
+| tw-quant-mcp | [T026-domain-layer-v21](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T026-domain-layer-v21.md) | pkg/domain 領域分層與模組邊界（v2.1 §7） |
+| tw-quant-mcp | [T027-screener-index-v21](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T027-screener-index-v21.md) | Materialized Screener Index 與批次效能（v2.1 §10） |
+| tw-quant-signal | [T014-1-monthly-revenue](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T014-1-monthly-revenue.md) | [014-1] 月營收 — 近三年圖表 |
+| tw-quant-signal | [T014-2-quarterly-financials](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T014-2-quarterly-financials.md) | [014-2] EPS/ROE/ROA — 近五年/四季 |
+| tw-quant-signal | [T014-3-dividends](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T014-3-dividends.md) | [014-3] 股利 — 近五年分派紀錄 |
+| tw-quant-signal | [T014-4-sector-ranking](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T014-4-sector-ranking.md) | [014-4] 類股排名 — EPS/ROE/ROA 百分位 |
+| tw-quant-signal | [T014-5-institutional-margin](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T014-5-institutional-margin.md) | [014-5] 法人買賣超 & 融資融券 |
+| tw-quant-signal | [T014-fundamental-data-enrichment](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T014-fundamental-data-enrichment.md) | [Phase 3] 個股基本面資料擴充 — 月營收 / EPS / ROE/ROA / 股利 |
+| tw-quant-signal | [T015-scorecard-signal-system](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T015-scorecard-signal-system.md) | [Phase 3] 11大指標多空訊號系統 |
+| tw-quant-signal | [T016-code-quality-fixes](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T016-code-quality-fixes.md) | [Phase 3] 程式碼品質改善 — feature stale/latency/redundant API |
 
 ---
 
@@ -54,8 +49,6 @@
 | tw-quant-daybrain | [T021-csv-data-loader](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T021-csv-data-loader.md) | 回測資料載入器（CsvDataLoader） | high |
 | tw-quant-daybrain | [T022-backtest-simulator](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T022-backtest-simulator.md) | 事件驅動回測模擬器（DayBrainBacktestSimulator） | high |
 | tw-quant-mcp | [T029-tools-v21](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T029-tools-v21.md) | 25 個 v2.1 Tool 目錄對齊（v1.3 為主、僅新增缺口，v2.1 §9） | high |
-| tw-quant-signal | [T015-scorecard-signal-system](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T015-scorecard-signal-system.md) | [Phase 3] 11大指標多空訊號系統 | high |
-| tw-quant-signal | [T016-code-quality-fixes](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T016-code-quality-fixes.md) | [Phase 3] 程式碼品質改善 — feature stale/latency/redundant API | high |
 | tw-quant-signal | [T017-test-coverage](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T017-test-coverage.md) | [Phase 3] 測試覆蓋 — 單元測試 + 整合測試 | high |
 | tw-quant-signal | [T020-data-provider-abstraction](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T020-data-provider-abstraction.md) | [Phase 4] DataProvider 抽象層設計 — 定義資料擷取統一介面 | high |
 | tw-quant-signal | [T021-twse-mcp-migration](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T021-twse-mcp-migration.md) | [Phase 4] TWSE 盤後資料層遷移至 tw-quant-mcp | high |
@@ -94,8 +87,6 @@
 | tw-quant-daybrain | [T021-csv-data-loader](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T021-csv-data-loader.md) | 回測資料載入器（CsvDataLoader） | high |
 | tw-quant-daybrain | [T022-backtest-simulator](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T022-backtest-simulator.md) | 事件驅動回測模擬器（DayBrainBacktestSimulator） | high |
 | tw-quant-mcp | [T029-tools-v21](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T029-tools-v21.md) | 25 個 v2.1 Tool 目錄對齊（v1.3 為主、僅新增缺口，v2.1 §9） | high |
-| tw-quant-signal | [T015-scorecard-signal-system](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T015-scorecard-signal-system.md) | [Phase 3] 11大指標多空訊號系統 | high |
-| tw-quant-signal | [T016-code-quality-fixes](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T016-code-quality-fixes.md) | [Phase 3] 程式碼品質改善 — feature stale/latency/redundant API | high |
 | tw-quant-signal | [T017-test-coverage](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T017-test-coverage.md) | [Phase 3] 測試覆蓋 — 單元測試 + 整合測試 | high |
 | tw-quant-signal | [T020-data-provider-abstraction](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T020-data-provider-abstraction.md) | [Phase 4] DataProvider 抽象層設計 — 定義資料擷取統一介面 | high |
 | tw-quant-signal | [T021-twse-mcp-migration](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T021-twse-mcp-migration.md) | [Phase 4] TWSE 盤後資料層遷移至 tw-quant-mcp | high |
@@ -108,8 +99,6 @@
 | tw-quant-daybrain | [T015-release](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T015-release.md) | 壓測、參數實驗與 v2.0 發布 | medium |
 | tw-quant-daybrain | [T023-grid-search](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T023-grid-search.md) | 參數網格搜尋（Grid Search） | medium |
 | tw-quant-daybrain | [T024-wfo-optimizer](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T024-wfo-optimizer.md) | Walk-Forward Optimization（WFO 滾動驗證） | medium |
-| tw-quant-mcp | [T026-domain-layer-v21](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T026-domain-layer-v21.md) | pkg/domain 領域分層與模組邊界（v2.1 §7） | medium |
-| tw-quant-mcp | [T027-screener-index-v21](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T027-screener-index-v21.md) | Materialized Screener Index 與批次效能（v2.1 §10） | medium |
 | tw-quant-mcp | [T030-contract-v21](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T030-contract-v21.md) | v2.1 版契約測試與全量回歸（v2.1 §6 / §14） | medium |
 | tw-quant-mcp | [T031-release-v21](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T031-release-v21.md) | 連續運行驗證與 v2.1 發布 | medium |
 | tw-quant-selector | [T134-alerting-module-split-refactor](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-selector/tasks/T134-alerting-module-split-refactor.md) | 拆分大型檔案 alerting.py（模組化重構） | medium |
@@ -119,7 +108,6 @@
 | gold-analysis-advanced | [T002](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis-advanced/tasks/T002.md) | ML 模型整合與優化 | low |
 | gold-analysis-advanced | [T004](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis-advanced/tasks/T004.md) | 實盤交易對接 | low |
 | md-viewer-app | [T027-預覽連結懸停](https://github.com/gentoobreaking/ai-tasks/blob/main/md-viewer-app/tasks/T027-預覽連結懸停.md) | [T027] 連結懸停預覽 | low |
-| tw-quant-mcp | [T028-chart-v21](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T028-chart-v21.md) | 通用 ChartMeta 五型別升級（v2.1 §11） | low |
 | tw-quant-signal | [T010-stock-pool-signals](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T010-stock-pool-signals.md) | [Phase 3] 個股池訊號 — 精選觀察清單掃描 | low |
 
 ---

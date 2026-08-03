@@ -29,6 +29,9 @@
 | 七來源 Source Role 分級落地（v2.1 §3） |
 | 雙層快取 TTL 矩陣與環境變數參數化（v2.1 §5） |
 | Per-Source Token Bucket 限流與可調參數（v2.1 §5.3） |
+| pkg/domain 領域分層與模組邊界（v2.1 §7） |
+| Materialized Screener Index 與批次效能（v2.1 §10） |
+| 通用 ChartMeta 五型別升級（v2.1 §11） |
 
 ## Skip 項目
 
@@ -46,9 +49,6 @@
 
 | Task | 名稱 | 說明 |
 |------|------|------|
-| [T26-domain-layer-v21](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T026-domain-layer-v21.md) | pkg/domain 領域分層與模組邊界（v2.1 §7） | |
-| [T27-screener-index-v21](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T027-screener-index-v21.md) | Materialized Screener Index 與批次效能（v2.1 §10） | |
-| [T28-chart-v21](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T028-chart-v21.md) | 通用 ChartMeta 五型別升級（v2.1 §11） | |
 | [T29-tools-v21](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T029-tools-v21.md) | 25 個 v2.1 Tool 目錄對齊（v1.3 為主、僅新增缺口，v2.1 §9） | |
 | [T30-contract-v21](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T030-contract-v21.md) | v2.1 版契約測試與全量回歸（v2.1 §6 / §14） | |
 | [T31-release-v21](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T031-release-v21.md) | 連續運行驗證與 v2.1 發布 | |
@@ -82,13 +82,13 @@
 | [T23-source-role-v21](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T023-source-role-v21.md) | 七來源 Source Role 分級落地（v2.1 §3） | ✅ done |
 | [T24-cache-ttl-v21](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T024-cache-ttl-v21.md) | 雙層快取 TTL 矩陣與環境變數參數化（v2.1 §5） | ✅ done |
 | [T25-ratelimit-v21](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T025-ratelimit-v21.md) | Per-Source Token Bucket 限流與可調參數（v2.1 §5.3） | ✅ done |
-| [T26-domain-layer-v21](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T026-domain-layer-v21.md) | pkg/domain 領域分層與模組邊界（v2.1 §7） | 📋 pending |
-| [T27-screener-index-v21](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T027-screener-index-v21.md) | Materialized Screener Index 與批次效能（v2.1 §10） | 📋 pending |
-| [T28-chart-v21](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T028-chart-v21.md) | 通用 ChartMeta 五型別升級（v2.1 §11） | 📋 pending |
+| [T26-domain-layer-v21](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T026-domain-layer-v21.md) | pkg/domain 領域分層與模組邊界（v2.1 §7） | ✅ done |
+| [T27-screener-index-v21](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T027-screener-index-v21.md) | Materialized Screener Index 與批次效能（v2.1 §10） | ✅ done |
+| [T28-chart-v21](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T028-chart-v21.md) | 通用 ChartMeta 五型別升級（v2.1 §11） | ✅ done |
 | [T29-tools-v21](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T029-tools-v21.md) | 25 個 v2.1 Tool 目錄對齊（v1.3 為主、僅新增缺口，v2.1 §9） | 📋 pending |
 | [T30-contract-v21](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T030-contract-v21.md) | v2.1 版契約測試與全量回歸（v2.1 §6 / §14） | 📋 pending |
 | [T31-release-v21](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T031-release-v21.md) | 連續運行驗證與 v2.1 發布 | 📋 pending |
 
-**✅ done: 25 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 6**
+**✅ done: 28 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 3**
 
-> 自動生成於 2026-08-02 18:04
+> 自動生成於 2026-08-03 17:45
