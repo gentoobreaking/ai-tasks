@@ -6,7 +6,7 @@ priority: medium
 status: done
 assignee: OpenCode with DeepSeek V4 Flash
 created: 2026-07-30
-updated: 2026-07-30
+updated: 2026-08-03
 ---
 
 # T014-5 - 法人買賣超與融資融券
@@ -62,3 +62,8 @@ updated: 2026-07-30
 - 融資融券約 20:00 更新
 - 既有 `institutional_flows` 表已含 `foreign_investors_net` / `sity_investors_net` / `dealer_net` / `total_net`，直接查詢即可
 - 既有 `fetch_margin_data()` 只抓餘額，需擴充到買賣張數
+
+---
+## 驗收紀錄 (2026-08-03)
+- 驗收通過：全部端點 200、前端 build 成功、pipeline 執行正常
+- 修復事項：見 git commit 4344513「fix: T014 驗收修復 — ROE/股利/類股排名/月營收/健診」

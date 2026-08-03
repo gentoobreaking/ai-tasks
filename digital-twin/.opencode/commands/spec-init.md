@@ -1,5 +1,5 @@
 ---
-description: 初始化規格書多 AI 諮詢目錄結構與模板
+description: 初始化規格書多 AI 諮詢目錄結構與模板，可選自動啟動多輪討論
 agent: my-clone
 ---
 
@@ -10,6 +10,9 @@ agent: my-clone
 - 目標版本號：{如 v1.0, v1.1, v2.0}
 - 核心需求摘要：{1-3 句}
 - 限制條件：{技術棧、效能、相容性...}
+- 是否啟動自動多輪討論：{true/false，預設 false}
+- 討論輪數：{1-5，預設 3}
+- 指定模型：{claude,gemini,deepseek,grok，逗號分隔，預設全部}
 
 **執行步驟**：
 1. 確認專案路徑：`~/tasks/{專案}/specs/`
@@ -32,6 +35,13 @@ agent: my-clone
 3. 從 `~/tasks/digital-twin/.opencode/templates/spec-template-ai-consultation.md` 複製模板到 `template-ai-consultation.md`，填入：
    - 專案名稱、版本、需求、限制條件
    - 參考檔案路徑
-4. 輸出：已建立的目錄路徑、模板檔案路徑、下一步指引
+4. **若啟動自動討論**：執行多 AI 協作腳本
+   ```bash
+   cd ~/tasks/digital-twin && python multi_ai_discuss.py \
+     --project {專案} --version {版本} --rounds {輪數} --only {指定模型}
+   ```
+   - 需先設定 `.env`（參考 `.env.example`）
+   - Grok 預設為人工模式（無 API Key 時提示手動貼上）
+5. 輸出：已建立的目錄路徑、模板檔案路徑、下一步指引
 
 **模板來源**：`~/tasks/digital-twin/.opencode/templates/spec-template-ai-consultation.md`

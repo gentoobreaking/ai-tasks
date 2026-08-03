@@ -6,7 +6,7 @@ priority: medium
 status: done
 assignee: OpenCode with DeepSeek V4 Flash
 created: 2026-07-30
-updated: 2026-07-30
+updated: 2026-08-03
 ---
 
 # T014-2 - EPS / ROE / ROA（近五年 + 近四季）
@@ -51,3 +51,8 @@ updated: 2026-07-30
 ## 備註
 - ROE/ROA 可從資產負債表與損益表推算，盡量取得原始數據後自行計算
 - 初始需 backfill 近 20 季資料
+
+---
+## 驗收紀錄 (2026-08-03)
+- 驗收通過：全部端點 200、前端 build 成功、pipeline 執行正常
+- 修復事項：見 git commit 4344513「fix: T014 驗收修復 — ROE/股利/類股排名/月營收/健診」

@@ -6,7 +6,7 @@ priority: medium
 status: done
 assignee: OpenCode with DeepSeek V4 Flash
 created: 2026-07-30
-updated: 2026-07-30
+updated: 2026-08-03
 ---
 
 # T014-1 - 月營收（近三年）
@@ -39,3 +39,8 @@ updated: 2026-07-30
 ## 備註
 - 月營收為每月固定資料，TWSE 通常在次月 10 日前公告
 - 初始需一次性 backfill 近 36 個月資料
+
+---
+## 驗收紀錄 (2026-08-03)
+- 驗收通過：全部端點 200、前端 build 成功、pipeline 執行正常
+- 修復事項：見 git commit 4344513「fix: T014 驗收修復 — ROE/股利/類股排名/月營收/健診」

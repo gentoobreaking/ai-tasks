@@ -6,7 +6,7 @@ priority: low
 status: done
 assignee: OpenCode with DeepSeek V4 Flash
 created: 2026-07-30
-updated: 2026-07-30
+updated: 2026-08-03
 ---
 
 # T014-4 - 類股排名
@@ -28,3 +28,8 @@ updated: 2026-07-30
 ## 備註
 - 初始版本用硬編碼類股對照，後續可優化為 TWSE API 動態查詢
 - 百分位計算：排序後排名 / 總數 * 100，越小越靠前
+
+---
+## 驗收紀錄 (2026-08-03)
+- 驗收通過：全部端點 200、前端 build 成功、pipeline 執行正常
+- 修復事項：見 git commit 4344513「fix: T014 驗收修復 — ROE/股利/類股排名/月營收/健診」

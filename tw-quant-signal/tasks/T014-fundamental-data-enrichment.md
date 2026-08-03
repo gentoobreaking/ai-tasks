@@ -6,7 +6,7 @@ priority: medium
 status: done
 assignee: OpenCode with DeepSeek V4 Flash
 created: 2026-07-30
-updated: 2026-07-30
+updated: 2026-08-03
 ---
 
 # T014 - 個股基本面資料擴充
@@ -187,3 +187,15 @@ updated: 2026-07-30
 - 此任務不處理法說會資料，僅聚焦公告財報與營收數字
 - 法人買賣超日報每日下午約 16:00 更新；融資融券約 20:00 更新
 - 類股排名可用簡化版先上（預先定義數個類股對照），後續再優化為動態查詢
+
+---
+## 驗收紀錄 (2026-08-03)
+- 五項子任務（T014-1~5）全部驗收通過，commit 4344513
+- 主要修復：
+  1. ROE 欄位名 "Stockholders Equity"（原查 "Total Stockholder Equity" 致 ROE 全 None）
+  2. 股利按年聚合（季配多筆 → 每年一筆，近 5 年）
+  3. fiscal_quarter 格式對齊 "2025Q1"
+  4. sector-ranking 新增個股 EPS/ROE/ROA 百分位端點
+  5. monthly_revenue MOPS 反爬封鎖 → session + 重試機制
+  6. 健診評分 bb_upper UnboundLocalError
+- 資料現況：monthly_revenue 35 列/檔、dividends 5 年/檔、quarterly 7 季（2330）、margin_trading 8 日
