@@ -1,12 +1,48 @@
 # 📅 Daily Dashboard - 2026-08-03
 
-> 最後更新: 2026-08-03 19:57 · 自動生成
+> 最後更新: 2026-08-03 23:05 · 自動生成
 
 ---
 
 ## 🆕 今日新增任務
 
-_無_
+| 專案 | 任務 | 標題 |
+| -- | -- | -- |
+| digital-twin | [T001-add-config-validation](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T001-add-config-validation.md) | 新增配置驗證層 (Config Schema Validation) |
+| digital-twin | [T002-gitignore-and-hooks](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T002-gitignore-and-hooks.md) | 新增 .gitignore 並強制 secrets scanning (pre-commit/pre-push) |
+| digital-twin | [T003-pyproject-ruff-config](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T003-pyproject-ruff-config.md) | 新增 pyproject.toml 完整依賴管理與 ruff 配置 |
+| digital-twin | [T004-dockerfile-ci](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T004-dockerfile-ci.md) | 新增 Dockerfile + docker-compose.yml + GitHub Actions CI |
+| digital-twin | [T005-structlog-otel](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T005-structlog-otel.md) | 新增 common/observability.py 統一結構化日誌與 OpenTelemetry |
+| digital-twin | [T006-telegram-bot-webhook](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T006-telegram-bot-webhook.md) | Telegram Bot 重構為 aiogram 3.x Webhook + Redis Queue 非同步架構 |
+| digital-twin | [T007-multi-ai-discuss-resilience](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T007-multi-ai-discuss-resilience.md) | multi_ai_discuss.py 重構為 DiscussionOrchestrator 狀態機 + 韌性層 |
+| digital-twin | [T008-agent-registry](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T008-agent-registry.md) | 新增 agent_registry.yaml + agent_registry.py 動態路由 |
+| digital-twin | [T009-lancedb-rag](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T009-lancedb-rag.md) | index_knowledge.py 引入 LanceDB 替換純 Python 向量搜尋 |
+| digital-twin | [T010-agent-versioning](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T010-agent-versioning.md) | Agent System Prompt 強制 SemVer Front-matter + Canary Deploy + Rollback |
+| free-ai-router | [T001-go-module-scaffolding](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T001-go-module-scaffolding.md) | Go Module Scaffolding & CLI Entry Point |
+| free-ai-router | [T002-config-system](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T002-config-system.md) | Config System (load/save/export/import, env var resolution) |
+| free-ai-router | [T003-data-files](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T003-data-files.md) | Data Files (sources.json, scores.json, model-tags.json, model-aliases.json) |
+| free-ai-router | [T004-provider-system](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T004-provider-system.md) | Provider System (providers.go - definitions, auth, URL building) |
+| free-ai-router | [T005-model-catalog-quality](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T005-model-catalog-quality.md) | Model Catalog & Quality Scoring |
+| free-ai-router | [T006-tags-system](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T006-tags-system.md) | Tags System |
+| free-ai-router | [T007-ping-engine](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T007-ping-engine.md) | Ping Engine (parallel pings, keep-alive, backoff, staleness guard) |
+| free-ai-router | [T008-ping-metrics](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T008-ping-metrics.md) | Ping Metrics (rolling avg, uptime, verdict computation) |
+| free-ai-router | [T009-router-server](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T009-router-server.md) | Router HTTP Server |
+| free-ai-router | [T010-routing-logic-failover](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T010-routing-logic-failover.md) | Routing Logic & Failover |
+| free-ai-router | [T011-request-logging](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T011-request-logging.md) | Request Logging |
+| free-ai-router | [T012-tui-lifecycle](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T012-tui-lifecycle.md) | TUI Lifecycle (raw mode, alt screen, signal handlers) |
+| free-ai-router | [T013-tui-colors-primitives](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T013-tui-colors-primitives.md) | TUI Colors & Primitives |
+| free-ai-router | [T014-tui-render-engine](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T014-tui-render-engine.md) | TUI Rendering Engine |
+| free-ai-router | [T015-tui-input](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T015-tui-input.md) | TUI Input Handling |
+| free-ai-router | [T016-settings-wizard](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T016-settings-wizard.md) | Settings Screen & First-Run Wizard |
+| free-ai-router | [T017-target-pickers](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T017-target-pickers.md) | Target Picker Integration (OpenCode, OpenClaw, Hermes, Pi) |
+| free-ai-router | [T018-cli-commands](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T018-cli-commands.md) | CLI Commands (flags, best mode, status) |
+| free-ai-router | [T019-cli-onboard-config](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T019-cli-onboard-config.md) | CLI Onboard & Config Commands |
+| free-ai-router | [T020-auto-update](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T020-auto-update.md) | Auto-Update System |
+| free-ai-router | [T021-autostart](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T021-autostart.md) | Autostart (macOS launchctl, Linux XDG) |
+| free-ai-router | [T022-build-system](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T022-build-system.md) | Build System (Makefile, Dockerfile, Docker Compose) |
+| free-ai-router | [T023-unit-tests](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T023-unit-tests.md) | Unit Tests |
+| free-ai-router | [T024-integration-tests](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T024-integration-tests.md) | Integration Tests |
+| free-ai-router | [T025-documentation](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T025-documentation.md) | Documentation |
 
 ---
 
@@ -14,6 +50,9 @@ _無_
 
 | 專案 | 任務 | 標題 |
 | -- | -- | -- |
+| digital-twin | [T001-add-config-validation](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T001-add-config-validation.md) | 新增配置驗證層 (Config Schema Validation) |
+| digital-twin | [T002-gitignore-and-hooks](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T002-gitignore-and-hooks.md) | 新增 .gitignore 並強制 secrets scanning (pre-commit/pre-push) |
+| digital-twin | [T003-pyproject-ruff-config](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T003-pyproject-ruff-config.md) | 新增 pyproject.toml 完整依賴管理與 ruff 配置 |
 | tw-quant-mcp | [T026-domain-layer-v21](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T026-domain-layer-v21.md) | pkg/domain 領域分層與模組邊界（v2.1 §7） |
 | tw-quant-mcp | [T027-screener-index-v21](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T027-screener-index-v21.md) | Materialized Screener Index 與批次效能（v2.1 §10） |
 | tw-quant-mcp | [T029-tools-v21](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T029-tools-v21.md) | 25 個 v2.1 Tool 目錄對齊（v1.3 為主、僅新增缺口，v2.1 §9） |
@@ -35,6 +74,28 @@ _無_
 
 | 專案 | 任務 | 標題 | 優先 |
 | -- | -- | -- | -- |
+| digital-twin | [T008-agent-registry](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T008-agent-registry.md) | 新增 agent_registry.yaml + agent_registry.py 動態路由 | high |
+| digital-twin | [T010-agent-versioning](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T010-agent-versioning.md) | Agent System Prompt 強制 SemVer Front-matter + Canary Deploy + Rollback | high |
+| free-ai-router | [T001-go-module-scaffolding](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T001-go-module-scaffolding.md) | Go Module Scaffolding & CLI Entry Point | high |
+| free-ai-router | [T002-config-system](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T002-config-system.md) | Config System (load/save/export/import, env var resolution) | high |
+| free-ai-router | [T003-data-files](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T003-data-files.md) | Data Files (sources.json, scores.json, model-tags.json, model-aliases.json) | high |
+| free-ai-router | [T004-provider-system](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T004-provider-system.md) | Provider System (providers.go - definitions, auth, URL building) | high |
+| free-ai-router | [T005-model-catalog-quality](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T005-model-catalog-quality.md) | Model Catalog & Quality Scoring | high |
+| free-ai-router | [T006-tags-system](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T006-tags-system.md) | Tags System | high |
+| free-ai-router | [T007-ping-engine](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T007-ping-engine.md) | Ping Engine (parallel pings, keep-alive, backoff, staleness guard) | high |
+| free-ai-router | [T008-ping-metrics](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T008-ping-metrics.md) | Ping Metrics (rolling avg, uptime, verdict computation) | high |
+| free-ai-router | [T009-router-server](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T009-router-server.md) | Router HTTP Server | high |
+| free-ai-router | [T010-routing-logic-failover](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T010-routing-logic-failover.md) | Routing Logic & Failover | high |
+| free-ai-router | [T012-tui-lifecycle](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T012-tui-lifecycle.md) | TUI Lifecycle (raw mode, alt screen, signal handlers) | high |
+| free-ai-router | [T013-tui-colors-primitives](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T013-tui-colors-primitives.md) | TUI Colors & Primitives | high |
+| free-ai-router | [T014-tui-render-engine](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T014-tui-render-engine.md) | TUI Rendering Engine | high |
+| free-ai-router | [T015-tui-input](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T015-tui-input.md) | TUI Input Handling | high |
+| free-ai-router | [T016-settings-wizard](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T016-settings-wizard.md) | Settings Screen & First-Run Wizard | high |
+| free-ai-router | [T017-target-pickers](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T017-target-pickers.md) | Target Picker Integration (OpenCode, OpenClaw, Hermes, Pi) | high |
+| free-ai-router | [T018-cli-commands](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T018-cli-commands.md) | CLI Commands (flags, best mode, status) | high |
+| free-ai-router | [T019-cli-onboard-config](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T019-cli-onboard-config.md) | CLI Onboard & Config Commands | high |
+| free-ai-router | [T023-unit-tests](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T023-unit-tests.md) | Unit Tests | high |
+| free-ai-router | [T024-integration-tests](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T024-integration-tests.md) | Integration Tests | high |
 | tw-quant-daybrain | [T001-scaffold](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T001-scaffold.md) | 專案初始化與設定骨架 | high |
 | tw-quant-daybrain | [T002-mcp-client](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T002-mcp-client.md) | MCP Client 連線層 | high |
 | tw-quant-daybrain | [T003-freshness-gate](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T003-freshness-gate.md) | 資料新鮮度守門（Freshness Gate） | high |
@@ -63,6 +124,9 @@ _無_
 
 | 專案 | 任務 | 標題 | 優先 |
 | -- | -- | -- | -- |
+| digital-twin | [T005-structlog-otel](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T005-structlog-otel.md) | 新增 common/observability.py 統一結構化日誌與 OpenTelemetry | high |
+| digital-twin | [T006-telegram-bot-webhook](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T006-telegram-bot-webhook.md) | Telegram Bot 重構為 aiogram 3.x Webhook + Redis Queue 非同步架構 | high |
+| digital-twin | [T007-multi-ai-discuss-resilience](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T007-multi-ai-discuss-resilience.md) | multi_ai_discuss.py 重構為 DiscussionOrchestrator 狀態機 + 韌性層 | high |
 | gold-analysis-advanced | [T001](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis-advanced/tasks/T001.md) | 機器學習模型開發 | low |
 
 ---
@@ -71,6 +135,28 @@ _無_
 
 | 專案 | 任務 | 標題 | 優先 |
 | -- | -- | -- | -- |
+| digital-twin | [T008-agent-registry](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T008-agent-registry.md) | 新增 agent_registry.yaml + agent_registry.py 動態路由 | high |
+| digital-twin | [T010-agent-versioning](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T010-agent-versioning.md) | Agent System Prompt 強制 SemVer Front-matter + Canary Deploy + Rollback | high |
+| free-ai-router | [T001-go-module-scaffolding](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T001-go-module-scaffolding.md) | Go Module Scaffolding & CLI Entry Point | high |
+| free-ai-router | [T002-config-system](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T002-config-system.md) | Config System (load/save/export/import, env var resolution) | high |
+| free-ai-router | [T003-data-files](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T003-data-files.md) | Data Files (sources.json, scores.json, model-tags.json, model-aliases.json) | high |
+| free-ai-router | [T004-provider-system](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T004-provider-system.md) | Provider System (providers.go - definitions, auth, URL building) | high |
+| free-ai-router | [T005-model-catalog-quality](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T005-model-catalog-quality.md) | Model Catalog & Quality Scoring | high |
+| free-ai-router | [T006-tags-system](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T006-tags-system.md) | Tags System | high |
+| free-ai-router | [T007-ping-engine](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T007-ping-engine.md) | Ping Engine (parallel pings, keep-alive, backoff, staleness guard) | high |
+| free-ai-router | [T008-ping-metrics](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T008-ping-metrics.md) | Ping Metrics (rolling avg, uptime, verdict computation) | high |
+| free-ai-router | [T009-router-server](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T009-router-server.md) | Router HTTP Server | high |
+| free-ai-router | [T010-routing-logic-failover](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T010-routing-logic-failover.md) | Routing Logic & Failover | high |
+| free-ai-router | [T012-tui-lifecycle](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T012-tui-lifecycle.md) | TUI Lifecycle (raw mode, alt screen, signal handlers) | high |
+| free-ai-router | [T013-tui-colors-primitives](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T013-tui-colors-primitives.md) | TUI Colors & Primitives | high |
+| free-ai-router | [T014-tui-render-engine](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T014-tui-render-engine.md) | TUI Rendering Engine | high |
+| free-ai-router | [T015-tui-input](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T015-tui-input.md) | TUI Input Handling | high |
+| free-ai-router | [T016-settings-wizard](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T016-settings-wizard.md) | Settings Screen & First-Run Wizard | high |
+| free-ai-router | [T017-target-pickers](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T017-target-pickers.md) | Target Picker Integration (OpenCode, OpenClaw, Hermes, Pi) | high |
+| free-ai-router | [T018-cli-commands](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T018-cli-commands.md) | CLI Commands (flags, best mode, status) | high |
+| free-ai-router | [T019-cli-onboard-config](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T019-cli-onboard-config.md) | CLI Onboard & Config Commands | high |
+| free-ai-router | [T023-unit-tests](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T023-unit-tests.md) | Unit Tests | high |
+| free-ai-router | [T024-integration-tests](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T024-integration-tests.md) | Integration Tests | high |
 | tw-quant-daybrain | [T001-scaffold](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T001-scaffold.md) | 專案初始化與設定骨架 | high |
 | tw-quant-daybrain | [T002-mcp-client](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T002-mcp-client.md) | MCP Client 連線層 | high |
 | tw-quant-daybrain | [T003-freshness-gate](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T003-freshness-gate.md) | 資料新鮮度守門（Freshness Gate） | high |
@@ -92,6 +178,13 @@ _無_
 | tw-quant-signal | [T021-twse-mcp-migration](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T021-twse-mcp-migration.md) | [Phase 4] TWSE 盤後資料層遷移至 tw-quant-mcp | high |
 | tw-quant-signal | [T022-mops-mcp-migration](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T022-mops-mcp-migration.md) | [Phase 4] MOPS/基本面資料層遷移至 tw-quant-mcp | high |
 | tw-quant-signal | [T023-mcp-validation-fallback](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T023-mcp-validation-fallback.md) | [Phase 4] Pipeline 驗證 + mcp fallback — 確認端到端正確性 | high |
+| digital-twin | [T004-dockerfile-ci](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T004-dockerfile-ci.md) | 新增 Dockerfile + docker-compose.yml + GitHub Actions CI | medium |
+| digital-twin | [T009-lancedb-rag](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T009-lancedb-rag.md) | index_knowledge.py 引入 LanceDB 替換純 Python 向量搜尋 | medium |
+| free-ai-router | [T011-request-logging](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T011-request-logging.md) | Request Logging | medium |
+| free-ai-router | [T020-auto-update](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T020-auto-update.md) | Auto-Update System | medium |
+| free-ai-router | [T021-autostart](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T021-autostart.md) | Autostart (macOS launchctl, Linux XDG) | medium |
+| free-ai-router | [T022-build-system](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T022-build-system.md) | Build System (Makefile, Dockerfile, Docker Compose) | medium |
+| free-ai-router | [T025-documentation](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T025-documentation.md) | Documentation | medium |
 | tw-quant-daybrain | [T010-journal-metrics](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T010-journal-metrics.md) | 交易日誌與績效指標（Phase 4） | medium |
 | tw-quant-daybrain | [T011-llm-report](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T011-llm-report.md) | LLM 檢討報告與防幻覺規範 | medium |
 | tw-quant-daybrain | [T012-replay](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T012-replay.md) | 回放工具與滑價驗證 | medium |
