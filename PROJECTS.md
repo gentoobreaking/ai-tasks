@@ -1,6 +1,6 @@
 # 📁 Projects Dashboard
 
-> 最後更新: 2026-08-03 17:45 · 自動生成
+> 最後更新: 2026-08-03 19:55 · 自動生成
 
 ---
 
@@ -10,11 +10,11 @@
 |------|------|
 | 專案數 | 58 |
 | 任務總數 | 802 |
-| ✅ 已完成 | 699 |
-| ⬜ 待處理 | 40 |
+| ✅ 已完成 | 703 |
+| ⬜ 待處理 | 36 |
 | 🔄 進行中 | 1 |
 | ⏭️ 跳過 | 62 |
-| 總完成率 | 94% |
+| 總完成率 | 95% |
 
 ## 🔥 待處理高優先級任務
 
@@ -37,8 +37,6 @@
 | tw-quant-daybrain | [T020-priority-engine](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T020-priority-engine.md) | Priority Ranking Engine（優先權排序與資金分配） |
 | tw-quant-daybrain | [T021-csv-data-loader](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T021-csv-data-loader.md) | 回測資料載入器（CsvDataLoader） |
 | tw-quant-daybrain | [T022-backtest-simulator](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T022-backtest-simulator.md) | 事件驅動回測模擬器（DayBrainBacktestSimulator） |
-| tw-quant-mcp | [T029-tools-v21](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T029-tools-v21.md) | 25 個 v2.1 Tool 目錄對齊（v1.3 為主、僅新增缺口，v2.1 §9） |
-| tw-quant-signal | [T017-test-coverage](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T017-test-coverage.md) | [Phase 3] 測試覆蓋 — 單元測試 + 整合測試 |
 | tw-quant-signal | [T020-data-provider-abstraction](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T020-data-provider-abstraction.md) | [Phase 4] DataProvider 抽象層設計 — 定義資料擷取統一介面 |
 | tw-quant-signal | [T021-twse-mcp-migration](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T021-twse-mcp-migration.md) | [Phase 4] TWSE 盤後資料層遷移至 tw-quant-mcp |
 | tw-quant-signal | [T022-mops-mcp-migration](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T022-mops-mcp-migration.md) | [Phase 4] MOPS/基本面資料層遷移至 tw-quant-mcp |
@@ -78,13 +76,9 @@
 | tw-quant-daybrain | [T022-backtest-simulator](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T022-backtest-simulator.md) | 事件驅動回測模擬器（DayBrainBacktestSimulator） | ⬜ |
 | tw-quant-daybrain | [T023-grid-search](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T023-grid-search.md) | 參數網格搜尋（Grid Search） | ⬜ |
 | tw-quant-daybrain | [T024-wfo-optimizer](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T024-wfo-optimizer.md) | Walk-Forward Optimization（WFO 滾動驗證） | ⬜ |
-| tw-quant-mcp | [T029-tools-v21](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T029-tools-v21.md) | 25 個 v2.1 Tool 目錄對齊（v1.3 為主、僅新增缺口，v2.1 §9） | ⬜ |
-| tw-quant-mcp | [T030-contract-v21](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T030-contract-v21.md) | v2.1 版契約測試與全量回歸（v2.1 §6 / §14） | ⬜ |
-| tw-quant-mcp | [T031-release-v21](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T031-release-v21.md) | 連續運行驗證與 v2.1 發布 | ⬜ |
 | tw-quant-selector | [T134-alerting-module-split-refactor](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-selector/tasks/T134-alerting-module-split-refactor.md) | 拆分大型檔案 alerting.py（模組化重構） | ⬜ |
 | tw-quant-selector | [T135-complete-missing-tests](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-selector/tasks/T135-complete-missing-tests.md) | 補齊未完成的測試項目（T123/T124/T130-T133） | ⬜ |
 | tw-quant-signal | [T010-stock-pool-signals](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T010-stock-pool-signals.md) | [Phase 3] 個股池訊號 — 精選觀察清單掃描 | ⬜ |
-| tw-quant-signal | [T017-test-coverage](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T017-test-coverage.md) | [Phase 3] 測試覆蓋 — 單元測試 + 整合測試 | ⬜ |
 | tw-quant-signal | [T018-stock-pool-expansion](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T018-stock-pool-expansion.md) | [Phase 3] 標的池擴充與管線效率優化 | ⬜ |
 | tw-quant-signal | [T019-performance-tracking-dashboard](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T019-performance-tracking-dashboard.md) | [Phase 3] 績效追蹤儀表板補完 — 訊號後 1/3/5 日表現 | ⬜ |
 | tw-quant-signal | [T020-data-provider-abstraction](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T020-data-provider-abstraction.md) | [Phase 4] DataProvider 抽象層設計 — 定義資料擷取統一介面 | ⬜ |
@@ -171,8 +165,8 @@
 
 | 指標 | 數值 |
 |------|------|
-| 過去 7 天完成 | 48 |
-| 過去 30 天完成 | 51 |
+| 過去 7 天完成 | 52 |
+| 過去 30 天完成 | 55 |
 | 平均週期時間 | 0.8 天 |
 | 週期時間中位數 | 0.0 天 |
 
@@ -181,11 +175,11 @@
 xychart-beta
     title "過去 14 天任務完成趨勢"
     x-axis ["07-21", "07-22", "07-23", "07-24", "07-25", "07-26", "07-27", "07-28", "07-29", "07-30", "07-31", "08-01", "08-02", "08-03"]
-    y-axis "完成數" 0 --> 12
-    line [0, 0, 0, 0, 0, 0, 0, 0, 0, 12, 11, 10, 5, 10]
+    y-axis "完成數" 0 --> 14
+    line [0, 0, 0, 0, 0, 0, 0, 0, 0, 12, 11, 10, 5, 14]
 ```
 
-📊 總計: 48 | 日均: 3.4 | 本週: 48 | 📈 成長中
+📊 總計: 52 | 日均: 3.7 | 本週: 52 | 📈 成長中
 
 ## 📋 專案列表
 
@@ -258,11 +252,9 @@ xychart-beta
   **[T020-priority-engine](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T020-priority-engine.md)**: Priority Ranking Engine（優先權排序與資金分配）
   **[T021-csv-data-loader](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T021-csv-data-loader.md)**: 回測資料載入器（CsvDataLoader）
   **[T022-backtest-simulator](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T022-backtest-simulator.md)**: 事件驅動回測模擬器（DayBrainBacktestSimulator）
-| ⬜ | [tw-quant-mcp](https://github.com/gentoobreaking/ai-tasks/tree/main/tw-quant-mcp) | 31 | 28 | 3 | 0 | 0 | ██████████████████░░ 90% | 2026-08-03 |
-  **[T029-tools-v21](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T029-tools-v21.md)**: 25 個 v2.1 Tool 目錄對齊（v1.3 為主、僅新增缺口，v2.1 §9）
+| ✅ | [tw-quant-mcp](https://github.com/gentoobreaking/ai-tasks/tree/main/tw-quant-mcp) | 31 | 31 | 0 | 0 | 0 | ████████████████████ 100% | 2026-08-03 |
 | ⬜ | [tw-quant-selector](https://github.com/gentoobreaking/ai-tasks/tree/main/tw-quant-selector) | 142 | 140 | 2 | 0 | 0 | ███████████████████░ 98% | 2026-07-09 |
-| ⬜ | [tw-quant-signal](https://github.com/gentoobreaking/ai-tasks/tree/main/tw-quant-signal) | 28 | 20 | 8 | 0 | 0 | ██████████████░░░░░░ 71% | 2026-08-03 |
-  **[T017-test-coverage](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T017-test-coverage.md)**: [Phase 3] 測試覆蓋 — 單元測試 + 整合測試
+| ⬜ | [tw-quant-signal](https://github.com/gentoobreaking/ai-tasks/tree/main/tw-quant-signal) | 28 | 21 | 7 | 0 | 0 | ███████████████░░░░░ 75% | 2026-08-03 |
   **[T020-data-provider-abstraction](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T020-data-provider-abstraction.md)**: [Phase 4] DataProvider 抽象層設計 — 定義資料擷取統一介面
   **[T021-twse-mcp-migration](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T021-twse-mcp-migration.md)**: [Phase 4] TWSE 盤後資料層遷移至 tw-quant-mcp
   **[T022-mops-mcp-migration](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T022-mops-mcp-migration.md)**: [Phase 4] MOPS/基本面資料層遷移至 tw-quant-mcp

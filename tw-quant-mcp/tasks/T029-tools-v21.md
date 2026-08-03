@@ -3,10 +3,10 @@ github_issue: N/A
 title: 25 個 v2.1 Tool 目錄對齊（v1.3 為主、僅新增缺口，v2.1 §9）
 type: feature
 priority: high
-status: pending
+status: done
 assignee: OpenCode with DeepSeek V4 Flash
 created: 2026-08-01
-updated: 2026-08-01
+updated: 2026-08-03
 ---
 
 # T029 - v2.1 Tool 目錄對齊（v1.3 為主、僅新增缺口）
@@ -54,13 +54,24 @@ updated: 2026-08-01
 | get_stock_trend_composite | 短中長期「技術面+基本面+籌碼面」綜合研判（horizon 參數） | `get_stock_trend_composite`（沿用，符合 v1.3 `get_` 前綴風格；或 `get_stock_trend_analysis`） | PREVIEW |
 
 ## 驗收標準
-- [ ] 對照表 A/B 兩組共 24 個：**既有 36 工具零修改**（名稱、註冊、handler 皆不動），`go test ./...` 回歸通過證明無變更
-- [ ] 新增 C 組 1 個工具 `get_stock_trend_composite`：輸入 `symbol, horizon(short/mid/long)`，輸出 TrendComposite（T022 §6 Schema）+ `_lineage`（多來源聚合 `[]Lineage`：TWSE Web API + MOPS）+ `_chart_meta`
-- [ ] 新增工具依 v1.3 命名/Envelope 規範（snake_case、Envelope 包裝、單位歸一化），並通過契約測試
-- [ ] 36 + 1 = 37 工具全部標註 Data Grade（在 tool description 或 meta 標註，T021）；v2.1 標 NOT_YET_AVAILABLE 之 get_warrant_activity 因 v1.3 已實作，標 AVAILABLE 並於 README 註記差異
-- [ ] README 新增「v2.1 §9 ↔ v1.3 工具對照表」（A/B/C 三組），說明以 v1.3 為對外介面主體之決策
+- [x] 對照表 A/B 兩組共 24 個：**既有 36 工具零修改**（名稱、註冊、handler 皆不動），`go test ./...` 回歸通過證明無變更
+- [x] 新增 C 組 1 個工具 `get_stock_trend_composite`：輸入 `symbol, horizon(short/mid/long)`，輸出 TrendComposite（T022 §6 Schema）+ `_lineage`（多來源聚合 `[]Lineage`：TWSE Web API + MOPS）+ `_chart_meta`
+- [x] 新增工具依 v1.3 命名/Envelope 規範（snake_case、Envelope 包裝、單位歸一化），並通過契約測試
+- [x] 36 + 1 = 37 工具全部標註 Data Grade（在 tool description 或 meta 標註，T021）；v2.1 標 NOT_YET_AVAILABLE 之 get_warrant_activity 因 v1.3 已實作，標 AVAILABLE 並於 README 註記差異
+- [x] README 新增「v2.1 §9 ↔ v1.3 工具對照表」（A/B/C 三組），說明以 v1.3 為對外介面主體之決策
 
 ## 備註
 - 命名決策（已與使用者確認 2026-08-01）：**以 v1.3 為主不動、不 alias**；v2.1 新增功能才以 v1.3 命名風格新增。A/B 組完全不需修改。
 - get_stock_trend_composite 為跨來源聚合（TWSE Web API + MOPS），需 T022 TrendComposite Schema 與 T023 來源分級先行；`_lineage` 用 `[]Lineage` 陣列（v2.1 §4 設計規則 2）
 - 此工具之技術指標可重用 pkg/engine/indicators.go（MA/RSI，T007 已實作）
+
+
+## 完成摘要（2026-08-03，commit 待填）
+- **新增工具** `get_stock_trend_composite`（`pkg/mcp/tools_trend.go`）：短中長期技術面（TWSE Web 日K MA5/MA20/MA60/RSI14 + 訊號）+ 基本面（TWSE-API/TPEx 估值 + MOPS EPS YoY）+ 籌碼面（TWSE T86 逐日回溯 / TPEx 單日）聚合；`horizon`=short/mid/long（預設 mid）；輸出 `domain.TrendComposite` + `[]Lineage`（v2.1 §4 規則 2）+ `_chart_meta`（line）。上櫃無歷史 K → 技術面 0 值 + TPEx fallback lineage。
+- **機制層**（`pkg/mcp/core.go`）：`HandlerResult` 新增 `MultiLineage []model.Lineage` + `ChartMeta *chart.Meta`；`Call` 多來源逐一補齊 FetchedAt/DataDate/LatencyMS；`lineageFor` 未標註時預設 `Grade=AVAILABLE`（36 既有工具全數標註）。
+- **Data Grade**：37 工具全數標註（36 AVAILABLE + 新工具 PREVIEW，lineage.grade + registry description）。
+- **測試**（`pkg/mcp/tools_trend_test.go`）：TSE/OTC/預設 horizon/非法 horizon/JSON 契約（_lineage 陣列 + grade + _chart_meta）5 測試；`TestDataGradeAllTools` 37 工具逐一代入驗證 grade；`TestAppendixAMISIntradayOnly` 擴充 Multi lineage 子來源檢查（非 A 組不得 MIS/REALTIME）。
+- **前置數更新**：36→37（registry/envelope/release/e2e/main_test）。
+- **README**：工具清單 36→37 + H 組；新增「v2.1 §9 ↔ v1.3 工具對照」（A 12 / B 12 / C 1）；get_warrant_activity AVAILABLE 超前實作註記。
+- **其他**：修復 T027 遺留 `scoreUniverse` 併發 map write 競態（sync.Mutex）。
+- `make check` 全綠；`go test -race ./pkg/...` 無資料競態。
