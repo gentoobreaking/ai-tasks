@@ -41,12 +41,12 @@ updated: 2026-08-03
 - PK: (stock_id, fiscal_quarter)
 
 ## 驗收標準
-- [ ] `quarterly_financials` 表（含 roe/roa）及 CRUD
-- [ ] 季資料擷取模組（yfinance + 本地推算 ROE/ROA）
-- [ ] 管線串接：每季排程更新
-- [ ] `GET /api/stocks/{id}/quarterly-financials` 端點
-- [ ] 前端個股詳細頁面：EPS 長條圖 + ROE/ROA 卡片
-- [ ] 前端建置無錯誤
+- [x] `quarterly_financials` 表（含 roe/roa）及 CRUD
+- [x] 季資料擷取模組（yfinance + 本地推算 ROE/ROA）
+- [x] 管線串接：每季排程更新
+- [x] `GET /api/stocks/{id}/quarterly-financials` 端點
+- [x] 前端個股詳細頁面：EPS 長條圖 + ROE/ROA 卡片
+- [x] 前端建置無錯誤
 
 ## 備註
 - ROE/ROA 可從資產負債表與損益表推算，盡量取得原始數據後自行計算

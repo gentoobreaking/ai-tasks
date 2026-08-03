@@ -32,12 +32,12 @@ updated: 2026-08-03
 - PK: (stock_id, year)
 
 ## 驗收標準
-- [ ] `dividends` 表建立及 CRUD
-- [ ] 股利資料擷取模組（yfinance / TWSE）
-- [ ] 管線串接：每年更新
-- [ ] `GET /api/stocks/{id}/dividends` 端點
-- [ ] 前端個股詳細頁面：股利表格
-- [ ] 前端建置無錯誤
+- [x] `dividends` 表建立及 CRUD
+- [x] 股利資料擷取模組（yfinance / TWSE）
+- [x] 管線串接：每年更新
+- [x] `GET /api/stocks/{id}/dividends` 端點
+- [x] 前端個股詳細頁面：股利表格
+- [x] 前端建置無錯誤
 
 ## 備註
 - 股利資訊與除權息日屬歷史資料，初始需一次性大量 backfill

@@ -92,28 +92,28 @@ updated: 2026-08-03
 ## 驗收標準
 
 ### 月營收
-- [ ] `monthly_revenue` 表建立及 CRUD
-- [ ] 月營收資料擷取模組（TWSE 爬取/API）
-- [ ] 管線串接：可排程每月抓取
-- [ ] `GET /api/stocks/{id}/monthly-revenue` 端點
-- [ ] 前端個股詳細頁面：月營收圖表（長條+折線）
-- [ ] 前端建置無錯誤
+- [x] `monthly_revenue` 表建立及 CRUD
+- [x] 月營收資料擷取模組（TWSE 爬取/API）
+- [x] 管線串接：可排程每月抓取
+- [x] `GET /api/stocks/{id}/monthly-revenue` 端點
+- [x] 前端個股詳細頁面：月營收圖表（長條+折線）
+- [x] 前端建置無錯誤
 
 ### EPS / ROE / ROA
-- [ ] 季財務資料表（`quarterly_financials` 或擴充 `financial_data`）及 CRUD
-- [ ] 季資料擷取模組（公開資訊觀測站）
-- [ ] 管線串接：每季排程更新
-- [ ] `GET /api/stocks/{id}/quarterly-financials` 端點
-- [ ] 前端個股詳細頁面：EPS 長條圖 + ROE/ROA 卡片
-- [ ] 前端建置無錯誤
+- [x] 季財務資料表（`quarterly_financials` 或擴充 `financial_data`）及 CRUD
+- [x] 季資料擷取模組（公開資訊觀測站）
+- [x] 管線串接：每季排程更新
+- [x] `GET /api/stocks/{id}/quarterly-financials` 端點
+- [x] 前端個股詳細頁面：EPS 長條圖 + ROE/ROA 卡片
+- [x] 前端建置無錯誤
 
 ### 股利
-- [ ] `dividends` 表建立及 CRUD
-- [ ] 股利資料擷取模組
-- [ ] 管線串接：每年更新
-- [ ] `GET /api/stocks/{id}/dividends` 端點
-- [ ] 前端個股詳細頁面：股利表格
-- [ ] 前端建置無錯誤
+- [x] `dividends` 表建立及 CRUD
+- [x] 股利資料擷取模組
+- [x] 管線串接：每年更新
+- [x] `GET /api/stocks/{id}/dividends` 端點
+- [x] 前端個股詳細頁面：股利表格
+- [x] 前端建置無錯誤
 
 ### 4. 類股排名
 **需求規格**:
@@ -124,10 +124,10 @@ updated: 2026-08-03
 **註**: 非獨立資料表，邏輯可寫在 API 層或另建聚合查詢。初始版本可用硬編碼類股對照，未來再補即時查詢。
 
 #### 驗收標準
-- [ ] 類股對照表（硬編碼或動態查詢）
-- [ ] `GET /api/stocks/{id}/sector-ranking` 端點回傳該股所屬類股及百分位排名
-- [ ] 前端顯示：類股標籤 + EPS/ROE/ROA 在該類股中的位置
-- [ ] 前端建置無錯誤
+- [x] 類股對照表（硬編碼或動態查詢）
+- [x] `GET /api/stocks/{id}/sector-ranking` 端點回傳該股所屬類股及百分位排名
+- [x] 前端顯示：類股標籤 + EPS/ROE/ROA 在該類股中的位置
+- [x] 前端建置無錯誤
 
 ### 5. 法人買賣超與融資融券
 **資料源**: TWSE 三大法人買賣超日報 / 融資融券日報
@@ -151,12 +151,12 @@ updated: 2026-08-03
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         > 現有 `institutional_flows` 表已有外資/投信/自營商買賣超（有記錄時才存），可研究是否直接擴充該表加 `total` 欄位即可，或另建新表。
 
 #### 驗收標準
-- [ ] `institutional_trades` 表（或擴充 `institutional_flows`）及 CRUD
-- [ ] 法人買賣超資料擷取模組
-- [ ] 管線串接：日排程更新
-- [ ] `GET /api/stocks/{id}/institutional-trades` 端點
-- [ ] 前端個股詳細頁面：法人買賣超表格
-- [ ] 前端建置無錯誤
+- [x] `institutional_trades` 表（或擴充 `institutional_flows`）及 CRUD
+- [x] 法人買賣超資料擷取模組
+- [x] 管線串接：日排程更新
+- [x] `GET /api/stocks/{id}/institutional-trades` 端點
+- [x] 前端個股詳細頁面：法人買賣超表格
+- [x] 前端建置無錯誤
 
 **DB Schema — `margin_trading`**:
 | 欄位 | 型態 | 說明 |
@@ -172,12 +172,12 @@ updated: 2026-08-03
 - PK: (stock_id, trade_date)
 
 #### 驗收標準
-- [ ] `margin_trading` 表建立及 CRUD
-- [ ] 融資融券資料擷取模組
-- [ ] 管線串接：日排程更新
-- [ ] `GET /api/stocks/{id}/margin-trading` 端點
-- [ ] 前端個股詳細頁面：融資融券表格
-- [ ] 前端建置無錯誤
+- [x] `margin_trading` 表建立及 CRUD
+- [x] 融資融券資料擷取模組
+- [x] 管線串接：日排程更新
+- [x] `GET /api/stocks/{id}/margin-trading` 端點
+- [x] 前端個股詳細頁面：融資融券表格
+- [x] 前端建置無錯誤
 
 ## 備註
 - 月營收為每月固定資料，TWSE 通常在次月 10 日前公告

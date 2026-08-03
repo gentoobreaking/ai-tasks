@@ -29,12 +29,12 @@ updated: 2026-08-03
 - PK: (stock_id, year_month)
 
 ## 驗收標準
-- [ ] `monthly_revenue` 表建立及 CRUD
-- [ ] 月營收資料擷取模組（TWSE 爬取/API）
-- [ ] 管線串接：可排程每月抓取
-- [ ] `GET /api/stocks/{id}/monthly-revenue` 端點
-- [ ] 前端個股詳細頁面：月營收圖表（長條+折線）
-- [ ] 前端建置無錯誤
+- [x] `monthly_revenue` 表建立及 CRUD
+- [x] 月營收資料擷取模組（TWSE 爬取/API）
+- [x] 管線串接：可排程每月抓取
+- [x] `GET /api/stocks/{id}/monthly-revenue` 端點
+- [x] 前端個股詳細頁面：月營收圖表（長條+折線）
+- [x] 前端建置無錯誤
 
 ## 備註
 - 月營收為每月固定資料，TWSE 通常在次月 10 日前公告

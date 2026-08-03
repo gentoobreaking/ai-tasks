@@ -44,18 +44,18 @@ updated: 2026-08-03
 ## 驗收標準
 
 ### 法人買賣超
-- [ ] 利用既有 `institutional_flows` 表（已有 foreign/sity/dealer/total）
-- [ ] `GET /api/stocks/{id}/institutional-trades` 端點
-- [ ] 前端個股詳細頁面：法人買賣超表格（含合計）
-- [ ] 前端建置無錯誤
+- [x] 利用既有 `institutional_flows` 表（已有 foreign/sity/dealer/total）
+- [x] `GET /api/stocks/{id}/institutional-trades` 端點
+- [x] 前端個股詳細頁面：法人買賣超表格（含合計）
+- [x] 前端建置無錯誤
 
 ### 融資融券
-- [ ] `margin_trading` 表建立及 CRUD
-- [ ] 融資融券資料擷取模組（TWSE TWT93U 已有 `fetch_margin_data()`，需擴充）
-- [ ] 管線串接：日排程更新
-- [ ] `GET /api/stocks/{id}/margin-trading` 端點
-- [ ] 前端個股詳細頁面：融資融券表格
-- [ ] 前端建置無錯誤
+- [x] `margin_trading` 表建立及 CRUD
+- [x] 融資融券資料擷取模組（TWSE TWT93U 已有 `fetch_margin_data()`，需擴充）
+- [x] 管線串接：日排程更新
+- [x] `GET /api/stocks/{id}/margin-trading` 端點
+- [x] 前端個股詳細頁面：融資融券表格
+- [x] 前端建置無錯誤
 
 ## 備註
 - 法人買賣超日報每日下午約 16:00 更新
