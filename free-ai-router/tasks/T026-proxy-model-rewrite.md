@@ -3,7 +3,7 @@ github_issue:
 title: Fix: Proxy model field rewrite to resolved upstream ID
 type: bugfix
 priority: high
-status: pending
+status: done
 assignee: OpenCode with DeepSeek V4 Flash
 created: 2026-08-04
 updated: 2026-08-04

@@ -20,7 +20,6 @@
 |------|------|------|
 | [T5-structlog-otel](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T005-structlog-otel.md) | 任務 T005-structlog-otel | |
 | [T7-multi-ai-discuss-resilience](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T007-multi-ai-discuss-resilience.md) | 任務 T007-multi-ai-discuss-resilience | |
-| [T10-agent-versioning](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T010-agent-versioning.md) | 任務 T010-agent-versioning | |
 
 ## 待實作
 
@@ -30,6 +29,7 @@
 | [T6-telegram-bot-webhook](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T006-telegram-bot-webhook.md) | 任務 T006-telegram-bot-webhook | |
 | [T8-agent-registry](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T008-agent-registry.md) | 任務 T008-agent-registry | |
 | [T9-lancedb-rag](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T009-lancedb-rag.md) | 任務 T009-lancedb-rag | |
+| [T10-agent-versioning](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T010-agent-versioning.md) | 任務 T010-agent-versioning | |
 
 ## Task 列表
 
@@ -44,8 +44,8 @@
 | [T7-multi-ai-discuss-resilience](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T007-multi-ai-discuss-resilience.md) | 任務 T007-multi-ai-discuss-resilience | 🔧 in-progress |
 | [T8-agent-registry](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T008-agent-registry.md) | 任務 T008-agent-registry | 📋 pending |
 | [T9-lancedb-rag](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T009-lancedb-rag.md) | 任務 T009-lancedb-rag | 📋 pending |
-| [T10-agent-versioning](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T010-agent-versioning.md) | 任務 T010-agent-versioning | 🔧 in-progress |
+| [T10-agent-versioning](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T010-agent-versioning.md) | 任務 T010-agent-versioning | 📋 pending |
 
-**✅ done: 3 | 🔧 in-progress: 3 | ⏭️ skip: 0 | 📋 pending: 4**
+**✅ done: 3 | 🔧 in-progress: 2 | ⏭️ skip: 0 | 📋 pending: 5**
 
-> 自動生成於 2026-08-04 16:22
+> 自動生成於 2026-08-04 21:37

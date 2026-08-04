@@ -3,7 +3,7 @@ github_issue:
 title: 'Fix: Config path per spec + FREMODEL_CONFIG_PATH env support'
 type: bugfix
 priority: high
-status: pending
+status: done
 assignee: OpenCode with DeepSeek V4 Flash
 created: 2026-08-04
 updated: 2026-08-04

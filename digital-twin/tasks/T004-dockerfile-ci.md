@@ -4,6 +4,8 @@ priority: medium
 assignee: OpenCode
 created: 2026-08-03
 updated: '2026-08-04'
+fail_count: 2
+summary: '第 2 次失敗: 應用 diff 失敗'
 ---
 # T004: 新增 Dockerfile + docker-compose.yml + GitHub Actions CI
 

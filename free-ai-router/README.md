@@ -29,6 +29,47 @@
 | Unit Tests |
 | Integration Tests |
 | Documentation |
+| Fix: Proxy model field rewrite to resolved upstream ID |
+| Fix: --best mode applies API keys before pinging |
+| Fix: Config path per spec + FREMODEL_CONFIG_PATH env support |
+| Fix: Ping result thread safety (registry lock) |
+| Fix: shouldSkip producer-side state mutation race |
+| Fix: Focus event parsing (CSI I/O) |
+| Fix: Failover retry policy (only 429/5xx/conn errors) |
+| Fix: Shared keep-alive transport pool for proxy (connection reuse) |
+| Fix: TUI stubs (search, target picker, settings screen) |
+| Fix: Router config propagation (codingOnly / bannedModels / --ban) |
+| Fix: Minor issues batch (discovery URL, logs, openBrowser, API stubs, version) |
+| Test: Regression suite for review fixes (race + e2e proxy + failover) |
+| Fix: TUI renderPending cross-goroutine race + dead TUI fields |
+| Fix: lock-free reads after UpdateModel in ban/tags handlers |
+| Fix: strip hop-by-hop headers in proxy copyHeaders |
+| Fix: rewriteModel failure must return 400, not failover |
+| Fix: container config volume + data dir resolution |
+| Fix: deduplicate verdict logic (router vs ping) |
+| Fix: status command honors FREMODEL_PORT |
+| Fix: onboard misleading message + dead fields |
+| Feat: wire real API implementations (models/ping, providers, account-status) |
+| Tests: regression tests for round-2 fixes |
+| Fix: SIGWINCH must resize TUI, not quit |
+| Fix: PingAllOnce producer reads skip state without lock |
+| Fix: wire AutoPingEnabled to the ping engine |
+| Fix: VERSION resolution, semver compare, checksum verify |
+| Fix: /api/meta updateAvailable is hardcoded false |
+| Fix: config has no mutex; API handlers race |
+| Fix: config add/remove-key must not touch env keys |
+| Chore: remove dead code |
+| Tests: regression coverage for round-3 fixes |
+| TUI refactor: replace raw ANSI rendering with Bubble Tea + Lip Gloss |
+| Fix: initialize ping engine so models show actual status instead of pending |
+| Implement free-tier filtering at model discovery time |
+| Implement free-tier verification in ping layer |
+| Aggregate free AI models from ClawLabsAI/free-ai-models |
+| Add Chinese mainland free model aggregation automation |
+| Implement public new-api relay site scanner for keyless model access |
+| Implement V2EX forum scraper for public new-api relay sites |
+| Implement linux.do forum scraper for public new-api relay sites |
+| Implement new-api /v1/models discovery and HA failover from relay sites |
 
 ## Skip 項目
 
@@ -46,14 +87,7 @@
 
 | Task | 名稱 | 說明 |
 |------|------|------|
-| [T26-proxy-model-rewrite](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T026-proxy-model-rewrite.md) | Fix: Proxy model field rewrite to resolved upstream ID | |
-| [T27-best-mode-keys](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T027-best-mode-keys.md) | Fix: --best mode applies API keys before pinging | |
-| [T28-config-path-env](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T028-config-path-env.md) | Fix: Config path per spec + FREMODEL_CONFIG_PATH env support | |
-| [T29-ping-thread-safety](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T029-ping-thread-safety.md) | Fix: Ping result thread safety (registry lock) | |
-| [T31-focus-events](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T031-focus-events.md) | Fix: Focus event parsing (CSI I/O) | |
-| [T32-failover-policy](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T032-failover-policy.md) | Fix: Failover retry policy (only 429/5xx/conn errors) | |
-| [T33-proxy-conn-reuse](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T033-proxy-conn-reuse.md) | Fix: Shared keep-alive transport pool for proxy (connection reuse) | |
-| [T34-tui-stubs](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T034-tui-stubs.md) | Fix: TUI stubs (search, target picker, settings screen) | |
+| [T63-pollinations-text-adapter](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T063-pollinations-text-adapter.md) | Add Pollinations /text endpoint adapter for truly keyless free models | |
 
 ## Task 列表
 
@@ -84,15 +118,49 @@
 | [T23-unit-tests](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T023-unit-tests.md) | Unit Tests | ✅ done |
 | [T24-integration-tests](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T024-integration-tests.md) | Integration Tests | ✅ done |
 | [T25-documentation](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T025-documentation.md) | Documentation | ✅ done |
-| [T26-proxy-model-rewrite](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T026-proxy-model-rewrite.md) | Fix: Proxy model field rewrite to resolved upstream ID | 📋 pending |
-| [T27-best-mode-keys](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T027-best-mode-keys.md) | Fix: --best mode applies API keys before pinging | 📋 pending |
-| [T28-config-path-env](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T028-config-path-env.md) | Fix: Config path per spec + FREMODEL_CONFIG_PATH env support | 📋 pending |
-| [T29-ping-thread-safety](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T029-ping-thread-safety.md) | Fix: Ping result thread safety (registry lock) | 📋 pending |
-| [T31-focus-events](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T031-focus-events.md) | Fix: Focus event parsing (CSI I/O) | 📋 pending |
-| [T32-failover-policy](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T032-failover-policy.md) | Fix: Failover retry policy (only 429/5xx/conn errors) | 📋 pending |
-| [T33-proxy-conn-reuse](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T033-proxy-conn-reuse.md) | Fix: Shared keep-alive transport pool for proxy (connection reuse) | 📋 pending |
-| [T34-tui-stubs](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T034-tui-stubs.md) | Fix: TUI stubs (search, target picker, settings screen) | 📋 pending |
+| [T26-proxy-model-rewrite](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T026-proxy-model-rewrite.md) | Fix: Proxy model field rewrite to resolved upstream ID | ✅ done |
+| [T27-best-mode-keys](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T027-best-mode-keys.md) | Fix: --best mode applies API keys before pinging | ✅ done |
+| [T28-config-path-env](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T028-config-path-env.md) | Fix: Config path per spec + FREMODEL_CONFIG_PATH env support | ✅ done |
+| [T29-ping-thread-safety](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T029-ping-thread-safety.md) | Fix: Ping result thread safety (registry lock) | ✅ done |
+| [T30-shouldskip-race](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T030-shouldskip-race.md) | Fix: shouldSkip producer-side state mutation race | ✅ done |
+| [T31-focus-events](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T031-focus-events.md) | Fix: Focus event parsing (CSI I/O) | ✅ done |
+| [T32-failover-policy](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T032-failover-policy.md) | Fix: Failover retry policy (only 429/5xx/conn errors) | ✅ done |
+| [T33-proxy-conn-reuse](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T033-proxy-conn-reuse.md) | Fix: Shared keep-alive transport pool for proxy (connection reuse) | ✅ done |
+| [T34-tui-stubs](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T034-tui-stubs.md) | Fix: TUI stubs (search, target picker, settings screen) | ✅ done |
+| [T35-router-config-propagation](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T035-router-config-propagation.md) | Fix: Router config propagation (codingOnly / bannedModels / --ban) | ✅ done |
+| [T36-minor-issues-batch](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T036-minor-issues-batch.md) | Fix: Minor issues batch (discovery URL, logs, openBrowser, API stubs, version) | ✅ done |
+| [T37-regression-tests](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T037-regression-tests.md) | Test: Regression suite for review fixes (race + e2e proxy + failover) | ✅ done |
+| [T38-tui-renderpending-race](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T038-tui-renderpending-race.md) | Fix: TUI renderPending cross-goroutine race + dead TUI fields | ✅ done |
+| [T39-server-handler-races](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T039-server-handler-races.md) | Fix: lock-free reads after UpdateModel in ban/tags handlers | ✅ done |
+| [T40-proxy-hop-by-hop](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T040-proxy-hop-by-hop.md) | Fix: strip hop-by-hop headers in proxy copyHeaders | ✅ done |
+| [T41-proxy-rewrite-400](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T041-proxy-rewrite-400.md) | Fix: rewriteModel failure must return 400, not failover | ✅ done |
+| [T42-container-config-data](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T042-container-config-data.md) | Fix: container config volume + data dir resolution | ✅ done |
+| [T43-verdict-dedup](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T043-verdict-dedup.md) | Fix: deduplicate verdict logic (router vs ping) | ✅ done |
+| [T44-status-port](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T044-status-port.md) | Fix: status command honors FREMODEL_PORT | ✅ done |
+| [T45-onboard-dead-fields](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T045-onboard-dead-fields.md) | Fix: onboard misleading message + dead fields | ✅ done |
+| [T46-api-stub-wiring](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T046-api-stub-wiring.md) | Feat: wire real API implementations (models/ping, providers, account-status) | ✅ done |
+| [T47-regression-tests-2](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T047-regression-tests-2.md) | Tests: regression tests for round-2 fixes | ✅ done |
+| [T48-tui-sigwinch-resize](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T048-tui-sigwinch-resize.md) | Fix: SIGWINCH must resize TUI, not quit | ✅ done |
+| [T49-ping-producer-skip-lock](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T049-ping-producer-skip-lock.md) | Fix: PingAllOnce producer reads skip state without lock | ✅ done |
+| [T50-autoping-wiring](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T050-autoping-wiring.md) | Fix: wire AutoPingEnabled to the ping engine | ✅ done |
+| [T51-version-semver-checksum](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T051-version-semver-checksum.md) | Fix: VERSION resolution, semver compare, checksum verify | ✅ done |
+| [T52-meta-updateavailable](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T052-meta-updateavailable.md) | Fix: /api/meta updateAvailable is hardcoded false | ✅ done |
+| [T53-config-thread-safety](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T053-config-thread-safety.md) | Fix: config has no mutex; API handlers race | ✅ done |
+| [T54-config-addkey-env](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T054-config-addkey-env.md) | Fix: config add/remove-key must not touch env keys | ✅ done |
+| [T55-dead-code-cleanup](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T055-dead-code-cleanup.md) | Chore: remove dead code | ✅ done |
+| [T56-regression-tests-3](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T056-regression-tests-3.md) | Tests: regression coverage for round-3 fixes | ✅ done |
+| [T57-tui-bubble-tea-refactor](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T057-tui-bubble-tea-refactor.md) | TUI refactor: replace raw ANSI rendering with Bubble Tea + Lip Gloss | ✅ done |
+| [T58-ping-engine-init](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T058-ping-engine-init.md) | Fix: initialize ping engine so models show actual status instead of pending | ✅ done |
+| [T59-free-tier-discovery-filter](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T059-free-tier-discovery-filter.md) | Implement free-tier filtering at model discovery time | ✅ done |
+| [T60-ping-free-tier-verification](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T060-ping-free-tier-verification.md) | Implement free-tier verification in ping layer | ✅ done |
+| [T61-clawlabs-model-aggregation](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T061-clawlabs-model-aggregation.md) | Aggregate free AI models from ClawLabsAI/free-ai-models | ✅ done |
+| [T62-china-mainland-model-aggregation](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T062-china-mainland-model-aggregation.md) | Add Chinese mainland free model aggregation automation | ✅ done |
+| [T63-pollinations-text-adapter](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T063-pollinations-text-adapter.md) | Add Pollinations /text endpoint adapter for truly keyless free models | 📋 pending |
+| [T64-public-relay-scanner](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T064-public-relay-scanner.md) | Implement public new-api relay site scanner for keyless model access | ✅ done |
+| [T64a-v2ex-scraper](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T064a-v2ex-scraper.md) | Implement V2EX forum scraper for public new-api relay sites | ✅ done |
+| [T64b-linuxdo-scraper](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T064b-linuxdo-scraper.md) | Implement linux.do forum scraper for public new-api relay sites | ✅ done |
+| [T64c-newapi-discovery](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T064c-newapi-discovery.md) | Implement new-api /v1/models discovery and HA failover from relay sites | ✅ done |
 
-**✅ done: 25 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 8**
+**✅ done: 66 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 1**
 
-> 自動生成於 2026-08-04 16:22
+> 自動生成於 2026-08-04 21:37

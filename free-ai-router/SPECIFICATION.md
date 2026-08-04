@@ -105,10 +105,12 @@ The provider catalog mirrors modelrelay's `sources.js` structure exactly:
 | scaleway | `SCALEWAY_API_KEY` |
 | kilocode | `KILOCODE_API_KEY` |
 | googleai | `GOOGLE_API_KEY` |
+| new-api | `NEW_API_API_KEY` |
+| siliconflow | `SILICONFLOW_API_KEY` |
 
 ### 3.3 Provider Discovery
 
-Providers marked `"discoverable": true` (nvidia, groq, cerebras, openrouter, googleai) support dynamic model discovery by probing `GET /v1/models` at the provider's base URL. Discovered models are merged into the static catalog, with static entries taking precedence (preserving curated quality scores).
+Providers marked `"discoverable": true` (nvidia, groq, cerebras, openrouter, googleai, siliconflow, new-api) support dynamic model discovery by probing `GET /v1/models` at the provider's base URL. Discovered models are merged into the static catalog, with static entries taking precedence (preserving curated quality scores).
 
 Discovery intervals:
 - **OpenRouter**: 60 minutes

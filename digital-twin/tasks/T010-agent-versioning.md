@@ -1,9 +1,11 @@
 ---
-status: in-progress
+status: blocked
 priority: high
 assignee: OpenCode
 created: 2026-08-03
 updated: '2026-08-04'
+fail_count: 2
+summary: 連續失敗 3 次（測試失敗），標記為 blocked 待人工處理
 ---
 # T010: Agent System Prompt 強制 SemVer Front-matter + Canary Deploy + Rollback
 

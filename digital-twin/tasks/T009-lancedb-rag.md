@@ -3,9 +3,10 @@ status: pending
 priority: medium
 assignee: OpenCode
 created: 2026-08-03
-updated: 2026-08-03
+updated: '2026-08-04'
+fail_count: 1
+summary: '第 1 次失敗: 應用 diff 失敗'
 ---
-
 # T009: index_knowledge.py 引入 LanceDB 替換純 Python 向量搜尋
 
 ## 背景
