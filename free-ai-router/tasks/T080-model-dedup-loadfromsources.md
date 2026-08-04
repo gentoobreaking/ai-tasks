@@ -3,10 +3,10 @@ github_issue:
 title: Add model deduplication in LoadFromSources
 type: bugfix
 priority: low
-status: pending
+status: done
 assignee: OpenCode with DeepSeek V4 Flash
 created: 2026-08-04
-updated: 2026-08-04
+updated: 2026-08-05
 ---
 
 # T080 - Add model deduplication in LoadFromSources
@@ -31,11 +31,11 @@ func (r *Registry) LoadFromSources(mgr *providers.Manager) {
 如果兩個 provider 定義了相同的 model ID（例如 `sources.json` 中 nvidia 定義了某模型，而 `AutoDiscoverModels` 又從 `/v1/models` 回傳了同一模型），會產生重複條目。`ReplaceAll` 使用 `map[string]*Model`（key = model ID），所以**最後寫入的會覆蓋前面的**，不會 crash，但可能導致預期外的 provider 資訊被覆蓋。
 
 ## 驗收標準
-- [ ] `LoadFromSources()` 檢查 model ID 是否已存在，若已存在則合併或跳過
-- [ ] 合併策略：保留第一個 provider 的資訊，後續重複的只更新標籤/context（如果更詳細）
-- [ ] 加入 debug log "skipping duplicate model {id} from {provider} (already loaded)"
-- [ ] `go build ./...` 通過
-- [ ] `go test ./...` 全部通過
+- [x] `LoadFromSources()` 檢查 model ID 是否已存在，若已存在則合併或跳過
+- [x] 合併策略：保留第一個 provider 的資訊，後續重複的只更新標籤/context（如果更詳細）
+- [x] 加入 debug log "skipping duplicate model {id} from {provider} (already loaded)"
+- [x] `go build ./...` 通過
+- [x] `go test ./...` 全部通過
 
 ## 修改位置
 

@@ -3,10 +3,10 @@ github_issue:
 title: Fix ResolveAPIKey config read without lock → potential race
 type: bugfix
 priority: medium
-status: pending
+status: done
 assignee: OpenCode with DeepSeek V4 Flash
 created: 2026-08-04
-updated: 2026-08-04
+updated: 2026-08-05
 ---
 
 # T075 - Add read-lock to ResolveAPIKey config access
@@ -24,12 +24,12 @@ updated: 2026-08-04
 **影響：** 理論上的 data race（`go test -race` 可能檢測到），但目前 production 場景罕見（TUI mode 和 server mode 互斥）。
 
 ## 驗收標準
-- [ ] `ResolveAPIKey()` 和 `ResolveAPIKeys()` 內對 `cfg.APIKeys` 的讀取加 `cfg.RLock()` / `cfg.RUnlock()`
-- [ ] `KeysFromConfig()` 同樣加讀鎖
-- [ ] 確認不影響效能（讀鎖成本極低）
-- [ ] `go build -race ./...` 通過
-- [ ] `go vet ./...` 零警告
-- [ ] `go test -race ./...` 全部通過
+- [x] `ResolveAPIKey()` 和 `ResolveAPIKeys()` 內對 `cfg.APIKeys` 的讀取加 `cfg.RLock()` / `cfg.RUnlock()`
+- [x] `KeysFromConfig()` 同樣加讀鎖
+- [x] 確認不影響效能（讀鎖成本極低）
+- [x] `go build -race ./...` 通過
+- [x] `go vet ./...` 零警告
+- [x] `go test -race ./...` 全部通過
 
 ## 修改位置
 

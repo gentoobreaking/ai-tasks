@@ -1,6 +1,6 @@
 # 📁 Projects Dashboard
 
-> 最後更新: 2026-08-05 00:15 · 自動生成
+> 最後更新: 2026-08-05 00:49 · 自動生成
 
 ---
 
@@ -10,11 +10,11 @@
 |------|------|
 | 專案數 | 60 |
 | 任務總數 | 895 |
-| ✅ 已完成 | 782 |
-| ⬜ 待處理 | 48 |
+| ✅ 已完成 | 788 |
+| ⬜ 待處理 | 42 |
 | 🔄 進行中 | 3 |
 | ⏭️ 跳過 | 62 |
-| 總完成率 | 93% |
+| 總完成率 | 94% |
 
 ## 🔥 待處理高優先級任務
 
@@ -59,13 +59,7 @@
 | digital-twin | [T008-agent-registry](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T008-agent-registry.md) | T008-agent-registry | ⬜ |
 | digital-twin | [T009-lancedb-rag](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T009-lancedb-rag.md) | T009-lancedb-rag | ⬜ |
 | digital-twin | [T010-agent-versioning](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T010-agent-versioning.md) | T010-agent-versioning | ⬜ |
-| free-ai-router | [T071-discovery-logging](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T071-discovery-logging.md) | Add structured discovery logging for all 4 LoadSources phases | ⬜ |
-| free-ai-router | [T073-refactor-buildregistry-pipeline](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T073-refactor-buildregistry-pipeline.md) | Refactor buildRegistry from god function into composable pipeline | ⬜ |
 | free-ai-router | [T074-breakup-tui-model](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T074-breakup-tui-model.md) | Break up TUI Model into focused state machines (settings, picker, wizard, search) | ⬜ |
-| free-ai-router | [T075-config-resolve-race](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T075-config-resolve-race.md) | Fix ResolveAPIKey config read without lock → potential race | ⬜ |
-| free-ai-router | [T077-centralize-provider-definitions](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T077-centralize-provider-definitions.md) | Centralize provider definitions into single source of truth | ⬜ |
-| free-ai-router | [T079-fix-runbest-return-value](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T079-fix-runbest-return-value.md) | Fix runBest ignoring ping result (second return value discarded) | ⬜ |
-| free-ai-router | [T080-model-dedup-loadfromsources](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T080-model-dedup-loadfromsources.md) | Add model deduplication in LoadFromSources | ⬜ |
 | gold-analysis-advanced | [T002](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis-advanced/tasks/T002.md) | ML 模型整合與優化 | ⬜ |
 | gold-analysis-advanced | [T004](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis-advanced/tasks/T004.md) | 實盤交易對接 | ⬜ |
 | md-viewer-app | [T027-預覽連結懸停](https://github.com/gentoobreaking/ai-tasks/blob/main/md-viewer-app/tasks/T027-預覽連結懸停.md) | [T027] 連結懸停預覽 | ⬜ |
@@ -184,8 +178,8 @@
 
 | 指標 | 數值 |
 |------|------|
-| 過去 7 天完成 | 131 |
-| 過去 30 天完成 | 134 |
+| 過去 7 天完成 | 137 |
+| 過去 30 天完成 | 140 |
 | 平均週期時間 | 0.7 天 |
 | 週期時間中位數 | 0.0 天 |
 
@@ -195,10 +189,10 @@ xychart-beta
     title "過去 14 天任務完成趨勢"
     x-axis ["07-23", "07-24", "07-25", "07-26", "07-27", "07-28", "07-29", "07-30", "07-31", "08-01", "08-02", "08-03", "08-04", "08-05"]
     y-axis "完成數" 0 --> 72
-    line [0, 0, 0, 0, 0, 0, 0, 12, 11, 10, 5, 16, 72, 5]
+    line [0, 0, 0, 0, 0, 0, 0, 12, 11, 10, 5, 16, 72, 11]
 ```
 
-📊 總計: 131 | 日均: 9.4 | 本週: 131 | 📈 成長中
+📊 總計: 137 | 日均: 9.8 | 本週: 137 | 📈 成長中
 
 ## 📋 專案列表
 
@@ -219,7 +213,7 @@ xychart-beta
   **[T008-agent-registry](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T008-agent-registry.md)**: T008-agent-registry
   **[T010-agent-versioning](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T010-agent-versioning.md)**: T010-agent-versioning
 | ✅ | [elevenlabs-research](https://github.com/gentoobreaking/ai-tasks/tree/main/elevenlabs-research) | 1 | 1 | 0 | 0 | 0 | ████████████████████ 100% | 2026-04-21 |
-| ⬜ | [free-ai-router](https://github.com/gentoobreaking/ai-tasks/tree/main/free-ai-router) | 83 | 76 | 7 | 0 | 0 | ██████████████████░░ 91% | 2026-08-05 |
+| ⬜ | [free-ai-router](https://github.com/gentoobreaking/ai-tasks/tree/main/free-ai-router) | 83 | 82 | 1 | 0 | 0 | ███████████████████░ 98% | 2026-08-05 |
 | ✅ | [git-maintenance](https://github.com/gentoobreaking/ai-tasks/tree/main/git-maintenance) | 1 | 1 | 0 | 0 | 0 | ████████████████████ 100% | 2026-05-16 |
 | ✅ | [github-data-review](https://github.com/gentoobreaking/ai-tasks/tree/main/github-data-review) | 8 | 8 | 0 | 0 | 0 | ████████████████████ 100% | 2026-04-28 |
 | ✅ | [global-policy-refactor](https://github.com/gentoobreaking/ai-tasks/tree/main/global-policy-refactor) | 3 | 3 | 0 | 0 | 0 | ████████████████████ 100% | 2026-05-07 |

@@ -3,10 +3,10 @@ github_issue:
 title: Centralize provider definitions into single source of truth
 type: refactor
 priority: medium
-status: pending
+status: done
 assignee: OpenCode with DeepSeek V4 Flash
 created: 2026-08-04
-updated: 2026-08-04
+updated: 2026-08-05
 ---
 
 # T077 - Centralize provider definitions into single source of truth
@@ -32,16 +32,16 @@ Provider 相關資訊目前分散在四個位置：
 - 沒有任何編譯期檢查確保所有清單一致
 
 ## 驗收標準
-- [ ] 在 `internal/providers/registry.go`（新）定義 `ProviderMeta` struct 與集中式 registry
-- [ ] `ProviderMeta` 包含：Key、Name、URL、EnvVar、SignupURL、KeyPrefix、Discoverable
-- [ ] 所有現有 provider 的 meta 資料在此定義一次
-- [ ] `EnvVarForProvider()` 改為查詢 registry
-- [ ] `settingsProviders()` 改為動態遍歷 registry 或 `Manager.GetAllProviders()`
-- [ ] `cycleProviderFilter()` 改為動態取得 provider 清單
-- [ ] onboard 邏輯可選擇性引用 registry 中的 signup URL 和 key prefix
-- [ ] `go build ./...` 通過
-- [ ] `go vet ./...` 零警告
-- [ ] `go test ./...` 全部通過
+- [x] 在 `internal/providers/registry.go`（新）定義 `ProviderMeta` struct 與集中式 registry
+- [x] `ProviderMeta` 包含：Key、Name、URL、EnvVar、SignupURL、KeyPrefix、Discoverable
+- [x] 所有現有 provider 的 meta 資料在此定義一次
+- [x] `EnvVarForProvider()` 改為查詢 registry
+- [x] `settingsProviders()` 改為動態遍歷 registry 或 `Manager.GetAllProviders()`
+- [x] `cycleProviderFilter()` 改為動態取得 provider 清單
+- [x] onboard 邏輯可選擇性引用 registry 中的 signup URL 和 key prefix
+- [x] `go build ./...` 通過
+- [x] `go vet ./...` 零警告
+- [x] `go test ./...` 全部通過
 
 ## Provider Registry 結構
 

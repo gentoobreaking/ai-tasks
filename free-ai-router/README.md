@@ -77,9 +77,15 @@
 | Implement settings screen keyboard interactions (toggle, edit key, test ping) |
 | Cache merged provider sources to disk for fast cold-start and offline resilience |
 | Auto-detect API keys from shell RC files and agent configs |
+| Add structured discovery logging for all 4 LoadSources phases |
 | Fix AutoDiscoverModels not being called — dynamic model discovery is dead code |
+| Refactor buildRegistry from god function into composable pipeline |
+| Fix ResolveAPIKey config read without lock → potential race |
 | Fix time measurement bug in pingPollinationsText |
+| Centralize provider definitions into single source of truth |
 | Add /api/health and /api/status summarization endpoints |
+| Fix runBest ignoring ping result (second return value discarded) |
+| Add model deduplication in LoadFromSources |
 
 ## Skip 項目
 
@@ -97,13 +103,7 @@
 
 | Task | 名稱 | 說明 |
 |------|------|------|
-| [T71-discovery-logging](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T071-discovery-logging.md) | Add structured discovery logging for all 4 LoadSources phases | |
-| [T73-refactor-buildregistry-pipeline](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T073-refactor-buildregistry-pipeline.md) | Refactor buildRegistry from god function into composable pipeline | |
 | [T74-breakup-tui-model](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T074-breakup-tui-model.md) | Break up TUI Model into focused state machines (settings, picker, wizard, search) | |
-| [T75-config-resolve-race](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T075-config-resolve-race.md) | Fix ResolveAPIKey config read without lock → potential race | |
-| [T77-centralize-provider-definitions](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T077-centralize-provider-definitions.md) | Centralize provider definitions into single source of truth | |
-| [T79-fix-runbest-return-value](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T079-fix-runbest-return-value.md) | Fix runBest ignoring ping result (second return value discarded) | |
-| [T80-model-dedup-loadfromsources](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T080-model-dedup-loadfromsources.md) | Add model deduplication in LoadFromSources | |
 
 ## Task 列表
 
@@ -182,17 +182,17 @@
 | [T68-settings-screen-interactions](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T068-settings-screen-interactions.md) | Implement settings screen keyboard interactions (toggle, edit key, test ping) | ✅ done |
 | [T69-provider-cache-persistence](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T069-provider-cache-persistence.md) | Cache merged provider sources to disk for fast cold-start and offline resilience | ✅ done |
 | [T70-auto-detect-api-keys](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T070-auto-detect-api-keys.md) | Auto-detect API keys from shell RC files and agent configs | ✅ done |
-| [T71-discovery-logging](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T071-discovery-logging.md) | Add structured discovery logging for all 4 LoadSources phases | 📋 pending |
+| [T71-discovery-logging](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T071-discovery-logging.md) | Add structured discovery logging for all 4 LoadSources phases | ✅ done |
 | [T72-fix-autodiscover-not-called](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T072-fix-autodiscover-not-called.md) | Fix AutoDiscoverModels not being called — dynamic model discovery is dead code | ✅ done |
-| [T73-refactor-buildregistry-pipeline](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T073-refactor-buildregistry-pipeline.md) | Refactor buildRegistry from god function into composable pipeline | 📋 pending |
+| [T73-refactor-buildregistry-pipeline](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T073-refactor-buildregistry-pipeline.md) | Refactor buildRegistry from god function into composable pipeline | ✅ done |
 | [T74-breakup-tui-model](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T074-breakup-tui-model.md) | Break up TUI Model into focused state machines (settings, picker, wizard, search) | 📋 pending |
-| [T75-config-resolve-race](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T075-config-resolve-race.md) | Fix ResolveAPIKey config read without lock → potential race | 📋 pending |
+| [T75-config-resolve-race](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T075-config-resolve-race.md) | Fix ResolveAPIKey config read without lock → potential race | ✅ done |
 | [T76-fix-ping-time-measurement](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T076-fix-ping-time-measurement.md) | Fix time measurement bug in pingPollinationsText | ✅ done |
-| [T77-centralize-provider-definitions](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T077-centralize-provider-definitions.md) | Centralize provider definitions into single source of truth | 📋 pending |
+| [T77-centralize-provider-definitions](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T077-centralize-provider-definitions.md) | Centralize provider definitions into single source of truth | ✅ done |
 | [T78-api-health-status-endpoints](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T078-api-health-status-endpoints.md) | Add /api/health and /api/status summarization endpoints | ✅ done |
-| [T79-fix-runbest-return-value](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T079-fix-runbest-return-value.md) | Fix runBest ignoring ping result (second return value discarded) | 📋 pending |
-| [T80-model-dedup-loadfromsources](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T080-model-dedup-loadfromsources.md) | Add model deduplication in LoadFromSources | 📋 pending |
+| [T79-fix-runbest-return-value](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T079-fix-runbest-return-value.md) | Fix runBest ignoring ping result (second return value discarded) | ✅ done |
+| [T80-model-dedup-loadfromsources](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T080-model-dedup-loadfromsources.md) | Add model deduplication in LoadFromSources | ✅ done |
 
-**✅ done: 76 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 7**
+**✅ done: 82 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 1**
 
-> 自動生成於 2026-08-05 00:15
+> 自動生成於 2026-08-05 00:49

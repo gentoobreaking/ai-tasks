@@ -1,6 +1,6 @@
 # 📅 Daily Dashboard - 2026-08-05
 
-> 最後更新: 2026-08-05 00:15 · 自動生成
+> 最後更新: 2026-08-05 00:49 · 自動生成
 
 ---
 
@@ -18,7 +18,13 @@ _無_
 | free-ai-router | [T065-tui-dead-file-cleanup](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T065-tui-dead-file-cleanup.md) | Remove TUI dead files post Bubble Tea refactor |
 | free-ai-router | [T066-pollinations-text-router-hook](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T066-pollinations-text-router-hook.md) | Wire Pollinations /text fallback into router proxy path |
 | free-ai-router | [T067-tui-first-run-wizard](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T067-tui-first-run-wizard.md) | Complete first-run wizard inside TUI (post Bubble Tea refactor) |
+| free-ai-router | [T071-discovery-logging](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T071-discovery-logging.md) | Add structured discovery logging for all 4 LoadSources phases |
+| free-ai-router | [T073-refactor-buildregistry-pipeline](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T073-refactor-buildregistry-pipeline.md) | Refactor buildRegistry from god function into composable pipeline |
+| free-ai-router | [T075-config-resolve-race](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T075-config-resolve-race.md) | Fix ResolveAPIKey config read without lock → potential race |
 | free-ai-router | [T076-fix-ping-time-measurement](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T076-fix-ping-time-measurement.md) | Fix time measurement bug in pingPollinationsText |
+| free-ai-router | [T077-centralize-provider-definitions](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T077-centralize-provider-definitions.md) | Centralize provider definitions into single source of truth |
+| free-ai-router | [T079-fix-runbest-return-value](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T079-fix-runbest-return-value.md) | Fix runBest ignoring ping result (second return value discarded) |
+| free-ai-router | [T080-model-dedup-loadfromsources](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T080-model-dedup-loadfromsources.md) | Add model deduplication in LoadFromSources |
 
 ---
 
@@ -93,11 +99,7 @@ _無_
 | tw-quant-signal | [T023-mcp-validation-fallback](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T023-mcp-validation-fallback.md) | [Phase 4] Pipeline 驗證 + mcp fallback — 確認端到端正確性 | high |
 | digital-twin | [T004-dockerfile-ci](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T004-dockerfile-ci.md) | 新增 Dockerfile + docker-compose.yml + GitHub Actions CI | medium |
 | digital-twin | [T009-lancedb-rag](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T009-lancedb-rag.md) | index_knowledge.py 引入 LanceDB 替換純 Python 向量搜尋 | medium |
-| free-ai-router | [T071-discovery-logging](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T071-discovery-logging.md) | Add structured discovery logging for all 4 LoadSources phases | medium |
-| free-ai-router | [T073-refactor-buildregistry-pipeline](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T073-refactor-buildregistry-pipeline.md) | Refactor buildRegistry from god function into composable pipeline | medium |
 | free-ai-router | [T074-breakup-tui-model](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T074-breakup-tui-model.md) | Break up TUI Model into focused state machines (settings, picker, wizard, search) | medium |
-| free-ai-router | [T075-config-resolve-race](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T075-config-resolve-race.md) | Fix ResolveAPIKey config read without lock → potential race | medium |
-| free-ai-router | [T077-centralize-provider-definitions](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T077-centralize-provider-definitions.md) | Centralize provider definitions into single source of truth | medium |
 | tw-quant-daybrain | [T010-journal-metrics](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T010-journal-metrics.md) | 交易日誌與績效指標（Phase 4） | medium |
 | tw-quant-daybrain | [T011-llm-report](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T011-llm-report.md) | LLM 檢討報告與防幻覺規範 | medium |
 | tw-quant-daybrain | [T012-replay](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T012-replay.md) | 回放工具與滑價驗證 | medium |
@@ -109,8 +111,6 @@ _無_
 | tw-quant-selector | [T135-complete-missing-tests](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-selector/tasks/T135-complete-missing-tests.md) | 補齊未完成的測試項目（T123/T124/T130-T133） | medium |
 | tw-quant-signal | [T018-stock-pool-expansion](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T018-stock-pool-expansion.md) | [Phase 3] 標的池擴充與管線效率優化 | medium |
 | tw-quant-signal | [T019-performance-tracking-dashboard](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T019-performance-tracking-dashboard.md) | [Phase 3] 績效追蹤儀表板補完 — 訊號後 1/3/5 日表現 | medium |
-| free-ai-router | [T079-fix-runbest-return-value](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T079-fix-runbest-return-value.md) | Fix runBest ignoring ping result (second return value discarded) | low |
-| free-ai-router | [T080-model-dedup-loadfromsources](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T080-model-dedup-loadfromsources.md) | Add model deduplication in LoadFromSources | low |
 | gold-analysis-advanced | [T002](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis-advanced/tasks/T002.md) | ML 模型整合與優化 | low |
 | gold-analysis-advanced | [T004](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis-advanced/tasks/T004.md) | 實盤交易對接 | low |
 | md-viewer-app | [T027-預覽連結懸停](https://github.com/gentoobreaking/ai-tasks/blob/main/md-viewer-app/tasks/T027-預覽連結懸停.md) | [T027] 連結懸停預覽 | low |

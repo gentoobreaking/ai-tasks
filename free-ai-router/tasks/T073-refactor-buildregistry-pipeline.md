@@ -3,10 +3,10 @@ github_issue:
 title: Refactor buildRegistry from god function into composable pipeline
 type: refactor
 priority: medium
-status: pending
+status: done
 assignee: OpenCode with DeepSeek V4 Flash
 created: 2026-08-04
-updated: 2026-08-04
+updated: 2026-08-05
 ---
 
 # T073 - Refactor buildRegistry into composable pipeline
@@ -25,10 +25,10 @@ updated: 2026-08-04
 這違反了 Go 的 package 設計原則 — `cmd/freemodel/` 應該是薄層的 CLI entry point，而非核心業務邏輯。
 
 ## 驗收標準
-- [ ] 將 `LoadScores()` → `ComputeTier()` 的迴圈移到 `internal/models/` 的新方法
-- [ ] 將 `LoadBuiltIn()` → tag 合併的邏輯移到 `internal/models/` 的新方法
-- [ ] 將 `applyEndpoints()` 移到 `internal/models/` 或 `internal/providers/`
-- [ ] `buildRegistry()` 簡化為 pipeline 呼叫串：
+- [x] 將 `LoadScores()` → `ComputeTier()` 的迴圈移到 `internal/models/` 的新方法
+- [x] 將 `LoadBuiltIn()` → tag 合併的邏輯移到 `internal/models/` 的新方法
+- [x] 將 `applyEndpoints()` 移到 `internal/models/` 或 `internal/providers/`
+- [x] `buildRegistry()` 簡化為 pipeline 呼叫串：
   ```go
   provMgr.LoadSources(path)
   provMgr.AutoDiscoverModels()        // T072 修復
@@ -37,11 +37,11 @@ updated: 2026-08-04
   registry.LoadTags(dataPath)         // 新：封裝 tag loading
   registry.ApplyEndpoints(provMgr)    // 新：封裝 endpoint setup
   ```
-- [ ] 每個 pipeline step 都有對應的單元測試
-- [ ] `go build ./...` 通過
-- [ ] `go vet ./...` 零警告
-- [ ] `go test ./...` 全部通過
-- [ ] `cmd/freemodel/main.go` 的 `buildRegistry()` 不超過 30 行
+- [x] 每個 pipeline step 都有對應的單元測試
+- [x] `go build ./...` 通過
+- [x] `go vet ./...` 零警告
+- [x] `go test ./...` 全部通過
+- [x] `cmd/freemodel/main.go` 的 `buildRegistry()` 不超過 30 行
 
 ## 檔案修改
 | 檔案 | 變更 |

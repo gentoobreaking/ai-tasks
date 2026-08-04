@@ -3,10 +3,10 @@ github_issue:
 title: Add structured discovery logging for all 4 LoadSources phases
 type: feature
 priority: medium
-status: pending
+status: done
 assignee: OpenCode with DeepSeek V4 Flash
 created: 2026-08-04
-updated: 2026-08-04
+updated: 2026-08-05
 ---
 
 # T071 - Structured discovery logging for LoadSources 4-phase pipeline
@@ -29,9 +29,9 @@ updated: 2026-08-04
 唯一有輸出的是 `cmd/testdiscover/main.go`（測試用工具），不是正式功能。
 
 ## 驗收標準
-- [ ] 定義 `DiscoveryLogger` interface（可注入，不寫死 `fmt.Println`），支援 `Info`/`Warn`/`Debug` 三個 level
-- [ ] 預設 logger 實作：`os.Stderr` 輸出，格式 `[phase] message`，可用 `--quiet` 關閉
-- [ ] 在 `LoadSources()` 四個階段中插入結構化 log：
+- [x] 定義 `DiscoveryLogger` interface（可注入，不寫死 `fmt.Println`），支援 `Info`/`Warn`/`Debug` 三個 level
+- [x] 預設 logger 實作：`os.Stderr` 輸出，格式 `[phase] message`，可用 `--quiet` 關閉
+- [x] 在 `LoadSources()` 四個階段中插入結構化 log：
 
 ### ① Static Models
 ```
@@ -96,9 +96,9 @@ updated: 2026-08-04
 [discovery] summary: total registry size: ~140 models across ~22 providers
 ```
 
-- [ ] `go build ./...` 通過
-- [ ] `go vet ./...` 零警告
-- [ ] `go test ./...` 全部通過
+- [x] `go build ./...` 通過
+- [x] `go vet ./...` 零警告
+- [x] `go test ./...` 全部通過
 
 ## 技術設計
 
