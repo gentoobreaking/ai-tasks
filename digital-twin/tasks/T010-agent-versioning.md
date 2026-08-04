@@ -1,11 +1,10 @@
 ---
-status: pending
+status: in-progress
 priority: high
 assignee: OpenCode
 created: 2026-08-03
-updated: 2026-08-03
+updated: '2026-08-04'
 ---
-
 # T010: Agent System Prompt 強制 SemVer Front-matter + Canary Deploy + Rollback
 
 ## 背景

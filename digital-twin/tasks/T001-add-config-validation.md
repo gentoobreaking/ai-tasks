@@ -3,7 +3,7 @@ status: done
 priority: high
 assignee: OpenCode
 created: 2026-08-03
-updated: '2026-08-03'
+updated: '2026-08-04'
 summary: '實作 T001: add-config-validation'
 commit: 83dca247
 ---

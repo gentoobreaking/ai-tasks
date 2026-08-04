@@ -1,11 +1,12 @@
 ---
-status: pending
+status: blocked
 priority: high
 assignee: OpenCode
 created: 2026-08-03
-updated: 2026-08-03
+updated: '2026-08-04'
+fail_count: 2
+summary: 連續失敗 3 次（應用 diff 失敗），標記為 blocked 待人工處理
 ---
-
 # T008: 新增 agent_registry.yaml + agent_registry.py 動態路由
 
 ## 背景

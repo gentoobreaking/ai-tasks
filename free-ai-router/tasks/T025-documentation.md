@@ -3,10 +3,10 @@ github_issue:
 title: Documentation
 type: pending
 priority: medium
-status: pending
+status: done
 assignee: OpenCode with DeepSeek V4 Flash
 created: 2026-08-03
-updated: 2026-08-03
+updated: 2026-08-04
 ---
 
 # T025 - Documentation
@@ -15,7 +15,7 @@ updated: 2026-08-03
 Create comprehensive project documentation per spec §10 and §14. Documents installation, quick start, all CLI commands, TUI keyboard shortcuts, config schema, and architecture overview.
 
 ## 驗收標準
-- [ ] `README.md`:
+- [x] `README.md`:
   - Project overview and value proposition (§1)
   - Quick start: install, onboard, TUI usage
   - CLI commands reference (§10)
@@ -24,8 +24,8 @@ Create comprehensive project documentation per spec §10 and §14. Documents ins
   - `--best` mode usage examples (§10.3)
   - Docker deployment instructions (§14.5)
   - Provider/env-var compatibility table (§3.2)
-- [ ] Help text for each CLI subcommand accessible via `--help`
-- [ ] `SPECIFICATION.md` already provided; no changes needed
+- [x] Help text for each CLI subcommand accessible via `--help`
+- [x] `SPECIFICATION.md` already provided; no changes needed
 
 ## 備註
 - Documentation should be consistent with SPECIFICATION.md sections referenced

@@ -1,10 +1,11 @@
 ---
-status: in-progress
+status: blocked
 priority: high
 assignee: OpenCode
 created: 2026-08-03
-updated: '2026-08-03'
-summary: 應用 diff 失敗
+updated: '2026-08-04'
+summary: '連續失敗 3 次（模型呼叫失敗: ），標記為 blocked 待人工處理'
+fail_count: 2
 ---
 # T006: Telegram Bot 重構為 aiogram 3.x Webhook + Redis Queue 非同步架構
 

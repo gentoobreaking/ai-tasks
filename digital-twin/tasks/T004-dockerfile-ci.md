@@ -3,10 +3,8 @@ status: pending
 priority: medium
 assignee: OpenCode
 created: 2026-08-03
-updated: 2026-08-03
+updated: '2026-08-04'
 ---
-
-
 # T004: 新增 Dockerfile + docker-compose.yml + GitHub Actions CI
 
 ## 背景
