@@ -80,6 +80,7 @@
 | Add structured discovery logging for all 4 LoadSources phases |
 | Fix AutoDiscoverModels not being called — dynamic model discovery is dead code |
 | Refactor buildRegistry from god function into composable pipeline |
+| Break up TUI Model into focused state machines (settings, picker, wizard, search) |
 | Fix ResolveAPIKey config read without lock → potential race |
 | Fix time measurement bug in pingPollinationsText |
 | Centralize provider definitions into single source of truth |
@@ -103,7 +104,7 @@
 
 | Task | 名稱 | 說明 |
 |------|------|------|
-| [T74-breakup-tui-model](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T074-breakup-tui-model.md) | Break up TUI Model into focused state machines (settings, picker, wizard, search) | |
+| | | |
 
 ## Task 列表
 
@@ -185,7 +186,7 @@
 | [T71-discovery-logging](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T071-discovery-logging.md) | Add structured discovery logging for all 4 LoadSources phases | ✅ done |
 | [T72-fix-autodiscover-not-called](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T072-fix-autodiscover-not-called.md) | Fix AutoDiscoverModels not being called — dynamic model discovery is dead code | ✅ done |
 | [T73-refactor-buildregistry-pipeline](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T073-refactor-buildregistry-pipeline.md) | Refactor buildRegistry from god function into composable pipeline | ✅ done |
-| [T74-breakup-tui-model](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T074-breakup-tui-model.md) | Break up TUI Model into focused state machines (settings, picker, wizard, search) | 📋 pending |
+| [T74-breakup-tui-model](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T074-breakup-tui-model.md) | Break up TUI Model into focused state machines (settings, picker, wizard, search) | ✅ done |
 | [T75-config-resolve-race](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T075-config-resolve-race.md) | Fix ResolveAPIKey config read without lock → potential race | ✅ done |
 | [T76-fix-ping-time-measurement](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T076-fix-ping-time-measurement.md) | Fix time measurement bug in pingPollinationsText | ✅ done |
 | [T77-centralize-provider-definitions](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T077-centralize-provider-definitions.md) | Centralize provider definitions into single source of truth | ✅ done |
@@ -193,6 +194,6 @@
 | [T79-fix-runbest-return-value](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T079-fix-runbest-return-value.md) | Fix runBest ignoring ping result (second return value discarded) | ✅ done |
 | [T80-model-dedup-loadfromsources](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T080-model-dedup-loadfromsources.md) | Add model deduplication in LoadFromSources | ✅ done |
 
-**✅ done: 82 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 1**
+**✅ done: 83 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 0**
 
-> 自動生成於 2026-08-05 00:49
+> 自動生成於 2026-08-05 01:12

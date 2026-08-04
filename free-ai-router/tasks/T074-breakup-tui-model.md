@@ -3,10 +3,10 @@ github_issue:
 title: Break up TUI Model into focused state machines (settings, picker, wizard, search)
 type: refactor
 priority: medium
-status: pending
+status: done
 assignee: OpenCode with DeepSeek V4 Flash
 created: 2026-08-04
-updated: 2026-08-04
+updated: 2026-08-05
 ---
 
 # T074 - Break up TUI Model into focused state machines
@@ -40,19 +40,19 @@ type Model struct {
 - wizard（T067）加入後會更惡化
 
 ## 驗收標準
-- [ ] 定義 `Screen` interface 或使用 Bubble Tea 的 nested model 模式
-- [ ] 拆分為獨立 models：
+- [x] 定義 `Screen` interface 或使用 Bubble Tea 的 nested model 模式
+- [x] 拆分為獨立 models：
   - `MainModel` — 模型表格、導航、排序、過濾
   - `SettingsModel` — 設定畫面互動（承接 T068 實作）
   - `PickerModel` — target agent 選擇器
   - `SearchModel` — 搜尋列輸入
   - `HelpModel` — 幫助畫面
-- [ ] 頂層 `Model` 僅保留 `registry/cfg/engine` 依賴 + current screen 路由
-- [ ] 每個子 model 有獨立的 `Init()` / `Update()` / `View()`
-- [ ] 現有功能完全保持不變（導航、排序、過濾、按鍵快捷鍵）
-- [ ] `go build ./...` 通過
-- [ ] `go vet ./...` 零警告
-- [ ] `go test ./...` 全部通過（尤其是 `tui_render_test.go` 和 `navigate_test.go`）
+- [x] 頂層 `Model` 僅保留 `registry/cfg/engine` 依賴 + current screen 路由
+- [x] 每個子 model 有獨立的 `Init()` / `Update()` / `View()`
+- [x] 現有功能完全保持不變（導航、排序、過濾、按鍵快捷鍵）
+- [x] `go build ./...` 通過
+- [x] `go vet ./...` 零警告
+- [x] `go test ./...` 全部通過（尤其是 `tui_render_test.go` 和 `navigate_test.go`）
 
 ## 檔案修改
 | 檔案 | 變更 |
