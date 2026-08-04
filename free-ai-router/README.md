@@ -66,10 +66,20 @@
 | Implement free-tier verification in ping layer |
 | Aggregate free AI models from ClawLabsAI/free-ai-models |
 | Add Chinese mainland free model aggregation automation |
+| Add Pollinations /text endpoint adapter for truly keyless free models |
 | Implement public new-api relay site scanner for keyless model access |
 | Implement V2EX forum scraper for public new-api relay sites |
 | Implement linux.do forum scraper for public new-api relay sites |
 | Implement new-api /v1/models discovery and HA failover from relay sites |
+| Remove TUI dead files post Bubble Tea refactor |
+| Wire Pollinations /text fallback into router proxy path |
+| Complete first-run wizard inside TUI (post Bubble Tea refactor) |
+| Implement settings screen keyboard interactions (toggle, edit key, test ping) |
+| Cache merged provider sources to disk for fast cold-start and offline resilience |
+| Auto-detect API keys from shell RC files and agent configs |
+| Fix AutoDiscoverModels not being called — dynamic model discovery is dead code |
+| Fix time measurement bug in pingPollinationsText |
+| Add /api/health and /api/status summarization endpoints |
 
 ## Skip 項目
 
@@ -87,7 +97,13 @@
 
 | Task | 名稱 | 說明 |
 |------|------|------|
-| [T63-pollinations-text-adapter](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T063-pollinations-text-adapter.md) | Add Pollinations /text endpoint adapter for truly keyless free models | |
+| [T71-discovery-logging](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T071-discovery-logging.md) | Add structured discovery logging for all 4 LoadSources phases | |
+| [T73-refactor-buildregistry-pipeline](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T073-refactor-buildregistry-pipeline.md) | Refactor buildRegistry from god function into composable pipeline | |
+| [T74-breakup-tui-model](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T074-breakup-tui-model.md) | Break up TUI Model into focused state machines (settings, picker, wizard, search) | |
+| [T75-config-resolve-race](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T075-config-resolve-race.md) | Fix ResolveAPIKey config read without lock → potential race | |
+| [T77-centralize-provider-definitions](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T077-centralize-provider-definitions.md) | Centralize provider definitions into single source of truth | |
+| [T79-fix-runbest-return-value](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T079-fix-runbest-return-value.md) | Fix runBest ignoring ping result (second return value discarded) | |
+| [T80-model-dedup-loadfromsources](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T080-model-dedup-loadfromsources.md) | Add model deduplication in LoadFromSources | |
 
 ## Task 列表
 
@@ -155,12 +171,28 @@
 | [T60-ping-free-tier-verification](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T060-ping-free-tier-verification.md) | Implement free-tier verification in ping layer | ✅ done |
 | [T61-clawlabs-model-aggregation](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T061-clawlabs-model-aggregation.md) | Aggregate free AI models from ClawLabsAI/free-ai-models | ✅ done |
 | [T62-china-mainland-model-aggregation](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T062-china-mainland-model-aggregation.md) | Add Chinese mainland free model aggregation automation | ✅ done |
-| [T63-pollinations-text-adapter](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T063-pollinations-text-adapter.md) | Add Pollinations /text endpoint adapter for truly keyless free models | 📋 pending |
+| [T63-pollinations-text-adapter](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T063-pollinations-text-adapter.md) | Add Pollinations /text endpoint adapter for truly keyless free models | ✅ done |
 | [T64-public-relay-scanner](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T064-public-relay-scanner.md) | Implement public new-api relay site scanner for keyless model access | ✅ done |
 | [T64a-v2ex-scraper](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T064a-v2ex-scraper.md) | Implement V2EX forum scraper for public new-api relay sites | ✅ done |
 | [T64b-linuxdo-scraper](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T064b-linuxdo-scraper.md) | Implement linux.do forum scraper for public new-api relay sites | ✅ done |
 | [T64c-newapi-discovery](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T064c-newapi-discovery.md) | Implement new-api /v1/models discovery and HA failover from relay sites | ✅ done |
+| [T65-tui-dead-file-cleanup](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T065-tui-dead-file-cleanup.md) | Remove TUI dead files post Bubble Tea refactor | ✅ done |
+| [T66-pollinations-text-router-hook](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T066-pollinations-text-router-hook.md) | Wire Pollinations /text fallback into router proxy path | ✅ done |
+| [T67-tui-first-run-wizard](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T067-tui-first-run-wizard.md) | Complete first-run wizard inside TUI (post Bubble Tea refactor) | ✅ done |
+| [T68-settings-screen-interactions](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T068-settings-screen-interactions.md) | Implement settings screen keyboard interactions (toggle, edit key, test ping) | ✅ done |
+| [T69-provider-cache-persistence](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T069-provider-cache-persistence.md) | Cache merged provider sources to disk for fast cold-start and offline resilience | ✅ done |
+| [T70-auto-detect-api-keys](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T070-auto-detect-api-keys.md) | Auto-detect API keys from shell RC files and agent configs | ✅ done |
+| [T71-discovery-logging](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T071-discovery-logging.md) | Add structured discovery logging for all 4 LoadSources phases | 📋 pending |
+| [T72-fix-autodiscover-not-called](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T072-fix-autodiscover-not-called.md) | Fix AutoDiscoverModels not being called — dynamic model discovery is dead code | ✅ done |
+| [T73-refactor-buildregistry-pipeline](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T073-refactor-buildregistry-pipeline.md) | Refactor buildRegistry from god function into composable pipeline | 📋 pending |
+| [T74-breakup-tui-model](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T074-breakup-tui-model.md) | Break up TUI Model into focused state machines (settings, picker, wizard, search) | 📋 pending |
+| [T75-config-resolve-race](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T075-config-resolve-race.md) | Fix ResolveAPIKey config read without lock → potential race | 📋 pending |
+| [T76-fix-ping-time-measurement](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T076-fix-ping-time-measurement.md) | Fix time measurement bug in pingPollinationsText | ✅ done |
+| [T77-centralize-provider-definitions](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T077-centralize-provider-definitions.md) | Centralize provider definitions into single source of truth | 📋 pending |
+| [T78-api-health-status-endpoints](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T078-api-health-status-endpoints.md) | Add /api/health and /api/status summarization endpoints | ✅ done |
+| [T79-fix-runbest-return-value](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T079-fix-runbest-return-value.md) | Fix runBest ignoring ping result (second return value discarded) | 📋 pending |
+| [T80-model-dedup-loadfromsources](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T080-model-dedup-loadfromsources.md) | Add model deduplication in LoadFromSources | 📋 pending |
 
-**✅ done: 66 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 1**
+**✅ done: 76 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 7**
 
-> 自動生成於 2026-08-04 21:37
+> 自動生成於 2026-08-05 00:15
