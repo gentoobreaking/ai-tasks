@@ -1,12 +1,31 @@
 # 📅 Daily Dashboard - 2026-08-05
 
-> 最後更新: 2026-08-05 01:12 · 自動生成
+> 最後更新: 2026-08-05 02:12 · 自動生成
 
 ---
 
 ## 🆕 今日新增任務
 
-_無_
+| 專案 | 任務 | 標題 |
+| -- | -- | -- |
+| digital-twin | [T011-unified-config](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T011-unified-config.md) | 建立統一模型與路徑設定模組 (config.py) |
+| digital-twin | [T012-quality-gate-layering](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T012-quality-gate-layering.md) | auto_develop 品質閘門分層（只檢查 diff 檔案） |
+| digital-twin | [T013-revert-on-failure](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T013-revert-on-failure.md) | auto_develop 失敗路徑還原工作目錄 |
+| digital-twin | [T014-auto-repair-loop](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T014-auto-repair-loop.md) | 測試失敗自動修復迴圈（錯誤回饋給模型） |
+| digital-twin | [T015-docs-align-reality](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T015-docs-align-reality.md) | 文件與現況對齊（README/twin/currect_status 修正） |
+| digital-twin | [T016-spec-merge-no-fake-data](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T016-spec-merge-no-fake-data.md) | spec_auto_merge 移除假資料對照表 |
+| digital-twin | [T017-pyproject-fixes](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T017-pyproject-fixes.md) | pyproject 修正（pyright 路徑、structlog 依賴、tests 目錄） |
+| digital-twin | [T018-task-dependencies](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T018-task-dependencies.md) | 任務 frontmatter 增加 depends_on 依賴欄位 |
+| digital-twin | [T019-pr-summary-gate](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T019-pr-summary-gate.md) | auto_develop 完成後輸出 PR 摘要 + 大 diff 人工確認閘門 |
+| digital-twin | [T020-feedback-noop-fix](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T020-feedback-noop-fix.md) | apply_feedback mark_as_done no-op bug 修復 |
+| digital-twin | [T021-mermaid-consensus-fix](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T021-mermaid-consensus-fix.md) | gen_mermaid 真實掃描化 + consensus 中文分詞改善 |
+| digital-twin | [T022-daemon-db-path](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T022-daemon-db-path.md) | setup_daemon 路徑驗證 + extract_feedback DB 路徑可設定 |
+| digital-twin | [T023-blocked-review](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T023-blocked-review.md) | blocked 任務自動產出 review 紀錄與拆分建議 |
+| digital-twin | [T024-twin-python-resolver](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T024-twin-python-resolver.md) | twin CLI 智慧選擇 Python 直譯器（解決無 Key 假象） |
+| digital-twin | [T025-ruff-debt-cleanup](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T025-ruff-debt-cleanup.md) | ruff 舊債清理（100 errors → 0） |
+| digital-twin | [T026-project-venv-setup](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T026-project-venv-setup.md) | 建立專案 .venv（Python 3.14 + 全部依賴） |
+| digital-twin | [T027-pyright-venv-config](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T027-pyright-venv-config.md) | pyright 指向 .venv，消除 reportMissingImports 誤報 |
+| digital-twin | [T028-discuss-regression-test](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T028-discuss-regression-test.md) | DiscussionOrchestrator 回歸測試（T017 P0 防護） |
 
 ---
 
@@ -14,6 +33,14 @@ _無_
 
 | 專案 | 任務 | 標題 |
 | -- | -- | -- |
+| digital-twin | [T011-unified-config](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T011-unified-config.md) | 建立統一模型與路徑設定模組 (config.py) |
+| digital-twin | [T012-quality-gate-layering](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T012-quality-gate-layering.md) | auto_develop 品質閘門分層（只檢查 diff 檔案） |
+| digital-twin | [T013-revert-on-failure](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T013-revert-on-failure.md) | auto_develop 失敗路徑還原工作目錄 |
+| digital-twin | [T014-auto-repair-loop](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T014-auto-repair-loop.md) | 測試失敗自動修復迴圈（錯誤回饋給模型） |
+| digital-twin | [T015-docs-align-reality](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T015-docs-align-reality.md) | 文件與現況對齊（README/twin/currect_status 修正） |
+| digital-twin | [T017-pyproject-fixes](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T017-pyproject-fixes.md) | pyproject 修正（pyright 路徑、structlog 依賴、tests 目錄） |
+| digital-twin | [T024-twin-python-resolver](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T024-twin-python-resolver.md) | twin CLI 智慧選擇 Python 直譯器（解決無 Key 假象） |
+| digital-twin | [T026-project-venv-setup](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T026-project-venv-setup.md) | 建立專案 .venv（Python 3.14 + 全部依賴） |
 | free-ai-router | [T063-pollinations-text-adapter](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T063-pollinations-text-adapter.md) | Add Pollinations /text endpoint adapter for truly keyless free models |
 | free-ai-router | [T065-tui-dead-file-cleanup](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T065-tui-dead-file-cleanup.md) | Remove TUI dead files post Bubble Tea refactor |
 | free-ai-router | [T066-pollinations-text-router-hook](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T066-pollinations-text-router-hook.md) | Wire Pollinations /text fallback into router proxy path |
@@ -36,6 +63,8 @@ _無_
 | digital-twin | [T006-telegram-bot-webhook](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T006-telegram-bot-webhook.md) | Telegram Bot 重構為 aiogram 3.x Webhook + Redis Queue 非同步架構 | high |
 | digital-twin | [T008-agent-registry](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T008-agent-registry.md) | 新增 agent_registry.yaml + agent_registry.py 動態路由 | high |
 | digital-twin | [T010-agent-versioning](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T010-agent-versioning.md) | Agent System Prompt 強制 SemVer Front-matter + Canary Deploy + Rollback | high |
+| digital-twin | [T016-spec-merge-no-fake-data](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T016-spec-merge-no-fake-data.md) | spec_auto_merge 移除假資料對照表 | high |
+| digital-twin | [T027-pyright-venv-config](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T027-pyright-venv-config.md) | pyright 指向 .venv，消除 reportMissingImports 誤報 | high |
 | tw-quant-daybrain | [T001-scaffold](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T001-scaffold.md) | 專案初始化與設定骨架 | high |
 | tw-quant-daybrain | [T002-mcp-client](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T002-mcp-client.md) | MCP Client 連線層 | high |
 | tw-quant-daybrain | [T003-freshness-gate](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T003-freshness-gate.md) | 資料新鮮度守門（Freshness Gate） | high |
@@ -77,6 +106,8 @@ _無_
 | digital-twin | [T006-telegram-bot-webhook](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T006-telegram-bot-webhook.md) | Telegram Bot 重構為 aiogram 3.x Webhook + Redis Queue 非同步架構 | high |
 | digital-twin | [T008-agent-registry](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T008-agent-registry.md) | 新增 agent_registry.yaml + agent_registry.py 動態路由 | high |
 | digital-twin | [T010-agent-versioning](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T010-agent-versioning.md) | Agent System Prompt 強制 SemVer Front-matter + Canary Deploy + Rollback | high |
+| digital-twin | [T016-spec-merge-no-fake-data](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T016-spec-merge-no-fake-data.md) | spec_auto_merge 移除假資料對照表 | high |
+| digital-twin | [T027-pyright-venv-config](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T027-pyright-venv-config.md) | pyright 指向 .venv，消除 reportMissingImports 誤報 | high |
 | tw-quant-daybrain | [T001-scaffold](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T001-scaffold.md) | 專案初始化與設定骨架 | high |
 | tw-quant-daybrain | [T002-mcp-client](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T002-mcp-client.md) | MCP Client 連線層 | high |
 | tw-quant-daybrain | [T003-freshness-gate](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T003-freshness-gate.md) | 資料新鮮度守門（Freshness Gate） | high |
@@ -100,6 +131,12 @@ _無_
 | tw-quant-signal | [T023-mcp-validation-fallback](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T023-mcp-validation-fallback.md) | [Phase 4] Pipeline 驗證 + mcp fallback — 確認端到端正確性 | high |
 | digital-twin | [T004-dockerfile-ci](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T004-dockerfile-ci.md) | 新增 Dockerfile + docker-compose.yml + GitHub Actions CI | medium |
 | digital-twin | [T009-lancedb-rag](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T009-lancedb-rag.md) | index_knowledge.py 引入 LanceDB 替換純 Python 向量搜尋 | medium |
+| digital-twin | [T018-task-dependencies](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T018-task-dependencies.md) | 任務 frontmatter 增加 depends_on 依賴欄位 | medium |
+| digital-twin | [T019-pr-summary-gate](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T019-pr-summary-gate.md) | auto_develop 完成後輸出 PR 摘要 + 大 diff 人工確認閘門 | medium |
+| digital-twin | [T020-feedback-noop-fix](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T020-feedback-noop-fix.md) | apply_feedback mark_as_done no-op bug 修復 | medium |
+| digital-twin | [T023-blocked-review](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T023-blocked-review.md) | blocked 任務自動產出 review 紀錄與拆分建議 | medium |
+| digital-twin | [T025-ruff-debt-cleanup](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T025-ruff-debt-cleanup.md) | ruff 舊債清理（100 errors → 0） | medium |
+| digital-twin | [T028-discuss-regression-test](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T028-discuss-regression-test.md) | DiscussionOrchestrator 回歸測試（T017 P0 防護） | medium |
 | tw-quant-daybrain | [T010-journal-metrics](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T010-journal-metrics.md) | 交易日誌與績效指標（Phase 4） | medium |
 | tw-quant-daybrain | [T011-llm-report](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T011-llm-report.md) | LLM 檢討報告與防幻覺規範 | medium |
 | tw-quant-daybrain | [T012-replay](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T012-replay.md) | 回放工具與滑價驗證 | medium |
@@ -111,6 +148,8 @@ _無_
 | tw-quant-selector | [T135-complete-missing-tests](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-selector/tasks/T135-complete-missing-tests.md) | 補齊未完成的測試項目（T123/T124/T130-T133） | medium |
 | tw-quant-signal | [T018-stock-pool-expansion](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T018-stock-pool-expansion.md) | [Phase 3] 標的池擴充與管線效率優化 | medium |
 | tw-quant-signal | [T019-performance-tracking-dashboard](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T019-performance-tracking-dashboard.md) | [Phase 3] 績效追蹤儀表板補完 — 訊號後 1/3/5 日表現 | medium |
+| digital-twin | [T021-mermaid-consensus-fix](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T021-mermaid-consensus-fix.md) | gen_mermaid 真實掃描化 + consensus 中文分詞改善 | low |
+| digital-twin | [T022-daemon-db-path](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T022-daemon-db-path.md) | setup_daemon 路徑驗證 + extract_feedback DB 路徑可設定 | low |
 | gold-analysis-advanced | [T002](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis-advanced/tasks/T002.md) | ML 模型整合與優化 | low |
 | gold-analysis-advanced | [T004](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis-advanced/tasks/T004.md) | 實盤交易對接 | low |
 | md-viewer-app | [T027-預覽連結懸停](https://github.com/gentoobreaking/ai-tasks/blob/main/md-viewer-app/tasks/T027-預覽連結懸停.md) | [T027] 連結懸停預覽 | low |
