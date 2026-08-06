@@ -5,7 +5,8 @@ priority: high
 status: done
 assignee: OpenCode with DeepSeek V4 Flash
 created: 2026-08-05
-updated: 2026-08-05
+updated: 2026-08-06
+commit: bc4de4b
 ---
 
 # T015 - 文件與現況對齊（README/twin/currect_status 修正）

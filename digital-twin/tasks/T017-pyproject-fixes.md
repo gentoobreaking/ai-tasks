@@ -5,7 +5,8 @@ priority: high
 status: done
 assignee: OpenCode with DeepSeek V4 Flash
 created: 2026-08-05
-updated: 2026-08-05
+updated: 2026-08-06
+commit: fbc975c
 ---
 
 # T017 - pyproject 修正（pyright 路徑、structlog 依賴、tests 目錄）
