@@ -1,9 +1,10 @@
 ---
-status: blocked
+status: done
 priority: high
 assignee: OpenCode
 created: 2026-08-03
-updated: '2026-08-04'
+updated: '2026-08-06'
+commit: e832edf
 fail_count: 2
 summary: 連續失敗 3 次（應用 diff 失敗），標記為 blocked 待人工處理
 ---
@@ -22,9 +23,17 @@ summary: 連續失敗 3 次（應用 diff 失敗），標記為 blocked 待人�
 3. 整合到 `my-clone.md` SOP 4.1：收到任務時自動查 Registry 決定委派對象
 
 ## 驗收標準
-- `twin route --task-id T002 --auto` 自動委派正確 agent
-- `my-clone.md` 內 SOP 引用 Registry 進行委派
-- 未來新增 Agent 僅需修改 YAML，無需改 code
+- [x] `twin route --task-id T002 --auto` 自動委派正確 agent（測試通過 + 真實 T002/ T004/ T009 端到端）
+- [x] `my-clone.md` 內 SOP 4.1 引用 Registry 進行委派（步驟 3 新增）
+- [x] 未來新增 Agent 僅需修改 YAML，無需改 code（Registry.route() 純資料驅動，agents/rules 皆在 YAML）
 
 ## 參考
 - v3 討論 DEC-08 / SPEC-14 / DeepSeek 第 2 輪建議 2.9
+- 摘要：`2026-08-06-T008-summary.md`
+
+## 執行記錄
+- 新增 `.opencode/agent_registry.yaml`（4 agents + 4 routing rules）
+- 新增 `agent_registry.py`（Registry 類、extract_tags、find_task_file、CLI route/list）
+- 修改 `twin` CLI：新增 `route` 子命令（呼叫 agent_registry.py route）
+- 修改 `.opencode/agents/my-clone.md`：SOP 4.1 步驟 3 整合 Registry
+- `pytest tests/test_agent_registry.py -q` 10 passed；全測試 43 passed

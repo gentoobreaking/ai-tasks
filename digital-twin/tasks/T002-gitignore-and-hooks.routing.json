@@ -1,0 +1,41 @@
+{
+  "task_id": "T002",
+  "task_file": "/Users/david/tasks/digital-twin/tasks/T002-gitignore-and-hooks.md",
+  "task_tags": [
+    "status",
+    "done",
+    "priority",
+    "high",
+    "assignee",
+    "opencode",
+    "created",
+    "updated",
+    "summary",
+    "t002",
+    "gitignore-and-hooks",
+    "commit",
+    "c1e",
+    "gitignore",
+    "secrets"
+  ],
+  "delegated_to": "docs-sync",
+  "matched_rule": "rule-docs",
+  "agent": {
+    "id": "docs-sync",
+    "version": "1.0.0",
+    "role": "規格書寫作、多 AI 諮詢與文件同步",
+    "capabilities": [
+      "spec",
+      "docs",
+      "documentation",
+      "document-sync",
+      "adr",
+      "changelog",
+      "readme",
+      "cross-doc-sync"
+    ],
+    "model": "zen/deepseek-v4-flash-free",
+    "file": ".opencode/agents/docs-sync-clone.md"
+  },
+  "routed_at": "2026-08-06T22:55:04"
+}

@@ -1,0 +1,42 @@
+{
+  "task_id": "T002",
+  "task_file": "/Users/david/tasks/agent-config/tasks/T002.md",
+  "task_tags": [
+    "github_issue",
+    "https",
+    "github",
+    "gentoobreaking",
+    "ai-tasks",
+    "issues",
+    "t002",
+    "project",
+    "agent-config",
+    "title",
+    "qclaw",
+    "agent",
+    "assignee",
+    "priority",
+    "high"
+  ],
+  "delegated_to": "my",
+  "matched_rule": "rule-default",
+  "agent": {
+    "id": "my",
+    "version": "1.0.0",
+    "role": "全棧開發（Full-stack，Python/TypeScript）",
+    "capabilities": [
+      "fullstack",
+      "python",
+      "typescript",
+      "backend",
+      "frontend",
+      "testing",
+      "refactor",
+      "bugfix",
+      "git"
+    ],
+    "model": "zen/deepseek-v4-flash-free",
+    "file": ".opencode/agents/my-clone.md"
+  },
+  "routed_at": "2026-08-06T22:54:20"
+}

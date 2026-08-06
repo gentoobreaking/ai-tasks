@@ -1,9 +1,10 @@
 ---
-status: in-progress
+status: done
 priority: high
 assignee: OpenCode
 created: 2026-08-03
-updated: '2026-08-03'
+updated: '2026-08-06'
+commit: d84b597
 ---
 # T007: multi_ai_discuss.py 重構為 DiscussionOrchestrator 狀態機 + 韌性層
 
@@ -23,9 +24,16 @@ updated: '2026-08-03'
 3. `manifest.json` 包含：project, version, token_budget, models[], status
 
 ## 驗收標準
-- 單一模型掛點不導致整體流程卡死
-- 超過 token budget 即停止並發 Telegram 警報
-- 可換裝 `ollama` / `vllm` 本地模型（實作 Adapter 即可）
+- [x] 單一模型掛點不導致整體流程卡死（`test_single_model_failure_does_not_block` + 真實 402 端到端）
+- [x] 超過 token budget 即停止並發 Telegram 警報（`test_token_budget_stops_and_alerts` + token-budget-alert.md）
+- [x] 可換裝 `ollama` / `vllm` 本地模型（`create_adapter(provider="openai", api_base=本地)`，`test_create_adapter_swaps_ollama_vllm`）
 
 ## 參考
 - v3 討論 DEC-03, DEC-10 / SPEC-03 / DeepSeek 第 1 輪建議 2, 第 2 輪建議 2.2
+- 摘要：`2026-08-06-T007-summary.md`
+
+## 執行記錄
+- repoSplit `discussion_orchestrator/{orchestrator,adapters,resilience,__init__}.py`
+- `multi_ai_discuss.py` 薄 CLI，保留 `AIClient` 相容（consensus_eval）
+- pyproject 補 `tenacity>=8.2`
+- `pytest: 32 passed`、ruff 新檔案 0 error
