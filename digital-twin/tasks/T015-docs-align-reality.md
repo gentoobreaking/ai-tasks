@@ -3,6 +3,7 @@ title: 文件與現況對齊（README/twin/currect_status 修正）
 type: docs
 priority: high
 status: done
+depends_on: []
 assignee: OpenCode with DeepSeek V4 Flash
 created: 2026-08-05
 updated: 2026-08-06

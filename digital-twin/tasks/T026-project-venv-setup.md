@@ -3,6 +3,7 @@ title: 建立專案 .venv（Python 3.14 + 全部依賴）
 type: chore
 priority: high
 status: done
+depends_on: []
 assignee: OpenCode with DeepSeek V4 Flash
 created: 2026-08-05
 updated: 2026-08-05

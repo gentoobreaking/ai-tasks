@@ -1,5 +1,6 @@
 ---
 status: done
+depends_on: []
 priority: medium
 assignee: OpenCode with DeepSeek V4 Flash
 created: 2026-08-03

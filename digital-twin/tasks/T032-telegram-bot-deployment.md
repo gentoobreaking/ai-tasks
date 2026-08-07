@@ -4,6 +4,7 @@ title: Telegram Bot 生產部署文件與啟動腳本
 type: docs
 priority: low
 status: pending
+depends_on: []
 assignee: OpenCode with DeepSeek V4 Flash
 created: 2026-08-06
 updated: '2026-08-06'

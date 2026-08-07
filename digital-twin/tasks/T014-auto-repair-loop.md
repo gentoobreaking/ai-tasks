@@ -3,6 +3,7 @@ title: 測試失敗自動修復迴圈（錯誤回饋給模型）
 type: feature
 priority: high
 status: done
+depends_on: ['T012']
 assignee: OpenCode with DeepSeek V4 Flash
 created: 2026-08-05
 updated: 2026-08-06

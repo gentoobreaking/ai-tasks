@@ -4,6 +4,7 @@ title: Routing Rules Keywords 微調與其他分身同步引用 Registry
 type: fix
 priority: medium
 status: pending
+depends_on: []
 assignee: OpenCode with DeepSeek V4 Flash
 created: 2026-08-06
 updated: '2026-08-06'

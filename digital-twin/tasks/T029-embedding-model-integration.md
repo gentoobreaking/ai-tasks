@@ -4,6 +4,7 @@ title: RAG Embedding Model 整合 (LanceDB 向量搜尋)
 type: feature
 priority: medium
 status: pending
+depends_on: []
 assignee: OpenCode with DeepSeek V4 Flash
 created: 2026-08-06
 updated: '2026-08-06'

@@ -1,5 +1,6 @@
 ---
 status: done
+depends_on: []
 priority: high
 commit: ddddf62
 assignee: OpenCode

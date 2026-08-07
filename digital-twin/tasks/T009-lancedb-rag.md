@@ -1,5 +1,6 @@
 ---
 status: done
+depends_on: []
 priority: medium
 assignee: OpenCode
 created: 2026-08-03

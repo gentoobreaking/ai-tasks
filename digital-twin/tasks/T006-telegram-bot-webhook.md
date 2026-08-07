@@ -1,11 +1,15 @@
 ---
 status: done
+depends_on:
+- T003
 priority: high
 commit: fde2d86
 assignee: OpenCode
 created: 2026-08-03
-updated: 2026-08-06
-summary: '重啟成功：aiogram 3 Webhook + FastAPI + Redis Stream + Worker Pool + RBAC + 熔斷 實作完成並驗證'
+updated: '2026-08-07'
+summary: 重啟成功：aiogram 3 Webhook + FastAPI + Redis Stream + Worker Pool + RBAC + 熔斷
+  實作完成並驗證
+blocked_review: tasks/blocked-review/T006-review.md
 ---
 # T006: Telegram Bot 重構為 aiogram 3.x Webhook + Redis Queue 非同步架構
 

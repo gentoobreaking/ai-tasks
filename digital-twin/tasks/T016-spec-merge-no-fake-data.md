@@ -2,11 +2,11 @@
 title: spec_auto_merge 移除假資料對照表
 type: fix
 priority: high
-status: pending
+status: done
+depends_on: []
 assignee: OpenCode with DeepSeek V4 Flash
 created: 2026-08-05
-updated: 2026-08-06
-status: done
+updated: 2026-08-07
 commit: ef892ca
 ---
 

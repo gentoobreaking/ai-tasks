@@ -3,6 +3,7 @@ title: DiscussionOrchestrator 回歸測試（T017 P0 防護）
 type: test
 priority: medium
 status: pending
+depends_on: []
 assignee: OpenCode with DeepSeek V4 Flash
 created: 2026-08-05
 updated: 2026-08-05

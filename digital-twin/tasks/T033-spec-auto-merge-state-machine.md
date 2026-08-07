@@ -4,6 +4,7 @@ title: spec_auto_merge.py 整合 DiscussionOrchestrator 狀態機推進
 type: feature
 priority: medium
 status: pending
+depends_on: []
 assignee: OpenCode with DeepSeek V4 Flash
 created: 2026-08-06
 updated: '2026-08-06'

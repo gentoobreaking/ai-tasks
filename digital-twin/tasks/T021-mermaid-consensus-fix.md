@@ -2,10 +2,13 @@
 title: gen_mermaid 真實掃描化 + consensus 中文分詞改善
 type: refactor
 priority: low
-status: pending
+status: done
+depends_on: []
 assignee: OpenCode with DeepSeek V4 Flash
 created: 2026-08-05
-updated: 2026-08-05
+updated: 2026-08-07
+commit: d4e7763
+summary: gen_mermaid 真實掃描(--project/--flow)+ consensus bigram 分詞、去 magic，7 tests
 ---
 
 # T021 - gen_mermaid 真實掃描化 + consensus 中文分詞改善
@@ -16,12 +19,15 @@ updated: 2026-08-05
 2. `consensus_eval.py` 的 `calculate_consensus_index()`：Jaccard 以空白切分 token，中文整句會被當成 1 個 token → 中文回答的共識度計算失真；且 `normalized_score = base * 3.5 + 0.35` 是無依據的魔法數字。
 
 ## 驗收標準
-- [ ] gen_mermaid：`--project` 真實生效——掃描專案檔案（參考 `index_knowledge.py` 的 collect 方式）產出模組/檔案層級架構圖；掃描不到時明確提示而非輸出不相干假圖
-- [ ] gen_mermaid：`--flow` 產出基於實際流程的時序圖（如任務→實作→驗證→commit 閉環）
-- [ ] consensus：中文分詞改善（至少做 jieba 分詞或字元級 bigram 切分；`jieba` 若不可用則用字元 n-gram，不新增重依賴）
-- [ ] consensus：移除魔法數字標準化，改為合理公式（如直接回傳平均 Jaccard 或 min-max 歸一化），並加註說明
-- [ ] `./twin draw digital-twin` 與 `./twin consensus "問題"` 可正常執行
+- [x] gen_mermaid：`--project` 真實生效——經 `PROJECT_PATHS`/`~/Projects/<name>` 解析 code_dir，掃描 *.py（排除 `__pycache__`/`.git`/`node_modules`/`.venv`/`logs` 等）產出模組/檔案層級架構圖（頂層目錄 subgraph + import 關係 group 層級邊，MAX_NODES=60 防爆）
+- [x] gen_mermaid：`--flow` 產出基於實際流程的時序圖（任務→實作→驗證→commit 閉環，對應 auto_develop 實際行為）
+- [x] consensus：中文分詞改善（`_tokenize()` 中文字符級 bigram + 英文單字，不依賴 jieba）
+- [x] consensus：移除 `base * 3.5 + 0.35` magic，改為直接回傳平均 Jaccard（含註釋說明）
+- [x] `./twin draw digital-twin` 與 `./twin consensus "問題"` 可正常執行（前者 real scan；後者 3 模型實跑算出 0.14 → 低共識，比舊式放大後誤判高共識更合理）
+- [x] 掃描不到時明確提示（`FileNotFoundError` → 「僅輸出真實掃描結果，不產生假圖」）
 
 ## 備註
-- jieba 屬純 Python 依賴，加入前確認是否值得（若只想輕量改，字元 bigram 也可接受）
-- gen_mermaid 掃描需排除 `__pycache__`、`.git`、`node_modules`
+- jieba 屬純 Python 依賴，加入前確認是否值得：採取折衷——中文字元級 bigram，不新增重依賴
+- gen_mermaid 掃描排除：`__pycache__`、`.git`、`node_modules`、`.venv`、`.pytest_cache`、`.ruff_cache`、`logs`、`.opencode`
+- 額外順帶修正：`./twin` 的 `_resolve_python()` 優先專案 `.venv`（原 homebrew python 缺 tenacity 等使 `twin consensus` import 失敗）
+- 測試：`tests/test_gen_mermaid_consensus.py` 7 tests；全量 **81 passed + 1 skipped**

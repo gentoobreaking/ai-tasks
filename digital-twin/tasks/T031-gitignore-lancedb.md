@@ -4,6 +4,7 @@ title: .gitignore 新增 .lancedb/ 目錄忽略
 type: fix
 priority: low
 status: pending
+depends_on: []
 assignee: OpenCode with DeepSeek V4 Flash
 created: 2026-08-06
 updated: '2026-08-06'

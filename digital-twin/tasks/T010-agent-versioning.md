@@ -1,11 +1,13 @@
 ---
-status: blocked
+status: done
+depends_on: []
 priority: high
 assignee: OpenCode
 created: 2026-08-03
-updated: '2026-08-04'
-fail_count: 2
-summary: 連續失敗 3 次（測試失敗），標記為 blocked 待人工處理
+updated: '2026-08-07'
+fail_count: 0
+commit: 105f0bc
+summary: Agent SemVer front-matter + Canary deploy/promote/rollback 完成，11 tests 通過
 ---
 # T010: Agent System Prompt 強制 SemVer Front-matter + Canary Deploy + Rollback
 
@@ -30,9 +32,13 @@ Agent `.md` 檔案無版本號、無 change log、無 rollback 機制。`apply_f
 3. CLI `twin canary <agent> <version> --action deploy|promote|rollback`
 
 ## 驗收標準
-- `apply_feedback.py --generate-rc` 產生 rc 版本
-- `twin canary deploy/promote/rollback` 正常運作
-- `current` symlink 正確指向穩定版
+- [x] `apply_feedback.py --generate-rc` 產生 rc 版本（dry-run 預覽 v1.1.0-rc.2 + 既有 v1.1.0-rc.1）
+- [x] `twin canary deploy/promote/rollback` 正常運作（實機走完整流程）
+- [x] `current` symlink 正確指向穩定版（rollback 後回 v1.0.0.md）
+
+## 備註
+- 交付：`agent_versioning.py`（SemVer front-matter / prompts/{agent}/ 版本目錄 / canary action）、`apply_feedback.py` 整合 --generate-rc/--promote/--rollback、`twin` canary 子命令、4 個 agent 檔已初始化 v1.0.0。
+- 測試：`tests/test_agent_versioning.py` 11 tests；全套 60 passed + 1 skipped。
 
 ## 參考
 - v3 討論 DEC-05 / SPEC-05, SPEC-09 / DeepSeek 第 1 輪建議 6, 第 2 輪建議 2.8

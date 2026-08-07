@@ -4,6 +4,7 @@ title: twin route CLI 擴充 (--list-agents, --show-rules, --dry-run)
 type: feature
 priority: low
 status: pending
+depends_on: []
 assignee: OpenCode with DeepSeek V4 Flash
 created: 2026-08-06
 updated: '2026-08-06'
