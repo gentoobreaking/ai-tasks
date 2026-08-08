@@ -3,7 +3,7 @@ github_issue:
 title: Telegram Bot 生產部署文件與啟動腳本
 type: docs
 priority: low
-status: completed
+status: done
 depends_on: [T006, T015]
 assignee: OpenCode with DeepSeek V4 Flash
 created: 2026-08-06

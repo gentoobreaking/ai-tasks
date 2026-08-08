@@ -32,6 +32,12 @@
 | 專案 .venv（Python 3.14 + 全部依賴） |
 | pyright 指向 .venv，消除 reportMissingImports 誤報 |
 | RAG Embedding Model 整合 (LanceDB 向量搜尋) |
+| LanceDB Metadata Filtering (標籤、專案、作者過濾) |
+| .gitignore 新增 .lancedb/ 目錄忽略 |
+| Telegram Bot 生產部署文件與啟動腳本 |
+| spec_auto_merge.py 整合 DiscussionOrchestrator 狀態機推進 |
+| Routing Rules Keywords 微調與其他分身同步引用 Registry |
+| twin route CLI 擴充 (--list-agents, --show-rules, --dry-run) |
 
 ## Skip 項目
 
@@ -50,12 +56,6 @@
 | Task | 名稱 | 說明 |
 |------|------|------|
 | [T28-discuss-regression-test](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T028-discuss-regression-test.md) | DiscussionOrchestrator 回歸測試（T017 P0 防護） | |
-| [T30-lancedb-metadata-filtering](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T030-lancedb-metadata-filtering.md) | LanceDB Metadata Filtering (標籤、專案、作者過濾) | |
-| [T31-gitignore-lancedb](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T031-gitignore-lancedb.md) | .gitignore 新增 .lancedb/ 目錄忽略 | |
-| [T32-telegram-bot-deployment](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T032-telegram-bot-deployment.md) | Telegram Bot 生產部署文件與啟動腳本 | |
-| [T33-spec-auto-merge-state-machine](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T033-spec-auto-merge-state-machine.md) | spec_auto_merge.py 整合 DiscussionOrchestrator 狀態機推進 | |
-| [T34-routing-rules-tuning](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T034-routing-rules-tuning.md) | Routing Rules Keywords 微調與其他分身同步引用 Registry | |
-| [T35-twin-route-cli-extensions](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T035-twin-route-cli-extensions.md) | twin route CLI 擴充 (--list-agents, --show-rules, --dry-run) | |
 
 ## Task 列表
 
@@ -90,13 +90,13 @@
 | [T27-pyright-venv-config](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T027-pyright-venv-config.md) | pyright 指向 .venv，消除 reportMissingImports 誤報 | ✅ done |
 | [T28-discuss-regression-test](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T028-discuss-regression-test.md) | DiscussionOrchestrator 回歸測試（T017 P0 防護） | 📋 pending |
 | [T29-embedding-model-integration](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T029-embedding-model-integration.md) | RAG Embedding Model 整合 (LanceDB 向量搜尋) | ✅ done |
-| [T30-lancedb-metadata-filtering](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T030-lancedb-metadata-filtering.md) | LanceDB Metadata Filtering (標籤、專案、作者過濾) | 📋 pending |
-| [T31-gitignore-lancedb](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T031-gitignore-lancedb.md) | .gitignore 新增 .lancedb/ 目錄忽略 | 📋 pending |
-| [T32-telegram-bot-deployment](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T032-telegram-bot-deployment.md) | Telegram Bot 生產部署文件與啟動腳本 | 📋 pending |
-| [T33-spec-auto-merge-state-machine](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T033-spec-auto-merge-state-machine.md) | spec_auto_merge.py 整合 DiscussionOrchestrator 狀態機推進 | 📋 pending |
-| [T34-routing-rules-tuning](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T034-routing-rules-tuning.md) | Routing Rules Keywords 微調與其他分身同步引用 Registry | 📋 pending |
-| [T35-twin-route-cli-extensions](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T035-twin-route-cli-extensions.md) | twin route CLI 擴充 (--list-agents, --show-rules, --dry-run) | 📋 pending |
+| [T30-lancedb-metadata-filtering](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T030-lancedb-metadata-filtering.md) | LanceDB Metadata Filtering (標籤、專案、作者過濾) | ✅ done |
+| [T31-gitignore-lancedb](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T031-gitignore-lancedb.md) | .gitignore 新增 .lancedb/ 目錄忽略 | ✅ done |
+| [T32-telegram-bot-deployment](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T032-telegram-bot-deployment.md) | Telegram Bot 生產部署文件與啟動腳本 | ✅ done |
+| [T33-spec-auto-merge-state-machine](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T033-spec-auto-merge-state-machine.md) | spec_auto_merge.py 整合 DiscussionOrchestrator 狀態機推進 | ✅ done |
+| [T34-routing-rules-tuning](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T034-routing-rules-tuning.md) | Routing Rules Keywords 微調與其他分身同步引用 Registry | ✅ done |
+| [T35-twin-route-cli-extensions](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T035-twin-route-cli-extensions.md) | twin route CLI 擴充 (--list-agents, --show-rules, --dry-run) | ✅ done |
 
-**✅ done: 28 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 7**
+**✅ done: 34 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 1**
 
-> 自動生成於 2026-08-08 23:37
+> 自動生成於 2026-08-09 01:25

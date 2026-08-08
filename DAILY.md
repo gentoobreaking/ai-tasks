@@ -1,6 +1,6 @@
-# 📅 Daily Dashboard - 2026-08-08
+# 📅 Daily Dashboard - 2026-08-09
 
-> 最後更新: 2026-08-08 23:37 · 自動生成
+> 最後更新: 2026-08-09 01:25 · 自動生成
 
 ---
 
@@ -14,7 +14,9 @@ _無_
 
 | 專案 | 任務 | 標題 |
 | -- | -- | -- |
-| digital-twin | [T029-embedding-model-integration](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T029-embedding-model-integration.md) | RAG Embedding Model 整合 (LanceDB 向量搜尋) |
+| digital-twin | [T032-telegram-bot-deployment](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T032-telegram-bot-deployment.md) | Telegram Bot 生產部署文件與啟動腳本 |
+| digital-twin | [T034-routing-rules-tuning](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T034-routing-rules-tuning.md) | Routing Rules Keywords 微調與其他分身同步引用 Registry |
+| digital-twin | [T035-twin-route-cli-extensions](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T035-twin-route-cli-extensions.md) | twin route CLI 擴充 (--list-agents, --show-rules, --dry-run) |
 
 ---
 
@@ -80,9 +82,6 @@ _無_
 | tw-quant-signal | [T022-mops-mcp-migration](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T022-mops-mcp-migration.md) | [Phase 4] MOPS/基本面資料層遷移至 tw-quant-mcp | high |
 | tw-quant-signal | [T023-mcp-validation-fallback](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T023-mcp-validation-fallback.md) | [Phase 4] Pipeline 驗證 + mcp fallback — 確認端到端正確性 | high |
 | digital-twin | [T028-discuss-regression-test](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T028-discuss-regression-test.md) | DiscussionOrchestrator 回歸測試（T017 P0 防護） | medium |
-| digital-twin | [T030-lancedb-metadata-filtering](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T030-lancedb-metadata-filtering.md) | LanceDB Metadata Filtering (標籤、專案、作者過濾) | medium |
-| digital-twin | [T033-spec-auto-merge-state-machine](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T033-spec-auto-merge-state-machine.md) | spec_auto_merge.py 整合 DiscussionOrchestrator 狀態機推進 | medium |
-| digital-twin | [T034-routing-rules-tuning](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T034-routing-rules-tuning.md) | Routing Rules Keywords 微調與其他分身同步引用 Registry | medium |
 | tw-quant-daybrain | [T010-journal-metrics](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T010-journal-metrics.md) | 交易日誌與績效指標（Phase 4） | medium |
 | tw-quant-daybrain | [T011-llm-report](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T011-llm-report.md) | LLM 檢討報告與防幻覺規範 | medium |
 | tw-quant-daybrain | [T012-replay](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T012-replay.md) | 回放工具與滑價驗證 | medium |
@@ -94,9 +93,6 @@ _無_
 | tw-quant-selector | [T135-complete-missing-tests](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-selector/tasks/T135-complete-missing-tests.md) | 補齊未完成的測試項目（T123/T124/T130-T133） | medium |
 | tw-quant-signal | [T018-stock-pool-expansion](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T018-stock-pool-expansion.md) | [Phase 3] 標的池擴充與管線效率優化 | medium |
 | tw-quant-signal | [T019-performance-tracking-dashboard](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T019-performance-tracking-dashboard.md) | [Phase 3] 績效追蹤儀表板補完 — 訊號後 1/3/5 日表現 | medium |
-| digital-twin | [T031-gitignore-lancedb](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T031-gitignore-lancedb.md) | .gitignore 新增 .lancedb/ 目錄忽略 | low |
-| digital-twin | [T032-telegram-bot-deployment](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T032-telegram-bot-deployment.md) | Telegram Bot 生產部署文件與啟動腳本 | low |
-| digital-twin | [T035-twin-route-cli-extensions](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T035-twin-route-cli-extensions.md) | twin route CLI 擴充 (--list-agents, --show-rules, --dry-run) | low |
 | gold-analysis-advanced | [T002](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis-advanced/tasks/T002.md) | ML 模型整合與優化 | low |
 | gold-analysis-advanced | [T004](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis-advanced/tasks/T004.md) | 實盤交易對接 | low |
 | md-viewer-app | [T027-預覽連結懸停](https://github.com/gentoobreaking/ai-tasks/blob/main/md-viewer-app/tasks/T027-預覽連結懸停.md) | [T027] 連結懸停預覽 | low |
