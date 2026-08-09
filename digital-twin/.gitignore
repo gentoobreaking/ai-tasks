@@ -1,0 +1,5 @@
+# twin route 回寫產物（每次重新生成，不需版本控制）
+*.routing.json
+
+# blocked-review/ 為 twin blocked --review 自動產生，不需版本控制
+tasks/blocked-review/
