@@ -8,7 +8,7 @@ depends_on: []
 assignee: OpenCode with DeepSeek V4 Flash
 created: '2026-08-09'
 updated: '2026-08-10'
-commit: eb84ce5
+commit: 4f15b74
 ---
 # T037 - `./twin doctor` 全端自檢
 
