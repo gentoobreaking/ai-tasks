@@ -1,6 +1,6 @@
 # 📁 Projects Dashboard
 
-> 最後更新: 2026-08-10 01:17 · 自動生成
+> 最後更新: 2026-08-10 02:49 · 自動生成
 
 ---
 
@@ -10,9 +10,9 @@
 |------|------|
 | 專案數 | 60 |
 | 任務總數 | 927 |
-| ✅ 已完成 | 825 |
-| ⬜ 待處理 | 39 |
-| 🔄 進行中 | 1 |
+| ✅ 已完成 | 826 |
+| ⬜ 待處理 | 37 |
+| 🔄 進行中 | 2 |
 | ⏭️ 跳過 | 62 |
 | 總完成率 | 95% |
 
@@ -21,7 +21,6 @@
 | 專案 | 任務 | 標題 |
 |------|------|------|
 | digital-twin | [T036-taskstore-unify](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T036-taskstore-unify.md) | common/tasks.py 任務存取層（消除 auto_develop 與 agent_registry 重複解析） |
-| digital-twin | [T037-twin-doctor](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T037-twin-doctor.md) | twin doctor 全端自檢命令 |
 | tw-quant-daybrain | [T001-scaffold](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T001-scaffold.md) | 專案初始化與設定骨架 |
 | tw-quant-daybrain | [T002-mcp-client](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T002-mcp-client.md) | MCP Client 連線層 |
 | tw-quant-daybrain | [T003-freshness-gate](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T003-freshness-gate.md) | 資料新鮮度守門（Freshness Gate） |
@@ -51,8 +50,6 @@
 
 | 專案 | 任務 | 標題 | 狀態 |
 |------|------|------|------|
-| digital-twin | [T036-taskstore-unify](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T036-taskstore-unify.md) | common/tasks.py 任務存取層（消除 auto_develop 與 agent_registry 重複解析） | ⬜ |
-| digital-twin | [T037-twin-doctor](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T037-twin-doctor.md) | twin doctor 全端自檢命令 | ⬜ |
 | digital-twin | [T038-tasks-gitignore-artifacts](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T038-tasks-gitignore-artifacts.md) | tasks repo 產物清潔（.gitignore 與 routing.json 清理） | ⬜ |
 | gold-analysis-advanced | [T002](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis-advanced/tasks/T002.md) | ML 模型整合與優化 | ⬜ |
 | gold-analysis-advanced | [T004](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis-advanced/tasks/T004.md) | 實盤交易對接 | ⬜ |
@@ -95,6 +92,7 @@
 
 | 專案 | 任務 | 標題 | 狀態 |
 |------|------|------|------|
+| digital-twin | [T036-taskstore-unify](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T036-taskstore-unify.md) | common/tasks.py 任務存取層（消除 auto_develop 與 agent_registry 重複解析） | 🔄 |
 | gold-analysis-advanced | [T001](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis-advanced/tasks/T001.md) | 機器學習模型開發 | 🔄 |
 
 ## ⏭️ 跳過
@@ -170,8 +168,8 @@
 
 | 指標 | 數值 |
 |------|------|
-| 過去 7 天完成 | 136 |
-| 過去 30 天完成 | 174 |
+| 過去 7 天完成 | 137 |
+| 過去 30 天完成 | 175 |
 | 平均週期時間 | 0.8 天 |
 | 週期時間中位數 | 0.0 天 |
 
@@ -181,10 +179,10 @@ xychart-beta
     title "過去 14 天任務完成趨勢"
     x-axis ["07-28", "07-29", "07-30", "07-31", "08-01", "08-02", "08-03", "08-04", "08-05", "08-06", "08-07", "08-08", "08-09", "08-10"]
     y-axis "完成數" 0 --> 72
-    line [0, 0, 12, 11, 10, 5, 16, 72, 16, 8, 12, 4, 8, 0]
+    line [0, 0, 12, 11, 10, 5, 16, 72, 16, 8, 12, 4, 8, 1]
 ```
 
-📊 總計: 174 | 日均: 12.4 | 本週: 120 | 📈 成長中
+📊 總計: 175 | 日均: 12.5 | 本週: 121 | 📈 成長中
 
 ## 📋 專案列表
 
@@ -198,9 +196,8 @@ xychart-beta
 | ✅ | [cmd-log-parser](https://github.com/gentoobreaking/ai-tasks/tree/main/cmd-log-parser) | 3 | 3 | 0 | 0 | 0 | ████████████████████ 100% | 2026-04-16 |
 | ✅ | [cnyes-stock](https://github.com/gentoobreaking/ai-tasks/tree/main/cnyes-stock) | 16 | 16 | 0 | 0 | 0 | ████████████████████ 100% | 2026-05-12 |
 | ✅ | [dashboard-tool](https://github.com/gentoobreaking/ai-tasks/tree/main/dashboard-tool) | 5 | 5 | 0 | 0 | 0 | ████████████████████ 100% | 2026-04-09 |
-| ⬜ | [digital-twin](https://github.com/gentoobreaking/ai-tasks/tree/main/digital-twin) | 42 | 39 | 3 | 0 | 0 | ██████████████████░░ 92% | 2026-08-09 |
+| 🔄 | [digital-twin](https://github.com/gentoobreaking/ai-tasks/tree/main/digital-twin) | 42 | 40 | 1 | 1 | 0 | ███████████████████░ 95% | 2026-08-10 |
   **[T036-taskstore-unify](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T036-taskstore-unify.md)**: common/tasks.py 任務存取層（消除 auto_develop 與 agent_registry 重複解析）
-  **[T037-twin-doctor](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T037-twin-doctor.md)**: twin doctor 全端自檢命令
 | ✅ | [elevenlabs-research](https://github.com/gentoobreaking/ai-tasks/tree/main/elevenlabs-research) | 1 | 1 | 0 | 0 | 0 | ████████████████████ 100% | 2026-04-21 |
 | ✅ | [free-ai-router](https://github.com/gentoobreaking/ai-tasks/tree/main/free-ai-router) | 83 | 83 | 0 | 0 | 0 | ████████████████████ 100% | 2026-08-05 |
 | ✅ | [git-maintenance](https://github.com/gentoobreaking/ai-tasks/tree/main/git-maintenance) | 1 | 1 | 0 | 0 | 0 | ████████████████████ 100% | 2026-05-16 |

@@ -1,15 +1,14 @@
 ---
-github_issue: 
+github_issue: null
 title: common/tasks.py 任務存取層（消除 auto_develop 與 agent_registry 重複解析）
 type: refactor
 priority: high
-status: pending
+status: in-progress
 depends_on: []
 assignee: OpenCode with DeepSeek V4 Flash
 created: '2026-08-09'
-updated: '2026-08-09'
+updated: '2026-08-10'
 ---
-
 # T036 - 任務存取層統一（TaskStore）
 
 ## 目標
