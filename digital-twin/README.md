@@ -39,6 +39,8 @@
 | spec_auto_merge.py 整合 DiscussionOrchestrator 狀態機推進 |
 | Routing Rules Keywords 微調與其他分身同步引用 Registry |
 | twin route CLI 擴充 (--list-agents, --show-rules, --dry-run) |
+| 模型備援鏈 YAML 配置（impl_providers.yaml）＋順位重排（opencode CLI 第一） |
+| MODELS 模型清單改由 YAML 配置（.opencode/models.yaml） |
 
 ## Skip 項目
 
@@ -56,7 +58,9 @@
 
 | Task | 名稱 | 說明 |
 |------|------|------|
-| | | |
+| [T36-taskstore-unify](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T036-taskstore-unify.md) | common/tasks.py 任務存取層（消除 auto_develop 與 agent_registry 重複解析） | |
+| [T37-twin-doctor](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T037-twin-doctor.md) | twin doctor 全端自檢命令 | |
+| [T38-tasks-gitignore-artifacts](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T038-tasks-gitignore-artifacts.md) | tasks repo 產物清潔（.gitignore 與 routing.json 清理） | |
 
 ## Task 列表
 
@@ -97,7 +101,12 @@
 | [T33-spec-auto-merge-state-machine](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T033-spec-auto-merge-state-machine.md) | spec_auto_merge.py 整合 DiscussionOrchestrator 狀態機推進 | ✅ done |
 | [T34-routing-rules-tuning](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T034-routing-rules-tuning.md) | Routing Rules Keywords 微調與其他分身同步引用 Registry | ✅ done |
 | [T35-twin-route-cli-extensions](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T035-twin-route-cli-extensions.md) | twin route CLI 擴充 (--list-agents, --show-rules, --dry-run) | ✅ done |
+| [T36-taskstore-unify](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T036-taskstore-unify.md) | common/tasks.py 任務存取層（消除 auto_develop 與 agent_registry 重複解析） | 📋 pending |
+| [T37-twin-doctor](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T037-twin-doctor.md) | twin doctor 全端自檢命令 | 📋 pending |
+| [T38-tasks-gitignore-artifacts](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T038-tasks-gitignore-artifacts.md) | tasks repo 產物清潔（.gitignore 與 routing.json 清理） | 📋 pending |
+| [T39-impl-providers-yaml](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T039-impl-providers-yaml.md) | 模型備援鏈 YAML 配置（impl_providers.yaml）＋順位重排（opencode CLI 第一） | ✅ done |
+| [T40-models-yaml](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T040-models-yaml.md) | MODELS 模型清單改由 YAML 配置（.opencode/models.yaml） | ✅ done |
 
-**✅ done: 35 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 0**
+**✅ done: 37 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 3**
 
-> 自動生成於 2026-08-09 01:49
+> 自動生成於 2026-08-09 23:07
