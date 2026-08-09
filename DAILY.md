@@ -1,31 +1,18 @@
-# 📅 Daily Dashboard - 2026-08-09
+# 📅 Daily Dashboard - 2026-08-10
 
-> 最後更新: 2026-08-09 23:07 · 自動生成
+> 最後更新: 2026-08-10 01:17 · 自動生成
 
 ---
 
 ## 🆕 今日新增任務
 
-| 專案 | 任務 | 標題 |
-| -- | -- | -- |
-| digital-twin | [T036-taskstore-unify](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T036-taskstore-unify.md) | common/tasks.py 任務存取層（消除 auto_develop 與 agent_registry 重複解析） |
-| digital-twin | [T037-twin-doctor](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T037-twin-doctor.md) | twin doctor 全端自檢命令 |
-| digital-twin | [T038-tasks-gitignore-artifacts](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T038-tasks-gitignore-artifacts.md) | tasks repo 產物清潔（.gitignore 與 routing.json 清理） |
-| digital-twin | [T039-impl-providers-yaml](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T039-impl-providers-yaml.md) | 模型備援鏈 YAML 配置（impl_providers.yaml）＋順位重排（opencode CLI 第一） |
-| digital-twin | [T040-models-yaml](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T040-models-yaml.md) | MODELS 模型清單改由 YAML 配置（.opencode/models.yaml） |
+_無_
 
 ---
 
 ## ✅ 今日完成任務
 
-| 專案 | 任務 | 標題 |
-| -- | -- | -- |
-| digital-twin | [T028-discuss-regression-test](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T028-discuss-regression-test.md) | DiscussionOrchestrator 回歸測試（T017 P0 防護） |
-| digital-twin | [T032-telegram-bot-deployment](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T032-telegram-bot-deployment.md) | Telegram Bot 生產部署文件與啟動腳本 |
-| digital-twin | [T034-routing-rules-tuning](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T034-routing-rules-tuning.md) | Routing Rules Keywords 微調與其他分身同步引用 Registry |
-| digital-twin | [T035-twin-route-cli-extensions](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T035-twin-route-cli-extensions.md) | twin route CLI 擴充 (--list-agents, --show-rules, --dry-run) |
-| digital-twin | [T039-impl-providers-yaml](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T039-impl-providers-yaml.md) | 模型備援鏈 YAML 配置（impl_providers.yaml）＋順位重排（opencode CLI 第一） |
-| digital-twin | [T040-models-yaml](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T040-models-yaml.md) | MODELS 模型清單改由 YAML 配置（.opencode/models.yaml） |
+_無_
 
 ---
 

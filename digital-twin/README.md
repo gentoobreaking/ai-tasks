@@ -41,6 +41,8 @@
 | twin route CLI 擴充 (--list-agents, --show-rules, --dry-run) |
 | 模型備援鏈 YAML 配置（impl_providers.yaml）＋順位重排（opencode CLI 第一） |
 | MODELS 模型清單改由 YAML 配置（.opencode/models.yaml） |
+| --model/Scheduler 預設不再硬編，整條鏈由 impl_providers.yaml 決定 |
+| PROJECT_PATHS 動態化：依 ~/tasks 未完成任務動態篩選專案＋.projects_ignore 排除 |
 
 ## Skip 項目
 
@@ -106,7 +108,9 @@
 | [T38-tasks-gitignore-artifacts](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T038-tasks-gitignore-artifacts.md) | tasks repo 產物清潔（.gitignore 與 routing.json 清理） | 📋 pending |
 | [T39-impl-providers-yaml](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T039-impl-providers-yaml.md) | 模型備援鏈 YAML 配置（impl_providers.yaml）＋順位重排（opencode CLI 第一） | ✅ done |
 | [T40-models-yaml](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T040-models-yaml.md) | MODELS 模型清單改由 YAML 配置（.opencode/models.yaml） | ✅ done |
+| [T41-openrouter-default-model](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T041-openrouter-default-model.md) | --model/Scheduler 預設不再硬編，整條鏈由 impl_providers.yaml 決定 | ✅ done |
+| [T46-dynamic-project-paths](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T046-dynamic-project-paths.md) | PROJECT_PATHS 動態化：依 ~/tasks 未完成任務動態篩選專案＋.projects_ignore 排除 | ✅ done |
 
-**✅ done: 37 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 3**
+**✅ done: 39 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 3**
 
-> 自動生成於 2026-08-09 23:07
+> 自動生成於 2026-08-10 01:17

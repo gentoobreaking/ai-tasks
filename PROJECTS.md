@@ -1,6 +1,6 @@
 # 📁 Projects Dashboard
 
-> 最後更新: 2026-08-09 23:07 · 自動生成
+> 最後更新: 2026-08-10 01:17 · 自動生成
 
 ---
 
@@ -9,8 +9,8 @@
 | 指標 | 數量 |
 |------|------|
 | 專案數 | 60 |
-| 任務總數 | 925 |
-| ✅ 已完成 | 823 |
+| 任務總數 | 927 |
+| ✅ 已完成 | 825 |
 | ⬜ 待處理 | 39 |
 | 🔄 進行中 | 1 |
 | ⏭️ 跳過 | 62 |
@@ -170,8 +170,8 @@
 
 | 指標 | 數值 |
 |------|------|
-| 過去 7 天完成 | 139 |
-| 過去 30 天完成 | 172 |
+| 過去 7 天完成 | 136 |
+| 過去 30 天完成 | 174 |
 | 平均週期時間 | 0.8 天 |
 | 週期時間中位數 | 0.0 天 |
 
@@ -179,12 +179,12 @@
 ```mermaid
 xychart-beta
     title "過去 14 天任務完成趨勢"
-    x-axis ["07-27", "07-28", "07-29", "07-30", "07-31", "08-01", "08-02", "08-03", "08-04", "08-05", "08-06", "08-07", "08-08", "08-09"]
+    x-axis ["07-28", "07-29", "07-30", "07-31", "08-01", "08-02", "08-03", "08-04", "08-05", "08-06", "08-07", "08-08", "08-09", "08-10"]
     y-axis "完成數" 0 --> 72
-    line [0, 0, 0, 12, 11, 10, 5, 16, 72, 16, 8, 12, 4, 6]
+    line [0, 0, 12, 11, 10, 5, 16, 72, 16, 8, 12, 4, 8, 0]
 ```
 
-📊 總計: 172 | 日均: 12.3 | 本週: 134 | 📈 成長中
+📊 總計: 174 | 日均: 12.4 | 本週: 120 | 📈 成長中
 
 ## 📋 專案列表
 
@@ -198,7 +198,7 @@ xychart-beta
 | ✅ | [cmd-log-parser](https://github.com/gentoobreaking/ai-tasks/tree/main/cmd-log-parser) | 3 | 3 | 0 | 0 | 0 | ████████████████████ 100% | 2026-04-16 |
 | ✅ | [cnyes-stock](https://github.com/gentoobreaking/ai-tasks/tree/main/cnyes-stock) | 16 | 16 | 0 | 0 | 0 | ████████████████████ 100% | 2026-05-12 |
 | ✅ | [dashboard-tool](https://github.com/gentoobreaking/ai-tasks/tree/main/dashboard-tool) | 5 | 5 | 0 | 0 | 0 | ████████████████████ 100% | 2026-04-09 |
-| ⬜ | [digital-twin](https://github.com/gentoobreaking/ai-tasks/tree/main/digital-twin) | 40 | 37 | 3 | 0 | 0 | ██████████████████░░ 92% | 2026-08-09 |
+| ⬜ | [digital-twin](https://github.com/gentoobreaking/ai-tasks/tree/main/digital-twin) | 42 | 39 | 3 | 0 | 0 | ██████████████████░░ 92% | 2026-08-09 |
   **[T036-taskstore-unify](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T036-taskstore-unify.md)**: common/tasks.py 任務存取層（消除 auto_develop 與 agent_registry 重複解析）
   **[T037-twin-doctor](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T037-twin-doctor.md)**: twin doctor 全端自檢命令
 | ✅ | [elevenlabs-research](https://github.com/gentoobreaking/ai-tasks/tree/main/elevenlabs-research) | 1 | 1 | 0 | 0 | 0 | ████████████████████ 100% | 2026-04-21 |
