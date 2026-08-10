@@ -1,6 +1,6 @@
 # 📁 Projects Dashboard
 
-> 最後更新: 2026-08-11 01:06 · 自動生成
+> 最後更新: 2026-08-11 02:10 · 自動生成
 
 ---
 
@@ -10,27 +10,18 @@
 |------|------|
 | 專案數 | 60 |
 | 任務總數 | 940 |
-| ✅ 已完成 | 845 |
-| ⬜ 待處理 | 32 |
+| ✅ 已完成 | 856 |
+| ⬜ 待處理 | 21 |
 | 🔄 進行中 | 1 |
 | ⏭️ 跳過 | 62 |
-| 總完成率 | 96% |
+| 總完成率 | 97% |
 
 ## 🔥 待處理高優先級任務
 
 | 專案 | 任務 | 標題 |
 |------|------|------|
-| digital-twin | [T049-complete-flow-consistency](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T049-complete-flow-consistency.md) | 完成流程單軌化＋一致性檢查（/complete-task 同步 README；doctor 增 spec↔任務↔README validator） |
-| digital-twin | [T050-git-module-converge](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T050-git-module-converge.md) | git 操作收斂 common/git.py——auto_develop 五處 subprocess 改用單一模組 |
 | digital-twin | [T051-auto-develop-split](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T051-auto-develop-split.md) | auto_develop 拆分模組（scheduler/providers/diff）——消除 1925 行單一檔案 |
 | digital-twin | [T052-auto-develop-observability](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T052-auto-develop-observability.md) | auto_develop 接入 common/observability（structlog）——107 個 print 收斂 |
-| tw-quant-daybrain | [T016-bias-decision-tree](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T016-bias-decision-tree.md) | 盤前多空傾向鎖定（Bias Decision Tree） |
-| tw-quant-daybrain | [T017-vwap-surge-long](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T017-vwap-surge-long.md) | 做多策略引擎（VWAP_SURGE_LONG） |
-| tw-quant-daybrain | [T018-bull-trap-vwap-short](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T018-bull-trap-vwap-short.md) | 空方策略引擎（BULL_TRAP_VWAP_SHORT） |
-| tw-quant-daybrain | [T019-briefing-generator](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T019-briefing-generator.md) | Tactical Briefing 產生器（盤前戰術報告） |
-| tw-quant-daybrain | [T020-priority-engine](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T020-priority-engine.md) | Priority Ranking Engine（優先權排序與資金分配） |
-| tw-quant-daybrain | [T021-csv-data-loader](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T021-csv-data-loader.md) | 回測資料載入器（CsvDataLoader） |
-| tw-quant-daybrain | [T022-backtest-simulator](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T022-backtest-simulator.md) | 事件驅動回測模擬器（DayBrainBacktestSimulator） |
 | tw-quant-signal | [T020-data-provider-abstraction](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T020-data-provider-abstraction.md) | [Phase 4] DataProvider 抽象層設計 — 定義資料擷取統一介面 |
 | tw-quant-signal | [T021-twse-mcp-migration](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T021-twse-mcp-migration.md) | [Phase 4] TWSE 盤後資料層遷移至 tw-quant-mcp |
 | tw-quant-signal | [T022-mops-mcp-migration](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T022-mops-mcp-migration.md) | [Phase 4] MOPS/基本面資料層遷移至 tw-quant-mcp |
@@ -43,8 +34,6 @@
 
 | 專案 | 任務 | 標題 | 狀態 |
 |------|------|------|------|
-| digital-twin | [T049-complete-flow-consistency](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T049-complete-flow-consistency.md) | 完成流程單軌化＋一致性檢查（/complete-task 同步 README；doctor 增 spec↔任務↔README validator） | ⬜ |
-| digital-twin | [T050-git-module-converge](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T050-git-module-converge.md) | git 操作收斂 common/git.py——auto_develop 五處 subprocess 改用單一模組 | ⬜ |
 | digital-twin | [T051-auto-develop-split](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T051-auto-develop-split.md) | auto_develop 拆分模組（scheduler/providers/diff）——消除 1925 行單一檔案 | ⬜ |
 | digital-twin | [T052-auto-develop-observability](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T052-auto-develop-observability.md) | auto_develop 接入 common/observability（structlog）——107 個 print 收斂 | ⬜ |
 | digital-twin | [T053-remove-config-validate](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T053-remove-config-validate.md) | 移除/重寫 config/validate.py 死碼（Pydantic 層無人引用、key 必填與離線測衝突、模型名過時） | ⬜ |
@@ -57,15 +46,6 @@
 | gold-analysis-advanced | [T002](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis-advanced/tasks/T002.md) | ML 模型整合與優化 | ⬜ |
 | gold-analysis-advanced | [T004](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis-advanced/tasks/T004.md) | 實盤交易對接 | ⬜ |
 | md-viewer-app | [T027-預覽連結懸停](https://github.com/gentoobreaking/ai-tasks/blob/main/md-viewer-app/tasks/T027-預覽連結懸停.md) | [T027] 連結懸停預覽 | ⬜ |
-| tw-quant-daybrain | [T016-bias-decision-tree](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T016-bias-decision-tree.md) | 盤前多空傾向鎖定（Bias Decision Tree） | ⬜ |
-| tw-quant-daybrain | [T017-vwap-surge-long](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T017-vwap-surge-long.md) | 做多策略引擎（VWAP_SURGE_LONG） | ⬜ |
-| tw-quant-daybrain | [T018-bull-trap-vwap-short](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T018-bull-trap-vwap-short.md) | 空方策略引擎（BULL_TRAP_VWAP_SHORT） | ⬜ |
-| tw-quant-daybrain | [T019-briefing-generator](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T019-briefing-generator.md) | Tactical Briefing 產生器（盤前戰術報告） | ⬜ |
-| tw-quant-daybrain | [T020-priority-engine](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T020-priority-engine.md) | Priority Ranking Engine（優先權排序與資金分配） | ⬜ |
-| tw-quant-daybrain | [T021-csv-data-loader](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T021-csv-data-loader.md) | 回測資料載入器（CsvDataLoader） | ⬜ |
-| tw-quant-daybrain | [T022-backtest-simulator](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T022-backtest-simulator.md) | 事件驅動回測模擬器（DayBrainBacktestSimulator） | ⬜ |
-| tw-quant-daybrain | [T023-grid-search](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T023-grid-search.md) | 參數網格搜尋（Grid Search） | ⬜ |
-| tw-quant-daybrain | [T024-wfo-optimizer](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T024-wfo-optimizer.md) | Walk-Forward Optimization（WFO 滾動驗證） | ⬜ |
 | tw-quant-selector | [T134-alerting-module-split-refactor](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-selector/tasks/T134-alerting-module-split-refactor.md) | 拆分大型檔案 alerting.py（模組化重構） | ⬜ |
 | tw-quant-selector | [T135-complete-missing-tests](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-selector/tasks/T135-complete-missing-tests.md) | 補齊未完成的測試項目（T123/T124/T130-T133） | ⬜ |
 | tw-quant-signal | [T010-stock-pool-signals](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T010-stock-pool-signals.md) | [Phase 3] 個股池訊號 — 精選觀察清單掃描 | ⬜ |
@@ -155,9 +135,9 @@
 
 | 指標 | 數值 |
 |------|------|
-| 過去 7 天完成 | 139 |
-| 過去 30 天完成 | 194 |
-| 平均週期時間 | 0.9 天 |
+| 過去 7 天完成 | 150 |
+| 過去 30 天完成 | 205 |
+| 平均週期時間 | 1.0 天 |
 | 週期時間中位數 | 0.0 天 |
 
 
@@ -166,10 +146,10 @@ xychart-beta
     title "過去 14 天任務完成趨勢"
     x-axis ["07-29", "07-30", "07-31", "08-01", "08-02", "08-03", "08-04", "08-05", "08-06", "08-07", "08-08", "08-09", "08-10", "08-11"]
     y-axis "完成數" 0 --> 72
-    line [0, 12, 11, 11, 5, 16, 72, 16, 8, 12, 4, 8, 15, 4]
+    line [0, 12, 11, 11, 5, 16, 72, 16, 8, 12, 4, 8, 15, 15]
 ```
 
-📊 總計: 194 | 日均: 13.9 | 本週: 67 | 📉 下降中
+📊 總計: 205 | 日均: 14.6 | 本週: 78 | 📉 下降中
 
 ## 📋 專案列表
 
@@ -183,9 +163,7 @@ xychart-beta
 | ✅ | [cmd-log-parser](https://github.com/gentoobreaking/ai-tasks/tree/main/cmd-log-parser) | 3 | 3 | 0 | 0 | 0 | ████████████████████ 100% | 2026-04-16 |
 | ✅ | [cnyes-stock](https://github.com/gentoobreaking/ai-tasks/tree/main/cnyes-stock) | 16 | 16 | 0 | 0 | 0 | ████████████████████ 100% | 2026-05-12 |
 | ✅ | [dashboard-tool](https://github.com/gentoobreaking/ai-tasks/tree/main/dashboard-tool) | 5 | 5 | 0 | 0 | 0 | ████████████████████ 100% | 2026-04-09 |
-| ⬜ | [digital-twin](https://github.com/gentoobreaking/ai-tasks/tree/main/digital-twin) | 55 | 44 | 11 | 0 | 0 | ████████████████░░░░ 80% | 2026-08-11 |
-  **[T049-complete-flow-consistency](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T049-complete-flow-consistency.md)**: 完成流程單軌化＋一致性檢查（/complete-task 同步 README；doctor 增 spec↔任務↔README validator）
-  **[T050-git-module-converge](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T050-git-module-converge.md)**: git 操作收斂 common/git.py——auto_develop 五處 subprocess 改用單一模組
+| ⬜ | [digital-twin](https://github.com/gentoobreaking/ai-tasks/tree/main/digital-twin) | 55 | 46 | 9 | 0 | 0 | ████████████████░░░░ 83% | 2026-08-11 |
   **[T051-auto-develop-split](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T051-auto-develop-split.md)**: auto_develop 拆分模組（scheduler/providers/diff）——消除 1925 行單一檔案
   **[T052-auto-develop-observability](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T052-auto-develop-observability.md)**: auto_develop 接入 common/observability（structlog）——107 個 print 收斂
 | ✅ | [elevenlabs-research](https://github.com/gentoobreaking/ai-tasks/tree/main/elevenlabs-research) | 1 | 1 | 0 | 0 | 0 | ████████████████████ 100% | 2026-04-21 |
@@ -230,14 +208,7 @@ xychart-beta
 | ✅ | [taolive-ios](https://github.com/gentoobreaking/ai-tasks/tree/main/taolive-ios) | 67 | 19 | 0 | 0 | 48 | ████████████████████ 100% | 2026-05-14 |
 | ✅ | [task-url-repair](https://github.com/gentoobreaking/ai-tasks/tree/main/task-url-repair) | 1 | 1 | 0 | 0 | 0 | ████████████████████ 100% | 2026-04-20 |
 | ✅ | [tasks-executor](https://github.com/gentoobreaking/ai-tasks/tree/main/tasks-executor) | 8 | 8 | 0 | 0 | 0 | ████████████████████ 100% | 2026-05-12 |
-| ⬜ | [tw-quant-daybrain](https://github.com/gentoobreaking/ai-tasks/tree/main/tw-quant-daybrain) | 24 | 15 | 9 | 0 | 0 | ████████████░░░░░░░░ 62% | 2026-08-11 |
-  **[T016-bias-decision-tree](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T016-bias-decision-tree.md)**: 盤前多空傾向鎖定（Bias Decision Tree）
-  **[T017-vwap-surge-long](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T017-vwap-surge-long.md)**: 做多策略引擎（VWAP_SURGE_LONG）
-  **[T018-bull-trap-vwap-short](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T018-bull-trap-vwap-short.md)**: 空方策略引擎（BULL_TRAP_VWAP_SHORT）
-  **[T019-briefing-generator](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T019-briefing-generator.md)**: Tactical Briefing 產生器（盤前戰術報告）
-  **[T020-priority-engine](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T020-priority-engine.md)**: Priority Ranking Engine（優先權排序與資金分配）
-  **[T021-csv-data-loader](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T021-csv-data-loader.md)**: 回測資料載入器（CsvDataLoader）
-  **[T022-backtest-simulator](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T022-backtest-simulator.md)**: 事件驅動回測模擬器（DayBrainBacktestSimulator）
+| ✅ | [tw-quant-daybrain](https://github.com/gentoobreaking/ai-tasks/tree/main/tw-quant-daybrain) | 24 | 24 | 0 | 0 | 0 | ████████████████████ 100% | 2026-08-11 |
 | ✅ | [tw-quant-mcp](https://github.com/gentoobreaking/ai-tasks/tree/main/tw-quant-mcp) | 31 | 31 | 0 | 0 | 0 | ████████████████████ 100% | 2026-08-03 |
 | ⬜ | [tw-quant-selector](https://github.com/gentoobreaking/ai-tasks/tree/main/tw-quant-selector) | 142 | 140 | 2 | 0 | 0 | ███████████████████░ 98% | 2026-07-09 |
 | ⬜ | [tw-quant-signal](https://github.com/gentoobreaking/ai-tasks/tree/main/tw-quant-signal) | 28 | 21 | 7 | 0 | 0 | ███████████████░░░░░ 75% | 2026-08-03 |

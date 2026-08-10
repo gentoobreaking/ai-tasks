@@ -48,6 +48,8 @@
 | PROJECT_PATHS 動態化：依 ~/tasks 未完成任務動態篩選專案＋.projects_ignore 排除 |
 | 任務檔 frontmatter 解析全面收斂至 TaskStore（消除 agent_versioning/doctor/incremental_index 平行實作） |
 | TaskStore 重寫積木統一（update_fields/force）——retry/supersede/blocked_review/_record_failure 遷移 |
+| 完成流程單軌化＋一致性檢查（/complete-task 同步 README；doctor 增 spec↔任務↔README validator） |
+| git 操作收斂 common/git.py——auto_develop 五處 subprocess 改用單一模組 |
 
 ## Skip 項目
 
@@ -65,8 +67,6 @@
 
 | Task | 名稱 | 說明 |
 |------|------|------|
-| [T49-complete-flow-consistency](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T049-complete-flow-consistency.md) | 完成流程單軌化＋一致性檢查（/complete-task 同步 README；doctor 增 spec↔任務↔README validator） | |
-| [T50-git-module-converge](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T050-git-module-converge.md) | git 操作收斂 common/git.py——auto_develop 五處 subprocess 改用單一模組 | |
 | [T51-auto-develop-split](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T051-auto-develop-split.md) | auto_develop 拆分模組（scheduler/providers/diff）——消除 1925 行單一檔案 | |
 | [T52-auto-develop-observability](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T052-auto-develop-observability.md) | auto_develop 接入 common/observability（structlog）——107 個 print 收斂 | |
 | [T53-remove-config-validate](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T053-remove-config-validate.md) | 移除/重寫 config/validate.py 死碼（Pydantic 層無人引用、key 必填與離線測衝突、模型名過時） | |
@@ -125,8 +125,8 @@
 | [T46-dynamic-project-paths](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T046-dynamic-project-paths.md) | PROJECT_PATHS 動態化：依 ~/tasks 未完成任務動態篩選專案＋.projects_ignore 排除 | ✅ done |
 | [T47-taskstore-frontmatter-converge](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T047-taskstore-frontmatter-converge.md) | 任務檔 frontmatter 解析全面收斂至 TaskStore（消除 agent_versioning/doctor/incremental_index 平行實作） | ✅ done |
 | [T48-taskstore-update-fields](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T048-taskstore-update-fields.md) | TaskStore 重寫積木統一（update_fields/force）——retry/supersede/blocked_review/_record_failure 遷移 | ✅ done |
-| [T49-complete-flow-consistency](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T049-complete-flow-consistency.md) | 完成流程單軌化＋一致性檢查（/complete-task 同步 README；doctor 增 spec↔任務↔README validator） | 📋 pending |
-| [T50-git-module-converge](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T050-git-module-converge.md) | git 操作收斂 common/git.py——auto_develop 五處 subprocess 改用單一模組 | 📋 pending |
+| [T49-complete-flow-consistency](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T049-complete-flow-consistency.md) | 完成流程單軌化＋一致性檢查（/complete-task 同步 README；doctor 增 spec↔任務↔README validator） | ✅ done |
+| [T50-git-module-converge](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T050-git-module-converge.md) | git 操作收斂 common/git.py——auto_develop 五處 subprocess 改用單一模組 | ✅ done |
 | [T51-auto-develop-split](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T051-auto-develop-split.md) | auto_develop 拆分模組（scheduler/providers/diff）——消除 1925 行單一檔案 | 📋 pending |
 | [T52-auto-develop-observability](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T052-auto-develop-observability.md) | auto_develop 接入 common/observability（structlog）——107 個 print 收斂 | 📋 pending |
 | [T53-remove-config-validate](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T053-remove-config-validate.md) | 移除/重寫 config/validate.py 死碼（Pydantic 層無人引用、key 必填與離線測衝突、模型名過時） | 📋 pending |
@@ -137,6 +137,6 @@
 | [T58-dotenv-single-load](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T058-dotenv-single-load.md) | dotenv 選用載入收斂（9 處重複 → config 單次） | 📋 pending |
 | [T59-test-gap-fill](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T059-test-gap-fill.md) | 測試涵蓋缺口補齊（common/tasks、multi_ai_discuss、task_advisor、index_knowledge、auto_guardrail） | 📋 pending |
 
-**✅ done: 44 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 11**
+**✅ done: 46 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 9**
 
-> 自動生成於 2026-08-11 01:06
+> 自動生成於 2026-08-11 02:10
