@@ -4,7 +4,15 @@
 
 | 功能 |
 |------|
-| （無） |
+| 專案初始化與設定骨架 |
+| MCP Client 連線層 |
+| 資料新鮮度守門（Freshness Gate） |
+| 事件日誌與回放讀取器 |
+| 交易日曆與生命週期排程器 |
+| 盤前流程（Phase 0 + Phase 1 選股） |
+| 訊號模型 v2.0（Config-Driven 評分） |
+| 風控系統與持倉狀態機 |
+| 盤中監控循環（Phase 2 + Phase 3） |
 
 ## Skip 項目
 
@@ -22,15 +30,6 @@
 
 | Task | 名稱 | 說明 |
 |------|------|------|
-| [T1-scaffold](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T001-scaffold.md) | 專案初始化與設定骨架 | |
-| [T2-mcp-client](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T002-mcp-client.md) | MCP Client 連線層 | |
-| [T3-freshness-gate](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T003-freshness-gate.md) | 資料新鮮度守門（Freshness Gate） | |
-| [T4-event-logging](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T004-event-logging.md) | 事件日誌與回放讀取器 | |
-| [T5-calendar-scheduler](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T005-calendar-scheduler.md) | 交易日曆與生命週期排程器 | |
-| [T6-pre-market](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T006-pre-market.md) | 盤前流程（Phase 0 + Phase 1 選股） | |
-| [T7-scoring](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T007-scoring.md) | 訊號模型 v2.0（Config-Driven 評分） | |
-| [T8-risk-manager](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T008-risk-manager.md) | 風控系統與持倉狀態機 | |
-| [T9-intraday-loop](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T009-intraday-loop.md) | 盤中監控循環（Phase 2 + Phase 3） | |
 | [T10-journal-metrics](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T010-journal-metrics.md) | 交易日誌與績效指標（Phase 4） | |
 | [T11-llm-report](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T011-llm-report.md) | LLM 檢討報告與防幻覺規範 | |
 | [T12-replay](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T012-replay.md) | 回放工具與滑價驗證 | |
@@ -51,15 +50,15 @@
 
 | # | 名稱 | 狀態 |
 |---|------|------|
-| [T1-scaffold](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T001-scaffold.md) | 專案初始化與設定骨架 | 📋 pending |
-| [T2-mcp-client](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T002-mcp-client.md) | MCP Client 連線層 | 📋 pending |
-| [T3-freshness-gate](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T003-freshness-gate.md) | 資料新鮮度守門（Freshness Gate） | 📋 pending |
-| [T4-event-logging](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T004-event-logging.md) | 事件日誌與回放讀取器 | 📋 pending |
-| [T5-calendar-scheduler](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T005-calendar-scheduler.md) | 交易日曆與生命週期排程器 | 📋 pending |
-| [T6-pre-market](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T006-pre-market.md) | 盤前流程（Phase 0 + Phase 1 選股） | 📋 pending |
-| [T7-scoring](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T007-scoring.md) | 訊號模型 v2.0（Config-Driven 評分） | 📋 pending |
-| [T8-risk-manager](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T008-risk-manager.md) | 風控系統與持倉狀態機 | 📋 pending |
-| [T9-intraday-loop](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T009-intraday-loop.md) | 盤中監控循環（Phase 2 + Phase 3） | 📋 pending |
+| [T1-scaffold](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T001-scaffold.md) | 專案初始化與設定骨架 | ✅ done |
+| [T2-mcp-client](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T002-mcp-client.md) | MCP Client 連線層 | ✅ done |
+| [T3-freshness-gate](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T003-freshness-gate.md) | 資料新鮮度守門（Freshness Gate） | ✅ done |
+| [T4-event-logging](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T004-event-logging.md) | 事件日誌與回放讀取器 | ✅ done |
+| [T5-calendar-scheduler](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T005-calendar-scheduler.md) | 交易日曆與生命週期排程器 | ✅ done |
+| [T6-pre-market](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T006-pre-market.md) | 盤前流程（Phase 0 + Phase 1 選股） | ✅ done |
+| [T7-scoring](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T007-scoring.md) | 訊號模型 v2.0（Config-Driven 評分） | ✅ done |
+| [T8-risk-manager](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T008-risk-manager.md) | 風控系統與持倉狀態機 | ✅ done |
+| [T9-intraday-loop](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T009-intraday-loop.md) | 盤中監控循環（Phase 2 + Phase 3） | ✅ done |
 | [T10-journal-metrics](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T010-journal-metrics.md) | 交易日誌與績效指標（Phase 4） | 📋 pending |
 | [T11-llm-report](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T011-llm-report.md) | LLM 檢討報告與防幻覺規範 | 📋 pending |
 | [T12-replay](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T012-replay.md) | 回放工具與滑價驗證 | 📋 pending |
@@ -76,6 +75,6 @@
 | [T23-grid-search](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T023-grid-search.md) | 參數網格搜尋（Grid Search） | 📋 pending |
 | [T24-wfo-optimizer](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T024-wfo-optimizer.md) | Walk-Forward Optimization（WFO 滾動驗證） | 📋 pending |
 
-**✅ done: 0 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 24**
+**✅ done: 9 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 15**
 
-> 自動生成於 2026-08-10 22:17
+> 自動生成於 2026-08-10 23:52

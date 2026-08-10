@@ -1,6 +1,6 @@
 # 📅 Daily Dashboard - 2026-08-10
 
-> 最後更新: 2026-08-10 22:17 · 自動生成
+> 最後更新: 2026-08-10 23:52 · 自動生成
 
 ---
 
@@ -14,8 +14,18 @@ _無_
 
 | 專案 | 任務 | 標題 |
 | -- | -- | -- |
+| digital-twin | [T036-taskstore-unify](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T036-taskstore-unify.md) | common/tasks.py 任務存取層（消除 auto_develop 與 agent_registry 重複解析） |
 | digital-twin | [T037-twin-doctor](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T037-twin-doctor.md) | twin doctor 全端自檢命令 |
 | digital-twin | [T038-tasks-gitignore-artifacts](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T038-tasks-gitignore-artifacts.md) | tasks repo 產物清潔（.gitignore 與 routing.json 清理） |
+| tw-quant-daybrain | [T001-scaffold](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T001-scaffold.md) | 專案初始化與設定骨架 |
+| tw-quant-daybrain | [T002-mcp-client](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T002-mcp-client.md) | MCP Client 連線層 |
+| tw-quant-daybrain | [T003-freshness-gate](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T003-freshness-gate.md) | 資料新鮮度守門（Freshness Gate） |
+| tw-quant-daybrain | [T004-event-logging](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T004-event-logging.md) | 事件日誌與回放讀取器 |
+| tw-quant-daybrain | [T005-calendar-scheduler](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T005-calendar-scheduler.md) | 交易日曆與生命週期排程器 |
+| tw-quant-daybrain | [T006-pre-market](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T006-pre-market.md) | 盤前流程（Phase 0 + Phase 1 選股） |
+| tw-quant-daybrain | [T007-scoring](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T007-scoring.md) | 訊號模型 v2.0（Config-Driven 評分） |
+| tw-quant-daybrain | [T008-risk-manager](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T008-risk-manager.md) | 風控系統與持倉狀態機 |
+| tw-quant-daybrain | [T009-intraday-loop](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T009-intraday-loop.md) | 盤中監控循環（Phase 2 + Phase 3） |
 
 ---
 
@@ -23,16 +33,6 @@ _無_
 
 | 專案 | 任務 | 標題 | 優先 |
 | -- | -- | -- | -- |
-| digital-twin | [T036-taskstore-unify](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T036-taskstore-unify.md) | common/tasks.py 任務存取層（消除 auto_develop 與 agent_registry 重複解析） | high |
-| tw-quant-daybrain | [T001-scaffold](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T001-scaffold.md) | 專案初始化與設定骨架 | high |
-| tw-quant-daybrain | [T002-mcp-client](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T002-mcp-client.md) | MCP Client 連線層 | high |
-| tw-quant-daybrain | [T003-freshness-gate](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T003-freshness-gate.md) | 資料新鮮度守門（Freshness Gate） | high |
-| tw-quant-daybrain | [T004-event-logging](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T004-event-logging.md) | 事件日誌與回放讀取器 | high |
-| tw-quant-daybrain | [T005-calendar-scheduler](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T005-calendar-scheduler.md) | 交易日曆與生命週期排程器 | high |
-| tw-quant-daybrain | [T006-pre-market](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T006-pre-market.md) | 盤前流程（Phase 0 + Phase 1 選股） | high |
-| tw-quant-daybrain | [T007-scoring](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T007-scoring.md) | 訊號模型 v2.0（Config-Driven 評分） | high |
-| tw-quant-daybrain | [T008-risk-manager](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T008-risk-manager.md) | 風控系統與持倉狀態機 | high |
-| tw-quant-daybrain | [T009-intraday-loop](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T009-intraday-loop.md) | 盤中監控循環（Phase 2 + Phase 3） | high |
 | tw-quant-daybrain | [T013-testing](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T013-testing.md) | 測試策略與模擬盤（Mock MCP Server） | high |
 | tw-quant-daybrain | [T016-bias-decision-tree](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T016-bias-decision-tree.md) | 盤前多空傾向鎖定（Bias Decision Tree） | high |
 | tw-quant-daybrain | [T017-vwap-surge-long](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T017-vwap-surge-long.md) | 做多策略引擎（VWAP_SURGE_LONG） | high |
@@ -60,16 +60,6 @@ _無_
 
 | 專案 | 任務 | 標題 | 優先 |
 | -- | -- | -- | -- |
-| digital-twin | [T036-taskstore-unify](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T036-taskstore-unify.md) | common/tasks.py 任務存取層（消除 auto_develop 與 agent_registry 重複解析） | high |
-| tw-quant-daybrain | [T001-scaffold](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T001-scaffold.md) | 專案初始化與設定骨架 | high |
-| tw-quant-daybrain | [T002-mcp-client](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T002-mcp-client.md) | MCP Client 連線層 | high |
-| tw-quant-daybrain | [T003-freshness-gate](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T003-freshness-gate.md) | 資料新鮮度守門（Freshness Gate） | high |
-| tw-quant-daybrain | [T004-event-logging](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T004-event-logging.md) | 事件日誌與回放讀取器 | high |
-| tw-quant-daybrain | [T005-calendar-scheduler](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T005-calendar-scheduler.md) | 交易日曆與生命週期排程器 | high |
-| tw-quant-daybrain | [T006-pre-market](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T006-pre-market.md) | 盤前流程（Phase 0 + Phase 1 選股） | high |
-| tw-quant-daybrain | [T007-scoring](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T007-scoring.md) | 訊號模型 v2.0（Config-Driven 評分） | high |
-| tw-quant-daybrain | [T008-risk-manager](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T008-risk-manager.md) | 風控系統與持倉狀態機 | high |
-| tw-quant-daybrain | [T009-intraday-loop](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T009-intraday-loop.md) | 盤中監控循環（Phase 2 + Phase 3） | high |
 | tw-quant-daybrain | [T013-testing](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T013-testing.md) | 測試策略與模擬盤（Mock MCP Server） | high |
 | tw-quant-daybrain | [T016-bias-decision-tree](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T016-bias-decision-tree.md) | 盤前多空傾向鎖定（Bias Decision Tree） | high |
 | tw-quant-daybrain | [T017-vwap-surge-long](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T017-vwap-surge-long.md) | 做多策略引擎（VWAP_SURGE_LONG） | high |
