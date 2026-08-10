@@ -3,7 +3,7 @@ github_issue: null
 title: common/tasks.py 任務存取層（消除 auto_develop 與 agent_registry 重複解析）
 type: refactor
 priority: high
-status: in-progress
+status: pending
 depends_on: []
 assignee: OpenCode with DeepSeek V4 Flash
 created: '2026-08-09'
