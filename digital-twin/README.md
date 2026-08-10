@@ -52,6 +52,9 @@
 | git 操作收斂 common/git.py——auto_develop 五處 subprocess 改用單一模組 |
 | auto_develop 拆分模組（scheduler/providers/diff）——消除 1925 行單一檔案 |
 | auto_develop 接入 common/observability（structlog）——107 個 print 收斂 |
+| twin auto --list 自動從 $PWD 判斷當前專案 |
+| twin auto --list 顯示專案皆完成訊息 |
+| 測試與驗證 T060/T061 |
 
 ## Skip 項目
 
@@ -76,9 +79,6 @@
 | [T57-breaker-timewindow-fix](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T057-breaker-timewindow-fix.md) | worker AIBreaker 熔斷時間窗語意修正（或改用 pybreaker 官方 async 語意） | |
 | [T58-dotenv-single-load](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T058-dotenv-single-load.md) | dotenv 選用載入收斂（9 處重複 → config 單次） | |
 | [T59-test-gap-fill](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T059-test-gap-fill.md) | 測試涵蓋缺口補齊（common/tasks、multi_ai_discuss、task_advisor、index_knowledge、auto_guardrail） | |
-| [T60-auto-detect-project-from-pwd](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T060-auto-detect-project-from-pwd.md) | twin auto --list 自動從 $PWD 判斷當前專案 | |
-| [T61-all-done-friendly-message](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T061-all-done-friendly-message.md) | twin auto --list 顯示專案皆完成訊息 | |
-| [T62-test-verify-t060-t061](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T062-test-verify-t060-t061.md) | 測試與驗證 T060/T061 | |
 
 ## Task 列表
 
@@ -139,10 +139,10 @@
 | [T57-breaker-timewindow-fix](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T057-breaker-timewindow-fix.md) | worker AIBreaker 熔斷時間窗語意修正（或改用 pybreaker 官方 async 語意） | 📋 pending |
 | [T58-dotenv-single-load](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T058-dotenv-single-load.md) | dotenv 選用載入收斂（9 處重複 → config 單次） | 📋 pending |
 | [T59-test-gap-fill](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T059-test-gap-fill.md) | 測試涵蓋缺口補齊（common/tasks、multi_ai_discuss、task_advisor、index_knowledge、auto_guardrail） | 📋 pending |
-| [T60-auto-detect-project-from-pwd](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T060-auto-detect-project-from-pwd.md) | twin auto --list 自動從 $PWD 判斷當前專案 | 📋 pending |
-| [T61-all-done-friendly-message](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T061-all-done-friendly-message.md) | twin auto --list 顯示專案皆完成訊息 | 📋 pending |
-| [T62-test-verify-t060-t061](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T062-test-verify-t060-t061.md) | 測試與驗證 T060/T061 | 📋 pending |
+| [T60-auto-detect-project-from-pwd](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T060-auto-detect-project-from-pwd.md) | twin auto --list 自動從 $PWD 判斷當前專案 | ✅ done |
+| [T61-all-done-friendly-message](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T061-all-done-friendly-message.md) | twin auto --list 顯示專案皆完成訊息 | ✅ done |
+| [T62-test-verify-t060-t061](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T062-test-verify-t060-t061.md) | 測試與驗證 T060/T061 | ✅ done |
 
-**✅ done: 48 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 10**
+**✅ done: 51 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 7**
 
-> 自動生成於 2026-08-11 03:03
+> 自動生成於 2026-08-11 03:21

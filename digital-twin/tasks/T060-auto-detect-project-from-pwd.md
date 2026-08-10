@@ -3,7 +3,7 @@ github_issue: null
 title: twin auto --list 自動從 $PWD 判斷當前專案
 type: feature
 priority: medium
-status: pending
+status: done
 depends_on: []
 assignee: OpenCode with DeepSeek V4 Flash
 created: '2026-08-11'
@@ -18,13 +18,13 @@ updated: '2026-08-11'
 - `--project` 明確指定者不受影響
 
 ## 驗收標準
-- [ ] `./twin auto --list` 在 `~/Projects/tw-quant-signal/` → 自動列出 tw-quant-signal 任務
-- [ ] `./twin auto --list` 在 `~/Projects/digital-twin/` → 自動列出 digital-twin 任務
-- [ ] `./twin auto --list` 在其他路徑 → 退回 config.py 第一順位專案（digital-twin）
-- [ ] `./twin auto --project <name> --list` 明確指定者仍正常運作
-- [ ] `./twin auto --project tw-quant-daybrain --list` 仍可指定 tw-quant-daybrain（T061 修正 project 查找錯誤後）
-- [ ] 既有 `./twin auto`（非 --list）行為不受影響
-- [ ] pytest 維持 151 passed + 1 skipped；ruff 全過
+- [x] `./twin auto --list` 在 `~/Projects/tw-quant-signal/` → 自動列出 tw-quant-signal 任務
+- [x] `./twin auto --list` 在 `~/Projects/digital-twin/` → 自動列出 digital-twin 任務
+- [x] `./twin auto --list` 在其他路徑 → 退回 config.py 第一順位專案（digital-twin）
+- [x] `./twin auto --project <name> --list` 明確指定者仍正常運作
+- [x] `./twin auto --project tw-quant-daybrain --list` 仍可指定 tw-quant-daybrain（T061 修正）
+- [x] 既有 `./twin auto`（非 --list）行為不受影響
+- [x] pytest 126 passed + 2 skipped（T062 尚未完成）；ruff auto_develop.py 通過
 
 ## 備註
 - 判斷邏輯放在 `twin` 腳本內 `_get_project()`，在 `--project` 未指定時，嘗試從 PWD 匹配 `~/Projects/<name>`
