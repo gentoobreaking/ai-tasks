@@ -1,5 +1,5 @@
 ---
-github_issue:https://github.com/gentoobreaking/ai-tasks/issues/647
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/647
 type: completed
 priority: medium
 status: done

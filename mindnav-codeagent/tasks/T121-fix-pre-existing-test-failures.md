@@ -1,5 +1,5 @@
 ---
-github_issue:https://github.com/gentoobreaking/ai-tasks/issues/634
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/634
 type: Feature
 priority: medium
 status: done

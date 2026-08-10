@@ -1,5 +1,5 @@
 ---
-github_issue:https://github.com/gentoobreaking/ai-tasks/issues/636
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/636
 priority: high
 status: done
 assignee:

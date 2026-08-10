@@ -1,5 +1,5 @@
 ---
-github_issue:https://github.com/gentoobreaking/ai-tasks/issues/788
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/788
 type: pending
 priority: high
 status: done
