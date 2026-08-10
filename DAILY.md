@@ -1,6 +1,6 @@
 # 📅 Daily Dashboard - 2026-08-11
 
-> 最後更新: 2026-08-11 03:21 · 自動生成
+> 最後更新: 2026-08-11 03:32 · 自動生成
 
 ---
 
@@ -24,6 +24,8 @@
 | digital-twin | [T060-auto-detect-project-from-pwd](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T060-auto-detect-project-from-pwd.md) | twin auto --list 自動從 $PWD 判斷當前專案 |
 | digital-twin | [T061-all-done-friendly-message](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T061-all-done-friendly-message.md) | twin auto --list 顯示專案皆完成訊息 |
 | digital-twin | [T062-test-verify-t060-t061](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T062-test-verify-t060-t061.md) | 測試與驗證 T060/T061 |
+| digital-twin | [T063-auto-list-header](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T063-auto-list-header.md) | twin auto --list 首行顯示專案標題 |
+| digital-twin | [T064-pwd-detect-all-done-project](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T064-pwd-detect-all-done-project.md) | twin auto --list PWD 自動判斷不支援 all-done 專案 |
 
 ---
 
@@ -40,6 +42,8 @@
 | digital-twin | [T060-auto-detect-project-from-pwd](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T060-auto-detect-project-from-pwd.md) | twin auto --list 自動從 $PWD 判斷當前專案 |
 | digital-twin | [T061-all-done-friendly-message](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T061-all-done-friendly-message.md) | twin auto --list 顯示專案皆完成訊息 |
 | digital-twin | [T062-test-verify-t060-t061](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T062-test-verify-t060-t061.md) | 測試與驗證 T060/T061 |
+| digital-twin | [T063-auto-list-header](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T063-auto-list-header.md) | twin auto --list 首行顯示專案標題 |
+| digital-twin | [T064-pwd-detect-all-done-project](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T064-pwd-detect-all-done-project.md) | twin auto --list PWD 自動判斷不支援 all-done 專案 |
 | tw-quant-daybrain | [T013-testing](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T013-testing.md) | 測試策略與模擬盤（Mock MCP Server） |
 | tw-quant-daybrain | [T014-ops](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T014-ops.md) | 部署、失敗處理與紙上交單 |
 | tw-quant-daybrain | [T016-bias-decision-tree](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T016-bias-decision-tree.md) | 盤前多空傾向鎖定（Bias Decision Tree） |
