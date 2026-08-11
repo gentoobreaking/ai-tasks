@@ -1,4 +1,8 @@
 ---
+status: in-progress
+updated: '2026-08-12'
+---
+---
 github_issue: https://github.com/gentoobreaking/ai-tasks/issues/734
 title: color.ts 工具函式導入頁面取代手寫顏色邏輯
 type: refactor

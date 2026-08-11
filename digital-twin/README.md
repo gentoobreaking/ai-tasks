@@ -52,11 +52,23 @@
 | git 操作收斂 common/git.py——auto_develop 五處 subprocess 改用單一模組 |
 | auto_develop 拆分模組（scheduler/providers/diff）——消除 1925 行單一檔案 |
 | auto_develop 接入 common/observability（structlog）——107 個 print 收斂 |
+| 移除/重寫 config/validate.py 死碼（Pydantic 層無人引用、key 必填與離線測衝突、模型名過時） |
+| URL/環境變數常數收斂至 config（embedding/telegram/REDIS──消除硬編碼與重複） |
+| twin CLI 子命令 --help 可達（argparse 化或 --help 直通檢核） |
+| Telegram 自動推播（auto 完成 / blocked / doctor 異常） |
+| worker AIBreaker 熔斷時間窗語意修正（或改用 pybreaker 官方 async 語意） |
+| dotenv 選用載入收斂（9 處重複 → config 單次） |
+| 測試涵蓋缺口補齊（common/tasks、multi_ai_discuss、task_advisor、index_knowledge、auto_guardrail） |
 | twin auto --list 自動從 $PWD 判斷當前專案 |
 | twin auto --list 顯示專案皆完成訊息 |
 | 測試與驗證 T060/T061 |
 | twin auto --list 首行顯示專案標題 |
 | twin auto --list PWD 自動判斷不支援 all-done 專案 |
+| providers build_implementation_prompt 改用實際任務參數（移除硬編碼） |
+| diff _normalize_path 加入路徑穿越 containment 檢查（防議外寫入） |
+| Dockerfile 依賴補 tenacity（container import discussion_orchestrator 崩潰） |
+| scheduler process_task 加入頂層例外防護（失敗記入 _record_failure 並繼續） |
+| embedding 降級契約修復（openai provider 缺 key 不再 raise） |
 
 ## Skip 項目
 
@@ -74,13 +86,18 @@
 
 | Task | 名稱 | 說明 |
 |------|------|------|
-| [T53-remove-config-validate](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T053-remove-config-validate.md) | 移除/重寫 config/validate.py 死碼（Pydantic 層無人引用、key 必填與離線測衝突、模型名過時） | |
-| [T54-config-env-constants](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T054-config-env-constants.md) | URL/環境變數常數收斂至 config（embedding/telegram/REDIS──消除硬編碼與重複） | |
-| [T55-twin-cli-help](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T055-twin-cli-help.md) | twin CLI 子命令 --help 可達（argparse 化或 --help 直通檢核） | |
-| [T56-telegram-notify-events](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T056-telegram-notify-events.md) | Telegram 自動推播（auto 完成 / blocked / doctor 異常） | |
-| [T57-breaker-timewindow-fix](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T057-breaker-timewindow-fix.md) | worker AIBreaker 熔斷時間窗語意修正（或改用 pybreaker 官方 async 語意） | |
-| [T58-dotenv-single-load](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T058-dotenv-single-load.md) | dotenv 選用載入收斂（9 處重複 → config 單次） | |
-| [T59-test-gap-fill](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T059-test-gap-fill.md) | 測試涵蓋缺口補齊（common/tasks、multi_ai_discuss、task_advisor、index_knowledge、auto_guardrail） | |
+| [T70-webhook-secret-token-auth](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T070-webhook-secret-token-auth.md) | telegram webhook 加入 X-Telegram-Bot-Api-Secret-Token 驗證（防偽造更新） | |
+| [T71-breaker-wrapper-converge](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T071-breaker-wrapper-converge.md) | circuit breaker 兩套 wrapper 收斂（worker AIBreaker / resilience BreakerGuard） | |
+| [T72-knowledge-indexer-converge](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T072-knowledge-indexer-converge.md) | knowledge indexer 重複實作收斂（index_knowledge / incremental_index） | |
+| [T73-consensus-eval-reverse-dep](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T073-consensus-eval-reverse-dep.md) | consensus_eval 反向依賴修正（直連 discussion_orchestrator） | |
+| [T74-prometheus-registry-unify](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T074-prometheus-registry-unify.md) | Prometheus registry 統一（/metrics 缺 OTEL metrics） | |
+| [T75-worker-rag-to-thread](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T075-worker-rag-to-thread.md) | worker RAG 同步搜尋改 asyncio.to_thread（避免阻塞 event loop） | |
+| [T76-scheduler-lock-and-revert-safety](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T076-scheduler-lock-and-revert-safety.md) | scheduler 併跑鎖定與 git_revert_all 資料破壞防護 | |
+| [T77-pybreaker-pin-and-test-hardening](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T077-pybreaker-pin-and-test-hardening.md) | pybreaker 版本上限收緊 + 測試移除私有 API 操作 | |
+| [T78-tautological-tests-fix](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T078-tautological-tests-fix.md) | 收緊寬鬆/謬誤斷言測試（test_telegram_bot 等） | |
+| [T79-env-example-completeness](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T079-env-example-completeness.md) | .env.example 補齊未文件化環境變數 | |
+| [T80-unused-deps-cleanup](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T080-unused-deps-cleanup.md) | 移除未使用依賴（loguru/pydantic/langchain 等）並統一安裝來源 | |
+| [T81-hooks-deadcode-restage](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T081-hooks-deadcode-restage.md) | install_hooks 死碼清理與 pre-commit ruff --fix 後 restage | |
 
 ## Task 列表
 
@@ -134,19 +151,36 @@
 | [T50-git-module-converge](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T050-git-module-converge.md) | git 操作收斂 common/git.py——auto_develop 五處 subprocess 改用單一模組 | ✅ done |
 | [T51-auto-develop-split](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T051-auto-develop-split.md) | auto_develop 拆分模組（scheduler/providers/diff）——消除 1925 行單一檔案 | ✅ done |
 | [T52-auto-develop-observability](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T052-auto-develop-observability.md) | auto_develop 接入 common/observability（structlog）——107 個 print 收斂 | ✅ done |
-| [T53-remove-config-validate](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T053-remove-config-validate.md) | 移除/重寫 config/validate.py 死碼（Pydantic 層無人引用、key 必填與離線測衝突、模型名過時） | 📋 pending |
-| [T54-config-env-constants](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T054-config-env-constants.md) | URL/環境變數常數收斂至 config（embedding/telegram/REDIS──消除硬編碼與重複） | 📋 pending |
-| [T55-twin-cli-help](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T055-twin-cli-help.md) | twin CLI 子命令 --help 可達（argparse 化或 --help 直通檢核） | 📋 pending |
-| [T56-telegram-notify-events](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T056-telegram-notify-events.md) | Telegram 自動推播（auto 完成 / blocked / doctor 異常） | 📋 pending |
-| [T57-breaker-timewindow-fix](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T057-breaker-timewindow-fix.md) | worker AIBreaker 熔斷時間窗語意修正（或改用 pybreaker 官方 async 語意） | 📋 pending |
-| [T58-dotenv-single-load](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T058-dotenv-single-load.md) | dotenv 選用載入收斂（9 處重複 → config 單次） | 📋 pending |
-| [T59-test-gap-fill](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T059-test-gap-fill.md) | 測試涵蓋缺口補齊（common/tasks、multi_ai_discuss、task_advisor、index_knowledge、auto_guardrail） | 📋 pending |
+| [T53-remove-config-validate](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T053-remove-config-validate.md) | 移除/重寫 config/validate.py 死碼（Pydantic 層無人引用、key 必填與離線測衝突、模型名過時） | ✅ done |
+| [T54-config-env-constants](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T054-config-env-constants.md) | URL/環境變數常數收斂至 config（embedding/telegram/REDIS──消除硬編碼與重複） | ✅ done |
+| [T55-twin-cli-help](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T055-twin-cli-help.md) | twin CLI 子命令 --help 可達（argparse 化或 --help 直通檢核） | ✅ done |
+| [T56-telegram-notify-events](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T056-telegram-notify-events.md) | Telegram 自動推播（auto 完成 / blocked / doctor 異常） | ✅ done |
+| [T57-breaker-timewindow-fix](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T057-breaker-timewindow-fix.md) | worker AIBreaker 熔斷時間窗語意修正（或改用 pybreaker 官方 async 語意） | ✅ done |
+| [T58-dotenv-single-load](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T058-dotenv-single-load.md) | dotenv 選用載入收斂（9 處重複 → config 單次） | ✅ done |
+| [T59-test-gap-fill](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T059-test-gap-fill.md) | 測試涵蓋缺口補齊（common/tasks、multi_ai_discuss、task_advisor、index_knowledge、auto_guardrail） | ✅ done |
 | [T60-auto-detect-project-from-pwd](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T060-auto-detect-project-from-pwd.md) | twin auto --list 自動從 $PWD 判斷當前專案 | ✅ done |
 | [T61-all-done-friendly-message](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T061-all-done-friendly-message.md) | twin auto --list 顯示專案皆完成訊息 | ✅ done |
 | [T62-test-verify-t060-t061](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T062-test-verify-t060-t061.md) | 測試與驗證 T060/T061 | ✅ done |
 | [T63-auto-list-header](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T063-auto-list-header.md) | twin auto --list 首行顯示專案標題 | ✅ done |
 | [T64-pwd-detect-all-done-project](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T064-pwd-detect-all-done-project.md) | twin auto --list PWD 自動判斷不支援 all-done 專案 | ✅ done |
+| [T65-providers-prompt-hardcoded-fix](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T065-providers-prompt-hardcoded-fix.md) | providers build_implementation_prompt 改用實際任務參數（移除硬編碼） | ✅ done |
+| [T66-diff-path-containment](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T066-diff-path-containment.md) | diff _normalize_path 加入路徑穿越 containment 檢查（防議外寫入） | ✅ done |
+| [T67-dockerfile-tenacity-fix](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T067-dockerfile-tenacity-fix.md) | Dockerfile 依賴補 tenacity（container import discussion_orchestrator 崩潰） | ✅ done |
+| [T68-process-task-exception-guard](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T068-process-task-exception-guard.md) | scheduler process_task 加入頂層例外防護（失敗記入 _record_failure 並繼續） | ✅ done |
+| [T69-embedding-fallback-contract](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T069-embedding-fallback-contract.md) | embedding 降級契約修復（openai provider 缺 key 不再 raise） | ✅ done |
+| [T70-webhook-secret-token-auth](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T070-webhook-secret-token-auth.md) | telegram webhook 加入 X-Telegram-Bot-Api-Secret-Token 驗證（防偽造更新） | 📋 pending |
+| [T71-breaker-wrapper-converge](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T071-breaker-wrapper-converge.md) | circuit breaker 兩套 wrapper 收斂（worker AIBreaker / resilience BreakerGuard） | 📋 pending |
+| [T72-knowledge-indexer-converge](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T072-knowledge-indexer-converge.md) | knowledge indexer 重複實作收斂（index_knowledge / incremental_index） | 📋 pending |
+| [T73-consensus-eval-reverse-dep](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T073-consensus-eval-reverse-dep.md) | consensus_eval 反向依賴修正（直連 discussion_orchestrator） | 📋 pending |
+| [T74-prometheus-registry-unify](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T074-prometheus-registry-unify.md) | Prometheus registry 統一（/metrics 缺 OTEL metrics） | 📋 pending |
+| [T75-worker-rag-to-thread](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T075-worker-rag-to-thread.md) | worker RAG 同步搜尋改 asyncio.to_thread（避免阻塞 event loop） | 📋 pending |
+| [T76-scheduler-lock-and-revert-safety](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T076-scheduler-lock-and-revert-safety.md) | scheduler 併跑鎖定與 git_revert_all 資料破壞防護 | 📋 pending |
+| [T77-pybreaker-pin-and-test-hardening](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T077-pybreaker-pin-and-test-hardening.md) | pybreaker 版本上限收緊 + 測試移除私有 API 操作 | 📋 pending |
+| [T78-tautological-tests-fix](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T078-tautological-tests-fix.md) | 收緊寬鬆/謬誤斷言測試（test_telegram_bot 等） | 📋 pending |
+| [T79-env-example-completeness](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T079-env-example-completeness.md) | .env.example 補齊未文件化環境變數 | 📋 pending |
+| [T80-unused-deps-cleanup](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T080-unused-deps-cleanup.md) | 移除未使用依賴（loguru/pydantic/langchain 等）並統一安裝來源 | 📋 pending |
+| [T81-hooks-deadcode-restage](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T081-hooks-deadcode-restage.md) | install_hooks 死碼清理與 pre-commit ruff --fix 後 restage | 📋 pending |
 
-**✅ done: 53 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 7**
+**✅ done: 65 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 12**
 
-> 自動生成於 2026-08-11 03:32
+> 自動生成於 2026-08-12 03:29

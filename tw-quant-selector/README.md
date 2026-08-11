@@ -83,7 +83,6 @@
 | 後端 data/status API 接上 Dashboard 資料狀態面板 |
 | Tooltip 元件接入頁面互動提示 |
 | 完成 Print Styles (T059) 與 Color-Blind 人工測試 (T054) |
-| color.ts 工具函式導入頁面取代手寫顏色邏輯 |
 | 整合 Ingestion Pipeline 與系統健康檢查 (Alerting) |
 | 即時損益監控 (Live P/L Monitoring) |
 | Tooltip Portal 改寫 + Z-index 堆疊管理 |
@@ -155,7 +154,7 @@
 
 | Task | 名稱 | 說明 |
 |------|------|------|
-| | | |
+| [T80-color-utility-integration](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-selector/tasks/T080-color-utility-integration.md) | 任務 T080-color-utility-integration | |
 
 ## 待實作
 
@@ -247,7 +246,7 @@
 | [T77-dashboard-data-status-panel](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-selector/tasks/T077-dashboard-data-status-panel.md) | 後端 data/status API 接上 Dashboard 資料狀態面板 | ✅ done |
 | [T78-tooltip-component-integration](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-selector/tasks/T078-tooltip-component-integration.md) | Tooltip 元件接入頁面互動提示 | ✅ done |
 | [T79-print-styles-colorblind-testing](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-selector/tasks/T079-print-styles-colorblind-testing.md) | 完成 Print Styles (T059) 與 Color-Blind 人工測試 (T054) | ✅ done |
-| [T80-color-utility-integration](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-selector/tasks/T080-color-utility-integration.md) | color.ts 工具函式導入頁面取代手寫顏色邏輯 | ✅ done |
+| [T80-color-utility-integration](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-selector/tasks/T080-color-utility-integration.md) | 任務 T080-color-utility-integration | 🔧 in-progress |
 | [T81-pipeline-health-check](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-selector/tasks/T081-pipeline-health-check.md) | 整合 Ingestion Pipeline 與系統健康檢查 (Alerting) | ✅ done |
 | [T82-live-pl-monitoring](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-selector/tasks/T082-live-pl-monitoring.md) | 實作即時損益監控 (Live P/L Monitoring) | ✅ done |
 | [T83-tooltip-portal-stacking](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-selector/tasks/T083-tooltip-portal-stacking.md) | Tooltip Portal 改寫 + Z-index 堆疊管理 | ✅ done |
@@ -311,6 +310,6 @@
 | [T141-asset-class-analysis](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-selector/tasks/T141-asset-class-analysis.md) | 指標計算引擎 | ✅ done |
 | [T142-asset-class-report](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-selector/tasks/T142-asset-class-report.md) | 表格輸出與圖表繪製 + 主入口腳本 | ✅ done |
 
-**✅ done: 140 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 2**
+**✅ done: 139 | 🔧 in-progress: 1 | ⏭️ skip: 0 | 📋 pending: 2**
 
-> 自動生成於 2026-08-11 03:32
+> 自動生成於 2026-08-12 03:29

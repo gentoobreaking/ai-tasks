@@ -28,6 +28,10 @@
 | 事件驅動回測模擬器（DayBrainBacktestSimulator） |
 | 參數網格搜尋（Grid Search） |
 | Walk-Forward Optimization（WFO 滾動驗證） |
+| CLI 輸出人話化——模擬盤/回測輸出可讀性改造 |
+| 部署穩定性——優雅關閉 + 交易日曆預載 |
+| README 重構——CLI 優先 + 功能總覽 + 流程圖 + 應用情境 |
+| 模組說明文件（盤前/簡報/評分/Priority Ranking）+ Apache-2.0 License 宣告 |
 
 ## Skip 項目
 
@@ -75,7 +79,11 @@
 | [T22-backtest-simulator](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T022-backtest-simulator.md) | 事件驅動回測模擬器（DayBrainBacktestSimulator） | ✅ done |
 | [T23-grid-search](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T023-grid-search.md) | 參數網格搜尋（Grid Search） | ✅ done |
 | [T24-wfo-optimizer](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T024-wfo-optimizer.md) | Walk-Forward Optimization（WFO 滾動驗證） | ✅ done |
+| [T25-cli-readable-output](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T025-cli-readable-output.md) | CLI 輸出人話化——模擬盤/回測輸出可讀性改造 | ✅ done |
+| [T26-deploy-stability](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T026-deploy-stability.md) | 部署穩定性——優雅關閉 + 交易日曆預載 | ✅ done |
+| [T27-readme-refactor](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T027-readme-refactor.md) | README 重構——CLI 優先 + 功能總覽 + 流程圖 + 應用情境 | ✅ done |
+| [T28-module-docs-license](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T028-module-docs-license.md) | 模組說明文件（盤前/簡報/評分/Priority Ranking）+ Apache-2.0 License 宣告 | ✅ done |
 
-**✅ done: 24 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 0**
+**✅ done: 28 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 0**
 
-> 自動生成於 2026-08-11 03:32
+> 自動生成於 2026-08-12 03:29
