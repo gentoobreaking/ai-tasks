@@ -3,10 +3,10 @@ github_issue: ""
 title: "[Phase 4] TWSE 盤後資料層遷移至 tw-quant-mcp"
 type: feature
 priority: high
-status: pending
+status: done
 assignee: OpenCode with DeepSeek V4 Flash
 created: 2026-08-02
-updated: 2026-08-02
+updated: 2026-08-12
 ---
 
 # T021 — TWSE 盤後資料層遷移至 tw-quant-mcp
@@ -23,15 +23,15 @@ updated: 2026-08-02
 ## 驗收標準
 
 ### S1: McpClient 基礎建設
-- [ ] `src/tw_quant_signal/provider/mcp_client.py` — 輕量 MCP stdio client
-- [ ] 支援啟動子行程（`subprocess.Popen`）連接 `tw-quant-mcp` 執行檔
-- [ ] JSON-RPC 2.0 通訊層：`_call(method, params) → dict`
-- [ ] 環境變數 `MCP_SERVER_PATH` 指定 mcp 執行檔路徑（預設 `tw-quant-mcp` 在 PATH 中）
-- [ ] 連線健康檢查：`_ping()` 回傳 mcp server 版本號
-- [ ] 連線失敗時自動重試 2 次（間隔 1s backoff）
+- [x] `src/tw_quant_signal/provider/mcp_client.py` — 輕量 MCP stdio client
+- [x] 支援啟動子行程（`subprocess.Popen`）連接 `tw-quant-mcp` 執行檔
+- [x] JSON-RPC 2.0 通訊層：`_call(method, params) → dict`
+- [x] 環境變數 `MCP_SERVER_PATH` 指定 mcp 執行檔路徑（預設 `tw-quant-mcp` 在 PATH 中）
+- [x] 連線健康檢查：`_ping()` 回傳 mcp server 版本號
+- [x] 連線失敗時自動重試 2 次（間隔 1s backoff）
 
 ### S2: McpDataProvider — TWSE 日常行情
-- [ ] 實作 `McpDataProvider(DataProvider)` 中的 TWSE 對應方法：
+- [x] 實作 `McpDataProvider(DataProvider)` 中的 TWSE 對應方法：
 
 | DataProvider 方法 | tw-quant-mcp Tool | 備註 |
 |-------------------|-------------------|------|
@@ -42,28 +42,28 @@ updated: 2026-08-02
 | `fetch_margin_trading` | `get_margin_trading` | 融資融券 |
 
 ### S3: 歷史資料補填
-- [ ] `fetch_historical_daily_prices` → 對應 `get_stock_daily_kline`（支援日期範圍參數）
-- [ ] `fetch_historical_index` → `get_stock_daily_kline` (symbol="^TWII")
-- [ ] 確保 mcp 回傳的歷史資料格式與現有 `fetch_historical_daily_prices` 一致
-- [ ] 不一致導致 DB 寫入錯誤時自動降級回 `TwseDirectProvider`
+- [x] `fetch_historical_daily_prices` → 對應 `get_stock_daily_kline`（支援日期範圍參數）
+- [x] `fetch_historical_index` → `get_stock_daily_kline` (symbol="^TWII")
+- [x] 確保 mcp 回傳的歷史資料格式與現有 `fetch_historical_daily_prices` 一致
+- [x] 不一致導致 DB 寫入錯誤時自動降級回 `TwseDirectProvider`
 
 ### S4: 格式轉換層
-- [ ] 建立 `src/tw_quant_signal/provider/mcp_normalize.py` — 將 mcp 回傳的標準 Envelope 格式轉換為 Python 層預期的 dict 格式
-- [ ] 驗證關鍵欄位映射：
+- [x] 建立 `src/tw_quant_signal/provider/mcp_normalize.py` — 將 mcp 回傳的標準 Envelope 格式轉換為 Python 層預期的 dict 格式
+- [x] 驗證關鍵欄位映射：
   - mcp `{symbol, close, open, high, low, volume, timestamp}` → Python `{stock_id, close, open, high, low, volume, trade_date}`
   - mcp `{date, foreign_net_shares, investment_trust_net_shares, dealer_net_shares}` → Python `{trade_date, foreign_investors_net, sity_investors_net, dealer_net}`
   - mcp `{pe, pb, dividend_yield_pct}` → Python `{pe_ratio, pb_ratio, dividend_yield}`
 
 ### S5: 回退機制（本層級）
-- [ ] mcp 呼叫超時（5s）或回傳錯誤時：自動降級至 `TwseDirectProvider` 的對應方法
-- [ ] 降級記錄 warning log + 標註在 pipeline log 的 message 欄位中
-- [ ] 不因 mcp 掛掉導致整條 pipeline 失敗
+- [x] mcp 呼叫超時（5s）或回傳錯誤時：自動降級至 `TwseDirectProvider` 的對應方法
+- [x] 降級記錄 warning log + 標註在 pipeline log 的 message 欄位中
+- [x] 不因 mcp 掛掉導致整條 pipeline 失敗
 
 ### S6: 端到端驗證
-- [ ] 設定 `TW_QUANT_DATA_PROVIDER=mcp` + `MCP_SERVER_PATH=./bin/tw-quant-mcp`
-- [ ] 運行一次完整 pipeline（至少含 index + stocks + institutional + indicators 階段）
-- [ ] pipeline_log 中顯示資料來源為 mcp（透過 message 欄位）
-- [ ] 比較兩種 provider 模式下 `data/signal.db` 的 daily_prices 表最近一筆記錄完全一致
+- [x] 設定 `TW_QUANT_DATA_PROVIDER=mcp` + `MCP_SERVER_PATH=./bin/tw-quant-mcp`
+- [x] 運行一次完整 pipeline（至少含 index + stocks + institutional + indicators 階段）
+- [x] pipeline_log 中顯示資料來源為 mcp（透過 message 欄位）
+- [x] 比較兩種 provider 模式下 `data/signal.db` 的 daily_prices 表最近一筆記錄完全一致
 
 ## 已交付檔案（計劃）
 

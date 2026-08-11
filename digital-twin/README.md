@@ -69,6 +69,8 @@
 | Dockerfile 依賴補 tenacity（container import discussion_orchestrator 崩潰） |
 | scheduler process_task 加入頂層例外防護（失敗記入 _record_failure 並繼續） |
 | embedding 降級契約修復（openai provider 缺 key 不再 raise） |
+| telegram webhook secret token 驗證（防偽造 Update 繞過 RBAC） |
+| twin auto --list 排序修正（完成在前＋優先級/編號排序） |
 
 ## Skip 項目
 
@@ -86,7 +88,6 @@
 
 | Task | 名稱 | 說明 |
 |------|------|------|
-| [T70-webhook-secret-token-auth](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T070-webhook-secret-token-auth.md) | telegram webhook 加入 X-Telegram-Bot-Api-Secret-Token 驗證（防偽造更新） | |
 | [T71-breaker-wrapper-converge](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T071-breaker-wrapper-converge.md) | circuit breaker 兩套 wrapper 收斂（worker AIBreaker / resilience BreakerGuard） | |
 | [T72-knowledge-indexer-converge](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T072-knowledge-indexer-converge.md) | knowledge indexer 重複實作收斂（index_knowledge / incremental_index） | |
 | [T73-consensus-eval-reverse-dep](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T073-consensus-eval-reverse-dep.md) | consensus_eval 反向依賴修正（直連 discussion_orchestrator） | |
@@ -168,7 +169,7 @@
 | [T67-dockerfile-tenacity-fix](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T067-dockerfile-tenacity-fix.md) | Dockerfile 依賴補 tenacity（container import discussion_orchestrator 崩潰） | ✅ done |
 | [T68-process-task-exception-guard](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T068-process-task-exception-guard.md) | scheduler process_task 加入頂層例外防護（失敗記入 _record_failure 並繼續） | ✅ done |
 | [T69-embedding-fallback-contract](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T069-embedding-fallback-contract.md) | embedding 降級契約修復（openai provider 缺 key 不再 raise） | ✅ done |
-| [T70-webhook-secret-token-auth](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T070-webhook-secret-token-auth.md) | telegram webhook 加入 X-Telegram-Bot-Api-Secret-Token 驗證（防偽造更新） | 📋 pending |
+| [T70-webhook-secret-token-auth](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T070-webhook-secret-token-auth.md) | telegram webhook secret token 驗證（防偽造 Update 繞過 RBAC） | ✅ done |
 | [T71-breaker-wrapper-converge](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T071-breaker-wrapper-converge.md) | circuit breaker 兩套 wrapper 收斂（worker AIBreaker / resilience BreakerGuard） | 📋 pending |
 | [T72-knowledge-indexer-converge](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T072-knowledge-indexer-converge.md) | knowledge indexer 重複實作收斂（index_knowledge / incremental_index） | 📋 pending |
 | [T73-consensus-eval-reverse-dep](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T073-consensus-eval-reverse-dep.md) | consensus_eval 反向依賴修正（直連 discussion_orchestrator） | 📋 pending |
@@ -180,7 +181,8 @@
 | [T79-env-example-completeness](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T079-env-example-completeness.md) | .env.example 補齊未文件化環境變數 | 📋 pending |
 | [T80-unused-deps-cleanup](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T080-unused-deps-cleanup.md) | 移除未使用依賴（loguru/pydantic/langchain 等）並統一安裝來源 | 📋 pending |
 | [T81-hooks-deadcode-restage](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T081-hooks-deadcode-restage.md) | install_hooks 死碼清理與 pre-commit ruff --fix 後 restage | 📋 pending |
+| [T82-auto-list-sort](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T082-auto-list-sort.md) | twin auto --list 排序修正（完成在前＋優先級/編號排序） | ✅ done |
 
-**✅ done: 65 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 12**
+**✅ done: 67 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 11**
 
-> 自動生成於 2026-08-12 03:29
+> 自動生成於 2026-08-12 05:00
