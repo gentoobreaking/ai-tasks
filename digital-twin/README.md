@@ -70,6 +70,7 @@
 | scheduler process_task 加入頂層例外防護（失敗記入 _record_failure 並繼續） |
 | embedding 降級契約修復（openai provider 缺 key 不再 raise） |
 | telegram webhook secret token 驗證（防偽造 Update 繞過 RBAC） |
+| circuit breaker 兩套 wrapper 收斂（worker AIBreaker / resilience BreakerGuard） |
 | twin auto --list 排序修正（完成在前＋優先級/編號排序） |
 
 ## Skip 項目
@@ -88,7 +89,6 @@
 
 | Task | 名稱 | 說明 |
 |------|------|------|
-| [T71-breaker-wrapper-converge](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T071-breaker-wrapper-converge.md) | circuit breaker 兩套 wrapper 收斂（worker AIBreaker / resilience BreakerGuard） | |
 | [T72-knowledge-indexer-converge](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T072-knowledge-indexer-converge.md) | knowledge indexer 重複實作收斂（index_knowledge / incremental_index） | |
 | [T73-consensus-eval-reverse-dep](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T073-consensus-eval-reverse-dep.md) | consensus_eval 反向依賴修正（直連 discussion_orchestrator） | |
 | [T74-prometheus-registry-unify](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T074-prometheus-registry-unify.md) | Prometheus registry 統一（/metrics 缺 OTEL metrics） | |
@@ -170,7 +170,7 @@
 | [T68-process-task-exception-guard](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T068-process-task-exception-guard.md) | scheduler process_task 加入頂層例外防護（失敗記入 _record_failure 並繼續） | ✅ done |
 | [T69-embedding-fallback-contract](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T069-embedding-fallback-contract.md) | embedding 降級契約修復（openai provider 缺 key 不再 raise） | ✅ done |
 | [T70-webhook-secret-token-auth](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T070-webhook-secret-token-auth.md) | telegram webhook secret token 驗證（防偽造 Update 繞過 RBAC） | ✅ done |
-| [T71-breaker-wrapper-converge](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T071-breaker-wrapper-converge.md) | circuit breaker 兩套 wrapper 收斂（worker AIBreaker / resilience BreakerGuard） | 📋 pending |
+| [T71-breaker-wrapper-converge](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T071-breaker-wrapper-converge.md) | circuit breaker 兩套 wrapper 收斂（worker AIBreaker / resilience BreakerGuard） | ✅ done |
 | [T72-knowledge-indexer-converge](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T072-knowledge-indexer-converge.md) | knowledge indexer 重複實作收斂（index_knowledge / incremental_index） | 📋 pending |
 | [T73-consensus-eval-reverse-dep](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T073-consensus-eval-reverse-dep.md) | consensus_eval 反向依賴修正（直連 discussion_orchestrator） | 📋 pending |
 | [T74-prometheus-registry-unify](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T074-prometheus-registry-unify.md) | Prometheus registry 統一（/metrics 缺 OTEL metrics） | 📋 pending |
@@ -183,6 +183,6 @@
 | [T81-hooks-deadcode-restage](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T081-hooks-deadcode-restage.md) | install_hooks 死碼清理與 pre-commit ruff --fix 後 restage | 📋 pending |
 | [T82-auto-list-sort](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T082-auto-list-sort.md) | twin auto --list 排序修正（完成在前＋優先級/編號排序） | ✅ done |
 
-**✅ done: 67 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 11**
+**✅ done: 68 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 10**
 
-> 自動生成於 2026-08-12 05:00
+> 自動生成於 2026-08-12 05:22

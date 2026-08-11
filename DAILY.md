@@ -1,6 +1,6 @@
 # 📅 Daily Dashboard - 2026-08-12
 
-> 最後更新: 2026-08-12 05:00 · 自動生成
+> 最後更新: 2026-08-12 05:22 · 自動生成
 
 ---
 
@@ -53,6 +53,7 @@
 | digital-twin | [T068-process-task-exception-guard](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T068-process-task-exception-guard.md) | scheduler process_task 加入頂層例外防護（失敗記入 _record_failure 並繼續） |
 | digital-twin | [T069-embedding-fallback-contract](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T069-embedding-fallback-contract.md) | embedding 降級契約修復（openai provider 缺 key 不再 raise） |
 | digital-twin | [T070-webhook-secret-token-auth](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T070-webhook-secret-token-auth.md) | telegram webhook secret token 驗證（防偽造 Update 繞過 RBAC） |
+| digital-twin | [T071-breaker-wrapper-converge](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T071-breaker-wrapper-converge.md) | circuit breaker 兩套 wrapper 收斂（worker AIBreaker / resilience BreakerGuard） |
 | digital-twin | [T082-auto-list-sort](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T082-auto-list-sort.md) | twin auto --list 排序修正（完成在前＋優先級/編號排序） |
 | tw-quant-daybrain | [T025-cli-readable-output](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T025-cli-readable-output.md) | CLI 輸出人話化——模擬盤/回測輸出可讀性改造 |
 | tw-quant-daybrain | [T026-deploy-stability](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T026-deploy-stability.md) | 部署穩定性——優雅關閉 + 交易日曆預載 |
@@ -88,7 +89,6 @@
 | -- | -- | -- | -- |
 | tw-quant-mcp | [T033-financial-ajax-fix](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T033-financial-ajax-fix.md) | P0 財報 AJAX 接線（季報三表修復 + PE/ROE + 健康評分連帶修復） | high |
 | tw-quant-signal | [T023-mcp-validation-fallback](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T023-mcp-validation-fallback.md) | [Phase 4] Pipeline 驗證 + mcp fallback — 確認端到端正確性 | high |
-| digital-twin | [T071-breaker-wrapper-converge](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T071-breaker-wrapper-converge.md) | circuit breaker 兩套 wrapper 收斂（worker AIBreaker / resilience BreakerGuard） | medium |
 | digital-twin | [T072-knowledge-indexer-converge](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T072-knowledge-indexer-converge.md) | knowledge indexer 重複實作收斂（index_knowledge / incremental_index） | medium |
 | digital-twin | [T073-consensus-eval-reverse-dep](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T073-consensus-eval-reverse-dep.md) | consensus_eval 反向依賴修正（直連 discussion_orchestrator） | medium |
 | digital-twin | [T074-prometheus-registry-unify](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T074-prometheus-registry-unify.md) | Prometheus registry 統一（/metrics 缺 OTEL metrics） | medium |

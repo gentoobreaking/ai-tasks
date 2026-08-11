@@ -1,6 +1,6 @@
 # 📁 Projects Dashboard
 
-> 最後更新: 2026-08-12 05:00 · 自動生成
+> 最後更新: 2026-08-12 05:22 · 自動生成
 
 ---
 
@@ -10,8 +10,8 @@
 |------|------|
 | 專案數 | 60 |
 | 任務總數 | 970 |
-| ✅ 已完成 | 883 |
-| ⬜ 待處理 | 23 |
+| ✅ 已完成 | 884 |
+| ⬜ 待處理 | 22 |
 | 🔄 進行中 | 2 |
 | ⏭️ 跳過 | 62 |
 | 總完成率 | 97% |
@@ -30,7 +30,6 @@
 
 | 專案 | 任務 | 標題 | 狀態 |
 |------|------|------|------|
-| digital-twin | [T071-breaker-wrapper-converge](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T071-breaker-wrapper-converge.md) | circuit breaker 兩套 wrapper 收斂（worker AIBreaker / resilience BreakerGuard） | ⬜ |
 | digital-twin | [T072-knowledge-indexer-converge](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T072-knowledge-indexer-converge.md) | knowledge indexer 重複實作收斂（index_knowledge / incremental_index） | ⬜ |
 | digital-twin | [T073-consensus-eval-reverse-dep](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T073-consensus-eval-reverse-dep.md) | consensus_eval 反向依賴修正（直連 discussion_orchestrator） | ⬜ |
 | digital-twin | [T074-prometheus-registry-unify](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T074-prometheus-registry-unify.md) | Prometheus registry 統一（/metrics 缺 OTEL metrics） | ⬜ |
@@ -134,8 +133,8 @@
 
 | 指標 | 數值 |
 |------|------|
-| 過去 7 天完成 | 106 |
-| 過去 30 天完成 | 233 |
+| 過去 7 天完成 | 107 |
+| 過去 30 天完成 | 234 |
 | 平均週期時間 | 1.0 天 |
 | 週期時間中位數 | 0.0 天 |
 
@@ -145,10 +144,10 @@ xychart-beta
     title "過去 14 天任務完成趨勢"
     x-axis ["07-30", "07-31", "08-01", "08-02", "08-03", "08-04", "08-05", "08-06", "08-07", "08-08", "08-09", "08-10", "08-11", "08-12"]
     y-axis "完成數" 0 --> 72
-    line [12, 11, 11, 5, 16, 72, 16, 8, 12, 4, 8, 15, 22, 21]
+    line [12, 11, 11, 5, 16, 72, 16, 8, 12, 4, 8, 15, 22, 22]
 ```
 
-📊 總計: 233 | 日均: 16.6 | 本週: 90 | 📉 下降中
+📊 總計: 234 | 日均: 16.7 | 本週: 91 | 📉 下降中
 
 ## 📋 專案列表
 
@@ -162,7 +161,7 @@ xychart-beta
 | ✅ | [cmd-log-parser](https://github.com/gentoobreaking/ai-tasks/tree/main/cmd-log-parser) | 3 | 3 | 0 | 0 | 0 | ████████████████████ 100% | 2026-04-16 |
 | ✅ | [cnyes-stock](https://github.com/gentoobreaking/ai-tasks/tree/main/cnyes-stock) | 16 | 16 | 0 | 0 | 0 | ████████████████████ 100% | 2026-05-12 |
 | ✅ | [dashboard-tool](https://github.com/gentoobreaking/ai-tasks/tree/main/dashboard-tool) | 5 | 5 | 0 | 0 | 0 | ████████████████████ 100% | 2026-04-09 |
-| ⬜ | [digital-twin](https://github.com/gentoobreaking/ai-tasks/tree/main/digital-twin) | 78 | 67 | 11 | 0 | 0 | █████████████████░░░ 85% | 2026-08-12 |
+| ⬜ | [digital-twin](https://github.com/gentoobreaking/ai-tasks/tree/main/digital-twin) | 78 | 68 | 10 | 0 | 0 | █████████████████░░░ 87% | 2026-08-12 |
 | ✅ | [elevenlabs-research](https://github.com/gentoobreaking/ai-tasks/tree/main/elevenlabs-research) | 1 | 1 | 0 | 0 | 0 | ████████████████████ 100% | 2026-04-21 |
 | ✅ | [free-ai-router](https://github.com/gentoobreaking/ai-tasks/tree/main/free-ai-router) | 83 | 83 | 0 | 0 | 0 | ████████████████████ 100% | 2026-08-05 |
 | ✅ | [git-maintenance](https://github.com/gentoobreaking/ai-tasks/tree/main/git-maintenance) | 1 | 1 | 0 | 0 | 0 | ████████████████████ 100% | 2026-05-16 |
