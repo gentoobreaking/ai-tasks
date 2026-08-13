@@ -1,6 +1,6 @@
-# 📅 Daily Dashboard - 2026-08-12
+# 📅 Daily Dashboard - 2026-08-13
 
-> 最後更新: 2026-08-12 21:36 · 自動生成
+> 最後更新: 2026-08-13 16:27 · 自動生成
 
 ---
 
@@ -8,31 +8,32 @@
 
 | 專案 | 任務 | 標題 |
 | -- | -- | -- |
-| digital-twin | [T065-providers-prompt-hardcoded-fix](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T065-providers-prompt-hardcoded-fix.md) | providers build_implementation_prompt 改用實際任務參數（移除硬編碼） |
-| digital-twin | [T066-diff-path-containment](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T066-diff-path-containment.md) | diff _normalize_path 加入路徑穿越 containment 檢查（防議外寫入） |
-| digital-twin | [T067-dockerfile-tenacity-fix](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T067-dockerfile-tenacity-fix.md) | Dockerfile 依賴補 tenacity（container import discussion_orchestrator 崩潰） |
-| digital-twin | [T068-process-task-exception-guard](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T068-process-task-exception-guard.md) | scheduler process_task 加入頂層例外防護（失敗記入 _record_failure 並繼續） |
-| digital-twin | [T069-embedding-fallback-contract](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T069-embedding-fallback-contract.md) | embedding 降級契約修復（openai provider 缺 key 不再 raise） |
-| digital-twin | [T070-webhook-secret-token-auth](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T070-webhook-secret-token-auth.md) | telegram webhook secret token 驗證（防偽造 Update 繞過 RBAC） |
-| digital-twin | [T071-breaker-wrapper-converge](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T071-breaker-wrapper-converge.md) | circuit breaker 兩套 wrapper 收斂（worker AIBreaker / resilience BreakerGuard） |
-| digital-twin | [T072-knowledge-indexer-converge](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T072-knowledge-indexer-converge.md) | knowledge indexer 重複實作收斂（index_knowledge / incremental_index） |
-| digital-twin | [T073-consensus-eval-reverse-dep](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T073-consensus-eval-reverse-dep.md) | consensus_eval 反向依賴修正（直連 discussion_orchestrator） |
-| digital-twin | [T074-prometheus-registry-unify](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T074-prometheus-registry-unify.md) | Prometheus registry 統一（/metrics 缺 OTEL metrics） |
-| digital-twin | [T075-worker-rag-to-thread](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T075-worker-rag-to-thread.md) | worker RAG 同步搜尋改 asyncio.to_thread（避免阻塞 event loop） |
-| digital-twin | [T076-scheduler-lock-and-revert-safety](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T076-scheduler-lock-and-revert-safety.md) | scheduler 併跑鎖定與 git_revert_all 資料破壞防護 |
-| digital-twin | [T077-pybreaker-pin-and-test-hardening](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T077-pybreaker-pin-and-test-hardening.md) | pybreaker 版本上限收緊 + 測試移除私有 API 操作 |
-| digital-twin | [T078-tautological-tests-fix](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T078-tautological-tests-fix.md) | 收緊寬鬆/謬誤斷言測試（test_telegram_bot 等） |
-| digital-twin | [T079-env-example-completeness](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T079-env-example-completeness.md) | .env.example 補齊未文件化環境變數 |
-| digital-twin | [T080-unused-deps-cleanup](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T080-unused-deps-cleanup.md) | 移除未使用依賴（loguru/pydantic/langchain 等）並統一安裝來源 |
-| digital-twin | [T081-hooks-deadcode-restage](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T081-hooks-deadcode-restage.md) | install_hooks 死碼清理與 pre-commit ruff --fix 後 restage |
-| digital-twin | [T082-auto-list-sort](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T082-auto-list-sort.md) | twin auto --list 排序修正（完成在前＋優先級/編號排序） |
-| tw-quant-daybrain | [T025-cli-readable-output](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T025-cli-readable-output.md) | CLI 輸出人話化——模擬盤/回測輸出可讀性改造 |
-| tw-quant-daybrain | [T026-deploy-stability](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T026-deploy-stability.md) | 部署穩定性——優雅關閉 + 交易日曆預載 |
-| tw-quant-daybrain | [T027-readme-refactor](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T027-readme-refactor.md) | README 重構——CLI 優先 + 功能總覽 + 流程圖 + 應用情境 |
-| tw-quant-daybrain | [T028-module-docs-license](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T028-module-docs-license.md) | 模組說明文件（盤前/簡報/評分/Priority Ranking）+ Apache-2.0 License 宣告 |
-| tw-quant-mcp | [T032-etf-index-support](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T032-etf-index-support.md) | ETF（0050）與加權指數資料支援（A+B 合併） |
-| tw-quant-mcp | [T033-financial-ajax-fix](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T033-financial-ajax-fix.md) | P0 財報 AJAX 接線（季報三表修復 + PE/ROE + 健康評分連帶修復） |
-| tw-quant-mcp | [T034-dividend-exdate](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T034-dividend-exdate.md) | P1 股利 ex_date（TWT48U 併入 dividend history + 評估歷史查詢） |
+| local-ai-controlpanel | [T001-tauri-scaffold](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T001-tauri-scaffold.md) | Tauri scaffold（UI-1）：Tauri v2 + 薄 Rust commands + capabilities whitelist |
+| local-ai-controlpanel | [T002-terminal-visual](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T002-terminal-visual.md) | Terminal 視覺基底（UI-2）：暗色主題 + monospace + layout |
+| local-ai-controlpanel | [T003-sse-stream-client](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T003-sse-stream-client.md) | SSE client + Task 列表 + 事件串流（UI-3） |
+| local-ai-controlpanel | [T004-input-command-palette](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T004-input-command-palette.md) | 底部輸入 + 中斷 + 命令面板（UI-4） |
+| local-ai-controlpanel | [T005-repo-scaffold](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T005-repo-scaffold.md) | Repo scaffold（Phase 1）：monorepo 結構 + Control Plane 骨架 |
+| local-ai-controlpanel | [T006-sqlite-task-model](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T006-sqlite-task-model.md) | SQLite schema + Task model + Task Manager（Phase 1） |
+| local-ai-controlpanel | [T007-state-machine](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T007-state-machine.md) | State Machine（Phase 1）：Task 狀態機與轉移管制 |
+| local-ai-controlpanel | [T008-control-plane-api](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T008-control-plane-api.md) | Control Plane API（Phase 1）：Fastify REST + SSE（§45.5 契約） |
+| local-ai-controlpanel | [T009-cli](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T009-cli.md) | CLI（Phase 1）：acp 指令集（§29） |
+| local-ai-controlpanel | [T010-policy-engine](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T010-policy-engine.md) | Policy Engine（Phase 2）：YAML policies + 知識政策 + 決策評估 |
+| local-ai-controlpanel | [T011-artifact-controller](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T011-artifact-controller.md) | Artifact Controller（Phase 2）：patch 驗證 / apply / rollback |
+| local-ai-controlpanel | [T012-verification-sandbox-interface](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T012-verification-sandbox-interface.md) | Verification Engine + Sandbox Interface/Registry（Phase 2，2a） |
+| local-ai-controlpanel | [T013-seatbelt-sandbox](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T013-seatbelt-sandbox.md) | seatbelt（sandbox-exec）adapter（Phase 2，2c）— macOS 預設 |
+| local-ai-controlpanel | [T014-bwrap-sandbox](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T014-bwrap-sandbox.md) | bwrap（bubblewrap）adapter（Phase 2，2b）— Linux 預設 |
+| local-ai-controlpanel | [T015-shuru-sandbox](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T015-shuru-sandbox.md) | Shuru（MicroVM）adapter（Phase 2，2e）— high-risk 可選 |
+| local-ai-controlpanel | [T016-sandbox-switch-check](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T016-sandbox-switch-check.md) | Sandbox 可切換執行 + sandbox check + Matrix 測試（Phase 2，2d/2f） |
+| local-ai-controlpanel | [T017-research-engine](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T017-research-engine.md) | Research Engine（Phase 3）：Python service + 四種 retriever |
+| local-ai-controlpanel | [T018-evidence-bundle](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T018-evidence-bundle.md) | Evidence model + Evidence Bundle + Shaping（Phase 3） |
+| local-ai-controlpanel | [T019-evidence-gate](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T019-evidence-gate.md) | Evidence Gate（Phase 3）：兩階段評估 + 降級政策 + 卡死防護 |
+| local-ai-controlpanel | [T020-reflection-retry](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T020-reflection-retry.md) | Reflection + Retry（Phase 4）：失敗分類器 + 重試政策 |
+| local-ai-controlpanel | [T021-pi-worker](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T021-pi-worker.md) | Worker Interface + Pi Worker + llama.cpp 串接（Phase 1） |
+| local-ai-controlpanel | [T022-worker-registry](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T022-worker-registry.md) | Worker Registry / Router（Phase 1）：註冊與選派 |
+| local-ai-controlpanel | [T023-e2e-test](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T023-e2e-test.md) | 第一個 E2E Test（Phase 4 收尾）：Python repo + 有/無 Research 對照（§40） |
+| local-ai-controlpanel | [T024-benchmark](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T024-benchmark.md) | Benchmark harness（Phase 5）：50 tasks + Baseline A–F + CP Gain |
+| local-ai-controlpanel | [T025-ui-sandbox-integration](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T025-ui-sandbox-integration.md) | UI-5：sandbox 整合顯示 + approve 流程（§45.6） |
+| local-ai-controlpanel | [T026-ui-packaging](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T026-ui-packaging.md) | UI-6：打包 + Control Plane 自動啟動/附著（§45.6） |
 
 ---
 
@@ -40,28 +41,10 @@
 
 | 專案 | 任務 | 標題 |
 | -- | -- | -- |
-| digital-twin | [T053-remove-config-validate](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T053-remove-config-validate.md) | 移除/重寫 config/validate.py 死碼（Pydantic 層無人引用、key 必填與離線測衝突、模型名過時） |
-| digital-twin | [T054-config-env-constants](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T054-config-env-constants.md) | URL/環境變數常數收斂至 config（embedding/telegram/REDIS──消除硬編碼與重複） |
-| digital-twin | [T055-twin-cli-help](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T055-twin-cli-help.md) | twin CLI 子命令 --help 可達（argparse 化或 --help 直通檢核） |
-| digital-twin | [T056-telegram-notify-events](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T056-telegram-notify-events.md) | Telegram 自動推播（auto 完成 / blocked / doctor 異常） |
-| digital-twin | [T057-breaker-timewindow-fix](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T057-breaker-timewindow-fix.md) | worker AIBreaker 熔斷時間窗語意修正（或改用 pybreaker 官方 async 語意） |
-| digital-twin | [T058-dotenv-single-load](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T058-dotenv-single-load.md) | dotenv 選用載入收斂（9 處重複 → config 單次） |
-| digital-twin | [T059-test-gap-fill](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T059-test-gap-fill.md) | 測試涵蓋缺口補齊（common/tasks、multi_ai_discuss、task_advisor、index_knowledge、auto_guardrail） |
-| digital-twin | [T065-providers-prompt-hardcoded-fix](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T065-providers-prompt-hardcoded-fix.md) | providers build_implementation_prompt 改用實際任務參數（移除硬編碼） |
-| digital-twin | [T066-diff-path-containment](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T066-diff-path-containment.md) | diff _normalize_path 加入路徑穿越 containment 檢查（防議外寫入） |
-| digital-twin | [T067-dockerfile-tenacity-fix](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T067-dockerfile-tenacity-fix.md) | Dockerfile 依賴補 tenacity（container import discussion_orchestrator 崩潰） |
-| digital-twin | [T068-process-task-exception-guard](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T068-process-task-exception-guard.md) | scheduler process_task 加入頂層例外防護（失敗記入 _record_failure 並繼續） |
-| digital-twin | [T069-embedding-fallback-contract](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T069-embedding-fallback-contract.md) | embedding 降級契約修復（openai provider 缺 key 不再 raise） |
-| digital-twin | [T070-webhook-secret-token-auth](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T070-webhook-secret-token-auth.md) | telegram webhook secret token 驗證（防偽造 Update 繞過 RBAC） |
-| digital-twin | [T071-breaker-wrapper-converge](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T071-breaker-wrapper-converge.md) | circuit breaker 兩套 wrapper 收斂（worker AIBreaker / resilience BreakerGuard） |
-| digital-twin | [T082-auto-list-sort](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T082-auto-list-sort.md) | twin auto --list 排序修正（完成在前＋優先級/編號排序） |
-| tw-quant-daybrain | [T025-cli-readable-output](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T025-cli-readable-output.md) | CLI 輸出人話化——模擬盤/回測輸出可讀性改造 |
-| tw-quant-daybrain | [T026-deploy-stability](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T026-deploy-stability.md) | 部署穩定性——優雅關閉 + 交易日曆預載 |
-| tw-quant-daybrain | [T027-readme-refactor](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T027-readme-refactor.md) | README 重構——CLI 優先 + 功能總覽 + 流程圖 + 應用情境 |
-| tw-quant-daybrain | [T028-module-docs-license](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-daybrain/tasks/T028-module-docs-license.md) | 模組說明文件（盤前/簡報/評分/Priority Ranking）+ Apache-2.0 License 宣告 |
-| tw-quant-signal | [T020-data-provider-abstraction](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T020-data-provider-abstraction.md) | [Phase 4] DataProvider 抽象層設計 — 定義資料擷取統一介面 |
-| tw-quant-signal | [T021-twse-mcp-migration](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T021-twse-mcp-migration.md) | [Phase 4] TWSE 盤後資料層遷移至 tw-quant-mcp |
-| tw-quant-signal | [T022-mops-mcp-migration](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T022-mops-mcp-migration.md) | [Phase 4] MOPS/基本面資料層遷移至 tw-quant-mcp |
+| local-ai-controlpanel | [T001-tauri-scaffold](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T001-tauri-scaffold.md) | Tauri scaffold（UI-1）：Tauri v2 + 薄 Rust commands + capabilities whitelist |
+| local-ai-controlpanel | [T002-terminal-visual](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T002-terminal-visual.md) | Terminal 視覺基底（UI-2）：暗色主題 + monospace + layout |
+| local-ai-controlpanel | [T003-sse-stream-client](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T003-sse-stream-client.md) | SSE client + Task 列表 + 事件串流（UI-3） |
+| local-ai-controlpanel | [T004-input-command-palette](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T004-input-command-palette.md) | 底部輸入 + 中斷 + 命令面板（UI-4） |
 
 ---
 
@@ -69,6 +52,23 @@
 
 | 專案 | 任務 | 標題 | 優先 |
 | -- | -- | -- | -- |
+| local-ai-controlpanel | [T005-repo-scaffold](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T005-repo-scaffold.md) | Repo scaffold（Phase 1）：monorepo 結構 + Control Plane 骨架 | high |
+| local-ai-controlpanel | [T006-sqlite-task-model](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T006-sqlite-task-model.md) | SQLite schema + Task model + Task Manager（Phase 1） | high |
+| local-ai-controlpanel | [T007-state-machine](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T007-state-machine.md) | State Machine（Phase 1）：Task 狀態機與轉移管制 | high |
+| local-ai-controlpanel | [T008-control-plane-api](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T008-control-plane-api.md) | Control Plane API（Phase 1）：Fastify REST + SSE（§45.5 契約） | high |
+| local-ai-controlpanel | [T009-cli](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T009-cli.md) | CLI（Phase 1）：acp 指令集（§29） | high |
+| local-ai-controlpanel | [T010-policy-engine](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T010-policy-engine.md) | Policy Engine（Phase 2）：YAML policies + 知識政策 + 決策評估 | high |
+| local-ai-controlpanel | [T011-artifact-controller](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T011-artifact-controller.md) | Artifact Controller（Phase 2）：patch 驗證 / apply / rollback | high |
+| local-ai-controlpanel | [T012-verification-sandbox-interface](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T012-verification-sandbox-interface.md) | Verification Engine + Sandbox Interface/Registry（Phase 2，2a） | high |
+| local-ai-controlpanel | [T013-seatbelt-sandbox](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T013-seatbelt-sandbox.md) | seatbelt（sandbox-exec）adapter（Phase 2，2c）— macOS 預設 | high |
+| local-ai-controlpanel | [T016-sandbox-switch-check](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T016-sandbox-switch-check.md) | Sandbox 可切換執行 + sandbox check + Matrix 測試（Phase 2，2d/2f） | high |
+| local-ai-controlpanel | [T017-research-engine](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T017-research-engine.md) | Research Engine（Phase 3）：Python service + 四種 retriever | high |
+| local-ai-controlpanel | [T018-evidence-bundle](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T018-evidence-bundle.md) | Evidence model + Evidence Bundle + Shaping（Phase 3） | high |
+| local-ai-controlpanel | [T019-evidence-gate](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T019-evidence-gate.md) | Evidence Gate（Phase 3）：兩階段評估 + 降級政策 + 卡死防護 | high |
+| local-ai-controlpanel | [T020-reflection-retry](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T020-reflection-retry.md) | Reflection + Retry（Phase 4）：失敗分類器 + 重試政策 | high |
+| local-ai-controlpanel | [T021-pi-worker](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T021-pi-worker.md) | Worker Interface + Pi Worker + llama.cpp 串接（Phase 1） | high |
+| local-ai-controlpanel | [T023-e2e-test](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T023-e2e-test.md) | 第一個 E2E Test（Phase 4 收尾）：Python repo + 有/無 Research 對照（§40） | high |
+| local-ai-controlpanel | [T024-benchmark](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T024-benchmark.md) | Benchmark harness（Phase 5）：50 tasks + Baseline A–F + CP Gain | high |
 | tw-quant-mcp | [T033-financial-ajax-fix](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T033-financial-ajax-fix.md) | P0 財報 AJAX 接線（季報三表修復 + PE/ROE + 健康評分連帶修復） | high |
 | tw-quant-signal | [T023-mcp-validation-fallback](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T023-mcp-validation-fallback.md) | [Phase 4] Pipeline 驗證 + mcp fallback — 確認端到端正確性 | high |
 
@@ -87,6 +87,23 @@
 
 | 專案 | 任務 | 標題 | 優先 |
 | -- | -- | -- | -- |
+| local-ai-controlpanel | [T005-repo-scaffold](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T005-repo-scaffold.md) | Repo scaffold（Phase 1）：monorepo 結構 + Control Plane 骨架 | high |
+| local-ai-controlpanel | [T006-sqlite-task-model](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T006-sqlite-task-model.md) | SQLite schema + Task model + Task Manager（Phase 1） | high |
+| local-ai-controlpanel | [T007-state-machine](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T007-state-machine.md) | State Machine（Phase 1）：Task 狀態機與轉移管制 | high |
+| local-ai-controlpanel | [T008-control-plane-api](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T008-control-plane-api.md) | Control Plane API（Phase 1）：Fastify REST + SSE（§45.5 契約） | high |
+| local-ai-controlpanel | [T009-cli](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T009-cli.md) | CLI（Phase 1）：acp 指令集（§29） | high |
+| local-ai-controlpanel | [T010-policy-engine](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T010-policy-engine.md) | Policy Engine（Phase 2）：YAML policies + 知識政策 + 決策評估 | high |
+| local-ai-controlpanel | [T011-artifact-controller](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T011-artifact-controller.md) | Artifact Controller（Phase 2）：patch 驗證 / apply / rollback | high |
+| local-ai-controlpanel | [T012-verification-sandbox-interface](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T012-verification-sandbox-interface.md) | Verification Engine + Sandbox Interface/Registry（Phase 2，2a） | high |
+| local-ai-controlpanel | [T013-seatbelt-sandbox](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T013-seatbelt-sandbox.md) | seatbelt（sandbox-exec）adapter（Phase 2，2c）— macOS 預設 | high |
+| local-ai-controlpanel | [T016-sandbox-switch-check](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T016-sandbox-switch-check.md) | Sandbox 可切換執行 + sandbox check + Matrix 測試（Phase 2，2d/2f） | high |
+| local-ai-controlpanel | [T017-research-engine](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T017-research-engine.md) | Research Engine（Phase 3）：Python service + 四種 retriever | high |
+| local-ai-controlpanel | [T018-evidence-bundle](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T018-evidence-bundle.md) | Evidence model + Evidence Bundle + Shaping（Phase 3） | high |
+| local-ai-controlpanel | [T019-evidence-gate](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T019-evidence-gate.md) | Evidence Gate（Phase 3）：兩階段評估 + 降級政策 + 卡死防護 | high |
+| local-ai-controlpanel | [T020-reflection-retry](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T020-reflection-retry.md) | Reflection + Retry（Phase 4）：失敗分類器 + 重試政策 | high |
+| local-ai-controlpanel | [T021-pi-worker](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T021-pi-worker.md) | Worker Interface + Pi Worker + llama.cpp 串接（Phase 1） | high |
+| local-ai-controlpanel | [T023-e2e-test](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T023-e2e-test.md) | 第一個 E2E Test（Phase 4 收尾）：Python repo + 有/無 Research 對照（§40） | high |
+| local-ai-controlpanel | [T024-benchmark](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T024-benchmark.md) | Benchmark harness（Phase 5）：50 tasks + Baseline A–F + CP Gain | high |
 | tw-quant-mcp | [T033-financial-ajax-fix](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T033-financial-ajax-fix.md) | P0 財報 AJAX 接線（季報三表修復 + PE/ROE + 健康評分連帶修復） | high |
 | tw-quant-signal | [T023-mcp-validation-fallback](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T023-mcp-validation-fallback.md) | [Phase 4] Pipeline 驗證 + mcp fallback — 確認端到端正確性 | high |
 | digital-twin | [T072-knowledge-indexer-converge](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T072-knowledge-indexer-converge.md) | knowledge indexer 重複實作收斂（index_knowledge / incremental_index） | medium |
@@ -96,6 +113,11 @@
 | digital-twin | [T076-scheduler-lock-and-revert-safety](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T076-scheduler-lock-and-revert-safety.md) | scheduler 併跑鎖定與 git_revert_all 資料破壞防護 | medium |
 | digital-twin | [T077-pybreaker-pin-and-test-hardening](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T077-pybreaker-pin-and-test-hardening.md) | pybreaker 版本上限收緊 + 測試移除私有 API 操作 | medium |
 | digital-twin | [T078-tautological-tests-fix](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T078-tautological-tests-fix.md) | 收緊寬鬆/謬誤斷言測試（test_telegram_bot 等） | medium |
+| local-ai-controlpanel | [T014-bwrap-sandbox](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T014-bwrap-sandbox.md) | bwrap（bubblewrap）adapter（Phase 2，2b）— Linux 預設 | medium |
+| local-ai-controlpanel | [T015-shuru-sandbox](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T015-shuru-sandbox.md) | Shuru（MicroVM）adapter（Phase 2，2e）— high-risk 可選 | medium |
+| local-ai-controlpanel | [T022-worker-registry](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T022-worker-registry.md) | Worker Registry / Router（Phase 1）：註冊與選派 | medium |
+| local-ai-controlpanel | [T025-ui-sandbox-integration](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T025-ui-sandbox-integration.md) | UI-5：sandbox 整合顯示 + approve 流程（§45.6） | medium |
+| local-ai-controlpanel | [T026-ui-packaging](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T026-ui-packaging.md) | UI-6：打包 + Control Plane 自動啟動/附著（§45.6） | medium |
 | tw-quant-mcp | [T032-etf-index-support](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T032-etf-index-support.md) | ETF（0050）與加權指數資料支援（A+B 合併） | medium |
 | tw-quant-mcp | [T034-dividend-exdate](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T034-dividend-exdate.md) | P1 股利 ex_date（TWT48U 併入 dividend history + 評估歷史查詢） | medium |
 | tw-quant-selector | [T134-alerting-module-split-refactor](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-selector/tasks/T134-alerting-module-split-refactor.md) | 拆分大型檔案 alerting.py（模組化重構） | medium |
