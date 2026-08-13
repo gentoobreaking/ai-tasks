@@ -3,11 +3,11 @@ github_issue: N/A
 title: Worker Interface + Pi Worker + llama.cpp 串接（Phase 1）
 type: feature
 priority: high
-status: pending
+status: done
 depends_on: [T005, T008]
 assignee: OpenCode with DeepSeek V4 Flash
 created: 2026-08-13
-updated: 2026-08-13
+updated: 2026-08-14
 ---
 
 # T021 - Worker Interface + Pi Worker
@@ -18,12 +18,12 @@ updated: 2026-08-13
 
 ## 驗收標準
 
-- [ ] `CodingWorker` / `WorkerRequest` / `WorkerResult` 型別（§15）實作
-- [ ] Pi Worker 只收到 Evidence Bundle + plan，**無任何 web search capability**（§16 責任邊界）
-- [ ] llama.cpp OpenAI-compatible endpoint（base URL + model 名稱設定化）可呼叫
-- [ ] interrupt 可中止進行中的 execute
-- [ ] evidence 內容以 `evidence` 欄位傳遞（§16 contract JSON 雛形）
-- [ ] 以 stub/直撥快速路徑先讓 `Task → Worker → Patch` 最小 pipeline 跑通
+- [x] `CodingWorker` / `WorkerRequest` / `WorkerResult` 型別（§15）實作
+- [x] Pi Worker 只收到 Evidence Bundle + plan，**無任何 web search capability**（§16 責任邊界）
+- [x] llama.cpp OpenAI-compatible endpoint（base URL + model 名稱設定化）可呼叫
+- [x] interrupt 可中止進行中的 execute
+- [x] evidence 內容以 `evidence` 欄位傳遞（§16 contract JSON 雛形）
+- [x] 以 stub/直撥快速路徑先讓 `Task → Worker → Patch` 最小 pipeline 跑通
 
 ## 備註
 

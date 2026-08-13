@@ -3,11 +3,11 @@ github_issue: N/A
 title: Worker Registry / Router（Phase 1）：註冊與選派
 type: feature
 priority: medium
-status: pending
+status: done
 depends_on: [T005, T021]
 assignee: OpenCode with DeepSeek V4 Flash
 created: 2026-08-13
-updated: 2026-08-13
+updated: 2026-08-14
 ---
 
 # T022 - Worker Registry / Router
@@ -18,11 +18,11 @@ updated: 2026-08-13
 
 ## 驗收標準
 
-- [ ] `WorkerRegistry` / `WorkerDescriptor`（含 v0.4 欄位）實作
-- [ ] `WorkerRouter.select` 依 ExecutionStrategy 回傳 worker
-- [ ] Phase 1–5 只註冊 `pi-local`（9B, tier: local, enabled）
-- [ ] `acp workers list` 顯示已註冊 worker（配合 T009）
-- [ ] tests：清單 / 未註冊 id 錯誤處理
+- [x] `WorkerRegistry` / `WorkerDescriptor`（含 v0.4 欄位）實作
+- [x] `WorkerRouter.select` 依 ExecutionStrategy 回傳 worker
+- [x] Phase 1–5 只註冊 `pi-local`（9B, tier: local, enabled）
+- [x] `acp workers list` 顯示已註冊 worker（配合 T009）
+- [x] tests：清單 / 未註冊 id 錯誤處理
 
 ## 備註
 

@@ -1,6 +1,6 @@
 # 📁 Projects Dashboard
 
-> 最後更新: 2026-08-13 19:31 · 自動生成
+> 最後更新: 2026-08-13 20:32 · 自動生成
 
 ---
 
@@ -10,17 +10,16 @@
 |------|------|
 | 專案數 | 61 |
 | 任務總數 | 996 |
-| ✅ 已完成 | 904 |
-| ⬜ 待處理 | 28 |
+| ✅ 已完成 | 906 |
+| ⬜ 待處理 | 26 |
 | 🔄 進行中 | 2 |
 | ⏭️ 跳過 | 62 |
-| 總完成率 | 96% |
+| 總完成率 | 97% |
 
 ## 🔥 待處理高優先級任務
 
 | 專案 | 任務 | 標題 |
 |------|------|------|
-| local-ai-controlpanel | [T021-pi-worker](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T021-pi-worker.md) | Worker Interface + Pi Worker + llama.cpp 串接（Phase 1） |
 | local-ai-controlpanel | [T023-e2e-test](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T023-e2e-test.md) | 第一個 E2E Test（Phase 4 收尾）：Python repo + 有/無 Research 對照（§40） |
 | local-ai-controlpanel | [T024-benchmark](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T024-benchmark.md) | Benchmark harness（Phase 5）：50 tasks + Baseline A–F + CP Gain |
 | tw-quant-mcp | [T033-financial-ajax-fix](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T033-financial-ajax-fix.md) | P0 財報 AJAX 接線（季報三表修復 + PE/ROE + 健康評分連帶修復） |
@@ -45,8 +44,6 @@
 | digital-twin | [T081-hooks-deadcode-restage](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T081-hooks-deadcode-restage.md) | install_hooks 死碼清理與 pre-commit ruff --fix 後 restage | ⬜ |
 | gold-analysis-advanced | [T002](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis-advanced/tasks/T002.md) | ML 模型整合與優化 | ⬜ |
 | gold-analysis-advanced | [T004](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis-advanced/tasks/T004.md) | 實盤交易對接 | ⬜ |
-| local-ai-controlpanel | [T021-pi-worker](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T021-pi-worker.md) | Worker Interface + Pi Worker + llama.cpp 串接（Phase 1） | ⬜ |
-| local-ai-controlpanel | [T022-worker-registry](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T022-worker-registry.md) | Worker Registry / Router（Phase 1）：註冊與選派 | ⬜ |
 | local-ai-controlpanel | [T023-e2e-test](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T023-e2e-test.md) | 第一個 E2E Test（Phase 4 收尾）：Python repo + 有/無 Research 對照（§40） | ⬜ |
 | local-ai-controlpanel | [T024-benchmark](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T024-benchmark.md) | Benchmark harness（Phase 5）：50 tasks + Baseline A–F + CP Gain | ⬜ |
 | local-ai-controlpanel | [T025-ui-sandbox-integration](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T025-ui-sandbox-integration.md) | UI-5：sandbox 整合顯示 + approve 流程（§45.6） | ⬜ |
@@ -142,8 +139,8 @@
 
 | 指標 | 數值 |
 |------|------|
-| 過去 7 天完成 | 111 |
-| 過去 30 天完成 | 254 |
+| 過去 7 天完成 | 113 |
+| 過去 30 天完成 | 256 |
 | 平均週期時間 | 1.0 天 |
 | 週期時間中位數 | 0.0 天 |
 
@@ -194,8 +191,7 @@ xychart-beta
 | ✅ | [kgi-monitor](https://github.com/gentoobreaking/ai-tasks/tree/main/kgi-monitor) | 6 | 6 | 0 | 0 | 0 | ████████████████████ 100% | 2026-04-22 |
 | ✅ | [lifecycle-sync-fix](https://github.com/gentoobreaking/ai-tasks/tree/main/lifecycle-sync-fix) | 2 | 2 | 0 | 0 | 0 | ████████████████████ 100% | 2026-04-21 |
 | ✅ | [llm-router](https://github.com/gentoobreaking/ai-tasks/tree/main/llm-router) | 1 | 1 | 0 | 0 | 0 | ████████████████████ 100% | 2026-04-16 |
-| ⬜ | [local-ai-controlpanel](https://github.com/gentoobreaking/ai-tasks/tree/main/local-ai-controlpanel) | 26 | 20 | 6 | 0 | 0 | ███████████████░░░░░ 76% | 2026-08-14 |
-  **[T021-pi-worker](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T021-pi-worker.md)**: Worker Interface + Pi Worker + llama.cpp 串接（Phase 1）
+| ⬜ | [local-ai-controlpanel](https://github.com/gentoobreaking/ai-tasks/tree/main/local-ai-controlpanel) | 26 | 22 | 4 | 0 | 0 | ████████████████░░░░ 84% | 2026-08-14 |
   **[T023-e2e-test](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T023-e2e-test.md)**: 第一個 E2E Test（Phase 4 收尾）：Python repo + 有/無 Research 對照（§40）
   **[T024-benchmark](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T024-benchmark.md)**: Benchmark harness（Phase 5）：50 tasks + Baseline A–F + CP Gain
 | ⬜ | [md-viewer-app](https://github.com/gentoobreaking/ai-tasks/tree/main/md-viewer-app) | 44 | 38 | 1 | 0 | 5 | ███████████████████░ 97% | 2026-05-12 |
