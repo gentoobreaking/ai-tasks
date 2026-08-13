@@ -19,6 +19,11 @@
 | seatbelt（sandbox-exec）adapter（Phase 2，2c）— macOS 預設 |
 | bwrap（bubblewrap）adapter（Phase 2，2b）— Linux 預設 |
 | Shuru（MicroVM）adapter（Phase 2，2e）— high-risk 可選 |
+| Sandbox 可切換執行 + sandbox check + Matrix 測試（Phase 2，2d/2f） |
+| Research Engine（Phase 3）：Python service + 四種 retriever |
+| Evidence model + Evidence Bundle + Shaping（Phase 3） |
+| Evidence Gate（Phase 3）：兩階段評估 + 降級政策 + 卡死防護 |
+| Reflection + Retry（Phase 4）：失敗分類器 + 重試政策 |
 
 ## Skip 項目
 
@@ -36,11 +41,6 @@
 
 | Task | 名稱 | 說明 |
 |------|------|------|
-| [T16-sandbox-switch-check](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T016-sandbox-switch-check.md) | Sandbox 可切換執行 + sandbox check + Matrix 測試（Phase 2，2d/2f） | |
-| [T17-research-engine](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T017-research-engine.md) | Research Engine（Phase 3）：Python service + 四種 retriever | |
-| [T18-evidence-bundle](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T018-evidence-bundle.md) | Evidence model + Evidence Bundle + Shaping（Phase 3） | |
-| [T19-evidence-gate](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T019-evidence-gate.md) | Evidence Gate（Phase 3）：兩階段評估 + 降級政策 + 卡死防護 | |
-| [T20-reflection-retry](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T020-reflection-retry.md) | Reflection + Retry（Phase 4）：失敗分類器 + 重試政策 | |
 | [T21-pi-worker](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T021-pi-worker.md) | Worker Interface + Pi Worker + llama.cpp 串接（Phase 1） | |
 | [T22-worker-registry](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T022-worker-registry.md) | Worker Registry / Router（Phase 1）：註冊與選派 | |
 | [T23-e2e-test](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T023-e2e-test.md) | 第一個 E2E Test（Phase 4 收尾）：Python repo + 有/無 Research 對照（§40） | |
@@ -67,11 +67,11 @@
 | [T13-seatbelt-sandbox](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T013-seatbelt-sandbox.md) | seatbelt（sandbox-exec）adapter（Phase 2，2c）— macOS 預設 | ✅ done |
 | [T14-bwrap-sandbox](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T014-bwrap-sandbox.md) | bwrap（bubblewrap）adapter（Phase 2，2b）— Linux 預設 | ✅ done |
 | [T15-shuru-sandbox](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T015-shuru-sandbox.md) | Shuru（MicroVM）adapter（Phase 2，2e）— high-risk 可選 | ✅ done |
-| [T16-sandbox-switch-check](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T016-sandbox-switch-check.md) | Sandbox 可切換執行 + sandbox check + Matrix 測試（Phase 2，2d/2f） | 📋 pending |
-| [T17-research-engine](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T017-research-engine.md) | Research Engine（Phase 3）：Python service + 四種 retriever | 📋 pending |
-| [T18-evidence-bundle](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T018-evidence-bundle.md) | Evidence model + Evidence Bundle + Shaping（Phase 3） | 📋 pending |
-| [T19-evidence-gate](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T019-evidence-gate.md) | Evidence Gate（Phase 3）：兩階段評估 + 降級政策 + 卡死防護 | 📋 pending |
-| [T20-reflection-retry](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T020-reflection-retry.md) | Reflection + Retry（Phase 4）：失敗分類器 + 重試政策 | 📋 pending |
+| [T16-sandbox-switch-check](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T016-sandbox-switch-check.md) | Sandbox 可切換執行 + sandbox check + Matrix 測試（Phase 2，2d/2f） | ✅ done |
+| [T17-research-engine](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T017-research-engine.md) | Research Engine（Phase 3）：Python service + 四種 retriever | ✅ done |
+| [T18-evidence-bundle](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T018-evidence-bundle.md) | Evidence model + Evidence Bundle + Shaping（Phase 3） | ✅ done |
+| [T19-evidence-gate](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T019-evidence-gate.md) | Evidence Gate（Phase 3）：兩階段評估 + 降級政策 + 卡死防護 | ✅ done |
+| [T20-reflection-retry](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T020-reflection-retry.md) | Reflection + Retry（Phase 4）：失敗分類器 + 重試政策 | ✅ done |
 | [T21-pi-worker](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T021-pi-worker.md) | Worker Interface + Pi Worker + llama.cpp 串接（Phase 1） | 📋 pending |
 | [T22-worker-registry](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T022-worker-registry.md) | Worker Registry / Router（Phase 1）：註冊與選派 | 📋 pending |
 | [T23-e2e-test](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T023-e2e-test.md) | 第一個 E2E Test（Phase 4 收尾）：Python repo + 有/無 Research 對照（§40） | 📋 pending |
@@ -79,6 +79,6 @@
 | [T25-ui-sandbox-integration](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T025-ui-sandbox-integration.md) | UI-5：sandbox 整合顯示 + approve 流程（§45.6） | 📋 pending |
 | [T26-ui-packaging](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T026-ui-packaging.md) | UI-6：打包 + Control Plane 自動啟動/附著（§45.6） | 📋 pending |
 
-**✅ done: 15 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 11**
+**✅ done: 20 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 6**
 
-> 自動生成於 2026-08-13 17:42
+> 自動生成於 2026-08-13 19:31
