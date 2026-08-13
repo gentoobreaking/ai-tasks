@@ -3,11 +3,13 @@ github_issue: N/A
 title: Artifact Controller（Phase 2）：patch 驗證 / apply / rollback
 type: feature
 priority: high
-status: pending
+status: done
 depends_on: [T010, T021]
 assignee: OpenCode with DeepSeek V4 Flash
 created: 2026-08-13
 updated: 2026-08-13
+
+commit: 2cd1d35
 ---
 
 # T011 - Artifact Controller
@@ -18,12 +20,12 @@ updated: 2026-08-13
 
 ## 驗收標準
 
-- [ ] `validate(patch, policy)`：forbidden 檔（.git/**、.env、secrets/**）一律 ArtifactViolation
-- [ ] 非 allowed 路徑的修改被阻擋（UnauthorizedModification）
-- [ ] readonly 檔（package-lock.json 等）拒絕修改
-- [ ] `apply` 以 git diff 格式套用並記錄（patches 表，§27 慣例）
-- [ ] `rollback(patchId)` 可回復
-- [ ] tests：三種違規（forbidden / 未授權 / readonly）全被阻擋
+- [x] `validate(patch, policy)`：forbidden 檔（.git/**、.env、secrets/**）一律 ArtifactViolation
+- [x] 非 allowed 路徑的修改被阻擋（UnauthorizedModification）
+- [x] readonly 檔（package-lock.json 等）拒絕修改
+- [x] `apply` 以 git diff 格式套用並記錄（patches 表，§27 慣例）
+- [x] `rollback(patchId)` 可回復
+- [x] tests：三種違規（forbidden / 未授權 / readonly）全被阻擋
 
 ## 備註
 

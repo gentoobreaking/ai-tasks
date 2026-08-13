@@ -3,11 +3,13 @@ github_issue: N/A
 title: State Machine（Phase 1）：Task 狀態機與轉移管制
 type: feature
 priority: high
-status: pending
+status: done
 depends_on: [T005, T006]
 assignee: OpenCode with DeepSeek V4 Flash
 created: 2026-08-13
 updated: 2026-08-13
+
+commit: b4c3cf4
 ---
 
 # T007 - State Machine
@@ -18,11 +20,11 @@ updated: 2026-08-13
 
 ## 驗收標準
 
-- [ ] §9 全部狀態（CREATED → … → COMPLETE 及 FAIL→REFLECTION 分支）與轉移表實作
-- [ ] 非法轉移拋錯（e.g. RESEARCHING → IMPLEMENTING 直接跳過 EVIDENCE_VALIDATION）
-- [ ] `EVIDENCE_VALIDATION` 四分支（PASS / RESEARCH_AGAIN / BLOCK → ASK_USER|STOP / DEGRADED）可用
-- [ ] `model_limitation` 分類回傳 `STOP`（Phase 1–5 硬限制）
-- [ ] 每次轉移記錄時間戳（供 event log / Observability §32）
+- [x] §9 全部狀態（CREATED → … → COMPLETE 及 FAIL→REFLECTION 分支）與轉移表實作
+- [x] 非法轉移拋錯（e.g. RESEARCHING → IMPLEMENTING 直接跳過 EVIDENCE_VALIDATION）
+- [x] `EVIDENCE_VALIDATION` 四分支（PASS / RESEARCH_AGAIN / BLOCK → ASK_USER|STOP / DEGRADED）可用
+- [x] `model_limitation` 分類回傳 `STOP`（Phase 1–5 硬限制）
+- [x] 每次轉移記錄時間戳（供 event log / Observability §32）
 
 ## 備註
 

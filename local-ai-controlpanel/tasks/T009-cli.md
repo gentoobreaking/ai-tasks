@@ -3,11 +3,13 @@ github_issue: N/A
 title: CLI（Phase 1）：acp 指令集（§29）
 type: feature
 priority: high
-status: pending
+status: done
 depends_on: [T005, T006, T007, T008]
 assignee: OpenCode with DeepSeek V4 Flash
 created: 2026-08-13
 updated: 2026-08-13
+
+commit: 865db52
 ---
 
 # T009 - CLI
@@ -18,13 +20,13 @@ updated: 2026-08-13
 
 ## 驗收標準
 
-- [ ] `acp task run "..."` 建立並即時印出 task 進度
-- [ ] `acp task status TASK-001` / `acp task inspect TASK-001`
-- [ ] `acp research TASK-001` / `acp evidence TASK-001`
-- [ ] `acp workers list` / `acp policy validate`
-- [ ] `acp verify TASK-001`（含 `--sandbox bwrap|seatbelt|shuru|docker` 旗標，實體於 T016 驗收）
-- [ ] `acp logs TASK-001`（event log 輸出）
-- [ ] v0.4/v0.5 指令：`acp strategy TASK-001`、`acp sandbox check`、`acp cloud usage`（未啟用時提示）
+- [x] `acp task run "..."` 建立並即時印出 task 進度
+- [x] `acp task status TASK-001` / `acp task inspect TASK-001`
+- [x] `acp research TASK-001` / `acp evidence TASK-001`
+- [x] `acp workers list` / `acp policy validate`
+- [x] `acp verify TASK-001`（含 `--sandbox bwrap|seatbelt|shuru|docker` 旗標，實體於 T016 驗收）
+- [x] `acp logs TASK-001`（event log 輸出）
+- [x] v0.4/v0.5 指令：`acp strategy TASK-001`、`acp sandbox check`、`acp cloud usage`（未啟用時提示）
 
 ## 備註
 

@@ -3,11 +3,13 @@ github_issue: N/A
 title: SQLite schema + Task model + Task Manager（Phase 1）
 type: feature
 priority: high
-status: pending
+status: done
 depends_on: [T005]
 assignee: OpenCode with DeepSeek V4 Flash
 created: 2026-08-13
 updated: 2026-08-13
+
+commit: 5e38582
 ---
 
 # T006 - SQLite schema + Task model + Task Manager
@@ -18,11 +20,11 @@ updated: 2026-08-13
 
 ## 驗收標準
 
-- [ ] §27 四張核心表 + 其餘表（依 `id / task_id / ... / created_at` 慣例）建立
-- [ ] `tasks` 狀態欄位與 §9 state machine 相容（含 attempt、sandbox_mode）
-- [ ] Task Manager：create / get / list / updateStatus / 關聯 attempt 與 worker_runs
-- [ ] migration 可重複執行（開機自動 migrate）
-- [ ] `tests/unit`：schema CRUD + 過濾查詢測試通過
+- [x] §27 四張核心表 + 其餘表（依 `id / task_id / ... / created_at` 慣例）建立
+- [x] `tasks` 狀態欄位與 §9 state machine 相容（含 attempt、sandbox_mode）
+- [x] Task Manager：create / get / list / updateStatus / 關聯 attempt 與 worker_runs
+- [x] migration 可重複執行（開機自動 migrate）
+- [x] `tests/unit`：schema CRUD + 過濾查詢測試通過
 
 ## 備註
 

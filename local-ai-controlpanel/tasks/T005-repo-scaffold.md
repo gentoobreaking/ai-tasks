@@ -3,11 +3,13 @@ github_issue: N/A
 title: Repo scaffold（Phase 1）：monorepo 結構 + Control Plane 骨架
 type: chore
 priority: high
-status: pending
+status: done
 depends_on: []
 assignee: OpenCode with DeepSeek V4 Flash
 created: 2026-08-13
 updated: 2026-08-13
+
+commit: 9f4f1f2
 ---
 
 # T005 - Repo scaffold（Phase 1）
@@ -20,11 +22,11 @@ updated: 2026-08-13
 
 ## 驗收標準
 
-- [ ] 目錄結構符合 §7（apps / packages / policies / schemas / sandbox-profiles / tests / benchmark）
-- [ ] `pnpm install` 在 root 成功（含 workspace 連結）
-- [ ] `apps/control-plane` 能啟動 Fastify 於 `127.0.0.1:3001` 回 health check
-- [ ] root `tsc --noEmit` 全 repo 通過（strict: true）
-- [ ] `policies/default.yaml` 等預設 policy 檔建立（§10 schema 範例）
+- [x] 目錄結構符合 §7（apps / packages / policies / schemas / sandbox-profiles / tests / benchmark）
+- [x] `pnpm install` 在 root 成功（含 workspace 連結）
+- [x] `apps/control-plane` 能啟動 Fastify 於 `127.0.0.1:3001` 回 health check
+- [x] root `tsc --noEmit` 全 repo 通過（strict: true）
+- [x] `policies/default.yaml` 等預設 policy 檔建立（§10 schema 範例）
 
 ## 備註
 

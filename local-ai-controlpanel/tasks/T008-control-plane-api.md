@@ -3,11 +3,13 @@ github_issue: N/A
 title: Control Plane API（Phase 1）：Fastify REST + SSE（§45.5 契約）
 type: feature
 priority: high
-status: pending
+status: done
 depends_on: [T005, T006, T007]
 assignee: OpenCode with DeepSeek V4 Flash
 created: 2026-08-13
 updated: 2026-08-13
+
+commit: 3c2cad4
 ---
 
 # T008 - Control Plane API（Fastify REST + SSE）
@@ -18,13 +20,13 @@ updated: 2026-08-13
 
 ## 驗收標準
 
-- [ ] `POST /api/v1/tasks`（body: userRequest, workspace?, sandboxMode?）
-- [ ] `GET /api/v1/tasks`（含 status / attempt / sandboxMode）與 `GET /api/v1/tasks/:id`
-- [ ] `GET /api/v1/tasks/:id/events` — SSE 串流（stage/evidence/verification/reflection/done，§45.5 schema）
-- [ ] `POST /api/v1/tasks/:id/cancel`（對應 CLI esc）與 `POST /api/v1/tasks/:id/approve`
-- [ ] `GET /api/v1/sandbox`、`GET /api/v1/strategy/:id`（input 先 stub，實作於 T016 / T010）
-- [ ] 與 Desktop UI 連通測試：建立 task → 串流事件 → 取消，皆正常
-- [ ] 確認 server 僅 listen 127.0.0.1（無對外介面）
+- [x] `POST /api/v1/tasks`（body: userRequest, workspace?, sandboxMode?）
+- [x] `GET /api/v1/tasks`（含 status / attempt / sandboxMode）與 `GET /api/v1/tasks/:id`
+- [x] `GET /api/v1/tasks/:id/events` — SSE 串流（stage/evidence/verification/reflection/done，§45.5 schema）
+- [x] `POST /api/v1/tasks/:id/cancel`（對應 CLI esc）與 `POST /api/v1/tasks/:id/approve`
+- [x] `GET /api/v1/sandbox`、`GET /api/v1/strategy/:id`（input 先 stub，實作於 T016 / T010）
+- [x] 與 Desktop UI 連通測試：建立 task → 串流事件 → 取消，皆正常
+- [x] 確認 server 僅 listen 127.0.0.1（無對外介面）
 
 ## 備註
 
