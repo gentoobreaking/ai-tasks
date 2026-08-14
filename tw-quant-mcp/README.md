@@ -37,6 +37,7 @@
 | 連續運行驗證與 v2.1 發布 |
 | ETF（0050）與加權指數資料支援（A+B 合併） |
 | P0 財報 AJAX 接線（季報三表修復 + PE/ROE + 健康評分連帶修復） |
+| P1 股利 ex_date（TWT48U 併入 dividend history + 評估歷史查詢） |
 
 ## Skip 項目
 
@@ -54,7 +55,7 @@
 
 | Task | 名稱 | 說明 |
 |------|------|------|
-| [T34-dividend-exdate](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T034-dividend-exdate.md) | P1 股利 ex_date（TWT48U 併入 dividend history + 評估歷史查詢） | |
+| | | |
 
 ## Task 列表
 
@@ -93,8 +94,8 @@
 | [T31-release-v21](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T031-release-v21.md) | 連續運行驗證與 v2.1 發布 | ✅ done |
 | [T32-etf-index-support](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T032-etf-index-support.md) | ETF（0050）與加權指數資料支援（A+B 合併） | ✅ done |
 | [T33-financial-ajax-fix](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T033-financial-ajax-fix.md) | P0 財報 AJAX 接線（季報三表修復 + PE/ROE + 健康評分連帶修復） | ✅ done |
-| [T34-dividend-exdate](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T034-dividend-exdate.md) | P1 股利 ex_date（TWT48U 併入 dividend history + 評估歷史查詢） | 📋 pending |
+| [T34-dividend-exdate](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T034-dividend-exdate.md) | P1 股利 ex_date（TWT48U 併入 dividend history + 評估歷史查詢） | ✅ done |
 
-**✅ done: 33 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 1**
+**✅ done: 34 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 0**
 
-> 自動生成於 2026-08-15 01:31
+> 自動生成於 2026-08-15 01:45
