@@ -1,6 +1,6 @@
 # 📅 Daily Dashboard - 2026-08-15
 
-> 最後更新: 2026-08-15 01:45 · 自動生成
+> 最後更新: 2026-08-15 03:31 · 自動生成
 
 ---
 
@@ -30,6 +30,9 @@
 
 | 專案 | 任務 | 標題 |
 | -- | -- | -- |
+| digital-twin | [T083-scheduler-split](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T083-scheduler-split.md) | 拆分 scheduler.py 為 quality_gate.py 與 blocked_flow.py |
+| local-ai-controlpanel | [T025-ui-sandbox-integration](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T025-ui-sandbox-integration.md) | UI-5：sandbox 整合顯示 + approve 流程（§45.6） |
+| local-ai-controlpanel | [T026-ui-packaging](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T026-ui-packaging.md) | UI-6：打包 + Control Plane 自動啟動/附著（§45.6） |
 | tw-quant-mcp | [T032-etf-index-support](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T032-etf-index-support.md) | ETF（0050）與加權指數資料支援（A+B 合併） |
 | tw-quant-mcp | [T033-financial-ajax-fix](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T033-financial-ajax-fix.md) | P0 財報 AJAX 接線（季報三表修復 + PE/ROE + 健康評分連帶修復） |
 | tw-quant-mcp | [T034-dividend-exdate](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T034-dividend-exdate.md) | P1 股利 ex_date（TWT48U 併入 dividend history + 評估歷史查詢） |
@@ -70,11 +73,8 @@
 | local-ai-controlpanel | [T032-memory-retrieval](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T032-memory-retrieval.md) | Memory / Project Memory Retrieval 接入 Pi Worker | high |
 | local-ai-controlpanel | [T036-spec-impl-review](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T036-spec-impl-review.md) | Spec v0.5 vs 實作完整度審查與差距清單產出 | high |
 | tw-quant-signal | [T023-mcp-validation-fallback](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T023-mcp-validation-fallback.md) | [Phase 4] Pipeline 驗證 + mcp fallback — 確認端到端正確性 | high |
-| digital-twin | [T083-scheduler-split](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T083-scheduler-split.md) | 拆分 scheduler.py 為 quality_gate.py 與 blocked_flow.py | medium |
 | digital-twin | [T084-incremental-index-split](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T084-incremental-index-split.md) | 拆分 incremental_index.py 為 indexer.py 與 searcher.py | medium |
 | digital-twin | [T086-e2e-integration-test](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T086-e2e-integration-test.md) | 補充 end-to-end 整合測試（auto_dev → git commit → README sync） | medium |
-| local-ai-controlpanel | [T025-ui-sandbox-integration](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T025-ui-sandbox-integration.md) | UI-5：sandbox 整合顯示 + approve 流程（§45.6） | medium |
-| local-ai-controlpanel | [T026-ui-packaging](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T026-ui-packaging.md) | UI-6：打包 + Control Plane 自動啟動/附著（§45.6） | medium |
 | local-ai-controlpanel | [T029-rag-style-kb](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T029-rag-style-kb.md) | RAG 風格知識庫（Style Knowledge Base） | medium |
 | local-ai-controlpanel | [T033-cli-completion](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T033-cli-completion.md) | CLI 完善與使用者介面 | medium |
 | local-ai-controlpanel | [T034-mcp-acp-protocol](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T034-mcp-acp-protocol.md) | MCP / ACP 協議層實作（Phase 6+ 預留） | medium |

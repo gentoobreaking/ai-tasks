@@ -3,11 +3,11 @@ github_issue: N/A
 title: UI-6：打包 + Control Plane 自動啟動/附著（§45.6）
 type: feature
 priority: medium
-status: pending
+status: done
 depends_on: [T008, T025]
 assignee: OpenCode with DeepSeek V4 Flash
 created: 2026-08-13
-updated: 2026-08-13
+updated: 2026-08-15
 ---
 
 # T026 - UI-6：打包 + Control Plane 自動啟動/附著
@@ -18,10 +18,10 @@ updated: 2026-08-13
 
 ## 驗收標準
 
-- [ ] app 啟動：若 Control Plane 未執行 → spawn；已執行 → 附著
-- [ ] 斷線顯示（SSE onerror 既有機制）＋ 重連成功恢復
-- [ ] `pnpm tauri build` 產出 .app + .dmg 成功（含新功能後重新驗證）
-- [ ] 打包後 app 在無 dev 環境下可獨立運作（含 spawn 的 Control Plane）
+- [x] app 啟動：若 Control Plane 未執行 → spawn；已執行 → 附著
+- [x] 斷線顯示（SSE onerror 既有機制）＋ 重連成功恢復
+- [x] `pnpm tauri build` 產出 .app + .dmg 成功（含新功能後重新驗證）
+- [x] 打包後 app 在無 dev 環境下可獨立運作（含 spawn 的 Control Plane）
 
 ## 備註
 
