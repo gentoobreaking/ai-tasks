@@ -3,11 +3,11 @@ github_issue: N/A
 title: P0 財報 AJAX 接線（季報三表修復 + PE/ROE + 健康評分連帶修復）
 type: feature
 priority: high
-status: pending
+status: done
 depends_on: []
 assignee: OpenCode with DeepSeek V4 Flash
 created: 2026-08-12
-updated: 2026-08-12
+updated: 2026-08-15
 ---
 
 # T033 - P0 財報 AJAX 接線
@@ -18,15 +18,15 @@ updated: 2026-08-12
 **背景**：`t187ap14_L.csv`（MOPS Open Data 損益表摘要）目前僅 435 家，**不含 2330/1101/2317**（2308 對照組正常）。`handlerGetFinancialStatements` 的 income 分支只走 `mopsRows[IncomeStatementRow](MOPSIncomeSummary)`（t187ap14 CSV），CSV 無該代碼即報錯；但 balance/cashflow 分支已用 `mopsStatement[T]`（ajax_t164sb03/05）正常運作，且 `pkg/provider/mops_html.go` 已存在 `parseIncomeStatementHTML`（ajax_t164sb04）parser——**code 已備，僅差 income 分支接線**。
 
 ## 驗收標準
-- [ ] `get_financial_statements`：2330/1101/2317 可回傳損益表摘要（income），且 balance/cashflow 維持現行 AJAX 路徑正常
-- [ ] income 解析以 AJAX 單股逐季（ajax_t164sb04）為 fallback：t187ap14 CSV 有該代碼時仍走 CSV（優先，省呼叫數），無該代碼時走 AJAX
-- [ ] 民國年→西元年轉換正確（沿用現有 `parseMOPSDate`/`mopsYearQuarter` 邏輯，不得出現 2026→3937 型錯誤，T022 教訓）
-- [ ] `get_valuation_ratios`：2330/1101/2317 的 PE/ROE 不再因「無損益表摘要」而失效（pe_available/roe_method 正常標示）
-- [ ] `get_financial_health_check`：獲利/成長面向輸入完整（損益表資料到位）
-- [ ] 契約測試 + 整合測試覆蓋：CSV 有資料（2308）、CSV 無資料走 AJAX（2330）、AJAX 亦無資料（邊界）三路徑
-- [ ] fixtures 存檔 AJAX income HTML 實測樣本（2330 115Q2）
-- [ ] `go build` / `go vet` / `go test ./...` 全綠
-- [ ] 更新 `docs/data-provider-fallback.md`（tw-quant-signal）：季報之 yfinance fallback 於 mcp 側修復後仍保留為最終兜底（mcp 服務未啟動/逾時時），但「資料缺口」原因改列為已修復
+- [x] `get_financial_statements`：2330/1101/2317 可回傳損益表摘要（income），且 balance/cashflow 維持現行 AJAX 路徑正常
+- [x] income 解析以 AJAX 單股逐季（ajax_t164sb04）為 fallback：t187ap14 CSV 有該代碼時仍走 CSV（優先，省呼叫數），無該代碼時走 AJAX
+- [x] 民國年→西元年轉換正確（沿用現有 `parseMOPSDate`/`mopsYearQuarter` 邏輯，不得出現 2026→3937 型錯誤，T022 教訓）
+- [x] `get_valuation_ratios`：2330/1101/2317 的 PE/ROE 不再因「無損益表摘要」而失效（pe_available/roe_method 正常標示）
+- [x] `get_financial_health_check`：獲利/成長面向輸入完整（損益表資料到位）
+- [x] 契約測試 + 整合測試覆蓋：CSV 有資料（2308）、CSV 無資料走 AJAX（2330）、AJAX 亦無資料（邊界）三路徑
+- [x] fixtures 存檔 AJAX income HTML 實測樣本（2330 115Q2）
+- [x] `go build` / `go vet` / `go test ./...` 全綠
+- [x] 更新 `docs/data-provider-fallback.md`（tw-quant-signal）：季報之 yfinance fallback 於 mcp 側修復後仍保留為最終兜底（mcp 服務未啟動/逾時時），但「資料缺口」原因改列為已修復
 
 ## 改動檔案清單
 - `pkg/mcp/tools_de.go`：`handlerGetFinancialStatements` income 分支增加 AJAX fallback（`mopsStatement[IncomeStatementRow](a, ctx, provider.MOPSIncomeStatement, sym.Code, year, quarter)`）；`incomeOf` 空結果時不直接報錯，改為走 AJAX
