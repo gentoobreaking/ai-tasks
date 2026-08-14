@@ -1,6 +1,6 @@
 # 📁 Projects Dashboard
 
-> 最後更新: 2026-08-13 21:08 · 自動生成
+> 最後更新: 2026-08-14 22:25 · 自動生成
 
 ---
 
@@ -10,8 +10,8 @@
 |------|------|
 | 專案數 | 61 |
 | 任務總數 | 996 |
-| ✅ 已完成 | 906 |
-| ⬜ 待處理 | 26 |
+| ✅ 已完成 | 910 |
+| ⬜ 待處理 | 22 |
 | 🔄 進行中 | 2 |
 | ⏭️ 跳過 | 62 |
 | 總完成率 | 97% |
@@ -32,10 +32,6 @@
 
 | 專案 | 任務 | 標題 | 狀態 |
 |------|------|------|------|
-| digital-twin | [T072-knowledge-indexer-converge](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T072-knowledge-indexer-converge.md) | knowledge indexer 重複實作收斂（index_knowledge / incremental_index） | ⬜ |
-| digital-twin | [T073-consensus-eval-reverse-dep](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T073-consensus-eval-reverse-dep.md) | consensus_eval 反向依賴修正（直連 discussion_orchestrator） | ⬜ |
-| digital-twin | [T074-prometheus-registry-unify](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T074-prometheus-registry-unify.md) | Prometheus registry 統一（/metrics 缺 OTEL metrics） | ⬜ |
-| digital-twin | [T075-worker-rag-to-thread](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T075-worker-rag-to-thread.md) | worker RAG 同步搜尋改 asyncio.to_thread（避免阻塞 event loop） | ⬜ |
 | digital-twin | [T076-scheduler-lock-and-revert-safety](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T076-scheduler-lock-and-revert-safety.md) | scheduler 併跑鎖定與 git_revert_all 資料破壞防護 | ⬜ |
 | digital-twin | [T077-pybreaker-pin-and-test-hardening](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T077-pybreaker-pin-and-test-hardening.md) | pybreaker 版本上限收緊 + 測試移除私有 API 操作 | ⬜ |
 | digital-twin | [T078-tautological-tests-fix](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T078-tautological-tests-fix.md) | 收緊寬鬆/謬誤斷言測試（test_telegram_bot 等） | ⬜ |
@@ -139,8 +135,8 @@
 
 | 指標 | 數值 |
 |------|------|
-| 過去 7 天完成 | 113 |
-| 過去 30 天完成 | 256 |
+| 過去 7 天完成 | 109 |
+| 過去 30 天完成 | 260 |
 | 平均週期時間 | 1.0 天 |
 | 週期時間中位數 | 0.0 天 |
 
@@ -148,12 +144,12 @@
 ```mermaid
 xychart-beta
     title "過去 14 天任務完成趨勢"
-    x-axis ["07-31", "08-01", "08-02", "08-03", "08-04", "08-05", "08-06", "08-07", "08-08", "08-09", "08-10", "08-11", "08-12", "08-13"]
+    x-axis ["08-01", "08-02", "08-03", "08-04", "08-05", "08-06", "08-07", "08-08", "08-09", "08-10", "08-11", "08-12", "08-13", "08-14"]
     y-axis "完成數" 0 --> 72
-    line [11, 11, 5, 16, 72, 16, 8, 12, 4, 8, 15, 22, 22, 17]
+    line [11, 5, 16, 72, 16, 8, 12, 4, 8, 15, 22, 22, 17, 9]
 ```
 
-📊 總計: 239 | 日均: 17.1 | 本週: 100 | 📉 下降中
+📊 總計: 237 | 日均: 16.9 | 本週: 97 | 📉 下降中
 
 ## 📋 專案列表
 
@@ -167,7 +163,7 @@ xychart-beta
 | ✅ | [cmd-log-parser](https://github.com/gentoobreaking/ai-tasks/tree/main/cmd-log-parser) | 3 | 3 | 0 | 0 | 0 | ████████████████████ 100% | 2026-04-16 |
 | ✅ | [cnyes-stock](https://github.com/gentoobreaking/ai-tasks/tree/main/cnyes-stock) | 16 | 16 | 0 | 0 | 0 | ████████████████████ 100% | 2026-05-12 |
 | ✅ | [dashboard-tool](https://github.com/gentoobreaking/ai-tasks/tree/main/dashboard-tool) | 5 | 5 | 0 | 0 | 0 | ████████████████████ 100% | 2026-04-09 |
-| ⬜ | [digital-twin](https://github.com/gentoobreaking/ai-tasks/tree/main/digital-twin) | 78 | 68 | 10 | 0 | 0 | █████████████████░░░ 87% | 2026-08-12 |
+| ⬜ | [digital-twin](https://github.com/gentoobreaking/ai-tasks/tree/main/digital-twin) | 78 | 72 | 6 | 0 | 0 | ██████████████████░░ 92% | 2026-08-14 |
 | ✅ | [elevenlabs-research](https://github.com/gentoobreaking/ai-tasks/tree/main/elevenlabs-research) | 1 | 1 | 0 | 0 | 0 | ████████████████████ 100% | 2026-04-21 |
 | ✅ | [free-ai-router](https://github.com/gentoobreaking/ai-tasks/tree/main/free-ai-router) | 83 | 83 | 0 | 0 | 0 | ████████████████████ 100% | 2026-08-05 |
 | ✅ | [git-maintenance](https://github.com/gentoobreaking/ai-tasks/tree/main/git-maintenance) | 1 | 1 | 0 | 0 | 0 | ████████████████████ 100% | 2026-05-16 |
