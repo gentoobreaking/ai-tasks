@@ -3,11 +3,11 @@ github_issue: N/A
 title: ETF（0050）與加權指數資料支援（A+B 合併）
 type: feature
 priority: medium
-status: pending
+status: done
 depends_on: []
 assignee: OpenCode with DeepSeek V4 Flash
 created: 2026-08-12
-updated: 2026-08-12
+updated: 2026-08-15
 ---
 
 # T032 - ETF（0050）與加權指數資料支援（A+B 合併）
@@ -73,11 +73,11 @@ A+B 合併：一次補齊兩塊缺口。ETF 掛進現有個股工具（資料源
 - 全量回歸：`go test ./...`、`make check`、`go vet ./...`、`make test-race` 全綠；`cmd/loadtest` PASS（工具數 37→38）。
 
 ## 驗收標準
-- [ ] `get_twse_index` 可查加權指數單日收盤與歷史日 K，lineage/cache/chart 符合既有規範
-- [ ] Symbol Registry 含上市 ETF（0050/0056/006208 等），`get_stock_daily_kline("0050")`、`get_stock_daily_quote("0050")` 回傳正確資料
-- [ ] 篩選工具（screen_*）行為不變（ETF 仍排除）
-- [ ] 契約測試＋全量回歸通過；`cmd/loadtest` 工具數 38
-- [ ] 文件（TRACEABILITY / README Task 列表）更新
+- [x] `get_twse_index` 可查加權指數單日收盤與歷史日 K，lineage/cache/chart 符合既有規範
+- [x] Symbol Registry 含上市 ETF（0050/0056/006208 等），`get_stock_daily_kline("0050")`、`get_stock_daily_quote("0050")` 回傳正確資料
+- [x] 篩選工具（screen_*）行為不變（ETF 仍排除）
+- [x] 契約測試＋全量回歸通過；`cmd/loadtest` 工具數 38
+- [x] 文件（TRACEABILITY / README Task 列表）更新
 
 ## 備註
 - 風險：`STOCK_DAY_ALL` 含主動型 ETF（00400A 等）與 ETN，`parseTWSEETFList` 需明確過濾規則（6 碼 0 開頭全納，或另以 TWSE ETF 清單精確過濾——`t187ap14L` 實測 302 未通，暫以代碼前綴規則為主，於 task 執行時再驗證官方 ETF 清單端點）。

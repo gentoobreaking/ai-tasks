@@ -35,6 +35,7 @@
 | 25 個 v2.1 Tool 目錄對齊（v1.3 為主、僅新增缺口，v2.1 §9） |
 | v2.1 版契約測試與全量回歸（v2.1 §6 / §14） |
 | 連續運行驗證與 v2.1 發布 |
+| ETF（0050）與加權指數資料支援（A+B 合併） |
 
 ## Skip 項目
 
@@ -52,7 +53,6 @@
 
 | Task | 名稱 | 說明 |
 |------|------|------|
-| [T32-etf-index-support](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T032-etf-index-support.md) | ETF（0050）與加權指數資料支援（A+B 合併） | |
 | [T33-financial-ajax-fix](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T033-financial-ajax-fix.md) | P0 財報 AJAX 接線（季報三表修復 + PE/ROE + 健康評分連帶修復） | |
 | [T34-dividend-exdate](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T034-dividend-exdate.md) | P1 股利 ex_date（TWT48U 併入 dividend history + 評估歷史查詢） | |
 
@@ -91,10 +91,10 @@
 | [T29-tools-v21](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T029-tools-v21.md) | 25 個 v2.1 Tool 目錄對齊（v1.3 為主、僅新增缺口，v2.1 §9） | ✅ done |
 | [T30-contract-v21](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T030-contract-v21.md) | v2.1 版契約測試與全量回歸（v2.1 §6 / §14） | ✅ done |
 | [T31-release-v21](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T031-release-v21.md) | 連續運行驗證與 v2.1 發布 | ✅ done |
-| [T32-etf-index-support](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T032-etf-index-support.md) | ETF（0050）與加權指數資料支援（A+B 合併） | 📋 pending |
+| [T32-etf-index-support](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T032-etf-index-support.md) | ETF（0050）與加權指數資料支援（A+B 合併） | ✅ done |
 | [T33-financial-ajax-fix](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T033-financial-ajax-fix.md) | P0 財報 AJAX 接線（季報三表修復 + PE/ROE + 健康評分連帶修復） | 📋 pending |
 | [T34-dividend-exdate](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T034-dividend-exdate.md) | P1 股利 ex_date（TWT48U 併入 dividend history + 評估歷史查詢） | 📋 pending |
 
-**✅ done: 31 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 3**
+**✅ done: 32 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 2**
 
-> 自動生成於 2026-08-14 22:25
+> 自動生成於 2026-08-15 00:44

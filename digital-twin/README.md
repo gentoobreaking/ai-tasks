@@ -75,6 +75,12 @@
 | consensus_eval 反向依賴修正（直通 discussion_orchestrator） |
 | Prometheus registry 統一（/metrics 缺 OTEL metrics） |
 | worker RAG 同步搜尋改 asyncio.to_thread（避免阻塞 event loop） |
+| scheduler 併跑鎖定與 git_revert_all 資料破壞防護 |
+| pybreaker 版本上限收緊 + 測試移除私有 API 操作 |
+| 收緊寬鬆/謬誤斷言測試（test_telegram_bot 等） |
+| .env.example 補齊未文件化環境變數 |
+| 移除未使用依賴（loguru/pydantic/langchain 等）並統一安裝來源 |
+| install_hooks 死碼清理與 pre-commit ruff --fix 後 restage |
 | twin auto --list 排序修正（完成在前＋優先級/編號排序） |
 
 ## Skip 項目
@@ -93,12 +99,7 @@
 
 | Task | 名稱 | 說明 |
 |------|------|------|
-| [T76-scheduler-lock-and-revert-safety](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T076-scheduler-lock-and-revert-safety.md) | scheduler 併跑鎖定與 git_revert_all 資料破壞防護 | |
-| [T77-pybreaker-pin-and-test-hardening](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T077-pybreaker-pin-and-test-hardening.md) | pybreaker 版本上限收緊 + 測試移除私有 API 操作 | |
-| [T78-tautological-tests-fix](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T078-tautological-tests-fix.md) | 收緊寬鬆/謬誤斷言測試（test_telegram_bot 等） | |
-| [T79-env-example-completeness](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T079-env-example-completeness.md) | .env.example 補齊未文件化環境變數 | |
-| [T80-unused-deps-cleanup](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T080-unused-deps-cleanup.md) | 移除未使用依賴（loguru/pydantic/langchain 等）並統一安裝來源 | |
-| [T81-hooks-deadcode-restage](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T081-hooks-deadcode-restage.md) | install_hooks 死碼清理與 pre-commit ruff --fix 後 restage | |
+| | | |
 
 ## Task 列表
 
@@ -175,14 +176,14 @@
 | [T73-consensus-eval-reverse-dep](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T073-consensus-eval-reverse-dep.md) | consensus_eval 反向依賴修正（直通 discussion_orchestrator） | ✅ done |
 | [T74-prometheus-registry-unify](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T074-prometheus-registry-unify.md) | Prometheus registry 統一（/metrics 缺 OTEL metrics） | ✅ done |
 | [T75-worker-rag-to-thread](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T075-worker-rag-to-thread.md) | worker RAG 同步搜尋改 asyncio.to_thread（避免阻塞 event loop） | ✅ done |
-| [T76-scheduler-lock-and-revert-safety](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T076-scheduler-lock-and-revert-safety.md) | scheduler 併跑鎖定與 git_revert_all 資料破壞防護 | 📋 pending |
-| [T77-pybreaker-pin-and-test-hardening](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T077-pybreaker-pin-and-test-hardening.md) | pybreaker 版本上限收緊 + 測試移除私有 API 操作 | 📋 pending |
-| [T78-tautological-tests-fix](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T078-tautological-tests-fix.md) | 收緊寬鬆/謬誤斷言測試（test_telegram_bot 等） | 📋 pending |
-| [T79-env-example-completeness](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T079-env-example-completeness.md) | .env.example 補齊未文件化環境變數 | 📋 pending |
-| [T80-unused-deps-cleanup](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T080-unused-deps-cleanup.md) | 移除未使用依賴（loguru/pydantic/langchain 等）並統一安裝來源 | 📋 pending |
-| [T81-hooks-deadcode-restage](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T081-hooks-deadcode-restage.md) | install_hooks 死碼清理與 pre-commit ruff --fix 後 restage | 📋 pending |
+| [T76-scheduler-lock-and-revert-safety](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T076-scheduler-lock-and-revert-safety.md) | scheduler 併跑鎖定與 git_revert_all 資料破壞防護 | ✅ done |
+| [T77-pybreaker-pin-and-test-hardening](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T077-pybreaker-pin-and-test-hardening.md) | pybreaker 版本上限收緊 + 測試移除私有 API 操作 | ✅ done |
+| [T78-tautological-tests-fix](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T078-tautological-tests-fix.md) | 收緊寬鬆/謬誤斷言測試（test_telegram_bot 等） | ✅ done |
+| [T79-env-example-completeness](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T079-env-example-completeness.md) | .env.example 補齊未文件化環境變數 | ✅ done |
+| [T80-unused-deps-cleanup](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T080-unused-deps-cleanup.md) | 移除未使用依賴（loguru/pydantic/langchain 等）並統一安裝來源 | ✅ done |
+| [T81-hooks-deadcode-restage](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T081-hooks-deadcode-restage.md) | install_hooks 死碼清理與 pre-commit ruff --fix 後 restage | ✅ done |
 | [T82-auto-list-sort](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T082-auto-list-sort.md) | twin auto --list 排序修正（完成在前＋優先級/編號排序） | ✅ done |
 
-**✅ done: 72 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 6**
+**✅ done: 78 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 0**
 
-> 自動生成於 2026-08-14 22:25
+> 自動生成於 2026-08-15 00:44

@@ -26,6 +26,8 @@
 | Reflection + Retry（Phase 4）：失敗分類器 + 重試政策 |
 | Worker Interface + Pi Worker + llama.cpp 串接（Phase 1） |
 | Worker Registry / Router（Phase 1）：註冊與選派 |
+| 第一個 E2E Test（Phase 4 收尾）：Python repo + 有/無 Research 對照（§40） |
+| Benchmark harness（Phase 5）：50 tasks + Baseline A–F + CP Gain |
 
 ## Skip 項目
 
@@ -43,10 +45,18 @@
 
 | Task | 名稱 | 說明 |
 |------|------|------|
-| [T23-e2e-test](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T023-e2e-test.md) | 第一個 E2E Test（Phase 4 收尾）：Python repo + 有/無 Research 對照（§40） | |
-| [T24-benchmark](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T024-benchmark.md) | Benchmark harness（Phase 5）：50 tasks + Baseline A–F + CP Gain | |
 | [T25-ui-sandbox-integration](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T025-ui-sandbox-integration.md) | UI-5：sandbox 整合顯示 + approve 流程（§45.6） | |
 | [T26-ui-packaging](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T026-ui-packaging.md) | UI-6：打包 + Control Plane 自動啟動/附著（§45.6） | |
+| [T27-style-rules-injection](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T027-style-rules-injection.md) | Prompt 注入風格規範（Style Rules Injection） | |
+| [T28-few-shot-prompt](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T028-few-shot-prompt.md) | Few-shot Prompt Engineering（精選錯誤→修正案例） | |
+| [T29-rag-style-kb](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T029-rag-style-kb.md) | RAG 風格知識庫（Style Knowledge Base） | |
+| [T30-baseline-abef](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T030-baseline-abef.md) | Baseline Groups A–E 完整跑分與對照驗證 | |
+| [T31-metrics-report](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T031-metrics-report.md) | CP Gain / Intelligence Efficiency / Research ROI 指標計算與自動化報告 | |
+| [T32-memory-retrieval](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T032-memory-retrieval.md) | Memory / Project Memory Retrieval 接入 Pi Worker | |
+| [T33-cli-completion](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T033-cli-completion.md) | CLI 完善與使用者介面 | |
+| [T34-mcp-acp-protocol](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T034-mcp-acp-protocol.md) | MCP / ACP 協議層實作（Phase 6+ 預留） | |
+| [T35-hybrid-execution](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T035-hybrid-execution.md) | Phase 9 Hybrid Execution / Cloud Escalation 實作 | |
+| [T36-spec-impl-review](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T036-spec-impl-review.md) | Spec v0.5 vs 實作完整度審查與差距清單產出 | |
 
 ## Task 列表
 
@@ -74,11 +84,21 @@
 | [T20-reflection-retry](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T020-reflection-retry.md) | Reflection + Retry（Phase 4）：失敗分類器 + 重試政策 | ✅ done |
 | [T21-pi-worker](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T021-pi-worker.md) | Worker Interface + Pi Worker + llama.cpp 串接（Phase 1） | ✅ done |
 | [T22-worker-registry](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T022-worker-registry.md) | Worker Registry / Router（Phase 1）：註冊與選派 | ✅ done |
-| [T23-e2e-test](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T023-e2e-test.md) | 第一個 E2E Test（Phase 4 收尾）：Python repo + 有/無 Research 對照（§40） | 📋 pending |
-| [T24-benchmark](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T024-benchmark.md) | Benchmark harness（Phase 5）：50 tasks + Baseline A–F + CP Gain | 📋 pending |
+| [T23-e2e-test](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T023-e2e-test.md) | 第一個 E2E Test（Phase 4 收尾）：Python repo + 有/無 Research 對照（§40） | ✅ done |
+| [T24-benchmark](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T024-benchmark.md) | Benchmark harness（Phase 5）：50 tasks + Baseline A–F + CP Gain | ✅ done |
 | [T25-ui-sandbox-integration](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T025-ui-sandbox-integration.md) | UI-5：sandbox 整合顯示 + approve 流程（§45.6） | 📋 pending |
 | [T26-ui-packaging](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T026-ui-packaging.md) | UI-6：打包 + Control Plane 自動啟動/附著（§45.6） | 📋 pending |
+| [T27-style-rules-injection](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T027-style-rules-injection.md) | Prompt 注入風格規範（Style Rules Injection） | 📋 pending |
+| [T28-few-shot-prompt](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T028-few-shot-prompt.md) | Few-shot Prompt Engineering（精選錯誤→修正案例） | 📋 pending |
+| [T29-rag-style-kb](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T029-rag-style-kb.md) | RAG 風格知識庫（Style Knowledge Base） | 📋 pending |
+| [T30-baseline-abef](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T030-baseline-abef.md) | Baseline Groups A–E 完整跑分與對照驗證 | 📋 pending |
+| [T31-metrics-report](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T031-metrics-report.md) | CP Gain / Intelligence Efficiency / Research ROI 指標計算與自動化報告 | 📋 pending |
+| [T32-memory-retrieval](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T032-memory-retrieval.md) | Memory / Project Memory Retrieval 接入 Pi Worker | 📋 pending |
+| [T33-cli-completion](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T033-cli-completion.md) | CLI 完善與使用者介面 | 📋 pending |
+| [T34-mcp-acp-protocol](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T034-mcp-acp-protocol.md) | MCP / ACP 協議層實作（Phase 6+ 預留） | 📋 pending |
+| [T35-hybrid-execution](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T035-hybrid-execution.md) | Phase 9 Hybrid Execution / Cloud Escalation 實作 | 📋 pending |
+| [T36-spec-impl-review](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T036-spec-impl-review.md) | Spec v0.5 vs 實作完整度審查與差距清單產出 | 📋 pending |
 
-**✅ done: 22 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 4**
+**✅ done: 24 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 12**
 
-> 自動生成於 2026-08-14 22:25
+> 自動生成於 2026-08-15 00:44

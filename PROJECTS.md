@@ -1,6 +1,6 @@
 # 📁 Projects Dashboard
 
-> 最後更新: 2026-08-14 22:25 · 自動生成
+> 最後更新: 2026-08-15 00:44 · 自動生成
 
 ---
 
@@ -9,9 +9,9 @@
 | 指標 | 數量 |
 |------|------|
 | 專案數 | 61 |
-| 任務總數 | 996 |
-| ✅ 已完成 | 910 |
-| ⬜ 待處理 | 22 |
+| 任務總數 | 1006 |
+| ✅ 已完成 | 919 |
+| ⬜ 待處理 | 23 |
 | 🔄 進行中 | 2 |
 | ⏭️ 跳過 | 62 |
 | 總完成率 | 97% |
@@ -20,8 +20,12 @@
 
 | 專案 | 任務 | 標題 |
 |------|------|------|
-| local-ai-controlpanel | [T023-e2e-test](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T023-e2e-test.md) | 第一個 E2E Test（Phase 4 收尾）：Python repo + 有/無 Research 對照（§40） |
-| local-ai-controlpanel | [T024-benchmark](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T024-benchmark.md) | Benchmark harness（Phase 5）：50 tasks + Baseline A–F + CP Gain |
+| local-ai-controlpanel | [T027-style-rules-injection](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T027-style-rules-injection.md) | Prompt 注入風格規範（Style Rules Injection） |
+| local-ai-controlpanel | [T028-few-shot-prompt](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T028-few-shot-prompt.md) | Few-shot Prompt Engineering（精選錯誤→修正案例） |
+| local-ai-controlpanel | [T030-baseline-abef](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T030-baseline-abef.md) | Baseline Groups A–E 完整跑分與對照驗證 |
+| local-ai-controlpanel | [T031-metrics-report](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T031-metrics-report.md) | CP Gain / Intelligence Efficiency / Research ROI 指標計算與自動化報告 |
+| local-ai-controlpanel | [T032-memory-retrieval](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T032-memory-retrieval.md) | Memory / Project Memory Retrieval 接入 Pi Worker |
+| local-ai-controlpanel | [T036-spec-impl-review](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T036-spec-impl-review.md) | Spec v0.5 vs 實作完整度審查與差距清單產出 |
 | tw-quant-mcp | [T033-financial-ajax-fix](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T033-financial-ajax-fix.md) | P0 財報 AJAX 接線（季報三表修復 + PE/ROE + 健康評分連帶修復） |
 | tw-quant-signal | [T023-mcp-validation-fallback](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T023-mcp-validation-fallback.md) | [Phase 4] Pipeline 驗證 + mcp fallback — 確認端到端正確性 |
 
@@ -32,20 +36,21 @@
 
 | 專案 | 任務 | 標題 | 狀態 |
 |------|------|------|------|
-| digital-twin | [T076-scheduler-lock-and-revert-safety](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T076-scheduler-lock-and-revert-safety.md) | scheduler 併跑鎖定與 git_revert_all 資料破壞防護 | ⬜ |
-| digital-twin | [T077-pybreaker-pin-and-test-hardening](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T077-pybreaker-pin-and-test-hardening.md) | pybreaker 版本上限收緊 + 測試移除私有 API 操作 | ⬜ |
-| digital-twin | [T078-tautological-tests-fix](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T078-tautological-tests-fix.md) | 收緊寬鬆/謬誤斷言測試（test_telegram_bot 等） | ⬜ |
-| digital-twin | [T079-env-example-completeness](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T079-env-example-completeness.md) | .env.example 補齊未文件化環境變數 | ⬜ |
-| digital-twin | [T080-unused-deps-cleanup](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T080-unused-deps-cleanup.md) | 移除未使用依賴（loguru/pydantic/langchain 等）並統一安裝來源 | ⬜ |
-| digital-twin | [T081-hooks-deadcode-restage](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T081-hooks-deadcode-restage.md) | install_hooks 死碼清理與 pre-commit ruff --fix 後 restage | ⬜ |
 | gold-analysis-advanced | [T002](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis-advanced/tasks/T002.md) | ML 模型整合與優化 | ⬜ |
 | gold-analysis-advanced | [T004](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis-advanced/tasks/T004.md) | 實盤交易對接 | ⬜ |
-| local-ai-controlpanel | [T023-e2e-test](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T023-e2e-test.md) | 第一個 E2E Test（Phase 4 收尾）：Python repo + 有/無 Research 對照（§40） | ⬜ |
-| local-ai-controlpanel | [T024-benchmark](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T024-benchmark.md) | Benchmark harness（Phase 5）：50 tasks + Baseline A–F + CP Gain | ⬜ |
 | local-ai-controlpanel | [T025-ui-sandbox-integration](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T025-ui-sandbox-integration.md) | UI-5：sandbox 整合顯示 + approve 流程（§45.6） | ⬜ |
 | local-ai-controlpanel | [T026-ui-packaging](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T026-ui-packaging.md) | UI-6：打包 + Control Plane 自動啟動/附著（§45.6） | ⬜ |
+| local-ai-controlpanel | [T027-style-rules-injection](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T027-style-rules-injection.md) | Prompt 注入風格規範（Style Rules Injection） | ⬜ |
+| local-ai-controlpanel | [T028-few-shot-prompt](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T028-few-shot-prompt.md) | Few-shot Prompt Engineering（精選錯誤→修正案例） | ⬜ |
+| local-ai-controlpanel | [T029-rag-style-kb](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T029-rag-style-kb.md) | RAG 風格知識庫（Style Knowledge Base） | ⬜ |
+| local-ai-controlpanel | [T030-baseline-abef](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T030-baseline-abef.md) | Baseline Groups A–E 完整跑分與對照驗證 | ⬜ |
+| local-ai-controlpanel | [T031-metrics-report](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T031-metrics-report.md) | CP Gain / Intelligence Efficiency / Research ROI 指標計算與自動化報告 | ⬜ |
+| local-ai-controlpanel | [T032-memory-retrieval](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T032-memory-retrieval.md) | Memory / Project Memory Retrieval 接入 Pi Worker | ⬜ |
+| local-ai-controlpanel | [T033-cli-completion](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T033-cli-completion.md) | CLI 完善與使用者介面 | ⬜ |
+| local-ai-controlpanel | [T034-mcp-acp-protocol](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T034-mcp-acp-protocol.md) | MCP / ACP 協議層實作（Phase 6+ 預留） | ⬜ |
+| local-ai-controlpanel | [T035-hybrid-execution](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T035-hybrid-execution.md) | Phase 9 Hybrid Execution / Cloud Escalation 實作 | ⬜ |
+| local-ai-controlpanel | [T036-spec-impl-review](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T036-spec-impl-review.md) | Spec v0.5 vs 實作完整度審查與差距清單產出 | ⬜ |
 | md-viewer-app | [T027-預覽連結懸停](https://github.com/gentoobreaking/ai-tasks/blob/main/md-viewer-app/tasks/T027-預覽連結懸停.md) | [T027] 連結懸停預覽 | ⬜ |
-| tw-quant-mcp | [T032-etf-index-support](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T032-etf-index-support.md) | ETF（0050）與加權指數資料支援（A+B 合併） | ⬜ |
 | tw-quant-mcp | [T033-financial-ajax-fix](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T033-financial-ajax-fix.md) | P0 財報 AJAX 接線（季報三表修復 + PE/ROE + 健康評分連帶修復） | ⬜ |
 | tw-quant-mcp | [T034-dividend-exdate](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T034-dividend-exdate.md) | P1 股利 ex_date（TWT48U 併入 dividend history + 評估歷史查詢） | ⬜ |
 | tw-quant-selector | [T134-alerting-module-split-refactor](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-selector/tasks/T134-alerting-module-split-refactor.md) | 拆分大型檔案 alerting.py（模組化重構） | ⬜ |
@@ -135,8 +140,8 @@
 
 | 指標 | 數值 |
 |------|------|
-| 過去 7 天完成 | 109 |
-| 過去 30 天完成 | 260 |
+| 過去 7 天完成 | 106 |
+| 過去 30 天完成 | 269 |
 | 平均週期時間 | 1.0 天 |
 | 週期時間中位數 | 0.0 天 |
 
@@ -144,12 +149,12 @@
 ```mermaid
 xychart-beta
     title "過去 14 天任務完成趨勢"
-    x-axis ["08-01", "08-02", "08-03", "08-04", "08-05", "08-06", "08-07", "08-08", "08-09", "08-10", "08-11", "08-12", "08-13", "08-14"]
+    x-axis ["08-02", "08-03", "08-04", "08-05", "08-06", "08-07", "08-08", "08-09", "08-10", "08-11", "08-12", "08-13", "08-14", "08-15"]
     y-axis "完成數" 0 --> 72
-    line [11, 5, 16, 72, 16, 8, 12, 4, 8, 15, 22, 22, 17, 9]
+    line [5, 16, 72, 16, 8, 12, 4, 8, 15, 22, 22, 17, 17, 1]
 ```
 
-📊 總計: 237 | 日均: 16.9 | 本週: 97 | 📉 下降中
+📊 總計: 235 | 日均: 16.8 | 本週: 102 | 📉 下降中
 
 ## 📋 專案列表
 
@@ -163,7 +168,7 @@ xychart-beta
 | ✅ | [cmd-log-parser](https://github.com/gentoobreaking/ai-tasks/tree/main/cmd-log-parser) | 3 | 3 | 0 | 0 | 0 | ████████████████████ 100% | 2026-04-16 |
 | ✅ | [cnyes-stock](https://github.com/gentoobreaking/ai-tasks/tree/main/cnyes-stock) | 16 | 16 | 0 | 0 | 0 | ████████████████████ 100% | 2026-05-12 |
 | ✅ | [dashboard-tool](https://github.com/gentoobreaking/ai-tasks/tree/main/dashboard-tool) | 5 | 5 | 0 | 0 | 0 | ████████████████████ 100% | 2026-04-09 |
-| ⬜ | [digital-twin](https://github.com/gentoobreaking/ai-tasks/tree/main/digital-twin) | 78 | 72 | 6 | 0 | 0 | ██████████████████░░ 92% | 2026-08-14 |
+| ✅ | [digital-twin](https://github.com/gentoobreaking/ai-tasks/tree/main/digital-twin) | 78 | 78 | 0 | 0 | 0 | ████████████████████ 100% | 2026-08-14 |
 | ✅ | [elevenlabs-research](https://github.com/gentoobreaking/ai-tasks/tree/main/elevenlabs-research) | 1 | 1 | 0 | 0 | 0 | ████████████████████ 100% | 2026-04-21 |
 | ✅ | [free-ai-router](https://github.com/gentoobreaking/ai-tasks/tree/main/free-ai-router) | 83 | 83 | 0 | 0 | 0 | ████████████████████ 100% | 2026-08-05 |
 | ✅ | [git-maintenance](https://github.com/gentoobreaking/ai-tasks/tree/main/git-maintenance) | 1 | 1 | 0 | 0 | 0 | ████████████████████ 100% | 2026-05-16 |
@@ -187,9 +192,13 @@ xychart-beta
 | ✅ | [kgi-monitor](https://github.com/gentoobreaking/ai-tasks/tree/main/kgi-monitor) | 6 | 6 | 0 | 0 | 0 | ████████████████████ 100% | 2026-04-22 |
 | ✅ | [lifecycle-sync-fix](https://github.com/gentoobreaking/ai-tasks/tree/main/lifecycle-sync-fix) | 2 | 2 | 0 | 0 | 0 | ████████████████████ 100% | 2026-04-21 |
 | ✅ | [llm-router](https://github.com/gentoobreaking/ai-tasks/tree/main/llm-router) | 1 | 1 | 0 | 0 | 0 | ████████████████████ 100% | 2026-04-16 |
-| ⬜ | [local-ai-controlpanel](https://github.com/gentoobreaking/ai-tasks/tree/main/local-ai-controlpanel) | 26 | 22 | 4 | 0 | 0 | ████████████████░░░░ 84% | 2026-08-14 |
-  **[T023-e2e-test](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T023-e2e-test.md)**: 第一個 E2E Test（Phase 4 收尾）：Python repo + 有/無 Research 對照（§40）
-  **[T024-benchmark](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T024-benchmark.md)**: Benchmark harness（Phase 5）：50 tasks + Baseline A–F + CP Gain
+| ⬜ | [local-ai-controlpanel](https://github.com/gentoobreaking/ai-tasks/tree/main/local-ai-controlpanel) | 36 | 24 | 12 | 0 | 0 | █████████████░░░░░░░ 66% | 2026-08-15 |
+  **[T027-style-rules-injection](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T027-style-rules-injection.md)**: Prompt 注入風格規範（Style Rules Injection）
+  **[T028-few-shot-prompt](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T028-few-shot-prompt.md)**: Few-shot Prompt Engineering（精選錯誤→修正案例）
+  **[T030-baseline-abef](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T030-baseline-abef.md)**: Baseline Groups A–E 完整跑分與對照驗證
+  **[T031-metrics-report](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T031-metrics-report.md)**: CP Gain / Intelligence Efficiency / Research ROI 指標計算與自動化報告
+  **[T032-memory-retrieval](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T032-memory-retrieval.md)**: Memory / Project Memory Retrieval 接入 Pi Worker
+  **[T036-spec-impl-review](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T036-spec-impl-review.md)**: Spec v0.5 vs 實作完整度審查與差距清單產出
 | ⬜ | [md-viewer-app](https://github.com/gentoobreaking/ai-tasks/tree/main/md-viewer-app) | 44 | 38 | 1 | 0 | 5 | ███████████████████░ 97% | 2026-05-12 |
 | ✅ | [member-backup](https://github.com/gentoobreaking/ai-tasks/tree/main/member-backup) | 1 | 1 | 0 | 0 | 0 | ████████████████████ 100% | 2026-04-16 |
 | ✅ | [member-config-review](https://github.com/gentoobreaking/ai-tasks/tree/main/member-config-review) | 7 | 7 | 0 | 0 | 0 | ████████████████████ 100% | 2026-04-19 |
@@ -210,7 +219,7 @@ xychart-beta
 | ✅ | [task-url-repair](https://github.com/gentoobreaking/ai-tasks/tree/main/task-url-repair) | 1 | 1 | 0 | 0 | 0 | ████████████████████ 100% | 2026-04-20 |
 | ✅ | [tasks-executor](https://github.com/gentoobreaking/ai-tasks/tree/main/tasks-executor) | 8 | 8 | 0 | 0 | 0 | ████████████████████ 100% | 2026-05-12 |
 | ✅ | [tw-quant-daybrain](https://github.com/gentoobreaking/ai-tasks/tree/main/tw-quant-daybrain) | 28 | 28 | 0 | 0 | 0 | ████████████████████ 100% | 2026-08-12 |
-| ⬜ | [tw-quant-mcp](https://github.com/gentoobreaking/ai-tasks/tree/main/tw-quant-mcp) | 34 | 31 | 3 | 0 | 0 | ██████████████████░░ 91% | 2026-08-12 |
+| ⬜ | [tw-quant-mcp](https://github.com/gentoobreaking/ai-tasks/tree/main/tw-quant-mcp) | 34 | 32 | 2 | 0 | 0 | ██████████████████░░ 94% | 2026-08-15 |
   **[T033-financial-ajax-fix](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T033-financial-ajax-fix.md)**: P0 財報 AJAX 接線（季報三表修復 + PE/ROE + 健康評分連帶修復）
 | 🔄 | [tw-quant-selector](https://github.com/gentoobreaking/ai-tasks/tree/main/tw-quant-selector) | 142 | 139 | 2 | 1 | 0 | ███████████████████░ 97% | 2026-08-12 |
 | ⬜ | [tw-quant-signal](https://github.com/gentoobreaking/ai-tasks/tree/main/tw-quant-signal) | 28 | 24 | 4 | 0 | 0 | █████████████████░░░ 85% | 2026-08-12 |
