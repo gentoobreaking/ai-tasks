@@ -146,6 +146,7 @@
 | 台股資產分類與價格預先下載模組 |
 | 指標計算引擎 |
 | 表格輸出與圖表繪製 + 主入口腳本 |
+| Migrate data source to tw-quant-mcp |
 
 ## Skip 項目
 
@@ -163,7 +164,11 @@
 
 | Task | 名稱 | 說明 |
 |------|------|------|
-| | | |
+| [T144-mcp-client](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-selector/tasks/T144-mcp-client.md) | 新增 MCP client 封裝 | |
+| [T145-realtime-mcp](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-selector/tasks/T145-realtime-mcp.md) | 修改 realtime_quotes.py 使用 MCP 實時數據 | |
+| [T146-api-endpoint](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-selector/tasks/T146-api-endpoint.md) | 更新 API 端點內部實作 (app.py) | |
+| [T147-testing](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-selector/tasks/T147-testing.md) | 撰寫單元測試與整合測試 | |
+| [T148-docker-deploy](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-selector/tasks/T148-docker-deploy.md) | 更新編譯與 Docker 部署配置 | |
 
 ## Task 列表
 
@@ -311,7 +316,13 @@
 | [T140-asset-class-prefetch](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-selector/tasks/T140-asset-class-prefetch.md) | 台股資產分類與價格預先下載模組 | ✅ done |
 | [T141-asset-class-analysis](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-selector/tasks/T141-asset-class-analysis.md) | 指標計算引擎 | ✅ done |
 | [T142-asset-class-report](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-selector/tasks/T142-asset-class-report.md) | 表格輸出與圖表繪製 + 主入口腳本 | ✅ done |
+| [T143-migrate-to-mcp](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-selector/tasks/T143-migrate-to-mcp.md) | Migrate data source to tw-quant-mcp | ✅ done |
+| [T144-mcp-client](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-selector/tasks/T144-mcp-client.md) | 新增 MCP client 封裝 | 📋 pending |
+| [T145-realtime-mcp](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-selector/tasks/T145-realtime-mcp.md) | 修改 realtime_quotes.py 使用 MCP 實時數據 | 📋 pending |
+| [T146-api-endpoint](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-selector/tasks/T146-api-endpoint.md) | 更新 API 端點內部實作 (app.py) | 📋 pending |
+| [T147-testing](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-selector/tasks/T147-testing.md) | 撰寫單元測試與整合測試 | 📋 pending |
+| [T148-docker-deploy](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-selector/tasks/T148-docker-deploy.md) | 更新編譯與 Docker 部署配置 | 📋 pending |
 
-**✅ done: 142 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 0**
+**✅ done: 143 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 5**
 
-> 自動生成於 2026-08-15 21:13
+> 自動生成於 2026-08-15 23:02

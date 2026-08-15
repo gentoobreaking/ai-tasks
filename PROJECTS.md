@@ -1,6 +1,6 @@
 # 📁 Projects Dashboard
 
-> 最後更新: 2026-08-15 21:13 · 自動生成
+> 最後更新: 2026-08-15 23:02 · 自動生成
 
 ---
 
@@ -9,9 +9,9 @@
 | 指標 | 數量 |
 |------|------|
 | 專案數 | 61 |
-| 任務總數 | 1011 |
-| ✅ 已完成 | 929 |
-| ⬜ 待處理 | 19 |
+| 任務總數 | 1017 |
+| ✅ 已完成 | 931 |
+| ⬜ 待處理 | 23 |
 | 🔄 進行中 | 1 |
 | ⏭️ 跳過 | 62 |
 | 總完成率 | 97% |
@@ -24,6 +24,10 @@
 | local-ai-controlpanel | [T031-metrics-report](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T031-metrics-report.md) | CP Gain / Intelligence Efficiency / Research ROI 指標計算與自動化報告 |
 | local-ai-controlpanel | [T032-memory-retrieval](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T032-memory-retrieval.md) | Memory / Project Memory Retrieval 接入 Pi Worker |
 | local-ai-controlpanel | [T036-spec-impl-review](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T036-spec-impl-review.md) | Spec v0.5 vs 實作完整度審查與差距清單產出 |
+| tw-quant-selector | [T144-mcp-client](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-selector/tasks/T144-mcp-client.md) | 新增 MCP client 封裝 |
+| tw-quant-selector | [T145-realtime-mcp](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-selector/tasks/T145-realtime-mcp.md) | 修改 realtime_quotes.py 使用 MCP 實時數據 |
+| tw-quant-selector | [T146-api-endpoint](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-selector/tasks/T146-api-endpoint.md) | 更新 API 端點內部實作 (app.py) |
+| tw-quant-selector | [T147-testing](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-selector/tasks/T147-testing.md) | 撰寫單元測試與整合測試 |
 | tw-quant-signal | [T023-mcp-validation-fallback](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T023-mcp-validation-fallback.md) | [Phase 4] Pipeline 驗證 + mcp fallback — 確認端到端正確性 |
 
 ---
@@ -39,7 +43,6 @@
 | digital-twin | [T087-repo-cleanup](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T087-repo-cleanup.md) | 清理 repo 根目錄雜檔與目錄結構 | ⬜ |
 | gold-analysis-advanced | [T002](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis-advanced/tasks/T002.md) | ML 模型整合與優化 | ⬜ |
 | gold-analysis-advanced | [T004](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis-advanced/tasks/T004.md) | 實盤交易對接 | ⬜ |
-| local-ai-controlpanel | [T029-rag-style-kb](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T029-rag-style-kb.md) | RAG 風格知識庫（Style Knowledge Base） | ⬜ |
 | local-ai-controlpanel | [T030-baseline-abef](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T030-baseline-abef.md) | Baseline Groups A–E 完整跑分與對照驗證 | ⬜ |
 | local-ai-controlpanel | [T031-metrics-report](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T031-metrics-report.md) | CP Gain / Intelligence Efficiency / Research ROI 指標計算與自動化報告 | ⬜ |
 | local-ai-controlpanel | [T032-memory-retrieval](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T032-memory-retrieval.md) | Memory / Project Memory Retrieval 接入 Pi Worker | ⬜ |
@@ -48,6 +51,11 @@
 | local-ai-controlpanel | [T035-hybrid-execution](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T035-hybrid-execution.md) | Phase 9 Hybrid Execution / Cloud Escalation 實作 | ⬜ |
 | local-ai-controlpanel | [T036-spec-impl-review](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T036-spec-impl-review.md) | Spec v0.5 vs 實作完整度審查與差距清單產出 | ⬜ |
 | md-viewer-app | [T027-預覽連結懸停](https://github.com/gentoobreaking/ai-tasks/blob/main/md-viewer-app/tasks/T027-預覽連結懸停.md) | [T027] 連結懸停預覽 | ⬜ |
+| tw-quant-selector | [T144-mcp-client](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-selector/tasks/T144-mcp-client.md) | 新增 MCP client 封裝 | ⬜ |
+| tw-quant-selector | [T145-realtime-mcp](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-selector/tasks/T145-realtime-mcp.md) | 修改 realtime_quotes.py 使用 MCP 實時數據 | ⬜ |
+| tw-quant-selector | [T146-api-endpoint](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-selector/tasks/T146-api-endpoint.md) | 更新 API 端點內部實作 (app.py) | ⬜ |
+| tw-quant-selector | [T147-testing](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-selector/tasks/T147-testing.md) | 撰寫單元測試與整合測試 | ⬜ |
+| tw-quant-selector | [T148-docker-deploy](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-selector/tasks/T148-docker-deploy.md) | 更新編譯與 Docker 部署配置 | ⬜ |
 | tw-quant-signal | [T010-stock-pool-signals](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T010-stock-pool-signals.md) | [Phase 3] 個股池訊號 — 精選觀察清單掃描 | ⬜ |
 | tw-quant-signal | [T018-stock-pool-expansion](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T018-stock-pool-expansion.md) | [Phase 3] 標的池擴充與管線效率優化 | ⬜ |
 | tw-quant-signal | [T019-performance-tracking-dashboard](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T019-performance-tracking-dashboard.md) | [Phase 3] 績效追蹤儀表板補完 — 訊號後 1/3/5 日表現 | ⬜ |
@@ -132,8 +140,8 @@
 
 | 指標 | 數值 |
 |------|------|
-| 過去 7 天完成 | 116 |
-| 過去 30 天完成 | 279 |
+| 過去 7 天完成 | 117 |
+| 過去 30 天完成 | 280 |
 | 平均週期時間 | 1.3 天 |
 | 週期時間中位數 | 0.0 天 |
 
@@ -143,10 +151,10 @@ xychart-beta
     title "過去 14 天任務完成趨勢"
     x-axis ["08-02", "08-03", "08-04", "08-05", "08-06", "08-07", "08-08", "08-09", "08-10", "08-11", "08-12", "08-13", "08-14", "08-15"]
     y-axis "完成數" 0 --> 72
-    line [5, 16, 72, 16, 8, 12, 4, 8, 15, 22, 22, 17, 17, 11]
+    line [5, 16, 72, 16, 8, 12, 4, 8, 15, 22, 22, 17, 17, 12]
 ```
 
-📊 總計: 245 | 日均: 17.5 | 本週: 112 | 📉 下降中
+📊 總計: 246 | 日均: 17.6 | 本週: 113 | 📉 下降中
 
 ## 📋 專案列表
 
@@ -184,7 +192,7 @@ xychart-beta
 | ✅ | [kgi-monitor](https://github.com/gentoobreaking/ai-tasks/tree/main/kgi-monitor) | 6 | 6 | 0 | 0 | 0 | ████████████████████ 100% | 2026-04-22 |
 | ✅ | [lifecycle-sync-fix](https://github.com/gentoobreaking/ai-tasks/tree/main/lifecycle-sync-fix) | 2 | 2 | 0 | 0 | 0 | ████████████████████ 100% | 2026-04-21 |
 | ✅ | [llm-router](https://github.com/gentoobreaking/ai-tasks/tree/main/llm-router) | 1 | 1 | 0 | 0 | 0 | ████████████████████ 100% | 2026-04-16 |
-| ⬜ | [local-ai-controlpanel](https://github.com/gentoobreaking/ai-tasks/tree/main/local-ai-controlpanel) | 36 | 28 | 8 | 0 | 0 | ███████████████░░░░░ 77% | 2026-08-15 |
+| ⬜ | [local-ai-controlpanel](https://github.com/gentoobreaking/ai-tasks/tree/main/local-ai-controlpanel) | 36 | 29 | 7 | 0 | 0 | ████████████████░░░░ 80% | 2026-08-15 |
   **[T030-baseline-abef](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T030-baseline-abef.md)**: Baseline Groups A–E 完整跑分與對照驗證
   **[T031-metrics-report](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T031-metrics-report.md)**: CP Gain / Intelligence Efficiency / Research ROI 指標計算與自動化報告
   **[T032-memory-retrieval](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T032-memory-retrieval.md)**: Memory / Project Memory Retrieval 接入 Pi Worker
@@ -210,7 +218,11 @@ xychart-beta
 | ✅ | [tasks-executor](https://github.com/gentoobreaking/ai-tasks/tree/main/tasks-executor) | 8 | 8 | 0 | 0 | 0 | ████████████████████ 100% | 2026-05-12 |
 | ✅ | [tw-quant-daybrain](https://github.com/gentoobreaking/ai-tasks/tree/main/tw-quant-daybrain) | 28 | 28 | 0 | 0 | 0 | ████████████████████ 100% | 2026-08-12 |
 | ✅ | [tw-quant-mcp](https://github.com/gentoobreaking/ai-tasks/tree/main/tw-quant-mcp) | 34 | 34 | 0 | 0 | 0 | ████████████████████ 100% | 2026-08-15 |
-| ✅ | [tw-quant-selector](https://github.com/gentoobreaking/ai-tasks/tree/main/tw-quant-selector) | 142 | 142 | 0 | 0 | 0 | ████████████████████ 100% | 2026-08-15 |
+| ⬜ | [tw-quant-selector](https://github.com/gentoobreaking/ai-tasks/tree/main/tw-quant-selector) | 148 | 143 | 5 | 0 | 0 | ███████████████████░ 96% | 2026-08-15 |
+  **[T144-mcp-client](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-selector/tasks/T144-mcp-client.md)**: 新增 MCP client 封裝
+  **[T145-realtime-mcp](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-selector/tasks/T145-realtime-mcp.md)**: 修改 realtime_quotes.py 使用 MCP 實時數據
+  **[T146-api-endpoint](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-selector/tasks/T146-api-endpoint.md)**: 更新 API 端點內部實作 (app.py)
+  **[T147-testing](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-selector/tasks/T147-testing.md)**: 撰寫單元測試與整合測試
 | ⬜ | [tw-quant-signal](https://github.com/gentoobreaking/ai-tasks/tree/main/tw-quant-signal) | 28 | 24 | 4 | 0 | 0 | █████████████████░░░ 85% | 2026-08-12 |
   **[T023-mcp-validation-fallback](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T023-mcp-validation-fallback.md)**: [Phase 4] Pipeline 驗證 + mcp fallback — 確認端到端正確性
 | ✅ | [twse-monitor](https://github.com/gentoobreaking/ai-tasks/tree/main/twse-monitor) | 11 | 11 | 0 | 0 | 0 | ████████████████████ 100% | 2026-05-07 |

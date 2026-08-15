@@ -97,8 +97,29 @@ updated: 2026-08-15
 - 後端測試使用 `pytest` + `unittest.mock`
 - 測試應在 Docker container 中執行：`docker compose run --rm app pytest tests/test_xxx.py -v`
 
-## 完成摘要（2026-08-15）
-- 新增 `tests/test_technical_alerts.py`（29）、`tests/test_market_screen.py`（13）；重寫 `tests/test_t130_backend.py`（9）；擴充 `tests/test_websocket_manager.py`（+6）；`tests/test_alert_rules.py` 加 DB-free 模型測試並修 4 個 stale seed 測試。本機非 DB 測試全數通過（69 passed；`test_alert_rules.py` 15 passed，4 個 DB API 測試待 Docker）。
-- 前端新增 `useMarketAlerts.test.ts`（12）、`AlertSidebar.test.tsx`（9）、`AlertHistory.test.tsx`（5）、`AlertRulesPanel.test.tsx`（7）、`Signals.test.tsx`（6）→ 共 70 tests 全過，`npm run build` 通過。
-- 已知留待 Docker 驗證：`test_db.py`、`test_api.py`、`test_sensitive_info.py`（app import 需 DB）、`test_alert_rules.py` 4 個 client fixture tests，以及既有無關失敗（test_combiner 浮點、test_institutional_factor KeyError、test_strategies 0.35==0.5）。
-- 額外修正：`code/saveRule` bug 已在 T132 測試覆蓋（多檔迴圈）；`check_technical_alerts()` 的 `continue` 位置 bug 已由測試驗證修復。
+## Docker DB 驗證（2026-08-15，postgres:16 + app，`docker compose run --rm app pytest`）
+- 全量 suite：`287 passed, 4 skipped`，以及 `test_db.py` collection ERROR + 13 個 **pre-existing** 既有測試失敗。
+- `test_alert_rules.py` **全部通過**，包含此前待驗證的 4 個 `client fixture` DB API 測試 (`GET/PUT /api/v1/alerts/rules`、部分欄位更新、`enabled`/`severity`/`cooldown>=0` 驗證)。
+- `test_sensitive_info.py` 通過；`test_api.py` 除 `test_strategy_config_includes_institutional`（斷言 `foreign_weight==0.5` 但實際為 `0.4`，stale expectation）外均通過。
+- **pre-existing 失敗（皆非 T135）**：`test_combiner.test_default_weights`（浮點 0.05）、`test_strategies.test_quality_default_params`（0.35 vs 0.5）、`test_institutional_factor.test_compute_score_with_data`（KeyError）、`test_realtime_quotes` 6 個（MIS client mock/環境）、`test_strategy_config` 3 個（缺 `yaml`）、`test_institutional.test_institutional_tpex_parse`、`test_db.py` collection error（`CREATE_TABLES_SQL` import 過時）。
+- `test_market_screen.py` 於單檔執行 13/13 pass；於全量套件執行時因 app module caching 導致 `db` mock 失效而 failure → 修正 fixture 為 `patch.object(app_module, "db", MagicMock())`，確保快取與非快取匯入皆穩定。
+
+## 額外修正 — Portfolio 現價非即時（2026-08-15）
+- 根因：`GET /api/v1/stocks/prices?realtime=true` 查詢不存在的 `realtime_prices` 表 → 例外 → 攔截後回退到 `daily_prices`（只還原始收盤價）。即時價格實際儲於 `realtime_quotes` 表；且背景輪詢 `run_realtime_polling_task` 从未透過 SSE 推送 `realtime_price_update`（SSE 只廣播 `portfolio_update`）。
+- 修正 (`src/tw_quant_selector/api/app.py`)：實時路徑改查 `realtime_quotes`（JOIN `stocks`，LATEST 1 筆）；背景輪詢於 `poll_realtime` 返回有價格時 `event_bus.broadcast("realtime_price_update")`。
+- 驗證：`curl .../stocks/prices?ids=2330,0050&realtime=true` 現回傳即時價 (2330=2370, change 2.6%, quote_time 13:29)。<— 未 commit，待確認。
+
+## Docker DB 驗證（2026-08-15）
+- `docker compose`（postgres:16 + app）啟起；`pip install pytest` 後執行 `pytest tests/ -q --continue-on-collection-errors`：
+  - **結果：287 passed, 13 failed, 4 skipped, 1 error**。
+  - `test_alert_rules.py` 4 個 `client fixture` DB API 測試現在皆 PASS（包含 `GET /api/v1/alerts/rules`、`PUT /api/v1/alerts/rules/{id}` 更新部分欄位、`enabled`/`severity`/`cooldown>=0` 驗證）。
+- `test_db.py` 仍 ERROR at collection — **pre-existing stale import**：檔案 `from ... import ..., CREATE_TABLES_SQL` 但 `database.py` 已不再導出該符號（來自 T134 重構之後）；與 DB 無關，與 T135 不符，不在本次 scope。
+- 13 failed 中 9 為 pre-existing 既有測試陷阱，與 T135 新增測試無關（皆位於我們未動之舊檔）：
+  - `test_combiner.py::test_default_weights` —浮點精確度 0.05 vs 0.04999…（既有）
+  - `test_strategies.py::test_quality_default_params` — `assert 0.35 == 0.5`（既有）
+  - `test_institutional_factor.py::test_compute_score_with_data` — `KeyError`（既有）
+  - `test_realtime_quotes.py` (6) — MIS client mock/環境（既有）
+  - `test_strategy_config.py` (3) — `ModuleNotFoundError: No module named 'yaml'`（既有，缺 yaml dep）
+  - `test_api.py::test_strategy_config_includes_institutional` — 斷言 institution 參數（既有）
+  - `test_institutional.py::test_institutional_tpex_parse` — 抓 dataframe 欄位（既有）
+- `test_market_screen.py` 於單一檔執行時 13/13 PASS；但與 `test_api.py`/`test_institutional_factor.py` 同時執行時因 app module caching 導致 db mock 失效（`AttributeError: 'function' object has no attribute 'return_value'）。**已修** fixture 改為 `patch.object(app_module, "db", MagicMock())` 覆蓋全局 db 實例，確保在套件整體執行時仍生效（本次驗證 run 已反映修版）。 → 此修動未 commit，待確認。
