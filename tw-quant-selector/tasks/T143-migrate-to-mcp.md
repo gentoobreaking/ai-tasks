@@ -3,7 +3,7 @@ github_issue: "#101"
 title: Migrate data source to tw-quant-mcp
 type: data
 priority: high
-status: done
+status: pending
 depends_on: []
 assignee: OpenCode with DeepSeek V4 Flash
 created: 2025-08-15
@@ -23,12 +23,12 @@ updated: 2025-08-15
 5. **保持 向後相容**：確保現有的 數據結構（portfolio, stocks, daily_prices 等）不變，避免打亂穩定版本。
 
 ## 驗收標準
-- [x] MCP client 可成功連接本地/遠程 tw-quant-mcp 伺服器，並取得 realtime quote、price history、Best Four Points 等資料。
-- [x] `export_portfolio` 端點返回的 `.stock_monitor.json` 內容正確反映從 MCP 獲取的最新資料。
-- [x] 所有原有的 API 端點（/api/v1/portfolio/*, /api/v1/*）回傳的資料結構與穩定版本一致，無破壞變更。
-- [x] 單元測試通過：`tests/test_api.py` 中新增/修改測試，確保 MCP 失敗時的 fallback 行為。
-- [x] 編譯通過：`npx tsc -b` (frontend) 與 `go build` (mcp client) 無錯誤。
-- [x] 文件更新：README / 使用說明 中說明新的資料來源連線設定（環境變數、MCP transport 等）。
+- [ ] MCP client 可成功連接本地/遠程 tw-quant-mcp 伺服器，並取得 realtime quote、price history、Best Four Points 等資料。
+- [ ] `export_portfolio` 端點返回的 `.stock_monitor.json` 內容正確反映從 MCP 獲取的最新資料。
+- [ ] 所有原有的 API 端點（/api/v1/portfolio/*, /api/v1/*）回傳的資料結構與穩定版本一致，無破壞變更。
+- [ ] 單元測試通過：`tests/test_api.py` 中新增/修改測試，確保 MCP 失敗時的 fallback 行為。
+- [ ] 編譯通過：`npx tsc -b` (frontend) 與 `go build` (mcp client) 無錯誤。
+- [ ] 文件更新：README / 使用說明 中說明新的資料來源連線設定（環境變數、MCP transport 等）。
 
 ## 備註
 - **風險**：MCP 伺服器網絡不可用時，必須有完善的 fallback 机制（繼續使用 yfinance/twstock），否則會影響實盤交易。

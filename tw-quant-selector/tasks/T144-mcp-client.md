@@ -32,7 +32,7 @@ updated: 2025-08-15
 - [ ] client 可使用預設設定 (MCP_TRANSPORT=stdio) 成功啟動並連接
 - [ ] 呼叫 `GetRealtimeData("2330")` 回傳目前價格與時間戳
 - [ ] 呼叫 `GetPriceHistory("2330", "1d")` 回傳最近 30 天收盤價
-- [ ] 呼叫 `GetBestFourPoints("2330")` 回傳四條技術線數值 (MA5, MA20, etc.)
+- [ ] 呼叫 `GetBestFourPoints("2330")` 回傳四條技術線數值 (MA5, MA20, ...)
 - [ ] 當 MCP 伺服器無回應時，具備 fallback 至 yfinance/twstock 的機制
 - [ ] 單元測試通過：Mock server 測試重試/熔斷/快取行為
 
