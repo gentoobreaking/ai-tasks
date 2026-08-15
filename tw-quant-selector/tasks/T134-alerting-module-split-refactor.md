@@ -3,10 +3,10 @@ github_issue: https://github.com/gentoobreaking/ai-tasks/issues/848
 title: 拆分大型檔案 alerting.py（模組化重構）
 type: refactor
 priority: medium
-status: pending
+status: done
 assignee: Hermes with DeepSeek V4 Flash
 created: 2026-06-07
-updated: 2026-06-07
+updated: 2026-08-15
 ---
 
 # T134 - 拆分大型檔案 alerting.py（模組化重構）
@@ -27,7 +27,7 @@ updated: 2026-06-07
 ## 驗收標準
 
 ### 步驟 1：建立模組結構
-- [ ] 將 `monitoring/` 從單一 `alerting.py` 改為套件：
+- [x] 將 `monitoring/` 從單一 `alerting.py` 改為套件：
   ```
   monitoring/
     __init__.py          # 匯出對外 API（check_all, AlertChecker）
@@ -42,21 +42,21 @@ updated: 2026-06-07
   ```
 
 ### 步驟 2：修復已知 bug
-- [ ] `check_technical_alerts()`：line 1151 `is_index = stock_id == '^TWII'` 中的 `stock_id` 未定義 — 缺少 `for stock_id in kline_stocks:` 迴圈
-- [ ] 修復後確認 `check_technical_alerts` 能正確逐檔掃描有盤中 K 線資料的標的
+- [x] `check_technical_alerts()`：line 1151 `is_index = stock_id == '^TWII'` 中的 `stock_id` 未定義 — 缺少 `for stock_id in kline_stocks:` 迴圈
+- [x] 修復後確認 `check_technical_alerts` 能正確逐檔掃描有盤中 K 線資料的標的
 
 ### 步驟 3：保留對外 API 相容性
-- [ ] `monitoring/__init__.py` 匯出所有原本在 `alerting.py` 中的公開符號（`AlertChecker`, `AlertManager`, `format_alert`, `get_alert_config`, `check_volume_spike`, `check_whale_move` 等）
-- [ ] 確保 `from tw_quant_selector.monitoring.alerting import AlertChecker` 仍可運作（或更新所有 import 點）
-- [ ] 更新所有內部 import（`app.py`, `scheduler.py`, 測試檔案等）
+- [x] `monitoring/__init__.py` 匯出所有原本在 `alerting.py` 中的公開符號（`AlertChecker`, `AlertManager`, `format_alert`, `get_alert_config`, `check_volume_spike`, `check_whale_move` 等）
+- [x] 確保 `from tw_quant_selector.monitoring.alerting import AlertChecker` 仍可運作（或更新所有 import 點）
+- [x] 更新所有內部 import（`app.py`, `scheduler.py`, 測試檔案等）
 
 ### 步驟 4：功能驗證
-- [ ] 所有 unit tests 通過（含既有 26+ 個 alert 測試）
-- [ ] `check_all()` 仍可正確依序執行所有檢查
-- [ ] container 可正常啟動，WebSocket/REST API 不受影響
+- [x] 所有 unit tests 通過（含既有 26+ 個 alert 測試）
+- [x] `check_all()` 仍可正確依序執行所有檢查
+- [x] container 可正常啟動，WebSocket/REST API 不受影響
 
 ### 步驟 5：清理
-- [ ] 刪除舊的 `alerting.py`（或保留為 deprecated 橋接檔，標注 `@deprecated`）
+- [x] 刪除舊的 `alerting.py`（或保留為 deprecated 橋接檔，標注 `@deprecated`）
 
 ## 備註
 - 拆分時不做邏輯改動，純粹搬移程式碼 + 修正已知 bug

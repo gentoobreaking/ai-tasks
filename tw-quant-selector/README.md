@@ -83,6 +83,7 @@
 | 後端 data/status API 接上 Dashboard 資料狀態面板 |
 | Tooltip 元件接入頁面互動提示 |
 | 完成 Print Styles (T059) 與 Color-Blind 人工測試 (T054) |
+| 任務 T080-color-utility-integration |
 | 整合 Ingestion Pipeline 與系統健康檢查 (Alerting) |
 | 即時損益監控 (Live P/L Monitoring) |
 | Tooltip Portal 改寫 + Z-index 堆疊管理 |
@@ -136,6 +137,8 @@
 | 智慧警示啟用及設定值面板 |
 | 即時技術分析警示（60分K線 / MA / KD 指標） |
 | 加權指數（TAIEX）技術分析警示 |
+| 拆分大型檔案 alerting.py（模組化重構） |
+| 補齊未完成的測試項目（T123/T124/T130-T133） |
 | Market Dashboard 集成 |
 | 因子研究頁面修復 — 初始載入、快取、空狀態與中文化 |
 | IC 分析歷史資料 Backfill — signals + daily_prices 補全 |
@@ -154,14 +157,13 @@
 
 | Task | 名稱 | 說明 |
 |------|------|------|
-| [T80-color-utility-integration](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-selector/tasks/T080-color-utility-integration.md) | 任務 T080-color-utility-integration | |
+| | | |
 
 ## 待實作
 
 | Task | 名稱 | 說明 |
 |------|------|------|
-| [T134-alerting-module-split-refactor](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-selector/tasks/T134-alerting-module-split-refactor.md) | 拆分大型檔案 alerting.py（模組化重構） | |
-| [T135-complete-missing-tests](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-selector/tasks/T135-complete-missing-tests.md) | 補齊未完成的測試項目（T123/T124/T130-T133） | |
+| | | |
 
 ## Task 列表
 
@@ -246,7 +248,7 @@
 | [T77-dashboard-data-status-panel](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-selector/tasks/T077-dashboard-data-status-panel.md) | 後端 data/status API 接上 Dashboard 資料狀態面板 | ✅ done |
 | [T78-tooltip-component-integration](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-selector/tasks/T078-tooltip-component-integration.md) | Tooltip 元件接入頁面互動提示 | ✅ done |
 | [T79-print-styles-colorblind-testing](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-selector/tasks/T079-print-styles-colorblind-testing.md) | 完成 Print Styles (T059) 與 Color-Blind 人工測試 (T054) | ✅ done |
-| [T80-color-utility-integration](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-selector/tasks/T080-color-utility-integration.md) | 任務 T080-color-utility-integration | 🔧 in-progress |
+| [T80-color-utility-integration](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-selector/tasks/T080-color-utility-integration.md) | 任務 T080-color-utility-integration | ✅ done |
 | [T81-pipeline-health-check](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-selector/tasks/T081-pipeline-health-check.md) | 整合 Ingestion Pipeline 與系統健康檢查 (Alerting) | ✅ done |
 | [T82-live-pl-monitoring](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-selector/tasks/T082-live-pl-monitoring.md) | 實作即時損益監控 (Live P/L Monitoring) | ✅ done |
 | [T83-tooltip-portal-stacking](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-selector/tasks/T083-tooltip-portal-stacking.md) | Tooltip Portal 改寫 + Z-index 堆疊管理 | ✅ done |
@@ -300,8 +302,8 @@
 | [T131-smart-alert-rules-config-panel](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-selector/tasks/T131-smart-alert-rules-config-panel.md) | 智慧警示啟用及設定值面板 | ✅ done |
 | [T132-intraday-kline-kd-ma-alert](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-selector/tasks/T132-intraday-kline-kd-ma-alert.md) | 即時技術分析警示（60分K線 / MA / KD 指標） | ✅ done |
 | [T133-taiex-index-technical-alert](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-selector/tasks/T133-taiex-index-technical-alert.md) | 加權指數（TAIEX）技術分析警示 | ✅ done |
-| [T134-alerting-module-split-refactor](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-selector/tasks/T134-alerting-module-split-refactor.md) | 拆分大型檔案 alerting.py（模組化重構） | 📋 pending |
-| [T135-complete-missing-tests](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-selector/tasks/T135-complete-missing-tests.md) | 補齊未完成的測試項目（T123/T124/T130-T133） | 📋 pending |
+| [T134-alerting-module-split-refactor](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-selector/tasks/T134-alerting-module-split-refactor.md) | 拆分大型檔案 alerting.py（模組化重構） | ✅ done |
+| [T135-complete-missing-tests](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-selector/tasks/T135-complete-missing-tests.md) | 補齊未完成的測試項目（T123/T124/T130-T133） | ✅ done |
 | [T136-market-dashboard-integration](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-selector/tasks/T136-market-dashboard-integration.md) | Market Dashboard 集成 | ✅ done |
 | [T137-factor-research-page-fix](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-selector/tasks/T137-factor-research-page-fix.md) | 因子研究頁面修復 — 初始載入、快取、空狀態與中文化 | ✅ done |
 | [T138-ic-backfill-signals-prices](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-selector/tasks/T138-ic-backfill-signals-prices.md) | IC 分析歷史資料 Backfill — signals + daily_prices 補全 | ✅ done |
@@ -310,6 +312,6 @@
 | [T141-asset-class-analysis](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-selector/tasks/T141-asset-class-analysis.md) | 指標計算引擎 | ✅ done |
 | [T142-asset-class-report](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-selector/tasks/T142-asset-class-report.md) | 表格輸出與圖表繪製 + 主入口腳本 | ✅ done |
 
-**✅ done: 139 | 🔧 in-progress: 1 | ⏭️ skip: 0 | 📋 pending: 2**
+**✅ done: 142 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 0**
 
-> 自動生成於 2026-08-15 04:03
+> 自動生成於 2026-08-15 21:13
