@@ -3,7 +3,7 @@ github_issue: "#101"
 title: 修改 realtime_quotes.py 使用 MCP 實時數據
 type: data
 priority: high
-status: completed
+status: done
 depends_on: []
 assignee: OpenCode with DeepSeek V4 Flash
 created: 2025-08-15

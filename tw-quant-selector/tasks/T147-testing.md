@@ -3,7 +3,7 @@ github_issue: "#101"
 title: 撰寫單元測試與整合測試
 type: test
 priority: high
-status: completed
+status: done
 depends_on: []
 assignee: OpenCode with DeepSeek V4 Flash
 created: 2025-08-15

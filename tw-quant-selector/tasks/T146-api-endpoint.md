@@ -3,7 +3,7 @@ github_issue: "#101"
 title: 更新 API 端點內部實作 (app.py)
 type: api
 priority: high
-status: completed
+status: done
 depends_on: []
 assignee: OpenCode with DeepSeek V4 Flash
 created: 2025-08-15

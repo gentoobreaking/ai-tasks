@@ -3,7 +3,7 @@ github_issue: "#101"
 title: 更新編譯與 Docker 部署配置
 type: config
 priority: medium
-status: completed
+status: done
 depends_on: []
 assignee: OpenCode with DeepSeek V4 Flash
 created: 2025-08-15

@@ -3,7 +3,7 @@ github_issue: "#101"
 title: 新增 MCP client 封裝
 type: data
 priority: high
-status: completed
+status: done
 depends_on: []
 assignee: OpenCode with DeepSeek V4 Flash
 created: 2025-08-15

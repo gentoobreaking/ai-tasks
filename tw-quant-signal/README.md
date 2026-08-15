@@ -13,6 +13,7 @@
 | [Phase 2] 分市場狀態運作 — 多空震盪權重切換 |
 | [Phase 2] 風險控管模組 |
 | [Phase 2] 儀表板與績效追蹤系統 |
+| [Phase 3] 個股池訊號 — 精選觀察清單掃描 |
 | [Phase 3] 多時間框架整合 — 日線+週線 |
 | [Phase 3] 結構變化偵測 — 模型/規則衰退監控 |
 | [Phase 3] 研究/實戰環境分離與操作治理 |
@@ -26,6 +27,7 @@
 | [Phase 3] 程式碼品質改善 — feature stale/latency/redundant API |
 | [Phase 3] 測試覆蓋 — 單元測試 + 整合測試 |
 | [Phase 3] 標的池擴充與管線效率優化 |
+| [Phase 3] 績效追蹤儀表板補完 — 訊號後 1/3/5 日表現 |
 | [Phase 4] DataProvider 抽象層設計 — 定義資料擷取統一介面 |
 | [Phase 4] TWSE 盤後資料層遷移至 tw-quant-mcp |
 | [Phase 4] MOPS/基本面資料層遷移至 tw-quant-mcp |
@@ -47,8 +49,7 @@
 
 | Task | 名稱 | 說明 |
 |------|------|------|
-| [T10-stock-pool-signals](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T010-stock-pool-signals.md) | [Phase 3] 個股池訊號 — 精選觀察清單掃描 | |
-| [T19-performance-tracking-dashboard](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T019-performance-tracking-dashboard.md) | [Phase 3] 績效追蹤儀表板補完 — 訊號後 1/3/5 日表現 | |
+| | | |
 
 ## Task 列表
 
@@ -63,7 +64,7 @@
 | [T7-market-state-segmentation](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T007-market-state-segmentation.md) | [Phase 2] 分市場狀態運作 — 多空震盪權重切換 | ✅ done |
 | [T8-risk-management-module](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T008-risk-management-module.md) | [Phase 2] 風險控管模組 | ✅ done |
 | [T9-dashboard-performance-tracking](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T009-dashboard-performance-tracking.md) | [Phase 2] 儀表板與績效追蹤系統 | ✅ done |
-| [T10-stock-pool-signals](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T010-stock-pool-signals.md) | [Phase 3] 個股池訊號 — 精選觀察清單掃描 | 📋 pending |
+| [T10-stock-pool-signals](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T010-stock-pool-signals.md) | [Phase 3] 個股池訊號 — 精選觀察清單掃描 | ✅ done |
 | [T11-multi-timeframe-integration](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T011-multi-timeframe-integration.md) | [Phase 3] 多時間框架整合 — 日線+週線 | ✅ done |
 | [T12-structural-change-detection](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T012-structural-change-detection.md) | [Phase 3] 結構變化偵測 — 模型/規則衰退監控 | ✅ done |
 | [T13-env-separation-governance](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T013-env-separation-governance.md) | [Phase 3] 研究/實戰環境分離與操作治理 | ✅ done |
@@ -77,12 +78,12 @@
 | [T16-code-quality-fixes](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T016-code-quality-fixes.md) | [Phase 3] 程式碼品質改善 — feature stale/latency/redundant API | ✅ done |
 | [T17-test-coverage](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T017-test-coverage.md) | [Phase 3] 測試覆蓋 — 單元測試 + 整合測試 | ✅ done |
 | [T18-stock-pool-expansion](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T018-stock-pool-expansion.md) | [Phase 3] 標的池擴充與管線效率優化 | ✅ done |
-| [T19-performance-tracking-dashboard](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T019-performance-tracking-dashboard.md) | [Phase 3] 績效追蹤儀表板補完 — 訊號後 1/3/5 日表現 | 📋 pending |
+| [T19-performance-tracking-dashboard](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T019-performance-tracking-dashboard.md) | [Phase 3] 績效追蹤儀表板補完 — 訊號後 1/3/5 日表現 | ✅ done |
 | [T20-data-provider-abstraction](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T020-data-provider-abstraction.md) | [Phase 4] DataProvider 抽象層設計 — 定義資料擷取統一介面 | ✅ done |
 | [T21-twse-mcp-migration](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T021-twse-mcp-migration.md) | [Phase 4] TWSE 盤後資料層遷移至 tw-quant-mcp | ✅ done |
 | [T22-mops-mcp-migration](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T022-mops-mcp-migration.md) | [Phase 4] MOPS/基本面資料層遷移至 tw-quant-mcp | ✅ done |
 | [T23-mcp-validation-fallback](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T023-mcp-validation-fallback.md) | [Phase 4] Pipeline 驗證 + mcp fallback — 確認端到端正確性 | ✅ done |
 
-**✅ done: 26 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 2**
+**✅ done: 28 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 0**
 
-> 自動生成於 2026-08-16 02:04
+> 自動生成於 2026-08-16 03:19
