@@ -3,7 +3,7 @@ github_issue: "#101"
 title: 修改 realtime_quotes.py 使用 MCP 實時數據
 type: data
 priority: high
-status: pending
+status: completed
 depends_on: []
 assignee: OpenCode with DeepSeek V4 Flash
 created: 2025-08-15
@@ -28,11 +28,36 @@ updated: 2025-08-15
   - 新增 `_mcp_last_error` 變數記錄最後一次 MCP 錯誤訊息（供調試使用）
 
 ## 驗收標準
-- [ ] 呼叫 `poll_realtime()` 時，優先向 MCP 發送請求
-- [ ] MCP 返回資料時，直接使用；MCP 失敗時，自動回落至 yfinance/twstock 並回傳資料
-- [ ] `get_mcp_status()` 回傳 `{"healthy": true/false, "last_error": "..."}`
-- [ ] 前端 SSE 接收到的訊息格式與原始版本一致（`close`, `volume`, `timestamp` 等）
-- [ ] 單元測試：測試 MCP 失敗時的 fallback 行為，確保不會中斷輪詢循環
+- [x] 呼叫 `poll_realtime()` 時，優先向 MCP 發送請求
+- [x] MCP 返回資料時，直接使用；MCP 失敗時，自動回落至 yfinance/twstock 並回傳資料
+- [x] `get_mcp_status()` 回傳 `{"healthy": true/false, "last_error": "..."}`
+- [x] 前端 SSE 接收到的訊息格式與原始版本一致（`close`, `volume`, `timestamp` 等）
+- [x] 單元測試：測試 MCP 失敗時的 fallback 行為，確保不會中斷輪詢循環
+
+## 實作摘要 (2026-08-16)
+
+`MISApiClient.fetch_all()` 加入了 MCP-first 邏輯：
+
+```python
+if os.environ.get("TW_USE_MCP", "").lower() in ("1", "true", "yes"):
+    try:
+        mcp_quotes = self._fetch_via_mcp(stock_ids, key_stock_ids)
+        if mcp_quotes:
+            return mcp_quotes
+    except Exception as exc:
+        log.warning("mis.mcp_failed_fallback_mis", error=str(exc))
+
+# 原有 MIS 路徑
+base = self._batch_all(stock_ids)
+z_map = self._fetch_key_z(key_stock_ids or stock_ids[:5], quota=5)
+...
+```
+
+`_fetch_via_mcp` 走 `data.mcp.realtime_adapter.fetch_quotes_async()`，並使用 `_quote_to_realtime_quote` 維持 `RealtimeQuote` 形狀。
+
+新增 `get_mcp_status()` 函式供 API endpoint 使用。
+
+檔案：`src/tw_quant_selector/data/realtime_quotes.py`
 
 ## 備註
 - MCP 實時採用 8 秒採樣間隔，需與原有 MIS 8秒採樣邏輯對齊

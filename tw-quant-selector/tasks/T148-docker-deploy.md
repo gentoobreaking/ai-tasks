@@ -3,7 +3,7 @@ github_issue: "#101"
 title: 更新編譯與 Docker 部署配置
 type: config
 priority: medium
-status: pending
+status: completed
 depends_on: []
 assignee: OpenCode with DeepSeek V4 Flash
 created: 2025-08-15
@@ -57,3 +57,33 @@ updated: 2025-08-15
 - 為避免影響穩定版本，建議先在 `development` 環境嘗試新的 Docker 配置，驗收無誤後再合併至 `main` 分支
 - 若專案後續決定完全棄用原有資料來源，可於 `docker-compose.yml` 中移除舊 service 定義；反之則保留為 `depends_on` 關係
 - 苗頭目錄 `tw_quant_selector/data/` 中的 `mcp_client.py` (或 `.go`) 編譯結果需打包進 selector app 的 Docker image (多階段建置 或 copy 二進位檔)
+## 實作摘要 (2026-08-16)
+
+### Dockerfile (`Dockerfile`)
+- Stage 1: `frontend-builder` (node:20-alpine) — build 前端
+- Stage 2: `mcp-builder` (golang:1.22-alpine) — 編譯 tw-quant-mcp Go binary；當原始碼不存在時 graceful skip
+- Stage 3: `python:3.12-slim` — 安裝依賴（含 `mcp` Python SDK）、複製 stage 1/2 產物、設定 MCP 環境變數預設值
+
+預設環境變數：
+```
+TW_USE_MCP=1
+MCP_ENRICH_EXPORT=1
+MCP_TRANSPORT=stdio
+MCP_BINARY_PATH=/app/tw-quant-mcp
+MCP_HTTP_ADDR=127.0.0.1:8787
+DATA_DIR=/data/mcp-cache
+```
+
+### docker-compose.yml
+- `app` service：新增 `TW_USE_MCP` / `MCP_ENRICH_EXPORT` / `MCP_TRANSPORT` / `MCP_BINARY_PATH` / `MCP_HTTP_ADDR` / `DATA_DIR`
+- `scheduler` service：同步新增 MCP 環境變數
+- `postgres` service：不變
+
+### .env.example
+- 補上 `# ── tw-quant-mcp 整合 (T143/T144) ──` 區塊
+
+### 文件
+- `README.md` 架構圖加入 MCP 圖層；快速開始段落加上 MCP env 變數說明
+- `scripts/export_portfolio.py` 透過 MCP enrich 時會印出 `✅ Enriched with MCP realtime quotes`
+
+檔案：`Dockerfile`、`docker-compose.yml`、`.env.example`、`README.md`
