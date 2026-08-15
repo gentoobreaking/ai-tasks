@@ -25,9 +25,11 @@
 | [Phase 3] 11大指標多空訊號系統 |
 | [Phase 3] 程式碼品質改善 — feature stale/latency/redundant API |
 | [Phase 3] 測試覆蓋 — 單元測試 + 整合測試 |
+| [Phase 3] 標的池擴充與管線效率優化 |
 | [Phase 4] DataProvider 抽象層設計 — 定義資料擷取統一介面 |
 | [Phase 4] TWSE 盤後資料層遷移至 tw-quant-mcp |
 | [Phase 4] MOPS/基本面資料層遷移至 tw-quant-mcp |
+| [Phase 4] Pipeline 驗證 + mcp fallback — 確認端到端正確性 |
 
 ## Skip 項目
 
@@ -46,9 +48,7 @@
 | Task | 名稱 | 說明 |
 |------|------|------|
 | [T10-stock-pool-signals](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T010-stock-pool-signals.md) | [Phase 3] 個股池訊號 — 精選觀察清單掃描 | |
-| [T18-stock-pool-expansion](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T018-stock-pool-expansion.md) | [Phase 3] 標的池擴充與管線效率優化 | |
 | [T19-performance-tracking-dashboard](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T019-performance-tracking-dashboard.md) | [Phase 3] 績效追蹤儀表板補完 — 訊號後 1/3/5 日表現 | |
-| [T23-mcp-validation-fallback](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T023-mcp-validation-fallback.md) | [Phase 4] Pipeline 驗證 + mcp fallback — 確認端到端正確性 | |
 
 ## Task 列表
 
@@ -76,13 +76,13 @@
 | [T15-scorecard-signal-system](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T015-scorecard-signal-system.md) | [Phase 3] 11大指標多空訊號系統 | ✅ done |
 | [T16-code-quality-fixes](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T016-code-quality-fixes.md) | [Phase 3] 程式碼品質改善 — feature stale/latency/redundant API | ✅ done |
 | [T17-test-coverage](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T017-test-coverage.md) | [Phase 3] 測試覆蓋 — 單元測試 + 整合測試 | ✅ done |
-| [T18-stock-pool-expansion](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T018-stock-pool-expansion.md) | [Phase 3] 標的池擴充與管線效率優化 | 📋 pending |
+| [T18-stock-pool-expansion](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T018-stock-pool-expansion.md) | [Phase 3] 標的池擴充與管線效率優化 | ✅ done |
 | [T19-performance-tracking-dashboard](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T019-performance-tracking-dashboard.md) | [Phase 3] 績效追蹤儀表板補完 — 訊號後 1/3/5 日表現 | 📋 pending |
 | [T20-data-provider-abstraction](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T020-data-provider-abstraction.md) | [Phase 4] DataProvider 抽象層設計 — 定義資料擷取統一介面 | ✅ done |
 | [T21-twse-mcp-migration](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T021-twse-mcp-migration.md) | [Phase 4] TWSE 盤後資料層遷移至 tw-quant-mcp | ✅ done |
 | [T22-mops-mcp-migration](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T022-mops-mcp-migration.md) | [Phase 4] MOPS/基本面資料層遷移至 tw-quant-mcp | ✅ done |
-| [T23-mcp-validation-fallback](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T023-mcp-validation-fallback.md) | [Phase 4] Pipeline 驗證 + mcp fallback — 確認端到端正確性 | 📋 pending |
+| [T23-mcp-validation-fallback](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T023-mcp-validation-fallback.md) | [Phase 4] Pipeline 驗證 + mcp fallback — 確認端到端正確性 | ✅ done |
 
-**✅ done: 24 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 4**
+**✅ done: 26 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 2**
 
-> 自動生成於 2026-08-15 23:02
+> 自動生成於 2026-08-16 02:04

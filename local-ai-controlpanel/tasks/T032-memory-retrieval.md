@@ -3,11 +3,11 @@ github_issue: N/A
 title: Memory / Project Memory Retrieval 接入 Pi Worker
 type: feature
 priority: high
-status: pending
+status: in_progress
 depends_on: [T029]
 assignee: OpenCode with DeepSeek V4 Flash
 created: 2026-08-15
-updated: 2026-08-15
+updated: 2026-08-16
 ---
 
 # T032 - Memory / Project Memory Retrieval 接入 Pi Worker
@@ -20,19 +20,19 @@ updated: 2026-08-15
 
 ## 驗收標準
 
-- [ ] 實作 `apps/control-plane/src/memory/retriever.ts`：
-  - `storeMemory(project: string, key: string, value: string, tags: string[]): Promise<void>`
-  - `retrieveMemory(project: string, query: string, topK: number): Promise<MemoryRecord[]>`
-  - 使用 SQLite `project_memory` table + 可選向量索引（sqlite-vec 或應用層關鍵字匹配）
+- [x] 實作 `apps/control-plane/src/memory/retriever.ts`：
+  - [x] `storeMemory(project: string, key: string, value: string, tags: string[]): Promise<void>`
+  - [x] `retrieveMemory(project: string, query: string, topK: number): Promise<MemoryRecord[]>`
+  - [x] 使用 SQLite `project_memory` table + 應用層關鍵字匹配（向量索引預留）
 
-- [ ] 修改 `apps/control-plane/src/worker/pi-worker.ts`：
-  - `initialize(context)` 時載入專案記憶摘要
-  - `buildContract(req)` 時注入 `project_memory` 相關片段到 contract 的 `context` 欄位
-  - `execute()` 完成後，將成功的「風格修正案例」寫入 `project_memory`
+- [x] 修改 `apps/control-plane/src/worker/pi-worker.ts`：
+  - [x] `initialize(context)` 時載入專案記憶摘要
+  - [x] `buildContract(req)` 時注入 `project_memory` 相關片段到 contract 的 `context` 欄位
+  - [x] `execute()` 完成後，將成功的「風格修正案例」寫入 `project_memory`
 
-- [ ] 新增 `apps/control-plane/src/memory/types.ts` 定義 `MemoryRecord`、`MemoryQuery` 介面
+- [x] 新增 `apps/control-plane/src/memory/types.ts` 定義 `MemoryRecord`、`MemoryQuery` 介面
 
-- [ ] 更新 `pi-worker.ts` 的 `PiContract` 增加 `project_memory: MemoryRecord[]` 欄位
+- [x] 更新 `pi-worker.ts` 的 `PiContract` 增加 `project_memory: MemoryRecord[]` 欄位
 
 - [ ] 驗證：
   - 同一專案連續跑 3 個 Python tasks，第 2、3 個 task 能檢索到第 1 個 task 的「import 移入函式內」修正案例
@@ -53,3 +53,22 @@ updated: 2026-08-15
 - §16 Pi Worker contract（新增 `project_memory` 欄位）
 - §26.1 Episodic Memory / §26.2 Semantic Memory / §26.3 Procedural Memory
 - §36.4 結果保存（project_memory 同步寫入 results-keep）
+
+## 已完成基礎建設（2026-08-16）
+
+- 新增 `apps/control-plane/src/memory/types.ts`：`MemoryRecord`、`MemoryQuery`、`MemorySearchResult`、`MemoryStoreTrigger`、`PiContractMemoryExtension` 介面
+- 新增 `apps/control-plane/src/memory/retriever.ts`：`MemoryRetriever` 類別（SQLite project_memory table + 應用層 3-gram 向量檢索、storeMemory/retrieveMemory/listMemories/clearProject）
+- 修改 `apps/control-plane/src/worker/pi-worker.ts`：
+  - 新增 `PiWorkerOptions.memoryRetriever` 選項
+  - `PiContract` 新增 `project_memory?: MemoryRecord[]` 欄位
+  - `initialize()` 載入專案記憶摘要
+  - `buildContract()` 依語言/錯誤類型檢索並注入 `project_memory` 到 contract
+  - `execute()` 成功完成後，提取 patch 關鍵修正模式存入專案記憶（`extractErrorTypesFromPatch` 啟發式）
+- `PiWorkerOptions` 新增 `memoryRetriever?: MemoryRetriever` 選項
+- Typecheck 通過，單元測試 12/12 通過
+
+## 待完成（需連續多任務驗證）
+
+- 同一專案連續跑 3 個 Python tasks 驗證記憶傳遞
+- lint=FAIL 率下降 ≥ 30% 驗證
+- 首次嘗試通過率提升 ≥ 20% 驗證

@@ -566,7 +566,7 @@ def calc_adj_factor(stock_id: str, event_date: date) -> float:
 ### 9.1 RESTful API（FastAPI）
 
 ```
-基礎 URL：http://localhost:8000/api/v1
+基礎 URL：http://localhost:5172/api/v1
 
 健康檢查：
   GET /health
@@ -746,10 +746,10 @@ services:
       - ./data:/data           # DuckDB 持久化
       - ./output:/output       # 回測結果輸出
     ports:
-      - "8000:8000"
+      - "5172:5172"
     restart: unless-stopped
     healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      test: ["CMD", "curl", "-f", "http://localhost:5172/health"]
       interval: 30s
       timeout: 10s
       retries: 3
