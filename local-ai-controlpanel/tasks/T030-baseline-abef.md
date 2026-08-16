@@ -3,13 +3,16 @@ github_issue: N/A
 title: Baseline Groups A–E 完整跑分與對照驗證
 type: benchmark
 priority: high
-status: in_progress
-depends_on: [T024]
+status: pending
+depends_on:
+- T024
 assignee: OpenCode with DeepSeek V4 Flash
 created: 2026-08-15
-updated: 2026-08-15
+updated: '2026-08-17'
+fail_count: 2
+summary: '第 2 次失敗: 未預期錯誤: TypeError: AutoDevelopScheduler._vprint() takes 2 positional
+  arguments but 3 were given'
 ---
-
 # T030 - Baseline Groups A–E 完整跑分與對照驗證
 
 ## 目標

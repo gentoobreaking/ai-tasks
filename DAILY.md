@@ -1,18 +1,22 @@
 # 📅 Daily Dashboard - 2026-08-17
 
-> 最後更新: 2026-08-17 00:14 · 自動生成
+> 最後更新: 2026-08-17 00:49 · 自動生成
 
 ---
 
 ## 🆕 今日新增任務
 
-_無_
+| 專案 | 任務 | 標題 |
+| -- | -- | -- |
+| digital-twin | [T088-task-resume-priority-timeout-sound](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T088-task-resume-priority-timeout-sound.md) | 任務恢復優先 + opencode timeout + 聲音通知 |
 
 ---
 
 ## ✅ 今日完成任務
 
-_無_
+| 專案 | 任務 | 標題 |
+| -- | -- | -- |
+| digital-twin | [T088-task-resume-priority-timeout-sound](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T088-task-resume-priority-timeout-sound.md) | 任務恢復優先 + opencode timeout + 聲音通知 |
 
 ---
 
