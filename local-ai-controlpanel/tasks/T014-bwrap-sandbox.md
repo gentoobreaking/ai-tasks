@@ -4,12 +4,13 @@ title: bwrap（bubblewrap）adapter（Phase 2，2b）— Linux 預設
 type: feature
 priority: medium
 status: done
-depends_on: [T012]
+depends_on:
+- T012
 assignee: OpenCode with DeepSeek V4 Flash
 created: 2026-08-13
-updated: 2026-08-13
+updated: '2026-08-17'
+spec_version: v3
 ---
-
 # T014 - bwrap（bubblewrap）adapter
 
 ## 目標

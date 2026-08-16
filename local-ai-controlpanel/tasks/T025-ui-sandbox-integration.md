@@ -4,12 +4,14 @@ title: UI-5：sandbox 整合顯示 + approve 流程（§45.6）
 type: feature
 priority: medium
 status: done
-depends_on: [T008, T016]
+depends_on:
+- T008
+- T016
 assignee: OpenCode with DeepSeek V4 Flash
 created: 2026-08-13
-updated: 2026-08-15
+updated: '2026-08-17'
+spec_version: v3
 ---
-
 # T025 - UI-5：sandbox 整合顯示 + approve 流程
 
 ## 目標

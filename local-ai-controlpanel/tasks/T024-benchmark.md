@@ -4,13 +4,14 @@ title: Benchmark harness（Phase 5）：50 tasks + Baseline A–F + CP Gain
 type: benchmark
 priority: high
 status: done
-depends_on: [T023]
+depends_on:
+- T023
 assignee: OpenCode with DeepSeek V4 Flash
 created: 2026-08-13
-updated: 2026-08-14
+updated: '2026-08-17'
 completed: 2026-08-14
+spec_version: v3
 ---
-
 # T024 - Benchmark harness
 
 ## 目標

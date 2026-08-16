@@ -4,12 +4,13 @@ title: SSE client + Task 列表 + 事件串流（UI-3）
 type: feature
 priority: high
 status: done
-depends_on: [T002]
+depends_on:
+- T002
 assignee: OpenCode with DeepSeek V4 Flash
 created: 2026-08-13
-updated: 2026-08-13
+updated: '2026-08-17'
+spec_version: v3
 ---
-
 # T003 - SSE client + Task 列表 + 事件串流（UI-3）
 
 ## 目標

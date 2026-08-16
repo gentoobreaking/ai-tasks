@@ -1,13 +1,11 @@
 ---
 status: done
-spec_version: v3
-commit: a1c28f0
 depends_on: []
 priority: high
 assignee: OpenCode
 created: 2026-08-03
-updated: '2026-08-06'
-commit: d84b597
+updated: '2026-08-17'
+spec_version: v3
 ---
 # T007: multi_ai_discuss.py 重構為 DiscussionOrchestrator 狀態機 + 韌性層
 

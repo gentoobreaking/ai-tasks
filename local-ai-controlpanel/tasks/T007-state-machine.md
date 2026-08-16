@@ -4,14 +4,14 @@ title: State Machine（Phase 1）：Task 狀態機與轉移管制
 type: feature
 priority: high
 status: done
-depends_on: [T005, T006]
+depends_on:
+- T005
+- T006
 assignee: OpenCode with DeepSeek V4 Flash
 created: 2026-08-13
-updated: 2026-08-13
-
-commit: b4c3cf4
+updated: '2026-08-17'
+spec_version: v3
 ---
-
 # T007 - State Machine
 
 ## 目標

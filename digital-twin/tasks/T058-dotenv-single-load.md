@@ -4,13 +4,11 @@ title: dotenv 選用載入收斂（9 處重複 → config 單次）
 type: refactor
 priority: low
 status: done
-spec_version: v3
-commit: a1c28f0
 depends_on: []
 assignee: OpenCode with DeepSeek V4 Flash
 created: '2026-08-11'
-updated: '2026-08-12'
-commit: dbfa18c
+updated: '2026-08-17'
+spec_version: v3
 ---
 # T058 - dotenv 選用載入收斂
 

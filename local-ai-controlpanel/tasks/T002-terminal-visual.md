@@ -4,12 +4,13 @@ title: Terminal 視覺基底（UI-2）：暗色主題 + monospace + layout
 type: feature
 priority: high
 status: done
-depends_on: [T001]
+depends_on:
+- T001
 assignee: OpenCode with DeepSeek V4 Flash
 created: 2026-08-13
-updated: 2026-08-13
+updated: '2026-08-17'
+spec_version: v3
 ---
-
 # T002 - Terminal 視覺基底（UI-2）
 
 ## 目標

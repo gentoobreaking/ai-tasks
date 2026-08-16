@@ -4,16 +4,15 @@ title: twin auto --list 排序修正（完成在前＋優先級/編號排序）
 type: feature
 priority: high
 status: done
-spec_version: v3
-commit: a1c28f0
+commit: 2352b5e
 depends_on: []
 assignee: OpenCode with DeepSeek V4 Flash
 created: '2026-08-12'
-updated: '2026-08-12'
-commit: 2352b5e
-summary: 新增 sort_for_display() 顯示層排序（done 在前、群組內 priority+num）；--list 兩條路徑統一套用；新增 test_list_sorting.py 混合狀態排序測試；全量 262 passed、ruff/pyright 通過
+updated: '2026-08-17'
+summary: 新增 sort_for_display() 顯示層排序（done 在前、群組內 priority+num）；--list 兩條路徑統一套用；新增
+  test_list_sorting.py 混合狀態排序測試；全量 262 passed、ruff/pyright 通過
+spec_version: v3
 ---
-
 # T082 - twin auto --list 排序修正
 
 ## 目標

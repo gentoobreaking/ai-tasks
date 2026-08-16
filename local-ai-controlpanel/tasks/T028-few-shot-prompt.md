@@ -4,12 +4,13 @@ title: Few-shot Prompt Engineering（精選錯誤→修正案例）
 type: feature
 priority: high
 status: done
-depends_on: [T027]
+depends_on:
+- T027
 assignee: OpenCode with DeepSeek V4 Flash
 created: 2026-08-15
-updated: 2026-08-15
+updated: '2026-08-17'
+spec_version: v3
 ---
-
 # T028 - Few-shot Prompt Engineering（精選錯誤→修正案例）
 
 ## 目標

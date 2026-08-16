@@ -4,12 +4,14 @@ title: Reflection + Retry（Phase 4）：失敗分類器 + 重試政策
 type: feature
 priority: high
 status: done
-depends_on: [T011, T012]
+depends_on:
+- T011
+- T012
 assignee: OpenCode with DeepSeek V4 Flash
 created: 2026-08-13
-updated: 2026-08-14
+updated: '2026-08-17'
+spec_version: v3
 ---
-
 # T020 - Reflection + Retry
 
 ## 目標

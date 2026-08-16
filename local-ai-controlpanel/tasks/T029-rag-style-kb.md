@@ -4,12 +4,13 @@ title: RAG 風格知識庫（Style Knowledge Base）
 type: feature
 priority: medium
 status: done
-depends_on: [T028]
+depends_on:
+- T028
 assignee: OpenCode with DeepSeek V4 Flash
 created: 2026-08-15
-updated: 2026-08-15
+updated: '2026-08-17'
+spec_version: v3
 ---
-
 # T029 - RAG 風格知識庫（Style Knowledge Base）
 
 ## 目標

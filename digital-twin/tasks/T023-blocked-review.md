@@ -3,16 +3,14 @@ title: blocked 任務自動產出 review 紀錄與拆分建議
 type: feature
 priority: medium
 status: done
-spec_version: v3
-commit: a1c28f0
 depends_on: []
 assignee: OpenCode with DeepSeek V4 Flash
 created: 2026-08-05
-updated: 2026-08-07
-commit: f88f404
-summary: blocked 自動產 review(失敗歷史 JSONL+輸出摘要+規則式拆分建議/重試/人工)、twin blocked CLI 四指令、T006/T008 補產,6 tests
+updated: '2026-08-17'
+summary: blocked 自動產 review(失敗歷史 JSONL+輸出摘要+規則式拆分建議/重試/人工)、twin blocked CLI 四指令、T006/T008
+  補產,6 tests
+spec_version: v3
 ---
-
 # T023 - blocked 任務自動產出 review 紀錄與拆分建議
 
 ## 目標

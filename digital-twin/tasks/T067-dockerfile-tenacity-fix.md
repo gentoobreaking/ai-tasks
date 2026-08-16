@@ -4,12 +4,11 @@ title: Dockerfile 依賴補 tenacity（container import discussion_orchestrator 
 type: fix
 priority: high
 status: done
-spec_version: v3
-commit: a1c28f0
 depends_on: []
 assignee: OpenCode with DeepSeek V4 Flash
 created: '2026-08-12'
-updated: '2026-08-12'
+updated: '2026-08-17'
+spec_version: v3
 ---
 # T067 - Dockerfile 補上 tenacity
 

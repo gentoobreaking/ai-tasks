@@ -1,17 +1,15 @@
 ---
-github_issue: 
+github_issue: null
 title: MODELS 模型清單改由 YAML 配置（.opencode/models.yaml）
 type: feature
 priority: high
 status: done
-spec_version: v3
-commit: a1c28f0
 depends_on: []
 assignee: OpenCode with DeepSeek V4 Flash
 created: '2026-08-09'
-updated: '2026-08-09'
+updated: '2026-08-17'
+spec_version: v3
 ---
-
 # T040 - MODELS 模型清單 YAML 配置
 
 ## 目標

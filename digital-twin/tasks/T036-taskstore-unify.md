@@ -4,13 +4,11 @@ title: common/tasks.py 任務存取層（消除 auto_develop 與 agent_registry 
 type: refactor
 priority: high
 status: done
-spec_version: v3
-commit: a1c28f0
 depends_on: []
 assignee: OpenCode with DeepSeek V4 Flash
 created: '2026-08-09'
-updated: '2026-08-10'
-commit: a20b56b
+updated: '2026-08-17'
+spec_version: v3
 ---
 # T036 - 任務存取層統一（TaskStore）
 

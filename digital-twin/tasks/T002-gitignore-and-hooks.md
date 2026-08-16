@@ -1,14 +1,13 @@
 ---
 status: done
-spec_version: v3
-commit: a1c28f0
+commit: 41237c1e
 depends_on: []
 priority: high
 assignee: OpenCode
 created: 2026-08-03
-updated: '2026-08-03'
+updated: '2026-08-17'
 summary: '實作 T002: gitignore-and-hooks'
-commit: 41237c1e
+spec_version: v3
 ---
 # T002: 新增 .gitignore 並強制 secrets scanning (pre-commit/pre-push)
 

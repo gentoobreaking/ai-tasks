@@ -1,13 +1,11 @@
 ---
 status: done
-spec_version: v3
-commit: a1c28f0
 depends_on: []
 priority: high
-commit: ddddf62
 assignee: OpenCode
 created: 2026-08-03
-updated: 2026-08-06
+updated: '2026-08-17'
+spec_version: v3
 ---
 # T005: 新增 common/observability.py 統一結構化日誌與 OpenTelemetry
 

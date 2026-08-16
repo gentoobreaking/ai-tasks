@@ -4,13 +4,11 @@ title: URL/環境變數常數收斂至 config（embedding/telegram/REDIS──�
 type: refactor
 priority: medium
 status: done
-spec_version: v3
-commit: a1c28f0
 depends_on: []
 assignee: OpenCode with DeepSeek V4 Flash
 created: '2026-08-11'
-updated: '2026-08-12'
-commit: 2845b0b
+updated: '2026-08-17'
+spec_version: v3
 ---
 # T054 - URL/環境變數常數收斂至 config
 

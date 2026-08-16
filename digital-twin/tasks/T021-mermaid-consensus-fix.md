@@ -3,16 +3,13 @@ title: gen_mermaid 真實掃描化 + consensus 中文分詞改善
 type: refactor
 priority: low
 status: done
-spec_version: v3
-commit: a1c28f0
 depends_on: []
 assignee: OpenCode with DeepSeek V4 Flash
 created: 2026-08-05
-updated: 2026-08-07
-commit: d4e7763
+updated: '2026-08-17'
 summary: gen_mermaid 真實掃描(--project/--flow)+ consensus bigram 分詞、去 magic，7 tests
+spec_version: v3
 ---
-
 # T021 - gen_mermaid 真實掃描化 + consensus 中文分詞改善
 
 ## 目標

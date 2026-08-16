@@ -3,14 +3,12 @@ title: DiscussionOrchestrator 回歸測試（T017 P0 防護）
 type: test
 priority: medium
 status: done
-spec_version: v3
-commit: a1c28f0
 depends_on: []
 assignee: OpenCode with DeepSeek V4 Flash
 created: 2026-08-05
-updated: '2026-08-09'
+updated: '2026-08-17'
+spec_version: v3
 ---
-
 # T028 - DiscussionOrchestrator 回歸測試（T017 P0 防護）
 
 ## 目標

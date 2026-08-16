@@ -1,17 +1,15 @@
 ---
-github_issue: 
+github_issue: null
 title: PROJECT_PATHS 動態化：依 ~/tasks 未完成任務動態篩選專案＋.projects_ignore 排除
 type: feature
 priority: high
 status: done
-spec_version: v3
-commit: a1c28f0
 depends_on: []
 assignee: OpenCode with DeepSeek V4 Flash
 created: '2026-08-09'
-updated: '2026-08-09'
+updated: '2026-08-17'
+spec_version: v3
 ---
-
 # T046 - PROJECT_PATHS 動態化（未完成任務篩選 + .projects_ignore）
 
 ## 目標

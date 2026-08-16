@@ -1,17 +1,17 @@
 ---
-github_issue: 
+github_issue: null
 title: Telegram Bot 生產部署文件與啟動腳本
 type: docs
 priority: low
 status: done
-spec_version: v3
-commit: a1c28f0
-depends_on: [T006, T015]
+depends_on:
+- T006
+- T015
 assignee: OpenCode with DeepSeek V4 Flash
 created: 2026-08-06
-updated: '2026-08-09'
+updated: '2026-08-17'
+spec_version: v3
 ---
-
 # T032 - Telegram Bot 生產部署文件與啟動腳本
 
 ## 目標

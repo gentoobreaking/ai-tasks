@@ -4,12 +4,13 @@ title: 底部輸入 + 中斷 + 命令面板（UI-4）
 type: feature
 priority: high
 status: done
-depends_on: [T003]
+depends_on:
+- T003
 assignee: OpenCode with DeepSeek V4 Flash
 created: 2026-08-13
-updated: 2026-08-13
+updated: '2026-08-17'
+spec_version: v3
 ---
-
 # T004 - 底部輸入 + 中斷 + 命令面板（UI-4）
 
 ## 目標

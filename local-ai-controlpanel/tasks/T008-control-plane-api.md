@@ -4,14 +4,15 @@ title: Control Plane API（Phase 1）：Fastify REST + SSE（§45.5 契約）
 type: feature
 priority: high
 status: done
-depends_on: [T005, T006, T007]
+depends_on:
+- T005
+- T006
+- T007
 assignee: OpenCode with DeepSeek V4 Flash
 created: 2026-08-13
-updated: 2026-08-13
-
-commit: 3c2cad4
+updated: '2026-08-17'
+spec_version: v3
 ---
-
 # T008 - Control Plane API（Fastify REST + SSE）
 
 ## 目標

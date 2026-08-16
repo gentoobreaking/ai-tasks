@@ -1,15 +1,13 @@
 ---
 status: done
-spec_version: v3
-commit: a1c28f0
 depends_on: []
 priority: high
 assignee: OpenCode
 created: 2026-08-03
-updated: '2026-08-07'
+updated: '2026-08-17'
 fail_count: 0
-commit: 105f0bc
 summary: Agent SemVer front-matter + Canary deploy/promote/rollback 完成，11 tests 通過
+spec_version: v3
 ---
 # T010: Agent System Prompt 強制 SemVer Front-matter + Canary Deploy + Rollback
 

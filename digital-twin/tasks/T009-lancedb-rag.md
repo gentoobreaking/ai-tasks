@@ -1,15 +1,13 @@
 ---
 status: done
-spec_version: v3
-commit: a1c28f0
 depends_on: []
 priority: medium
 assignee: OpenCode
 created: 2026-08-03
-updated: '2026-08-06'
-commit: e6ade3f
+updated: '2026-08-17'
 fail_count: 1
 summary: '第 1 次失敗: 應用 diff 失敗'
+spec_version: v3
 ---
 # T009: index_knowledge.py 引入 LanceDB 替換純 Python 向量搜尋
 

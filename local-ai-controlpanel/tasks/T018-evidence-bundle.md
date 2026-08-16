@@ -4,12 +4,13 @@ title: Evidence model + Evidence Bundle + Shaping（Phase 3）
 type: feature
 priority: high
 status: done
-depends_on: [T017]
+depends_on:
+- T017
 assignee: OpenCode with DeepSeek V4 Flash
 created: 2026-08-13
-updated: 2026-08-14
+updated: '2026-08-17'
+spec_version: v3
 ---
-
 # T018 - Evidence model + Evidence Bundle + Shaping
 
 ## 目標

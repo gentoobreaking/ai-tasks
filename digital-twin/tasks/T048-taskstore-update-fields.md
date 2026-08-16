@@ -1,16 +1,15 @@
 ---
 github_issue: null
-title: TaskStore 重寫積木統一（update_fields/force）——retry/supersede/blocked_review/_record_failure 遷移
+title: TaskStore 重寫積木統一（update_fields/force）——retry/supersede/blocked_review/_record_failure
+  遷移
 type: refactor
 priority: high
 status: done
-spec_version: v3
-commit: a1c28f0
 depends_on: []
 assignee: OpenCode with DeepSeek V4 Flash
 created: '2026-08-11'
-updated: '2026-08-11'
-commit: 9dab005
+updated: '2026-08-17'
+spec_version: v3
 ---
 # T048 - TaskStore 重寫積木統一（update_fields）
 

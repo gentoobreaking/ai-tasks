@@ -4,12 +4,11 @@ title: .env.example 補齊未文件化環境變數
 type: docs
 priority: low
 status: done
-spec_version: v3
-commit: a1c28f0
 depends_on: []
 assignee: OpenCode with DeepSeek V4 Flash
 created: '2026-08-12'
-updated: '2026-08-14'
+updated: '2026-08-17'
+spec_version: v3
 ---
 # T079 - .env.example 補齊環境變數
 

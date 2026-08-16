@@ -4,12 +4,11 @@ title: Prometheus registry 統一（/metrics 缺 OTEL metrics）
 type: refactor
 priority: medium
 status: done
-spec_version: v3
-commit: a1c28f0
 depends_on: []
 assignee: OpenCode with DeepSeek V4 Flash
 created: '2026-08-12'
-updated: '2026-08-14'
+updated: '2026-08-17'
+spec_version: v3
 ---
 # T074 - Prometheus metrics registry 統一
 

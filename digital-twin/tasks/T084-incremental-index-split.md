@@ -1,17 +1,15 @@
 ---
-github_issue: 
+github_issue: null
 title: 拆分 incremental_index.py 為 indexer.py 與 searcher.py
 type: pending
 priority: medium
 status: done
-spec_version: v3
-commit: a1c28f0
 depends_on: []
 assignee: OpenCode with DeepSeek V4 Flash
 created: 2026-08-15
-updated: 2026-08-16
+updated: '2026-08-17'
+spec_version: v3
 ---
-
 # T084 - 拆分 incremental_index.py 為 indexer.py 與 searcher.py
 
 ## 目標

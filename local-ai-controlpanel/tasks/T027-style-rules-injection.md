@@ -4,12 +4,13 @@ title: Prompt 注入風格規範（Style Rules Injection）
 type: feature
 priority: high
 status: done
-depends_on: [T024]
+depends_on:
+- T024
 assignee: OpenCode with DeepSeek V4 Flash
 created: 2026-08-15
-updated: 2026-08-15
+updated: '2026-08-17'
+spec_version: v3
 ---
-
 # T027 - Prompt 注入風格規範（Style Rules Injection）
 
 ## 目標

@@ -4,14 +4,13 @@ title: SQLite schema + Task model + Task Manager（Phase 1）
 type: feature
 priority: high
 status: done
-depends_on: [T005]
+depends_on:
+- T005
 assignee: OpenCode with DeepSeek V4 Flash
 created: 2026-08-13
-updated: 2026-08-13
-
-commit: 5e38582
+updated: '2026-08-17'
+spec_version: v3
 ---
-
 # T006 - SQLite schema + Task model + Task Manager
 
 ## 目標

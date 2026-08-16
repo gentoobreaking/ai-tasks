@@ -4,14 +4,16 @@ title: Policy Engine（Phase 2）：YAML policies + 知識政策 + 決策評估
 type: feature
 priority: high
 status: done
-depends_on: [T005, T006, T007, T008]
+depends_on:
+- T005
+- T006
+- T007
+- T008
 assignee: OpenCode with DeepSeek V4 Flash
 created: 2026-08-13
-updated: 2026-08-13
-
-commit: 2787725
+updated: '2026-08-17'
+spec_version: v3
 ---
-
 # T010 - Policy Engine
 
 ## 目標

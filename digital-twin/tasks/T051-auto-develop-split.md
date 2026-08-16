@@ -4,13 +4,12 @@ title: auto_develop 拆分模組（scheduler/providers/diff）——消除 1925 
 type: refactor
 priority: high
 status: done
-spec_version: v3
-commit: a1c28f0
-depends_on: [50]
+depends_on:
+- 50
 assignee: OpenCode with DeepSeek V4 Flash
 created: '2026-08-11'
-updated: '2026-08-11'
-commit: cc40d81
+updated: '2026-08-17'
+spec_version: v3
 ---
 # T051 - auto_develop 拆分模組（scheduler/providers/diff）
 

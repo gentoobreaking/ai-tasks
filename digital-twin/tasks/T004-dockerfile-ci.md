@@ -1,14 +1,12 @@
 ---
 status: done
-spec_version: v3
-commit: a1c28f0
 depends_on: []
 priority: medium
 assignee: OpenCode with DeepSeek V4 Flash
 created: 2026-08-03
-updated: 2026-08-06
-summary: "實作 T004: Dockerfile + docker-compose + GitHub Actions CI"
-commit: 9396fc2
+updated: '2026-08-17'
+summary: '實作 T004: Dockerfile + docker-compose + GitHub Actions CI'
+spec_version: v3
 ---
 # T004: 新增 Dockerfile + docker-compose.yml + GitHub Actions CI
 

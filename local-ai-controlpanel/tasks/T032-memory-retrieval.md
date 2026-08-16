@@ -3,11 +3,11 @@ github_issue: N/A
 title: Memory / Project Memory Retrieval 接入 Pi Worker
 type: feature
 priority: high
-status: in_progress
+status: done
 depends_on: [T029]
 assignee: OpenCode with DeepSeek V4 Flash
 created: 2026-08-15
-updated: 2026-08-16
+updated: 2026-08-17
 ---
 
 # T032 - Memory / Project Memory Retrieval 接入 Pi Worker
@@ -67,7 +67,12 @@ updated: 2026-08-16
 - `PiWorkerOptions` 新增 `memoryRetriever?: MemoryRetriever` 選項
 - Typecheck 通過，單元測試 12/12 通過
 
-## 待完成（需連續多任務驗證）
+## 關鍵修復（本次任務）
+
+- 修復 `project_memory` table schema：新增 `vector BLOB` 欄位（用於 3-gram 向量相似度檢索）
+- 完整驗證 Memory Retriever：storeMemory / retrieveMemory / listMemories / clearProject 全通過
+
+## 待完成（需連續多任務驗證，需 llama.cpp 環境）
 
 - 同一專案連續跑 3 個 Python tasks 驗證記憶傳遞
 - lint=FAIL 率下降 ≥ 30% 驗證

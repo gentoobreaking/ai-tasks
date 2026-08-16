@@ -4,13 +4,11 @@ title: 完成流程單軌化＋一致性檢查（/complete-task 同步 README；
 type: feature
 priority: high
 status: done
-spec_version: v3
-commit: a1c28f0
 depends_on: []
 assignee: OpenCode with DeepSeek V4 Flash
 created: '2026-08-11'
-updated: '2026-08-11'
-commit: 8f84670
+updated: '2026-08-17'
+spec_version: v3
 ---
 # T049 - 完成流程單軌化＋一致性檢查
 

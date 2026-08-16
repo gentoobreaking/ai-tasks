@@ -1,6 +1,6 @@
 # 📁 Projects Dashboard
 
-> 最後更新: 2026-08-17 01:18 · 自動生成
+> 最後更新: 2026-08-17 03:37 · 自動生成
 
 ---
 
@@ -10,19 +10,16 @@
 |------|------|
 | 專案數 | 61 |
 | 任務總數 | 1018 |
-| ✅ 已完成 | 946 |
-| ⬜ 待處理 | 6 |
-| 🔄 進行中 | 4 |
+| ✅ 已完成 | 950 |
+| ⬜ 待處理 | 4 |
+| 🔄 進行中 | 2 |
 | ⏭️ 跳過 | 62 |
-| 總完成率 | 98% |
+| 總完成率 | 99% |
 
 ## 🔥 待處理高優先級任務
 
 | 專案 | 任務 | 標題 |
 |------|------|------|
-| local-ai-controlpanel | [T030-baseline-abef](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T030-baseline-abef.md) | Baseline Groups A–E 完整跑分與對照驗證 |
-| local-ai-controlpanel | [T031-metrics-report](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T031-metrics-report.md) | CP Gain / Intelligence Efficiency / Research ROI 指標計算與自動化報告 |
-| local-ai-controlpanel | [T032-memory-retrieval](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T032-memory-retrieval.md) | Memory / Project Memory Retrieval 接入 Pi Worker |
 | local-ai-controlpanel | [T036-spec-impl-review](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T036-spec-impl-review.md) | Spec v0.5 vs 實作完整度審查與差距清單產出 |
 
 ---
@@ -34,8 +31,6 @@
 |------|------|------|------|
 | gold-analysis-advanced | [T002](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis-advanced/tasks/T002.md) | ML 模型整合與優化 | ⬜ |
 | gold-analysis-advanced | [T004](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis-advanced/tasks/T004.md) | 實盤交易對接 | ⬜ |
-| local-ai-controlpanel | [T030-baseline-abef](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T030-baseline-abef.md) | Baseline Groups A–E 完整跑分與對照驗證 | ⬜ |
-| local-ai-controlpanel | [T035-hybrid-execution](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T035-hybrid-execution.md) | Phase 9 Hybrid Execution / Cloud Escalation 實作 | ⬜ |
 | local-ai-controlpanel | [T036-spec-impl-review](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T036-spec-impl-review.md) | Spec v0.5 vs 實作完整度審查與差距清單產出 | ⬜ |
 | md-viewer-app | [T027-預覽連結懸停](https://github.com/gentoobreaking/ai-tasks/blob/main/md-viewer-app/tasks/T027-預覽連結懸停.md) | [T027] 連結懸停預覽 | ⬜ |
 
@@ -45,8 +40,6 @@
 |------|------|------|------|
 | digital-twin | [T087-repo-cleanup](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T087-repo-cleanup.md) | 清理 repo 根目錄雜檔與目錄結構 | 🔄 |
 | gold-analysis-advanced | [T001](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis-advanced/tasks/T001.md) | 機器學習模型開發 | 🔄 |
-| local-ai-controlpanel | [T031-metrics-report](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T031-metrics-report.md) | CP Gain / Intelligence Efficiency / Research ROI 指標計算與自動化報告 | 🔄 |
-| local-ai-controlpanel | [T032-memory-retrieval](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T032-memory-retrieval.md) | Memory / Project Memory Retrieval 接入 Pi Worker | 🔄 |
 
 ## ⏭️ 跳過
 
@@ -121,9 +114,9 @@
 
 | 指標 | 數值 |
 |------|------|
-| 過去 7 天完成 | 115 |
-| 過去 30 天完成 | 290 |
-| 平均週期時間 | 1.3 天 |
+| 過去 7 天完成 | 158 |
+| 過去 30 天完成 | 294 |
+| 平均週期時間 | 2.1 天 |
 | 週期時間中位數 | 0.0 天 |
 
 
@@ -131,11 +124,11 @@
 xychart-beta
     title "過去 14 天任務完成趨勢"
     x-axis ["08-04", "08-05", "08-06", "08-07", "08-08", "08-09", "08-10", "08-11", "08-12", "08-13", "08-14", "08-15", "08-16", "08-17"]
-    y-axis "完成數" 0 --> 72
-    line [72, 16, 8, 12, 4, 8, 15, 22, 22, 17, 17, 14, 7, 1]
+    y-axis "完成數" 0 --> 118
+    line [71, 12, 0, 0, 0, 0, 12, 11, 7, 0, 0, 8, 2, 118]
 ```
 
-📊 總計: 235 | 日均: 16.8 | 本週: 100 | 📉 下降中
+📊 總計: 241 | 日均: 17.2 | 本週: 146 | 📈 成長中
 
 ## 📋 專案列表
 
@@ -173,10 +166,7 @@ xychart-beta
 | ✅ | [kgi-monitor](https://github.com/gentoobreaking/ai-tasks/tree/main/kgi-monitor) | 6 | 6 | 0 | 0 | 0 | ████████████████████ 100% | 2026-04-22 |
 | ✅ | [lifecycle-sync-fix](https://github.com/gentoobreaking/ai-tasks/tree/main/lifecycle-sync-fix) | 2 | 2 | 0 | 0 | 0 | ████████████████████ 100% | 2026-04-21 |
 | ✅ | [llm-router](https://github.com/gentoobreaking/ai-tasks/tree/main/llm-router) | 1 | 1 | 0 | 0 | 0 | ████████████████████ 100% | 2026-04-16 |
-| 🔄 | [local-ai-controlpanel](https://github.com/gentoobreaking/ai-tasks/tree/main/local-ai-controlpanel) | 36 | 31 | 3 | 2 | 0 | █████████████████░░░ 86% | 2026-08-17 |
-  **[T030-baseline-abef](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T030-baseline-abef.md)**: Baseline Groups A–E 完整跑分與對照驗證
-  **[T031-metrics-report](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T031-metrics-report.md)**: CP Gain / Intelligence Efficiency / Research ROI 指標計算與自動化報告
-  **[T032-memory-retrieval](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T032-memory-retrieval.md)**: Memory / Project Memory Retrieval 接入 Pi Worker
+| ⬜ | [local-ai-controlpanel](https://github.com/gentoobreaking/ai-tasks/tree/main/local-ai-controlpanel) | 36 | 35 | 1 | 0 | 0 | ███████████████████░ 97% | 2026-08-17 |
   **[T036-spec-impl-review](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T036-spec-impl-review.md)**: Spec v0.5 vs 實作完整度審查與差距清單產出
 | ⬜ | [md-viewer-app](https://github.com/gentoobreaking/ai-tasks/tree/main/md-viewer-app) | 44 | 38 | 1 | 0 | 5 | ███████████████████░ 97% | 2026-05-12 |
 | ✅ | [member-backup](https://github.com/gentoobreaking/ai-tasks/tree/main/member-backup) | 1 | 1 | 0 | 0 | 0 | ████████████████████ 100% | 2026-04-16 |

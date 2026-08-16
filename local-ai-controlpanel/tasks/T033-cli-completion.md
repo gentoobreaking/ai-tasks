@@ -4,12 +4,13 @@ title: CLI 完善與使用者介面
 type: feature
 priority: medium
 status: done
-depends_on: [T024]
+depends_on:
+- T024
 assignee: OpenCode with DeepSeek V4 Flash
 created: 2026-08-15
-updated: 2026-08-16
+updated: '2026-08-17'
+spec_version: v3
 ---
-
 # T033 - CLI 完善與使用者介面（§29）
 
 ## 目標

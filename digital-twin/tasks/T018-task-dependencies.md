@@ -3,16 +3,13 @@ title: 任務 frontmatter 增加 depends_on 依賴欄位
 type: feature
 priority: medium
 status: done
-spec_version: v3
-commit: a1c28f0
 depends_on: []
 assignee: OpenCode with DeepSeek V4 Flash
 created: 2026-08-05
-updated: 2026-08-07
-commit: 3f9f126
+updated: '2026-08-17'
 summary: depends_on 依賴欄位 + auto_develop 依賴閘門 + 路徑收斂，10 tests 通過
+spec_version: v3
 ---
-
 # T018 - 任務 frontmatter 增加 depends_on 依賴欄位
 
 ## 目標

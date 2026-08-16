@@ -1,14 +1,13 @@
 ---
 status: done
-spec_version: v3
-commit: a1c28f0
+commit: 87f7fc0
 depends_on: []
 priority: high
 assignee: OpenCode
 created: 2026-08-03
-updated: '2026-08-03'
+updated: '2026-08-17'
 summary: '實作 T003: 新增 pyproject.toml 完整依賴管理與 ruff 配置'
-commit: 87f7fc0
+spec_version: v3
 ---
 # T003: 新增 pyproject.toml 完整依賴管理與 ruff 配置
 

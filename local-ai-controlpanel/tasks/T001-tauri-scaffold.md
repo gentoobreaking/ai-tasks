@@ -7,9 +7,10 @@ status: done
 depends_on: []
 assignee: OpenCode with DeepSeek V4 Flash
 created: 2026-08-13
-updated: 2026-08-13
+updated: '2026-08-17'
+spec_version: v3
+spec_commit: f4987ff
 ---
-
 # T001 - Tauri scaffold（UI-1）
 
 ## 目標

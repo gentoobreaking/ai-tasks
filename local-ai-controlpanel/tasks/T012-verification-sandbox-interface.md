@@ -4,14 +4,16 @@ title: Verification Engine + Sandbox Interface/Registry（Phase 2，2a）
 type: feature
 priority: high
 status: done
-depends_on: [T005, T008, T010, T011]
+depends_on:
+- T005
+- T008
+- T010
+- T011
 assignee: OpenCode with DeepSeek V4 Flash
 created: 2026-08-13
-updated: 2026-08-13
-
-commit: 5872677
+updated: '2026-08-17'
+spec_version: v3
 ---
-
 # T012 - Verification Engine + Sandbox Interface/Registry
 
 ## 目標

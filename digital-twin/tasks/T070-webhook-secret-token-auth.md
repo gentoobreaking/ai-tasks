@@ -4,12 +4,11 @@ title: telegram webhook secret token 驗證（防偽造 Update 繞過 RBAC）
 type: security
 priority: high
 status: done
-spec_version: v3
-commit: a1c28f0
 depends_on: []
 assignee: OpenCode with DeepSeek V4 Flash
 created: '2026-08-12'
-updated: '2026-08-12'
+updated: '2026-08-17'
+spec_version: v3
 ---
 # T070 - telegram webhook secret token 驗證
 

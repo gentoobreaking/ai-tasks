@@ -46,8 +46,8 @@
 | MODELS 模型清單改由 YAML 配置（.opencode/models.yaml） |
 | --model/Scheduler 預設不再硬編，整條鏈由 impl_providers.yaml 決定 |
 | PROJECT_PATHS 動態化：依 ~/tasks 未完成任務動態篩選專案＋.projects_ignore 排除 |
-| 任務檔 frontmatter 解析全面收斂至 TaskStore（消除 agent_versioning/doctor/incremental_index 平行實作） |
-| TaskStore 重寫積木統一（update_fields/force）——retry/supersede/blocked_review/_record_failure 遷移 |
+| 任務檔 frontmatter 解析全面收斂至 TaskStore（消除 agent_versioning/doctor/incremental_index |
+| TaskStore 重寫積木統一（update_fields/force）——retry/supersede/blocked_review/_record_failure |
 | 完成流程單軌化＋一致性檢查（/complete-task 同步 README；doctor 增 spec↔任務↔README validator） |
 | git 操作收斂 common/git.py——auto_develop 五處 subprocess 改用單一模組 |
 | auto_develop 拆分模組（scheduler/providers/diff）——消除 1925 行單一檔案 |
@@ -152,8 +152,8 @@
 | [T40-models-yaml](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T040-models-yaml.md) | MODELS 模型清單改由 YAML 配置（.opencode/models.yaml） | ✅ done |
 | [T41-openrouter-default-model](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T041-openrouter-default-model.md) | --model/Scheduler 預設不再硬編，整條鏈由 impl_providers.yaml 決定 | ✅ done |
 | [T46-dynamic-project-paths](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T046-dynamic-project-paths.md) | PROJECT_PATHS 動態化：依 ~/tasks 未完成任務動態篩選專案＋.projects_ignore 排除 | ✅ done |
-| [T47-taskstore-frontmatter-converge](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T047-taskstore-frontmatter-converge.md) | 任務檔 frontmatter 解析全面收斂至 TaskStore（消除 agent_versioning/doctor/incremental_index 平行實作） | ✅ done |
-| [T48-taskstore-update-fields](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T048-taskstore-update-fields.md) | TaskStore 重寫積木統一（update_fields/force）——retry/supersede/blocked_review/_record_failure 遷移 | ✅ done |
+| [T47-taskstore-frontmatter-converge](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T047-taskstore-frontmatter-converge.md) | 任務檔 frontmatter 解析全面收斂至 TaskStore（消除 agent_versioning/doctor/incremental_index | ✅ done |
+| [T48-taskstore-update-fields](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T048-taskstore-update-fields.md) | TaskStore 重寫積木統一（update_fields/force）——retry/supersede/blocked_review/_record_failure | ✅ done |
 | [T49-complete-flow-consistency](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T049-complete-flow-consistency.md) | 完成流程單軌化＋一致性檢查（/complete-task 同步 README；doctor 增 spec↔任務↔README validator） | ✅ done |
 | [T50-git-module-converge](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T050-git-module-converge.md) | git 操作收斂 common/git.py——auto_develop 五處 subprocess 改用單一模組 | ✅ done |
 | [T51-auto-develop-split](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T051-auto-develop-split.md) | auto_develop 拆分模組（scheduler/providers/diff）——消除 1925 行單一檔案 | ✅ done |
@@ -197,4 +197,4 @@
 
 **✅ done: 83 | 🔧 in-progress: 1 | ⏭️ skip: 0 | 📋 pending: 0**
 
-> 自動生成於 2026-08-17 01:18
+> 自動生成於 2026-08-17 03:37

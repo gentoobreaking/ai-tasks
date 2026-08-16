@@ -1,17 +1,16 @@
 ---
-github_issue: 
+github_issue: null
 title: 統一 scheduler.py 的日誌輸出為 structlog
 type: pending
 priority: low
 status: done
-spec_version: v3
-commit: a1c28f0
-depends_on: ["T083"]
+depends_on:
+- T083
 assignee: OpenCode with DeepSeek V4 Flash
 created: 2026-08-15
-updated: 2026-08-16
+updated: '2026-08-17'
+spec_version: v3
 ---
-
 # T085 - 統一 scheduler.py 的日誌輸出為 structlog
 
 ## 目標

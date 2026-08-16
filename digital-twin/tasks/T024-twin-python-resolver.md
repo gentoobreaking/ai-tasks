@@ -3,14 +3,12 @@ title: twin CLI 智慧選擇 Python 直譯器（解決無 Key 假象）
 type: fix
 priority: high
 status: done
-spec_version: v3
-commit: a1c28f0
 depends_on: []
 assignee: OpenCode with DeepSeek V4 Flash
 created: 2026-08-05
-updated: 2026-08-05
+updated: '2026-08-17'
+spec_version: v3
 ---
-
 # T024 - twin CLI 智慧選擇 Python 直譯器
 
 ## 目標

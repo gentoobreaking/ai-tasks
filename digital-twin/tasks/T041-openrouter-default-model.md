@@ -1,17 +1,15 @@
 ---
-github_issue: 
-title: '--model/Scheduler 預設不再硬編，整條鏈由 impl_providers.yaml 決定'
+github_issue: null
+title: --model/Scheduler 預設不再硬編，整條鏈由 impl_providers.yaml 決定
 type: refactor
 priority: high
 status: done
-spec_version: v3
-commit: a1c28f0
 depends_on: []
 assignee: OpenCode with DeepSeek V4 Flash
 created: '2026-08-09'
-updated: '2026-08-09'
+updated: '2026-08-17'
+spec_version: v3
 ---
-
 # T041 - Auto-Develop OpenRouter 預設模型統一由 impl_providers.yaml 決定
 
 ## 目標

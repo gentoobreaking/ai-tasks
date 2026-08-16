@@ -1,17 +1,15 @@
 ---
-github_issue: 
+github_issue: null
 title: 模型備援鏈 YAML 配置（impl_providers.yaml）＋順位重排（opencode CLI 第一）
 type: feature
 priority: medium
 status: done
-spec_version: v3
-commit: a1c28f0
 depends_on: []
 assignee: OpenCode with DeepSeek V4 Flash
 created: '2026-08-09'
-updated: '2026-08-09'
+updated: '2026-08-17'
+spec_version: v3
 ---
-
 # T039 - 模型備援鏈 YAML 配置＋順位重排
 
 ## 目標

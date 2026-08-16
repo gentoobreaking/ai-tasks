@@ -4,12 +4,15 @@ title: Sandbox 可切換執行 + sandbox check + Matrix 測試（Phase 2，2d/2f
 type: feature
 priority: high
 status: done
-depends_on: [T013, T014, T015]
+depends_on:
+- T013
+- T014
+- T015
 assignee: OpenCode with DeepSeek V4 Flash
 created: 2026-08-13
-updated: 2026-08-13
+updated: '2026-08-17'
+spec_version: v3
 ---
-
 # T016 - Sandbox 可切換執行 + sandbox check + Matrix
 
 ## 目標

@@ -4,12 +4,14 @@ title: Worker Registry / Router（Phase 1）：註冊與選派
 type: feature
 priority: medium
 status: done
-depends_on: [T005, T021]
+depends_on:
+- T005
+- T021
 assignee: OpenCode with DeepSeek V4 Flash
 created: 2026-08-13
-updated: 2026-08-14
+updated: '2026-08-17'
+spec_version: v3
 ---
-
 # T022 - Worker Registry / Router
 
 ## 目標

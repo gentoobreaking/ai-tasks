@@ -1,17 +1,15 @@
 ---
 status: done
-spec_version: v3
-commit: a1c28f0
 depends_on:
 - T003
 priority: high
 assignee: OpenCode
 created: 2026-08-03
-updated: '2026-08-07'
-commit: e832edf
+updated: '2026-08-17'
 fail_count: 2
 summary: 連續失敗 3 次（應用 diff 失敗），標記為 blocked 待人工處理
 blocked_review: tasks/blocked-review/T008-review.md
+spec_version: v3
 ---
 # T008: 新增 agent_registry.yaml + agent_registry.py 動態路由
 

@@ -4,12 +4,11 @@ title: install_hooks 死碼清理與 pre-commit ruff --fix 後 restage
 type: fix
 priority: low
 status: done
-spec_version: v3
-commit: a1c28f0
 depends_on: []
 assignee: OpenCode with DeepSeek V4 Flash
 created: '2026-08-12'
-updated: '2026-08-14'
+updated: '2026-08-17'
+spec_version: v3
 ---
 # T081 - install_hooks 死碼與 restage 修正
 

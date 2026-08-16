@@ -1,17 +1,17 @@
 ---
-github_issue: 
+github_issue: null
 title: .gitignore 新增 .lancedb/ 目錄忽略
 type: fix
 priority: low
 status: done
-spec_version: v3
-commit: a1c28f0
-depends_on: [T002, T009]
+depends_on:
+- T002
+- T009
 assignee: OpenCode with DeepSeek V4 Flash
 created: 2026-08-06
-updated: '2026-08-08'
+updated: '2026-08-17'
+spec_version: v3
 ---
-
 # T031 - .gitignore 新增 .lancedb/ 目錄忽略
 
 ## 目標

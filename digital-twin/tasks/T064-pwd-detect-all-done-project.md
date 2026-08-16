@@ -4,14 +4,13 @@ title: twin auto --list PWD 自動判斷不支援 all-done 專案
 type: bug
 priority: high
 status: done
-spec_version: v3
-commit: a1c28f0
-updated: '2026-08-11'
 commit: a1b2c3d
-depends_on: [60]
+updated: '2026-08-17'
+depends_on:
+- 60
 assignee: OpenCode with DeepSeek V4 Flash
 created: '2026-08-11'
-updated: '2026-08-11'
+spec_version: v3
 ---
 # T064 - twin auto --list PWD 自動判斷不支援 all-done 專案
 

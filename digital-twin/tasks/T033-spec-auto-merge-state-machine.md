@@ -1,17 +1,16 @@
 ---
-github_issue: 
+github_issue: null
 title: spec_auto_merge.py 整合 DiscussionOrchestrator 狀態機推進
 type: feature
 priority: medium
 status: done
-spec_version: v3
-commit: a1c28f0
-depends_on: [T007]
+depends_on:
+- T007
 assignee: OpenCode with DeepSeek V4 Flash
 created: 2026-08-06
-updated: '2026-08-08'
+updated: '2026-08-17'
+spec_version: v3
 ---
-
 # T033 - spec_auto_merge.py 整合 DiscussionOrchestrator 狀態機推進
 
 ## 目標

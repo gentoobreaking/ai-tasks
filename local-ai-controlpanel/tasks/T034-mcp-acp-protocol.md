@@ -4,12 +4,13 @@ title: MCP / ACP 協議層實作（Phase 6+ 預留）
 type: feature
 priority: medium
 status: done
-depends_on: [T032]
+depends_on:
+- T032
 assignee: OpenCode with DeepSeek V4 Flash
 created: 2026-08-15
-updated: 2026-08-16
+updated: '2026-08-17'
+spec_version: v3
 ---
-
 # T034 - MCP / ACP 協議層實作（Phase 6+ 預留）
 
 ## 目標

@@ -4,14 +4,14 @@ title: Artifact Controller（Phase 2）：patch 驗證 / apply / rollback
 type: feature
 priority: high
 status: done
-depends_on: [T010, T021]
+depends_on:
+- T010
+- T021
 assignee: OpenCode with DeepSeek V4 Flash
 created: 2026-08-13
-updated: 2026-08-13
-
-commit: 2cd1d35
+updated: '2026-08-17'
+spec_version: v3
 ---
-
 # T011 - Artifact Controller
 
 ## 目標

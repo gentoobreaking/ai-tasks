@@ -3,16 +3,13 @@ title: apply_feedback mark_as_done no-op bug 修復
 type: fix
 priority: medium
 status: done
-spec_version: v3
-commit: a1c28f0
 depends_on: []
 assignee: OpenCode with DeepSeek V4 Flash
 created: 2026-08-05
-updated: 2026-08-07
-commit: 7c6aae6
+updated: '2026-08-17'
 summary: mark_as_done 改區塊精準重寫,移除 no-op replace,4 tests 通過
+spec_version: v3
 ---
-
 # T020 - apply_feedback mark_as_done no-op bug 修復
 
 ## 目標

@@ -4,13 +4,18 @@ title: 第一個 E2E Test（Phase 4 收尾）：Python repo + 有/無 Research �
 type: test
 priority: high
 status: done
-depends_on: [T021, T011, T012, T019, T020]
+depends_on:
+- T021
+- T011
+- T012
+- T019
+- T020
 assignee: OpenCode with DeepSeek V4 Flash
 created: 2026-08-13
-updated: 2026-08-14
+updated: '2026-08-17'
 completed: 2026-08-14
+spec_version: v3
 ---
-
 # T023 - 第一個 E2E Test
 
 ## 目標

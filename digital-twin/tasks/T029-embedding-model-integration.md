@@ -1,19 +1,17 @@
 ---
-github_issue: 
+github_issue: null
 title: RAG Embedding Model 整合 (LanceDB 向量搜尋)
 type: feature
 priority: medium
 status: done
-spec_version: v3
-commit: a1c28f0
 depends_on: []
 assignee: OpenCode with DeepSeek V4 Flash
 created: 2026-08-06
-updated: 2026-08-08
-commit: 3975424
-summary: embedding.py 四 provider + 向量化索引/遷移/ANN + reindex --embed + 語意測試,15 tests,真實庫 8200 段實跑
+updated: '2026-08-17'
+summary: embedding.py 四 provider + 向量化索引/遷移/ANN + reindex --embed + 語意測試,15 tests,真實庫
+  8200 段實跑
+spec_version: v3
 ---
-
 # T029 - RAG Embedding Model 整合 (LanceDB 向量搜尋)
 
 ## 目標

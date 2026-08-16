@@ -4,12 +4,14 @@ title: UI-6：打包 + Control Plane 自動啟動/附著（§45.6）
 type: feature
 priority: medium
 status: done
-depends_on: [T008, T025]
+depends_on:
+- T008
+- T025
 assignee: OpenCode with DeepSeek V4 Flash
 created: 2026-08-13
-updated: 2026-08-15
+updated: '2026-08-17'
+spec_version: v3
 ---
-
 # T026 - UI-6：打包 + Control Plane 自動啟動/附著
 
 ## 目標

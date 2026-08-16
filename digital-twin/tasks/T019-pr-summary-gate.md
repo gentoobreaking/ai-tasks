@@ -3,16 +3,13 @@ title: auto_develop 完成後輸出 PR 摘要 + 大 diff 人工確認閘門
 type: feature
 priority: medium
 status: done
-spec_version: v3
-commit: a1c28f0
 depends_on: []
 assignee: OpenCode with DeepSeek V4 Flash
 created: 2026-08-05
-updated: 2026-08-07
-commit: 3f9f126
+updated: '2026-08-17'
 summary: PR 摘要 logs/pr-T0XX.md + confirm-threshold 閘門 + --no-confirm，10 tests 通過
+spec_version: v3
 ---
-
 # T019 - auto_develop 完成後輸出 PR 摘要 + 大 diff 人工確認閘門
 
 ## 目標

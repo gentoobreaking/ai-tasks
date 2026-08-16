@@ -4,12 +4,14 @@ title: Worker Interface + Pi Worker + llama.cpp 串接（Phase 1）
 type: feature
 priority: high
 status: done
-depends_on: [T005, T008]
+depends_on:
+- T005
+- T008
 assignee: OpenCode with DeepSeek V4 Flash
 created: 2026-08-13
-updated: 2026-08-14
+updated: '2026-08-17'
+spec_version: v3
 ---
-
 # T021 - Worker Interface + Pi Worker
 
 ## 目標

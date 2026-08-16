@@ -1,16 +1,15 @@
 ---
 github_issue: null
-title: 任務檔 frontmatter 解析全面收斂至 TaskStore（消除 agent_versioning/doctor/incremental_index 平行實作）
+title: 任務檔 frontmatter 解析全面收斂至 TaskStore（消除 agent_versioning/doctor/incremental_index
+  平行實作）
 type: refactor
 priority: high
 status: done
-spec_version: v3
-commit: a1c28f0
 depends_on: []
 assignee: OpenCode with DeepSeek V4 Flash
 created: '2026-08-11'
-updated: '2026-08-11'
-commit: b8255a6
+updated: '2026-08-17'
+spec_version: v3
 ---
 # T047 - 任務檔 frontmatter 解析全面收斂 TaskStore
 

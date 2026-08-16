@@ -4,12 +4,12 @@ title: worker RAG 同步搜尋改 asyncio.to_thread（避免阻塞 event loop）
 type: fix
 priority: medium
 status: done
-spec_version: v3
-commit: a1c28f0
-depends_on: [72]
+depends_on:
+- 72
 assignee: OpenCode with DeepSeek V4 Flash
 created: '2026-08-12'
-updated: '2026-08-14'
+updated: '2026-08-17'
+spec_version: v3
 ---
 # T075 - worker run_rag_task 改非阻塞執行
 

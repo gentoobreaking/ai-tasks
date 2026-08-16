@@ -1,17 +1,15 @@
 ---
-github_issue: 
+github_issue: null
 title: twin route CLI 擴充 (--list-agents, --show-rules, --dry-run)
 type: feature
 priority: low
 status: done
-spec_version: v3
-commit: a1c28f0
 depends_on: []
 assignee: OpenCode with DeepSeek V4 Flash
 created: 2026-08-06
-updated: '2026-08-09'
+updated: '2026-08-17'
+spec_version: v3
 ---
-
 # T035 - twin route CLI 擴充 (--list-agents, --show-rules, --dry-run)
 
 ## 目標

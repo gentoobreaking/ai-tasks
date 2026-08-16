@@ -3,16 +3,13 @@ title: ruff 舊債清理（100 errors → 0）
 type: refactor
 priority: medium
 status: done
-spec_version: v3
-commit: a1c28f0
 depends_on: []
 assignee: OpenCode with DeepSeek V4 Flash
 created: 2026-08-05
-updated: 2026-08-07
-commit: 492dada
+updated: '2026-08-17'
 summary: ruff 舊債 100 → 0 errors（配合 T018/T019/T027 分批清理），70 tests 通過
+spec_version: v3
 ---
-
 # T025 - ruff 舊債清理（100 errors → 0）
 
 ## 目標

@@ -7,11 +7,9 @@ status: done
 depends_on: []
 assignee: OpenCode with DeepSeek V4 Flash
 created: 2026-08-13
-updated: 2026-08-13
-
-commit: 9f4f1f2
+updated: '2026-08-17'
+spec_version: v3
 ---
-
 # T005 - Repo scaffold（Phase 1）
 
 ## 目標

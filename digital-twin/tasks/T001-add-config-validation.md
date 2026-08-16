@@ -1,14 +1,13 @@
 ---
 status: done
-spec_version: v3
-commit: a1c28f0
+commit: 83dca247
 depends_on: []
 priority: high
 assignee: OpenCode
 created: 2026-08-03
-updated: '2026-08-04'
+updated: '2026-08-17'
 summary: '實作 T001: add-config-validation'
-commit: 83dca247
+spec_version: v3
 ---
 # T001: 新增配置驗證層 (Config Schema Validation)
 

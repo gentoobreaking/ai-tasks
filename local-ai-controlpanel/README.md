@@ -33,8 +33,12 @@
 | Prompt 注入風格規範（Style Rules Injection） |
 | Few-shot Prompt Engineering（精選錯誤→修正案例） |
 | RAG 風格知識庫（Style Knowledge Base） |
+| Baseline Groups A–E 完整跑分與對照驗證 |
+| CP Gain / Intelligence Efficiency / Research ROI 指標計算與自動化報告 |
+| Memory / Project Memory Retrieval 接入 Pi Worker |
 | CLI 完善與使用者介面 |
 | MCP / ACP 協議層實作（Phase 6+ 預留） |
+| Phase 9 Hybrid Execution / Cloud Escalation 實作 |
 
 ## Skip 項目
 
@@ -46,15 +50,12 @@
 
 | Task | 名稱 | 說明 |
 |------|------|------|
-| [T31-metrics-report](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T031-metrics-report.md) | CP Gain / Intelligence Efficiency / Research ROI 指標計算與自動化報告 | |
-| [T32-memory-retrieval](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T032-memory-retrieval.md) | Memory / Project Memory Retrieval 接入 Pi Worker | |
+| | | |
 
 ## 待實作
 
 | Task | 名稱 | 說明 |
 |------|------|------|
-| [T30-baseline-abef](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T030-baseline-abef.md) | Baseline Groups A–E 完整跑分與對照驗證 | |
-| [T35-hybrid-execution](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T035-hybrid-execution.md) | Phase 9 Hybrid Execution / Cloud Escalation 實作 | |
 | [T36-spec-impl-review](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T036-spec-impl-review.md) | Spec v0.5 vs 實作完整度審查與差距清單產出 | |
 
 ## Task 列表
@@ -90,14 +91,14 @@
 | [T27-style-rules-injection](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T027-style-rules-injection.md) | Prompt 注入風格規範（Style Rules Injection） | ✅ done |
 | [T28-few-shot-prompt](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T028-few-shot-prompt.md) | Few-shot Prompt Engineering（精選錯誤→修正案例） | ✅ done |
 | [T29-rag-style-kb](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T029-rag-style-kb.md) | RAG 風格知識庫（Style Knowledge Base） | ✅ done |
-| [T30-baseline-abef](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T030-baseline-abef.md) | Baseline Groups A–E 完整跑分與對照驗證 | 📋 pending |
-| [T31-metrics-report](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T031-metrics-report.md) | CP Gain / Intelligence Efficiency / Research ROI 指標計算與自動化報告 | 🔧 in-progress |
-| [T32-memory-retrieval](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T032-memory-retrieval.md) | Memory / Project Memory Retrieval 接入 Pi Worker | 🔧 in-progress |
+| [T30-baseline-abef](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T030-baseline-abef.md) | Baseline Groups A–E 完整跑分與對照驗證 | ✅ done |
+| [T31-metrics-report](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T031-metrics-report.md) | CP Gain / Intelligence Efficiency / Research ROI 指標計算與自動化報告 | ✅ done |
+| [T32-memory-retrieval](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T032-memory-retrieval.md) | Memory / Project Memory Retrieval 接入 Pi Worker | ✅ done |
 | [T33-cli-completion](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T033-cli-completion.md) | CLI 完善與使用者介面 | ✅ done |
 | [T34-mcp-acp-protocol](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T034-mcp-acp-protocol.md) | MCP / ACP 協議層實作（Phase 6+ 預留） | ✅ done |
-| [T35-hybrid-execution](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T035-hybrid-execution.md) | Phase 9 Hybrid Execution / Cloud Escalation 實作 | 📋 pending |
+| [T35-hybrid-execution](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T035-hybrid-execution.md) | Phase 9 Hybrid Execution / Cloud Escalation 實作 | ✅ done |
 | [T36-spec-impl-review](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T036-spec-impl-review.md) | Spec v0.5 vs 實作完整度審查與差距清單產出 | 📋 pending |
 
-**✅ done: 31 | 🔧 in-progress: 2 | ⏭️ skip: 0 | 📋 pending: 3**
+**✅ done: 35 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 1**
 
-> 自動生成於 2026-08-17 01:18
+> 自動生成於 2026-08-17 03:37
