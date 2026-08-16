@@ -3,11 +3,11 @@ github_issue:
 title: 拆分 incremental_index.py 為 indexer.py 與 searcher.py
 type: pending
 priority: medium
-status: pending
+status: done
 depends_on: []
 assignee: OpenCode with DeepSeek V4 Flash
 created: 2026-08-15
-updated: 2026-08-15
+updated: 2026-08-16
 ---
 
 # T084 - 拆分 incremental_index.py 為 indexer.py 與 searcher.py
@@ -27,13 +27,13 @@ updated: 2026-08-15
 過多職責集中於同一檔案，不利於獨立測試與後續擴充。
 
 ## 驗收標準
-- [ ] 新增 `indexer.py`：封裝 LanceDB 連線、文件解析、chunk 切割、embedding 寫入邏輯
-- [ ] 新增 `searcher.py`：封裝向量搜尋、metadata 過濾、混合搜尋、RAG 結果格式化
-- [ ] `incremental_index.py` 縮減為薄入口或合併至 `index_knowledge.py`
-- [ ] import 方向單向：`searcher → indexer`（搜尋依賴索引結構定義）
-- [ ] 現有測試全通過（含 `test_incremental_index.py` 11 個測試、`test_vector_search.py` 6 個測試）
-- [ ] ruff check 零錯誤
-- [ ] README 同步更新模組結構
+- [x] 新增 `indexer.py`：封裝 LanceDB 連線、文件解析、chunk 切割、embedding 寫入邏輯
+- [x] 新增 `searcher.py`：封裝向量搜尋、metadata 過濾、混合搜尋、RAG 結果格式化
+- [x] `incremental_index.py` 縮減為薄入口或合併至 `index_knowledge.py`
+- [x] import 方向單向：`searcher → indexer`（搜尋依賴索引結構定義）
+- [x] 現有測試全通過（含 `test_incremental_index.py` 11 個測試、`test_vector_search.py` 6 個測試）
+- [x] ruff check 零錯誤
+- [x] README 同步更新模組結構
 
 ## 備註
 - embedding 降級契約（T069）邏輯需保持完整

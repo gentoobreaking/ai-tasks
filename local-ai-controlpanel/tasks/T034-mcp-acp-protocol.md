@@ -3,11 +3,11 @@ github_issue: N/A
 title: MCP / ACP 協議層實作（Phase 6+ 預留）
 type: feature
 priority: medium
-status: pending
+status: done
 depends_on: [T032]
 assignee: OpenCode with DeepSeek V4 Flash
 created: 2026-08-15
-updated: 2026-08-15
+updated: 2026-08-16
 ---
 
 # T034 - MCP / ACP 協議層實作（Phase 6+ 預留）
@@ -21,34 +21,34 @@ updated: 2026-08-15
 ## 驗收標準
 
 ### MCP Layer（§18） - Model Context Protocol
-- [ ] 實作 `apps/control-plane/src/mcp/`：
+- [x] 實作 `apps/control-plane/src/mcp/`：
   - `server.ts`：MCP Server（stdio / HTTP+SSE 雙模式）
   - `client.ts`：MCP Client（連接外部 MCP Server）
   - `tools.ts`：標準工具定義（filesystem、git、shell、network、search）
   - `resources.ts`：Resource 模板（file://、git://、http://、memory://）
   - `prompts.ts`：Prompt 模板（code_review、debug、refactor 等）
 
-- [ ] 實作 MCP 工具註冊機制：Control Plane 內部工具（filesystem、git、shell）以 MCP Tool 形式暴露
-- [ ] 實作 MCP Resource 掛載：workspace、git history、project_memory 以 Resource 暴露
-- [ ] 單元測試：MCP initialize、tools/list、tools/call、resources/read 流程
+- [x] 實作 MCP 工具註冊機制：Control Plane 內部工具（filesystem、git、shell）以 MCP Tool 形式暴露
+- [x] 實作 MCP Resource 掛載：workspace、git history、project_memory 以 Resource 暴露
+- [x] 單元測試：MCP initialize、tools/list、tools/call、resources/read 流程
 
 ### ACP-Protocol Layer（§19） - Agent Control Protocol
-- [ ] 實作 `apps/control-plane/src/acp/`：
+- [x] 實作 `apps/control-plane/src/acp/`：
   - `protocol.ts`：ACP 訊息定義（TaskRequest、TaskResponse、Event、Control）
   - `server.ts`：ACP Server（WebSocket / HTTP 長輪詢）
   - `client.ts`：ACP Client（連接外部 ACP Agent）
   - `session.ts`：Session 管理（create、resume、terminate、heartbeat）
 
-- [ ] 實作 ACP 事件流：TaskCreated、StageChanged、EvidenceCollected、PatchGenerated、VerificationCompleted、ReflectionTriggered、TaskCompleted
-- [ ] 實作 ACP 控制指令：Approve、Cancel、Retry、Escalate、InjectFeedback
-- [ ] 整合 `runner.ts` 的 event bus 直接轉發為 ACP Event
-- [ ] 單元測試：ACP handshake、event streaming、control 指令
+- [x] 實作 ACP 事件流：TaskCreated、StageChanged、EvidenceCollected、PatchGenerated、VerificationCompleted、ReflectionTriggered、TaskCompleted
+- [x] 實作 ACP 控制指令：Approve、Cancel、Retry、Escalate、InjectFeedback
+- [x] 整合 `runner.ts` 的 event bus 直接轉發為 ACP Event
+- [x] 單元測試：ACP handshake、event streaming、control 指令
 
 ### 整合與部署
-- [ ] 修改 `server.ts` 掛載 MCP（/mcp）與 ACP（/acp）路由
-- [ ] 新增 `config.ts` 協議啟用開關：`mcp.enabled`、`acp.enabled`
-- [ ] 新增 CLI 指令：`cp protocol start [--mcp] [--acp] [--port]`
-- [ ] 文件：`docs/protocol/mcp.md`、`docs/protocol/acp.md`
+- [x] 修改 `server.ts` 掛載 MCP（/mcp）與 ACP（/acp）路由
+- [x] 新增 `config.ts` 協議啟用開關：`mcp.enabled`、`acp.enabled`
+- [x] 新增 CLI 指令：`cp protocol start [--mcp] [--acp] [--port]`
+- [x] 文件：`docs/protocol/mcp.md`、`docs/protocol/acp.md`
 
 ## 備註
 

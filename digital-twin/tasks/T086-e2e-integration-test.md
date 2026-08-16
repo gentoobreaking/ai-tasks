@@ -3,11 +3,11 @@ github_issue:
 title: 補充 end-to-end 整合測試（auto_dev → git commit → README sync）
 type: pending
 priority: medium
-status: pending
+status: done
 depends_on: []
 assignee: OpenCode with DeepSeek V4 Flash
 created: 2026-08-15
-updated: 2026-08-15
+updated: 2026-08-16
 ---
 
 # T086 - 補充 end-to-end 整合測試
@@ -22,13 +22,13 @@ updated: 2026-08-15
 - 品質閘門失敗後的修復迴圈路徑未被端到端驗證
 
 ## 驗收標準
-- [ ] 新增 `tests/test_e2e_auto_dev.py`
-- [ ] 測試場景 1：正常流程（mock AI 回傳有效 diff → 品質閘門通過 → git commit → README 更新）
-- [ ] 測試場景 2：品質閘門失敗（AI 回傳有 ruff 錯誤的 diff → 修復迴圈 → 最終通過）
-- [ ] 測試場景 3：blocked 流程（連續失敗 4 次 → 進入 blocked → review/supersede）
-- [ ] 全部使用 fake adapter / tempdir 隔離，不觸網、不碰真實 git repo
-- [ ] 測試執行時間 < 10 秒
-- [ ] 現有測試全通過
+- [x] 新增 `tests/test_e2e_auto_dev.py`
+- [x] 測試場景 1：正常流程（mock AI 回傳有效 diff → 品質閘門通過 → git commit → README 更新）
+- [x] 測試場景 2：品質閘門失敗（AI 回傳有 ruff 錯誤的 diff → 修復迴圈 → 最終通過）
+- [x] 測試場景 3：blocked 流程（連續失敗 4 次 → 進入 blocked → review/supersede）
+- [x] 全部使用 fake adapter / tempdir 隔離，不觸網、不碰真實 git repo
+- [x] 測試執行時間 < 10 秒
+- [x] 現有測試全通過
 
 ## 備註
 - 使用 `tmp_path` fixture 建立臨時 git repo

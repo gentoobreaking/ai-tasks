@@ -83,6 +83,9 @@
 | install_hooks 死碼清理與 pre-commit ruff --fix 後 restage |
 | twin auto --list 排序修正（完成在前＋優先級/編號排序） |
 | 拆分 scheduler.py 為 quality_gate.py 與 blocked_flow.py |
+| 拆分 incremental_index.py 為 indexer.py 與 searcher.py |
+| 統一 scheduler.py 的日誌輸出為 structlog |
+| 補充 end-to-end 整合測試（auto_dev → git commit → README sync） |
 
 ## Skip 項目
 
@@ -100,9 +103,6 @@
 
 | Task | 名稱 | 說明 |
 |------|------|------|
-| [T84-incremental-index-split](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T084-incremental-index-split.md) | 拆分 incremental_index.py 為 indexer.py 與 searcher.py | |
-| [T85-unify-logging](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T085-unify-logging.md) | 統一 scheduler.py 的日誌輸出為 structlog | |
-| [T86-e2e-integration-test](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T086-e2e-integration-test.md) | 補充 end-to-end 整合測試（auto_dev → git commit → README sync） | |
 | [T87-repo-cleanup](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T087-repo-cleanup.md) | 清理 repo 根目錄雜檔與目錄結構 | |
 
 ## Task 列表
@@ -188,11 +188,11 @@
 | [T81-hooks-deadcode-restage](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T081-hooks-deadcode-restage.md) | install_hooks 死碼清理與 pre-commit ruff --fix 後 restage | ✅ done |
 | [T82-auto-list-sort](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T082-auto-list-sort.md) | twin auto --list 排序修正（完成在前＋優先級/編號排序） | ✅ done |
 | [T83-scheduler-split](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T083-scheduler-split.md) | 拆分 scheduler.py 為 quality_gate.py 與 blocked_flow.py | ✅ done |
-| [T84-incremental-index-split](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T084-incremental-index-split.md) | 拆分 incremental_index.py 為 indexer.py 與 searcher.py | 📋 pending |
-| [T85-unify-logging](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T085-unify-logging.md) | 統一 scheduler.py 的日誌輸出為 structlog | 📋 pending |
-| [T86-e2e-integration-test](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T086-e2e-integration-test.md) | 補充 end-to-end 整合測試（auto_dev → git commit → README sync） | 📋 pending |
+| [T84-incremental-index-split](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T084-incremental-index-split.md) | 拆分 incremental_index.py 為 indexer.py 與 searcher.py | ✅ done |
+| [T85-unify-logging](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T085-unify-logging.md) | 統一 scheduler.py 的日誌輸出為 structlog | ✅ done |
+| [T86-e2e-integration-test](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T086-e2e-integration-test.md) | 補充 end-to-end 整合測試（auto_dev → git commit → README sync） | ✅ done |
 | [T87-repo-cleanup](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T087-repo-cleanup.md) | 清理 repo 根目錄雜檔與目錄結構 | 📋 pending |
 
-**✅ done: 79 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 4**
+**✅ done: 82 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 1**
 
-> 自動生成於 2026-08-16 03:19
+> 自動生成於 2026-08-17 00:14

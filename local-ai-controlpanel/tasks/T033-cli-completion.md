@@ -3,11 +3,11 @@ github_issue: N/A
 title: CLI 完善與使用者介面
 type: feature
 priority: medium
-status: pending
+status: done
 depends_on: [T024]
 assignee: OpenCode with DeepSeek V4 Flash
 created: 2026-08-15
-updated: 2026-08-15
+updated: 2026-08-16
 ---
 
 # T033 - CLI 完善與使用者介面（§29）
@@ -20,7 +20,7 @@ updated: 2026-08-15
 
 ## 驗收標準
 
-- [ ] 實作核心 CLI 指令（`apps/cli/src/commands/`）：
+- [x] 實作核心 CLI 指令（`apps/cli/src/commands/`）：
 
 | 指令 | 功能 | Spec 參考 |
 |------|------|-----------|
@@ -37,20 +37,25 @@ updated: 2026-08-15
 | `cp worker ping` | 探測 llama.cpp 連線 | §16 |
 | `cp worker models` | 列出可用模型 | §16 |
 
-- [ ] 實作輸出格式選項：`--format json|table|csv|markdown`
-- [ ] 實作 `--watch` / `-w` 模式：即時顯示 task 狀態變化（SSE 訂閱）
-- [ ] 實作 `--config` 指定自訂政策檔案路徑
-- [ ] 完善 `apps/cli/src/main.ts` 入口點、命令註冊、錯誤處理
-- [ ] 加入 `--help` 完整說明、範例
-- [ ] 單元測試：每個指令的基本功能測試
+- [x] 實作輸出格式選項：`--format json|table|csv|markdown`
+- [x] 實作 `--watch` / `-w` 模式：即時顯示 task 狀態變化（SSE 訂閱）
+- [x] 實作 `--config` 指定自訂政策檔案路徑
+- [x] 完善 `apps/cli/src/main.ts` 入口點、命令註冊、錯誤處理
+- [x] 加入 `--help` 完整說明、範例
+- [x] 單元測試：每個指令的基本功能測試（24/24 通過：15 新 + 9 legacy）
 
 ## 備註
 
-- 使用 `commander.js` 或 `yargs` 作為 CLI 框架
-- 輸出格式預設 table，支援 `--json` 給腳本串接
-- 需讀取 `config.ts` + `policies/*.yaml` 取得預設設定
+- CLI 框架：採手寫 parseArgs（`apps/cli/src/flags.ts`）而非 commander.js/yargs，避免新增依賴
+- 輸出格式預設 table，`--json`/`-j` 等同 `--format json`
+- `policy validate --config` 走本地驗證：動態 import control-plane loader（避免跨 package rootDir）
+- benchmark 指令（`cp run`/`baseline run`）直接驅動 `benchmark/runners/baseline-runner.ts`（T030）
+- `report generate` 依序執行 T031 工具鏈；Gate FAIL（exit 1）視為數據結論，仍生成報告
+- `db export` 預設經 REST `/api/v1/db/export`，`--db` 時以 node:sqlite 直讀本地檔案
+- control-plane 新增端點：`POST /api/v1/tasks/:id/retry`、`GET /api/v1/tasks/:id/patches`、`GET /api/v1/worker/ping`、`GET /api/v1/worker/models`、`GET /api/v1/db/export`
+- 注意：server 模式 research 為 stub，任務停在 RESEARCHING（影響 watch 測試斷言）
 - 依賴 `apps/control-plane/src/server.ts` 的 REST API 或直接調用內部模組
-- 預估開發時間：3-4 天
+- 預估開發時間：3-4 天（本次實作完成）
 
 ## 相關 Spec 章節
 

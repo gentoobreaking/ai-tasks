@@ -3,11 +3,11 @@ github_issue:
 title: 統一 scheduler.py 的日誌輸出為 structlog
 type: pending
 priority: low
-status: pending
+status: done
 depends_on: ["T083"]
 assignee: OpenCode with DeepSeek V4 Flash
 created: 2026-08-15
-updated: 2026-08-15
+updated: 2026-08-16
 ---
 
 # T085 - 統一 scheduler.py 的日誌輸出為 structlog
@@ -22,11 +22,11 @@ T052 已將 107 個 print 收斂為 observability 事件，但 scheduler 中仍�
 - debug 時缺少結構化欄位（task_id / project / version 等）
 
 ## 驗收標準
-- [ ] `scheduler.py` 內所有 `print()` 替換為 `log.info()` / `log.warning()` / `log.error()`
-- [ ] 新增 `--verbose` CLI 旗標：啟用時輸出人類可讀格式（含進度條/emoji），否則純 JSON
-- [ ] structlog 事件包含足夠的結構化欄位（task_id, project, version, round, error 等）
-- [ ] 現有測試全通過
-- [ ] ruff check 零錯誤
+- [x] `scheduler.py` 內所有 `print()` 替換為 `log.info()` / `log.warning()` / `log.error()`
+- [x] 新增 `--verbose` CLI 旗標：啟用時輸出人類可讀格式（含進度條/emoji），否則純 JSON
+- [x] structlog 事件包含足夠的結構化欄位（task_id, project, version, round, error 等）
+- [x] 現有測試全通過
+- [x] ruff check 零錯誤
 
 ## 備註
 - 需注意 `--once` 模式下的 stdout 輸出（可能被腳本捕獲）
