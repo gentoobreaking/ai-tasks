@@ -4,6 +4,8 @@ title: git 操作收斂 common/git.py——auto_develop 五處 subprocess 改用
 type: refactor
 priority: high
 status: done
+spec_version: v3
+commit: a1c28f0
 depends_on: []
 assignee: OpenCode with DeepSeek V4 Flash
 created: '2026-08-11'

@@ -4,6 +4,8 @@ title: 移除/重寫 config/validate.py 死碼（Pydantic 層無人引用、key 
 type: refactor
 priority: medium
 status: done
+spec_version: v3
+commit: a1c28f0
 depends_on: []
 assignee: OpenCode with DeepSeek V4 Flash
 created: '2026-08-11'

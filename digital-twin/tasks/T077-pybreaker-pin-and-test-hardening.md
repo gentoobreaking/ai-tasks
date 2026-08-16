@@ -4,6 +4,8 @@ title: pybreaker 版本上限收緊 + 測試移除私有 API 操作
 type: fix
 priority: medium
 status: done
+spec_version: v3
+commit: a1c28f0
 depends_on: [71]
 assignee: OpenCode with DeepSeek V4 Flash
 created: '2026-08-12'

@@ -4,6 +4,8 @@ title: worker AIBreaker 熔斷時間窗語意修正（或改用 pybreaker 官方
 type: fix
 priority: low
 status: done
+spec_version: v3
+commit: a1c28f0
 depends_on: []
 assignee: OpenCode with DeepSeek V4 Flash
 created: '2026-08-11'

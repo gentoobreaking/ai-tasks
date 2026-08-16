@@ -4,6 +4,8 @@ title: 收緊寬鬆/謬誤斷言測試（test_telegram_bot 等）
 type: test
 priority: medium
 status: done
+spec_version: v3
+commit: a1c28f0
 depends_on: [70, 74]
 assignee: OpenCode with DeepSeek V4 Flash
 created: '2026-08-12'

@@ -4,6 +4,8 @@ title: 任務檔 frontmatter 解析全面收斂至 TaskStore（消除 agent_vers
 type: refactor
 priority: high
 status: done
+spec_version: v3
+commit: a1c28f0
 depends_on: []
 assignee: OpenCode with DeepSeek V4 Flash
 created: '2026-08-11'

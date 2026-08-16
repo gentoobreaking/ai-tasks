@@ -4,6 +4,8 @@ title: 統一 scheduler.py 的日誌輸出為 structlog
 type: pending
 priority: low
 status: done
+spec_version: v3
+commit: a1c28f0
 depends_on: ["T083"]
 assignee: OpenCode with DeepSeek V4 Flash
 created: 2026-08-15

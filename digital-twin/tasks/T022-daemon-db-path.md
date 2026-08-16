@@ -3,6 +3,8 @@ title: setup_daemon 路徑驗證 + extract_feedback DB 路徑可設定
 type: fix
 priority: low
 status: done
+spec_version: v3
+commit: a1c28f0
 depends_on: []
 assignee: OpenCode with DeepSeek V4 Flash
 created: 2026-08-05

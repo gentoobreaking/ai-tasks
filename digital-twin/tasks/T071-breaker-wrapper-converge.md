@@ -4,6 +4,8 @@ title: circuit breaker 兩套 wrapper 收斂（worker AIBreaker / resilience Bre
 type: refactor
 priority: medium
 status: done
+spec_version: v3
+commit: a1c28f0
 depends_on: [57]
 assignee: OpenCode with DeepSeek V4 Flash
 created: '2026-08-12'

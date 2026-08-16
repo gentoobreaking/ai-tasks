@@ -4,6 +4,8 @@ title: 拆分 incremental_index.py 為 indexer.py 與 searcher.py
 type: pending
 priority: medium
 status: done
+spec_version: v3
+commit: a1c28f0
 depends_on: []
 assignee: OpenCode with DeepSeek V4 Flash
 created: 2026-08-15

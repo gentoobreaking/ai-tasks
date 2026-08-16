@@ -4,6 +4,8 @@ title: worker RAG 同步搜尋改 asyncio.to_thread（避免阻塞 event loop）
 type: fix
 priority: medium
 status: done
+spec_version: v3
+commit: a1c28f0
 depends_on: [72]
 assignee: OpenCode with DeepSeek V4 Flash
 created: '2026-08-12'

@@ -4,6 +4,8 @@ title: LanceDB Metadata Filtering (標籤、專案、作者過濾)
 type: feature
 priority: medium
 status: done
+spec_version: v3
+commit: a1c28f0
 depends_on: [T009, T029]
 assignee: OpenCode with DeepSeek V4 Flash
 created: 2026-08-06

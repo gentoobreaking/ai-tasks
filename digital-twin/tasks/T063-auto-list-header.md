@@ -4,6 +4,8 @@ title: twin auto --list 首行顯示專案標題
 type: feature
 priority: low
 status: done
+spec_version: v3
+commit: a1c28f0
 updated: '2026-08-11'
 commit: a1b2c3d
 depends_on: []

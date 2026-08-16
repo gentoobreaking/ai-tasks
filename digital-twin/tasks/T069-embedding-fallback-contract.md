@@ -4,6 +4,8 @@ title: embedding 降級契約修復（openai provider 缺 key 不再 raise）
 type: fix
 priority: medium
 status: done
+spec_version: v3
+commit: a1c28f0
 depends_on: []
 assignee: OpenCode with DeepSeek V4 Flash
 created: '2026-08-12'

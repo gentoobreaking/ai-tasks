@@ -4,6 +4,8 @@ title: twin auto --list 顯示專案皆完成訊息
 type: feature
 priority: medium
 status: done
+spec_version: v3
+commit: a1c28f0
 depends_on: []
 assignee: OpenCode with DeepSeek V4 Flash
 created: '2026-08-11'

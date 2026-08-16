@@ -3,6 +3,8 @@ title: auto_develop 完成後輸出 PR 摘要 + 大 diff 人工確認閘門
 type: feature
 priority: medium
 status: done
+spec_version: v3
+commit: a1c28f0
 depends_on: []
 assignee: OpenCode with DeepSeek V4 Flash
 created: 2026-08-05

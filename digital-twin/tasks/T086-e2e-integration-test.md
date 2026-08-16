@@ -4,6 +4,8 @@ title: 補充 end-to-end 整合測試（auto_dev → git commit → README sync�
 type: pending
 priority: medium
 status: done
+spec_version: v3
+commit: a1c28f0
 depends_on: []
 assignee: OpenCode with DeepSeek V4 Flash
 created: 2026-08-15
