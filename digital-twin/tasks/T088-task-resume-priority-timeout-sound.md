@@ -1,6 +1,6 @@
 ---
 github_issue:
-title: 任務恢復優先 + opencode timeout + 聲音通知
+title: 任務恢復優先 + opencode timeout + 聲音通知 + 人類可讀輸出
 type: feature
 priority: high
 status: done
@@ -10,13 +10,14 @@ created: 2026-08-17
 updated: 2026-08-17
 ---
 
-# T088 - 任務恢復優先 + opencode timeout + 聲音通知
+# T088 - 任務恢復優先 + opencode timeout + 聲音通知 + 人類可讀輸出
 
 ## 目標
 1. `run()` 與 `get_next_pending_task`：同時挑選 `is_pending` 與 `in-progress` 任務，`in-progress` 優先執行（中斷/未完成的任務優先恢復）。
 2. `_do_call_opencode`：加 subprocess timeout (`OPENCODE_TIMEOUT`，預設 600s)；逾時視為該 tier 失敗並 kill process，交由備援鏈嘗試下一 tier。
 3. `play_sound`（macOS afplay）於 blocked / 中斷 / 切換 model 時發出聲音通知，可用 `SOUND_NOTIFY=off` 關閉。
 4. **修正 `is_in_progress`**：接受 `in_progress` (underscore) 與 `in-progress` (hyphen) 兩種寫法，修復部分專案（如 local-ai-controlpanel）in-progress 任務無法被恢復的問題。
+5. **人類可讀輸出模式**：新增 `--pretty` / `--no-json` 旗標，關閉 JSON 結構化日誌，僅輸出 `_vprint` 人類可讀格式；`twin auto` 支援透傳此旗標。
 
 ## 驗收標準
 - [x] `scheduler.py` run() 迴圈採 `is_pending or is_in_progress`，in-progress 排序優先；`get_next_pending_task` 同步
@@ -28,9 +29,13 @@ updated: 2026-08-17
 - [x] 修正 `tests/test_impl_providers.py` 直接賦值的 monkeypatch 洩露（隔離測試）
 - [x] `Task.is_in_progress` 同時接受 `"in-progress"` 與 `"in_progress"`，修復 local-ai-controlpanel T030-T032 恢復問題
 - [x] `scheduler.py`/`auto_develop.py` 列表顯示改用屬性判定（🔄/⏳/✅ 圖示與計數），相容兩種寫法
+- [x] `common/observability.py`：環境變數 `PRETTY_LOGS=1` / `NO_JSON_LOGS=1` 時停用 JSON 日誌
+- [x] `auto_develop.py`：新增 `--pretty` / `--no-json`，提前設定環境變數並隱含 `--verbose`
+- [x] `twin`：auto 指令轉發 `--pretty` / `--no-json` 旗標至 `auto_develop.py`
 - [x] `ruff check .` 零錯；全測試僅剩 2 個既有 pybreaker flaky 失敗（與本變更無關，於 clean tree 亦失敗）
 
 ## 備註
 - 測試用 `OPENCODE_TIMEOUT=0.1` +假 proc 模擬卡住，驗證 kill + raise。
 - timeout 用 `float`（允許 fractional test 值）；Python 3.11+ `asyncio.timeout` 拋出 builtin `TimeoutError`（OSError subclass），`except Exception` 會捕獲並切換 tier。
 - 聲音檔案：/System/Library/Sounds/{Sosumi,Glass,Tink,Ping}.aiff。
+- `--pretty` 隱含 `--verbose`，輸出完整人類可讀格式；`--no-json` 僅關閉 JSON，需搭配 `--verbose`。

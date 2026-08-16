@@ -1,15 +1,17 @@
 ---
-github_issue: 
+github_issue: null
 title: 清理 repo 根目錄雜檔與目錄結構
 type: pending
 priority: low
-status: pending
+status: in-progress
 depends_on: []
 assignee: OpenCode with DeepSeek V4 Flash
 created: 2026-08-15
-updated: 2026-08-15
+updated: '2026-08-17'
+fail_count: 2
+summary: '第 2 次失敗: 未預期錯誤: TypeError: AutoDevelopScheduler._vprint() takes 2 positional
+  arguments but 3 were given'
 ---
-
 # T087 - 清理 repo 根目錄雜檔與目錄結構
 
 ## 目標

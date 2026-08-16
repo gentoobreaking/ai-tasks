@@ -1,6 +1,6 @@
 # 📁 Projects Dashboard
 
-> 最後更新: 2026-08-17 00:49 · 自動生成
+> 最後更新: 2026-08-17 01:18 · 自動生成
 
 ---
 
@@ -11,8 +11,8 @@
 | 專案數 | 61 |
 | 任務總數 | 1018 |
 | ✅ 已完成 | 946 |
-| ⬜ 待處理 | 7 |
-| 🔄 進行中 | 3 |
+| ⬜ 待處理 | 6 |
+| 🔄 進行中 | 4 |
 | ⏭️ 跳過 | 62 |
 | 總完成率 | 98% |
 
@@ -32,7 +32,6 @@
 
 | 專案 | 任務 | 標題 | 狀態 |
 |------|------|------|------|
-| digital-twin | [T087-repo-cleanup](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T087-repo-cleanup.md) | 清理 repo 根目錄雜檔與目錄結構 | ⬜ |
 | gold-analysis-advanced | [T002](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis-advanced/tasks/T002.md) | ML 模型整合與優化 | ⬜ |
 | gold-analysis-advanced | [T004](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis-advanced/tasks/T004.md) | 實盤交易對接 | ⬜ |
 | local-ai-controlpanel | [T030-baseline-abef](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T030-baseline-abef.md) | Baseline Groups A–E 完整跑分與對照驗證 | ⬜ |
@@ -44,6 +43,7 @@
 
 | 專案 | 任務 | 標題 | 狀態 |
 |------|------|------|------|
+| digital-twin | [T087-repo-cleanup](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T087-repo-cleanup.md) | 清理 repo 根目錄雜檔與目錄結構 | 🔄 |
 | gold-analysis-advanced | [T001](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis-advanced/tasks/T001.md) | 機器學習模型開發 | 🔄 |
 | local-ai-controlpanel | [T031-metrics-report](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T031-metrics-report.md) | CP Gain / Intelligence Efficiency / Research ROI 指標計算與自動化報告 | 🔄 |
 | local-ai-controlpanel | [T032-memory-retrieval](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T032-memory-retrieval.md) | Memory / Project Memory Retrieval 接入 Pi Worker | 🔄 |
@@ -149,7 +149,7 @@ xychart-beta
 | ✅ | [cmd-log-parser](https://github.com/gentoobreaking/ai-tasks/tree/main/cmd-log-parser) | 3 | 3 | 0 | 0 | 0 | ████████████████████ 100% | 2026-04-16 |
 | ✅ | [cnyes-stock](https://github.com/gentoobreaking/ai-tasks/tree/main/cnyes-stock) | 16 | 16 | 0 | 0 | 0 | ████████████████████ 100% | 2026-05-12 |
 | ✅ | [dashboard-tool](https://github.com/gentoobreaking/ai-tasks/tree/main/dashboard-tool) | 5 | 5 | 0 | 0 | 0 | ████████████████████ 100% | 2026-04-09 |
-| ⬜ | [digital-twin](https://github.com/gentoobreaking/ai-tasks/tree/main/digital-twin) | 84 | 83 | 1 | 0 | 0 | ███████████████████░ 98% | 2026-08-17 |
+| 🔄 | [digital-twin](https://github.com/gentoobreaking/ai-tasks/tree/main/digital-twin) | 84 | 83 | 0 | 1 | 0 | ███████████████████░ 98% | 2026-08-17 |
 | ✅ | [elevenlabs-research](https://github.com/gentoobreaking/ai-tasks/tree/main/elevenlabs-research) | 1 | 1 | 0 | 0 | 0 | ████████████████████ 100% | 2026-04-21 |
 | ✅ | [free-ai-router](https://github.com/gentoobreaking/ai-tasks/tree/main/free-ai-router) | 83 | 83 | 0 | 0 | 0 | ████████████████████ 100% | 2026-08-05 |
 | ✅ | [git-maintenance](https://github.com/gentoobreaking/ai-tasks/tree/main/git-maintenance) | 1 | 1 | 0 | 0 | 0 | ████████████████████ 100% | 2026-05-16 |
