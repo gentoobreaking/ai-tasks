@@ -1,6 +1,6 @@
 # 📁 Projects Dashboard
 
-> 最後更新: 2026-08-17 04:48 · 自動生成
+> 最後更新: 2026-08-18 06:44 · 自動生成
 
 ---
 
@@ -8,13 +8,13 @@
 
 | 指標 | 數量 |
 |------|------|
-| 專案數 | 61 |
-| 任務總數 | 1018 |
+| 專案數 | 62 |
+| 任務總數 | 1044 |
 | ✅ 已完成 | 950 |
-| ⬜ 待處理 | 4 |
+| ⬜ 待處理 | 30 |
 | 🔄 進行中 | 2 |
 | ⏭️ 跳過 | 62 |
-| 總完成率 | 99% |
+| 總完成率 | 96% |
 
 ## 🔥 待處理高優先級任務
 
@@ -33,6 +33,32 @@
 | gold-analysis-advanced | [T004](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis-advanced/tasks/T004.md) | 實盤交易對接 | ⬜ |
 | local-ai-controlpanel | [T036-spec-impl-review](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T036-spec-impl-review.md) | Spec v0.5 vs 實作完整度審查與差距清單產出 | ⬜ |
 | md-viewer-app | [T027-預覽連結懸停](https://github.com/gentoobreaking/ai-tasks/blob/main/md-viewer-app/tasks/T027-預覽連結懸停.md) | [T027] 連結懸停預覽 | ⬜ |
+| tw-quant-pickup | [T001-project-scaffold](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T001-project-scaffold.md) | 專案 Scaffold（Python monorepo 骨架） | ⬜ |
+| tw-quant-pickup | [T002-database-schema](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T002-database-schema.md) | Database Schema 與 Migrations（PostgreSQL，§5 全表） | ⬜ |
+| tw-quant-pickup | [T003-providers-layer](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T003-providers-layer.md) | Providers Layer（McpProvider + tw-quant-mcp 連線 + Lineage 對映） | ⬜ |
+| tw-quant-pickup | [T004-historical-provider](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T004-historical-provider.md) | HistoricalPriceProvider（上櫃歷史價格回補） | ⬜ |
+| tw-quant-pickup | [T005-macro-context-provider](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T005-macro-context-provider.md) | MacroContextProvider（Yahoo Finance，FALLBACK） | ⬜ |
+| tw-quant-pickup | [T006-collectors](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T006-collectors.md) | Collectors（市場/基本面/股利/法人/月營收/Universe 收集） | ⬜ |
+| tw-quant-pickup | [T007-data-validation](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T007-data-validation.md) | Data Validation 與 Data Quality Gate（§8 + §62） | ⬜ |
+| tw-quant-pickup | [T008-pit-repository](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T008-pit-repository.md) | Point-in-Time Repository（§2.6 / §9 防 Look-Ahead） | ⬜ |
+| tw-quant-pickup | [T009-universe-filter](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T009-universe-filter.md) | Universe Filter（§10） | ⬜ |
+| tw-quant-pickup | [T010-factor-system](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T010-factor-system.md) | Factor System（§11 / §17–24 八類因子） | ⬜ |
+| tw-quant-pickup | [T011-valuation-engine](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T011-valuation-engine.md) | Valuation Engine（EPS 三層 → PE/PB/Dividend/DCF → FV → Buy Zones） | ⬜ |
+| tw-quant-pickup | [T012-etf-model](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T012-etf-model.md) | ETF Model（獨立 ETF Engine：權重 / Status / ranking_validity / tie-breaker） | ⬜ |
+| tw-quant-pickup | [T012a-etf-data-adapter](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T012a-etf-data-adapter.md) | ETF Data Availability & Adapter Spec（TWSE/MOPS 官方資料盤點 + Data Adapter） | ⬜ |
+| tw-quant-pickup | [T013-composite-risk](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T013-composite-risk.md) | Composite Score 與 Risk Adjustment（§25–26） | ⬜ |
+| tw-quant-pickup | [T014-ranking](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T014-ranking.md) | Ranking（Stock Top 30 / ETF Top N / Stability / Entry/Exit） | ⬜ |
+| tw-quant-pickup | [T015-price-alerts](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T015-price-alerts.md) | Price Alerts（§36 → alert_log + 偵測） | ⬜ |
+| tw-quant-pickup | [T016-snapshot-lifecycle](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T016-snapshot-lifecycle.md) | Snapshot Lifecycle（§70 / §45 / §45.1：create → freeze → hash → archive） | ⬜ |
+| tw-quant-pickup | [T017-ai-analyst](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T017-ai-analyst.md) | AI Analyst（§41–44 / §73 / §74，唯讀 frozen snapshot） | ⬜ |
+| tw-quant-pickup | [T018-reports](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T018-reports.md) | Reports（§50–52：Markdown / HTML / CSV / JSON daily report） | ⬜ |
+| tw-quant-pickup | [T019-api-server](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T019-api-server.md) | API Server（§53 / §53.1 / §54：FastAPI + Envelope + 前端整合對齊） | ⬜ |
+| tw-quant-pickup | [T020-cli](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T020-cli.md) | CLI（§48） | ⬜ |
+| tw-quant-pickup | [T021-backtest-engine](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T021-backtest-engine.md) | Backtest Engine（§37–40：Portfolio / Benchmark / Walk-Forward / PIT / OTC） | ⬜ |
+| tw-quant-pickup | [T022-scheduler-monitoring](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T022-scheduler-monitoring.md) | Scheduler 與 Monitoring / Health（§49 / §54–55） | ⬜ |
+| tw-quant-pickup | [T023-deployment-security](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T023-deployment-security.md) | Deployment（Docker Compose / Kubernetes / Security，§56–58） | ⬜ |
+| tw-quant-pickup | [T024-testing-regression](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T024-testing-regression.md) | Testing & Regression Suite（§59–61：unit / integration / regression / backtest） | ⬜ |
+| tw-quant-pickup | [T025-final-dod](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T025-final-dod.md) | Final Integration & Definition of Done（§78 / §83 / §85） | ⬜ |
 
 ## 🔄 進行中
 
@@ -114,7 +140,7 @@
 
 | 指標 | 數值 |
 |------|------|
-| 過去 7 天完成 | 158 |
+| 過去 7 天完成 | 146 |
 | 過去 30 天完成 | 294 |
 | 平均週期時間 | 2.1 天 |
 | 週期時間中位數 | 0.0 天 |
@@ -123,12 +149,12 @@
 ```mermaid
 xychart-beta
     title "過去 14 天任務完成趨勢"
-    x-axis ["08-04", "08-05", "08-06", "08-07", "08-08", "08-09", "08-10", "08-11", "08-12", "08-13", "08-14", "08-15", "08-16", "08-17"]
+    x-axis ["08-05", "08-06", "08-07", "08-08", "08-09", "08-10", "08-11", "08-12", "08-13", "08-14", "08-15", "08-16", "08-17", "08-18"]
     y-axis "完成數" 0 --> 118
-    line [71, 12, 0, 0, 0, 0, 12, 11, 7, 0, 0, 8, 2, 118]
+    line [12, 0, 0, 0, 0, 12, 11, 7, 0, 0, 8, 2, 118, 0]
 ```
 
-📊 總計: 241 | 日均: 17.2 | 本週: 146 | 📈 成長中
+📊 總計: 170 | 日均: 12.1 | 本週: 135 | 📈 成長中
 
 ## 📋 專案列表
 
@@ -189,6 +215,7 @@ xychart-beta
 | ✅ | [tasks-executor](https://github.com/gentoobreaking/ai-tasks/tree/main/tasks-executor) | 8 | 8 | 0 | 0 | 0 | ████████████████████ 100% | 2026-05-12 |
 | ✅ | [tw-quant-daybrain](https://github.com/gentoobreaking/ai-tasks/tree/main/tw-quant-daybrain) | 28 | 28 | 0 | 0 | 0 | ████████████████████ 100% | 2026-08-12 |
 | ✅ | [tw-quant-mcp](https://github.com/gentoobreaking/ai-tasks/tree/main/tw-quant-mcp) | 34 | 34 | 0 | 0 | 0 | ████████████████████ 100% | 2026-08-15 |
+| ⬜ | [tw-quant-pickup](https://github.com/gentoobreaking/ai-tasks/tree/main/tw-quant-pickup) | 26 | 0 | 26 | 0 | 0 | ░░░░░░░░░░░░░░░░░░░░ 0% | 2026-08-18 |
 | ✅ | [tw-quant-selector](https://github.com/gentoobreaking/ai-tasks/tree/main/tw-quant-selector) | 148 | 148 | 0 | 0 | 0 | ████████████████████ 100% | 2026-08-15 |
 | ✅ | [tw-quant-signal](https://github.com/gentoobreaking/ai-tasks/tree/main/tw-quant-signal) | 28 | 28 | 0 | 0 | 0 | ████████████████████ 100% | 2026-08-16 |
 | ✅ | [twse-monitor](https://github.com/gentoobreaking/ai-tasks/tree/main/twse-monitor) | 11 | 11 | 0 | 0 | 0 | ████████████████████ 100% | 2026-05-07 |
