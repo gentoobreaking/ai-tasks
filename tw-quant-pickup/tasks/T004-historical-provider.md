@@ -3,7 +3,7 @@ github_issue: N/A
 title: HistoricalPriceProvider（上櫃歷史價格回補）
 type: task
 priority: P1
-status: completed
+status: done
 depends_on: [T001, T003]
 assignee: OpenCode with DeepSeek V4 Flash
 created: 2026-08-18

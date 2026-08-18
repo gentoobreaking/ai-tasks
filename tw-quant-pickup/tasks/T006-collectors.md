@@ -3,7 +3,7 @@ github_issue: N/A
 title: Collectors（市場/基本面/股利/法人/月營收/Universe 收集）
 type: task
 priority: P0
-status: completed
+status: done
 depends_on: [T002, T003]
 assignee: OpenCode with DeepSeek V4 Flash
 created: 2026-08-18

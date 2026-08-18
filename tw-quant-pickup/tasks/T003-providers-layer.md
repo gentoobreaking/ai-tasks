@@ -3,11 +3,12 @@ github_issue: N/A
 title: Providers Layer（McpProvider + tw-quant-mcp 連線 + Lineage 對映）
 type: task
 priority: P0
-status: pending
+status: done
 depends_on: [T001]
 assignee: OpenCode with DeepSeek V4 Flash
 created: 2026-08-18
 updated: 2026-08-18
+commit: b0f82f9
 ---
 
 # T003 - Providers Layer（McpProvider + tw-quant-mcp 連線 + Lineage 對映）
@@ -18,13 +19,13 @@ updated: 2026-08-18
 
 ## 驗收標準
 
-- [ ] `base.py` 定義 `MarketDataProvider` / `FundamentalDataProvider` / `HistoricalPriceProvider` / `MacroContextProvider` Protocol（§6，完整簽名）
-- [ ] `McpProvider` 可連 tw-quant-mcp：`MCP_TRANSPORT=streamable-http` 用 `MCP_HTTP_ADDR=127.0.0.1:8787`；stdio 亦可（§6）
-- [ ] 37 工具對映正常化（§7.1 對映表）：get_symbol_list / get_trading_calendar / get_stock_daily_quote / get_stock_daily_kline / get_financial_statements / get_monthly_revenue / get_valuation_ratios / get_dividend_history / get_exdividend_calendar / get_institutional_investors / get_foreign_shareholding_history / get_attention_disposition_stocks / get_twse_index / get_put_call_ratio 等
-- [ ] 所有出口帶 Lineage 四欄（source / data_date / freshness / grade），source_role 依來源標 CANONICAL（§8.1）
-- [ ] 不做請求加速 / 繞過 Rate Limit + Jitter（§7.1 注意事項）
-- [ ] 錄製 fixtures：`tests/fixtures/mcp_response_*.json`（Sprint 0 acceptance，供測試不依賴外部服務）
-- [ ] 5 個以上代表性工具（指數、個股、財報、營收、法人）integration test 以 fixture 通過
+- [x] `base.py` 定義 `MarketDataProvider` / `FundamentalDataProvider` / `HistoricalPriceProvider` / `MacroContextProvider` Protocol（§6，完整簽名）
+- [x] `McpProvider` 可連 tw-quant-mcp：`MCP_TRANSPORT=streamable-http` 用 `MCP_HTTP_ADDR=127.0.0.1:8787`；stdio 亦可（§6）
+- [x] 37 工具對映正常化（§7.1 對映表）：get_symbol_list / get_trading_calendar / get_stock_daily_quote / get_stock_daily_kline / get_financial_statements / get_monthly_revenue / get_valuation_ratios / get_dividend_history / get_exdividend_calendar / get_institutional_investors / get_foreign_shareholding_history / get_attention_disposition_stocks / get_twse_index / get_put_call_ratio 等
+- [x] 所有出口帶 Lineage 四欄（source / data_date / freshness / grade），source_role 依來源標 CANONICAL（§8.1）
+- [x] 不做請求加速 / 繞過 Rate Limit + Jitter（§7.1 注意事項）
+- [x] 錄製 fixtures：`tests/fixtures/mcp_response_*.json`（Sprint 0 acceptance，供測試不依賴外部服務）
+- [x] 5 個以上代表性工具（指數、個股、財報、營收、法人）integration test 以 fixture 通過
 
 ## 備註
 
