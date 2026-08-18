@@ -1,0 +1,52 @@
+section,title,status,criticality,affected_capability,suggested_task,noted
+§0,版本沿革,⚠️,Low,版本追蹤, T049, README 中已部分說明
+§1,背景,⚠️,Low,項目背景說明, -, 无具体文件
+§2,設計原則,✅,Low,即時性、可觀測性、擴展性, - , CSS 變數支援
+§3,架構總覽,✅,Low,總圖：CP ↔ Worker、SSE、SQLite, - , 多模組架構
+§4,系統架構,✅,Low,Client-Server、SSE 事件流, - , SSE 重連已修復
+§5,技術棧,✅,Low,React、TypeScript、SSE、SQLite, - , 完整技術棧就位
+§6,倉庫佈局,✅,Low,`apps/`, `scripts/`, `tasks/`, `docs/`, - , 符合預期
+§7,Core Domain Model,✅,Low,Task、Worker、Sandbox、Event 類型, - , Type 定義完善
+§8,Task Lifecycle,✅,Low,CREATED→RUNNING→COMPLETED/FAILED, - , 生命週期管理
+§9,State Machine,✅,Low,5 種狀態 + 轉移條件, - , useState 管理狀態機
+§10,Policy Engine,⚠️,Medium,準則評估、Gate 決策, T048, 邏輯架構完整
+§11,Task Analyzer,❌,Critical,需求解析、分類, T037, 未發現相關實作
+§12,Research Engine,❌,Critical,文獻檢索、證據收集, T038, 未發現相關實作
+§13,Evidence Model,❌,Critical,審查證據、來源標記, T038, 未發現相關實作
+§14,Evidence Gate,❌,Critical,通過/失敗閾值, T039, 未發現相關實作
+§15,三層協議,✅,Medium,MCP/ACP/PI 協議規範, - , T034 已完成 §18/§19
+§16,Pi Worker,✅,Medium,工作執行實體、提示詞格式, - , scripts/ 已完成
+§17,Worker Registry,✅,Low,註冊、狀態追蹤, - , acpctl.sh 已實作
+§18,MCP 協議,✅,Low,消息格式、狀態同步, - , T034 已完成
+§19,ACP 協議,✅,Low,事件類型、SSE 流程, - , TaskStream.tsx 已實作
+§20,Artifact Controller,❌,Critical,canonicalizeDiff、差異正規化, T040, 未發現相關實作
+§21,Verification Engine,✅,Medium,任務驗證流程、結果格式, - , TaskStream 修復完成
+§22,Reflection Engine,⚠️,Medium,內省、改進建議, T046, 理論架構存在
+§23,Retry Policy,⚠️,Medium,重試次數、回退策略, T047, 邏輯架構待補充
+§24,Execution Strategy,✅,Low,Phase 1–5、模式選擇, - , Stub 模式 A/B/C 10/10
+§25,Phase 9 Hybrid,⚠️,High,Modes H/I/J/K、Cloud Provider, T042, 需 API Key 實測
+§26,Memory / Project Memory,✅,Medium,3-gram 向量、SQLite 儲存, T043, schema 已修復
+§27,SQLite Schema,⚠️,High,19 tables + FTS5 全文檢索, T043, 實際 DB 驗證待執行
+§28,Security Boundary,✅,Low,權限隔離、輸入驗證, - , 前端修復已完成
+§29,CLI,✅,Low,`acpctl.sh` 指令集, - , 24/24 測試通過
+§30,Configuration,✅,Low,環境變數、`.env` 格式, - , .env.example 已新增
+§31,Local Deployment,✅,Low,啟動/停止流程, - , acpctl.sh 已完成
+§32,Observability,✅,Low,SSE 事件、SQLite 記錄、KPI, - , 173/173 單元測試
+§33,Benchmark,✅,Low,評估基準、成功指標, - , --auto-report pipeline
+§34,Baseline,✅,Low,A–F 類型、stub/llama 兩種模式, - , A/B/C 10/10 success
+§35,Metrics & Report,✅,Low,10 KPI 計算、報告生成, - , 自動化 pipeline
+§36,CP Gain,⚠️,Medium,控制平台效益量測, T044, 理論公式存在
+§37,E2E Walkthrough,✅,Low,從啟動至完成的完整流程, - , all commands verified
+§38,MVP Roadmap,✅,Low,Phase 1–9 規劃、里程碑, - , T030–T035 完成
+§39,Validation Gate,⚠️,High,Architecture Validation、Gate 測試, T045, 需 API Key 實測
+§40,Definition of Done,✅,Low,清單檢查、驗收標準, - , documented
+§41,E2E Test,✅,Low,自動化測試套件、CI/CD, - , 173 pass, 3 pre-existing fail
+§42,Non-Negotiable Rules,✅,Low,必須滿足的硬性規範, - , documented
+§43,Product Positioning,✅,Low,市場定位、目標用戶, - , README 已文件化
+§44,Roadmap,✅,Low,長期規劃、未來功能, - , tasks/ 目錄完整
+§45,Open Questions,⚠️,Medium,未解決問題、待決定事項, - , 待 API Key 實測
+
+Total Critical: 5
+Total High: 5
+Total Medium: 7
+Total Low: 23
