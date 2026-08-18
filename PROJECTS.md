@@ -1,6 +1,6 @@
 # 📁 Projects Dashboard
 
-> 最後更新: 2026-08-18 17:52 · 自動生成
+> 最後更新: 2026-08-18 20:39 · 自動生成
 
 ---
 
@@ -10,21 +10,11 @@
 |------|------|
 | 專案數 | 62 |
 | 任務總數 | 1049 |
-| ✅ 已完成 | 962 |
-| ⬜ 待處理 | 24 |
+| ✅ 已完成 | 971 |
+| ⬜ 待處理 | 15 |
 | 🔄 進行中 | 1 |
 | ⏭️ 跳過 | 62 |
-| 總完成率 | 97% |
-
-## 🔥 待處理高優先級任務
-
-| 專案 | 任務 | 標題 |
-|------|------|------|
-| local-ai-controlpanel | [T039-evidence-gate](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T039-evidence-gate.md) | T039 - Evidence Gate 實作 |
-| local-ai-controlpanel | [T040-artifacts](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T040-artifacts.md) | T040 - Artifact Controller (canonicalizeDiff) 實作 |
-
----
-
+| 總完成率 | 98% |
 
 ## ⬜ 待處理
 
@@ -32,16 +22,7 @@
 |------|------|------|------|
 | gold-analysis-advanced | [T002](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis-advanced/tasks/T002.md) | ML 模型整合與優化 | ⬜ |
 | gold-analysis-advanced | [T004](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis-advanced/tasks/T004.md) | 實盤交易對接 | ⬜ |
-| local-ai-controlpanel | [T039-evidence-gate](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T039-evidence-gate.md) | T039 - Evidence Gate 實作 | ⬜ |
-| local-ai-controlpanel | [T040-artifacts](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T040-artifacts.md) | T040 - Artifact Controller (canonicalizeDiff) 實作 | ⬜ |
 | md-viewer-app | [T027-預覽連結懸停](https://github.com/gentoobreaking/ai-tasks/blob/main/md-viewer-app/tasks/T027-預覽連結懸停.md) | [T027] 連結懸停預覽 | ⬜ |
-| tw-quant-pickup | [T008-pit-repository](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T008-pit-repository.md) | Point-in-Time Repository（§2.6 / §9 防 Look-Ahead） | ⬜ |
-| tw-quant-pickup | [T009-universe-filter](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T009-universe-filter.md) | Universe Filter（§10） | ⬜ |
-| tw-quant-pickup | [T010-factor-system](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T010-factor-system.md) | Factor System（§11 / §17–24 八類因子） | ⬜ |
-| tw-quant-pickup | [T011-valuation-engine](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T011-valuation-engine.md) | Valuation Engine（EPS 三層 → PE/PB/Dividend/DCF → FV → Buy Zones） | ⬜ |
-| tw-quant-pickup | [T012-etf-model](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T012-etf-model.md) | ETF Model（獨立 ETF Engine：權重 / Status / ranking_validity / tie-breaker） | ⬜ |
-| tw-quant-pickup | [T012a-etf-data-adapter](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T012a-etf-data-adapter.md) | ETF Data Availability & Adapter Spec（TWSE/MOPS 官方資料盤點 + Data Adapter） | ⬜ |
-| tw-quant-pickup | [T013-composite-risk](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T013-composite-risk.md) | Composite Score 與 Risk Adjustment（§25–26） | ⬜ |
 | tw-quant-pickup | [T014-ranking](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T014-ranking.md) | Ranking（Stock Top 30 / ETF Top N / Stability / Entry/Exit） | ⬜ |
 | tw-quant-pickup | [T015-price-alerts](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T015-price-alerts.md) | Price Alerts（§36 → alert_log + 偵測） | ⬜ |
 | tw-quant-pickup | [T016-snapshot-lifecycle](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T016-snapshot-lifecycle.md) | Snapshot Lifecycle（§70 / §45 / §45.1：create → freeze → hash → archive） | ⬜ |
@@ -134,8 +115,8 @@
 
 | 指標 | 數值 |
 |------|------|
-| 過去 7 天完成 | 158 |
-| 過去 30 天完成 | 306 |
+| 過去 7 天完成 | 167 |
+| 過去 30 天完成 | 315 |
 | 平均週期時間 | 2.1 天 |
 | 週期時間中位數 | 0.0 天 |
 
@@ -145,10 +126,10 @@ xychart-beta
     title "過去 14 天任務完成趨勢"
     x-axis ["08-05", "08-06", "08-07", "08-08", "08-09", "08-10", "08-11", "08-12", "08-13", "08-14", "08-15", "08-16", "08-17", "08-18"]
     y-axis "完成數" 0 --> 119
-    line [12, 0, 0, 0, 0, 12, 11, 7, 0, 0, 8, 2, 119, 11]
+    line [12, 0, 0, 0, 0, 12, 11, 7, 0, 0, 8, 2, 119, 20]
 ```
 
-📊 總計: 182 | 日均: 13.0 | 本週: 147 | 📈 成長中
+📊 總計: 191 | 日均: 13.6 | 本週: 156 | 📈 成長中
 
 ## 📋 專案列表
 
@@ -186,9 +167,7 @@ xychart-beta
 | ✅ | [kgi-monitor](https://github.com/gentoobreaking/ai-tasks/tree/main/kgi-monitor) | 6 | 6 | 0 | 0 | 0 | ████████████████████ 100% | 2026-04-22 |
 | ✅ | [lifecycle-sync-fix](https://github.com/gentoobreaking/ai-tasks/tree/main/lifecycle-sync-fix) | 2 | 2 | 0 | 0 | 0 | ████████████████████ 100% | 2026-04-21 |
 | ✅ | [llm-router](https://github.com/gentoobreaking/ai-tasks/tree/main/llm-router) | 1 | 1 | 0 | 0 | 0 | ████████████████████ 100% | 2026-04-16 |
-| ⬜ | [local-ai-controlpanel](https://github.com/gentoobreaking/ai-tasks/tree/main/local-ai-controlpanel) | 41 | 39 | 2 | 0 | 0 | ███████████████████░ 95% | 2026-08-18 |
-  **[T039-evidence-gate](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T039-evidence-gate.md)**: T039 - Evidence Gate 實作
-  **[T040-artifacts](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T040-artifacts.md)**: T040 - Artifact Controller (canonicalizeDiff) 實作
+| ✅ | [local-ai-controlpanel](https://github.com/gentoobreaking/ai-tasks/tree/main/local-ai-controlpanel) | 41 | 41 | 0 | 0 | 0 | ████████████████████ 100% | 2026-08-18 |
 | ⬜ | [md-viewer-app](https://github.com/gentoobreaking/ai-tasks/tree/main/md-viewer-app) | 44 | 38 | 1 | 0 | 5 | ███████████████████░ 97% | 2026-05-12 |
 | ✅ | [member-backup](https://github.com/gentoobreaking/ai-tasks/tree/main/member-backup) | 1 | 1 | 0 | 0 | 0 | ████████████████████ 100% | 2026-04-16 |
 | ✅ | [member-config-review](https://github.com/gentoobreaking/ai-tasks/tree/main/member-config-review) | 7 | 7 | 0 | 0 | 0 | ████████████████████ 100% | 2026-04-19 |
@@ -210,7 +189,7 @@ xychart-beta
 | ✅ | [tasks-executor](https://github.com/gentoobreaking/ai-tasks/tree/main/tasks-executor) | 8 | 8 | 0 | 0 | 0 | ████████████████████ 100% | 2026-05-12 |
 | ✅ | [tw-quant-daybrain](https://github.com/gentoobreaking/ai-tasks/tree/main/tw-quant-daybrain) | 28 | 28 | 0 | 0 | 0 | ████████████████████ 100% | 2026-08-12 |
 | ✅ | [tw-quant-mcp](https://github.com/gentoobreaking/ai-tasks/tree/main/tw-quant-mcp) | 34 | 34 | 0 | 0 | 0 | ████████████████████ 100% | 2026-08-15 |
-| ⬜ | [tw-quant-pickup](https://github.com/gentoobreaking/ai-tasks/tree/main/tw-quant-pickup) | 26 | 7 | 19 | 0 | 0 | █████░░░░░░░░░░░░░░░ 26% | 2026-08-18 |
+| ⬜ | [tw-quant-pickup](https://github.com/gentoobreaking/ai-tasks/tree/main/tw-quant-pickup) | 26 | 14 | 12 | 0 | 0 | ██████████░░░░░░░░░░ 53% | 2026-08-18 |
 | ✅ | [tw-quant-selector](https://github.com/gentoobreaking/ai-tasks/tree/main/tw-quant-selector) | 148 | 148 | 0 | 0 | 0 | ████████████████████ 100% | 2026-08-15 |
 | ✅ | [tw-quant-signal](https://github.com/gentoobreaking/ai-tasks/tree/main/tw-quant-signal) | 28 | 28 | 0 | 0 | 0 | ████████████████████ 100% | 2026-08-16 |
 | ✅ | [twse-monitor](https://github.com/gentoobreaking/ai-tasks/tree/main/twse-monitor) | 11 | 11 | 0 | 0 | 0 | ████████████████████ 100% | 2026-05-07 |

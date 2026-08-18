@@ -42,6 +42,8 @@
 | Spec v0.5 vs 實作完整度審查與差距清單產出 |
 | T037 - Research Engine 實作 |
 | T038 - Evidence Model 實作 |
+| T039 - Evidence Gate 實作 |
+| T040 - Artifact Controller (canonicalizeDiff) 實作 |
 | T041 - Plugin System 實作與多層 MCP 整合 |
 
 ## Skip 項目
@@ -60,8 +62,7 @@
 
 | Task | 名稱 | 說明 |
 |------|------|------|
-| [T39-evidence-gate](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T039-evidence-gate.md) | T039 - Evidence Gate 實作 | |
-| [T40-artifacts](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T040-artifacts.md) | T040 - Artifact Controller (canonicalizeDiff) 實作 | |
+| | | |
 
 ## Task 列表
 
@@ -105,10 +106,10 @@
 | [T36-spec-impl-review](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T036-spec-impl-review.md) | Spec v0.5 vs 實作完整度審查與差距清單產出 | ✅ done |
 | [T37-research-engine](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T037-research-engine.md) | T037 - Research Engine 實作 | ✅ done |
 | [T38-evidence-model](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T038-evidence-model.md) | T038 - Evidence Model 實作 | ✅ done |
-| [T39-evidence-gate](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T039-evidence-gate.md) | T039 - Evidence Gate 實作 | 📋 pending |
-| [T40-artifacts](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T040-artifacts.md) | T040 - Artifact Controller (canonicalizeDiff) 實作 | 📋 pending |
+| [T39-evidence-gate](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T039-evidence-gate.md) | T039 - Evidence Gate 實作 | ✅ done |
+| [T40-artifacts](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T040-artifacts.md) | T040 - Artifact Controller (canonicalizeDiff) 實作 | ✅ done |
 | [T41-plugin-system](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T041-plugin-system.md) | T041 - Plugin System 實作與多層 MCP 整合 | ✅ done |
 
-**✅ done: 39 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 2**
+**✅ done: 41 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 0**
 
-> 自動生成於 2026-08-18 17:52
+> 自動生成於 2026-08-18 20:39
