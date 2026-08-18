@@ -1,3 +1,15 @@
+---
+github_issue: N/A
+title: T039 - Evidence Gate 實作
+type: feature
+priority: high
+status: pending
+depends_on:
+assignee: OpenCode with DeepSeek V4 Flash
+created: 2026-08-15
+updated: 2026-08-18
+---
+
 # T039 - Evidence Gate 實作
 
 ## 目標

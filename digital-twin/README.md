@@ -86,6 +86,7 @@
 | 拆分 incremental_index.py 為 indexer.py 與 searcher.py |
 | 統一 scheduler.py 的日誌輸出為 structlog |
 | 補充 end-to-end 整合測試（auto_dev → git commit → README sync） |
+| 清理 repo 根目錄雜檔與目錄結構 |
 | 任務恢復優先 + opencode timeout + 聲音通知 + 人類可讀輸出 |
 
 ## Skip 項目
@@ -98,7 +99,7 @@
 
 | Task | 名稱 | 說明 |
 |------|------|------|
-| [T87-repo-cleanup](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T087-repo-cleanup.md) | 清理 repo 根目錄雜檔與目錄結構 | |
+| | | |
 
 ## 待實作
 
@@ -192,9 +193,9 @@
 | [T84-incremental-index-split](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T084-incremental-index-split.md) | 拆分 incremental_index.py 為 indexer.py 與 searcher.py | ✅ done |
 | [T85-unify-logging](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T085-unify-logging.md) | 統一 scheduler.py 的日誌輸出為 structlog | ✅ done |
 | [T86-e2e-integration-test](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T086-e2e-integration-test.md) | 補充 end-to-end 整合測試（auto_dev → git commit → README sync） | ✅ done |
-| [T87-repo-cleanup](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T087-repo-cleanup.md) | 清理 repo 根目錄雜檔與目錄結構 | 🔧 in-progress |
+| [T87-repo-cleanup](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T087-repo-cleanup.md) | 清理 repo 根目錄雜檔與目錄結構 | ✅ done |
 | [T88-task-resume-priority-timeout-sound](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T088-task-resume-priority-timeout-sound.md) | 任務恢復優先 + opencode timeout + 聲音通知 + 人類可讀輸出 | ✅ done |
 
-**✅ done: 83 | 🔧 in-progress: 1 | ⏭️ skip: 0 | 📋 pending: 0**
+**✅ done: 84 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 0**
 
-> 自動生成於 2026-08-18 10:43
+> 自動生成於 2026-08-18 16:56

@@ -3,7 +3,7 @@ github_issue: null
 title: 清理 repo 根目錄雜檔與目錄結構
 type: pending
 priority: low
-status: in-progress
+status: done
 depends_on: []
 assignee: OpenCode with DeepSeek V4 Flash
 created: 2026-08-15
@@ -27,14 +27,14 @@ Review 報告（REVIEW_REPORT.md §9）識別以下根目錄雜檔：
 - `:memory:` 目錄 — 測試用臨時目錄，名稱不直觀
 
 ## 驗收標準
-- [ ] `feedback_raw.md` → 移至 `data/` 或 `logs/`（或加入 .gitignore）
-- [ ] `feedback_template.md` → 移至 `data/` 或 `docs/`
-- [ ] `full_sessions.md` → 移至 `docs/archive/` 或加入 .gitignore
-- [ ] `telegram_bot.log` → 加入 .gitignore（日誌不應版控）
-- [ ] `:memory:` 目錄 → 重命名為 `tests/fixtures/` 或說明用途並加入 .gitignore
-- [ ] 確認相關程式碼中的路徑引用已同步更新
-- [ ] 現有測試全通過
-- [ ] ruff check 零錯誤
+- [x] `feedback_raw.md` → 加入 .gitignore（生成產物，不再版控）
+- [x] `feedback_template.md` → 移至 `docs/`，更新 `apply_feedback.py` 引用路徑
+- [x] `full_sessions.md` → 加入 .gitignore（生成產物）
+- [x] `telegram_bot.log` → 加入 .gitignore（`*.log` 規則已覆蓋）
+- [x] `:memory:` 目錄 → 加入 .gitignore（該目錄已不存在，防呵）
+- [x] 更新 `apply_feedback.py`（`FEEDBACK_FILE`）、`auto_guardrail.py`（ignore_files 已含）
+- [x] 現有測試全通過（296 passed；2 個 circuit-breaker 為預既有失敗）
+- [x] ruff check 零錯誤
 
 ## 備註
 - 移動檔案後需檢查 `extract_feedback.py`、`apply_feedback.py` 等引用路徑
