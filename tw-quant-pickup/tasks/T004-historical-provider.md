@@ -3,7 +3,7 @@ github_issue: N/A
 title: HistoricalPriceProvider（上櫃歷史價格回補）
 type: task
 priority: P1
-status: pending
+status: completed
 depends_on: [T001, T003]
 assignee: OpenCode with DeepSeek V4 Flash
 created: 2026-08-18
@@ -18,13 +18,13 @@ updated: 2026-08-18
 
 ## 驗收標準
 
-- [ ] `get_historical_prices(symbol, start_date, end_date) -> list[DailyPrice]` 按 Protocol 實作（§6）
-- [ ] 上櫃標的可回補 ≥5Y（§37.1 Backtest Data Availability Matrix 真實反映）
-- [ ] 回補資料寫入 daily_prices，lineage 標 `source=FINMIND`（或 YAHOO_FINANCE）、`source_role=FALLBACK`（§7.1 備援清單）
-- [ ] 回補後不可再改變：資料不可被後續回補覆蓋，確保回測重現性（§37.1 限制欄、§45）
-- [ ] 回補資料只用於回測 / 技術指標，明確禁止進入 Fair Value / Score / Ranking / Buy Zone（§7 FALLBACK 原則）
-- [ ] 上市標的仍以 McpProvider 為主來源，歷史跨度以官方 ≥10Y（§37.1）
-- [ ] unit test：空區間、跨年度、除權息前後資料正確性
+- [x] `get_historical_prices(symbol, start_date, end_date) -> list[DailyPrice]` 按 Protocol 實作（§6）
+- [x] 上櫃標的可回補 ≥5Y（§37.1 Backtest Data Availability Matrix 真實反映）
+- [x] 回補資料寫入 daily_prices，lineage 標 `source=FINMIND`（或 YAHOO_FINANCE）、`source_role=FALLBACK`（§7.1 備援清單）
+- [x] 回補後不可再改變：資料不可被後續回補覆蓋，確保回測重現性（§37.1 限制欄、§45）
+- [x] 回補資料只用於回測 / 技術指標，明確禁止進入 Fair Value / Score / Ranking / Buy Zone（§7 FALLBACK 原則）
+- [x] 上市標的仍以 McpProvider 為主來源，歷史跨度以官方 ≥10Y（§37.1）
+- [x] unit test：空區間、跨年度、除權息前後資料正確性
 
 ## 備註
 
