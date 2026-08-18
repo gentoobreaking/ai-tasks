@@ -1,6 +1,6 @@
 # 📅 Daily Dashboard - 2026-08-18
 
-> 最後更新: 2026-08-18 09:13 · 自動生成
+> 最後更新: 2026-08-18 10:11 · 自動生成
 
 ---
 
@@ -39,7 +39,10 @@
 
 ## ✅ 今日完成任務
 
-_無_
+| 專案 | 任務 | 標題 |
+| -- | -- | -- |
+| tw-quant-pickup | [T001-project-scaffold](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T001-project-scaffold.md) | 專案 Scaffold（Python monorepo 骨架） |
+| tw-quant-pickup | [T002-database-schema](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T002-database-schema.md) | Database Schema 與 Migrations（PostgreSQL，§5 全表） |
 
 ---
 
@@ -72,8 +75,6 @@ _無_
 | local-ai-controlpanel | [T038-evidence-model](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T038-evidence-model.md) | Evidence Model 實作 |  |
 | local-ai-controlpanel | [T039-evidence-gate](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T039-evidence-gate.md) | Evidence Gate 實作 |  |
 | local-ai-controlpanel | [T040-artifacts](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T040-artifacts.md) | Artifact Controller (canonicalizeDiff) 實作 |  |
-| tw-quant-pickup | [T001-project-scaffold](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T001-project-scaffold.md) | 專案 Scaffold（Python monorepo 骨架） | p0 |
-| tw-quant-pickup | [T002-database-schema](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T002-database-schema.md) | Database Schema 與 Migrations（PostgreSQL，§5 全表） | p0 |
 | tw-quant-pickup | [T003-providers-layer](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T003-providers-layer.md) | Providers Layer（McpProvider + tw-quant-mcp 連線 + Lineage 對映） | p0 |
 | tw-quant-pickup | [T004-historical-provider](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T004-historical-provider.md) | HistoricalPriceProvider（上櫃歷史價格回補） | p1 |
 | tw-quant-pickup | [T005-macro-context-provider](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T005-macro-context-provider.md) | MacroContextProvider（Yahoo Finance，FALLBACK） | p1 |
