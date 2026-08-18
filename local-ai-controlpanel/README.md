@@ -57,6 +57,10 @@
 | Task | 名稱 | 說明 |
 |------|------|------|
 | [T36-spec-impl-review](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T036-spec-impl-review.md) | Spec v0.5 vs 實作完整度審查與差距清單產出 | |
+| [T37-research-engine](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T037-research-engine.md) | 任務 T037-research-engine | |
+| [T38-evidence-model](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T038-evidence-model.md) | 任務 T038-evidence-model | |
+| [T39-evidence-gate](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T039-evidence-gate.md) | 任務 T039-evidence-gate | |
+| [T40-artifacts](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T040-artifacts.md) | 任務 T040-artifacts | |
 
 ## Task 列表
 
@@ -98,7 +102,11 @@
 | [T34-mcp-acp-protocol](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T034-mcp-acp-protocol.md) | MCP / ACP 協議層實作（Phase 6+ 預留） | ✅ done |
 | [T35-hybrid-execution](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T035-hybrid-execution.md) | Phase 9 Hybrid Execution / Cloud Escalation 實作 | ✅ done |
 | [T36-spec-impl-review](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T036-spec-impl-review.md) | Spec v0.5 vs 實作完整度審查與差距清單產出 | 📋 pending |
+| [T37-research-engine](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T037-research-engine.md) | 任務 T037-research-engine | 📋 pending |
+| [T38-evidence-model](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T038-evidence-model.md) | 任務 T038-evidence-model | 📋 pending |
+| [T39-evidence-gate](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T039-evidence-gate.md) | 任務 T039-evidence-gate | 📋 pending |
+| [T40-artifacts](https://github.com/gentoobreaking/ai-tasks/blob/main/local-ai-controlpanel/tasks/T040-artifacts.md) | 任務 T040-artifacts | 📋 pending |
 
-**✅ done: 35 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 1**
+**✅ done: 35 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 5**
 
-> 自動生成於 2026-08-18 06:44
+> 自動生成於 2026-08-18 09:09

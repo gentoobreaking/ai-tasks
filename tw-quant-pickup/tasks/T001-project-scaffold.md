@@ -3,13 +3,15 @@ github_issue: N/A
 title: 專案 Scaffold（Python monorepo 骨架）
 type: task
 priority: P0
-status: pending
+status: blocked
 depends_on: []
 assignee: OpenCode with DeepSeek V4 Flash
 created: 2026-08-18
-updated: 2026-08-18
+updated: '2026-08-18'
+fail_count: 2
+summary: 連續失敗 3 次（模型未產生有效變更），標記為 blocked 待人工處理
+blocked_review: tasks/blocked-review/T001-review.md
 ---
-
 # T001 - 專案 Scaffold（Python monorepo 骨架）
 
 ## 目標
