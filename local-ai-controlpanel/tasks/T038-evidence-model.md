@@ -88,3 +88,9 @@ updated: 2026-08-18
 - 單元測試: 22/22 通過
 - 全測試套件: 211 pass / 3 fail (3 個既有失敗)
 - CLI 測試: 24/24 通過
+
+### Plugin System 整合 (T041)
+- Evidence 類型新增 `external_api`、`browser` 類型支援 MCP Plugin 來源
+- `collectEvidence()` 整合 Research Engine 的多層 MCP 搜尋結果
+- 支援 camofox-browser 瀏覽器證據（截圖、頁面快照、搜尋結果）
+- 支援 document-mcp 本地文檔證據（向量搜尋片段、摘要）

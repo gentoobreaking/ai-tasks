@@ -56,6 +56,7 @@ updated: 2026-08-18
    - 3-gram 向量相似度匹配（復用 StyleKB/MemoryRetriever 基礎設施）
    - 證據收集：來源標記、可信度評分、去重
    - 三來源整合：Memory Retriever（專案記憶）+ StyleKB（跨專案知識庫）+ 外部搜尋
+   - **Plugin System 整合**：多層 MCP 搜尋（tw-quant → yfinance → finmind）、瀏覽器搜尋、本地文檔索引
 
 2. **REST API** (`apps/control-plane/src/routes/research.ts`)
    - `POST /api/v1/research` - 執行研究查詢
@@ -77,3 +78,8 @@ updated: 2026-08-18
 - 單元測試: 16/16 通過
 - 全測試套件: 189 pass / 3 fail (3 個既有失敗)
 - CLI 測試: 24/24 通過
+
+### Plugin System 整合 (T041)
+- 新增 `selectMcpServer()` 自動選擇邏輯：台股→tw-quant、美股→yfinance、預設→tw-quant
+- 新增 `searchViaMcp()` 統一搜尋介面，支援多層備援切換
+- 整合 camofox-browser 搜尋宏（@google_search 等）與 document-mcp 本地索引
