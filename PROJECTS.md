@@ -1,6 +1,6 @@
 # 📁 Projects Dashboard
 
-> 最後更新: 2026-08-18 20:39 · 自動生成
+> 最後更新: 2026-08-18 20:57 · 自動生成
 
 ---
 
@@ -10,8 +10,8 @@
 |------|------|
 | 專案數 | 62 |
 | 任務總數 | 1049 |
-| ✅ 已完成 | 971 |
-| ⬜ 待處理 | 15 |
+| ✅ 已完成 | 973 |
+| ⬜ 待處理 | 13 |
 | 🔄 進行中 | 1 |
 | ⏭️ 跳過 | 62 |
 | 總完成率 | 98% |
@@ -23,8 +23,6 @@
 | gold-analysis-advanced | [T002](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis-advanced/tasks/T002.md) | ML 模型整合與優化 | ⬜ |
 | gold-analysis-advanced | [T004](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis-advanced/tasks/T004.md) | 實盤交易對接 | ⬜ |
 | md-viewer-app | [T027-預覽連結懸停](https://github.com/gentoobreaking/ai-tasks/blob/main/md-viewer-app/tasks/T027-預覽連結懸停.md) | [T027] 連結懸停預覽 | ⬜ |
-| tw-quant-pickup | [T014-ranking](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T014-ranking.md) | Ranking（Stock Top 30 / ETF Top N / Stability / Entry/Exit） | ⬜ |
-| tw-quant-pickup | [T015-price-alerts](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T015-price-alerts.md) | Price Alerts（§36 → alert_log + 偵測） | ⬜ |
 | tw-quant-pickup | [T016-snapshot-lifecycle](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T016-snapshot-lifecycle.md) | Snapshot Lifecycle（§70 / §45 / §45.1：create → freeze → hash → archive） | ⬜ |
 | tw-quant-pickup | [T017-ai-analyst](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T017-ai-analyst.md) | AI Analyst（§41–44 / §73 / §74，唯讀 frozen snapshot） | ⬜ |
 | tw-quant-pickup | [T018-reports](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T018-reports.md) | Reports（§50–52：Markdown / HTML / CSV / JSON daily report） | ⬜ |
@@ -115,9 +113,9 @@
 
 | 指標 | 數值 |
 |------|------|
-| 過去 7 天完成 | 167 |
-| 過去 30 天完成 | 315 |
-| 平均週期時間 | 2.1 天 |
+| 過去 7 天完成 | 169 |
+| 過去 30 天完成 | 317 |
+| 平均週期時間 | 2.0 天 |
 | 週期時間中位數 | 0.0 天 |
 
 
@@ -126,10 +124,10 @@ xychart-beta
     title "過去 14 天任務完成趨勢"
     x-axis ["08-05", "08-06", "08-07", "08-08", "08-09", "08-10", "08-11", "08-12", "08-13", "08-14", "08-15", "08-16", "08-17", "08-18"]
     y-axis "完成數" 0 --> 119
-    line [12, 0, 0, 0, 0, 12, 11, 7, 0, 0, 8, 2, 119, 20]
+    line [12, 0, 0, 0, 0, 12, 11, 7, 0, 0, 8, 2, 119, 22]
 ```
 
-📊 總計: 191 | 日均: 13.6 | 本週: 156 | 📈 成長中
+📊 總計: 193 | 日均: 13.8 | 本週: 158 | 📈 成長中
 
 ## 📋 專案列表
 
@@ -189,7 +187,7 @@ xychart-beta
 | ✅ | [tasks-executor](https://github.com/gentoobreaking/ai-tasks/tree/main/tasks-executor) | 8 | 8 | 0 | 0 | 0 | ████████████████████ 100% | 2026-05-12 |
 | ✅ | [tw-quant-daybrain](https://github.com/gentoobreaking/ai-tasks/tree/main/tw-quant-daybrain) | 28 | 28 | 0 | 0 | 0 | ████████████████████ 100% | 2026-08-12 |
 | ✅ | [tw-quant-mcp](https://github.com/gentoobreaking/ai-tasks/tree/main/tw-quant-mcp) | 34 | 34 | 0 | 0 | 0 | ████████████████████ 100% | 2026-08-15 |
-| ⬜ | [tw-quant-pickup](https://github.com/gentoobreaking/ai-tasks/tree/main/tw-quant-pickup) | 26 | 14 | 12 | 0 | 0 | ██████████░░░░░░░░░░ 53% | 2026-08-18 |
+| ⬜ | [tw-quant-pickup](https://github.com/gentoobreaking/ai-tasks/tree/main/tw-quant-pickup) | 26 | 16 | 10 | 0 | 0 | ████████████░░░░░░░░ 61% | 2026-08-18 |
 | ✅ | [tw-quant-selector](https://github.com/gentoobreaking/ai-tasks/tree/main/tw-quant-selector) | 148 | 148 | 0 | 0 | 0 | ████████████████████ 100% | 2026-08-15 |
 | ✅ | [tw-quant-signal](https://github.com/gentoobreaking/ai-tasks/tree/main/tw-quant-signal) | 28 | 28 | 0 | 0 | 0 | ████████████████████ 100% | 2026-08-16 |
 | ✅ | [twse-monitor](https://github.com/gentoobreaking/ai-tasks/tree/main/twse-monitor) | 11 | 11 | 0 | 0 | 0 | ████████████████████ 100% | 2026-05-07 |
