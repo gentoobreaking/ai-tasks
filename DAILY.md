@@ -1,6 +1,6 @@
 # 📅 Daily Dashboard - 2026-08-19
 
-> 最後更新: 2026-08-19 19:36 · 自動生成
+> 最後更新: 2026-08-19 21:40 · 自動生成
 
 ---
 
@@ -30,16 +30,19 @@
 | tw-quant-pickup | [T020-cli](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T020-cli.md) | CLI（§48） |
 | tw-quant-pickup | [T021-backtest-engine](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T021-backtest-engine.md) | Backtest Engine（§37–40：Portfolio / Benchmark / Walk-Forward / PIT / OTC） |
 | tw-quant-pickup | [T022-scheduler-monitoring](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T022-scheduler-monitoring.md) | Scheduler 與 Monitoring / Health（§49 / §54–55） |
+| tw-quant-pickup | [T023-deployment-security](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T023-deployment-security.md) | Deployment（Docker Compose / Kubernetes / Security，§56–58） |
+| tw-quant-pickup | [T024-testing-regression](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T024-testing-regression.md) | Testing & Regression Suite（§59–61：unit / integration / regression / backtest） |
+| tw-quant-pickup | [T025-final-dod](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T025-final-dod.md) | Final Integration & Definition of Done（§78 / §83 / §85） |
+| tw-quant-signal | [T024-mcp-timeout-config](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T024-mcp-timeout-config.md) | 增加 MCP 連線逾時設定可配置化 |
+| tw-quant-signal | [T025-mcp-307-redirect](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T025-mcp-307-redirect.md) | 修正 MCP Client 處理 HTTP 307 重導向 |
+| tw-quant-signal | [T027-pipeline-background-execution](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T027-pipeline-background-execution.md) | 避免手動中斷管線 - 改為背景執行與監控 |
+| tw-quant-signal | [T028-data-timing-optimization](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T028-data-timing-optimization.md) | 優化資料時間點處理 - 當日盤後資料尚未出爐時的處理策略 |
 
 ---
 
 ## 🔥 待處理高優先級
 
-| 專案 | 任務 | 標題 | 優先 |
-| -- | -- | -- | -- |
-| tw-quant-signal | [T024-mcp-timeout-config](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T024-mcp-timeout-config.md) | 增加 MCP 連線逾時設定可配置化 | high |
-| tw-quant-signal | [T025-mcp-307-redirect](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T025-mcp-307-redirect.md) | 修正 MCP Client 處理 HTTP 307 重導向 | high |
-| tw-quant-signal | [T027-pipeline-background-execution](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T027-pipeline-background-execution.md) | 避免手動中斷管線 - 改為背景執行與監控 | high |
+_無_
 
 ---
 
@@ -55,16 +58,9 @@
 
 | 專案 | 任務 | 標題 | 優先 |
 | -- | -- | -- | -- |
-| tw-quant-signal | [T024-mcp-timeout-config](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T024-mcp-timeout-config.md) | 增加 MCP 連線逾時設定可配置化 | high |
-| tw-quant-signal | [T025-mcp-307-redirect](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T025-mcp-307-redirect.md) | 修正 MCP Client 處理 HTTP 307 重導向 | high |
-| tw-quant-signal | [T027-pipeline-background-execution](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T027-pipeline-background-execution.md) | 避免手動中斷管線 - 改為背景執行與監控 | high |
-| tw-quant-signal | [T028-data-timing-optimization](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T028-data-timing-optimization.md) | 優化資料時間點處理 - 當日盤後資料尚未出爐時的處理策略 | medium |
 | gold-analysis-advanced | [T002](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis-advanced/tasks/T002.md) | ML 模型整合與優化 | low |
 | gold-analysis-advanced | [T004](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis-advanced/tasks/T004.md) | 實盤交易對接 | low |
 | md-viewer-app | [T027-預覽連結懸停](https://github.com/gentoobreaking/ai-tasks/blob/main/md-viewer-app/tasks/T027-預覽連結懸停.md) | [T027] 連結懸停預覽 | low |
-| tw-quant-pickup | [T023-deployment-security](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T023-deployment-security.md) | Deployment（Docker Compose / Kubernetes / Security，§56–58） | p2 |
-| tw-quant-pickup | [T024-testing-regression](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T024-testing-regression.md) | Testing & Regression Suite（§59–61：unit / integration / regression / backtest） | p0 |
-| tw-quant-pickup | [T025-final-dod](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T025-final-dod.md) | Final Integration & Definition of Done（§78 / §83 / §85） | p0 |
 
 ---
 
