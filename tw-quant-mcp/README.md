@@ -95,7 +95,9 @@
 | [T32-etf-index-support](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T032-etf-index-support.md) | ETF（0050）與加權指數資料支援（A+B 合併） | ✅ done |
 | [T33-financial-ajax-fix](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T033-financial-ajax-fix.md) | P0 財報 AJAX 接線（季報三表修復 + PE/ROE + 健康評分連帶修復） | ✅ done |
 | [T34-dividend-exdate](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T034-dividend-exdate.md) | P1 股利 ex_date（TWT48U 併入 dividend history + 評估歷史查詢） | ✅ done |
+| [T35-mcp-symbol-registry](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T035-mcp-symbol-registry.md) | 補齊 MCP Symbol Registry 缺漏代碼 | ✅ done |
+| [T36-symbol-registry-auto-sync](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T036-symbol-registry-auto-sync.md) | 建立 Symbol Registry 自動同步機制 | ✅ done |
 
-**✅ done: 34 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 0**
+**✅ done: 36 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 0**
 
-> 自動生成於 2026-08-18 20:57
+> 自動生成於 2026-08-19 19:30
