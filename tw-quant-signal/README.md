@@ -49,7 +49,10 @@
 
 | Task | 名稱 | 說明 |
 |------|------|------|
-| | | |
+| [T24-mcp-timeout-config](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T024-mcp-timeout-config.md) | 增加 MCP 連線逾時設定可配置化 | |
+| [T25-mcp-307-redirect](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T025-mcp-307-redirect.md) | 修正 MCP Client 處理 HTTP 307 重導向 | |
+| [T27-pipeline-background-execution](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T027-pipeline-background-execution.md) | 避免手動中斷管線 - 改為背景執行與監控 | |
+| [T28-data-timing-optimization](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T028-data-timing-optimization.md) | 優化資料時間點處理 - 當日盤後資料尚未出爐時的處理策略 | |
 
 ## Task 列表
 
@@ -83,7 +86,11 @@
 | [T21-twse-mcp-migration](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T021-twse-mcp-migration.md) | [Phase 4] TWSE 盤後資料層遷移至 tw-quant-mcp | ✅ done |
 | [T22-mops-mcp-migration](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T022-mops-mcp-migration.md) | [Phase 4] MOPS/基本面資料層遷移至 tw-quant-mcp | ✅ done |
 | [T23-mcp-validation-fallback](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T023-mcp-validation-fallback.md) | [Phase 4] Pipeline 驗證 + mcp fallback — 確認端到端正確性 | ✅ done |
+| [T24-mcp-timeout-config](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T024-mcp-timeout-config.md) | 增加 MCP 連線逾時設定可配置化 | 📋 pending |
+| [T25-mcp-307-redirect](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T025-mcp-307-redirect.md) | 修正 MCP Client 處理 HTTP 307 重導向 | 📋 pending |
+| [T27-pipeline-background-execution](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T027-pipeline-background-execution.md) | 避免手動中斷管線 - 改為背景執行與監控 | 📋 pending |
+| [T28-data-timing-optimization](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T028-data-timing-optimization.md) | 優化資料時間點處理 - 當日盤後資料尚未出爐時的處理策略 | 📋 pending |
 
-**✅ done: 28 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 0**
+**✅ done: 28 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 4**
 
-> 自動生成於 2026-08-18 20:57
+> 自動生成於 2026-08-19 19:36

@@ -20,6 +20,13 @@
 | Composite Score 與 Risk Adjustment（§25–26） |
 | Ranking（Stock Top 30 / ETF Top N / Stability / Entry/Exit） |
 | Price Alerts（§36 → alert_log + 偵測） |
+| Snapshot Lifecycle（§70 / §45 / §45.1：create → freeze → hash → archive） |
+| AI Analyst（§41–44 / §73 / §74，唯讀 frozen snapshot） |
+| Reports（§50–52：Markdown / HTML / CSV / JSON daily report） |
+| API Server（§53 / §53.1 / §54：FastAPI + Envelope + 前端整合對齊） |
+| CLI（§48） |
+| Backtest Engine（§37–40：Portfolio / Benchmark / Walk-Forward / PIT / OTC） |
+| Scheduler 與 Monitoring / Health（§49 / §54–55） |
 
 ## Skip 項目
 
@@ -37,13 +44,6 @@
 
 | Task | 名稱 | 說明 |
 |------|------|------|
-| [T16-snapshot-lifecycle](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T016-snapshot-lifecycle.md) | Snapshot Lifecycle（§70 / §45 / §45.1：create → freeze → hash → archive） | |
-| [T17-ai-analyst](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T017-ai-analyst.md) | AI Analyst（§41–44 / §73 / §74，唯讀 frozen snapshot） | |
-| [T18-reports](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T018-reports.md) | Reports（§50–52：Markdown / HTML / CSV / JSON daily report） | |
-| [T19-api-server](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T019-api-server.md) | API Server（§53 / §53.1 / §54：FastAPI + Envelope + 前端整合對齊） | |
-| [T20-cli](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T020-cli.md) | CLI（§48） | |
-| [T21-backtest-engine](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T021-backtest-engine.md) | Backtest Engine（§37–40：Portfolio / Benchmark / Walk-Forward / PIT / OTC） | |
-| [T22-scheduler-monitoring](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T022-scheduler-monitoring.md) | Scheduler 與 Monitoring / Health（§49 / §54–55） | |
 | [T23-deployment-security](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T023-deployment-security.md) | Deployment（Docker Compose / Kubernetes / Security，§56–58） | |
 | [T24-testing-regression](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T024-testing-regression.md) | Testing & Regression Suite（§59–61：unit / integration / regression / backtest） | |
 | [T25-final-dod](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T025-final-dod.md) | Final Integration & Definition of Done（§78 / §83 / §85） | |
@@ -68,17 +68,17 @@
 | [T13-composite-risk](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T013-composite-risk.md) | Composite Score 與 Risk Adjustment（§25–26） | ✅ done |
 | [T14-ranking](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T014-ranking.md) | Ranking（Stock Top 30 / ETF Top N / Stability / Entry/Exit） | ✅ done |
 | [T15-price-alerts](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T015-price-alerts.md) | Price Alerts（§36 → alert_log + 偵測） | ✅ done |
-| [T16-snapshot-lifecycle](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T016-snapshot-lifecycle.md) | Snapshot Lifecycle（§70 / §45 / §45.1：create → freeze → hash → archive） | 📋 pending |
-| [T17-ai-analyst](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T017-ai-analyst.md) | AI Analyst（§41–44 / §73 / §74，唯讀 frozen snapshot） | 📋 pending |
-| [T18-reports](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T018-reports.md) | Reports（§50–52：Markdown / HTML / CSV / JSON daily report） | 📋 pending |
-| [T19-api-server](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T019-api-server.md) | API Server（§53 / §53.1 / §54：FastAPI + Envelope + 前端整合對齊） | 📋 pending |
-| [T20-cli](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T020-cli.md) | CLI（§48） | 📋 pending |
-| [T21-backtest-engine](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T021-backtest-engine.md) | Backtest Engine（§37–40：Portfolio / Benchmark / Walk-Forward / PIT / OTC） | 📋 pending |
-| [T22-scheduler-monitoring](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T022-scheduler-monitoring.md) | Scheduler 與 Monitoring / Health（§49 / §54–55） | 📋 pending |
+| [T16-snapshot-lifecycle](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T016-snapshot-lifecycle.md) | Snapshot Lifecycle（§70 / §45 / §45.1：create → freeze → hash → archive） | ✅ done |
+| [T17-ai-analyst](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T017-ai-analyst.md) | AI Analyst（§41–44 / §73 / §74，唯讀 frozen snapshot） | ✅ done |
+| [T18-reports](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T018-reports.md) | Reports（§50–52：Markdown / HTML / CSV / JSON daily report） | ✅ done |
+| [T19-api-server](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T019-api-server.md) | API Server（§53 / §53.1 / §54：FastAPI + Envelope + 前端整合對齊） | ✅ done |
+| [T20-cli](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T020-cli.md) | CLI（§48） | ✅ done |
+| [T21-backtest-engine](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T021-backtest-engine.md) | Backtest Engine（§37–40：Portfolio / Benchmark / Walk-Forward / PIT / OTC） | ✅ done |
+| [T22-scheduler-monitoring](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T022-scheduler-monitoring.md) | Scheduler 與 Monitoring / Health（§49 / §54–55） | ✅ done |
 | [T23-deployment-security](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T023-deployment-security.md) | Deployment（Docker Compose / Kubernetes / Security，§56–58） | 📋 pending |
 | [T24-testing-regression](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T024-testing-regression.md) | Testing & Regression Suite（§59–61：unit / integration / regression / backtest） | 📋 pending |
 | [T25-final-dod](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T025-final-dod.md) | Final Integration & Definition of Done（§78 / §83 / §85） | 📋 pending |
 
-**✅ done: 16 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 10**
+**✅ done: 23 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 3**
 
-> 自動生成於 2026-08-18 20:57
+> 自動生成於 2026-08-19 19:36

@@ -3,11 +3,11 @@ github_issue: N/A
 title: CLI（§48）
 type: task
 priority: P2
-status: pending
+status: done
 depends_on: [T016, T018]
 assignee: OpenCode with DeepSeek V4 Flash
 created: 2026-08-18
-updated: 2026-08-18
+updated: 2026-08-19
 ---
 
 # T020 - CLI（§48）
@@ -18,11 +18,11 @@ updated: 2026-08-18
 
 ## 驗收標準
 
-- [ ] 指令覆蓋 §48 所列操作（collect / factor / valuation / rank / backtest / report / alert / snapshot / api）
-- [ ] 未指定日期時以「最近交易日」為預設；指定 date 重跑不覆蓋 snapshot（§45）
-- [ ] 錯誤輸出為非零 exit code，供 cron/shell 判斷（§67 安全閘門）
-- [ ] `--dry-run` / `--verbose` 基本 flag（如 §48 定義）
-- [ ] `make run` 可透過 CLI 啟動當日 pipeline
+- [x] 指令覆蓋 §48 所列操作（collect / factor / valuation / rank / backtest / report / alert / snapshot / api）
+- [x] 未指定日期時以「最近交易日」為預設；指定 date 重跑不覆蓋 snapshot（§45）
+- [x] 錯誤輸出為非零 exit code，供 cron/shell 判斷（§67 安全閘門）
+- [x] `--dry-run` / `--verbose` 基本 flag（如 §48 定義）
+- [x] `make run` 可透過 CLI 啟動當日 pipeline
 
 ## 備註
 

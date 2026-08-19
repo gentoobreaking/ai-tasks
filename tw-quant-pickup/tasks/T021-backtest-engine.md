@@ -3,11 +3,11 @@ github_issue: N/A
 title: Backtest Engine（§37–40：Portfolio / Benchmark / Walk-Forward / PIT / OTC）
 type: task
 priority: P1
-status: pending
+status: done
 depends_on: [T004, T008, T014]
 assignee: OpenCode with DeepSeek V4 Flash
 created: 2026-08-18
-updated: 2026-08-18
+updated: 2026-08-19
 ---
 
 # T021 - Backtest Engine（§37–40：Portfolio / Benchmark / Walk-Forward / PIT / OTC）
@@ -18,15 +18,15 @@ updated: 2026-08-18
 
 ## 驗收標準
 
-- [ ] Backtest 讀資料一律走 PIT repository（T008）——reported_at / availability_date 守門（§37 / §84 #18）
-- [ ] Portfolio（§38）：選股策略（Top 30 輪動）+ 交易成本 + slippage 參數 config 可調
-- [ ] Benchmark（§39）：TAIEX 對照
-- [ ] Walk-Forward Validation（§40）：rolling train/test，無前視
-- [ ] 上櫃回測使用 HistoricalProvider 回補資料，標 FALLBACK；矩陣 §37.1 回補覆蓋 ≥5Y 反映於可用性報告
-- [ ] Metrics：return / sharpe / max drawdown / turnover（§39 或 §38 定義）與手算對照
-- [ ] Look-ahead bias 測試：與 T008 共用測試（人造未來資料不得影響）通過（§78 DoD、§61）
-- [ ] 回測結果帶 snapshot_id，可重現（§45）
-- [ ] `/api/v1/backtest/{strategy}` 供 T019 接上（§53）
+- [x] Backtest 讀資料一律走 PIT repository（T008）——reported_at / availability_date 守門（§37 / §84 #18）
+- [x] Portfolio（§38）：選股策略（Top 30 輪動）+ 交易成本 + slippage 參數 config 可調
+- [x] Benchmark（§39）：TAIEX 對照
+- [x] Walk-Forward Validation（§40）：rolling train/test，無前視
+- [x] 上櫃回測使用 HistoricalProvider 回補資料，標 FALLBACK；矩陣 §37.1 回補覆蓋 ≥5Y 反映於可用性報告
+- [x] Metrics：return / sharpe / max drawdown / turnover（§39 或 §38 定義）與手算對照
+- [x] Look-ahead bias 測試：與 T008 共用測試（人造未來資料不得影響）通過（§78 DoD、§61）
+- [x] 回測結果帶 snapshot_id，可重現（§45）
+- [x] `/api/v1/backtest/{strategy}` 供 T019 接上（§53）
 
 ## 備註
 

@@ -38,6 +38,8 @@
 | ETF（0050）與加權指數資料支援（A+B 合併） |
 | P0 財報 AJAX 接線（季報三表修復 + PE/ROE + 健康評分連帶修復） |
 | P1 股利 ex_date（TWT48U 併入 dividend history + 評估歷史查詢） |
+| 補齊 MCP Symbol Registry 缺漏代碼 |
+| Symbol Registry 自動同步機制 |
 
 ## Skip 項目
 
@@ -100,4 +102,4 @@
 
 **✅ done: 36 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 0**
 
-> 自動生成於 2026-08-19 19:30
+> 自動生成於 2026-08-19 19:36
