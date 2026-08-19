@@ -1,6 +1,6 @@
 # 📅 Daily Dashboard - 2026-08-19
 
-> 最後更新: 2026-08-19 21:40 · 自動生成
+> 最後更新: 2026-08-19 22:42 · 自動生成
 
 ---
 
@@ -60,7 +60,6 @@ _無_
 | -- | -- | -- | -- |
 | gold-analysis-advanced | [T002](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis-advanced/tasks/T002.md) | ML 模型整合與優化 | low |
 | gold-analysis-advanced | [T004](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis-advanced/tasks/T004.md) | 實盤交易對接 | low |
-| md-viewer-app | [T027-預覽連結懸停](https://github.com/gentoobreaking/ai-tasks/blob/main/md-viewer-app/tasks/T027-預覽連結懸停.md) | [T027] 連結懸停預覽 | low |
 
 ---
 

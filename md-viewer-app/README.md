@@ -52,6 +52,7 @@
 | [T18-置頂小窗模式](https://github.com/gentoobreaking/ai-tasks/blob/main/md-viewer-app/tasks/T018-置頂小窗模式.md) | 置頂小窗模式 |
 | [T23-滾動位置保持](https://github.com/gentoobreaking/ai-tasks/blob/main/md-viewer-app/tasks/T023-滾動位置保持.md) | 滾動位置保持 |
 | [T26-專注模式](https://github.com/gentoobreaking/ai-tasks/blob/main/md-viewer-app/tasks/T026-專注模式.md) | 專注模式（Focus Mode） |
+| [T27-預覽連結懸停](https://github.com/gentoobreaking/ai-tasks/blob/main/md-viewer-app/tasks/T027-預覽連結懸停.md) | 連結懸停預覽 |
 
 ## 開發中
 
@@ -63,7 +64,7 @@
 
 | Task | 名稱 | 說明 |
 |------|------|------|
-| [T27-預覽連結懸停](https://github.com/gentoobreaking/ai-tasks/blob/main/md-viewer-app/tasks/T027-預覽連結懸停.md) | 連結懸停預覽 | |
+| | | |
 
 ## Task 列表
 
@@ -109,11 +110,11 @@
 | [T24-視窗大小位置記憶](https://github.com/gentoobreaking/ai-tasks/blob/main/md-viewer-app/tasks/T024-視窗大小位置記憶.md) | 視窗大小/位置/檔案記憶 | ✅ done |
 | [T25-最近開啟的檔案](https://github.com/gentoobreaking/ai-tasks/blob/main/md-viewer-app/tasks/T025-最近開啟的檔案.md) | 最近開啟的檔案 | ✅ done |
 | [T26-專注模式](https://github.com/gentoobreaking/ai-tasks/blob/main/md-viewer-app/tasks/T026-專注模式.md) | 專注模式（Focus Mode） | ⏭️ skip |
-| [T27-預覽連結懸停](https://github.com/gentoobreaking/ai-tasks/blob/main/md-viewer-app/tasks/T027-預覽連結懸停.md) | 連結懸停預覽 | 📋 pending |
+| [T27-預覽連結懸停](https://github.com/gentoobreaking/ai-tasks/blob/main/md-viewer-app/tasks/T027-預覽連結懸停.md) | 連結懸停預覽 | ⏭️ skip |
 | [T28-FIX-ISSUES](https://github.com/gentoobreaking/ai-tasks/blob/main/md-viewer-app/tasks/T028-FIX-ISSUES.md) | T028-FIX-ISSUES | ✅ done |
 | [T28-翻譯功能](https://github.com/gentoobreaking/ai-tasks/blob/main/md-viewer-app/tasks/T028-翻譯功能.md) | T028 - 翻譯功能 | ✅ done |
 | [T29-ARCH-REFACTOR](https://github.com/gentoobreaking/ai-tasks/blob/main/md-viewer-app/tasks/T029-ARCH-REFACTOR.md) | T029-混合架構整合優化與前端解耦 | ✅ done |
 
-**✅ done: 38 | 🔧 in-progress: 0 | ⏭️ skip: 5 | 📋 pending: 1**
+**✅ done: 38 | 🔧 in-progress: 0 | ⏭️ skip: 6 | 📋 pending: 0**
 
-> 自動生成於 2026-08-19 21:40
+> 自動生成於 2026-08-19 22:41
