@@ -30,6 +30,7 @@
 | Deployment（Docker Compose / Kubernetes / Security，§56–58） |
 | Testing & Regression Suite（§59–61：unit / integration / regression / backtest） |
 | Final Integration & Definition of Done（§78 / §83 / §85） |
+| 串接台灣證交所 OpenAPI 取得財報、月營收、股利 |
 
 ## Skip 項目
 
@@ -47,7 +48,8 @@
 
 | Task | 名稱 | 說明 |
 |------|------|------|
-| | | |
+| [T27-tej-fingold-provider](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T027-tej-fingold-provider.md) | 整合 TEJ / 財金資料庫 作為備援財報來源 | |
+| [T28-camofox-browser-scraper](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T028-camofox-browser-scraper.md) | 使用 camofox-browser 爬取 MOPS/公開資訊觀測站 補足財報缺口 | |
 
 ## Task 列表
 
@@ -79,7 +81,10 @@
 | [T23-deployment-security](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T023-deployment-security.md) | Deployment（Docker Compose / Kubernetes / Security，§56–58） | ✅ done |
 | [T24-testing-regression](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T024-testing-regression.md) | Testing & Regression Suite（§59–61：unit / integration / regression / backtest） | ✅ done |
 | [T25-final-dod](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T025-final-dod.md) | Final Integration & Definition of Done（§78 / §83 / §85） | ✅ done |
+| [T26-twse-openapi-financials](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T026-twse-openapi-financials.md) | 串接台灣證交所 OpenAPI 取得財報、月營收、股利 | ✅ done |
+| [T27-tej-fingold-provider](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T027-tej-fingold-provider.md) | 整合 TEJ / 財金資料庫 作為備援財報來源 | 📋 pending |
+| [T28-camofox-browser-scraper](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T028-camofox-browser-scraper.md) | 使用 camofox-browser 爬取 MOPS/公開資訊觀測站 補足財報缺口 | 📋 pending |
 
-**✅ done: 26 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 0**
+**✅ done: 27 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 2**
 
-> 自動生成於 2026-08-19 22:41
+> 自動生成於 2026-08-22 05:10

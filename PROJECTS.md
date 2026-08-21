@@ -1,6 +1,6 @@
 # 📁 Projects Dashboard
 
-> 最後更新: 2026-08-19 22:42 · 自動生成
+> 最後更新: 2026-08-22 05:10 · 自動生成
 
 ---
 
@@ -9,9 +9,9 @@
 | 指標 | 數量 |
 |------|------|
 | 專案數 | 62 |
-| 任務總數 | 1055 |
-| ✅ 已完成 | 989 |
-| ⬜ 待處理 | 2 |
+| 任務總數 | 1060 |
+| ✅ 已完成 | 992 |
+| ⬜ 待處理 | 4 |
 | 🔄 進行中 | 1 |
 | ⏭️ 跳過 | 63 |
 | 總完成率 | 99% |
@@ -22,6 +22,8 @@
 |------|------|------|------|
 | gold-analysis-advanced | [T002](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis-advanced/tasks/T002.md) | ML 模型整合與優化 | ⬜ |
 | gold-analysis-advanced | [T004](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis-advanced/tasks/T004.md) | 實盤交易對接 | ⬜ |
+| tw-quant-pickup | [T027-tej-fingold-provider](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T027-tej-fingold-provider.md) | 整合 TEJ / 財金資料庫 作為備援財報來源 | ⬜ |
+| tw-quant-pickup | [T028-camofox-browser-scraper](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T028-camofox-browser-scraper.md) | 使用 camofox-browser 爬取 MOPS/公開資訊觀測站 補足財報缺口 | ⬜ |
 
 ## 🔄 進行中
 
@@ -103,8 +105,8 @@
 
 | 指標 | 數值 |
 |------|------|
-| 過去 7 天完成 | 174 |
-| 過去 30 天完成 | 333 |
+| 過去 7 天完成 | 170 |
+| 過去 30 天完成 | 336 |
 | 平均週期時間 | 2.0 天 |
 | 週期時間中位數 | 0.0 天 |
 
@@ -112,12 +114,12 @@
 ```mermaid
 xychart-beta
     title "過去 14 天任務完成趨勢"
-    x-axis ["08-06", "08-07", "08-08", "08-09", "08-10", "08-11", "08-12", "08-13", "08-14", "08-15", "08-16", "08-17", "08-18", "08-19"]
+    x-axis ["08-09", "08-10", "08-11", "08-12", "08-13", "08-14", "08-15", "08-16", "08-17", "08-18", "08-19", "08-20", "08-21", "08-22"]
     y-axis "完成數" 0 --> 119
-    line [0, 0, 0, 0, 12, 11, 7, 0, 0, 8, 2, 119, 22, 16]
+    line [0, 12, 11, 7, 0, 0, 8, 2, 119, 22, 16, 0, 3, 0]
 ```
 
-📊 總計: 197 | 日均: 14.1 | 本週: 167 | 📈 成長中
+📊 總計: 200 | 日均: 14.3 | 本週: 162 | 📈 成長中
 
 ## 📋 專案列表
 
@@ -176,8 +178,8 @@ xychart-beta
 | ✅ | [task-url-repair](https://github.com/gentoobreaking/ai-tasks/tree/main/task-url-repair) | 1 | 1 | 0 | 0 | 0 | ████████████████████ 100% | 2026-04-20 |
 | ✅ | [tasks-executor](https://github.com/gentoobreaking/ai-tasks/tree/main/tasks-executor) | 8 | 8 | 0 | 0 | 0 | ████████████████████ 100% | 2026-05-12 |
 | ✅ | [tw-quant-daybrain](https://github.com/gentoobreaking/ai-tasks/tree/main/tw-quant-daybrain) | 28 | 28 | 0 | 0 | 0 | ████████████████████ 100% | 2026-08-12 |
-| ✅ | [tw-quant-mcp](https://github.com/gentoobreaking/ai-tasks/tree/main/tw-quant-mcp) | 36 | 36 | 0 | 0 | 0 | ████████████████████ 100% | 2026-08-19 |
-| ✅ | [tw-quant-pickup](https://github.com/gentoobreaking/ai-tasks/tree/main/tw-quant-pickup) | 26 | 26 | 0 | 0 | 0 | ████████████████████ 100% | 2026-08-19 |
+| ✅ | [tw-quant-mcp](https://github.com/gentoobreaking/ai-tasks/tree/main/tw-quant-mcp) | 38 | 38 | 0 | 0 | 0 | ████████████████████ 100% | 2026-08-21 |
+| ⬜ | [tw-quant-pickup](https://github.com/gentoobreaking/ai-tasks/tree/main/tw-quant-pickup) | 29 | 27 | 2 | 0 | 0 | ██████████████████░░ 93% | 2026-08-21 |
 | ✅ | [tw-quant-selector](https://github.com/gentoobreaking/ai-tasks/tree/main/tw-quant-selector) | 148 | 148 | 0 | 0 | 0 | ████████████████████ 100% | 2026-08-15 |
 | ✅ | [tw-quant-signal](https://github.com/gentoobreaking/ai-tasks/tree/main/tw-quant-signal) | 32 | 32 | 0 | 0 | 0 | ████████████████████ 100% | 2026-08-19 |
 | ✅ | [twse-monitor](https://github.com/gentoobreaking/ai-tasks/tree/main/twse-monitor) | 11 | 11 | 0 | 0 | 0 | ████████████████████ 100% | 2026-05-07 |

@@ -40,6 +40,8 @@
 | P1 股利 ex_date（TWT48U 併入 dividend history + 評估歷史查詢） |
 | 補齊 MCP Symbol Registry 缺漏代碼 |
 | Symbol Registry 自動同步機制 |
+| ESG 揭露雙來源（TWSE OpenAPI 補完 + MOPS CSV）與速度選源機制 |
+| ETF 分配收益查詢工具 (get_etf_dividend) |
 
 ## Skip 項目
 
@@ -99,7 +101,9 @@
 | [T34-dividend-exdate](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T034-dividend-exdate.md) | P1 股利 ex_date（TWT48U 併入 dividend history + 評估歷史查詢） | ✅ done |
 | [T35-mcp-symbol-registry](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T035-mcp-symbol-registry.md) | 補齊 MCP Symbol Registry 缺漏代碼 | ✅ done |
 | [T36-symbol-registry-auto-sync](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T036-symbol-registry-auto-sync.md) | 建立 Symbol Registry 自動同步機制 | ✅ done |
+| [T37-esg-dual-source](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T037-esg-dual-source.md) | ESG 揭露雙來源（TWSE OpenAPI 補完 + MOPS CSV）與速度選源機制 | ✅ done |
+| [T38-etf-dividend-tool](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T038-etf-dividend-tool.md) | ETF 分配收益查詢工具 (get_etf_dividend) | ✅ done |
 
-**✅ done: 36 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 0**
+**✅ done: 38 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 0**
 
-> 自動生成於 2026-08-19 22:41
+> 自動生成於 2026-08-22 05:10

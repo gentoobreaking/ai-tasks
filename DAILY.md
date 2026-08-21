@@ -1,42 +1,18 @@
-# 📅 Daily Dashboard - 2026-08-19
+# 📅 Daily Dashboard - 2026-08-22
 
-> 最後更新: 2026-08-19 22:42 · 自動生成
+> 最後更新: 2026-08-22 05:10 · 自動生成
 
 ---
 
 ## 🆕 今日新增任務
 
-| 專案 | 任務 | 標題 |
-| -- | -- | -- |
-| tw-quant-mcp | [T035-mcp-symbol-registry](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T035-mcp-symbol-registry.md) | 補齊 MCP Symbol Registry 缺漏代碼 |
-| tw-quant-mcp | [T036-symbol-registry-auto-sync](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T036-symbol-registry-auto-sync.md) | 建立 Symbol Registry 自動同步機制 |
-| tw-quant-signal | [T024-mcp-timeout-config](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T024-mcp-timeout-config.md) | 增加 MCP 連線逾時設定可配置化 |
-| tw-quant-signal | [T025-mcp-307-redirect](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T025-mcp-307-redirect.md) | 修正 MCP Client 處理 HTTP 307 重導向 |
-| tw-quant-signal | [T027-pipeline-background-execution](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T027-pipeline-background-execution.md) | 避免手動中斷管線 - 改為背景執行與監控 |
-| tw-quant-signal | [T028-data-timing-optimization](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T028-data-timing-optimization.md) | 優化資料時間點處理 - 當日盤後資料尚未出爐時的處理策略 |
+_無_
 
 ---
 
 ## ✅ 今日完成任務
 
-| 專案 | 任務 | 標題 |
-| -- | -- | -- |
-| tw-quant-mcp | [T035-mcp-symbol-registry](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T035-mcp-symbol-registry.md) | 補齊 MCP Symbol Registry 缺漏代碼 |
-| tw-quant-mcp | [T036-symbol-registry-auto-sync](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T036-symbol-registry-auto-sync.md) | 建立 Symbol Registry 自動同步機制 |
-| tw-quant-pickup | [T016-snapshot-lifecycle](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T016-snapshot-lifecycle.md) | Snapshot Lifecycle（§70 / §45 / §45.1：create → freeze → hash → archive） |
-| tw-quant-pickup | [T017-ai-analyst](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T017-ai-analyst.md) | AI Analyst（§41–44 / §73 / §74，唯讀 frozen snapshot） |
-| tw-quant-pickup | [T018-reports](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T018-reports.md) | Reports（§50–52：Markdown / HTML / CSV / JSON daily report） |
-| tw-quant-pickup | [T019-api-server](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T019-api-server.md) | API Server（§53 / §53.1 / §54：FastAPI + Envelope + 前端整合對齊） |
-| tw-quant-pickup | [T020-cli](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T020-cli.md) | CLI（§48） |
-| tw-quant-pickup | [T021-backtest-engine](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T021-backtest-engine.md) | Backtest Engine（§37–40：Portfolio / Benchmark / Walk-Forward / PIT / OTC） |
-| tw-quant-pickup | [T022-scheduler-monitoring](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T022-scheduler-monitoring.md) | Scheduler 與 Monitoring / Health（§49 / §54–55） |
-| tw-quant-pickup | [T023-deployment-security](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T023-deployment-security.md) | Deployment（Docker Compose / Kubernetes / Security，§56–58） |
-| tw-quant-pickup | [T024-testing-regression](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T024-testing-regression.md) | Testing & Regression Suite（§59–61：unit / integration / regression / backtest） |
-| tw-quant-pickup | [T025-final-dod](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T025-final-dod.md) | Final Integration & Definition of Done（§78 / §83 / §85） |
-| tw-quant-signal | [T024-mcp-timeout-config](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T024-mcp-timeout-config.md) | 增加 MCP 連線逾時設定可配置化 |
-| tw-quant-signal | [T025-mcp-307-redirect](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T025-mcp-307-redirect.md) | 修正 MCP Client 處理 HTTP 307 重導向 |
-| tw-quant-signal | [T027-pipeline-background-execution](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T027-pipeline-background-execution.md) | 避免手動中斷管線 - 改為背景執行與監控 |
-| tw-quant-signal | [T028-data-timing-optimization](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-signal/tasks/T028-data-timing-optimization.md) | 優化資料時間點處理 - 當日盤後資料尚未出爐時的處理策略 |
+_無_
 
 ---
 
@@ -58,8 +34,10 @@ _無_
 
 | 專案 | 任務 | 標題 | 優先 |
 | -- | -- | -- | -- |
+| tw-quant-pickup | [T027-tej-fingold-provider](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T027-tej-fingold-provider.md) | 整合 TEJ / 財金資料庫 作為備援財報來源 | medium |
 | gold-analysis-advanced | [T002](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis-advanced/tasks/T002.md) | ML 模型整合與優化 | low |
 | gold-analysis-advanced | [T004](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis-advanced/tasks/T004.md) | 實盤交易對接 | low |
+| tw-quant-pickup | [T028-camofox-browser-scraper](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T028-camofox-browser-scraper.md) | 使用 camofox-browser 爬取 MOPS/公開資訊觀測站 補足財報缺口 | low |
 
 ---
 
