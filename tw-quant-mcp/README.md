@@ -42,6 +42,7 @@
 | Symbol Registry 自動同步機制 |
 | ESG 揭露雙來源（TWSE OpenAPI 補完 + MOPS CSV）與速度選源機制 |
 | ETF 分配收益查詢工具 (get_etf_dividend) |
+| /health 健康檢查端點 |
 
 ## Skip 項目
 
@@ -103,7 +104,8 @@
 | [T36-symbol-registry-auto-sync](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T036-symbol-registry-auto-sync.md) | 建立 Symbol Registry 自動同步機制 | ✅ done |
 | [T37-esg-dual-source](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T037-esg-dual-source.md) | ESG 揭露雙來源（TWSE OpenAPI 補完 + MOPS CSV）與速度選源機制 | ✅ done |
 | [T38-etf-dividend-tool](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T038-etf-dividend-tool.md) | ETF 分配收益查詢工具 (get_etf_dividend) | ✅ done |
+| [T39-health-endpoint](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T039-health-endpoint.md) | 實作 /health 健康檢查端點 | ✅ done |
 
-**✅ done: 38 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 0**
+**✅ done: 39 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 0**
 
-> 自動生成於 2026-08-22 05:10
+> 自動生成於 2026-08-22 05:41

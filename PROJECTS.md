@@ -1,6 +1,6 @@
 # 📁 Projects Dashboard
 
-> 最後更新: 2026-08-22 05:10 · 自動生成
+> 最後更新: 2026-08-22 05:41 · 自動生成
 
 ---
 
@@ -9,8 +9,8 @@
 | 指標 | 數量 |
 |------|------|
 | 專案數 | 62 |
-| 任務總數 | 1060 |
-| ✅ 已完成 | 992 |
+| 任務總數 | 1061 |
+| ✅ 已完成 | 993 |
 | ⬜ 待處理 | 4 |
 | 🔄 進行中 | 1 |
 | ⏭️ 跳過 | 63 |
@@ -105,8 +105,8 @@
 
 | 指標 | 數值 |
 |------|------|
-| 過去 7 天完成 | 170 |
-| 過去 30 天完成 | 336 |
+| 過去 7 天完成 | 171 |
+| 過去 30 天完成 | 337 |
 | 平均週期時間 | 2.0 天 |
 | 週期時間中位數 | 0.0 天 |
 
@@ -116,10 +116,10 @@ xychart-beta
     title "過去 14 天任務完成趨勢"
     x-axis ["08-09", "08-10", "08-11", "08-12", "08-13", "08-14", "08-15", "08-16", "08-17", "08-18", "08-19", "08-20", "08-21", "08-22"]
     y-axis "完成數" 0 --> 119
-    line [0, 12, 11, 7, 0, 0, 8, 2, 119, 22, 16, 0, 3, 0]
+    line [0, 12, 11, 7, 0, 0, 8, 2, 119, 22, 16, 0, 3, 1]
 ```
 
-📊 總計: 200 | 日均: 14.3 | 本週: 162 | 📈 成長中
+📊 總計: 201 | 日均: 14.4 | 本週: 163 | 📈 成長中
 
 ## 📋 專案列表
 
@@ -178,7 +178,7 @@ xychart-beta
 | ✅ | [task-url-repair](https://github.com/gentoobreaking/ai-tasks/tree/main/task-url-repair) | 1 | 1 | 0 | 0 | 0 | ████████████████████ 100% | 2026-04-20 |
 | ✅ | [tasks-executor](https://github.com/gentoobreaking/ai-tasks/tree/main/tasks-executor) | 8 | 8 | 0 | 0 | 0 | ████████████████████ 100% | 2026-05-12 |
 | ✅ | [tw-quant-daybrain](https://github.com/gentoobreaking/ai-tasks/tree/main/tw-quant-daybrain) | 28 | 28 | 0 | 0 | 0 | ████████████████████ 100% | 2026-08-12 |
-| ✅ | [tw-quant-mcp](https://github.com/gentoobreaking/ai-tasks/tree/main/tw-quant-mcp) | 38 | 38 | 0 | 0 | 0 | ████████████████████ 100% | 2026-08-21 |
+| ✅ | [tw-quant-mcp](https://github.com/gentoobreaking/ai-tasks/tree/main/tw-quant-mcp) | 39 | 39 | 0 | 0 | 0 | ████████████████████ 100% | 2026-08-22 |
 | ⬜ | [tw-quant-pickup](https://github.com/gentoobreaking/ai-tasks/tree/main/tw-quant-pickup) | 29 | 27 | 2 | 0 | 0 | ██████████████████░░ 93% | 2026-08-21 |
 | ✅ | [tw-quant-selector](https://github.com/gentoobreaking/ai-tasks/tree/main/tw-quant-selector) | 148 | 148 | 0 | 0 | 0 | ████████████████████ 100% | 2026-08-15 |
 | ✅ | [tw-quant-signal](https://github.com/gentoobreaking/ai-tasks/tree/main/tw-quant-signal) | 32 | 32 | 0 | 0 | 0 | ████████████████████ 100% | 2026-08-19 |
