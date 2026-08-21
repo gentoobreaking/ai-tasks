@@ -10,7 +10,7 @@ created: 2026-08-22
 updated: 2026-08-22
 ---
 
-# T041 - 實作 /health 健康檢查端點
+# T039 - 實作 /health 健康檢查端點
 
 ## 目標
 streamable-http 傳輸模式下新增 `GET /health` 端點，回傳 `{"status": "healthy"}`（HTTP 200），供容器 healthcheck、負載平衡與監控探測使用，不經 MCP 協定層。
