@@ -1,6 +1,6 @@
 # 📁 Projects Dashboard
 
-> 最後更新: 2026-08-22 06:28 · 自動生成
+> 最後更新: 2026-08-22 07:29 · 自動生成
 
 ---
 
@@ -9,9 +9,9 @@
 | 指標 | 數量 |
 |------|------|
 | 專案數 | 62 |
-| 任務總數 | 1061 |
+| 任務總數 | 1063 |
 | ✅ 已完成 | 993 |
-| ⬜ 待處理 | 4 |
+| ⬜ 待處理 | 6 |
 | 🔄 進行中 | 1 |
 | ⏭️ 跳過 | 63 |
 | 總完成率 | 99% |
@@ -24,6 +24,8 @@
 | gold-analysis-advanced | [T004](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis-advanced/tasks/T004.md) | 實盤交易對接 | ⬜ |
 | tw-quant-pickup | [T027-tej-fingold-provider](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T027-tej-fingold-provider.md) | 整合 TEJ / 財金資料庫 作為備援財報來源 | ⬜ |
 | tw-quant-pickup | [T028-camofox-browser-scraper](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T028-camofox-browser-scraper.md) | 使用 camofox-browser 爬取 MOPS/公開資訊觀測站 補足財報缺口 | ⬜ |
+| tw-quant-pickup | [T029-fix-trading-day-default](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T029-fix-trading-day-default.md) | 修正預設日期為最近交易日（避免週末誤跑） | ⬜ |
+| tw-quant-pickup | [T030-pipeline-resume-support](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T030-pipeline-resume-support.md) | Pipeline Resume 支援（斷點續傳） | ⬜ |
 
 ## 🔄 進行中
 
@@ -179,7 +181,7 @@ xychart-beta
 | ✅ | [tasks-executor](https://github.com/gentoobreaking/ai-tasks/tree/main/tasks-executor) | 8 | 8 | 0 | 0 | 0 | ████████████████████ 100% | 2026-05-12 |
 | ✅ | [tw-quant-daybrain](https://github.com/gentoobreaking/ai-tasks/tree/main/tw-quant-daybrain) | 28 | 28 | 0 | 0 | 0 | ████████████████████ 100% | 2026-08-12 |
 | ✅ | [tw-quant-mcp](https://github.com/gentoobreaking/ai-tasks/tree/main/tw-quant-mcp) | 39 | 39 | 0 | 0 | 0 | ████████████████████ 100% | 2026-08-22 |
-| ⬜ | [tw-quant-pickup](https://github.com/gentoobreaking/ai-tasks/tree/main/tw-quant-pickup) | 29 | 27 | 2 | 0 | 0 | ██████████████████░░ 93% | 2026-08-21 |
+| ⬜ | [tw-quant-pickup](https://github.com/gentoobreaking/ai-tasks/tree/main/tw-quant-pickup) | 31 | 27 | 4 | 0 | 0 | █████████████████░░░ 87% | 2026-08-22 |
 | ✅ | [tw-quant-selector](https://github.com/gentoobreaking/ai-tasks/tree/main/tw-quant-selector) | 148 | 148 | 0 | 0 | 0 | ████████████████████ 100% | 2026-08-15 |
 | ✅ | [tw-quant-signal](https://github.com/gentoobreaking/ai-tasks/tree/main/tw-quant-signal) | 32 | 32 | 0 | 0 | 0 | ████████████████████ 100% | 2026-08-19 |
 | ✅ | [twse-monitor](https://github.com/gentoobreaking/ai-tasks/tree/main/twse-monitor) | 11 | 11 | 0 | 0 | 0 | ████████████████████ 100% | 2026-05-07 |
