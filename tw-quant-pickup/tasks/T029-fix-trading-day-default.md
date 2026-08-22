@@ -3,8 +3,8 @@ github_issue: ""
 title: 修正預設日期為最近交易日（避免週末誤跑）
 type: feature
 priority: low
-status: pending
-assignee: OpenCode with DeepSeek V4 Flash
+status: done
+assignee: pi with opencode/x-preview-f-free
 created: 2026-08-22
 updated: 2026-08-22
 ---
@@ -143,6 +143,18 @@ docker exec tw-quant-scheduler python -m cli validate --dry-run
 | 影響所有 subcommand（collect/validate/...） | 低 | 行為一致化，皆改為「預設最近交易日」 |
 
 ---
+
+- [x] `scripts/auto_daily.py`：抽出模組層級 `_get_latest_market_date()`（回傳 date），預設改用之，help 同步更新
+- [x] `cli/main.py`：`--date` 加 default；`_market_date()` 處理 None（防禦性退回最近交易日）
+- [x] 單元測試：週六/週日/平日預設、明確 --date 優先、date 型別驗證、CLI common args 預設值
+- [x] ruff / pytest 全綠
+- [x] 人工驗證：本機實測當天為週六（2026-08-22），`daily` parser 預設日期 = 2026-08-21（週五）
+
+## 完成摘要（2026-08-22）
+- `scripts/auto_daily.py`：新增模組層級 `_get_latest_market_date() -> date`（跳過週末），`main()` 預設改用之（原 `date.today()`），help 文字更新
+- `cli/main.py`：`_add_common_args()` 的 `--date` 加上 `default=_get_latest_market_date()`；`_market_date()` 增加 None 防禦分支
+- 新增 `tests/unit/test_trading_day_default.py`（9 例）：凍結 today 驗證週六→週五、平日不變、型別、argparse default、None 處理
+- 品質閘門：ruff 通過、pytest unit 全綠（630 passed）
 
 ## 實作順序
 1. 修改 `scripts/auto_daily.py`（獨立，無相依）

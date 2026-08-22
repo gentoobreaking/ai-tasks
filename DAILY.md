@@ -1,6 +1,6 @@
 # 📅 Daily Dashboard - 2026-08-22
 
-> 最後更新: 2026-08-22 12:50 · 自動生成
+> 最後更新: 2026-08-22 13:42 · 自動生成
 
 ---
 
@@ -59,6 +59,10 @@
 | free-ai-router | [T099-quickwin-promote-best](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T099-quickwin-promote-best.md) | Quick win: promote --best flag to first-class subcommand |
 | free-ai-router | [T100-quickwin-ready-endpoint](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T100-quickwin-ready-endpoint.md) | Quick win: /api/ready endpoint for load balancer health checks |
 | tw-quant-mcp | [T039-health-endpoint](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T039-health-endpoint.md) | 實作 /health 健康檢查端點 |
+| tw-quant-pickup | [T027-tej-fingold-provider](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T027-tej-fingold-provider.md) | 整合 TEJ / 財金資料庫 作為備援財報來源 |
+| tw-quant-pickup | [T028-camofox-browser-scraper](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T028-camofox-browser-scraper.md) | 使用 camofox-browser 爬取 MOPS/公開資訊觀測站 補足財報缺口 |
+| tw-quant-pickup | [T029-fix-trading-day-default](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T029-fix-trading-day-default.md) | 修正預設日期為最近交易日（避免週末誤跑） |
+| tw-quant-pickup | [T030-pipeline-resume-support](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T030-pipeline-resume-support.md) | Pipeline Resume 支援（斷點續傳） |
 
 ---
 
@@ -80,12 +84,8 @@ _無_
 
 | 專案 | 任務 | 標題 | 優先 |
 | -- | -- | -- | -- |
-| tw-quant-pickup | [T027-tej-fingold-provider](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T027-tej-fingold-provider.md) | 整合 TEJ / 財金資料庫 作為備援財報來源 | medium |
 | gold-analysis-advanced | [T002](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis-advanced/tasks/T002.md) | ML 模型整合與優化 | low |
 | gold-analysis-advanced | [T004](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis-advanced/tasks/T004.md) | 實盤交易對接 | low |
-| tw-quant-pickup | [T028-camofox-browser-scraper](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T028-camofox-browser-scraper.md) | 使用 camofox-browser 爬取 MOPS/公開資訊觀測站 補足財報缺口 | low |
-| tw-quant-pickup | [T029-fix-trading-day-default](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T029-fix-trading-day-default.md) | 修正預設日期為最近交易日（避免週末誤跑） | low |
-| tw-quant-pickup | [T030-pipeline-resume-support](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T030-pipeline-resume-support.md) | Pipeline Resume 支援（斷點續傳） | low |
 
 ---
 

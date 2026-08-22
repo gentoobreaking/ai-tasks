@@ -5,7 +5,7 @@ type: pending
 priority: high
 status: done
 depends_on: ["T082"]
-assignee: "OpenCode with DeepSeek V4 Flash"
+assignee: "pi with opencode/x-preview-f-free"
 created: "2026-08-22"
 updated: "2026-08-22"
 ---
