@@ -1,6 +1,6 @@
 # 📅 Daily Dashboard - 2026-08-22
 
-> 最後更新: 2026-08-22 14:07 · 自動生成
+> 最後更新: 2026-08-22 15:44 · 自動生成
 
 ---
 
@@ -32,6 +32,8 @@
 | tw-quant-pickup | [T029-fix-trading-day-default](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T029-fix-trading-day-default.md) | 修正預設日期為最近交易日（避免週末誤跑） |
 | tw-quant-pickup | [T030-pipeline-resume-support](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T030-pipeline-resume-support.md) | Pipeline Resume 支援（斷點續傳） |
 | tw-quant-pickup | [T031-taiwan-trading-calendar](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T031-taiwan-trading-calendar.md) | 引入台灣交易日曆（假日表＋盤後就緒時間） |
+| tw-quant-pickup | [T032-tailwind-shadcn-migration](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T032-tailwind-shadcn-migration.md) | 前端樣式架構正式化：補完 Tailwind 設定並遷移至 shadcn/ui |
+| tw-quant-pickup | [T033-theme-switching](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T033-theme-switching.md) | 前端主題切換（system/light/dark 深色模式） |
 
 ---
 
@@ -65,6 +67,8 @@
 | tw-quant-pickup | [T029-fix-trading-day-default](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T029-fix-trading-day-default.md) | 修正預設日期為最近交易日（避免週末誤跑） |
 | tw-quant-pickup | [T030-pipeline-resume-support](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T030-pipeline-resume-support.md) | Pipeline Resume 支援（斷點續傳） |
 | tw-quant-pickup | [T031-taiwan-trading-calendar](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T031-taiwan-trading-calendar.md) | 引入台灣交易日曆（假日表＋盤後就緒時間） |
+| tw-quant-pickup | [T032-tailwind-shadcn-migration](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T032-tailwind-shadcn-migration.md) | 前端樣式架構正式化：補完 Tailwind 設定並遷移至 shadcn/ui |
+| tw-quant-pickup | [T033-theme-switching](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T033-theme-switching.md) | 前端主題切換（system/light/dark 深色模式） |
 
 ---
 

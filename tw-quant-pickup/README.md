@@ -36,6 +36,8 @@
 | 修正預設日期為最近交易日（避免週末誤跑） |
 | Pipeline Resume 支援（斷點續傳） |
 | 引入台灣交易日曆（假日表＋盤後就緒時間） |
+| 前端樣式架構正式化：補完 Tailwind 設定並遷移至 shadcn/ui |
+| 前端主題切換（system/light/dark 深色模式） |
 
 ## Skip 項目
 
@@ -91,7 +93,9 @@
 | [T29-fix-trading-day-default](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T029-fix-trading-day-default.md) | 修正預設日期為最近交易日（避免週末誤跑） | ✅ done |
 | [T30-pipeline-resume-support](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T030-pipeline-resume-support.md) | Pipeline Resume 支援（斷點續傳） | ✅ done |
 | [T31-taiwan-trading-calendar](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T031-taiwan-trading-calendar.md) | 引入台灣交易日曆（假日表＋盤後就緒時間） | ✅ done |
+| [T32-tailwind-shadcn-migration](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T032-tailwind-shadcn-migration.md) | 前端樣式架構正式化：補完 Tailwind 設定並遷移至 shadcn/ui | ✅ done |
+| [T33-theme-switching](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T033-theme-switching.md) | 前端主題切換（system/light/dark 深色模式） | ✅ done |
 
-**✅ done: 32 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 0**
+**✅ done: 34 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 0**
 
-> 自動生成於 2026-08-22 14:07
+> 自動生成於 2026-08-22 15:44
