@@ -3,7 +3,7 @@ github_issue: ""
 title: "TUI persist column sort preference across sessions"
 type: pending
 priority: medium
-status: pending
+status: done
 depends_on: []
 assignee: "OpenCode with DeepSeek V4 Flash"
 created: "2026-08-22"
@@ -16,11 +16,11 @@ updated: "2026-08-22"
 記住使用者偏好的排序欄位與方向，下次啟動 TUI 時自動套用，避免每次重新點擊排序。
 
 ## 驗收標準
-- [ ] 在 config 中新增 `ui.sortKey`（預設 `status`）與 `ui.sortReverse`（預設 `false`）
-- [ ] TUI 啟動時讀取 config，自動套用排序
-- [ ] 使用者按鍵 0-9 切換排序欄位時，即時更新 config 並持久化
-- [ ] 排序指示器（▲/▼）正確顯示當前方向
-- [ ] `freemodel config export` 包含排序偏好，import 可還原
+- [x] 在 config 中新增 `ui.sortKey`（預設 `status`）與 `ui.sortReverse`（預設 `false`）
+- [x] TUI 啟動時讀取 config，自動套用排序
+- [x] 使用者按鍵 0-9 切換排序欄位時，即時更新 config 並持久化
+- [x] 排序指示器（▲/▼）正確顯示當前方向
+- [x] `freemodel config export` 包含排序偏好，import 可還原
 
 ## 備註
 - 修改位置：`internal/config/config.go`（UIConfig 新增欄位）、`internal/tui/table.go`（排序邏輯）、`internal/tui/tui.go`（啟動時套用）

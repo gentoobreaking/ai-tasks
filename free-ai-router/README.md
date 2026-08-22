@@ -88,6 +88,22 @@
 | Fix runBest ignoring ping result (second return value discarded) |
 | Add model deduplication in LoadFromSources |
 | First-run wizard enhancement: guided quick-start with env var detection |
+| CLI discoverability: add doctor, providers, models subcommands |
+| TUI accessibility: color-blind safe palette and status icons |
+| TUI search/filter enhancements: provider/tier/tag prefix filters |
+| TUI persist column sort preference across sessions |
+| Config doctor command: validate config, report missing keys, broken providers |
+| Auto-import config from opencode, modelrelay, .env files |
+| Provider templates: freemodel config add-provider <name> --from-env |
+| Router readiness endpoint: /api/ready for load balancer health checks |
+| Model aliases: auto-coding, auto-fast, auto-cheap in chat completions |
+| Configurable request timeout via config (replace hardcoded 120s) |
+| Structured logging: --log-format json for log aggregation |
+| Prometheus metrics endpoint: /api/metrics |
+| Ping history export: freemodel export-pings --since 1h --format csv |
+| Quick win: freemodel doctor command (health check) |
+| Quick win: promote --best flag to first-class subcommand |
+| Quick win: /api/ready endpoint for load balancer health checks |
 
 ## Skip 項目
 
@@ -105,25 +121,9 @@
 
 | Task | 名稱 | 說明 |
 |------|------|------|
-| [T82-cli-discoverability](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T082-cli-discoverability.md) | CLI discoverability: add doctor, providers, models subcommands | |
-| [T83-tui-accessibility](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T083-tui-accessibility.md) | TUI accessibility: color-blind safe palette and status icons | |
-| [T84-tui-search-filters](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T084-tui-search-filters.md) | TUI search/filter enhancements: provider/tier/tag prefix filters | |
-| [T85-tui-persist-sort](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T085-tui-persist-sort.md) | TUI persist column sort preference across sessions | |
-| [T86-config-doctor](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T086-config-doctor.md) | Config doctor command: validate config, report missing keys, broken providers | |
-| [T87-config-auto-import](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T087-config-auto-import.md) | Auto-import config from opencode, modelrelay, .env files | |
-| [T88-config-provider-templates](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T088-config-provider-templates.md) | Provider templates: freemodel config add-provider <name> --from-env | |
-| [T89-router-ready-endpoint](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T089-router-ready-endpoint.md) | Router readiness endpoint: /api/ready for load balancer health checks | |
-| [T90-router-model-aliases](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T090-router-model-aliases.md) | Model aliases: auto-coding, auto-fast, auto-cheap in chat completions | |
-| [T91-router-request-timeout](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T091-router-request-timeout.md) | Configurable request timeout via config (replace hardcoded 120s) | |
-| [T92-observability-structured-logging](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T092-observability-structured-logging.md) | Structured logging: --log-format json for log aggregation | |
-| [T93-observability-prometheus-metrics](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T093-observability-prometheus-metrics.md) | Prometheus metrics endpoint: /api/metrics | |
-| [T94-observability-ping-history-export](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T094-observability-ping-history-export.md) | Ping history export: freemodel export-pings --since 1h --format csv | |
 | [T95-docs-manual-config](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T095-docs-manual-config.md) | Create MANUAL.md and CONFIG.md documentation | |
 | [T96-docs-troubleshooting](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T096-docs-troubleshooting.md) | Troubleshooting guide: common issues and solutions | |
 | [T97-docs-china-providers](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T097-docs-china-providers.md) | Document China mainland providers setup (SiliconFlow, Baidu, Alibaba, Tencent) | |
-| [T98-quickwin-doctor-command](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T098-quickwin-doctor-command.md) | Quick win: freemodel doctor command (health check) | |
-| [T99-quickwin-promote-best](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T099-quickwin-promote-best.md) | Quick win: promote --best flag to first-class subcommand | |
-| [T100-quickwin-ready-endpoint](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T100-quickwin-ready-endpoint.md) | Quick win: /api/ready endpoint for load balancer health checks | |
 
 ## Task 列表
 
@@ -213,26 +213,26 @@
 | [T79-fix-runbest-return-value](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T079-fix-runbest-return-value.md) | Fix runBest ignoring ping result (second return value discarded) | ✅ done |
 | [T80-model-dedup-loadfromsources](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T080-model-dedup-loadfromsources.md) | Add model deduplication in LoadFromSources | ✅ done |
 | [T81-first-run-wizard](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T081-first-run-wizard.md) | First-run wizard enhancement: guided quick-start with env var detection | ✅ done |
-| [T82-cli-discoverability](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T082-cli-discoverability.md) | CLI discoverability: add doctor, providers, models subcommands | 📋 pending |
-| [T83-tui-accessibility](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T083-tui-accessibility.md) | TUI accessibility: color-blind safe palette and status icons | 📋 pending |
-| [T84-tui-search-filters](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T084-tui-search-filters.md) | TUI search/filter enhancements: provider/tier/tag prefix filters | 📋 pending |
-| [T85-tui-persist-sort](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T085-tui-persist-sort.md) | TUI persist column sort preference across sessions | 📋 pending |
-| [T86-config-doctor](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T086-config-doctor.md) | Config doctor command: validate config, report missing keys, broken providers | 📋 pending |
-| [T87-config-auto-import](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T087-config-auto-import.md) | Auto-import config from opencode, modelrelay, .env files | 📋 pending |
-| [T88-config-provider-templates](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T088-config-provider-templates.md) | Provider templates: freemodel config add-provider <name> --from-env | 📋 pending |
-| [T89-router-ready-endpoint](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T089-router-ready-endpoint.md) | Router readiness endpoint: /api/ready for load balancer health checks | 📋 pending |
-| [T90-router-model-aliases](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T090-router-model-aliases.md) | Model aliases: auto-coding, auto-fast, auto-cheap in chat completions | 📋 pending |
-| [T91-router-request-timeout](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T091-router-request-timeout.md) | Configurable request timeout via config (replace hardcoded 120s) | 📋 pending |
-| [T92-observability-structured-logging](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T092-observability-structured-logging.md) | Structured logging: --log-format json for log aggregation | 📋 pending |
-| [T93-observability-prometheus-metrics](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T093-observability-prometheus-metrics.md) | Prometheus metrics endpoint: /api/metrics | 📋 pending |
-| [T94-observability-ping-history-export](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T094-observability-ping-history-export.md) | Ping history export: freemodel export-pings --since 1h --format csv | 📋 pending |
+| [T82-cli-discoverability](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T082-cli-discoverability.md) | CLI discoverability: add doctor, providers, models subcommands | ✅ done |
+| [T83-tui-accessibility](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T083-tui-accessibility.md) | TUI accessibility: color-blind safe palette and status icons | ✅ done |
+| [T84-tui-search-filters](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T084-tui-search-filters.md) | TUI search/filter enhancements: provider/tier/tag prefix filters | ✅ done |
+| [T85-tui-persist-sort](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T085-tui-persist-sort.md) | TUI persist column sort preference across sessions | ✅ done |
+| [T86-config-doctor](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T086-config-doctor.md) | Config doctor command: validate config, report missing keys, broken providers | ✅ done |
+| [T87-config-auto-import](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T087-config-auto-import.md) | Auto-import config from opencode, modelrelay, .env files | ✅ done |
+| [T88-config-provider-templates](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T088-config-provider-templates.md) | Provider templates: freemodel config add-provider <name> --from-env | ✅ done |
+| [T89-router-ready-endpoint](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T089-router-ready-endpoint.md) | Router readiness endpoint: /api/ready for load balancer health checks | ✅ done |
+| [T90-router-model-aliases](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T090-router-model-aliases.md) | Model aliases: auto-coding, auto-fast, auto-cheap in chat completions | ✅ done |
+| [T91-router-request-timeout](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T091-router-request-timeout.md) | Configurable request timeout via config (replace hardcoded 120s) | ✅ done |
+| [T92-observability-structured-logging](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T092-observability-structured-logging.md) | Structured logging: --log-format json for log aggregation | ✅ done |
+| [T93-observability-prometheus-metrics](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T093-observability-prometheus-metrics.md) | Prometheus metrics endpoint: /api/metrics | ✅ done |
+| [T94-observability-ping-history-export](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T094-observability-ping-history-export.md) | Ping history export: freemodel export-pings --since 1h --format csv | ✅ done |
 | [T95-docs-manual-config](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T095-docs-manual-config.md) | Create MANUAL.md and CONFIG.md documentation | 📋 pending |
 | [T96-docs-troubleshooting](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T096-docs-troubleshooting.md) | Troubleshooting guide: common issues and solutions | 📋 pending |
 | [T97-docs-china-providers](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T097-docs-china-providers.md) | Document China mainland providers setup (SiliconFlow, Baidu, Alibaba, Tencent) | 📋 pending |
-| [T98-quickwin-doctor-command](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T098-quickwin-doctor-command.md) | Quick win: freemodel doctor command (health check) | 📋 pending |
-| [T99-quickwin-promote-best](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T099-quickwin-promote-best.md) | Quick win: promote --best flag to first-class subcommand | 📋 pending |
-| [T100-quickwin-ready-endpoint](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T100-quickwin-ready-endpoint.md) | Quick win: /api/ready endpoint for load balancer health checks | 📋 pending |
+| [T98-quickwin-doctor-command](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T098-quickwin-doctor-command.md) | Quick win: freemodel doctor command (health check) | ✅ done |
+| [T99-quickwin-promote-best](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T099-quickwin-promote-best.md) | Quick win: promote --best flag to first-class subcommand | ✅ done |
+| [T100-quickwin-ready-endpoint](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T100-quickwin-ready-endpoint.md) | Quick win: /api/ready endpoint for load balancer health checks | ✅ done |
 
-**✅ done: 84 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 19**
+**✅ done: 100 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 3**
 
-> 自動生成於 2026-08-22 09:37
+> 自動生成於 2026-08-22 12:44

@@ -3,7 +3,7 @@ github_issue: ""
 title: "Auto-import config from opencode, modelrelay, .env files"
 type: pending
 priority: medium
-status: pending
+status: done
 depends_on: []
 assignee: "OpenCode with DeepSeek V4 Flash"
 created: "2026-08-22"
@@ -16,15 +16,15 @@ updated: "2026-08-22"
 新增 `freemodel config import-auto` 命令，自動偵測並匯入其他工具的配置，降低遷移門檻。
 
 ## 驗收標準
-- [ ] 支援偵測來源：
+- [x] 支援偵測來源：
   - `~/.config/opencode/opencode.json` — 解析 `providers` 與 `apiKeys`
   - `~/.modelrelay/config.json` 或 `mrconf:v1:` token
   - 專案目錄 `.env`、`.env.local` — 解析所有 `*_API_KEY` 環境變數
   - `~/.free-router.json`（legacy，已有遷移邏輯）
-- [ ] 互動式確認：顯示將匯入的 provider/key 列表，使用者勾選確認
-- [ ] 衝突處理：既有配置不覆蓋，除非 `--force`
-- [ ] 匯入後自動執行 `config doctor` 驗證
-- [ ] 支援 `--dry-run` 僅預覽不寫入
+- [x] 互動式確認：顯示將匯入的 provider/key 列表，使用者勾選確認
+- [x] 衝突處理：既有配置不覆蓋，除非 `--force`
+- [x] 匯入後自動執行 `config doctor` 驗證
+- [x] 支援 `--dry-run` 僅預覽不寫入
 
 ## 備註
 - 修改位置：`internal/cli/config_cmd.go` 新增 `RunConfigImportAuto`
