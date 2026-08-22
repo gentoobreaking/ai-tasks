@@ -35,6 +35,7 @@
 | 使用 camofox-browser 爬取 MOPS/公開資訊觀測站 補足財報缺口 |
 | 修正預設日期為最近交易日（避免週末誤跑） |
 | Pipeline Resume 支援（斷點續傳） |
+| 引入台灣交易日曆（假日表＋盤後就緒時間） |
 
 ## Skip 項目
 
@@ -89,7 +90,8 @@
 | [T28-camofox-browser-scraper](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T028-camofox-browser-scraper.md) | 使用 camofox-browser 爬取 MOPS/公開資訊觀測站 補足財報缺口 | ✅ done |
 | [T29-fix-trading-day-default](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T029-fix-trading-day-default.md) | 修正預設日期為最近交易日（避免週末誤跑） | ✅ done |
 | [T30-pipeline-resume-support](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T030-pipeline-resume-support.md) | Pipeline Resume 支援（斷點續傳） | ✅ done |
+| [T31-taiwan-trading-calendar](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T031-taiwan-trading-calendar.md) | 引入台灣交易日曆（假日表＋盤後就緒時間） | ✅ done |
 
-**✅ done: 31 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 0**
+**✅ done: 32 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 0**
 
-> 自動生成於 2026-08-22 13:42
+> 自動生成於 2026-08-22 14:07
