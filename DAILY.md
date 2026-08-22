@@ -1,6 +1,6 @@
 # 📅 Daily Dashboard - 2026-08-22
 
-> 最後更新: 2026-08-22 12:44 · 自動生成
+> 最後更新: 2026-08-22 12:50 · 自動生成
 
 ---
 
@@ -52,6 +52,9 @@
 | free-ai-router | [T092-observability-structured-logging](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T092-observability-structured-logging.md) | Structured logging: --log-format json for log aggregation |
 | free-ai-router | [T093-observability-prometheus-metrics](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T093-observability-prometheus-metrics.md) | Prometheus metrics endpoint: /api/metrics |
 | free-ai-router | [T094-observability-ping-history-export](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T094-observability-ping-history-export.md) | Ping history export: freemodel export-pings --since 1h --format csv |
+| free-ai-router | [T095-docs-manual-config](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T095-docs-manual-config.md) | Create MANUAL.md and CONFIG.md documentation |
+| free-ai-router | [T096-docs-troubleshooting](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T096-docs-troubleshooting.md) | Troubleshooting guide: common issues and solutions |
+| free-ai-router | [T097-docs-china-providers](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T097-docs-china-providers.md) | Document China mainland providers setup (SiliconFlow, Baidu, Alibaba, Tencent) |
 | free-ai-router | [T098-quickwin-doctor-command](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T098-quickwin-doctor-command.md) | Quick win: freemodel doctor command (health check) |
 | free-ai-router | [T099-quickwin-promote-best](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T099-quickwin-promote-best.md) | Quick win: promote --best flag to first-class subcommand |
 | free-ai-router | [T100-quickwin-ready-endpoint](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T100-quickwin-ready-endpoint.md) | Quick win: /api/ready endpoint for load balancer health checks |
@@ -77,9 +80,6 @@ _無_
 
 | 專案 | 任務 | 標題 | 優先 |
 | -- | -- | -- | -- |
-| free-ai-router | [T095-docs-manual-config](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T095-docs-manual-config.md) | Create MANUAL.md and CONFIG.md documentation | medium |
-| free-ai-router | [T096-docs-troubleshooting](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T096-docs-troubleshooting.md) | Troubleshooting guide: common issues and solutions | medium |
-| free-ai-router | [T097-docs-china-providers](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T097-docs-china-providers.md) | Document China mainland providers setup (SiliconFlow, Baidu, Alibaba, Tencent) | medium |
 | tw-quant-pickup | [T027-tej-fingold-provider](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T027-tej-fingold-provider.md) | 整合 TEJ / 財金資料庫 作為備援財報來源 | medium |
 | gold-analysis-advanced | [T002](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis-advanced/tasks/T002.md) | ML 模型整合與優化 | low |
 | gold-analysis-advanced | [T004](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis-advanced/tasks/T004.md) | 實盤交易對接 | low |

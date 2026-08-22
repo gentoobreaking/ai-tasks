@@ -101,6 +101,9 @@
 | Structured logging: --log-format json for log aggregation |
 | Prometheus metrics endpoint: /api/metrics |
 | Ping history export: freemodel export-pings --since 1h --format csv |
+| Create MANUAL.md and CONFIG.md documentation |
+| Troubleshooting guide: common issues and solutions |
+| Document China mainland providers setup (SiliconFlow, Baidu, Alibaba, Tencent) |
 | Quick win: freemodel doctor command (health check) |
 | Quick win: promote --best flag to first-class subcommand |
 | Quick win: /api/ready endpoint for load balancer health checks |
@@ -121,9 +124,7 @@
 
 | Task | 名稱 | 說明 |
 |------|------|------|
-| [T95-docs-manual-config](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T095-docs-manual-config.md) | Create MANUAL.md and CONFIG.md documentation | |
-| [T96-docs-troubleshooting](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T096-docs-troubleshooting.md) | Troubleshooting guide: common issues and solutions | |
-| [T97-docs-china-providers](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T097-docs-china-providers.md) | Document China mainland providers setup (SiliconFlow, Baidu, Alibaba, Tencent) | |
+| | | |
 
 ## Task 列表
 
@@ -226,13 +227,13 @@
 | [T92-observability-structured-logging](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T092-observability-structured-logging.md) | Structured logging: --log-format json for log aggregation | ✅ done |
 | [T93-observability-prometheus-metrics](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T093-observability-prometheus-metrics.md) | Prometheus metrics endpoint: /api/metrics | ✅ done |
 | [T94-observability-ping-history-export](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T094-observability-ping-history-export.md) | Ping history export: freemodel export-pings --since 1h --format csv | ✅ done |
-| [T95-docs-manual-config](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T095-docs-manual-config.md) | Create MANUAL.md and CONFIG.md documentation | 📋 pending |
-| [T96-docs-troubleshooting](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T096-docs-troubleshooting.md) | Troubleshooting guide: common issues and solutions | 📋 pending |
-| [T97-docs-china-providers](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T097-docs-china-providers.md) | Document China mainland providers setup (SiliconFlow, Baidu, Alibaba, Tencent) | 📋 pending |
+| [T95-docs-manual-config](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T095-docs-manual-config.md) | Create MANUAL.md and CONFIG.md documentation | ✅ done |
+| [T96-docs-troubleshooting](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T096-docs-troubleshooting.md) | Troubleshooting guide: common issues and solutions | ✅ done |
+| [T97-docs-china-providers](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T097-docs-china-providers.md) | Document China mainland providers setup (SiliconFlow, Baidu, Alibaba, Tencent) | ✅ done |
 | [T98-quickwin-doctor-command](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T098-quickwin-doctor-command.md) | Quick win: freemodel doctor command (health check) | ✅ done |
 | [T99-quickwin-promote-best](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T099-quickwin-promote-best.md) | Quick win: promote --best flag to first-class subcommand | ✅ done |
 | [T100-quickwin-ready-endpoint](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T100-quickwin-ready-endpoint.md) | Quick win: /api/ready endpoint for load balancer health checks | ✅ done |
 
-**✅ done: 100 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 3**
+**✅ done: 103 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 0**
 
-> 自動生成於 2026-08-22 12:44
+> 自動生成於 2026-08-22 12:50

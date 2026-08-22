@@ -1,6 +1,6 @@
 # 📁 Projects Dashboard
 
-> 最後更新: 2026-08-22 12:44 · 自動生成
+> 最後更新: 2026-08-22 12:50 · 自動生成
 
 ---
 
@@ -10,8 +10,8 @@
 |------|------|
 | 專案數 | 62 |
 | 任務總數 | 1083 |
-| ✅ 已完成 | 1010 |
-| ⬜ 待處理 | 9 |
+| ✅ 已完成 | 1013 |
+| ⬜ 待處理 | 6 |
 | 🔄 進行中 | 1 |
 | ⏭️ 跳過 | 63 |
 | 總完成率 | 99% |
@@ -20,9 +20,6 @@
 
 | 專案 | 任務 | 標題 | 狀態 |
 |------|------|------|------|
-| free-ai-router | [T095-docs-manual-config](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T095-docs-manual-config.md) | Create MANUAL.md and CONFIG.md documentation | ⬜ |
-| free-ai-router | [T096-docs-troubleshooting](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T096-docs-troubleshooting.md) | Troubleshooting guide: common issues and solutions | ⬜ |
-| free-ai-router | [T097-docs-china-providers](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T097-docs-china-providers.md) | Document China mainland providers setup (SiliconFlow, Baidu, Alibaba, Tencent) | ⬜ |
 | gold-analysis-advanced | [T002](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis-advanced/tasks/T002.md) | ML 模型整合與優化 | ⬜ |
 | gold-analysis-advanced | [T004](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis-advanced/tasks/T004.md) | 實盤交易對接 | ⬜ |
 | tw-quant-pickup | [T027-tej-fingold-provider](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T027-tej-fingold-provider.md) | 整合 TEJ / 財金資料庫 作為備援財報來源 | ⬜ |
@@ -110,8 +107,8 @@
 
 | 指標 | 數值 |
 |------|------|
-| 過去 7 天完成 | 188 |
-| 過去 30 天完成 | 354 |
+| 過去 7 天完成 | 191 |
+| 過去 30 天完成 | 357 |
 | 平均週期時間 | 2.0 天 |
 | 週期時間中位數 | 0.0 天 |
 
@@ -121,10 +118,10 @@ xychart-beta
     title "過去 14 天任務完成趨勢"
     x-axis ["08-09", "08-10", "08-11", "08-12", "08-13", "08-14", "08-15", "08-16", "08-17", "08-18", "08-19", "08-20", "08-21", "08-22"]
     y-axis "完成數" 0 --> 119
-    line [0, 12, 11, 7, 0, 0, 8, 2, 119, 22, 16, 0, 3, 18]
+    line [0, 12, 11, 7, 0, 0, 8, 2, 119, 22, 16, 0, 3, 21]
 ```
 
-📊 總計: 218 | 日均: 15.6 | 本週: 180 | 📈 成長中
+📊 總計: 221 | 日均: 15.8 | 本週: 183 | 📈 成長中
 
 ## 📋 專案列表
 
@@ -140,7 +137,7 @@ xychart-beta
 | ✅ | [dashboard-tool](https://github.com/gentoobreaking/ai-tasks/tree/main/dashboard-tool) | 5 | 5 | 0 | 0 | 0 | ████████████████████ 100% | 2026-04-09 |
 | ✅ | [digital-twin](https://github.com/gentoobreaking/ai-tasks/tree/main/digital-twin) | 84 | 84 | 0 | 0 | 0 | ████████████████████ 100% | 2026-08-17 |
 | ✅ | [elevenlabs-research](https://github.com/gentoobreaking/ai-tasks/tree/main/elevenlabs-research) | 1 | 1 | 0 | 0 | 0 | ████████████████████ 100% | 2026-04-21 |
-| ⬜ | [free-ai-router](https://github.com/gentoobreaking/ai-tasks/tree/main/free-ai-router) | 103 | 100 | 3 | 0 | 0 | ███████████████████░ 97% | 2026-08-22 |
+| ✅ | [free-ai-router](https://github.com/gentoobreaking/ai-tasks/tree/main/free-ai-router) | 103 | 103 | 0 | 0 | 0 | ████████████████████ 100% | 2026-08-22 |
 | ✅ | [git-maintenance](https://github.com/gentoobreaking/ai-tasks/tree/main/git-maintenance) | 1 | 1 | 0 | 0 | 0 | ████████████████████ 100% | 2026-05-16 |
 | ✅ | [github-data-review](https://github.com/gentoobreaking/ai-tasks/tree/main/github-data-review) | 8 | 8 | 0 | 0 | 0 | ████████████████████ 100% | 2026-04-28 |
 | ✅ | [global-policy-refactor](https://github.com/gentoobreaking/ai-tasks/tree/main/global-policy-refactor) | 3 | 3 | 0 | 0 | 0 | ████████████████████ 100% | 2026-05-07 |
