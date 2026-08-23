@@ -1,12 +1,26 @@
 # 📅 Daily Dashboard - 2026-08-24
 
-> 最後更新: 2026-08-24 01:57 · 自動生成
+> 最後更新: 2026-08-24 04:47 · 自動生成
 
 ---
 
 ## 🆕 今日新增任務
 
-_無_
+| 專案 | 任務 | 標題 |
+| -- | -- | -- |
+| digital-twin | [T090-fix-ci-pyright-and-lockfile](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T090-fix-ci-pyright-and-lockfile.md) | 修復 CI 紅燈 — pyright 歸零與 uv.lock 同步 |
+| digital-twin | [T091-python-version-contract](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T091-python-version-contract.md) | Python 版本契約統一（requires-python 升 3.11 或降級 asyncio.timeout） |
+| digital-twin | [T092-webhook-secret-enforce](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T092-webhook-secret-enforce.md) | Telegram webhook secret 強制化（生產模式 fail-fast） |
+| digital-twin | [T093-redis-stream-reliability](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T093-redis-stream-reliability.md) | Redis Stream 可靠度 — pending 救援、maxlen 上限與 graceful shutdown |
+| digital-twin | [T094-rag-core-test-coverage](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T094-rag-core-test-coverage.md) | RAG 核心測試補齊（indexer.py / searcher.py） |
+| digital-twin | [T095-unify-http-client](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T095-unify-http-client.md) | embedding.py HTTP 呼叫遷移至 httpx（接入既有韌性層） |
+| digital-twin | [T096-logging-and-silent-except](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T096-logging-and-silent-except.md) | 日誌收斂遺留 — print 清理與靜默 except 補紀錄 |
+| digital-twin | [T097-repo-hygiene](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T097-repo-hygiene.md) | repo 衛生 — 遺留檔清理與 current_status 指標校正 |
+| digital-twin | [T098-pyproject-extras-dedup](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T098-pyproject-extras-dedup.md) | pyproject extras 去重 — prod 移除重複的 dependencies 複本 |
+| digital-twin | [T099-scheduler-further-split](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T099-scheduler-further-split.md) | scheduler.py 二階拆分 — 任務挑選與 process_task 流程獨立 |
+| tw-quant-pickup | [T044-stock-fair-value-cmoney4](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T044-stock-fair-value-cmoney4.md) | 個股 CMoney 四法合理價計算器 |
+| tw-quant-pickup | [T045-etf-fair-value](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T045-etf-fair-value.md) | ETF 兩法合理價計算器 |
+| tw-quant-pickup | [T046-fair-value-md-report](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T046-fair-value-md-report.md) | 合理價 Markdown 報表匯出 |
 
 ---
 
@@ -15,6 +29,16 @@ _無_
 | 專案 | 任務 | 標題 |
 | -- | -- | -- |
 | digital-twin | [T089-pi-integration-and-quality-optimization](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T089-pi-integration-and-quality-optimization.md) | pi Agent 整合反饋閉環 ＋ 全專案品質優化（env 收斂/模組拆分/測試隔離） |
+| digital-twin | [T090-fix-ci-pyright-and-lockfile](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T090-fix-ci-pyright-and-lockfile.md) | 修復 CI 紅燈 — pyright 歸零與 uv.lock 同步 |
+| digital-twin | [T091-python-version-contract](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T091-python-version-contract.md) | Python 版本契約統一（requires-python 升 3.11 或降級 asyncio.timeout） |
+| digital-twin | [T092-webhook-secret-enforce](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T092-webhook-secret-enforce.md) | Telegram webhook secret 強制化（生產模式 fail-fast） |
+| digital-twin | [T093-redis-stream-reliability](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T093-redis-stream-reliability.md) | Redis Stream 可靠度 — pending 救援、maxlen 上限與 graceful shutdown |
+| digital-twin | [T094-rag-core-test-coverage](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T094-rag-core-test-coverage.md) | RAG 核心測試補齊（indexer.py / searcher.py） |
+| digital-twin | [T095-unify-http-client](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T095-unify-http-client.md) | embedding.py HTTP 呼叫遷移至 httpx（接入既有韌性層） |
+| digital-twin | [T096-logging-and-silent-except](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T096-logging-and-silent-except.md) | 日誌收斂遺留 — print 清理與靜默 except 補紀錄 |
+| digital-twin | [T097-repo-hygiene](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T097-repo-hygiene.md) | repo 衛生 — 遺留檔清理與 current_status 指標校正 |
+| digital-twin | [T098-pyproject-extras-dedup](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T098-pyproject-extras-dedup.md) | pyproject extras 去重 — prod 移除重複的 dependencies 複本 |
+| digital-twin | [T099-scheduler-further-split](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T099-scheduler-further-split.md) | scheduler.py 二階拆分 — 任務挑選與 process_task 流程獨立 |
 | free-ai-router | [T101-fix-api-key-paste](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T101-fix-api-key-paste.md) | 修正 Settings/Wizard API key 輸入無法貼上的問題 |
 | free-ai-router | [T102-api-key-live-refresh](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T102-api-key-live-refresh.md) | API key 即時刷新（免重啟生效） |
 | free-ai-router | [T103-table-scroll-pgkeys](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T103-table-scroll-pgkeys.md) | 主畫面表格滾動視窗與 PgUp/PgDn 修正 |
@@ -40,6 +64,9 @@ _無_
 | tw-quant-pickup | [T041-frontend-types-and-stock-valuation](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T041-frontend-types-and-stock-valuation.md) | 前端型別強化與個股詳情估值補全 |
 | tw-quant-pickup | [T042-react-query-adoption](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T042-react-query-adoption.md) | react-query 導入 |
 | tw-quant-pickup | [T043-ci-and-repo-hygiene](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T043-ci-and-repo-hygiene.md) | CI 前端 job 與 repo 衛生 |
+| tw-quant-pickup | [T044-stock-fair-value-cmoney4](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T044-stock-fair-value-cmoney4.md) | 個股 CMoney 四法合理價計算器 |
+| tw-quant-pickup | [T045-etf-fair-value](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T045-etf-fair-value.md) | ETF 兩法合理價計算器 |
+| tw-quant-pickup | [T046-fair-value-md-report](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T046-fair-value-md-report.md) | 合理價 Markdown 報表匯出 |
 
 ---
 

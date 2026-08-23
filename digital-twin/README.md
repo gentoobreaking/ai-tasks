@@ -89,6 +89,16 @@
 | 清理 repo 根目錄雜檔與目錄結構 |
 | 任務恢復優先 + opencode timeout + 聲音通知 + 人類可讀輸出 |
 | pi Agent 整合反饋閉環 ＋ 全專案品質優化（env 收斂/模組拆分/測試隔離） |
+| CI 紅燈 — pyright 歸零與 uv.lock 同步 |
+| Python 版本契約統一（requires-python 升 3.11 或降級 asyncio.timeout） |
+| Telegram webhook secret 強制化（生產模式 fail-fast） |
+| Redis Stream 可靠度 — pending 救援、maxlen 上限與 graceful shutdown |
+| RAG 核心測試補齊（indexer.py / searcher.py） |
+| embedding.py HTTP 呼叫遷移至 httpx（接入既有韌性層） |
+| 日誌收斂遺留 — print 清理與靜默 except 補紀錄 |
+| repo 衛生 — 遺留檔清理與 current_status 指標校正 |
+| pyproject extras 去重 — prod 移除重複的 dependencies 複本 |
+| scheduler.py 二階拆分 — 任務挑選與 process_task 流程獨立 |
 
 ## Skip 項目
 
@@ -197,7 +207,17 @@
 | [T87-repo-cleanup](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T087-repo-cleanup.md) | 清理 repo 根目錄雜檔與目錄結構 | ✅ done |
 | [T88-task-resume-priority-timeout-sound](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T088-task-resume-priority-timeout-sound.md) | 任務恢復優先 + opencode timeout + 聲音通知 + 人類可讀輸出 | ✅ done |
 | [T89-pi-integration-and-quality-optimization](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T089-pi-integration-and-quality-optimization.md) | pi Agent 整合反饋閉環 ＋ 全專案品質優化（env 收斂/模組拆分/測試隔離） | ✅ done |
+| [T90-fix-ci-pyright-and-lockfile](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T090-fix-ci-pyright-and-lockfile.md) | 修復 CI 紅燈 — pyright 歸零與 uv.lock 同步 | ✅ done |
+| [T91-python-version-contract](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T091-python-version-contract.md) | Python 版本契約統一（requires-python 升 3.11 或降級 asyncio.timeout） | ✅ done |
+| [T92-webhook-secret-enforce](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T092-webhook-secret-enforce.md) | Telegram webhook secret 強制化（生產模式 fail-fast） | ✅ done |
+| [T93-redis-stream-reliability](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T093-redis-stream-reliability.md) | Redis Stream 可靠度 — pending 救援、maxlen 上限與 graceful shutdown | ✅ done |
+| [T94-rag-core-test-coverage](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T094-rag-core-test-coverage.md) | RAG 核心測試補齊（indexer.py / searcher.py） | ✅ done |
+| [T95-unify-http-client](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T095-unify-http-client.md) | embedding.py HTTP 呼叫遷移至 httpx（接入既有韌性層） | ✅ done |
+| [T96-logging-and-silent-except](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T096-logging-and-silent-except.md) | 日誌收斂遺留 — print 清理與靜默 except 補紀錄 | ✅ done |
+| [T97-repo-hygiene](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T097-repo-hygiene.md) | repo 衛生 — 遺留檔清理與 current_status 指標校正 | ✅ done |
+| [T98-pyproject-extras-dedup](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T098-pyproject-extras-dedup.md) | pyproject extras 去重 — prod 移除重複的 dependencies 複本 | ✅ done |
+| [T99-scheduler-further-split](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T099-scheduler-further-split.md) | scheduler.py 二階拆分 — 任務挑選與 process_task 流程獨立 | ✅ done |
 
-**✅ done: 85 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 0**
+**✅ done: 95 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 0**
 
-> 自動生成於 2026-08-24 01:57
+> 自動生成於 2026-08-24 04:47

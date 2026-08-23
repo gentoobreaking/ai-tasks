@@ -48,6 +48,9 @@
 | 前端型別強化與個股詳情估值補全 |
 | react-query 導入 |
 | CI 前端 job 與 repo 衛生 |
+| 個股 CMoney 四法合理價計算器 |
+| ETF 兩法合理價計算器 |
+| 合理價 Markdown 報表匯出 |
 
 ## Skip 項目
 
@@ -115,7 +118,10 @@
 | [T41-frontend-types-and-stock-valuation](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T041-frontend-types-and-stock-valuation.md) | 前端型別強化與個股詳情估值補全 | ✅ done |
 | [T42-react-query-adoption](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T042-react-query-adoption.md) | react-query 導入 | ✅ done |
 | [T43-ci-and-repo-hygiene](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T043-ci-and-repo-hygiene.md) | CI 前端 job 與 repo 衛生 | ✅ done |
+| [T44-stock-fair-value-cmoney4](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T044-stock-fair-value-cmoney4.md) | 個股 CMoney 四法合理價計算器 | ✅ done |
+| [T45-etf-fair-value](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T045-etf-fair-value.md) | ETF 兩法合理價計算器 | ✅ done |
+| [T46-fair-value-md-report](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T046-fair-value-md-report.md) | 合理價 Markdown 報表匯出 | ✅ done |
 
-**✅ done: 44 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 0**
+**✅ done: 47 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 0**
 
-> 自動生成於 2026-08-24 01:57
+> 自動生成於 2026-08-24 04:47
