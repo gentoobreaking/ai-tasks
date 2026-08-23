@@ -1,6 +1,6 @@
 # 📁 Projects Dashboard
 
-> 最後更新: 2026-08-24 04:47 · 自動生成
+> 最後更新: 2026-08-24 07:10 · 自動生成
 
 ---
 
@@ -8,13 +8,30 @@
 
 | 指標 | 數量 |
 |------|------|
-| 專案數 | 62 |
-| 任務總數 | 1125 |
+| 專案數 | 63 |
+| 任務總數 | 1145 |
 | ✅ 已完成 | 1059 |
-| ⬜ 待處理 | 2 |
+| ⬜ 待處理 | 22 |
 | 🔄 進行中 | 1 |
 | ⏭️ 跳過 | 63 |
-| 總完成率 | 99% |
+| 總完成率 | 97% |
+
+## 🔥 待處理高優先級任務
+
+| 專案 | 任務 | 標題 |
+|------|------|------|
+| slo-sentinel | [T001-project-scaffold](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T001-project-scaffold.md) | 專案骨架與 Go 模組初始化 |
+| slo-sentinel | [T003-query-source](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T003-query-source.md) | Prometheus 查詢來源層 internal/query |
+| slo-sentinel | [T004-store-sqlite](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T004-store-sqlite.md) | SQLite 狀態儲存層 internal/store |
+| slo-sentinel | [T005-catalog-loader](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T005-catalog-loader.md) | 感測目錄載入器 internal/catalog |
+| slo-sentinel | [T006-budget-eta-engine](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T006-budget-eta-engine.md) | 多視野 ETA 引擎 internal/budget |
+| slo-sentinel | [T007-capacity-sensor](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T007-capacity-sensor.md) | 容量感測引擎 internal/capacity |
+| slo-sentinel | [T008-alert-notify](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T008-alert-notify.md) | Telegram 通知層 internal/alert |
+| slo-sentinel | [T009-daemon-main](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T009-daemon-main.md) | daemon 主迴圈與 CLI cmd/sentinel |
+| slo-sentinel | [T018-e2e-integration](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T018-e2e-integration.md) | 端到端整合測試（成功標準全覆蓋） |
+
+---
+
 
 ## ⬜ 待處理
 
@@ -22,6 +39,26 @@
 |------|------|------|------|
 | gold-analysis-advanced | [T002](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis-advanced/tasks/T002.md) | ML 模型整合與優化 | ⬜ |
 | gold-analysis-advanced | [T004](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis-advanced/tasks/T004.md) | 實盤交易對接 | ⬜ |
+| slo-sentinel | [T001-project-scaffold](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T001-project-scaffold.md) | 專案骨架與 Go 模組初始化 | ⬜ |
+| slo-sentinel | [T002-spec-parser](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T002-spec-parser.md) | SLO 定義解析模組 internal/spec | ⬜ |
+| slo-sentinel | [T003-query-source](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T003-query-source.md) | Prometheus 查詢來源層 internal/query | ⬜ |
+| slo-sentinel | [T004-store-sqlite](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T004-store-sqlite.md) | SQLite 狀態儲存層 internal/store | ⬜ |
+| slo-sentinel | [T005-catalog-loader](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T005-catalog-loader.md) | 感測目錄載入器 internal/catalog | ⬜ |
+| slo-sentinel | [T006-budget-eta-engine](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T006-budget-eta-engine.md) | 多視野 ETA 引擎 internal/budget | ⬜ |
+| slo-sentinel | [T007-capacity-sensor](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T007-capacity-sensor.md) | 容量感測引擎 internal/capacity | ⬜ |
+| slo-sentinel | [T008-alert-notify](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T008-alert-notify.md) | Telegram 通知層 internal/alert | ⬜ |
+| slo-sentinel | [T009-daemon-main](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T009-daemon-main.md) | daemon 主迴圈與 CLI cmd/sentinel | ⬜ |
+| slo-sentinel | [T010-billing-adapters](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T010-billing-adapters.md) | 成本帳務 adapter internal/billing | ⬜ |
+| slo-sentinel | [T011-cost-engine](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T011-cost-engine.md) | 成本預測與報表 internal/cost | ⬜ |
+| slo-sentinel | [T012-waste-cloud-provider](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T012-waste-cloud-provider.md) | 瘦身掃描器與雲端 provider internal/waste | ⬜ |
+| slo-sentinel | [T013-waste-k8s-provider](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T013-waste-k8s-provider.md) | K8s/OpenShift provider（K1–K4 感測） | ⬜ |
+| slo-sentinel | [T014-waste-standalone-provider](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T014-waste-standalone-provider.md) | Standalone server provider（S1–S3 感測） | ⬜ |
+| slo-sentinel | [T015-waste-tracker](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T015-waste-tracker.md) | 候選清單生命週期 tracker | ⬜ |
+| slo-sentinel | [T016-sentinel-ui](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T016-sentinel-ui.md) | sentinel-ui 唯讀 Web 服務 cmd/sentinel-ui | ⬜ |
+| slo-sentinel | [T017-deploy-docs](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T017-deploy-docs.md) | 上線部署文件與 systemd/container 佈建 | ⬜ |
+| slo-sentinel | [T018-e2e-integration](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T018-e2e-integration.md) | 端到端整合測試（成功標準全覆蓋） | ⬜ |
+| slo-sentinel | [T019-ci-budget-gate](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T019-ci-budget-gate.md) | 預算燒穿 CI 部署閘門（F6） | ⬜ |
+| slo-sentinel | [T020-oncall-integration](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T020-oncall-integration.md) | 容量預警接 ai-oncall 分診閉環（F10） | ⬜ |
 
 ## 🔄 進行中
 
@@ -172,6 +209,16 @@ xychart-beta
 | ✅ | [sinotrade-scraper](https://github.com/gentoobreaking/ai-tasks/tree/main/sinotrade-scraper) | 9 | 8 | 0 | 0 | 1 | ████████████████████ 100% | 2026-04-28 |
 | ✅ | [skill-enhancement](https://github.com/gentoobreaking/ai-tasks/tree/main/skill-enhancement) | 4 | 4 | 0 | 0 | 0 | ████████████████████ 100% | 2026-04-04 |
 | ✅ | [skills-audit](https://github.com/gentoobreaking/ai-tasks/tree/main/skills-audit) | 5 | 5 | 0 | 0 | 0 | ████████████████████ 100% | 2026-05-19 |
+| ⬜ | [slo-sentinel](https://github.com/gentoobreaking/ai-tasks/tree/main/slo-sentinel) | 20 | 0 | 20 | 0 | 0 | ░░░░░░░░░░░░░░░░░░░░ 0% | 2026-08-24 |
+  **[T001-project-scaffold](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T001-project-scaffold.md)**: 專案骨架與 Go 模組初始化
+  **[T003-query-source](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T003-query-source.md)**: Prometheus 查詢來源層 internal/query
+  **[T004-store-sqlite](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T004-store-sqlite.md)**: SQLite 狀態儲存層 internal/store
+  **[T005-catalog-loader](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T005-catalog-loader.md)**: 感測目錄載入器 internal/catalog
+  **[T006-budget-eta-engine](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T006-budget-eta-engine.md)**: 多視野 ETA 引擎 internal/budget
+  **[T007-capacity-sensor](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T007-capacity-sensor.md)**: 容量感測引擎 internal/capacity
+  **[T008-alert-notify](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T008-alert-notify.md)**: Telegram 通知層 internal/alert
+  **[T009-daemon-main](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T009-daemon-main.md)**: daemon 主迴圈與 CLI cmd/sentinel
+  **[T018-e2e-integration](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T018-e2e-integration.md)**: 端到端整合測試（成功標準全覆蓋）
 | ✅ | [taolive-ios](https://github.com/gentoobreaking/ai-tasks/tree/main/taolive-ios) | 67 | 19 | 0 | 0 | 48 | ████████████████████ 100% | 2026-05-14 |
 | ✅ | [task-url-repair](https://github.com/gentoobreaking/ai-tasks/tree/main/task-url-repair) | 1 | 1 | 0 | 0 | 0 | ████████████████████ 100% | 2026-04-20 |
 | ✅ | [tasks-executor](https://github.com/gentoobreaking/ai-tasks/tree/main/tasks-executor) | 8 | 8 | 0 | 0 | 0 | ████████████████████ 100% | 2026-05-12 |
