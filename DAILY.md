@@ -1,6 +1,6 @@
 # 📅 Daily Dashboard - 2026-08-24
 
-> 最後更新: 2026-08-24 01:54 · 自動生成
+> 最後更新: 2026-08-24 01:55 · 自動生成
 
 ---
 
@@ -14,6 +14,7 @@ _無_
 
 | 專案 | 任務 | 標題 |
 | -- | -- | -- |
+| digital-twin | [T089-pi-integration-and-quality-optimization](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T089-pi-integration-and-quality-optimization.md) | pi Agent 整合反饋閉環 ＋ 全專案品質優化（env 收斂/模組拆分/測試隔離） |
 | free-ai-router | [T101-fix-api-key-paste](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T101-fix-api-key-paste.md) | 修正 Settings/Wizard API key 輸入無法貼上的問題 |
 | free-ai-router | [T102-api-key-live-refresh](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T102-api-key-live-refresh.md) | API key 即時刷新（免重啟生效） |
 | free-ai-router | [T103-table-scroll-pgkeys](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T103-table-scroll-pgkeys.md) | 主畫面表格滾動視窗與 PgUp/PgDn 修正 |
