@@ -88,6 +88,7 @@
 | 補充 end-to-end 整合測試（auto_dev → git commit → README sync） |
 | 清理 repo 根目錄雜檔與目錄結構 |
 | 任務恢復優先 + opencode timeout + 聲音通知 + 人類可讀輸出 |
+| pi Agent 整合反饋閉環 ＋ 全專案品質優化（env 收斂/模組拆分/測試隔離） |
 
 ## Skip 項目
 
@@ -195,7 +196,8 @@
 | [T86-e2e-integration-test](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T086-e2e-integration-test.md) | 補充 end-to-end 整合測試（auto_dev → git commit → README sync） | ✅ done |
 | [T87-repo-cleanup](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T087-repo-cleanup.md) | 清理 repo 根目錄雜檔與目錄結構 | ✅ done |
 | [T88-task-resume-priority-timeout-sound](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T088-task-resume-priority-timeout-sound.md) | 任務恢復優先 + opencode timeout + 聲音通知 + 人類可讀輸出 | ✅ done |
+| [T89-pi-integration-and-quality-optimization](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T089-pi-integration-and-quality-optimization.md) | pi Agent 整合反饋閉環 ＋ 全專案品質優化（env 收斂/模組拆分/測試隔離） | ✅ done |
 
-**✅ done: 84 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 0**
+**✅ done: 85 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 0**
 
-> 自動生成於 2026-08-24 00:13
+> 自動生成於 2026-08-24 00:46
