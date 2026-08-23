@@ -7,7 +7,7 @@ status: done
 depends_on: [T035]
 assignee: pi with opencode/x-preview-f-free
 created: 2026-08-23
-updated: 2026-08-23
+updated: 2026-08-24
 ---
 
 # T36 - 前端 UX 改善（日期、設定生效、類型區分、可點擊代號）

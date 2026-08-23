@@ -7,7 +7,7 @@ status: done
 depends_on: []
 assignee: pi with opencode/x-preview-f-free
 created: 2026-08-23
-updated: 2026-08-23
+updated: 2026-08-24
 ---
 
 # T39 - API 安全強化（認證 / 限流 / 指標端點）

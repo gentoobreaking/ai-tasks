@@ -1,6 +1,6 @@
 # 📁 Projects Dashboard
 
-> 最後更新: 2026-08-24 01:55 · 自動生成
+> 最後更新: 2026-08-24 01:57 · 自動生成
 
 ---
 
@@ -114,7 +114,7 @@ xychart-beta
     title "過去 14 天任務完成趨勢"
     x-axis ["08-11", "08-12", "08-13", "08-14", "08-15", "08-16", "08-17", "08-18", "08-19", "08-20", "08-21", "08-22", "08-23", "08-24"]
     y-axis "完成數" 0 --> 119
-    line [11, 7, 0, 0, 8, 2, 119, 22, 16, 0, 3, 28, 10, 16]
+    line [11, 7, 0, 0, 8, 2, 119, 22, 16, 0, 3, 28, 0, 26]
 ```
 
 📊 總計: 242 | 日均: 17.3 | 本週: 95 | 📉 下降中
@@ -177,7 +177,7 @@ xychart-beta
 | ✅ | [tasks-executor](https://github.com/gentoobreaking/ai-tasks/tree/main/tasks-executor) | 8 | 8 | 0 | 0 | 0 | ████████████████████ 100% | 2026-05-12 |
 | ✅ | [tw-quant-daybrain](https://github.com/gentoobreaking/ai-tasks/tree/main/tw-quant-daybrain) | 28 | 28 | 0 | 0 | 0 | ████████████████████ 100% | 2026-08-12 |
 | ✅ | [tw-quant-mcp](https://github.com/gentoobreaking/ai-tasks/tree/main/tw-quant-mcp) | 39 | 39 | 0 | 0 | 0 | ████████████████████ 100% | 2026-08-22 |
-| ✅ | [tw-quant-pickup](https://github.com/gentoobreaking/ai-tasks/tree/main/tw-quant-pickup) | 44 | 44 | 0 | 0 | 0 | ████████████████████ 100% | 2026-08-23 |
+| ✅ | [tw-quant-pickup](https://github.com/gentoobreaking/ai-tasks/tree/main/tw-quant-pickup) | 44 | 44 | 0 | 0 | 0 | ████████████████████ 100% | 2026-08-24 |
 | ✅ | [tw-quant-selector](https://github.com/gentoobreaking/ai-tasks/tree/main/tw-quant-selector) | 148 | 148 | 0 | 0 | 0 | ████████████████████ 100% | 2026-08-15 |
 | ✅ | [tw-quant-signal](https://github.com/gentoobreaking/ai-tasks/tree/main/tw-quant-signal) | 32 | 32 | 0 | 0 | 0 | ████████████████████ 100% | 2026-08-19 |
 | ✅ | [twse-monitor](https://github.com/gentoobreaking/ai-tasks/tree/main/twse-monitor) | 11 | 11 | 0 | 0 | 0 | ████████████████████ 100% | 2026-05-07 |

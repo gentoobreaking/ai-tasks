@@ -1,6 +1,6 @@
 # 📅 Daily Dashboard - 2026-08-24
 
-> 最後更新: 2026-08-24 01:55 · 自動生成
+> 最後更新: 2026-08-24 01:57 · 自動生成
 
 ---
 
@@ -30,6 +30,16 @@ _無_
 | free-ai-router | [T113-retry-after-cooldown](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T113-retry-after-cooldown.md) | router 429 冷卻尊重上游 Retry-After |
 | free-ai-router | [T114-race-detector-adoption](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T114-race-detector-adoption.md) | 加入 test-race/vuln 目標並修復 race detector 抓到的 data race |
 | free-ai-router | [T115-discovered-model-label](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T115-discovered-model-label.md) | 自動發現模型的 Model 欄空白（缺 Label） |
+| tw-quant-pickup | [T034-non-business-day-fallback](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T034-non-business-day-fallback.md) | 非營業日查詢自動回退至最近營業日（API / CLI / 前端） |
+| tw-quant-pickup | [T035-frontend-security-consistency](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T035-frontend-security-consistency.md) | 前端安全與一致性修復（XSS / 死登入邏輯 / fetch 統一） |
+| tw-quant-pickup | [T036-frontend-ux-improvements](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T036-frontend-ux-improvements.md) | 前端 UX 改善（日期、設定生效、類型區分、可點擊代號） |
+| tw-quant-pickup | [T037-frontend-i18n](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T037-frontend-i18n.md) | 前端 UI 中文化 |
+| tw-quant-pickup | [T038-frontend-test-infra](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T038-frontend-test-infra.md) | 前端測試基礎建設 |
+| tw-quant-pickup | [T039-api-security](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T039-api-security.md) | API 安全強化（認證 / 限流 / 指標端點） |
+| tw-quant-pickup | [T040-backend-modularization](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T040-backend-modularization.md) | 後端模組化重構（api routers + pipeline 套件） |
+| tw-quant-pickup | [T041-frontend-types-and-stock-valuation](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T041-frontend-types-and-stock-valuation.md) | 前端型別強化與個股詳情估值補全 |
+| tw-quant-pickup | [T042-react-query-adoption](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T042-react-query-adoption.md) | react-query 導入 |
+| tw-quant-pickup | [T043-ci-and-repo-hygiene](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T043-ci-and-repo-hygiene.md) | CI 前端 job 與 repo 衛生 |
 
 ---
 

@@ -7,7 +7,7 @@ status: done
 depends_on: [T038]
 assignee: pi with opencode/x-preview-f-free
 created: 2026-08-23
-updated: 2026-08-23
+updated: 2026-08-24
 ---
 
 # T41 - 前端型別強化與個股詳情估值補全
