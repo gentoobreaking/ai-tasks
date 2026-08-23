@@ -7,7 +7,7 @@ status: done
 depends_on: []
 assignee: "pi with opencode/x-preview-f-free"
 created: 2026-08-23
-updated: 2026-08-23
+updated: 2026-08-24
 ---
 
 # T104 - OpenRouter 靜態清單與免費清單交集為空導致 0 模型

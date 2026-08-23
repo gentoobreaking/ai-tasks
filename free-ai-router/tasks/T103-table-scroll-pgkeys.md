@@ -7,7 +7,7 @@ status: done
 depends_on: []
 assignee: "pi with opencode/x-preview-f-free"
 created: 2026-08-23
-updated: 2026-08-23
+updated: 2026-08-24
 ---
 
 # T103 - 表格滾動視窗、PgUp/PgDn 失效、選取鉗制

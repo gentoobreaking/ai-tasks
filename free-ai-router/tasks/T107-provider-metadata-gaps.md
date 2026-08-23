@@ -7,7 +7,7 @@ status: done
 depends_on: ["T106"]
 assignee: "pi with opencode/x-preview-f-free"
 created: 2026-08-23
-updated: 2026-08-23
+updated: 2026-08-24
 ---
 
 # T107 - 既存 provider 的 metadata 缺口

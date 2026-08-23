@@ -7,7 +7,7 @@ status: done
 depends_on: ["T104"]
 assignee: "pi with opencode/x-preview-f-free"
 created: 2026-08-23
-updated: 2026-08-23
+updated: 2026-08-24
 ---
 
 # T105 - 模型 ID 必須符合 `<providerKey>/<上游ID>` 慣例

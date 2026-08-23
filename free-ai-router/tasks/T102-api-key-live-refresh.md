@@ -7,7 +7,7 @@ status: done
 depends_on: ["T101"]
 assignee: "pi with opencode/x-preview-f-free"
 created: 2026-08-23
-updated: 2026-08-23
+updated: 2026-08-24
 ---
 
 # T102 - API key 即時刷新（nokey 模型復活）

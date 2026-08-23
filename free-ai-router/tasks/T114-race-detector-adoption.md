@@ -7,7 +7,7 @@ status: done
 depends_on: ["T102"]
 assignee: "pi with opencode/x-preview-f-free"
 created: 2026-08-23
-updated: 2026-08-23
+updated: 2026-08-24
 ---
 
 # T114 - race detector 導入與測試 data race 修復
