@@ -1,6 +1,6 @@
 # 📁 Projects Dashboard
 
-> 最後更新: 2026-08-23 23:17 · 自動生成
+> 最後更新: 2026-08-24 00:02 · 自動生成
 
 ---
 
@@ -9,8 +9,8 @@
 | 指標 | 數量 |
 |------|------|
 | 專案數 | 62 |
-| 任務總數 | 1086 |
-| ✅ 已完成 | 1020 |
+| 任務總數 | 1101 |
+| ✅ 已完成 | 1035 |
 | ⬜ 待處理 | 2 |
 | 🔄 進行中 | 1 |
 | ⏭️ 跳過 | 63 |
@@ -103,21 +103,21 @@
 
 | 指標 | 數值 |
 |------|------|
-| 過去 7 天完成 | 190 |
-| 過去 30 天完成 | 364 |
-| 平均週期時間 | 2.0 天 |
+| 過去 7 天完成 | 203 |
+| 過去 30 天完成 | 379 |
+| 平均週期時間 | 1.9 天 |
 | 週期時間中位數 | 0.0 天 |
 
 
 ```mermaid
 xychart-beta
     title "過去 14 天任務完成趨勢"
-    x-axis ["08-10", "08-11", "08-12", "08-13", "08-14", "08-15", "08-16", "08-17", "08-18", "08-19", "08-20", "08-21", "08-22", "08-23"]
+    x-axis ["08-11", "08-12", "08-13", "08-14", "08-15", "08-16", "08-17", "08-18", "08-19", "08-20", "08-21", "08-22", "08-23", "08-24"]
     y-axis "完成數" 0 --> 119
-    line [12, 11, 7, 0, 0, 8, 2, 119, 22, 16, 0, 3, 28, 0]
+    line [11, 7, 0, 0, 8, 2, 119, 22, 16, 0, 3, 28, 15, 0]
 ```
 
-📊 總計: 228 | 日均: 16.3 | 本週: 188 | 📈 成長中
+📊 總計: 231 | 日均: 16.5 | 本週: 84 | 📉 下降中
 
 ## 📋 專案列表
 
@@ -133,7 +133,7 @@ xychart-beta
 | ✅ | [dashboard-tool](https://github.com/gentoobreaking/ai-tasks/tree/main/dashboard-tool) | 5 | 5 | 0 | 0 | 0 | ████████████████████ 100% | 2026-04-09 |
 | ✅ | [digital-twin](https://github.com/gentoobreaking/ai-tasks/tree/main/digital-twin) | 84 | 84 | 0 | 0 | 0 | ████████████████████ 100% | 2026-08-17 |
 | ✅ | [elevenlabs-research](https://github.com/gentoobreaking/ai-tasks/tree/main/elevenlabs-research) | 1 | 1 | 0 | 0 | 0 | ████████████████████ 100% | 2026-04-21 |
-| ✅ | [free-ai-router](https://github.com/gentoobreaking/ai-tasks/tree/main/free-ai-router) | 103 | 103 | 0 | 0 | 0 | ████████████████████ 100% | 2026-08-22 |
+| ✅ | [free-ai-router](https://github.com/gentoobreaking/ai-tasks/tree/main/free-ai-router) | 118 | 118 | 0 | 0 | 0 | ████████████████████ 100% | 2026-08-23 |
 | ✅ | [git-maintenance](https://github.com/gentoobreaking/ai-tasks/tree/main/git-maintenance) | 1 | 1 | 0 | 0 | 0 | ████████████████████ 100% | 2026-05-16 |
 | ✅ | [github-data-review](https://github.com/gentoobreaking/ai-tasks/tree/main/github-data-review) | 8 | 8 | 0 | 0 | 0 | ████████████████████ 100% | 2026-04-28 |
 | ✅ | [global-policy-refactor](https://github.com/gentoobreaking/ai-tasks/tree/main/global-policy-refactor) | 3 | 3 | 0 | 0 | 0 | ████████████████████ 100% | 2026-05-07 |

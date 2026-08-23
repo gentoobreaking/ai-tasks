@@ -107,6 +107,21 @@
 | Quick win: freemodel doctor command (health check) |
 | Quick win: promote --best flag to first-class subcommand |
 | Quick win: /api/ready endpoint for load balancer health checks |
+| 修正 Settings/Wizard API key 輸入無法貼上的問題 |
+| API key 即時刷新（免重啟生效） |
+| 主畫面表格滾動視窗與 PgUp/PgDn 修正 |
+| OpenRouter 模型清單為空的過濾修復 |
+| Provider ID 前綴慣例修正（消除幽靈 provider） |
+| HuggingFace、OpenAI、Claude (Anthropic)、DeepSeek providers |
+| 補齊 pollinations/kiro/clawlabs metadata 與 clawlabs key fallback |
+| GET /api/config 回傳明文 API key（安全性） |
+| ping body 統一為 json.Marshal 單一實作 |
+| internal/cli 失效測試並隔離真實 HOME |
+| main.go 啟動期 API key 解析改走 UpdateModel |
+| TUI UX 改善：READY 隱藏提示、Settings 狀態保留、渲染效能 |
+| router 429 冷卻尊重上游 Retry-After |
+| 加入 test-race/vuln 目標並修復 race detector 抓到的 data race |
+| 自動發現模型的 Model 欄空白（缺 Label） |
 
 ## Skip 項目
 
@@ -233,7 +248,22 @@
 | [T98-quickwin-doctor-command](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T098-quickwin-doctor-command.md) | Quick win: freemodel doctor command (health check) | ✅ done |
 | [T99-quickwin-promote-best](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T099-quickwin-promote-best.md) | Quick win: promote --best flag to first-class subcommand | ✅ done |
 | [T100-quickwin-ready-endpoint](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T100-quickwin-ready-endpoint.md) | Quick win: /api/ready endpoint for load balancer health checks | ✅ done |
+| [T101-fix-api-key-paste](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T101-fix-api-key-paste.md) | 修正 Settings/Wizard API key 輸入無法貼上的問題 | ✅ done |
+| [T102-api-key-live-refresh](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T102-api-key-live-refresh.md) | API key 即時刷新（免重啟生效） | ✅ done |
+| [T103-table-scroll-pgkeys](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T103-table-scroll-pgkeys.md) | 主畫面表格滾動視窗與 PgUp/PgDn 修正 | ✅ done |
+| [T104-openrouter-empty-filter](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T104-openrouter-empty-filter.md) | OpenRouter 模型清單為空的過濾修復 | ✅ done |
+| [T105-provider-id-prefix-convention](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T105-provider-id-prefix-convention.md) | Provider ID 前綴慣例修正（消除幽靈 provider） | ✅ done |
+| [T106-add-four-providers](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T106-add-four-providers.md) | 新增 HuggingFace、OpenAI、Claude (Anthropic)、DeepSeek providers | ✅ done |
+| [T107-provider-metadata-gaps](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T107-provider-metadata-gaps.md) | 補齊 pollinations/kiro/clawlabs metadata 與 clawlabs key fallback | ✅ done |
+| [T108-redact-config-api-keys](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T108-redact-config-api-keys.md) | GET /api/config 回傳明文 API key（安全性） | ✅ done |
+| [T109-pingbody-consolidation](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T109-pingbody-consolidation.md) | ping body 統一為 json.Marshal 單一實作 | ✅ done |
+| [T110-cli-tests-fix-hermetic](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T110-cli-tests-fix-hermetic.md) | 修復 internal/cli 失效測試並隔離真實 HOME | ✅ done |
+| [T111-updatemodel-lock-pattern](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T111-updatemodel-lock-pattern.md) | main.go 啟動期 API key 解析改走 UpdateModel | ✅ done |
+| [T112-tui-ux-improvements](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T112-tui-ux-improvements.md) | TUI UX 改善：READY 隱藏提示、Settings 狀態保留、渲染效能 | ✅ done |
+| [T113-retry-after-cooldown](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T113-retry-after-cooldown.md) | router 429 冷卻尊重上游 Retry-After | ✅ done |
+| [T114-race-detector-adoption](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T114-race-detector-adoption.md) | 加入 test-race/vuln 目標並修復 race detector 抓到的 data race | ✅ done |
+| [T115-discovered-model-label](https://github.com/gentoobreaking/ai-tasks/blob/main/free-ai-router/tasks/T115-discovered-model-label.md) | 自動發現模型的 Model 欄空白（缺 Label） | ✅ done |
 
-**✅ done: 103 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 0**
+**✅ done: 118 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 0**
 
-> 自動生成於 2026-08-23 23:17
+> 自動生成於 2026-08-24 00:02
