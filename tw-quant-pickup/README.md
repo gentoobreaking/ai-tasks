@@ -38,6 +38,16 @@
 | 引入台灣交易日曆（假日表＋盤後就緒時間） |
 | 前端樣式架構正式化：補完 Tailwind 設定並遷移至 shadcn/ui |
 | 前端主題切換（system/light/dark 深色模式） |
+| 非營業日查詢自動回退至最近營業日（API / CLI / 前端） |
+| 前端安全與一致性修復（XSS / 死登入邏輯 / fetch 統一） |
+| 前端 UX 改善（日期、設定生效、類型區分、可點擊代號） |
+| 前端 UI 中文化 |
+| 前端測試基礎建設 |
+| API 安全強化（認證 / 限流 / 指標端點） |
+| 後端模組化重構（api routers + pipeline 套件） |
+| 前端型別強化與個股詳情估值補全 |
+| react-query 導入 |
+| CI 前端 job 與 repo 衛生 |
 
 ## Skip 項目
 
@@ -95,7 +105,17 @@
 | [T31-taiwan-trading-calendar](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T031-taiwan-trading-calendar.md) | 引入台灣交易日曆（假日表＋盤後就緒時間） | ✅ done |
 | [T32-tailwind-shadcn-migration](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T032-tailwind-shadcn-migration.md) | 前端樣式架構正式化：補完 Tailwind 設定並遷移至 shadcn/ui | ✅ done |
 | [T33-theme-switching](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T033-theme-switching.md) | 前端主題切換（system/light/dark 深色模式） | ✅ done |
+| [T34-non-business-day-fallback](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T034-non-business-day-fallback.md) | 非營業日查詢自動回退至最近營業日（API / CLI / 前端） | ✅ done |
+| [T35-frontend-security-consistency](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T035-frontend-security-consistency.md) | 前端安全與一致性修復（XSS / 死登入邏輯 / fetch 統一） | ✅ done |
+| [T36-frontend-ux-improvements](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T036-frontend-ux-improvements.md) | 前端 UX 改善（日期、設定生效、類型區分、可點擊代號） | ✅ done |
+| [T37-frontend-i18n](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T037-frontend-i18n.md) | 前端 UI 中文化 | ✅ done |
+| [T38-frontend-test-infra](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T038-frontend-test-infra.md) | 前端測試基礎建設 | ✅ done |
+| [T39-api-security](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T039-api-security.md) | API 安全強化（認證 / 限流 / 指標端點） | ✅ done |
+| [T40-backend-modularization](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T040-backend-modularization.md) | 後端模組化重構（api routers + pipeline 套件） | ✅ done |
+| [T41-frontend-types-and-stock-valuation](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T041-frontend-types-and-stock-valuation.md) | 前端型別強化與個股詳情估值補全 | ✅ done |
+| [T42-react-query-adoption](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T042-react-query-adoption.md) | react-query 導入 | ✅ done |
+| [T43-ci-and-repo-hygiene](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T043-ci-and-repo-hygiene.md) | CI 前端 job 與 repo 衛生 | ✅ done |
 
-**✅ done: 34 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 0**
+**✅ done: 44 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 0**
 
-> 自動生成於 2026-08-24 00:46
+> 自動生成於 2026-08-24 00:48
