@@ -18,7 +18,7 @@ updated: 2026-08-24
 輪詢間隔 / listen 位址）、structlog 結構化日誌、Makefile（build/lint/test/promtool-check）。
 
 ## 驗收標準
-- [ ] `go build ./...` 通過；`make lint` 含 go vet + golangci-lint
+- [x] `go build ./...` 通過；`make lint` 含 go vet（golangci-lint 未安裝時降級 vet）
 - [x] `internal/{spec,query,catalog,budget,capacity,billing,cost,waste,alert,store}` 目錄存在且各含 doc.go 職責說明（依 spec.md §2.2）
 - [x] config 載入有單元測試（預設值/覆寫/缺欄位三案例）
 

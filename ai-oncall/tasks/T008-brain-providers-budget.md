@@ -3,7 +3,7 @@ github_issue: N/A
 title: LLM providers 子套件與 token 預算
 type: feat
 priority: high
-status: pending
+status: done
 depends_on:
 - T005
 assignee: "pi with opencode/x-preview-f-free"

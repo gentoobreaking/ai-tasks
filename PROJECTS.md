@@ -1,6 +1,6 @@
 # 📁 Projects Dashboard
 
-> 最後更新: 2026-08-24 09:45 · 自動生成
+> 最後更新: 2026-08-24 09:55 · 自動生成
 
 ---
 
@@ -10,8 +10,8 @@
 |------|------|
 | 專案數 | 64 |
 | 任務總數 | 1164 |
-| ✅ 已完成 | 1081 |
-| ⬜ 待處理 | 18 |
+| ✅ 已完成 | 1082 |
+| ⬜ 待處理 | 17 |
 | 🔄 進行中 | 2 |
 | ⏭️ 跳過 | 63 |
 | 總完成率 | 98% |
@@ -22,7 +22,6 @@
 |------|------|------|
 | ai-oncall | [T003-collect-fanout](https://github.com/gentoobreaking/ai-tasks/blob/main/ai-oncall/tasks/T003-collect-fanout.md) | context 收集器 fan-out |
 | ai-oncall | [T005-core-skeleton](https://github.com/gentoobreaking/ai-tasks/blob/main/ai-oncall/tasks/T005-core-skeleton.md) | oncall-core 骨架、gRPC servicer 與 SQLite store |
-| ai-oncall | [T008-brain-providers-budget](https://github.com/gentoobreaking/ai-tasks/blob/main/ai-oncall/tasks/T008-brain-providers-budget.md) | LLM providers 子套件與 token 預算 |
 | ai-oncall | [T009-triage-schema-validator](https://github.com/gentoobreaking/ai-tasks/blob/main/ai-oncall/tasks/T009-triage-schema-validator.md) | 分診管線編排與 schema 驗證修復迴圈 |
 | ai-oncall | [T010-runbook-parse-approval](https://github.com/gentoobreaking/ai-tasks/blob/main/ai-oncall/tasks/T010-runbook-parse-approval.md) | runbook 解析與批准閘門語意 |
 | ai-oncall | [T011-executor-package](https://github.com/gentoobreaking/ai-tasks/blob/main/ai-oncall/tasks/T011-executor-package.md) | ★ executor 頂層套件（runner + redaction） |
@@ -38,7 +37,6 @@
 |------|------|------|------|
 | ai-oncall | [T003-collect-fanout](https://github.com/gentoobreaking/ai-tasks/blob/main/ai-oncall/tasks/T003-collect-fanout.md) | context 收集器 fan-out | ⬜ |
 | ai-oncall | [T005-core-skeleton](https://github.com/gentoobreaking/ai-tasks/blob/main/ai-oncall/tasks/T005-core-skeleton.md) | oncall-core 骨架、gRPC servicer 與 SQLite store | ⬜ |
-| ai-oncall | [T008-brain-providers-budget](https://github.com/gentoobreaking/ai-tasks/blob/main/ai-oncall/tasks/T008-brain-providers-budget.md) | LLM providers 子套件與 token 預算 | ⬜ |
 | ai-oncall | [T009-triage-schema-validator](https://github.com/gentoobreaking/ai-tasks/blob/main/ai-oncall/tasks/T009-triage-schema-validator.md) | 分診管線編排與 schema 驗證修復迴圈 | ⬜ |
 | ai-oncall | [T010-runbook-parse-approval](https://github.com/gentoobreaking/ai-tasks/blob/main/ai-oncall/tasks/T010-runbook-parse-approval.md) | runbook 解析與批准閘門語意 | ⬜ |
 | ai-oncall | [T011-executor-package](https://github.com/gentoobreaking/ai-tasks/blob/main/ai-oncall/tasks/T011-executor-package.md) | ★ executor 頂層套件（runner + redaction） | ⬜ |
@@ -136,8 +134,8 @@
 
 | 指標 | 數值 |
 |------|------|
-| 過去 7 天完成 | 249 |
-| 過去 30 天完成 | 425 |
+| 過去 7 天完成 | 250 |
+| 過去 30 天完成 | 426 |
 | 平均週期時間 | 1.9 天 |
 | 週期時間中位數 | 0.0 天 |
 
@@ -147,20 +145,19 @@ xychart-beta
     title "過去 14 天任務完成趨勢"
     x-axis ["08-11", "08-12", "08-13", "08-14", "08-15", "08-16", "08-17", "08-18", "08-19", "08-20", "08-21", "08-22", "08-23", "08-24"]
     y-axis "完成數" 0 --> 119
-    line [11, 7, 0, 0, 8, 2, 119, 22, 16, 0, 3, 28, 0, 61]
+    line [11, 7, 0, 0, 8, 2, 119, 22, 16, 0, 3, 28, 0, 62]
 ```
 
-📊 總計: 277 | 日均: 19.8 | 本週: 130 | 📉 下降中
+📊 總計: 278 | 日均: 19.9 | 本週: 131 | 📉 下降中
 
 ## 📋 專案列表
 
 | 狀態 | 專案 | 總數 | ✅ | ⬜ | 🔄 | ⏭️ | 進度 | 更新 |
 |------|------|------|----|----|----|----|------|------|
 | ✅ | [agent-config](https://github.com/gentoobreaking/ai-tasks/tree/main/agent-config) | 9 | 9 | 0 | 0 | 0 | ████████████████████ 100% | 2026-04-09 |
-| ⬜ | [ai-oncall](https://github.com/gentoobreaking/ai-tasks/tree/main/ai-oncall) | 19 | 5 | 14 | 0 | 0 | █████░░░░░░░░░░░░░░░ 26% | 2026-08-24 |
+| ⬜ | [ai-oncall](https://github.com/gentoobreaking/ai-tasks/tree/main/ai-oncall) | 19 | 6 | 13 | 0 | 0 | ██████░░░░░░░░░░░░░░ 31% | 2026-08-24 |
   **[T003-collect-fanout](https://github.com/gentoobreaking/ai-tasks/blob/main/ai-oncall/tasks/T003-collect-fanout.md)**: context 收集器 fan-out
   **[T005-core-skeleton](https://github.com/gentoobreaking/ai-tasks/blob/main/ai-oncall/tasks/T005-core-skeleton.md)**: oncall-core 骨架、gRPC servicer 與 SQLite store
-  **[T008-brain-providers-budget](https://github.com/gentoobreaking/ai-tasks/blob/main/ai-oncall/tasks/T008-brain-providers-budget.md)**: LLM providers 子套件與 token 預算
   **[T009-triage-schema-validator](https://github.com/gentoobreaking/ai-tasks/blob/main/ai-oncall/tasks/T009-triage-schema-validator.md)**: 分診管線編排與 schema 驗證修復迴圈
   **[T010-runbook-parse-approval](https://github.com/gentoobreaking/ai-tasks/blob/main/ai-oncall/tasks/T010-runbook-parse-approval.md)**: runbook 解析與批准閘門語意
   **[T011-executor-package](https://github.com/gentoobreaking/ai-tasks/blob/main/ai-oncall/tasks/T011-executor-package.md)**: ★ executor 頂層套件（runner + redaction）
