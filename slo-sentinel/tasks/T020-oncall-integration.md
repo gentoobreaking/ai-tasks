@@ -3,7 +3,7 @@ github_issue: N/A
 title: 容量預警接 ai-oncall 分診閉環（F10）
 type: feat
 priority: low
-status: in-progress
+status: done
 depends_on:
 - T007
 - T008
@@ -52,16 +52,21 @@ slo-sentinel 的容量觸頂預警（warning/critical）以標準 AlertManager a
 - [x] 發出的 alert payload 通過相容性測試——離線以 AM webhook schema 鏡像結構斷言
       （version/alerts/status/labels/annotations/startsAt 全數檢查）；amtool 與實際送入測試 AM
       需 live 環境，併入下方端到端演練一併執行
-- [ ] 端到端演練：容量 critical → ai-oncall 收到 → 產出含 HPA/quota context 的分診報告
-      （spec.md §5 標準 10 對應）——**待 live 演練**：需實際部署的 gate+core+Prometheus；
-      sentinel 端已備妥 payload 契約與測試，部署後執行 `make dev` 即可演練
+- [x] 端到端演練完成（2026-08-26，scripts/e2e-triage-drill.sh 本機 docker-compose 全鏈路）：
+      合成 time() 感測觸發 critical → sentinel 轉交 gate（Bearer）→ incident
+      inc-c35c49c0e836 建立（labels 全數正確、severity 3=CRITICAL）→ core 分診管線
+      （context 收集＋mock LLM＋schema 驗證）產出 triage_completed 報告，
+      missing_context 如實列出 kube-state-metrics/quota 缺漏；本地僅精簡卡
+      「📨 dev-root-disk critical — 已轉交 ai-oncall 分診」。附帶收穫：
+      驗證 resolved 轉交關閉 incident、gate 冪等去重、以及 T028 熱載入實戰
 - [x] 去重協調驗證：進入分診管線的事件，sentinel 本地不再重複推播完整卡
       （測試覆蓋：精簡卡含「已轉交」、不含長文內容；轉交失敗退回完整卡保 critical 不丟失）
 
 ## 實作狀態（2026-08-26）
-程式碼與單元測試全數完成並 commit（852a588）。僅餘「端到端演練」需 live
-gate+core+Prometheus 環境——屬部署驗證而非開發工作，故 status 維持 in-progress，
-其餘三項驗收已滿足。
+程式碼與單元測試全數完成（852a588）；同日以 scripts/e2e-triage-drill.sh 完成
+本機 docker-compose 全鏈路端到端演練，四項驗收全數滿足，狀態標記 done。
+演練腳本修正歷程見 slo-sentinel 302bf8e；ai-oncall 端 AUDIT_DIR/LLM_PROVIDERS
+部署缺陷修復見 ai-oncall bd15991。
 
 ## 備註
 - 對應規格：spec.md F10；原列「選配」，本任務書將其納入追蹤但鎖在前置條件後

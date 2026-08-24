@@ -1,3 +1,13 @@
+---
+github_issue:
+title: 台股篩選腳本-ETF 專屬優化修改方案
+type: feature
+priority: medium
+status: done
+assignee: OpenCode DeepSeek V4 Flash
+created: 2026-06-09
+updated: 2026-06-09
+---
 
 ETF 專屬優化修改方案：
 ------------------------------
