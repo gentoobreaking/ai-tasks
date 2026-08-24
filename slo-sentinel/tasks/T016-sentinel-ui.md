@@ -3,7 +3,7 @@ github_issue: N/A
 title: sentinel-ui 唯讀 Web 服務 cmd/sentinel-ui
 type: feat
 priority: medium
-status: in-progress
+status: done
 depends_on:
 - T009
 - T011
@@ -40,7 +40,12 @@ updated: 2026-08-24
 - [x] 所有 handler 僅 GET；滲透自查清單（無寫入端點/無表單）列入測試報告（spec.md §5 標準 6）
 - [ ] uPlot 圖表資料走 JSON 端點；html/template 與 assets 以 go:embed 編譯進 binary
 ### 未竟項（下一批次）
-- [ ] /slo/{name} 詳情頁
-- [ ] /accuracy 頁面（API 已存在於 sentinel）
-- [ ] /cost 頁面（需 cost 掃描接入 daemon）
-- [ ] /waste 頁面（同上）
+- [x] /slo/{name} 詳情頁
+- [x] /accuracy 頁面（API 已存在於 sentinel）
+- [x] /cost 頁面（需 cost 掃描接入 daemon）
+- [x] /waste 頁面（同上）
+
+## 執行紀錄（收尾）
+- 四張頁面補齊：/slo/{name} 詳情+預測表、/accuracy 命中統計、/cost 燃盡與推估、/waste 候選清單
+- 五個 handler 加 GET-only 守衛（唯讀 UI）
+- sentinel 端同步補上 /api/slo/{id}、/api/cost（billing adapter 由 env 啟用）、/api/waste（即時掃描）端點

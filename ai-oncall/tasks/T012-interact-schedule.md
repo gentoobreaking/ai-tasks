@@ -3,7 +3,7 @@ github_issue: N/A
 title: Telegram 決策層互動與排班升級鏈
 type: feat
 priority: medium
-status: pending
+status: done
 depends_on:
 - T010
 - T004

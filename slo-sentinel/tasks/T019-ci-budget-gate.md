@@ -1,6 +1,6 @@
 ---
 github_issue: N/A
-title: 預算燒穿 CI 部署閘門（F6）
+title: 成本/預算 CI 整合——notify 模式（F6 Phase 1）
 type: feat
 priority: low
 status: pending
@@ -20,22 +20,28 @@ blocked_on:
 
 # T019 - 預算燒穿 CI 部署閘門（F6）
 
-> ⛔ **本任務受外部條件約束**：上方 `blocked_on` 三項全數滿足前**不得開工**。
-> 排程器挑到本任務時，應先逐項檢查前置條件；未滿足則跳過並記錄原因。
-> 提前實作的風險：門檻未經校準就自動擋部署，誤擋會摧毀工具信譽。
-
 ## 目標
-Error budget 燒穿（狀態機進入 critical）時，對目標服務的 CI/CD 管線產生實質約束：
-部署步驟查詢 sentinel 的預算狀態端點，critical 時以非零 exit code 擋下並在 PR/流水線
-留言說明原因與豁免途徑。
+freeze_policy.yaml `mode: notify` 下的軟性整合：
+- sentinel 提供唯讀端點 `/api/budget-status/{slo_id}`，回傳
+  `{mode, state, remaining_budget%, eta, confirmed_date}`
+- 提供 CI step 片段（bash + curl）：warning 時在 PR/流水線**留言警告**，
+  critical 亦僅留言＋exit code 為 0（不阻擋），全程寫入紀錄供日後校準
+
+> 本任務為 notify 模式；enforce（暫停部署）見 T021，其 blocked_on 含政策檔切換與數據校準前置。
 
 ## 功能設計
-1. sentinel 新增唯讀端點 `/api/budget-status/{slo_id}`：
-   回傳 `{state, remaining_budget%, eta, confirmed_date}`（沿用 store 既有資料）
-2. 提供 CI step 片段（bash + curl）：state=critical 時 exit 1，附人話說明與豁免申請連結
-3. 豁免機制：admin 於 Telegram 批准「限期豁免」（預設 24h），期間端點回傳豁免戳記；
-   豁免紀錄入時間線供 postmortem 追溯
+1. **政策檔熱載入**：freeze_policy.yaml 變更（fsnotify）→ 立即生效免重啟；
+   啟動時驗證 prerequisites，缺件自動降級 notify
+2. **政策 CLI**：
+   - `sentinel policy status`（現行模式/門檻/豁免者）
+   - `sentinel policy override --mode <notify|enforce> --duration 24h --reason "..."`
+     （臨時覆寫存 SQLite 帶到期自動還原；審計欄位記 reason 與操作者）
+3. sentinel 提供唯讀端點 `/api/budget-status/{slo_id}`，回傳
+   `{mode, state, remaining_budget%, eta, confirmed_date}`
+4. CI step 片段（bash + curl）：依當下 mode 反應——notify 只留言；enforce 見 T021
 
+> 生產實務：平時用 notify；需要收緊時改檔案或下臨時 override，
+> 不必重新部署。所有切換都有審計紀錄。
 ## 驗收標準
 - [ ] 前置條件三項逐一驗證通過並記錄於本檔（日期＋證據連結）後，才開始實作
 - [ ] 端點回傳格式有契約測試；CI step 片段在 critical/warning/healthy 三狀態下行為正確

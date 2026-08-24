@@ -3,7 +3,7 @@ github_issue: N/A
 title: ★ executor 頂層套件（runner + redaction）
 type: feat
 priority: high
-status: pending
+status: done
 depends_on:
 - T010
 assignee: "pi with opencode/x-preview-f-free"

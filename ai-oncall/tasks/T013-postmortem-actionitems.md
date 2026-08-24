@@ -3,7 +3,7 @@ github_issue: N/A
 title: postmortem 草稿與 action items 追蹤
 type: feat
 priority: medium
-status: pending
+status: done
 depends_on:
 - T009
 assignee: "pi with opencode/x-preview-f-free"

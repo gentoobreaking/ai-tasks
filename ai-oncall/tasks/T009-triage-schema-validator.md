@@ -3,7 +3,7 @@ github_issue: N/A
 title: 分診管線編排與 schema 驗證修復迴圈
 type: feat
 priority: high
-status: pending
+status: done
 depends_on:
 - T002
 - T003

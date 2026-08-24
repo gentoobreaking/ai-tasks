@@ -47,7 +47,7 @@ SRE 對「服務可靠性」的承諾靠 SLO 與 Error Budget 管理，但實務
 | F3 | 主動通知 | 達到閾值 → Telegram 推播：剩餘剩餘預算、預計耗盡時間、建議動作文字 |
 | F4 | 恢復通知 | 進入警示後回到安全範圍 → 發送 resolved 訊息（避免提醒疲勞需有去重/靜默設計） |
 | F5 | CLI 查詢 | `slo-sentinel status` 一鍵列出所有 SLO 的現況表（預算%、burn rate、狀態） |
-| F6 | CI 整合——**任務書 T019**（受外部條件約束：運行 ≥30 天＋門檻校準＋CI 管線確定） | budget 見底時對 PR/部署管線留言或以 exit code 擋部署 |
+| F6 | CI 整合——**任務書 T019（notify）/ T021（enforce）**，兩模式可運行時熱切換 | budget 見底時對 PR/部署管線留言或以 exit code 擋部署；模式由 freeze_policy.yaml 定義，支援臨時覆寫（帶到期自動還原）與永久切換（git 審查） |
 | F7 | Web Dashboard（獨立服務） | 唯讀網頁：全 SLO 總表、單一 SLO 歷史曲線、歷次觸警紀錄；與 daemon 分進程部署 |
 | F8 | 容量感測目錄（Prometheus rules 格式） | 以**標準 Prometheus rules 檔案**為基底（不自造格式）：recording rules 正規化 + alert 規則含告警對象（labels 路由）與告警訊息（annotations 模板）；patch 自 awesome-prometheus-alerts 最新版 + sentinel 註解慣例；熱載入、上游同步、promtool 驗證——詳見 §6.8 |
 | F9 | 容量觸頂預警 | 同一顆 ETA 引擎重用：軟頂之上開始預測「幾小時/幾天後觸及硬頂」，激進/穩健雙視野並陳。**演算法詳見 [`algs/capacity-eta.md`](algs/capacity-eta.md)**（Theil–Sen 斜率 + 雙視野外插 + 觸發條件表）。**雲端 autoscale 場景尤其關鍵**：擴容會掩蓋飽和徵兆（SLO 綠燈假象），真正的炸點是 quota 上限 / node max / 機型缺貨 / IP 耗盡等撞牆式失敗——靜態閾值與 SLO 都看不見，只有外插預測看得見 |

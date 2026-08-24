@@ -1,6 +1,6 @@
 # 📁 Projects Dashboard
 
-> 最後更新: 2026-08-24 09:55 · 自動生成
+> 最後更新: 2026-08-24 10:40 · 自動生成
 
 ---
 
@@ -9,10 +9,10 @@
 | 指標 | 數量 |
 |------|------|
 | 專案數 | 64 |
-| 任務總數 | 1164 |
-| ✅ 已完成 | 1082 |
-| ⬜ 待處理 | 17 |
-| 🔄 進行中 | 2 |
+| 任務總數 | 1165 |
+| ✅ 已完成 | 1087 |
+| ⬜ 待處理 | 14 |
+| 🔄 進行中 | 1 |
 | ⏭️ 跳過 | 63 |
 | 總完成率 | 98% |
 
@@ -22,9 +22,7 @@
 |------|------|------|
 | ai-oncall | [T003-collect-fanout](https://github.com/gentoobreaking/ai-tasks/blob/main/ai-oncall/tasks/T003-collect-fanout.md) | context 收集器 fan-out |
 | ai-oncall | [T005-core-skeleton](https://github.com/gentoobreaking/ai-tasks/blob/main/ai-oncall/tasks/T005-core-skeleton.md) | oncall-core 骨架、gRPC servicer 與 SQLite store |
-| ai-oncall | [T009-triage-schema-validator](https://github.com/gentoobreaking/ai-tasks/blob/main/ai-oncall/tasks/T009-triage-schema-validator.md) | 分診管線編排與 schema 驗證修復迴圈 |
 | ai-oncall | [T010-runbook-parse-approval](https://github.com/gentoobreaking/ai-tasks/blob/main/ai-oncall/tasks/T010-runbook-parse-approval.md) | runbook 解析與批准閘門語意 |
-| ai-oncall | [T011-executor-package](https://github.com/gentoobreaking/ai-tasks/blob/main/ai-oncall/tasks/T011-executor-package.md) | ★ executor 頂層套件（runner + redaction） |
 | ai-oncall | [T016-shadow-mode](https://github.com/gentoobreaking/ai-tasks/blob/main/ai-oncall/tasks/T016-shadow-mode.md) | Shadow Mode 全域旗標與管線整合 |
 | ai-oncall | [T019-e2e-integration](https://github.com/gentoobreaking/ai-tasks/blob/main/ai-oncall/tasks/T019-e2e-integration.md) | 端到端整合測試（spec.md §5 全覆蓋） |
 
@@ -37,11 +35,7 @@
 |------|------|------|------|
 | ai-oncall | [T003-collect-fanout](https://github.com/gentoobreaking/ai-tasks/blob/main/ai-oncall/tasks/T003-collect-fanout.md) | context 收集器 fan-out | ⬜ |
 | ai-oncall | [T005-core-skeleton](https://github.com/gentoobreaking/ai-tasks/blob/main/ai-oncall/tasks/T005-core-skeleton.md) | oncall-core 骨架、gRPC servicer 與 SQLite store | ⬜ |
-| ai-oncall | [T009-triage-schema-validator](https://github.com/gentoobreaking/ai-tasks/blob/main/ai-oncall/tasks/T009-triage-schema-validator.md) | 分診管線編排與 schema 驗證修復迴圈 | ⬜ |
 | ai-oncall | [T010-runbook-parse-approval](https://github.com/gentoobreaking/ai-tasks/blob/main/ai-oncall/tasks/T010-runbook-parse-approval.md) | runbook 解析與批准閘門語意 | ⬜ |
-| ai-oncall | [T011-executor-package](https://github.com/gentoobreaking/ai-tasks/blob/main/ai-oncall/tasks/T011-executor-package.md) | ★ executor 頂層套件（runner + redaction） | ⬜ |
-| ai-oncall | [T012-interact-schedule](https://github.com/gentoobreaking/ai-tasks/blob/main/ai-oncall/tasks/T012-interact-schedule.md) | Telegram 決策層互動與排班升級鏈 | ⬜ |
-| ai-oncall | [T013-postmortem-actionitems](https://github.com/gentoobreaking/ai-tasks/blob/main/ai-oncall/tasks/T013-postmortem-actionitems.md) | postmortem 草稿與 action items 追蹤 | ⬜ |
 | ai-oncall | [T014-readapi](https://github.com/gentoobreaking/ai-tasks/blob/main/ai-oncall/tasks/T014-readapi.md) | UI 專用唯讀查詢 readapi | ⬜ |
 | ai-oncall | [T015-evalkit](https://github.com/gentoobreaking/ai-tasks/blob/main/ai-oncall/tasks/T015-evalkit.md) | evalkit 評測工具與 prompt_version 追蹤 | ⬜ |
 | ai-oncall | [T016-shadow-mode](https://github.com/gentoobreaking/ai-tasks/blob/main/ai-oncall/tasks/T016-shadow-mode.md) | Shadow Mode 全域旗標與管線整合 | ⬜ |
@@ -50,15 +44,15 @@
 | ai-oncall | [T019-e2e-integration](https://github.com/gentoobreaking/ai-tasks/blob/main/ai-oncall/tasks/T019-e2e-integration.md) | 端到端整合測試（spec.md §5 全覆蓋） | ⬜ |
 | gold-analysis-advanced | [T002](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis-advanced/tasks/T002.md) | ML 模型整合與優化 | ⬜ |
 | gold-analysis-advanced | [T004](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis-advanced/tasks/T004.md) | 實盤交易對接 | ⬜ |
-| slo-sentinel | [T019-ci-budget-gate](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T019-ci-budget-gate.md) | 預算燒穿 CI 部署閘門（F6） | ⬜ |
+| slo-sentinel | [T019-ci-budget-gate](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T019-ci-budget-gate.md) | 成本/預算 CI 整合——notify 模式（F6 Phase 1） | ⬜ |
 | slo-sentinel | [T020-oncall-integration](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T020-oncall-integration.md) | 容量預警接 ai-oncall 分診閉環（F10） | ⬜ |
+| slo-sentinel | [T021-freeze-enforce](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T021-freeze-enforce.md) | 成本/預算 CI 部署閘門——enforce 模式（F6 Phase 2） | ⬜ |
 
 ## 🔄 進行中
 
 | 專案 | 任務 | 標題 | 狀態 |
 |------|------|------|------|
 | gold-analysis-advanced | [T001](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis-advanced/tasks/T001.md) | 機器學習模型開發 | 🔄 |
-| slo-sentinel | [T016-sentinel-ui](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T016-sentinel-ui.md) | sentinel-ui 唯讀 Web 服務 cmd/sentinel-ui | 🔄 |
 
 ## ⏭️ 跳過
 
@@ -134,8 +128,8 @@
 
 | 指標 | 數值 |
 |------|------|
-| 過去 7 天完成 | 250 |
-| 過去 30 天完成 | 426 |
+| 過去 7 天完成 | 255 |
+| 過去 30 天完成 | 431 |
 | 平均週期時間 | 1.9 天 |
 | 週期時間中位數 | 0.0 天 |
 
@@ -145,22 +139,20 @@ xychart-beta
     title "過去 14 天任務完成趨勢"
     x-axis ["08-11", "08-12", "08-13", "08-14", "08-15", "08-16", "08-17", "08-18", "08-19", "08-20", "08-21", "08-22", "08-23", "08-24"]
     y-axis "完成數" 0 --> 119
-    line [11, 7, 0, 0, 8, 2, 119, 22, 16, 0, 3, 28, 0, 62]
+    line [11, 7, 0, 0, 8, 2, 119, 22, 16, 0, 3, 28, 0, 67]
 ```
 
-📊 總計: 278 | 日均: 19.9 | 本週: 131 | 📉 下降中
+📊 總計: 283 | 日均: 20.2 | 本週: 136 | 📉 下降中
 
 ## 📋 專案列表
 
 | 狀態 | 專案 | 總數 | ✅ | ⬜ | 🔄 | ⏭️ | 進度 | 更新 |
 |------|------|------|----|----|----|----|------|------|
 | ✅ | [agent-config](https://github.com/gentoobreaking/ai-tasks/tree/main/agent-config) | 9 | 9 | 0 | 0 | 0 | ████████████████████ 100% | 2026-04-09 |
-| ⬜ | [ai-oncall](https://github.com/gentoobreaking/ai-tasks/tree/main/ai-oncall) | 19 | 6 | 13 | 0 | 0 | ██████░░░░░░░░░░░░░░ 31% | 2026-08-24 |
+| ⬜ | [ai-oncall](https://github.com/gentoobreaking/ai-tasks/tree/main/ai-oncall) | 19 | 10 | 9 | 0 | 0 | ██████████░░░░░░░░░░ 52% | 2026-08-24 |
   **[T003-collect-fanout](https://github.com/gentoobreaking/ai-tasks/blob/main/ai-oncall/tasks/T003-collect-fanout.md)**: context 收集器 fan-out
   **[T005-core-skeleton](https://github.com/gentoobreaking/ai-tasks/blob/main/ai-oncall/tasks/T005-core-skeleton.md)**: oncall-core 骨架、gRPC servicer 與 SQLite store
-  **[T009-triage-schema-validator](https://github.com/gentoobreaking/ai-tasks/blob/main/ai-oncall/tasks/T009-triage-schema-validator.md)**: 分診管線編排與 schema 驗證修復迴圈
   **[T010-runbook-parse-approval](https://github.com/gentoobreaking/ai-tasks/blob/main/ai-oncall/tasks/T010-runbook-parse-approval.md)**: runbook 解析與批准閘門語意
-  **[T011-executor-package](https://github.com/gentoobreaking/ai-tasks/blob/main/ai-oncall/tasks/T011-executor-package.md)**: ★ executor 頂層套件（runner + redaction）
   **[T016-shadow-mode](https://github.com/gentoobreaking/ai-tasks/blob/main/ai-oncall/tasks/T016-shadow-mode.md)**: Shadow Mode 全域旗標與管線整合
   **[T019-e2e-integration](https://github.com/gentoobreaking/ai-tasks/blob/main/ai-oncall/tasks/T019-e2e-integration.md)**: 端到端整合測試（spec.md §5 全覆蓋）
 | ✅ | [automation-tools](https://github.com/gentoobreaking/ai-tasks/tree/main/automation-tools) | 1 | 1 | 0 | 0 | 0 | ████████████████████ 100% | 2026-05-16 |
@@ -211,7 +203,7 @@ xychart-beta
 | ✅ | [sinotrade-scraper](https://github.com/gentoobreaking/ai-tasks/tree/main/sinotrade-scraper) | 9 | 8 | 0 | 0 | 1 | ████████████████████ 100% | 2026-04-28 |
 | ✅ | [skill-enhancement](https://github.com/gentoobreaking/ai-tasks/tree/main/skill-enhancement) | 4 | 4 | 0 | 0 | 0 | ████████████████████ 100% | 2026-04-04 |
 | ✅ | [skills-audit](https://github.com/gentoobreaking/ai-tasks/tree/main/skills-audit) | 5 | 5 | 0 | 0 | 0 | ████████████████████ 100% | 2026-05-19 |
-| 🔄 | [slo-sentinel](https://github.com/gentoobreaking/ai-tasks/tree/main/slo-sentinel) | 20 | 17 | 2 | 1 | 0 | █████████████████░░░ 85% | 2026-08-24 |
+| ⬜ | [slo-sentinel](https://github.com/gentoobreaking/ai-tasks/tree/main/slo-sentinel) | 21 | 18 | 3 | 0 | 0 | █████████████████░░░ 85% | 2026-08-24 |
 | ✅ | [taolive-ios](https://github.com/gentoobreaking/ai-tasks/tree/main/taolive-ios) | 67 | 19 | 0 | 0 | 48 | ████████████████████ 100% | 2026-05-14 |
 | ✅ | [task-url-repair](https://github.com/gentoobreaking/ai-tasks/tree/main/task-url-repair) | 1 | 1 | 0 | 0 | 0 | ████████████████████ 100% | 2026-04-20 |
 | ✅ | [tasks-executor](https://github.com/gentoobreaking/ai-tasks/tree/main/tasks-executor) | 8 | 8 | 0 | 0 | 0 | ████████████████████ 100% | 2026-05-12 |
