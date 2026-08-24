@@ -48,6 +48,14 @@ freeze_policy.yaml `mode: notify` 下的軟性整合：
 - [ ] 豁免流程端到端測試：批准 → 端點放行 → 期限過後恢復阻擋
 - [ ] 誤擋演練：模擬誤報情境下，開發者可在 5 分鐘內自行完成豁免（文件化）
 
+## 執行紀錄（2026-08-25：Phase 1 地基預建）
+- 已提前實作（使用者指示）：`GET /api/budget-status/{slo_id}` 端點＋契約測試、
+  `scripts/cd-budget-handler.sh`（三狀態/fail-open/jq 備援/BUDGET_ENFORCE 鉤點）、
+  `docs/ci-budget-gate.md` 四種 CI 接入範例、httptest→真 bash 腳本煙霧測試。
+  Commit：feat "成本/預算 CD 閘門 Phase 1"。
+- **狀態維持 pending**：政策檔熱載入、policy CLI、豁免流程端到端、誤擋演練
+  文件化仍鎖在 blocked_on 三項前置後，不得提前放水。
+
 ## 備註
 - 擋部署是政策決定：門檻值必須來自 T009 運行期累積的真實數據校準，不得拍腦袋
 - 對應規格：spec.md F6；原列「後期」，本任務書將其納入追蹤但鎖在前置條件後

@@ -27,3 +27,9 @@ updated: 2026-08-24
 - 已達成 4 項並打勾。
 - **未竟事項**：無。
 - 補充（證據）：fanout_test.go：TestFanOut_RunsInParallel（4×300ms <900ms）、SlowPathDoesNotBlockOthers、AllFail_DegradedMode/PartialFailure（degraded_sources 標注）；scaling.go 軌跡測試（fake Prometheus 序列 4→12→8）；Collector 介面＋fakeCollector 注入；-race 綠。
+## 執行紀錄（2026-08-24 二輪稽核：接線審計）
+- 元件層驗收全數達成（首輪已打勾）。
+- **未竟事項（接線）**：`collect.FanOut` 目前無 production caller——
+  spec §3.1「core → gate 收集 context」箭頭需要 gate 端提供 gRPC server
+  實作 CollectContext RPC（proto 已定義），此為跨任務整合缺口，
+  已列為下一批次工作（gate gRPC server + FanOut 接線 + 契約測試）。

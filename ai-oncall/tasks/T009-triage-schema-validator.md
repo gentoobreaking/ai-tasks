@@ -35,3 +35,8 @@ TriageReport。取消檢查點、降級模式、Shadow Mode 支援。
 - 已達成 7 項並打勾。
 - **未竟事項**：無。
 - 補充（證據）：test_t009_triage.py：§C.1 驗證器單元測試；修復迴圈一次 repair 後降級（10 案例壞輸出語料集逐一斷言 repair 次數/降級路徑/token 計數/schema_failure 時間線）；取消檢查點中止 provider.call_count==0；missing_context 強制補列（禁幻覺）＋prompt 內嵌 do-NOT-invent 警示；Shadow Mode 落盤；每筆帶 prompt_version；ensure_executor_input() 硬拒絕測試。
+## 執行紀錄（2026-08-24 二輪稽核：接線審計）
+- 首輪驗收全數達成。二輪接線審計確認：分診管線已由 triage_runner 接入
+  ReportIncident（上輪補線），但**報告推播依賴 gate 的 DeliverNotification
+  gRPC server（尚未建置）**——GateNotifier 目前呼叫會失敗且僅記 log。
+  影響範圍：分診報告可產出、predictions 可入库，唯 Telegram 推播不可達。

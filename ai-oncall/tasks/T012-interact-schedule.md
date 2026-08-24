@@ -28,3 +28,10 @@ updated: 2026-08-24
 - 已達成 3 項並打勾。
 - **未竟事項**：無。
 - 補充（證據）：test_t012_interact.py：approve/reject+原因（入 RAG）/snooze 三分支；Roster 未設定 chain()==[admin]、靜態三級依序升級測試（primary→secondary→manager 後棄單）；ICS 解析當值者為 primary；RBAC 非 admin approve 拋 RBACError、primary/manager/明列 admins 可批准、任何角色可附原因拒絕。
+## 執行紀錄（2026-08-24 二輪稽核：接線審計）
+- 元件層驗收全數達成（首輪已打勾）。
+- **未竟事項（接線）**：ApprovalGate/InteractionRouter 無 production caller——
+  gate 轉發來的 ActionCallback 在 core servicer 中僅記時間線，不會觸發
+  批准閘門狀態機；executor 也因此尚無生產路徑。需「互動編排」接線：
+  分診報告附帶 callback_id → ActionCallback 路由至 ApprovalGate →
+  批准後呼叫 ExecutorRunner。已列為下一批次工作。
