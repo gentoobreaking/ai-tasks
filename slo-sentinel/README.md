@@ -13,7 +13,7 @@
 | 容量感測引擎 internal/capacity |
 | Telegram 通知層 internal/alert |
 | daemon 主迴圈與 CLI cmd/sentinel |
-| 成本帳務 adapter internal/billing |
+| 帳務 adapter internal/billing（actual 校準模式，選配） |
 | 成本預測與報表 internal/cost |
 | 瘦身掃描器與雲端 provider internal/waste |
 | K8s/OpenShift provider（K1–K4 感測） |
@@ -22,6 +22,7 @@
 | sentinel-ui 唯讀 Web 服務 cmd/sentinel-ui |
 | 上線部署文件與 systemd/container 佈建 |
 | 端到端整合測試（成功標準全覆蓋） |
+| 價目表目錄 internal/pricing（estimate 模式主路徑） |
 
 ## Skip 項目
 
@@ -56,7 +57,7 @@
 | [T7-capacity-sensor](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T007-capacity-sensor.md) | 容量感測引擎 internal/capacity | ✅ done |
 | [T8-alert-notify](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T008-alert-notify.md) | Telegram 通知層 internal/alert | ✅ done |
 | [T9-daemon-main](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T009-daemon-main.md) | daemon 主迴圈與 CLI cmd/sentinel | ✅ done |
-| [T10-billing-adapters](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T010-billing-adapters.md) | 成本帳務 adapter internal/billing | ✅ done |
+| [T10-billing-adapters](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T010-billing-adapters.md) | 帳務 adapter internal/billing（actual 校準模式，選配） | ✅ done |
 | [T11-cost-engine](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T011-cost-engine.md) | 成本預測與報表 internal/cost | ✅ done |
 | [T12-waste-cloud-provider](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T012-waste-cloud-provider.md) | 瘦身掃描器與雲端 provider internal/waste | ✅ done |
 | [T13-waste-k8s-provider](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T013-waste-k8s-provider.md) | K8s/OpenShift provider（K1–K4 感測） | ✅ done |
@@ -68,7 +69,8 @@
 | [T19-ci-budget-gate](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T019-ci-budget-gate.md) | 成本/預算 CI 整合——notify 模式（F6 Phase 1） | 📋 pending |
 | [T20-oncall-integration](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T020-oncall-integration.md) | 容量預警接 ai-oncall 分診閉環（F10） | 📋 pending |
 | [T21-freeze-enforce](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T021-freeze-enforce.md) | 成本/預算 CI 部署閘門——enforce 模式（F6 Phase 2） | 📋 pending |
+| [T22-pricing-catalog](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T022-pricing-catalog.md) | 價目表目錄 internal/pricing（estimate 模式主路徑） | ✅ done |
 
-**✅ done: 18 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 3**
+**✅ done: 19 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 3**
 
-> 自動生成於 2026-08-24 10:40
+> 自動生成於 2026-08-24 13:41

@@ -1,6 +1,6 @@
 # 📅 Daily Dashboard - 2026-08-24
 
-> 最後更新: 2026-08-24 10:40 · 自動生成
+> 最後更新: 2026-08-24 13:41 · 自動生成
 
 ---
 
@@ -27,6 +27,8 @@
 | ai-oncall | [T017-oncall-ui](https://github.com/gentoobreaking/ai-tasks/blob/main/ai-oncall/tasks/T017-oncall-ui.md) | oncall-ui 唯讀 Web 服務 |
 | ai-oncall | [T018-deploy-docs](https://github.com/gentoobreaking/ai-tasks/blob/main/ai-oncall/tasks/T018-deploy-docs.md) | 上線部署文件與三服務佈建 |
 | ai-oncall | [T019-e2e-integration](https://github.com/gentoobreaking/ai-tasks/blob/main/ai-oncall/tasks/T019-e2e-integration.md) | 端到端整合測試（spec.md §5 全覆蓋） |
+| ai-oncall | [T020-gate-grpc-server](https://github.com/gentoobreaking/ai-tasks/blob/main/ai-oncall/tasks/T020-gate-grpc-server.md) | gate gRPC server 接線（DeliverNotification/CollectContext/tgtransport） |
+| ai-oncall | [T021-core-approval-executor-wiring](https://github.com/gentoobreaking/ai-tasks/blob/main/ai-oncall/tasks/T021-core-approval-executor-wiring.md) | core 批准→執行編排接線（ActionCallback → ApprovalGate → ExecutorRunner） |
 | digital-twin | [T090-fix-ci-pyright-and-lockfile](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T090-fix-ci-pyright-and-lockfile.md) | 修復 CI 紅燈 — pyright 歸零與 uv.lock 同步 |
 | digital-twin | [T091-python-version-contract](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T091-python-version-contract.md) | Python 版本契約統一（requires-python 升 3.11 或降級 asyncio.timeout） |
 | digital-twin | [T092-webhook-secret-enforce](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T092-webhook-secret-enforce.md) | Telegram webhook secret 強制化（生產模式 fail-fast） |
@@ -46,7 +48,7 @@
 | slo-sentinel | [T007-capacity-sensor](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T007-capacity-sensor.md) | 容量感測引擎 internal/capacity |
 | slo-sentinel | [T008-alert-notify](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T008-alert-notify.md) | Telegram 通知層 internal/alert |
 | slo-sentinel | [T009-daemon-main](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T009-daemon-main.md) | daemon 主迴圈與 CLI cmd/sentinel |
-| slo-sentinel | [T010-billing-adapters](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T010-billing-adapters.md) | 成本帳務 adapter internal/billing |
+| slo-sentinel | [T010-billing-adapters](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T010-billing-adapters.md) | 帳務 adapter internal/billing（actual 校準模式，選配） |
 | slo-sentinel | [T011-cost-engine](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T011-cost-engine.md) | 成本預測與報表 internal/cost |
 | slo-sentinel | [T012-waste-cloud-provider](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T012-waste-cloud-provider.md) | 瘦身掃描器與雲端 provider internal/waste |
 | slo-sentinel | [T013-waste-k8s-provider](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T013-waste-k8s-provider.md) | K8s/OpenShift provider（K1–K4 感測） |
@@ -58,6 +60,7 @@
 | slo-sentinel | [T019-ci-budget-gate](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T019-ci-budget-gate.md) | 成本/預算 CI 整合——notify 模式（F6 Phase 1） |
 | slo-sentinel | [T020-oncall-integration](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T020-oncall-integration.md) | 容量預警接 ai-oncall 分診閉環（F10） |
 | slo-sentinel | [T021-freeze-enforce](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T021-freeze-enforce.md) | 成本/預算 CI 部署閘門——enforce 模式（F6 Phase 2） |
+| slo-sentinel | [T022-pricing-catalog](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T022-pricing-catalog.md) | 價目表目錄 internal/pricing（estimate 模式主路徑） |
 | tw-quant-pickup | [T044-stock-fair-value-cmoney4](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T044-stock-fair-value-cmoney4.md) | 個股 CMoney 四法合理價計算器 |
 | tw-quant-pickup | [T045-etf-fair-value](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T045-etf-fair-value.md) | ETF 兩法合理價計算器 |
 | tw-quant-pickup | [T046-fair-value-md-report](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T046-fair-value-md-report.md) | 合理價 Markdown 報表匯出 |
@@ -70,14 +73,23 @@
 | -- | -- | -- |
 | ai-oncall | [T001-gate-skeleton-proto](https://github.com/gentoobreaking/ai-tasks/blob/main/ai-oncall/tasks/T001-gate-skeleton-proto.md) | oncall-gate 骨架與 proto 契約 |
 | ai-oncall | [T002-ingest-auth-idempotency](https://github.com/gentoobreaking/ai-tasks/blob/main/ai-oncall/tasks/T002-ingest-auth-idempotency.md) | webhook 接收：認證、冪等、正規化 |
+| ai-oncall | [T003-collect-fanout](https://github.com/gentoobreaking/ai-tasks/blob/main/ai-oncall/tasks/T003-collect-fanout.md) | context 收集器 fan-out |
 | ai-oncall | [T004-tgtransport](https://github.com/gentoobreaking/ai-tasks/blob/main/ai-oncall/tasks/T004-tgtransport.md) | Telegram 傳輸層 tgtransport |
+| ai-oncall | [T005-core-skeleton](https://github.com/gentoobreaking/ai-tasks/blob/main/ai-oncall/tasks/T005-core-skeleton.md) | oncall-core 骨架、gRPC servicer 與 SQLite store |
 | ai-oncall | [T006-incident-correlate-hashchain](https://github.com/gentoobreaking/ai-tasks/blob/main/ai-oncall/tasks/T006-incident-correlate-hashchain.md) | Incident 模型、風暴聚合與時間線雜湊鏈 |
 | ai-oncall | [T007-memory-rag](https://github.com/gentoobreaking/ai-tasks/blob/main/ai-oncall/tasks/T007-memory-rag.md) | RAG 知識庫 memory/indexer + search |
 | ai-oncall | [T008-brain-providers-budget](https://github.com/gentoobreaking/ai-tasks/blob/main/ai-oncall/tasks/T008-brain-providers-budget.md) | LLM providers 子套件與 token 預算 |
 | ai-oncall | [T009-triage-schema-validator](https://github.com/gentoobreaking/ai-tasks/blob/main/ai-oncall/tasks/T009-triage-schema-validator.md) | 分診管線編排與 schema 驗證修復迴圈 |
+| ai-oncall | [T010-runbook-parse-approval](https://github.com/gentoobreaking/ai-tasks/blob/main/ai-oncall/tasks/T010-runbook-parse-approval.md) | runbook 解析與批准閘門語意 |
 | ai-oncall | [T011-executor-package](https://github.com/gentoobreaking/ai-tasks/blob/main/ai-oncall/tasks/T011-executor-package.md) | ★ executor 頂層套件（runner + redaction） |
 | ai-oncall | [T012-interact-schedule](https://github.com/gentoobreaking/ai-tasks/blob/main/ai-oncall/tasks/T012-interact-schedule.md) | Telegram 決策層互動與排班升級鏈 |
 | ai-oncall | [T013-postmortem-actionitems](https://github.com/gentoobreaking/ai-tasks/blob/main/ai-oncall/tasks/T013-postmortem-actionitems.md) | postmortem 草稿與 action items 追蹤 |
+| ai-oncall | [T014-readapi](https://github.com/gentoobreaking/ai-tasks/blob/main/ai-oncall/tasks/T014-readapi.md) | UI 專用唯讀查詢 readapi |
+| ai-oncall | [T015-evalkit](https://github.com/gentoobreaking/ai-tasks/blob/main/ai-oncall/tasks/T015-evalkit.md) | evalkit 評測工具與 prompt_version 追蹤 |
+| ai-oncall | [T016-shadow-mode](https://github.com/gentoobreaking/ai-tasks/blob/main/ai-oncall/tasks/T016-shadow-mode.md) | Shadow Mode 全域旗標與管線整合 |
+| ai-oncall | [T017-oncall-ui](https://github.com/gentoobreaking/ai-tasks/blob/main/ai-oncall/tasks/T017-oncall-ui.md) | oncall-ui 唯讀 Web 服務 |
+| ai-oncall | [T018-deploy-docs](https://github.com/gentoobreaking/ai-tasks/blob/main/ai-oncall/tasks/T018-deploy-docs.md) | 上線部署文件與三服務佈建 |
+| ai-oncall | [T019-e2e-integration](https://github.com/gentoobreaking/ai-tasks/blob/main/ai-oncall/tasks/T019-e2e-integration.md) | 端到端整合測試（spec.md §5 全覆蓋） |
 | digital-twin | [T089-pi-integration-and-quality-optimization](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T089-pi-integration-and-quality-optimization.md) | pi Agent 整合反饋閉環 ＋ 全專案品質優化（env 收斂/模組拆分/測試隔離） |
 | digital-twin | [T090-fix-ci-pyright-and-lockfile](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T090-fix-ci-pyright-and-lockfile.md) | 修復 CI 紅燈 — pyright 歸零與 uv.lock 同步 |
 | digital-twin | [T091-python-version-contract](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T091-python-version-contract.md) | Python 版本契約統一（requires-python 升 3.11 或降級 asyncio.timeout） |
@@ -113,8 +125,7 @@
 | slo-sentinel | [T007-capacity-sensor](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T007-capacity-sensor.md) | 容量感測引擎 internal/capacity |
 | slo-sentinel | [T008-alert-notify](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T008-alert-notify.md) | Telegram 通知層 internal/alert |
 | slo-sentinel | [T009-daemon-main](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T009-daemon-main.md) | daemon 主迴圈與 CLI cmd/sentinel |
-| slo-sentinel | [T010-billing-adapters](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T010-billing-adapters.md) | 成本帳務 adapter internal/billing |
-| slo-sentinel | [T011-cost-engine](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T011-cost-engine.md) | 成本預測與報表 internal/cost |
+| slo-sentinel | [T010-billing-adapters](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T010-billing-adapters.md) | 帳務 adapter internal/billing（actual 校準模式，選配） |
 | slo-sentinel | [T012-waste-cloud-provider](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T012-waste-cloud-provider.md) | 瘦身掃描器與雲端 provider internal/waste |
 | slo-sentinel | [T013-waste-k8s-provider](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T013-waste-k8s-provider.md) | K8s/OpenShift provider（K1–K4 感測） |
 | slo-sentinel | [T014-waste-standalone-provider](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T014-waste-standalone-provider.md) | Standalone server provider（S1–S3 感測） |
@@ -142,11 +153,8 @@
 
 | 專案 | 任務 | 標題 | 優先 |
 | -- | -- | -- | -- |
-| ai-oncall | [T003-collect-fanout](https://github.com/gentoobreaking/ai-tasks/blob/main/ai-oncall/tasks/T003-collect-fanout.md) | context 收集器 fan-out | high |
-| ai-oncall | [T005-core-skeleton](https://github.com/gentoobreaking/ai-tasks/blob/main/ai-oncall/tasks/T005-core-skeleton.md) | oncall-core 骨架、gRPC servicer 與 SQLite store | high |
-| ai-oncall | [T010-runbook-parse-approval](https://github.com/gentoobreaking/ai-tasks/blob/main/ai-oncall/tasks/T010-runbook-parse-approval.md) | runbook 解析與批准閘門語意 | high |
-| ai-oncall | [T016-shadow-mode](https://github.com/gentoobreaking/ai-tasks/blob/main/ai-oncall/tasks/T016-shadow-mode.md) | Shadow Mode 全域旗標與管線整合 | high |
-| ai-oncall | [T019-e2e-integration](https://github.com/gentoobreaking/ai-tasks/blob/main/ai-oncall/tasks/T019-e2e-integration.md) | 端到端整合測試（spec.md §5 全覆蓋） | high |
+| ai-oncall | [T020-gate-grpc-server](https://github.com/gentoobreaking/ai-tasks/blob/main/ai-oncall/tasks/T020-gate-grpc-server.md) | gate gRPC server 接線（DeliverNotification/CollectContext/tgtransport） | high |
+| ai-oncall | [T021-core-approval-executor-wiring](https://github.com/gentoobreaking/ai-tasks/blob/main/ai-oncall/tasks/T021-core-approval-executor-wiring.md) | core 批准→執行編排接線（ActionCallback → ApprovalGate → ExecutorRunner） | high |
 
 ---
 
@@ -162,15 +170,8 @@
 
 | 專案 | 任務 | 標題 | 優先 |
 | -- | -- | -- | -- |
-| ai-oncall | [T003-collect-fanout](https://github.com/gentoobreaking/ai-tasks/blob/main/ai-oncall/tasks/T003-collect-fanout.md) | context 收集器 fan-out | high |
-| ai-oncall | [T005-core-skeleton](https://github.com/gentoobreaking/ai-tasks/blob/main/ai-oncall/tasks/T005-core-skeleton.md) | oncall-core 骨架、gRPC servicer 與 SQLite store | high |
-| ai-oncall | [T010-runbook-parse-approval](https://github.com/gentoobreaking/ai-tasks/blob/main/ai-oncall/tasks/T010-runbook-parse-approval.md) | runbook 解析與批准閘門語意 | high |
-| ai-oncall | [T016-shadow-mode](https://github.com/gentoobreaking/ai-tasks/blob/main/ai-oncall/tasks/T016-shadow-mode.md) | Shadow Mode 全域旗標與管線整合 | high |
-| ai-oncall | [T019-e2e-integration](https://github.com/gentoobreaking/ai-tasks/blob/main/ai-oncall/tasks/T019-e2e-integration.md) | 端到端整合測試（spec.md §5 全覆蓋） | high |
-| ai-oncall | [T014-readapi](https://github.com/gentoobreaking/ai-tasks/blob/main/ai-oncall/tasks/T014-readapi.md) | UI 專用唯讀查詢 readapi | medium |
-| ai-oncall | [T015-evalkit](https://github.com/gentoobreaking/ai-tasks/blob/main/ai-oncall/tasks/T015-evalkit.md) | evalkit 評測工具與 prompt_version 追蹤 | medium |
-| ai-oncall | [T017-oncall-ui](https://github.com/gentoobreaking/ai-tasks/blob/main/ai-oncall/tasks/T017-oncall-ui.md) | oncall-ui 唯讀 Web 服務 | medium |
-| ai-oncall | [T018-deploy-docs](https://github.com/gentoobreaking/ai-tasks/blob/main/ai-oncall/tasks/T018-deploy-docs.md) | 上線部署文件與三服務佈建 | low |
+| ai-oncall | [T020-gate-grpc-server](https://github.com/gentoobreaking/ai-tasks/blob/main/ai-oncall/tasks/T020-gate-grpc-server.md) | gate gRPC server 接線（DeliverNotification/CollectContext/tgtransport） | high |
+| ai-oncall | [T021-core-approval-executor-wiring](https://github.com/gentoobreaking/ai-tasks/blob/main/ai-oncall/tasks/T021-core-approval-executor-wiring.md) | core 批准→執行編排接線（ActionCallback → ApprovalGate → ExecutorRunner） | high |
 | gold-analysis-advanced | [T002](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis-advanced/tasks/T002.md) | ML 模型整合與優化 | low |
 | gold-analysis-advanced | [T004](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis-advanced/tasks/T004.md) | 實盤交易對接 | low |
 | slo-sentinel | [T019-ci-budget-gate](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T019-ci-budget-gate.md) | 成本/預算 CI 整合——notify 模式（F6 Phase 1） | low |
