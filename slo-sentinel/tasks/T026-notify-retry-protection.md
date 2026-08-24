@@ -3,12 +3,12 @@ github_issue: N/A
 title: 感測通知發送失敗保護——先發送成功才登記狀態
 type: fix
 priority: high
-status: pending
+status: done
 depends_on:
 - T009
 assignee: "pi with opencode/x-preview-f-free"
 created: 2026-08-25
-updated: 2026-08-25
+updated: 2026-08-26
 
 ---
 
@@ -32,10 +32,10 @@ updated: 2026-08-25
 4. 驗證邊界：critical→warning 降級路徑、resolved 路徑同樣受保護
 
 ## 驗收標準
-- [ ] fake notifier 先失敗後成功：第二次輪詢補送同一狀態轉移
-- [ ] Send 永遠失敗：dedupe 狀態不被推進（不吞掉未來的轉移通知）
-- [ ] 既有 e2e 測試全數通過（行為僅在失敗情境有別）
-- [ ] 連續失敗退避生效（單元測試覆蓋）
+- [x] fake notifier 先失敗後成功：第二次輪詢補送同一狀態轉移
+- [x] Send 永遠失敗：dedupe 狀態不被推進（不吞掉未來的轉移通知）
+- [x] 既有 e2e 測試全數通過（行為僅在失敗情境有別）
+- [x] 連續失敗退避生效（單元測試覆蓋）
 
 ## 備註
 - critical 通知丟失是值班場景的一等事故——本任務優先級 high

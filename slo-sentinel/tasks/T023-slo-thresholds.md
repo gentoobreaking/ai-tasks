@@ -3,13 +3,13 @@ github_issue: N/A
 title: SLO 感測門檻可調整——slo_defs 支援 thresholds 區塊
 type: feat
 priority: medium
-status: pending
+status: done
 depends_on:
 - T002
 - T009
 assignee: "pi with opencode/x-preview-f-free"
 created: 2026-08-25
-updated: 2026-08-25
+updated: 2026-08-26
 
 ---
 
@@ -41,11 +41,11 @@ capacity 家族已支援 per-sensor 門檻覆寫（`ThresholdsOverlay` 四欄位
    （對應 budget.Thresholds.validate）
 
 ## 驗收標準
-- [ ] `slo_defs` schema 解析 thresholds 四個可選欄位（缺省不影響既有檔案）
-- [ ] 未設定時行為與現狀完全一致（回歸測試）
-- [ ] 設定後引擎收到覆寫值（單元測試斷言 Th 內容）
-- [ ] 非法組合（soft ≥ crit、warn_eta ≤ crit_eta）啟動時報錯明確
-- [ ] 文件同步：`docs/engine-budget-capacity.md` §6 門檻調整速查表
+- [x] `slo_defs` schema 解析 thresholds 四個可選欄位（缺省不影響既有檔案）
+- [x] 未設定時行為與現狀完全一致（回歸測試）
+- [x] 設定後引擎收到覆寫值（單元測試斷言 Th 內容）
+- [x] 非法組合（soft ≥ crit、warn_eta ≤ crit_eta）啟動時報錯明確
+- [x] 文件同步：`docs/engine-budget-capacity.md` §6 門檻調整速查表
       移除「budget 家族不可調」的現狀描述；README Configuration 表補充
 
 ## 備註

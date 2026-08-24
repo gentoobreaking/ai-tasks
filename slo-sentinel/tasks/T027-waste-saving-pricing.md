@@ -3,13 +3,13 @@ github_issue: N/A
 title: waste 浪費金額接 pricing——候選清單顯示每月可省金額
 type: feat
 priority: medium
-status: pending
+status: done
 depends_on:
 - T022
 - T015
 assignee: "pi with opencode/x-preview-f-free"
 created: 2026-08-25
-updated: 2026-08-25
+updated: 2026-08-26
 
 ---
 
@@ -34,10 +34,10 @@ waste 候選與 resolve 累積報表顯示「每月可省 $X」（原幣），�
 4. 查價失敗 → 金額欄留空＋標注原因（不阻擋候選成立）
 
 ## 驗收標準
-- [ ] 有 price 對照的候選顯示每月可省金額與幣別；無對照者顯示「—」不誤導
-- [ ] 查價走 Catalog.Quote（享受 TTL 快取與 stale fallback）
-- [ ] resolve 後的累積節省在 CLI/API 可查
-- [ ] 全套測試離線可跑（fake pricer）
+- [x] 有 price 對照的候選顯示每月可省金額與幣別；無對照者顯示「—」不誤導
+- [x] 查價走 Catalog.Quote（享受 TTL 快取與 stale fallback）
+- [x] resolve 後的累積節省在 CLI/API 可查
+- [x] 全套測試離線可跑（fake pricer）
 
 ## 備註
 - §D.4：幣別如實標注，混合幣別標 "mixed"，不做匯率換算

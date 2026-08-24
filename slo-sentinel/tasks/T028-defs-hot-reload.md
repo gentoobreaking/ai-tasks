@@ -3,13 +3,13 @@ github_issue: N/A
 title: capacity_defs／slo_defs 熱載入
 type: feat
 priority: medium
-status: pending
+status: done
 depends_on:
 - T005
 - T009
 assignee: "pi with opencode/x-preview-f-free"
 created: 2026-08-25
-updated: 2026-08-25
+updated: 2026-08-26
 
 ---
 
@@ -31,10 +31,10 @@ daemon。dev profile 實測時即遇到此摩擦（改 node-disk.yaml 需手動 
 4. 注意：重建感測器會清空引擎快取——文件標注此副作用
 
 ## 驗收標準
-- [ ] 新增／修改／刪除 def 檔後 60 秒內生效（無需重啟）
-- [ ] 解析失敗的新檔不影響既有感測運作（log 錯誤）
-- [ ] 三個目錄行為一致；watcher 無洩漏（重複變更不疊加 goroutine）
-- [ ] README「capacity_defs 非熱載入需重啟」的注意事項移除
+- [x] 新增／修改／刪除 def 檔後 60 秒內生效（無需重啟）
+- [x] 解析失敗的新檔不影響既有感測運作（log 錯誤）
+- [x] 三個目錄行為一致；watcher 無洩漏（重複變更不疊加 goroutine）
+- [x] README「capacity_defs 非熱載入需重啟」的注意事項移除
 
 ## 備註
 macOS Docker Desktop 的 bind mount fsnotify 事件可能不可靠

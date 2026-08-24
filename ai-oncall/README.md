@@ -25,6 +25,7 @@
 | 端到端整合測試（spec.md §5 全覆蓋） |
 | gate gRPC server 接線（DeliverNotification/CollectContext/tgtransport） |
 | core 批准→執行編排接線（ActionCallback → ApprovalGate → ExecutorRunner） |
+| cluster 感知收集器——多叢集 Prometheus 端點分流 |
 
 ## Skip 項目
 
@@ -69,7 +70,8 @@
 | [T19-e2e-integration](https://github.com/gentoobreaking/ai-tasks/blob/main/ai-oncall/tasks/T019-e2e-integration.md) | 端到端整合測試（spec.md §5 全覆蓋） | ✅ done |
 | [T20-gate-grpc-server](https://github.com/gentoobreaking/ai-tasks/blob/main/ai-oncall/tasks/T020-gate-grpc-server.md) | gate gRPC server 接線（DeliverNotification/CollectContext/tgtransport） | ✅ done |
 | [T21-core-approval-executor-wiring](https://github.com/gentoobreaking/ai-tasks/blob/main/ai-oncall/tasks/T021-core-approval-executor-wiring.md) | core 批准→執行編排接線（ActionCallback → ApprovalGate → ExecutorRunner） | ✅ done |
+| [T22-cluster-aware-collectors](https://github.com/gentoobreaking/ai-tasks/blob/main/ai-oncall/tasks/T022-cluster-aware-collectors.md) | cluster 感知收集器——多叢集 Prometheus 端點分流 | ✅ done |
 
-**✅ done: 21 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 0**
+**✅ done: 22 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 0**
 
-> 自動生成於 2026-08-24 15:18
+> 自動生成於 2026-08-24 23:38

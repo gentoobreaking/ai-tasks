@@ -23,6 +23,13 @@
 | 上線部署文件與 systemd/container 佈建 |
 | 端到端整合測試（成功標準全覆蓋） |
 | 價目表目錄 internal/pricing（estimate 模式主路徑） |
+| SLO 感測門檻可調整——slo_defs 支援 thresholds 區塊 |
+| waste Tracker daemon 接線——定期掃描與候選生命週期 |
+| 每日摘要定時觸發接線 |
+| 感測通知發送失敗保護——先發送成功才登記狀態 |
+| waste 浪費金額接 pricing——候選清單顯示每月可省金額 |
+| capacity_defs／slo_defs 熱載入 |
+| predictions 表 retention 清理 |
 
 ## Skip 項目
 
@@ -34,22 +41,14 @@
 
 | Task | 名稱 | 說明 |
 |------|------|------|
-| | | |
+| [T20-oncall-integration](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T020-oncall-integration.md) | 容量預警接 ai-oncall 分診閉環（F10） | |
 
 ## 待實作
 
 | Task | 名稱 | 說明 |
 |------|------|------|
 | [T19-ci-budget-gate](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T019-ci-budget-gate.md) | 成本/預算 CI 整合——notify 模式（F6 Phase 1） | |
-| [T20-oncall-integration](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T020-oncall-integration.md) | 容量預警接 ai-oncall 分診閉環（F10） | |
 | [T21-freeze-enforce](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T021-freeze-enforce.md) | 成本/預算 CI 部署閘門——enforce 模式（F6 Phase 2） | |
-| [T23-slo-thresholds](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T023-slo-thresholds.md) | SLO 感測門檻可調整——slo_defs 支援 thresholds 區塊 | |
-| [T24-waste-tracker-wiring](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T024-waste-tracker-wiring.md) | waste Tracker daemon 接線——定期掃描與候選生命週期 | |
-| [T25-daily-digest-wiring](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T025-daily-digest-wiring.md) | 每日摘要定時觸發接線 | |
-| [T26-notify-retry-protection](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T026-notify-retry-protection.md) | 感測通知發送失敗保護——先發送成功才登記狀態 | |
-| [T27-waste-saving-pricing](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T027-waste-saving-pricing.md) | waste 浪費金額接 pricing——候選清單顯示每月可省金額 | |
-| [T28-defs-hot-reload](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T028-defs-hot-reload.md) | capacity_defs／slo_defs 熱載入 | |
-| [T29-predictions-retention](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T029-predictions-retention.md) | predictions 表 retention 清理 | |
 | [T30-billing-real-verify](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T030-billing-real-verify.md) | 成本 adapter 真實雲端驗證（移除 NEEDS VERIFICATION） | |
 
 ## Task 列表
@@ -75,18 +74,18 @@
 | [T17-deploy-docs](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T017-deploy-docs.md) | 上線部署文件與 systemd/container 佈建 | ✅ done |
 | [T18-e2e-integration](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T018-e2e-integration.md) | 端到端整合測試（成功標準全覆蓋） | ✅ done |
 | [T19-ci-budget-gate](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T019-ci-budget-gate.md) | 成本/預算 CI 整合——notify 模式（F6 Phase 1） | 📋 pending |
-| [T20-oncall-integration](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T020-oncall-integration.md) | 容量預警接 ai-oncall 分診閉環（F10） | 📋 pending |
+| [T20-oncall-integration](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T020-oncall-integration.md) | 容量預警接 ai-oncall 分診閉環（F10） | 🔧 in-progress |
 | [T21-freeze-enforce](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T021-freeze-enforce.md) | 成本/預算 CI 部署閘門——enforce 模式（F6 Phase 2） | 📋 pending |
 | [T22-pricing-catalog](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T022-pricing-catalog.md) | 價目表目錄 internal/pricing（estimate 模式主路徑） | ✅ done |
-| [T23-slo-thresholds](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T023-slo-thresholds.md) | SLO 感測門檻可調整——slo_defs 支援 thresholds 區塊 | 📋 pending |
-| [T24-waste-tracker-wiring](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T024-waste-tracker-wiring.md) | waste Tracker daemon 接線——定期掃描與候選生命週期 | 📋 pending |
-| [T25-daily-digest-wiring](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T025-daily-digest-wiring.md) | 每日摘要定時觸發接線 | 📋 pending |
-| [T26-notify-retry-protection](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T026-notify-retry-protection.md) | 感測通知發送失敗保護——先發送成功才登記狀態 | 📋 pending |
-| [T27-waste-saving-pricing](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T027-waste-saving-pricing.md) | waste 浪費金額接 pricing——候選清單顯示每月可省金額 | 📋 pending |
-| [T28-defs-hot-reload](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T028-defs-hot-reload.md) | capacity_defs／slo_defs 熱載入 | 📋 pending |
-| [T29-predictions-retention](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T029-predictions-retention.md) | predictions 表 retention 清理 | 📋 pending |
+| [T23-slo-thresholds](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T023-slo-thresholds.md) | SLO 感測門檻可調整——slo_defs 支援 thresholds 區塊 | ✅ done |
+| [T24-waste-tracker-wiring](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T024-waste-tracker-wiring.md) | waste Tracker daemon 接線——定期掃描與候選生命週期 | ✅ done |
+| [T25-daily-digest-wiring](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T025-daily-digest-wiring.md) | 每日摘要定時觸發接線 | ✅ done |
+| [T26-notify-retry-protection](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T026-notify-retry-protection.md) | 感測通知發送失敗保護——先發送成功才登記狀態 | ✅ done |
+| [T27-waste-saving-pricing](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T027-waste-saving-pricing.md) | waste 浪費金額接 pricing——候選清單顯示每月可省金額 | ✅ done |
+| [T28-defs-hot-reload](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T028-defs-hot-reload.md) | capacity_defs／slo_defs 熱載入 | ✅ done |
+| [T29-predictions-retention](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T029-predictions-retention.md) | predictions 表 retention 清理 | ✅ done |
 | [T30-billing-real-verify](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T030-billing-real-verify.md) | 成本 adapter 真實雲端驗證（移除 NEEDS VERIFICATION） | 📋 pending |
 
-**✅ done: 19 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 11**
+**✅ done: 26 | 🔧 in-progress: 1 | ⏭️ skip: 0 | 📋 pending: 3**
 
-> 自動生成於 2026-08-24 15:18
+> 自動生成於 2026-08-24 23:38

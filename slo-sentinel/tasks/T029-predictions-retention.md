@@ -3,12 +3,12 @@ github_issue: N/A
 title: predictions 表 retention 清理
 type: chore
 priority: low
-status: pending
+status: done
 depends_on:
 - T004
 assignee: "pi with opencode/x-preview-f-free"
 created: 2026-08-25
-updated: 2026-08-25
+updated: 2026-08-26
 
 ---
 
@@ -29,10 +29,10 @@ updated: 2026-08-25
 4. /accuracy 只查近 N 天——確認 retention 不影響其正確性
 
 ## 驗收標準
-- [ ] 插入過期假資料後觸發清理 → 列數符合預期、近期資料完好
-- [ ] config 可調 retention；0 = 停用清理
-- [ ] /accuracy 在清理後仍回傳正確統計
-- [ ] 長跑模擬（加速時鐘）下 DB 體積有界
+- [x] 插入過期假資料後觸發清理 → 列數符合預期、近期資料完好
+- [x] config 可調 retention；0 = 停用清理
+- [x] /accuracy 在清理後仍回傳正確統計
+- [x] 長跑模擬（加速時鐘）下 DB 體積有界
 
 ## 備註
 sensor_state 為 upsert 快照不受影響；本任務僅處理 append-only 的 predictions。

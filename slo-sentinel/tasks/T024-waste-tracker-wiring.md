@@ -3,13 +3,13 @@ github_issue: N/A
 title: waste Tracker daemon 接線——定期掃描與候選生命週期
 type: feat
 priority: high
-status: pending
+status: done
 depends_on:
 - T015
 - T009
 assignee: "pi with opencode/x-preview-f-free"
 created: 2026-08-25
-updated: 2026-08-25
+updated: 2026-08-26
 
 ---
 
@@ -33,11 +33,11 @@ daemon 主迴圈納入 waste 定期掃描，接上 Tracker 生命週期與直推
    （可掛在 sentinel-ui GET-only 之外的後續擴充；v1 先 CLI）
 
 ## 驗收標準
-- [ ] daemon 每 N 小時自動掃描並對新候選推播（同資源去重）
-- [ ] 重啟 daemon 後已 dismiss 的候選不再通知、到期自動復活
-- [ ] resolve 後累積節省金額可查詢（CLI 輸出）
-- [ ] 單一規則 expr 查詢失敗不拖垮整輪掃描（逐項 best-effort）
-- [ ] 掃描週期可用環境變數／config 覆寫；設 off 完全停用
+- [x] daemon 每 N 小時自動掃描並對新候選推播（同資源去重）
+- [x] 重啟 daemon 後已 dismiss 的候選不再通知、到期自動復活
+- [x] resolve 後累積節省金額可查詢（CLI 輸出）
+- [x] 單一規則 expr 查詢失敗不拖垮整輪掃描（逐項 best-effort）
+- [x] 掃描週期可用環境變數／config 覆寫；設 off 完全停用
 
 ## 備註
 - 浪費金額計算（恆為 0 的問題）另見 T027，本任務不含
