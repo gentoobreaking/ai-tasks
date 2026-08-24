@@ -23,6 +23,8 @@
 | oncall-ui 唯讀 Web 服務 |
 | 上線部署文件與三服務佈建 |
 | 端到端整合測試（spec.md §5 全覆蓋） |
+| gate gRPC server 接線（DeliverNotification/CollectContext/tgtransport） |
+| core 批准→執行編排接線（ActionCallback → ApprovalGate → ExecutorRunner） |
 
 ## Skip 項目
 
@@ -40,8 +42,7 @@
 
 | Task | 名稱 | 說明 |
 |------|------|------|
-| [T20-gate-grpc-server](https://github.com/gentoobreaking/ai-tasks/blob/main/ai-oncall/tasks/T020-gate-grpc-server.md) | gate gRPC server 接線（DeliverNotification/CollectContext/tgtransport） | |
-| [T21-core-approval-executor-wiring](https://github.com/gentoobreaking/ai-tasks/blob/main/ai-oncall/tasks/T021-core-approval-executor-wiring.md) | core 批准→執行編排接線（ActionCallback → ApprovalGate → ExecutorRunner） | |
+| | | |
 
 ## Task 列表
 
@@ -66,9 +67,9 @@
 | [T17-oncall-ui](https://github.com/gentoobreaking/ai-tasks/blob/main/ai-oncall/tasks/T017-oncall-ui.md) | oncall-ui 唯讀 Web 服務 | ✅ done |
 | [T18-deploy-docs](https://github.com/gentoobreaking/ai-tasks/blob/main/ai-oncall/tasks/T018-deploy-docs.md) | 上線部署文件與三服務佈建 | ✅ done |
 | [T19-e2e-integration](https://github.com/gentoobreaking/ai-tasks/blob/main/ai-oncall/tasks/T019-e2e-integration.md) | 端到端整合測試（spec.md §5 全覆蓋） | ✅ done |
-| [T20-gate-grpc-server](https://github.com/gentoobreaking/ai-tasks/blob/main/ai-oncall/tasks/T020-gate-grpc-server.md) | gate gRPC server 接線（DeliverNotification/CollectContext/tgtransport） | 📋 pending |
-| [T21-core-approval-executor-wiring](https://github.com/gentoobreaking/ai-tasks/blob/main/ai-oncall/tasks/T021-core-approval-executor-wiring.md) | core 批准→執行編排接線（ActionCallback → ApprovalGate → ExecutorRunner） | 📋 pending |
+| [T20-gate-grpc-server](https://github.com/gentoobreaking/ai-tasks/blob/main/ai-oncall/tasks/T020-gate-grpc-server.md) | gate gRPC server 接線（DeliverNotification/CollectContext/tgtransport） | ✅ done |
+| [T21-core-approval-executor-wiring](https://github.com/gentoobreaking/ai-tasks/blob/main/ai-oncall/tasks/T021-core-approval-executor-wiring.md) | core 批准→執行編排接線（ActionCallback → ApprovalGate → ExecutorRunner） | ✅ done |
 
-**✅ done: 19 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 2**
+**✅ done: 21 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 0**
 
-> 自動生成於 2026-08-24 13:41
+> 自動生成於 2026-08-24 14:16

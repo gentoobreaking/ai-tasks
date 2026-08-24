@@ -1,6 +1,6 @@
 # 📅 Daily Dashboard - 2026-08-24
 
-> 最後更新: 2026-08-24 13:41 · 自動生成
+> 最後更新: 2026-08-24 14:16 · 自動生成
 
 ---
 
@@ -90,6 +90,8 @@
 | ai-oncall | [T017-oncall-ui](https://github.com/gentoobreaking/ai-tasks/blob/main/ai-oncall/tasks/T017-oncall-ui.md) | oncall-ui 唯讀 Web 服務 |
 | ai-oncall | [T018-deploy-docs](https://github.com/gentoobreaking/ai-tasks/blob/main/ai-oncall/tasks/T018-deploy-docs.md) | 上線部署文件與三服務佈建 |
 | ai-oncall | [T019-e2e-integration](https://github.com/gentoobreaking/ai-tasks/blob/main/ai-oncall/tasks/T019-e2e-integration.md) | 端到端整合測試（spec.md §5 全覆蓋） |
+| ai-oncall | [T020-gate-grpc-server](https://github.com/gentoobreaking/ai-tasks/blob/main/ai-oncall/tasks/T020-gate-grpc-server.md) | gate gRPC server 接線（DeliverNotification/CollectContext/tgtransport） |
+| ai-oncall | [T021-core-approval-executor-wiring](https://github.com/gentoobreaking/ai-tasks/blob/main/ai-oncall/tasks/T021-core-approval-executor-wiring.md) | core 批准→執行編排接線（ActionCallback → ApprovalGate → ExecutorRunner） |
 | digital-twin | [T089-pi-integration-and-quality-optimization](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T089-pi-integration-and-quality-optimization.md) | pi Agent 整合反饋閉環 ＋ 全專案品質優化（env 收斂/模組拆分/測試隔離） |
 | digital-twin | [T090-fix-ci-pyright-and-lockfile](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T090-fix-ci-pyright-and-lockfile.md) | 修復 CI 紅燈 — pyright 歸零與 uv.lock 同步 |
 | digital-twin | [T091-python-version-contract](https://github.com/gentoobreaking/ai-tasks/blob/main/digital-twin/tasks/T091-python-version-contract.md) | Python 版本契約統一（requires-python 升 3.11 或降級 asyncio.timeout） |
@@ -151,10 +153,7 @@
 
 ## 🔥 待處理高優先級
 
-| 專案 | 任務 | 標題 | 優先 |
-| -- | -- | -- | -- |
-| ai-oncall | [T020-gate-grpc-server](https://github.com/gentoobreaking/ai-tasks/blob/main/ai-oncall/tasks/T020-gate-grpc-server.md) | gate gRPC server 接線（DeliverNotification/CollectContext/tgtransport） | high |
-| ai-oncall | [T021-core-approval-executor-wiring](https://github.com/gentoobreaking/ai-tasks/blob/main/ai-oncall/tasks/T021-core-approval-executor-wiring.md) | core 批准→執行編排接線（ActionCallback → ApprovalGate → ExecutorRunner） | high |
+_無_
 
 ---
 
@@ -170,8 +169,6 @@
 
 | 專案 | 任務 | 標題 | 優先 |
 | -- | -- | -- | -- |
-| ai-oncall | [T020-gate-grpc-server](https://github.com/gentoobreaking/ai-tasks/blob/main/ai-oncall/tasks/T020-gate-grpc-server.md) | gate gRPC server 接線（DeliverNotification/CollectContext/tgtransport） | high |
-| ai-oncall | [T021-core-approval-executor-wiring](https://github.com/gentoobreaking/ai-tasks/blob/main/ai-oncall/tasks/T021-core-approval-executor-wiring.md) | core 批准→執行編排接線（ActionCallback → ApprovalGate → ExecutorRunner） | high |
 | gold-analysis-advanced | [T002](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis-advanced/tasks/T002.md) | ML 模型整合與優化 | low |
 | gold-analysis-advanced | [T004](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis-advanced/tasks/T004.md) | 實盤交易對接 | low |
 | slo-sentinel | [T019-ci-budget-gate](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T019-ci-budget-gate.md) | 成本/預算 CI 整合——notify 模式（F6 Phase 1） | low |
