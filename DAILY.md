@@ -1,6 +1,6 @@
 # 📅 Daily Dashboard - 2026-08-24
 
-> 最後更新: 2026-08-24 14:16 · 自動生成
+> 最後更新: 2026-08-24 15:18 · 自動生成
 
 ---
 
@@ -153,7 +153,10 @@
 
 ## 🔥 待處理高優先級
 
-_無_
+| 專案 | 任務 | 標題 | 優先 |
+| -- | -- | -- | -- |
+| slo-sentinel | [T024-waste-tracker-wiring](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T024-waste-tracker-wiring.md) | waste Tracker daemon 接線——定期掃描與候選生命週期 | high |
+| slo-sentinel | [T026-notify-retry-protection](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T026-notify-retry-protection.md) | 感測通知發送失敗保護——先發送成功才登記狀態 | high |
 
 ---
 
@@ -169,11 +172,19 @@ _無_
 
 | 專案 | 任務 | 標題 | 優先 |
 | -- | -- | -- | -- |
+| slo-sentinel | [T024-waste-tracker-wiring](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T024-waste-tracker-wiring.md) | waste Tracker daemon 接線——定期掃描與候選生命週期 | high |
+| slo-sentinel | [T026-notify-retry-protection](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T026-notify-retry-protection.md) | 感測通知發送失敗保護——先發送成功才登記狀態 | high |
+| slo-sentinel | [T023-slo-thresholds](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T023-slo-thresholds.md) | SLO 感測門檻可調整——slo_defs 支援 thresholds 區塊 | medium |
+| slo-sentinel | [T025-daily-digest-wiring](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T025-daily-digest-wiring.md) | 每日摘要定時觸發接線 | medium |
+| slo-sentinel | [T027-waste-saving-pricing](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T027-waste-saving-pricing.md) | waste 浪費金額接 pricing——候選清單顯示每月可省金額 | medium |
+| slo-sentinel | [T028-defs-hot-reload](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T028-defs-hot-reload.md) | capacity_defs／slo_defs 熱載入 | medium |
 | gold-analysis-advanced | [T002](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis-advanced/tasks/T002.md) | ML 模型整合與優化 | low |
 | gold-analysis-advanced | [T004](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis-advanced/tasks/T004.md) | 實盤交易對接 | low |
 | slo-sentinel | [T019-ci-budget-gate](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T019-ci-budget-gate.md) | 成本/預算 CI 整合——notify 模式（F6 Phase 1） | low |
 | slo-sentinel | [T020-oncall-integration](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T020-oncall-integration.md) | 容量預警接 ai-oncall 分診閉環（F10） | low |
 | slo-sentinel | [T021-freeze-enforce](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T021-freeze-enforce.md) | 成本/預算 CI 部署閘門——enforce 模式（F6 Phase 2） | low |
+| slo-sentinel | [T029-predictions-retention](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T029-predictions-retention.md) | predictions 表 retention 清理 | low |
+| slo-sentinel | [T030-billing-real-verify](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T030-billing-real-verify.md) | 成本 adapter 真實雲端驗證（移除 NEEDS VERIFICATION） | low |
 
 ---
 

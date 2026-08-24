@@ -1,6 +1,6 @@
 # 📁 Projects Dashboard
 
-> 最後更新: 2026-08-24 14:16 · 自動生成
+> 最後更新: 2026-08-24 15:18 · 自動生成
 
 ---
 
@@ -9,12 +9,22 @@
 | 指標 | 數量 |
 |------|------|
 | 專案數 | 64 |
-| 任務總數 | 1168 |
+| 任務總數 | 1176 |
 | ✅ 已完成 | 1099 |
-| ⬜ 待處理 | 5 |
+| ⬜ 待處理 | 13 |
 | 🔄 進行中 | 1 |
 | ⏭️ 跳過 | 63 |
-| 總完成率 | 99% |
+| 總完成率 | 98% |
+
+## 🔥 待處理高優先級任務
+
+| 專案 | 任務 | 標題 |
+|------|------|------|
+| slo-sentinel | [T024-waste-tracker-wiring](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T024-waste-tracker-wiring.md) | waste Tracker daemon 接線——定期掃描與候選生命週期 |
+| slo-sentinel | [T026-notify-retry-protection](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T026-notify-retry-protection.md) | 感測通知發送失敗保護——先發送成功才登記狀態 |
+
+---
+
 
 ## ⬜ 待處理
 
@@ -25,6 +35,14 @@
 | slo-sentinel | [T019-ci-budget-gate](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T019-ci-budget-gate.md) | 成本/預算 CI 整合——notify 模式（F6 Phase 1） | ⬜ |
 | slo-sentinel | [T020-oncall-integration](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T020-oncall-integration.md) | 容量預警接 ai-oncall 分診閉環（F10） | ⬜ |
 | slo-sentinel | [T021-freeze-enforce](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T021-freeze-enforce.md) | 成本/預算 CI 部署閘門——enforce 模式（F6 Phase 2） | ⬜ |
+| slo-sentinel | [T023-slo-thresholds](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T023-slo-thresholds.md) | SLO 感測門檻可調整——slo_defs 支援 thresholds 區塊 | ⬜ |
+| slo-sentinel | [T024-waste-tracker-wiring](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T024-waste-tracker-wiring.md) | waste Tracker daemon 接線——定期掃描與候選生命週期 | ⬜ |
+| slo-sentinel | [T025-daily-digest-wiring](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T025-daily-digest-wiring.md) | 每日摘要定時觸發接線 | ⬜ |
+| slo-sentinel | [T026-notify-retry-protection](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T026-notify-retry-protection.md) | 感測通知發送失敗保護——先發送成功才登記狀態 | ⬜ |
+| slo-sentinel | [T027-waste-saving-pricing](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T027-waste-saving-pricing.md) | waste 浪費金額接 pricing——候選清單顯示每月可省金額 | ⬜ |
+| slo-sentinel | [T028-defs-hot-reload](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T028-defs-hot-reload.md) | capacity_defs／slo_defs 熱載入 | ⬜ |
+| slo-sentinel | [T029-predictions-retention](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T029-predictions-retention.md) | predictions 表 retention 清理 | ⬜ |
+| slo-sentinel | [T030-billing-real-verify](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T030-billing-real-verify.md) | 成本 adapter 真實雲端驗證（移除 NEEDS VERIFICATION） | ⬜ |
 
 ## 🔄 進行中
 
@@ -176,7 +194,9 @@ xychart-beta
 | ✅ | [sinotrade-scraper](https://github.com/gentoobreaking/ai-tasks/tree/main/sinotrade-scraper) | 9 | 8 | 0 | 0 | 1 | ████████████████████ 100% | 2026-04-28 |
 | ✅ | [skill-enhancement](https://github.com/gentoobreaking/ai-tasks/tree/main/skill-enhancement) | 4 | 4 | 0 | 0 | 0 | ████████████████████ 100% | 2026-04-04 |
 | ✅ | [skills-audit](https://github.com/gentoobreaking/ai-tasks/tree/main/skills-audit) | 5 | 5 | 0 | 0 | 0 | ████████████████████ 100% | 2026-05-19 |
-| ⬜ | [slo-sentinel](https://github.com/gentoobreaking/ai-tasks/tree/main/slo-sentinel) | 22 | 19 | 3 | 0 | 0 | █████████████████░░░ 86% | 2026-08-25 |
+| ⬜ | [slo-sentinel](https://github.com/gentoobreaking/ai-tasks/tree/main/slo-sentinel) | 30 | 19 | 11 | 0 | 0 | ████████████░░░░░░░░ 63% | 2026-08-25 |
+  **[T024-waste-tracker-wiring](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T024-waste-tracker-wiring.md)**: waste Tracker daemon 接線——定期掃描與候選生命週期
+  **[T026-notify-retry-protection](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T026-notify-retry-protection.md)**: 感測通知發送失敗保護——先發送成功才登記狀態
 | ✅ | [taolive-ios](https://github.com/gentoobreaking/ai-tasks/tree/main/taolive-ios) | 67 | 19 | 0 | 0 | 48 | ████████████████████ 100% | 2026-05-14 |
 | ✅ | [task-url-repair](https://github.com/gentoobreaking/ai-tasks/tree/main/task-url-repair) | 1 | 1 | 0 | 0 | 0 | ████████████████████ 100% | 2026-04-20 |
 | ✅ | [tasks-executor](https://github.com/gentoobreaking/ai-tasks/tree/main/tasks-executor) | 8 | 8 | 0 | 0 | 0 | ████████████████████ 100% | 2026-05-12 |
