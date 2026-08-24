@@ -11,16 +11,37 @@
 
 
 
-### D.1 資料源與延遲特性（誠實前提）
+### D.0 成本可見性的雙模式（權限現實）
+
+> **核心約束：維護人員通常沒有 billing IAM 權限。** 成本可見性的主路徑
+> 不能依賴帳務 API：
+
+| 模式 | 來源 | 認證 | 對象 |
+|---|---|---|---|
+| **estimate（主路徑）** | 公開價目表 × Prometheus 用量指標 → 推估花費 | 無需認證或僅唯讀 RAM key | 維護人員 |
+| actual（選配校準） | AWS CE / 阿里雲 BSS 帳務 API（見 §D.1） | billing IAM | 有權限的管理員 |
+
+**estimate 模式的公開價目表來源：**
+
+| 雲 | 來源 | 認證 |
+|---|---|---|
+| AWS | Price List Bulk API：`index.json` → 各 region offer 檔；另有免認證 Price List Query API | 無 |
+| 阿里雲 | [QuerySkuPriceList](https://www.alibabacloud.com/help/en/user-center/developer-reference/api-bssopenapi-2017-12-14-queryskupricelist#api-detail-0)（BSSOpenAPI，需唯讀 RAM key，非 billing 管理權）＋[定價計算機頁面](https://www.alibabacloud.com/en/pricing-calculator)作為人工核對基準 | 唯讀 RAM key 即可 |
+
+估算公式：**推估花費 = Σ(用量指標 × 單價)**——用量由既有感測提供
+（副本數、磁碟 GB、連線數…），單價由上述來源查得。
+actual 模式保留為校準工具：有權限者比對推估 vs 實際，修正單價表。
+
+### D.1 actual 模式資料源（選配；需 billing IAM）
 
 | 來源 | 粒度 | 延遲 | 備註 |
 |---|---|---|---|
-| AWS Cost Explorer API | DAILY | ~24h（當日帳務隔天才準） | `GetCostAndUse`，可 filter by service/tag/account |
-| AWS CUR Data Export | HOUR/DAILY | S3 交付延遲數小時～1 天 | 大量分析用；v1 先用 CE 即可 |
+| AWS Cost Explorer API | DAILY | ~24h | `GetCostAndUse`，可 filter by service/tag/account |
+| AWS CUR Data Export | HOUR/DAILY | 數小時～1 天 | 大量分析用 |
 | AlibabaCloud BSS | DAILY | ~24h | `QueryInstanceBill` / `DescribeInstanceBill` |
 
-> **鐵律：所有「今日」成本其實是昨日的。** UI 與推播必須標注資料截止時間，
-> 推估值一律以「已確認帳務的最後一天」為基準點，不假裝即時。
+> **actual 鐵律：所有「今日」成本其實是昨日的。** UI 與推播必須標注
+> confirmed_date，不假裝即時。
 
 ### D.2 核心公式
 

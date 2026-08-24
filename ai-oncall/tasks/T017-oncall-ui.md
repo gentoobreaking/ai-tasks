@@ -3,7 +3,7 @@ github_issue: N/A
 title: oncall-ui 唯讀 Web 服務
 type: feat
 priority: medium
-status: pending
+status: done
 depends_on:
 - T014
 assignee: "pi with opencode/x-preview-f-free"

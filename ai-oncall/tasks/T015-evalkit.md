@@ -3,7 +3,7 @@ github_issue: N/A
 title: evalkit 評測工具與 prompt_version 追蹤
 type: feat
 priority: medium
-status: pending
+status: done
 depends_on:
 - T009
 - T007

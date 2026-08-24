@@ -3,7 +3,7 @@ github_issue: N/A
 title: 端到端整合測試（spec.md §5 全覆蓋）
 type: test
 priority: high
-status: pending
+status: done
 depends_on:
 - T002
 - T003

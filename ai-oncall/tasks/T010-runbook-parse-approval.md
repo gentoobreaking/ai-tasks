@@ -3,7 +3,7 @@ github_issue: N/A
 title: runbook 解析與批准閘門語意
 type: feat
 priority: high
-status: pending
+status: done
 depends_on:
 - T006
 assignee: "pi with opencode/x-preview-f-free"

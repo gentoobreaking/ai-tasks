@@ -52,7 +52,7 @@ SRE 對「服務可靠性」的承諾靠 SLO 與 Error Budget 管理，但實務
 | F8 | 容量感測目錄（Prometheus rules 格式） | 以**標準 Prometheus rules 檔案**為基底（不自造格式）：recording rules 正規化 + alert 規則含告警對象（labels 路由）與告警訊息（annotations 模板）；patch 自 awesome-prometheus-alerts 最新版 + sentinel 註解慣例；熱載入、上游同步、promtool 驗證——詳見 §6.8 |
 | F9 | 容量觸頂預警 | 同一顆 ETA 引擎重用：軟頂之上開始預測「幾小時/幾天後觸及硬頂」，激進/穩健雙視野並陳。**演算法詳見 [`algs/capacity-eta.md`](algs/capacity-eta.md)**（Theil–Sen 斜率 + 雙視野外插 + 觸發條件表）。**雲端 autoscale 場景尤其關鍵**：擴容會掩蓋飽和徵兆（SLO 綠燈假象），真正的炸點是 quota 上限 / node max / 機型缺貨 / IP 耗盡等撞牆式失敗——靜態閾值與 SLO 都看不見，只有外插預測看得見 |
 | F10 | 分診閉環——**任務書 T020**（受外部條件約束：ai-oncall gate 上線＋標籤慣例對齊） | 容量預警同時以標準格式發進 AlertManager，供 ai-oncall 等分診系統接手處理（維持工具間鬆耦合） |
-| F11 | 營運成本感測 | 接雲端帳務 API：AWS Cost Explorer / CUR、AlibabaCloud BSS（每日粒度，注意 ~24h 延遲）。帳務數據轉為標準 rules 格式感測指標（與容量/SLO 同一管線）；演算法詳見 §7 |
+| F11 | 營運成本感測（雙模式） | **estimate（主路徑，免 billing IAM）**：AWS 公開 Price List + 阿里雲 QuerySkuPriceList × Prometheus 用量 → 推估成本；**actual（選配）**：AWS CE / 阿里雲 BSS API 取實際值供校準。演算法詳見 `algs/cost-forecast.md` |
 | F12 | 成本預算天花板與 ETA | 每服務/每帳號/每 tag 定義月度預算（=硬頂），累積花費=消耗曲線——**同一顆狀態機與 ETA 引擎**：「照目前速度，本月預算 12 日燒穿」 |
 | F13 | 成本推估報表 | 日/月/年三個粒度的**實際值＋推估值**：月底推估（MTD + 近期速率外插）、年推估（各月推估加總）、單位成本連動容量預測（副本數預估 × 單價） |
 | F14 | 瘦身與閒置偵測（Right-sizing / Zombies） | 反向偵測：①供給過剩——`P95(使用率比) < 門檻` 連續 N 天 → 建議降規＋估算月省；②殭屍資源——零流量（ELB RequestCount≈0、未掛目標的 TG、空閒 EIP/磁碟）滿 N 天 → 提醒＋累積浪費金額。**提醒週期可調**（預設首報後每 7 天重複），Telegram 一鍵「已處理／暫不處理」即止默 |
@@ -290,6 +290,7 @@ Python 只在以下情況反超：你想在三週內上線、且確定之後會�
 | [`algs/sensor-catalog.md`](algs/sensor-catalog.md) | F8 目錄格式、F14 條目格式 | `internal/catalog/` | **T005** 載入器/熱載入/promtool/上游同步；**T017** 種子規則檔佈建 |
 | [`algs/capacity-eta.md`](algs/capacity-eta.md) | F2 多視野 ETA、F9 容量觸頂預警 | `internal/budget/` `internal/capacity/` | **T006** Theil–Sen 引擎＋狀態機＋AM 協調；**T007** 容量感測；**T009** 主迴圈 |
 | [`algs/cost-forecast.md`](algs/cost-forecast.md) | F11–F13 成本感測/預算 ETA/推估報表 | `internal/billing/` `internal/cost/` | **T010** AWS CE/阿里雲 BSS adapter；**T011** 推估引擎＋爆衝偵測 |
+| （§D.0 estimate 主路徑） | F11 價目表目錄（免 billing IAM） | `internal/pricing/` | **T022** AWS Bulk/Query API＋阿里雲 QuerySkuPriceList＋快取層 |
 | [`algs/waste-detection.md`](algs/waste-detection.md) | F14 瘦身與閒置（三類環境） | `internal/waste/` | **T012** 雲端 provider；**T013** K8s/OpenShift K1–K4；**T014** Standalone S1–S3；**T015** 生命週期 tracker |
 
 ### 支援性任務（無演算法檔但必要）

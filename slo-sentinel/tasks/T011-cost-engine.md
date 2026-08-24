@@ -3,7 +3,7 @@ github_issue: N/A
 title: 成本預測與報表 internal/cost
 type: feat
 priority: medium
-status: done
+status: in-progress
 depends_on:
 - T006
 - T010
@@ -24,9 +24,10 @@ updated: 2026-08-24
 - [x] **預算 ETA**：(B − S)/r，r>ε 才有意義；餵入與容量/SLO 同一顆狀態機
 - [x] **年推估**：Σ已完成月實際 + Σ未完成月 projected_EOM；滿一年服務附 YoY%
 - [x] **觸發**（§D.3）：warning=ETA_budget<240h 或 MTD≥80% 且未月中；critical=ETA<48h；**爆衝偵測獨立於預算**——單日花費>日均 2 倍即推播（配置錯誤訊號）
-- [ ] 所有報表與推播標注資料截止時間 confirmed_date——「今日」其實是昨日（§D.1 鐵律）
+- [x] 所有報表與推播標注資料截止時間 confirmed_date——「今日」其實是昨日（§D.1 鐵律）
 - [x] v1 限制如實標注：unblended cost、原幣+單一設定匯率（§D.4）
 - [x] 容量連動公式：capacity 預測 N₀→N₁ ⇒ Δcost=(N₁−N₀)×unit_price/h 併入 r_recent 重算 projected_EOM（§D.2 最末），整合測試覆蓋
+- [ ] **estimate 模式**（algs/cost-forecast.md §D.0 主路徑）：推估花費 = Σ(用量指標 × 單價)——用量取自 capacity/waste 感測值，單價查 T022 價目表目錄；與 actual 模式並存，差異可在 UI 對照（校準用）
 - [ ] 每週摘要推播：top 5 成長服務＋成長來源比對 capacity 擴容軌跡（§D.5）
 
 ## 備註
@@ -36,3 +37,5 @@ updated: 2026-08-24
 - 已達成 7 項並打勾。
 - **未竟事項**：每週摘要推播：FormatReport/report.go 已具備，daemon 排程接線未做（待 T009 迴圈擴充）
 
+## 降級說明（T022 修訂）
+- 新增 estimate 模式驗收項（依賴 T022 價目表目錄）與每週摘要排程接線，未完成前本任務維持 in-progress。

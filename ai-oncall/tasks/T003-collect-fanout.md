@@ -3,7 +3,7 @@ github_issue: N/A
 title: context 收集器 fan-out
 type: feat
 priority: high
-status: pending
+status: done
 depends_on:
 - T001
 assignee: "pi with opencode/x-preview-f-free"

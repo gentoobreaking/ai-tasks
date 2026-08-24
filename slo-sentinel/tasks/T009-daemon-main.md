@@ -32,7 +32,7 @@ fsnotify 熱載入 rules.d 變更。
 
 ## 驗收標準細化（G1/G2 補洞：唯讀 API 與指標暴露）
 
-- [ ] 唯讀 JSON 端點（僅綁 127.0.0.1，供 T016 使用）：`/api/status.json`、`/api/slo/{id}`、`/api/accuracy`、`/api/cost`、`/api/waste`
+- [x] 唯讀 JSON 端點（僅綁 127.0.0.1，供 T016 使用）：`/api/status.json`、`/api/slo/{id}`、`/api/accuracy`、`/api/cost`、`/api/waste`
 - [x] Prometheus `/metrics` 端點：暴露 `sentinel_eta_aggressive_hours` / `sentinel_eta_conservative_hours` / `sentinel_capacity_used_ratio` 等指標——**僅供 Grafana 觀測與自我監控，不作為告警輸入**（直推中心定案）；另含自身運行指標（輪詢耗時/錯誤數）
 - [ ] 上述兩端點整合測試：UI 與 Prometheus 抓取路徑各一
 

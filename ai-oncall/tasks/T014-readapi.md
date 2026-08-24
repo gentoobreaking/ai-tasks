@@ -3,7 +3,7 @@ github_issue: N/A
 title: UI 專用唯讀查詢 readapi
 type: feat
 priority: medium
-status: pending
+status: done
 depends_on:
 - T006
 assignee: "pi with opencode/x-preview-f-free"

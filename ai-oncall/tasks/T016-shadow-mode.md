@@ -3,7 +3,7 @@ github_issue: N/A
 title: Shadow Mode 全域旗標與管線整合
 type: feat
 priority: high
-status: pending
+status: done
 depends_on:
 - T009
 - T012

@@ -3,7 +3,7 @@ github_issue: N/A
 title: 上線部署文件與三服務佈建
 type: docs
 priority: low
-status: pending
+status: done
 depends_on:
 - T001
 - T005

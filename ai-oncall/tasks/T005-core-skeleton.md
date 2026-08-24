@@ -3,7 +3,7 @@ github_issue: N/A
 title: oncall-core 骨架、gRPC servicer 與 SQLite store
 type: feat
 priority: high
-status: pending
+status: done
 depends_on:
 - T001
 assignee: "pi with opencode/x-preview-f-free"
