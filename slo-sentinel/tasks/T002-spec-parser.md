@@ -3,7 +3,7 @@ github_issue: N/A
 title: SLO 定義解析模組 internal/spec
 type: feat
 priority: medium
-status: pending
+status: done
 depends_on:
 - T001
 assignee: "pi with opencode/x-preview-f-free"
@@ -18,9 +18,9 @@ updated: 2026-08-24
 相容 OpenSLO 子集；欄位驗證與錯誤彙總（一次回報所有問題而非第一個）。
 
 ## 驗收標準
-- [ ] 有效定義 → struct；缺欄位/型別錯誤 → 彙總錯誤清單
-- [ ] OpenSLO 子集欄位映射有表格化測試（≥5 案例）
-- [ ] 無效檔案不影響其他檔案載入（隔離語意，同 catalog 慣例）
+- [x] 有效定義 → struct；缺欄位/型別錯誤 → 彙總錯誤清單
+- [x] OpenSLO 子集欄位映射有表格化測試（≥5 案例）
+- [x] 無效檔案不影響其他檔案載入（隔離語意，同 catalog 慣例）
 
 ## 備註
 - 本模組為純函式，禁止 import I/O 套件

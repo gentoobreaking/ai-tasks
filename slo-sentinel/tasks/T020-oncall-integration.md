@@ -10,6 +10,9 @@ depends_on:
 blocked_on:
 - "ai-oncall gate（Go）已上線並可接收 AlertManager webhook"
 - "雙方標籤慣例對齊完成（cluster/service/severity 的映射表）"
+assignee: "pi with opencode/x-preview-f-free"
+created: 2026-08-24
+updated: 2026-08-24
 
 ---
 

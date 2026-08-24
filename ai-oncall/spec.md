@@ -27,7 +27,8 @@ On-call 工程師半夜被警報叫醒後，最耗時的不是修復本身，而
 - LLM 產出**診斷假設 + 建議動作清單**，推播 Telegram
 - **破壞性動作必須人類批准**（批准閘門）→ 執行 runbook → 回報結果
 - 容量型前驅預警（服務量暴漲、資源逼近天花板）由姊妹工具 **slo-sentinel** 的容量感測提供，經 AlertManager 以標準警報進入本系統——本專案不重造預測引擎，專注分診與處置
-- 事故結束後自動產出 incident timeline + postmortem 草稿
+- **Shadow Mode 上線路徑**：正式通知前以影子模式全管線運行 ≥30 個 Incident，人工評分達標才開放推播與動作（F15/F16）
+- 事故結束後自動產出 incident timeline + postmortem 草稿，修正事項進入追蹤清單（F19）
 
 核心原則：**AI 只建議與執行被批准的動作；判斷責任在人。**
 
@@ -58,6 +59,14 @@ On-call 工程師半夜被警報叫醒後，最耗時的不是修復本身，而
 | F11 | 成本護欄 | 每一 Incident 的 LLM 呼叫次數/token 上限（沿數位分身 TokenLedger 模式），超限降級為純 context 推播 |
 | F12 | 自我可觀測 | 分診延遲、LLM 失敗率、聚合比、成本等自身指標暴露 `/metrics`——值班工具自己啞火最丟臉 |
 | F13 | Web Dashboard（獨立服務） | 唯讀網頁：事故清單/時間線/postmortem 渲染/runbook 統計；與 core 分進程，經唯讀 API 取數 |
+| F14 | LLM 輸出結構化驗證與修復迴圈 | 分診報告必須符合 JSON schema（原因假設陣列/風險等級枚舉/動作清單）；驗證失敗 → 帶錯誤訊息重問一次（repair prompt）→ 再失敗才降級為純 context 推播。**下游 executor 拒收畸形輸入** |
+| F15 | Shadow Mode 影子運行 | 全域旗標：管線照跑（收集/RAG/分診/建議）但不推播不執行；報告寫入 shadow_reports/ 供人工逐份評分。**正式上線前須累積 ≥30 份影子報告且人工評分達標** |
+| F16 | 評測機制與 Prompt 版本綁定 | 離線回放工具：歷史已脫敏事故重跑管線、對比當時人工結論產命中率報告；每次分診紀錄必帶 `prompt_version`——改 prompt 後品質升降要有數據（同 slo-sentinel /accuracy 哲學） |
+| F17 | gate webhook 認證與冪等 | webhook 端點強制 shared secret 驗證（防假警報燒 LLM 錢）；以 alert fingerprint 作冪等鍵去重——AM 重試投遞不得產生重複 Incident |
+| F18 | executor 輸出遮蔽（redaction） | runbook 執行輸出推送前掃描金鑰樣式（token/connection string）打碼；原始輸出僅存本地加密檔供事後稽核 |
+| F19 | Postmortem Action Items 追蹤 | 草稿中的修正事項自動建追蹤清單（負責人/期限/狀態），逾期未結提醒——postmortem 不寫完等於沒寫 |
+| F20 | On-call 排班整合（升級鏈） | 批准逾時的升級對象依排班表決定（primary → secondary → manager），而非固定 admin；支援 ICS/排班 API 匯入 |
+| F21 | 時間線防篡改雜湊鏈 | TimelineEvent 逐筆雜湊鏈結（每筆含前筆 hash），供 postmortem 可信度與合規稽核 |
 
 ### 2.2 系統切分：三服務架構（上線長駐為前提）
 
@@ -101,7 +110,9 @@ gate/
 ├── cmd/gate/main.go           # 進入點：HTTP server + gRPC client
 ├── internal/
 │   ├── ingest/
-│   │   └── alertmanager.go    # webhook 正規化 → IncidentEvent proto
+│   │   ├── alertmanager.go    # webhook 正規化 → IncidentEvent proto
+│   │   ├── auth.go            # ★ shared secret 驗證（F17）：無效來源直接 401
+│   │   └── idempotency.go     # ★ fingerprint 冪等鍵：AM 重試投遞不產生重複 Incident（F17）
 │   ├── collect/               # [goroutine fan-out] context 收集
 │   │   ├── prometheus.go      #   相關指標時間序列
 │   │   ├── deploys.go         #   近期部署（API/檔案）
@@ -119,12 +130,22 @@ gate/
 core/
 ├── pyproject.toml
 └── src/oncall_core/
-    ├── incident/              # [A] 事故領域模型 + SQLite store
+    ├── incident/              # [A] 事故領域模型 + correlate 聚合 + SQLite store
+    │   └── hashchain.py       #   ★ F21 時間線防篡改雜湊鏈（每筆含前筆 hash）
     ├── memory/                # [D] RAG：indexer / search
-    ├── brain/                 # [E] 分診引擎：prompt 組裝 + provider 備援
-    ├── runbook/               # [F] parse / executor / approval（批准閘門）
+    ├── brain/                 # [E] 分診編排：prompt 組裝＋取消檢查點＋token 預算
+    │   ├── triage.py          #   管線編排（變化頻率高：調 prompt 在這裡）
+    │   ├── schema_validator.py#   ★ F14 輸出 schema 驗證 + repair prompt 迴圈
+    │   └── providers/         #   ★ F14 拆分：多 provider 備援/逾時/熔斷（低頻變動，
+    │                          #     獨立成子套件避免吃掉整個 brain——數位分身 providers.py 教訓）
+    ├── runbook/               # [F] parse / approval（批准閘門語意）
+    ├── executor/              # ★ F18 升格為頂層套件：全系統唯一碰生產環境者（lint 禁止其他模組 import）
+    │   ├── runner.py          #   冪等執行、逐步回報、逾時保護、併發鎖（同一動作不重跑）
+    │   └── redact.py          #   ★ F18 輸出遮蔽層：金鑰樣式打碼後才可外流；原始輸出存本地加密檔
     ├── interact/              # [G] Telegram 決策層：callback → 批准/拒絕語意
-    ├── postmortem/            # [H] 草稿生成
+    ├── postmortem/            # [H] 草稿生成 + ★ F19 action items 追蹤清單
+    ├── schedule/              # ★ F20 排班整合：升級鏈（primary→secondary→manager），ICS/API 匯入
+    ├── evalkit/               # ★ F16 離線評測：歷史事故回放 + prompt_version 命中率報告
     ├── grpc_servicer.py       # gate→core 的 gRPC 介面實作
     └── readapi/               # ★ UI 專用唯讀查詢（僅綁 127.0.0.1）
         └── http.go            #   /api/incidents /api/incidents/{id} /api/runbooks
@@ -179,12 +200,20 @@ interact → runbook.approval / incident
 - **gate↔core 跨網段傳輸安全（決策）**：走 WireGuard/Tailscale 組內網後再聽 gRPC（零憑證管理，首選）；若環境不允許則 gRPC + mTLS。**禁止明文 gRPC 直接暴露公網**
 - **分診管線取消檢查點**：context 收集/RAG/每次 LLM 呼叫之前，先確認 Incident 仍處 open/investigating——警報自我緩解或已聚合進他者時立即中止，不浪費 token 產出過期報告
 - **context 降級模式**：Prometheus/Loki 本身也在故障中（相關性故障常見）時，分診照常執行但報告必須明列「本次缺少哪些 context」，禁止 LLM 幻覺補完
+- **webhook 認證與冪等**（F17）：gate webhook 強制 shared secret；以 alert fingerprint 冪等——AM 重試投遞不產生重複 Incident，重複請求直接回上次結果
+- **LLM 輸出契約**（F14）：brain 的輸出必須通過 JSON schema 驗證才可進入下游；驗證失敗走一次 repair prompt，再失敗降級。executor 對未驗證輸入**硬拒絕**
+- **輸出遮蔽**（F18）：任何離開 executor 的文字先過 redaction；含金鑰樣式的原始輸出只落本地加密檔
+- **prompt 版本綁定**（F16）：每筆分診紀錄帶 prompt_version；改 prompt 必須附 evalkit 回放報告佐證品質不降
 
 ---
 
 ## 3. 邏輯流程圖
 
 ### 3.1 主流程：警報 → 聚合 → 分診 → 建議
+
+> **F15 Shadow Mode**：全域旗標開啟時，本流程完整執行至分診報告產出，
+> 但「notify 推播」改寫入 shadow_reports/、「executor 執行」一律跳過——
+> 用於上線前累積人工評分證據（§5 標準 11）。
 
 ```mermaid
 flowchart TD
@@ -345,3 +374,28 @@ flowchart LR
 8. **取消檢查點驗證**：分診進行中警報自我緩解 → 管線中止且不產出報告，token 消耗為零
 9. **傳輸安全**：gate↔core 通訊經 WireGuard/mTLS；公網側掃描不得發現明文 gRPC port
 10. **容量暴漲情境**：slo-sentinel 發出「quota 觸頂預警」→ 本系統接手分診，報告中必須呈現 HPA 擴張軌跡與 quota 快照，並建議提額或降載動作
+11. **Shadow Mode 上線門檻**：≥30 份影子報告完成人工評分（原因正確率/建議可用率達設定門檻），評分紀錄留存
+12. **Prompt 迭代有據**：evalkit 回放歷史事故集，prompt_version 變更前後的命中率報告可產出；品質下降的版本不得上線
+13. **認證與冪等**：無 secret 的 webhook 請求 401；同 fingerprint 重送 3 次僅產生 1 個 Incident
+14. **遮蔽驗證**：executor 輸出注入假 token 樣式 → 推播與時間線中呈現打碼，原始值僅存在加密稽核檔
+15. **時間線雜湊鏈驗證**：竄改任一 TimelineEvent 後，鏈驗證函式能偵測並標記損毀位置
+
+---
+
+## 6. 演算法規格文件索引（任務拆解必讀）
+
+> **拆解鐵律**：下表每一列都必須產生至少一張任務書；任務書的驗收標準必須
+> 逐條引用對應演算法檔的小節。**演算法一律獨立成檔、由任務書顯式引用**，
+> 避免附錄式設計被遺失。
+
+| 演算法檔 | 對應功能 | 對應模組 |
+|---|---|---|
+| [`algs/triage-pipeline.md`](algs/triage-pipeline.md) | F4/F10/F11/F15 主流程、聚合、取消檢查點、降級、shadow | `incident/correlate` `brain/triage` `interact` |
+| [`algs/approval-executor.md`](algs/approval-executor.md) | F6 執行器、F18 遮蔽、F20 升級鏈 | `runbook/` `executor/` `schedule/` |
+| [`algs/schema-validation.md`](algs/schema-validation.md) | F14 輸出契約與修復迴圈 | `brain/schema_validator` `executor/` |
+| [`algs/knowledge-flywheel.md`](algs/knowledge-flywheel.md) | F3/F9 RAG 沉澱、F16 evalkit | `memory/` `evalkit/` |
+| [`algs/integrity-auth.md`](algs/integrity-auth.md) | F17 認證冪等、F21 雜湊鏈 | `gate/ingest/` `incident/hashchain` |
+
+### 支援性任務（無獨立演算法檔但必要）
+
+骨架/proto、context 收集器、tgtransport、readapi、ui、部署文件——見各任務書 depends_on 圖。

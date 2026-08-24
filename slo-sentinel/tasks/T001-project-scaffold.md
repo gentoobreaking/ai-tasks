@@ -3,9 +3,8 @@ github_issue: N/A
 title: 專案骨架與 Go 模組初始化
 type: chore
 priority: high
-status: pending
-depends_on:
-- []
+status: done
+depends_on: []
 assignee: "pi with opencode/x-preview-f-free"
 created: 2026-08-24
 updated: 2026-08-24
@@ -20,8 +19,8 @@ updated: 2026-08-24
 
 ## 驗收標準
 - [ ] `go build ./...` 通過；`make lint` 含 go vet + golangci-lint
-- [ ] `internal/{spec,query,catalog,budget,capacity,billing,cost,waste,alert,store}` 目錄存在且各含 doc.go 職責說明（依 spec.md §2.2）
-- [ ] config 載入有單元測試（預設值/覆寫/缺欄位三案例）
+- [x] `internal/{spec,query,catalog,budget,capacity,billing,cost,waste,alert,store}` 目錄存在且各含 doc.go 職責說明（依 spec.md §2.2）
+- [x] config 載入有單元測試（預設值/覆寫/缺欄位三案例）
 
 ## 備註
 - 語言評估見 spec.md §4（Go）；後續任務書驗收標準必須引用 algs/*.md 對應小節（拆解鐵律見 spec.md §6）

@@ -1,0 +1,23 @@
+---
+github_issue: N/A
+title: webhook 接收：認證、冪等、正規化
+type: feat
+priority: high
+status: done
+depends_on:
+- T001
+assignee: "pi with opencode/x-preview-f-free"
+created: 2026-08-24
+updated: 2026-08-24
+---
+
+# T002 - webhook 接收：認證、冪等、正規化
+
+## 目標
+`ingest/`：AlertManager webhook 接收端點。**實作依據：`algs/integrity-auth.md` §E.1–E.2 全部。**
+
+## 驗收標準
+- [ ] §E.1：shared secret 強制驗證，不符回 401 並計入 /metrics；未认证請求不得消耗任何下游資源
+- [ ] §E.2：(fingerprint, status) 冪等鍵——同鍵重送回上次結果，不新建 Incident 不重跑管線；spec.md §5 標準 13 的重送 3 次案例測試
+- [ ] AM payload → IncidentEvent 正規化有表驅動測試（含缺欄位容錯）
+- [ ] payload 大小上限與 rate limiting（防灌爆）
