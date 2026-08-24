@@ -20,6 +20,11 @@ updated: 2026-08-24
 **實作依據：`algs/approval-executor.md` §B.2。**
 
 ## 驗收標準
-- [ ] inline 按鈕三分支（批准/拒絕+原因/逾時）行為有測試
-- [ ] 排班未設定時固定 admin（v1 降級），設定後依序升級
-- [ ] 權限：僅 admin 角色可批准 mutating 動作（RBAC 沿數位分身三級模式）
+- [x] inline 按鈕三分支（批准/拒絕+原因/逾時）行為有測試
+- [x] 排班未設定時固定 admin（v1 降級），設定後依序升級
+- [x] 權限：僅 admin 角色可批准 mutating 動作（RBAC 沿數位分身三級模式）
+
+## 執行紀錄（2026-08-24 稽核）
+- 已達成 3 項並打勾。
+- **未竟事項**：無。
+- 補充（證據）：test_t012_interact.py：approve/reject+原因（入 RAG）/snooze 三分支；Roster 未設定 chain()==[admin]、靜態三級依序升級測試（primary→secondary→manager 後棄單）；ICS 解析當值者為 primary；RBAC 非 admin approve 拋 RBACError、primary/manager/明列 admins 可批准、任何角色可附原因拒絕。

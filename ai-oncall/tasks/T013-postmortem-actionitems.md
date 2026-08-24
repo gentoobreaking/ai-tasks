@@ -19,6 +19,11 @@ updated: 2026-08-24
 定稿後入库 RAG（知識飛輪，algs/knowledge-flywheel.md §D.2）。
 
 ## 驗收標準
-- [ ] 草稿含：時間線、根因（人工修正欄）、動作紀錄、影響範圍
-- [ ] action items CRUD + 逾期提醒；定稿觸發 RAG 入库
-- [ ] Markdown commit 至 incidents repo（git 操作有測試）
+- [x] 草稿含：時間線、根因（人工修正欄）、動作紀錄、影響範圍
+- [x] action items CRUD + 逾期提醒；定稿觸發 RAG 入库
+- [x] Markdown commit 至 incidents repo（git 操作有測試）
+
+## 執行紀錄（2026-08-24 稽核）
+- 已達成 3 項並打勾。
+- **未竟事項**：無。
+- 補充（證據）：test_t013_postmortem.py：草稿四區塊（Timeline/Root cause manual TODO/Actions taken/Impact）；action items CRUD＋overdue_items/remind_overdue 只提醒逾期未結者；finalize 結論入 RAG＋真實 git repo commit 整合測試。

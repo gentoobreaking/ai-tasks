@@ -3,13 +3,13 @@ github_issue: N/A
 title: 成本預測與報表 internal/cost
 type: feat
 priority: medium
-status: in-progress
+status: done
 depends_on:
 - T006
 - T010
 assignee: "pi with opencode/x-preview-f-free"
 created: 2026-08-24
-updated: 2026-08-24
+updated: 2026-08-25
 ---
 
 # T011 - 成本預測與報表 internal/cost
@@ -27,8 +27,8 @@ updated: 2026-08-24
 - [x] 所有報表與推播標注資料截止時間 confirmed_date——「今日」其實是昨日（§D.1 鐵律）
 - [x] v1 限制如實標注：unblended cost、原幣+單一設定匯率（§D.4）
 - [x] 容量連動公式：capacity 預測 N₀→N₁ ⇒ Δcost=(N₁−N₀)×unit_price/h 併入 r_recent 重算 projected_EOM（§D.2 最末），整合測試覆蓋
-- [ ] **estimate 模式**（algs/cost-forecast.md §D.0 主路徑）：推估花費 = Σ(用量指標 × 單價)——用量取自 capacity/waste 感測值，單價查 T022 價目表目錄；與 actual 模式並存，差異可在 UI 對照（校準用）
-- [ ] 每週摘要推播：top 5 成長服務＋成長來源比對 capacity 擴容軌跡（§D.5）
+- [x] **estimate 模式**（algs/cost-forecast.md §D.0 主路徑）：推估花費 = Σ(用量指標 × 單價)——用量取自 capacity/waste 感測值，單價查 T022 價目表目錄；與 actual 模式並存，差異可在 UI 對照（校準用）
+- [x] 每週摘要推播：top 5 成長服務＋成長來源比對 capacity 擴容軌跡（§D.5）
 
 ## 備註
 - 目錄條目範例：cost.aws.monthly-budget（spec.md §2.2 sensors 範例區）

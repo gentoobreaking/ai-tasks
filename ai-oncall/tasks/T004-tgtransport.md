@@ -18,6 +18,11 @@ updated: 2026-08-24
 不含任何決策語意（決策在 core/interact）。**直推中心定案：本層是唯一 Telegram 出口。**
 
 ## 驗收標準
-- [ ] 送訊息 API 含格式化（MarkdownV2 轉義處理）；失敗指數退避 3 次
-- [ ] callback 事件經 gRPC ActionCallback 轉發 core；core 不可達時快取重試
-- [ ] token 未設定時降級為 log-only
+- [x] 送訊息 API 含格式化（MarkdownV2 轉義處理）；失敗指數退避 3 次
+- [x] callback 事件經 gRPC ActionCallback 轉發 core；core 不可達時快取重試
+- [x] token 未設定時降級為 log-only
+
+## 執行紀錄（2026-08-24 稽核）
+- 已達成 3 項並打勾。
+- **未竟事項**：無。
+- 補充（證據）：tgtransport_test.go：TestEscapeMarkdownV2 表驅動、SendMessage_RetriesThenSucceeds/GivesUpAfterThreeRetries/Fatal4xxNoRetry（150/300/600ms 退避）、LogOnlyModeWhenTokenEmpty（斷言不觸網）、FetchOnce_ParsesUpdateJSON＋Dispatch_CachesOnCoreFailureThenFlushRetries（pending 佇列重試）。

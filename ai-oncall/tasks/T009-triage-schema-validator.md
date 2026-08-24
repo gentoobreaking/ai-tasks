@@ -23,10 +23,15 @@ TriageReport。取消檢查點、降級模式、Shadow Mode 支援。
 **實作依據：`algs/schema-validation.md` 全部；`algs/triage-pipeline.md` §A.1/A.3–A.6。**
 
 ## 驗收標準
-- [ ] schema 契約依 algs/schema-validation.md §C.1（hypotheses/suggested_actions/risk 枚舉/missing_context/prompt_version）
-- [ ] 修復迴圈依 §C.2：驗證失敗帶錯誤重問一次，再失敗降級純 context 推播；executor 對未驗證輸入硬拒絕
-- [ ] 壞輸出語料集 ≥8 案例（截斷/幻覺 enum/缺欄位/型別錯/markdown 包裹/空陣列…）逐一測試 repair 次數與降級路徑
-- [ ] 取消檢查點 ①②（algs/triage-pipeline.md §A.3）：中止不產報告、token 照計入成本統計
-- [ ] 降級模式（§A.5）：missing_context 必列；幻覺補完以測試斷言禁止
-- [ ] Shadow Mode：SHADOW_MODE=1 時報告寫 shadow_reports/ 不推播不執行（§A.6）
-- [ ] 每筆輸出帶 prompt_version
+- [x] schema 契約依 algs/schema-validation.md §C.1（hypotheses/suggested_actions/risk 枚舉/missing_context/prompt_version）
+- [x] 修復迴圈依 §C.2：驗證失敗帶錯誤重問一次，再失敗降級純 context 推播；executor 對未驗證輸入硬拒絕
+- [x] 壞輸出語料集 ≥8 案例（截斷/幻覺 enum/缺欄位/型別錯/markdown 包裹/空陣列…）逐一測試 repair 次數與降級路徑
+- [x] 取消檢查點 ①②（algs/triage-pipeline.md §A.3）：中止不產報告、token 照計入成本統計
+- [x] 降級模式（§A.5）：missing_context 必列；幻覺補完以測試斷言禁止
+- [x] Shadow Mode：SHADOW_MODE=1 時報告寫 shadow_reports/ 不推播不執行（§A.6）
+- [x] 每筆輸出帶 prompt_version
+
+## 執行紀錄（2026-08-24 稽核）
+- 已達成 7 項並打勾。
+- **未竟事項**：無。
+- 補充（證據）：test_t009_triage.py：§C.1 驗證器單元測試；修復迴圈一次 repair 後降級（10 案例壞輸出語料集逐一斷言 repair 次數/降級路徑/token 計數/schema_failure 時間線）；取消檢查點中止 provider.call_count==0；missing_context 強制補列（禁幻覺）＋prompt 內嵌 do-NOT-invent 警示；Shadow Mode 落盤；每筆帶 prompt_version；ensure_executor_input() 硬拒絕測試。

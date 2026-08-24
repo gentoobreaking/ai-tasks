@@ -3,12 +3,13 @@ github_issue: N/A
 title: 價目表目錄 internal/pricing（estimate 模式主路徑）
 type: feat
 priority: high
-status: pending
+status: done
 depends_on:
 - T001
 - T003
 assignee: "pi with opencode/x-preview-f-free"
 created: 2026-08-24
+updated: 2026-08-25
 updated: 2026-08-24
 
 ---
@@ -31,14 +32,14 @@ updated: 2026-08-24
    阿里雲建議每日一次）
 
 ## 驗收標準
-- [ ] index.json 解析：給定 service+region 能定位 offer 檔 URL（以 fixture 測試，不下載真實大檔）
-- [ ] offer 檔串流解析：json.Decoder 逐步處理 products/terms，記憶體峰值有上限測試
-- [ ] Price List Query API：無認證請求 + filter（region/instanceType）回應解析，httptest 覆蓋
-- [ ] 阿里雲 QuerySkuPriceList：RPC 簽名呼叫 + 回應解析，fake server 測試
-- [ ] 快取層：TTL 內不重複下載；離線時使用過期快取並標注 stale
-- [ ] 查詢介面：`Price(sensorKind, attrs) (unitPrice, currency, error)`——
+- [x] index.json 解析：給定 service+region 能定位 offer 檔 URL（以 fixture 測試，不下載真實大檔）
+- [x] offer 檔串流解析：json.Decoder 逐步處理 products/terms，記憶體峰值有上限測試
+- [x] Price List Query API：無認證請求 + filter（region/instanceType）回應解析，httptest 覆蓋
+- [x] 阿里雲 QuerySkuPriceList：RPC 簽名呼叫 + 回應解析，fake server 測試
+- [x] 快取層：TTL 內不重複下載；離線時使用過期快取並標注 stale
+- [x] 查詢介面：`Price(sensorKind, attrs) (unitPrice, currency, error)`——
       供 cost 引擎以「用量 × 單價」推估（對接 T011 estimate 模式）
-- [ ] 全套測試離線可跑（fixture/mock）
+- [x] 全套測試離線可跑（fixture/mock）
 
 ## 備註
 - AWS 公開價目表無需認證；阿里雲需唯讀 RAM key（非 billing 管理權）——
