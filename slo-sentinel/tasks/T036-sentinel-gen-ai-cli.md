@@ -3,7 +3,7 @@ github_issue: N/A
 title: sentinel-gen——LLM 協作產生/審查/驗證定義檔的 CLI（Go）
 type: feat
 priority: medium
-status: in-progress
+status: done
 depends_on:
 - T031-sentinel-ui-human-readable-columns
 assignee: "pi with opencode/x-preview-f-free"
@@ -56,14 +56,14 @@ sentinel-gen fix -file x.yaml
 4. waste 家族驗證走 temp dir + catalog.Loader（重用隔離/分類邏輯）
 
 ## 驗收標準
-- [ ] generate：fake LLM server 下能產出檔案並正確抽取 yaml 圍欄內容
-- [ ] review 靜態層：缺 id、objective 超界、thresholds 非法組合三種壞檔逐一被攔截且訊息指名原因（capacity/slo/waste 三家族各有測試）
-- [ ] review live 層：httptest 假 Prometheus 回 scalar 形狀 → 攔截報錯；vector → 通過
-- [ ] fix 迴圈：fake LLM 第一輪輸出壞檔、第二輪輸出好檔 → 最終 review PASS、exit 0
-- [ ] GEN_LLM_URL 未設定時 generate 明確報錯提示；review 靜態/live 層照常運作
-- [ ] verify：假 Prometheus 分別回 scalar／空 vector／正常 vector 三種形狀，
+- [x] generate：fake LLM server 下能產出檔案並正確抽取 yaml 圍欄內容
+- [x] review 靜態層：缺 id、objective 超界、thresholds 非法組合三種壞檔逐一被攔截且訊息指名原因（capacity/slo/waste 三家族各有測試）
+- [x] review live 層：httptest 假 Prometheus 回 scalar 形狀 → 攔截報錯；vector → 通過
+- [x] fix 迴圈：fake LLM 第一輪輸出壞檔、第二輪輸出好檔 → 最終 review PASS、exit 0
+- [x] GEN_LLM_URL 未設定時 generate 明確報錯提示；review 靜態/live 層照常運作
+- [x] verify：假 Prometheus 分別回 scalar／空 vector／正常 vector 三種形狀，
       斷言僅第三種通過且輸出 READY TO APPLY
-- [ ] Makefile build 加入 sentinel-gen
+- [x] Makefile build 加入 sentinel-gen
 
 ## 備註
 - 不做 daemon 化、不做互動式問答——單發 CLI，接 CI 或人工皆宜

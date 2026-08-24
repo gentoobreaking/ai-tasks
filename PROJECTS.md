@@ -1,6 +1,6 @@
 # 📁 Projects Dashboard
 
-> 最後更新: 2026-08-25 02:20 · 自動生成
+> 最後更新: 2026-08-25 03:40 · 自動生成
 
 ---
 
@@ -10,9 +10,9 @@
 |------|------|
 | 專案數 | 64 |
 | 任務總數 | 1183 |
-| ✅ 已完成 | 1110 |
+| ✅ 已完成 | 1111 |
 | ⬜ 待處理 | 5 |
-| 🔄 進行中 | 5 |
+| 🔄 進行中 | 4 |
 | ⏭️ 跳過 | 63 |
 | 總完成率 | 99% |
 
@@ -34,7 +34,6 @@
 | slo-sentinel | [T033-basic-capacity-sensor-templates](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T033-basic-capacity-sensor-templates.md) | dev profile 基本容量感測範本集——memory/cpu/disk io/network/processes | 🔄 |
 | slo-sentinel | [T034-slo-defs-common-templates](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T034-slo-defs-common-templates.md) | slo_defs 常用範本——基礎設施存活率＋HTTP/gRPC 服務 SLO 範本庫 | 🔄 |
 | slo-sentinel | [T035-template-library-k8s-cloud](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T035-template-library-k8s-cloud.md) | 範本庫擴充——k8s／EC2／EBS／SLB 負載平衡器資源範本 | 🔄 |
-| slo-sentinel | [T036-sentinel-gen-ai-cli](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T036-sentinel-gen-ai-cli.md) | sentinel-gen——LLM 協作產生/審查/驗證定義檔的 CLI（Go） | 🔄 |
 
 ## ⏭️ 跳過
 
@@ -110,8 +109,8 @@
 
 | 指標 | 數值 |
 |------|------|
-| 過去 7 天完成 | 159 |
-| 過去 30 天完成 | 454 |
+| 過去 7 天完成 | 160 |
+| 過去 30 天完成 | 455 |
 | 平均週期時間 | 1.8 天 |
 | 週期時間中位數 | 0.0 天 |
 
@@ -180,7 +179,7 @@ xychart-beta
 | ✅ | [sinotrade-scraper](https://github.com/gentoobreaking/ai-tasks/tree/main/sinotrade-scraper) | 9 | 8 | 0 | 0 | 1 | ████████████████████ 100% | 2026-04-28 |
 | ✅ | [skill-enhancement](https://github.com/gentoobreaking/ai-tasks/tree/main/skill-enhancement) | 4 | 4 | 0 | 0 | 0 | ████████████████████ 100% | 2026-04-04 |
 | ✅ | [skills-audit](https://github.com/gentoobreaking/ai-tasks/tree/main/skills-audit) | 5 | 5 | 0 | 0 | 0 | ████████████████████ 100% | 2026-05-19 |
-| 🔄 | [slo-sentinel](https://github.com/gentoobreaking/ai-tasks/tree/main/slo-sentinel) | 36 | 29 | 3 | 4 | 0 | ████████████████░░░░ 80% | 2026-08-26 |
+| 🔄 | [slo-sentinel](https://github.com/gentoobreaking/ai-tasks/tree/main/slo-sentinel) | 36 | 30 | 3 | 3 | 0 | ████████████████░░░░ 83% | 2026-08-26 |
 | ✅ | [taolive-ios](https://github.com/gentoobreaking/ai-tasks/tree/main/taolive-ios) | 67 | 19 | 0 | 0 | 48 | ████████████████████ 100% | 2026-05-14 |
 | ✅ | [task-url-repair](https://github.com/gentoobreaking/ai-tasks/tree/main/task-url-repair) | 1 | 1 | 0 | 0 | 0 | ████████████████████ 100% | 2026-04-20 |
 | ✅ | [tasks-executor](https://github.com/gentoobreaking/ai-tasks/tree/main/tasks-executor) | 8 | 8 | 0 | 0 | 0 | ████████████████████ 100% | 2026-05-12 |
