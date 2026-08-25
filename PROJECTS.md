@@ -1,6 +1,6 @@
 # 📁 Projects Dashboard
 
-> 最後更新: 2026-08-25 16:06 · 自動生成
+> 最後更新: 2026-08-25 23:41 · 自動生成
 
 ---
 
@@ -10,11 +10,11 @@
 |------|------|
 | 專案數 | 65 |
 | 任務總數 | 1348 |
-| ✅ 已完成 | 1240 |
-| ⬜ 待處理 | 41 |
+| ✅ 已完成 | 1275 |
+| ⬜ 待處理 | 6 |
 | 🔄 進行中 | 4 |
 | ⏭️ 跳過 | 63 |
-| 總完成率 | 96% |
+| 總完成率 | 99% |
 
 ## 🔥 待處理高優先級任務
 
@@ -35,41 +35,6 @@
 | slo-sentinel | [T021-freeze-enforce](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T021-freeze-enforce.md) | 成本/預算 CI 部署閘門——enforce 模式（F6 Phase 2） | ⬜ |
 | slo-sentinel | [T030-billing-real-verify](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T030-billing-real-verify.md) | 成本 adapter 真實雲端驗證（移除 NEEDS VERIFICATION） | ⬜ |
 | tw-quant | [T003-tw-quant-buypoint](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant/tasks/T003-tw-quant-buypoint.md) | 台股篩選腳本-找買點 | ⬜ |
-| tw-quant-mcp | [T059-companies_with_anticompetitive_losses](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T059-companies_with_anticompetitive_losses.md) | 新增工具 get_companies_with_anticompetitive_losses（ESG 揭露細項） | ⬜ |
-| tw-quant-mcp | [T061-companies_with_csr_reports_103](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T061-companies_with_csr_reports_103.md) | 新增工具 get_companies_with_csr_reports_103（ESG 揭露細項） | ⬜ |
-| tw-quant-mcp | [T062-companies_with_inclusive_finance_data](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T062-companies_with_inclusive_finance_data.md) | 新增工具 get_companies_with_inclusive_finance_data（ESG 揭露細項） | ⬜ |
-| tw-quant-mcp | [T106-company_sec_regulatory_penalties](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T106-company_sec_regulatory_penalties.md) | 新增工具 get_company_sec_regulatory_penalties（監理與重大訊息） | ⬜ |
-| tw-quant-mcp | [T117-daily_futures_market_report](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T117-daily_futures_market_report.md) | 新增工具 get_daily_futures_market_report（期貨與選擇權） | ⬜ |
-| tw-quant-mcp | [T118-daily_options_market_report](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T118-daily_options_market_report.md) | 新增工具 get_daily_options_market_report（期貨與選擇權） | ⬜ |
-| tw-quant-mcp | [T120-etf_regular_investment_ranking](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T120-etf_regular_investment_ranking.md) | 新增工具 get_etf_regular_investment_ranking（行情歷史與指數） | ⬜ |
-| tw-quant-mcp | [T121-financial_program_abnormal_recommendations](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T121-financial_program_abnormal_recommendations.md) | 新增工具 get_financial_program_abnormal_recommendations（監理與重大訊息） | ⬜ |
-| tw-quant-mcp | [T123-foreign_companies_applying_for_listing](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T123-foreign_companies_applying_for_listing.md) | 新增工具 get_foreign_companies_applying_for_listing（上市程序與名單） | ⬜ |
-| tw-quant-mcp | [T125-futures_daily_history](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T125-futures_daily_history.md) | 新增工具 get_futures_daily_history（期貨與選擇權） | ⬜ |
-| tw-quant-mcp | [T126-futures_institutional](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T126-futures_institutional.md) | 新增工具 get_futures_institutional（期貨與選擇權） | ⬜ |
-| tw-quant-mcp | [T127-index_futures_margin](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T127-index_futures_margin.md) | 新增工具 get_index_futures_margin（期貨與選擇權） | ⬜ |
-| tw-quant-mcp | [T128-institutional_fut_opt_split_history](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T128-institutional_fut_opt_split_history.md) | 新增工具 get_institutional_fut_opt_split_history（期貨與選擇權） | ⬜ |
-| tw-quant-mcp | [T129-institutional_general](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T129-institutional_general.md) | 新增工具 get_institutional_general（期貨與選擇權） | ⬜ |
-| tw-quant-mcp | [T130-institutional_total_history](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T130-institutional_total_history.md) | 新增工具 get_institutional_total_history（期貨與選擇權） | ⬜ |
-| tw-quant-mcp | [T131-institutional_traders_by_futures](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T131-institutional_traders_by_futures.md) | 新增工具 get_institutional_traders_by_futures（期貨與選擇權） | ⬜ |
-| tw-quant-mcp | [T132-institutional_traders_by_futures_history](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T132-institutional_traders_by_futures_history.md) | 新增工具 get_institutional_traders_by_futures_history（期貨與選擇權） | ⬜ |
-| tw-quant-mcp | [T133-institutional_traders_by_options](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T133-institutional_traders_by_options.md) | 新增工具 get_institutional_traders_by_options（期貨與選擇權） | ⬜ |
-| tw-quant-mcp | [T134-institutional_traders_calls_puts](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T134-institutional_traders_calls_puts.md) | 新增工具 get_institutional_traders_calls_puts（期貨與選擇權） | ⬜ |
-| tw-quant-mcp | [T135-large_traders_futures_history](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T135-large_traders_futures_history.md) | 新增工具 get_large_traders_futures_history（期貨與選擇權） | ⬜ |
-| tw-quant-mcp | [T136-large_traders_futures_oi](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T136-large_traders_futures_oi.md) | 新增工具 get_large_traders_futures_oi（期貨與選擇權） | ⬜ |
-| tw-quant-mcp | [T137-large_traders_options_oi](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T137-large_traders_options_oi.md) | 新增工具 get_large_traders_options_oi（期貨與選擇權） | ⬜ |
-| tw-quant-mcp | [T138-local_companies_applying_for_listing](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T138-local_companies_applying_for_listing.md) | 新增工具 get_local_companies_applying_for_listing（上市程序與名單） | ⬜ |
-| tw-quant-mcp | [T150-options_daily_history](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T150-options_daily_history.md) | 新增工具 get_options_daily_history（期貨與選擇權） | ⬜ |
-| tw-quant-mcp | [T151-options_delta](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T151-options_delta.md) | 新增工具 get_options_delta（期貨與選擇權） | ⬜ |
-| tw-quant-mcp | [T152-options_institutional_by_contract_history](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T152-options_institutional_by_contract_history.md) | 新增工具 get_options_institutional_by_contract_history（期貨與選擇權） | ⬜ |
-| tw-quant-mcp | [T153-options_institutional_calls_puts_history](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T153-options_institutional_calls_puts_history.md) | 新增工具 get_options_institutional_calls_puts_history（期貨與選擇權） | ⬜ |
-| tw-quant-mcp | [T154-options_oi_change](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T154-options_oi_change.md) | 新增工具 get_options_oi_change（期貨與選擇權） | ⬜ |
-| tw-quant-mcp | [T155-otc_daily](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T155-otc_daily.md) | 新增工具 get_otc_daily（上櫃市場） | ⬜ |
-| tw-quant-mcp | [T156-otc_index](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T156-otc_index.md) | 新增工具 get_otc_index（上櫃市場） | ⬜ |
-| tw-quant-mcp | [T157-otc_odd_lot](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T157-otc_odd_lot.md) | 新增工具 get_otc_odd_lot（上櫃市場） | ⬜ |
-| tw-quant-mcp | [T158-public_company_balance_sheet](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T158-public_company_balance_sheet.md) | 新增工具 get_public_company_balance_sheet（財務與基本面） | ⬜ |
-| tw-quant-mcp | [T162-recently_listed_companies](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T162-recently_listed_companies.md) | 新增工具 get_recently_listed_companies（上市程序與名單） | ⬜ |
-| tw-quant-mcp | [T167-stock_futures_margin](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T167-stock_futures_margin.md) | 新增工具 get_stock_futures_margin（期貨與選擇權） | ⬜ |
-| tw-quant-mcp | [T178-suspended_listed_companies](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T178-suspended_listed_companies.md) | 新增工具 get_suspended_listed_companies（上市程序與名單） | ⬜ |
 
 ## 🔄 進行中
 
@@ -154,8 +119,8 @@
 
 | 指標 | 數值 |
 |------|------|
-| 過去 7 天完成 | 287 |
-| 過去 30 天完成 | 582 |
+| 過去 7 天完成 | 322 |
+| 過去 30 天完成 | 617 |
 | 平均週期時間 | 1.6 天 |
 | 週期時間中位數 | 0.0 天 |
 
@@ -164,11 +129,11 @@
 xychart-beta
     title "過去 14 天任務完成趨勢"
     x-axis ["08-12", "08-13", "08-14", "08-15", "08-16", "08-17", "08-18", "08-19", "08-20", "08-21", "08-22", "08-23", "08-24", "08-25"]
-    y-axis "完成數" 0 --> 129
-    line [7, 0, 0, 8, 2, 119, 22, 16, 0, 3, 28, 0, 77, 129]
+    y-axis "完成數" 0 --> 164
+    line [7, 0, 0, 8, 2, 119, 22, 16, 0, 3, 28, 0, 77, 164]
 ```
 
-📊 總計: 411 | 日均: 29.4 | 本週: 253 | 📈 成長中
+📊 總計: 446 | 日均: 31.9 | 本週: 288 | 📈 成長中
 
 ## 📋 專案列表
 
@@ -231,7 +196,7 @@ xychart-beta
 | ⬜ | [tw-quant](https://github.com/gentoobreaking/ai-tasks/tree/main/tw-quant) | 14 | 13 | 1 | 0 | 0 | ██████████████████░░ 92% | 2026-08-25 |
   **[T003-tw-quant-buypoint](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant/tasks/T003-tw-quant-buypoint.md)**: 台股篩選腳本-找買點
 | ✅ | [tw-quant-daybrain](https://github.com/gentoobreaking/ai-tasks/tree/main/tw-quant-daybrain) | 28 | 28 | 0 | 0 | 0 | ████████████████████ 100% | 2026-08-12 |
-| ⬜ | [tw-quant-mcp](https://github.com/gentoobreaking/ai-tasks/tree/main/tw-quant-mcp) | 190 | 155 | 35 | 0 | 0 | ████████████████░░░░ 81% | 2026-08-25 |
+| ✅ | [tw-quant-mcp](https://github.com/gentoobreaking/ai-tasks/tree/main/tw-quant-mcp) | 190 | 190 | 0 | 0 | 0 | ████████████████████ 100% | 2026-08-25 |
 | ✅ | [tw-quant-pickup](https://github.com/gentoobreaking/ai-tasks/tree/main/tw-quant-pickup) | 47 | 47 | 0 | 0 | 0 | ████████████████████ 100% | 2026-08-24 |
 | ✅ | [tw-quant-selector](https://github.com/gentoobreaking/ai-tasks/tree/main/tw-quant-selector) | 148 | 148 | 0 | 0 | 0 | ████████████████████ 100% | 2026-08-15 |
 | ✅ | [tw-quant-signal](https://github.com/gentoobreaking/ai-tasks/tree/main/tw-quant-signal) | 32 | 32 | 0 | 0 | 0 | ████████████████████ 100% | 2026-08-19 |

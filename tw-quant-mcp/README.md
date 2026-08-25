@@ -62,7 +62,10 @@
 | 工具 get_companies_cumulative_voting（公司治理與內部人） |
 | 工具 get_companies_ownership_changes_business_scope（公司治理與內部人） |
 | 工具 get_companies_ownership_changes_business_scope_trading（公司治理與內部人） |
+| 工具 get_companies_with_anticompetitive_losses（ESG 揭露細項） |
 | 工具 get_companies_with_business_scope_changes（行情歷史與指數） |
+| 工具 get_companies_with_csr_reports_103（ESG 揭露細項） |
+| 工具 get_companies_with_inclusive_finance_data（ESG 揭露細項） |
 | 工具 get_companies_with_independent_directors（公司治理與內部人） |
 | 工具 get_companies_with_ownership_changes（公司治理與內部人） |
 | 工具 get_companies_with_refineries_in_populated_areas（行情歷史與指數） |
@@ -106,6 +109,7 @@
 | 工具 get_company_quarterly_audit_variance（監理與重大訊息） |
 | 工具 get_company_quarterly_earnings_forecast_achievement（監理與重大訊息） |
 | 工具 get_company_risk_management（ESG 揭露細項） |
+| 工具 get_company_sec_regulatory_penalties（監理與重大訊息） |
 | 工具 get_company_shareholder_meeting_announcements（公司治理與內部人） |
 | 工具 get_company_shareholder_meeting_announcements_by_code（公司治理與內部人） |
 | 工具 get_company_shareholder_meeting_dates（公司治理與內部人） |
@@ -116,9 +120,28 @@
 | 工具 get_company_water_management（ESG 揭露細項） |
 | 工具 get_cross_market_trading_info（交易輔助與全市場清單） |
 | 工具 get_daily_day_trading_targets（交易輔助與全市場清單） |
+| 工具 get_daily_futures_market_report（期貨與選擇權） |
+| 工具 get_daily_options_market_report（期貨與選擇權） |
 | 工具 get_daily_securities_lending_volume（交易輔助與全市場清單） |
+| 工具 get_etf_regular_investment_ranking（行情歷史與指數） |
+| 工具 get_financial_program_abnormal_recommendations（監理與重大訊息） |
 | 工具 get_first_listed_foreign_stocks_daily（交易輔助與全市場清單） |
+| 工具 get_foreign_companies_applying_for_listing（上市程序與名單） |
 | 工具 get_fund_basic_info（財務與基本面） |
+| 工具 get_futures_daily_history（期貨與選擇權） |
+| 工具 get_futures_institutional（期貨與選擇權） |
+| 工具 get_index_futures_margin（期貨與選擇權） |
+| 工具 get_institutional_fut_opt_split_history（期貨與選擇權） |
+| 工具 get_institutional_general（期貨與選擇權） |
+| 工具 get_institutional_total_history（期貨與選擇權） |
+| 工具 get_institutional_traders_by_futures（期貨與選擇權） |
+| 工具 get_institutional_traders_by_futures_history（期貨與選擇權） |
+| 工具 get_institutional_traders_by_options（期貨與選擇權） |
+| 工具 get_institutional_traders_calls_puts（期貨與選擇權） |
+| 工具 get_large_traders_futures_history（期貨與選擇權） |
+| 工具 get_large_traders_futures_oi（期貨與選擇權） |
+| 工具 get_large_traders_options_oi（期貨與選擇權） |
+| 工具 get_local_companies_applying_for_listing（上市程序與名單） |
 | 工具 get_margin_loan_restrictions_announcement（交易輔助與全市場清單） |
 | 工具 get_margin_trading_info（行情歷史與指數） |
 | 工具 get_market_disposal_stocks（監理與重大訊息） |
@@ -130,13 +153,24 @@
 | 工具 get_market_turnover_history（交易輔助與全市場清單） |
 | 工具 get_monthly_trading_statistics（交易輔助與全市場清單） |
 | 工具 get_odd_lot_trading_quotes（交易輔助與全市場清單） |
+| 工具 get_options_daily_history（期貨與選擇權） |
+| 工具 get_options_delta（期貨與選擇權） |
+| 工具 get_options_institutional_by_contract_history（期貨與選擇權） |
+| 工具 get_options_institutional_calls_puts_history（期貨與選擇權） |
+| 工具 get_options_oi_change（期貨與選擇權） |
+| 工具 get_otc_daily（上櫃市場） |
+| 工具 get_otc_index（上櫃市場） |
+| 工具 get_otc_odd_lot（上櫃市場） |
+| 工具 get_public_company_balance_sheet（財務與基本面） |
 | 工具 get_public_company_board_shareholdings（公司治理與內部人） |
 | 工具 get_public_company_income_statement（財務與基本面） |
 | 工具 get_real_time_trading_stats（行情歷史與指數） |
+| 工具 get_recently_listed_companies（上市程序與名單） |
 | 工具 get_securities_trading_changes（交易輔助與全市場清單） |
 | 工具 get_short_sale_lending_balance_history（行情歷史與指數） |
 | 工具 get_short_sale_lending_trades_history（行情歷史與指數） |
 | 工具 get_stock_daily_trading（行情歷史與指數） |
+| 工具 get_stock_futures_margin（期貨與選擇權） |
 | 工具 get_stock_monthly_average（行情歷史與指數） |
 | 工具 get_stock_monthly_avg_history（行情歷史與指數） |
 | 工具 get_stock_monthly_history（行情歷史與指數） |
@@ -147,6 +181,7 @@
 | 工具 get_stocks_no_price_change_first_five_days（交易輔助與全市場清單） |
 | 工具 get_suspended_day_trading_announcement（交易輔助與全市場清單） |
 | 工具 get_suspended_day_trading_history（交易輔助與全市場清單） |
+| 工具 get_suspended_listed_companies（上市程序與名單） |
 | 工具 get_suspended_trading_stocks（交易輔助與全市場清單） |
 | 工具 get_taiex_index_history（行情歷史與指數） |
 | 工具 get_taiwan_50_index_history（行情歷史與指數） |
@@ -176,41 +211,7 @@
 
 | Task | 名稱 | 說明 |
 |------|------|------|
-| [T59-companies_with_anticompetitive_losses](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T059-companies_with_anticompetitive_losses.md) | 新增工具 get_companies_with_anticompetitive_losses（ESG 揭露細項） | |
-| [T61-companies_with_csr_reports_103](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T061-companies_with_csr_reports_103.md) | 新增工具 get_companies_with_csr_reports_103（ESG 揭露細項） | |
-| [T62-companies_with_inclusive_finance_data](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T062-companies_with_inclusive_finance_data.md) | 新增工具 get_companies_with_inclusive_finance_data（ESG 揭露細項） | |
-| [T106-company_sec_regulatory_penalties](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T106-company_sec_regulatory_penalties.md) | 新增工具 get_company_sec_regulatory_penalties（監理與重大訊息） | |
-| [T117-daily_futures_market_report](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T117-daily_futures_market_report.md) | 新增工具 get_daily_futures_market_report（期貨與選擇權） | |
-| [T118-daily_options_market_report](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T118-daily_options_market_report.md) | 新增工具 get_daily_options_market_report（期貨與選擇權） | |
-| [T120-etf_regular_investment_ranking](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T120-etf_regular_investment_ranking.md) | 新增工具 get_etf_regular_investment_ranking（行情歷史與指數） | |
-| [T121-financial_program_abnormal_recommendations](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T121-financial_program_abnormal_recommendations.md) | 新增工具 get_financial_program_abnormal_recommendations（監理與重大訊息） | |
-| [T123-foreign_companies_applying_for_listing](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T123-foreign_companies_applying_for_listing.md) | 新增工具 get_foreign_companies_applying_for_listing（上市程序與名單） | |
-| [T125-futures_daily_history](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T125-futures_daily_history.md) | 新增工具 get_futures_daily_history（期貨與選擇權） | |
-| [T126-futures_institutional](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T126-futures_institutional.md) | 新增工具 get_futures_institutional（期貨與選擇權） | |
-| [T127-index_futures_margin](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T127-index_futures_margin.md) | 新增工具 get_index_futures_margin（期貨與選擇權） | |
-| [T128-institutional_fut_opt_split_history](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T128-institutional_fut_opt_split_history.md) | 新增工具 get_institutional_fut_opt_split_history（期貨與選擇權） | |
-| [T129-institutional_general](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T129-institutional_general.md) | 新增工具 get_institutional_general（期貨與選擇權） | |
-| [T130-institutional_total_history](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T130-institutional_total_history.md) | 新增工具 get_institutional_total_history（期貨與選擇權） | |
-| [T131-institutional_traders_by_futures](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T131-institutional_traders_by_futures.md) | 新增工具 get_institutional_traders_by_futures（期貨與選擇權） | |
-| [T132-institutional_traders_by_futures_history](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T132-institutional_traders_by_futures_history.md) | 新增工具 get_institutional_traders_by_futures_history（期貨與選擇權） | |
-| [T133-institutional_traders_by_options](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T133-institutional_traders_by_options.md) | 新增工具 get_institutional_traders_by_options（期貨與選擇權） | |
-| [T134-institutional_traders_calls_puts](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T134-institutional_traders_calls_puts.md) | 新增工具 get_institutional_traders_calls_puts（期貨與選擇權） | |
-| [T135-large_traders_futures_history](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T135-large_traders_futures_history.md) | 新增工具 get_large_traders_futures_history（期貨與選擇權） | |
-| [T136-large_traders_futures_oi](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T136-large_traders_futures_oi.md) | 新增工具 get_large_traders_futures_oi（期貨與選擇權） | |
-| [T137-large_traders_options_oi](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T137-large_traders_options_oi.md) | 新增工具 get_large_traders_options_oi（期貨與選擇權） | |
-| [T138-local_companies_applying_for_listing](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T138-local_companies_applying_for_listing.md) | 新增工具 get_local_companies_applying_for_listing（上市程序與名單） | |
-| [T150-options_daily_history](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T150-options_daily_history.md) | 新增工具 get_options_daily_history（期貨與選擇權） | |
-| [T151-options_delta](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T151-options_delta.md) | 新增工具 get_options_delta（期貨與選擇權） | |
-| [T152-options_institutional_by_contract_history](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T152-options_institutional_by_contract_history.md) | 新增工具 get_options_institutional_by_contract_history（期貨與選擇權） | |
-| [T153-options_institutional_calls_puts_history](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T153-options_institutional_calls_puts_history.md) | 新增工具 get_options_institutional_calls_puts_history（期貨與選擇權） | |
-| [T154-options_oi_change](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T154-options_oi_change.md) | 新增工具 get_options_oi_change（期貨與選擇權） | |
-| [T155-otc_daily](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T155-otc_daily.md) | 新增工具 get_otc_daily（上櫃市場） | |
-| [T156-otc_index](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T156-otc_index.md) | 新增工具 get_otc_index（上櫃市場） | |
-| [T157-otc_odd_lot](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T157-otc_odd_lot.md) | 新增工具 get_otc_odd_lot（上櫃市場） | |
-| [T158-public_company_balance_sheet](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T158-public_company_balance_sheet.md) | 新增工具 get_public_company_balance_sheet（財務與基本面） | |
-| [T162-recently_listed_companies](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T162-recently_listed_companies.md) | 新增工具 get_recently_listed_companies（上市程序與名單） | |
-| [T167-stock_futures_margin](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T167-stock_futures_margin.md) | 新增工具 get_stock_futures_margin（期貨與選擇權） | |
-| [T178-suspended_listed_companies](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T178-suspended_listed_companies.md) | 新增工具 get_suspended_listed_companies（上市程序與名單） | |
+| | | |
 
 ## Task 列表
 
@@ -274,10 +275,10 @@
 | [T56-companies_cumulative_voting](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T056-companies_cumulative_voting.md) | 新增工具 get_companies_cumulative_voting（公司治理與內部人） | ✅ done |
 | [T57-companies_ownership_changes_business_scope](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T057-companies_ownership_changes_business_scope.md) | 新增工具 get_companies_ownership_changes_business_scope（公司治理與內部人） | ✅ done |
 | [T58-companies_ownership_changes_business_scope_trading](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T058-companies_ownership_changes_business_scope_trading.md) | 新增工具 get_companies_ownership_changes_business_scope_trading（公司治理與內部人） | ✅ done |
-| [T59-companies_with_anticompetitive_losses](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T059-companies_with_anticompetitive_losses.md) | 新增工具 get_companies_with_anticompetitive_losses（ESG 揭露細項） | 📋 pending |
+| [T59-companies_with_anticompetitive_losses](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T059-companies_with_anticompetitive_losses.md) | 新增工具 get_companies_with_anticompetitive_losses（ESG 揭露細項） | ✅ done |
 | [T60-companies_with_business_scope_changes](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T060-companies_with_business_scope_changes.md) | 新增工具 get_companies_with_business_scope_changes（行情歷史與指數） | ✅ done |
-| [T61-companies_with_csr_reports_103](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T061-companies_with_csr_reports_103.md) | 新增工具 get_companies_with_csr_reports_103（ESG 揭露細項） | 📋 pending |
-| [T62-companies_with_inclusive_finance_data](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T062-companies_with_inclusive_finance_data.md) | 新增工具 get_companies_with_inclusive_finance_data（ESG 揭露細項） | 📋 pending |
+| [T61-companies_with_csr_reports_103](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T061-companies_with_csr_reports_103.md) | 新增工具 get_companies_with_csr_reports_103（ESG 揭露細項） | ✅ done |
+| [T62-companies_with_inclusive_finance_data](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T062-companies_with_inclusive_finance_data.md) | 新增工具 get_companies_with_inclusive_finance_data（ESG 揭露細項） | ✅ done |
 | [T63-companies_with_independent_directors](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T063-companies_with_independent_directors.md) | 新增工具 get_companies_with_independent_directors（公司治理與內部人） | ✅ done |
 | [T64-companies_with_ownership_changes](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T064-companies_with_ownership_changes.md) | 新增工具 get_companies_with_ownership_changes（公司治理與內部人） | ✅ done |
 | [T65-companies_with_refineries_in_populated_areas](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T065-companies_with_refineries_in_populated_areas.md) | 新增工具 get_companies_with_refineries_in_populated_areas（行情歷史與指數） | ✅ done |
@@ -321,7 +322,7 @@
 | [T103-company_quarterly_audit_variance](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T103-company_quarterly_audit_variance.md) | 新增工具 get_company_quarterly_audit_variance（監理與重大訊息） | ✅ done |
 | [T104-company_quarterly_earnings_forecast_achievement](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T104-company_quarterly_earnings_forecast_achievement.md) | 新增工具 get_company_quarterly_earnings_forecast_achievement（監理與重大訊息） | ✅ done |
 | [T105-company_risk_management](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T105-company_risk_management.md) | 新增工具 get_company_risk_management（ESG 揭露細項） | ✅ done |
-| [T106-company_sec_regulatory_penalties](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T106-company_sec_regulatory_penalties.md) | 新增工具 get_company_sec_regulatory_penalties（監理與重大訊息） | 📋 pending |
+| [T106-company_sec_regulatory_penalties](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T106-company_sec_regulatory_penalties.md) | 新增工具 get_company_sec_regulatory_penalties（監理與重大訊息） | ✅ done |
 | [T107-company_shareholder_meeting_announcements](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T107-company_shareholder_meeting_announcements.md) | 新增工具 get_company_shareholder_meeting_announcements（公司治理與內部人） | ✅ done |
 | [T108-company_shareholder_meeting_announcements_by_code](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T108-company_shareholder_meeting_announcements_by_code.md) | 新增工具 get_company_shareholder_meeting_announcements_by_code（公司治理與內部人） | ✅ done |
 | [T109-company_shareholder_meeting_dates](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T109-company_shareholder_meeting_dates.md) | 新增工具 get_company_shareholder_meeting_dates（公司治理與內部人） | ✅ done |
@@ -332,28 +333,28 @@
 | [T114-company_water_management](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T114-company_water_management.md) | 新增工具 get_company_water_management（ESG 揭露細項） | ✅ done |
 | [T115-cross_market_trading_info](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T115-cross_market_trading_info.md) | 新增工具 get_cross_market_trading_info（交易輔助與全市場清單） | ✅ done |
 | [T116-daily_day_trading_targets](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T116-daily_day_trading_targets.md) | 新增工具 get_daily_day_trading_targets（交易輔助與全市場清單） | ✅ done |
-| [T117-daily_futures_market_report](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T117-daily_futures_market_report.md) | 新增工具 get_daily_futures_market_report（期貨與選擇權） | 📋 pending |
-| [T118-daily_options_market_report](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T118-daily_options_market_report.md) | 新增工具 get_daily_options_market_report（期貨與選擇權） | 📋 pending |
+| [T117-daily_futures_market_report](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T117-daily_futures_market_report.md) | 新增工具 get_daily_futures_market_report（期貨與選擇權） | ✅ done |
+| [T118-daily_options_market_report](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T118-daily_options_market_report.md) | 新增工具 get_daily_options_market_report（期貨與選擇權） | ✅ done |
 | [T119-daily_securities_lending_volume](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T119-daily_securities_lending_volume.md) | 新增工具 get_daily_securities_lending_volume（交易輔助與全市場清單） | ✅ done |
-| [T120-etf_regular_investment_ranking](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T120-etf_regular_investment_ranking.md) | 新增工具 get_etf_regular_investment_ranking（行情歷史與指數） | 📋 pending |
-| [T121-financial_program_abnormal_recommendations](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T121-financial_program_abnormal_recommendations.md) | 新增工具 get_financial_program_abnormal_recommendations（監理與重大訊息） | 📋 pending |
+| [T120-etf_regular_investment_ranking](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T120-etf_regular_investment_ranking.md) | 新增工具 get_etf_regular_investment_ranking（行情歷史與指數） | ✅ done |
+| [T121-financial_program_abnormal_recommendations](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T121-financial_program_abnormal_recommendations.md) | 新增工具 get_financial_program_abnormal_recommendations（監理與重大訊息） | ✅ done |
 | [T122-first_listed_foreign_stocks_daily](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T122-first_listed_foreign_stocks_daily.md) | 新增工具 get_first_listed_foreign_stocks_daily（交易輔助與全市場清單） | ✅ done |
-| [T123-foreign_companies_applying_for_listing](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T123-foreign_companies_applying_for_listing.md) | 新增工具 get_foreign_companies_applying_for_listing（上市程序與名單） | 📋 pending |
+| [T123-foreign_companies_applying_for_listing](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T123-foreign_companies_applying_for_listing.md) | 新增工具 get_foreign_companies_applying_for_listing（上市程序與名單） | ✅ done |
 | [T124-fund_basic_info](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T124-fund_basic_info.md) | 新增工具 get_fund_basic_info（財務與基本面） | ✅ done |
-| [T125-futures_daily_history](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T125-futures_daily_history.md) | 新增工具 get_futures_daily_history（期貨與選擇權） | 📋 pending |
-| [T126-futures_institutional](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T126-futures_institutional.md) | 新增工具 get_futures_institutional（期貨與選擇權） | 📋 pending |
-| [T127-index_futures_margin](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T127-index_futures_margin.md) | 新增工具 get_index_futures_margin（期貨與選擇權） | 📋 pending |
-| [T128-institutional_fut_opt_split_history](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T128-institutional_fut_opt_split_history.md) | 新增工具 get_institutional_fut_opt_split_history（期貨與選擇權） | 📋 pending |
-| [T129-institutional_general](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T129-institutional_general.md) | 新增工具 get_institutional_general（期貨與選擇權） | 📋 pending |
-| [T130-institutional_total_history](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T130-institutional_total_history.md) | 新增工具 get_institutional_total_history（期貨與選擇權） | 📋 pending |
-| [T131-institutional_traders_by_futures](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T131-institutional_traders_by_futures.md) | 新增工具 get_institutional_traders_by_futures（期貨與選擇權） | 📋 pending |
-| [T132-institutional_traders_by_futures_history](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T132-institutional_traders_by_futures_history.md) | 新增工具 get_institutional_traders_by_futures_history（期貨與選擇權） | 📋 pending |
-| [T133-institutional_traders_by_options](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T133-institutional_traders_by_options.md) | 新增工具 get_institutional_traders_by_options（期貨與選擇權） | 📋 pending |
-| [T134-institutional_traders_calls_puts](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T134-institutional_traders_calls_puts.md) | 新增工具 get_institutional_traders_calls_puts（期貨與選擇權） | 📋 pending |
-| [T135-large_traders_futures_history](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T135-large_traders_futures_history.md) | 新增工具 get_large_traders_futures_history（期貨與選擇權） | 📋 pending |
-| [T136-large_traders_futures_oi](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T136-large_traders_futures_oi.md) | 新增工具 get_large_traders_futures_oi（期貨與選擇權） | 📋 pending |
-| [T137-large_traders_options_oi](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T137-large_traders_options_oi.md) | 新增工具 get_large_traders_options_oi（期貨與選擇權） | 📋 pending |
-| [T138-local_companies_applying_for_listing](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T138-local_companies_applying_for_listing.md) | 新增工具 get_local_companies_applying_for_listing（上市程序與名單） | 📋 pending |
+| [T125-futures_daily_history](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T125-futures_daily_history.md) | 新增工具 get_futures_daily_history（期貨與選擇權） | ✅ done |
+| [T126-futures_institutional](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T126-futures_institutional.md) | 新增工具 get_futures_institutional（期貨與選擇權） | ✅ done |
+| [T127-index_futures_margin](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T127-index_futures_margin.md) | 新增工具 get_index_futures_margin（期貨與選擇權） | ✅ done |
+| [T128-institutional_fut_opt_split_history](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T128-institutional_fut_opt_split_history.md) | 新增工具 get_institutional_fut_opt_split_history（期貨與選擇權） | ✅ done |
+| [T129-institutional_general](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T129-institutional_general.md) | 新增工具 get_institutional_general（期貨與選擇權） | ✅ done |
+| [T130-institutional_total_history](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T130-institutional_total_history.md) | 新增工具 get_institutional_total_history（期貨與選擇權） | ✅ done |
+| [T131-institutional_traders_by_futures](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T131-institutional_traders_by_futures.md) | 新增工具 get_institutional_traders_by_futures（期貨與選擇權） | ✅ done |
+| [T132-institutional_traders_by_futures_history](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T132-institutional_traders_by_futures_history.md) | 新增工具 get_institutional_traders_by_futures_history（期貨與選擇權） | ✅ done |
+| [T133-institutional_traders_by_options](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T133-institutional_traders_by_options.md) | 新增工具 get_institutional_traders_by_options（期貨與選擇權） | ✅ done |
+| [T134-institutional_traders_calls_puts](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T134-institutional_traders_calls_puts.md) | 新增工具 get_institutional_traders_calls_puts（期貨與選擇權） | ✅ done |
+| [T135-large_traders_futures_history](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T135-large_traders_futures_history.md) | 新增工具 get_large_traders_futures_history（期貨與選擇權） | ✅ done |
+| [T136-large_traders_futures_oi](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T136-large_traders_futures_oi.md) | 新增工具 get_large_traders_futures_oi（期貨與選擇權） | ✅ done |
+| [T137-large_traders_options_oi](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T137-large_traders_options_oi.md) | 新增工具 get_large_traders_options_oi（期貨與選擇權） | ✅ done |
+| [T138-local_companies_applying_for_listing](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T138-local_companies_applying_for_listing.md) | 新增工具 get_local_companies_applying_for_listing（上市程序與名單） | ✅ done |
 | [T139-margin_loan_restrictions_announcement](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T139-margin_loan_restrictions_announcement.md) | 新增工具 get_margin_loan_restrictions_announcement（交易輔助與全市場清單） | ✅ done |
 | [T140-margin_trading_info](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T140-margin_trading_info.md) | 新增工具 get_margin_trading_info（行情歷史與指數） | ✅ done |
 | [T141-market_disposal_stocks](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T141-market_disposal_stocks.md) | 新增工具 get_market_disposal_stocks（監理與重大訊息） | ✅ done |
@@ -365,24 +366,24 @@
 | [T147-market_turnover_history](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T147-market_turnover_history.md) | 新增工具 get_market_turnover_history（交易輔助與全市場清單） | ✅ done |
 | [T148-monthly_trading_statistics](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T148-monthly_trading_statistics.md) | 新增工具 get_monthly_trading_statistics（交易輔助與全市場清單） | ✅ done |
 | [T149-odd_lot_trading_quotes](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T149-odd_lot_trading_quotes.md) | 新增工具 get_odd_lot_trading_quotes（交易輔助與全市場清單） | ✅ done |
-| [T150-options_daily_history](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T150-options_daily_history.md) | 新增工具 get_options_daily_history（期貨與選擇權） | 📋 pending |
-| [T151-options_delta](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T151-options_delta.md) | 新增工具 get_options_delta（期貨與選擇權） | 📋 pending |
-| [T152-options_institutional_by_contract_history](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T152-options_institutional_by_contract_history.md) | 新增工具 get_options_institutional_by_contract_history（期貨與選擇權） | 📋 pending |
-| [T153-options_institutional_calls_puts_history](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T153-options_institutional_calls_puts_history.md) | 新增工具 get_options_institutional_calls_puts_history（期貨與選擇權） | 📋 pending |
-| [T154-options_oi_change](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T154-options_oi_change.md) | 新增工具 get_options_oi_change（期貨與選擇權） | 📋 pending |
-| [T155-otc_daily](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T155-otc_daily.md) | 新增工具 get_otc_daily（上櫃市場） | 📋 pending |
-| [T156-otc_index](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T156-otc_index.md) | 新增工具 get_otc_index（上櫃市場） | 📋 pending |
-| [T157-otc_odd_lot](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T157-otc_odd_lot.md) | 新增工具 get_otc_odd_lot（上櫃市場） | 📋 pending |
-| [T158-public_company_balance_sheet](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T158-public_company_balance_sheet.md) | 新增工具 get_public_company_balance_sheet（財務與基本面） | 📋 pending |
+| [T150-options_daily_history](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T150-options_daily_history.md) | 新增工具 get_options_daily_history（期貨與選擇權） | ✅ done |
+| [T151-options_delta](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T151-options_delta.md) | 新增工具 get_options_delta（期貨與選擇權） | ✅ done |
+| [T152-options_institutional_by_contract_history](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T152-options_institutional_by_contract_history.md) | 新增工具 get_options_institutional_by_contract_history（期貨與選擇權） | ✅ done |
+| [T153-options_institutional_calls_puts_history](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T153-options_institutional_calls_puts_history.md) | 新增工具 get_options_institutional_calls_puts_history（期貨與選擇權） | ✅ done |
+| [T154-options_oi_change](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T154-options_oi_change.md) | 新增工具 get_options_oi_change（期貨與選擇權） | ✅ done |
+| [T155-otc_daily](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T155-otc_daily.md) | 新增工具 get_otc_daily（上櫃市場） | ✅ done |
+| [T156-otc_index](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T156-otc_index.md) | 新增工具 get_otc_index（上櫃市場） | ✅ done |
+| [T157-otc_odd_lot](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T157-otc_odd_lot.md) | 新增工具 get_otc_odd_lot（上櫃市場） | ✅ done |
+| [T158-public_company_balance_sheet](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T158-public_company_balance_sheet.md) | 新增工具 get_public_company_balance_sheet（財務與基本面） | ✅ done |
 | [T159-public_company_board_shareholdings](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T159-public_company_board_shareholdings.md) | 新增工具 get_public_company_board_shareholdings（公司治理與內部人） | ✅ done |
 | [T160-public_company_income_statement](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T160-public_company_income_statement.md) | 新增工具 get_public_company_income_statement（財務與基本面） | ✅ done |
 | [T161-real_time_trading_stats](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T161-real_time_trading_stats.md) | 新增工具 get_real_time_trading_stats（行情歷史與指數） | ✅ done |
-| [T162-recently_listed_companies](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T162-recently_listed_companies.md) | 新增工具 get_recently_listed_companies（上市程序與名單） | 📋 pending |
+| [T162-recently_listed_companies](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T162-recently_listed_companies.md) | 新增工具 get_recently_listed_companies（上市程序與名單） | ✅ done |
 | [T163-securities_trading_changes](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T163-securities_trading_changes.md) | 新增工具 get_securities_trading_changes（交易輔助與全市場清單） | ✅ done |
 | [T164-short_sale_lending_balance_history](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T164-short_sale_lending_balance_history.md) | 新增工具 get_short_sale_lending_balance_history（行情歷史與指數） | ✅ done |
 | [T165-short_sale_lending_trades_history](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T165-short_sale_lending_trades_history.md) | 新增工具 get_short_sale_lending_trades_history（行情歷史與指數） | ✅ done |
 | [T166-stock_daily_trading](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T166-stock_daily_trading.md) | 新增工具 get_stock_daily_trading（行情歷史與指數） | ✅ done |
-| [T167-stock_futures_margin](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T167-stock_futures_margin.md) | 新增工具 get_stock_futures_margin（期貨與選擇權） | 📋 pending |
+| [T167-stock_futures_margin](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T167-stock_futures_margin.md) | 新增工具 get_stock_futures_margin（期貨與選擇權） | ✅ done |
 | [T168-stock_monthly_average](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T168-stock_monthly_average.md) | 新增工具 get_stock_monthly_average（行情歷史與指數） | ✅ done |
 | [T169-stock_monthly_avg_history](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T169-stock_monthly_avg_history.md) | 新增工具 get_stock_monthly_avg_history（行情歷史與指數） | ✅ done |
 | [T170-stock_monthly_history](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T170-stock_monthly_history.md) | 新增工具 get_stock_monthly_history（行情歷史與指數） | ✅ done |
@@ -393,7 +394,7 @@
 | [T175-stocks_no_price_change_first_five_days](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T175-stocks_no_price_change_first_five_days.md) | 新增工具 get_stocks_no_price_change_first_five_days（交易輔助與全市場清單） | ✅ done |
 | [T176-suspended_day_trading_announcement](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T176-suspended_day_trading_announcement.md) | 新增工具 get_suspended_day_trading_announcement（交易輔助與全市場清單） | ✅ done |
 | [T177-suspended_day_trading_history](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T177-suspended_day_trading_history.md) | 新增工具 get_suspended_day_trading_history（交易輔助與全市場清單） | ✅ done |
-| [T178-suspended_listed_companies](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T178-suspended_listed_companies.md) | 新增工具 get_suspended_listed_companies（上市程序與名單） | 📋 pending |
+| [T178-suspended_listed_companies](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T178-suspended_listed_companies.md) | 新增工具 get_suspended_listed_companies（上市程序與名單） | ✅ done |
 | [T179-suspended_trading_stocks](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T179-suspended_trading_stocks.md) | 新增工具 get_suspended_trading_stocks（交易輔助與全市場清單） | ✅ done |
 | [T180-taiex_index_history](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T180-taiex_index_history.md) | 新增工具 get_taiex_index_history（行情歷史與指數） | ✅ done |
 | [T181-taiwan_50_index_history](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T181-taiwan_50_index_history.md) | 新增工具 get_taiwan_50_index_history（行情歷史與指數） | ✅ done |
@@ -407,6 +408,6 @@
 | [T189-warrant_trader_count](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T189-warrant_trader_count.md) | 新增工具 get_warrant_trader_count（行情歷史與指數） | ✅ done |
 | [T190-warrant_yearly_issuance_statistics](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T190-warrant_yearly_issuance_statistics.md) | 新增工具 get_warrant_yearly_issuance_statistics（行情歷史與指數） | ✅ done |
 
-**✅ done: 155 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 35**
+**✅ done: 190 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 0**
 
-> 自動生成於 2026-08-25 16:06
+> 自動生成於 2026-08-25 23:41
