@@ -3,7 +3,7 @@ github_issue: N/A
 title: 新增工具 get_realtime_quote（任意多檔單發即時報價，MIS 直查模式）
 type: feature
 priority: high
-status: pending
+status: done
 depends_on: []
 assignee: pi with opencode/x-preview-f-free
 created: 2026-08-26
@@ -98,12 +98,12 @@ Returns:
 - 盤中未成交/盤後情境：`z=-` 時以 `y`（昨收）或 `mp`（試算均價）fallback 並註明
 
 ## 驗收標準
-- [ ] `tools/list` 可見 `get_realtime_quote`，inputSchema 與本任務附帶者語意一致
-- [ ] 以真實參數呼叫至少一次成功：上市股（如 2330）、上櫃股（如 8996 或其他）混合多檔
-- [ ] 五檔 bids/asks 結構與 `get_intraday_quote` 一致；含 `_lineage`（取樣時間）
-- [ ] 盤後呼叫不報錯，回最後成交價或昨收 fallback（附說明）
-- [ ] watchlist 引擎行為完全不變（既有 engine 測試全綠）
-- [ ] `make test` / `go vet ./...` 通過；README 附錄（自動產生）重新彙出
+- [x] `tools/list` 可見 `get_realtime_quote`，inputSchema 與本任務附帶者語意一致
+- [x] 以真實參數呼叫至少一次成功：上市股（如 2330）、上櫃股（如 8996 或其他）混合多檔
+- [x] 五檔 bids/asks 結構與 `get_intraday_quote` 一致；含 `_lineage`（取樣時間）
+- [x] 盤後呼叫不報錯，回最後成交價或昨收 fallback（附說明）
+- [x] watchlist 引擎行為完全不變（既有 engine 測試全綠）
+- [x] `make test` / `go vet ./...` 通過；README 附錄（自動產生）重新彙出
 
 ## 備註
 - MIS 為非官方保證之公開端點（本機引擎既用之，政策一致）；高頻使用仍建議走引擎模式，

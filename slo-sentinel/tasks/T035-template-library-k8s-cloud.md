@@ -3,7 +3,7 @@ github_issue: N/A
 title: 範本庫擴充——k8s／EC2／EBS／SLB 負載平衡器資源範本
 type: feat
 priority: medium
-status: in-progress
+status: done
 depends_on:
 - T034-slo-defs-common-templates
 assignee: "pi with opencode/x-preview-f-free"

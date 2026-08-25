@@ -3,7 +3,7 @@ github_issue: N/A
 title: slo_defs 常用範本——基礎設施存活率＋HTTP/gRPC 服務 SLO 範本庫
 type: feat
 priority: medium
-status: in-progress
+status: done
 depends_on:
 - T023-slo-thresholds
 assignee: "pi with opencode/x-preview-f-free"

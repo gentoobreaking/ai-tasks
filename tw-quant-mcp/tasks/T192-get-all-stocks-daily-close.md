@@ -3,7 +3,7 @@ github_issue: N/A
 title: 新增工具 get_all_stocks_daily_close（單日全市場逐檔收盤行情）
 type: feature
 priority: medium
-status: pending
+status: done
 depends_on: []
 assignee: pi with opencode/x-preview-f-free
 created: 2026-08-26
@@ -74,12 +74,12 @@ Returns:
 - 遵循 Envelope、`_lineage`、Per-source Rate Limit（§4.4/§5.3）、`_chart_meta` 不適用
 
 ## 驗收標準
-- [ ] `tools/list` 可見 `get_all_stocks_daily_close`，inputSchema 與本任務附帶者語意一致
-- [ ] 以真實參數呼叫至少一次成功（含 stock_no 過濾與 offset 分頁各一次），回傳符合 Envelope 且含 `_lineage`
-- [ ] 非交易日呼叫回明確錯誤訊息（非靜默空值）
-- [ ] 快取生效：同日期重複呼叫第二次零上游 HTTP
-- [ ] 單元測試（fixtures 對照 MI_INDEX 真實回傳樣本）；`make test` / `go vet ./...` 通過
-- [ ] README 附錄（自動產生）重新彙出
+- [x] `tools/list` 可見 `get_all_stocks_daily_close`，inputSchema 與本任務附帶者語意一致
+- [x] 以真實參數呼叫至少一次成功（含 stock_no 過濾與 offset 分頁各一次），回傳符合 Envelope 且含 `_lineage`
+- [x] 非交易日呼叫回明確錯誤訊息（非靜默空值）
+- [x] 快取生效：同日期重複呼叫第二次零上游 HTTP
+- [x] 單元測試（fixtures 對照 MI_INDEX 真實回傳樣本）；`make test` / `go vet ./...` 通過
+- [x] README 附錄（自動產生）重新彙出
 
 ## 備註
 - 遠端對照：TWSEMCPServer 同名工具，行為以官方 API 為準而非複製其程式碼

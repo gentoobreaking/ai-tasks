@@ -1,6 +1,6 @@
 # 📁 Projects Dashboard
 
-> 最後更新: 2026-08-26 02:03 · 自動生成
+> 最後更新: 2026-08-26 05:18 · 自動生成
 
 ---
 
@@ -10,20 +10,11 @@
 |------|------|
 | 專案數 | 65 |
 | 任務總數 | 1352 |
-| ✅ 已完成 | 1276 |
-| ⬜ 待處理 | 9 |
-| 🔄 進行中 | 4 |
+| ✅ 已完成 | 1284 |
+| ⬜ 待處理 | 4 |
+| 🔄 進行中 | 1 |
 | ⏭️ 跳過 | 63 |
-| 總完成率 | 98% |
-
-## 🔥 待處理高優先級任務
-
-| 專案 | 任務 | 標題 |
-|------|------|------|
-| tw-quant-mcp | [T194-realtime-quote-single-shot](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T194-realtime-quote-single-shot.md) | 新增工具 get_realtime_quote（任意多檔單發即時報價，MIS 直查模式） |
-
----
-
+| 總完成率 | 99% |
 
 ## ⬜ 待處理
 
@@ -31,22 +22,14 @@
 |------|------|------|------|
 | gold-analysis-advanced | [T002](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis-advanced/tasks/T002.md) | ML 模型整合與優化 | ⬜ |
 | gold-analysis-advanced | [T004](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis-advanced/tasks/T004.md) | 實盤交易對接 | ⬜ |
-| slo-sentinel | [T019-ci-budget-gate](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T019-ci-budget-gate.md) | 成本/預算 CI 整合——notify 模式（F6 Phase 1） | ⬜ |
 | slo-sentinel | [T021-freeze-enforce](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T021-freeze-enforce.md) | 成本/預算 CI 部署閘門——enforce 模式（F6 Phase 2） | ⬜ |
 | slo-sentinel | [T030-billing-real-verify](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T030-billing-real-verify.md) | 成本 adapter 真實雲端驗證（移除 NEEDS VERIFICATION） | ⬜ |
-| tw-quant-mcp | [T191-get-twse-events](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T191-get-twse-events.md) | 新增工具 get_twse_events（證交所活動訊息） | ⬜ |
-| tw-quant-mcp | [T192-get-all-stocks-daily-close](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T192-get-all-stocks-daily-close.md) | 新增工具 get_all_stocks_daily_close（單日全市場逐檔收盤行情） | ⬜ |
-| tw-quant-mcp | [T193-get-abnormal-accumulated-notice-stocks](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T193-get-abnormal-accumulated-notice-stocks.md) | 新增工具 get_abnormal_accumulated_notice_stocks（注意累計次數異常） | ⬜ |
-| tw-quant-mcp | [T194-realtime-quote-single-shot](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T194-realtime-quote-single-shot.md) | 新增工具 get_realtime_quote（任意多檔單發即時報價，MIS 直查模式） | ⬜ |
 
 ## 🔄 進行中
 
 | 專案 | 任務 | 標題 | 狀態 |
 |------|------|------|------|
 | gold-analysis-advanced | [T001](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis-advanced/tasks/T001.md) | 機器學習模型開發 | 🔄 |
-| slo-sentinel | [T033-basic-capacity-sensor-templates](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T033-basic-capacity-sensor-templates.md) | dev profile 基本容量感測範本集——memory/cpu/disk io/network/processes | 🔄 |
-| slo-sentinel | [T034-slo-defs-common-templates](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T034-slo-defs-common-templates.md) | slo_defs 常用範本——基礎設施存活率＋HTTP/gRPC 服務 SLO 範本庫 | 🔄 |
-| slo-sentinel | [T035-template-library-k8s-cloud](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T035-template-library-k8s-cloud.md) | 範本庫擴充——k8s／EC2／EBS／SLB 負載平衡器資源範本 | 🔄 |
 
 ## ⏭️ 跳過
 
@@ -122,8 +105,8 @@
 
 | 指標 | 數值 |
 |------|------|
-| 過去 7 天完成 | 301 |
-| 過去 30 天完成 | 618 |
+| 過去 7 天完成 | 309 |
+| 過去 30 天完成 | 626 |
 | 平均週期時間 | 1.6 天 |
 | 週期時間中位數 | 0.0 天 |
 
@@ -133,10 +116,10 @@ xychart-beta
     title "過去 14 天任務完成趨勢"
     x-axis ["08-13", "08-14", "08-15", "08-16", "08-17", "08-18", "08-19", "08-20", "08-21", "08-22", "08-23", "08-24", "08-25", "08-26"]
     y-axis "完成數" 0 --> 165
-    line [0, 0, 8, 2, 119, 22, 16, 0, 3, 28, 0, 77, 165, 12]
+    line [0, 0, 8, 2, 119, 22, 16, 0, 3, 28, 0, 77, 165, 20]
 ```
 
-📊 總計: 452 | 日均: 32.3 | 本週: 285 | 📈 成長中
+📊 總計: 460 | 日均: 32.9 | 本週: 293 | 📈 成長中
 
 ## 📋 專案列表
 
@@ -192,14 +175,13 @@ xychart-beta
 | ✅ | [sinotrade-scraper](https://github.com/gentoobreaking/ai-tasks/tree/main/sinotrade-scraper) | 9 | 8 | 0 | 0 | 1 | ████████████████████ 100% | 2026-04-28 |
 | ✅ | [skill-enhancement](https://github.com/gentoobreaking/ai-tasks/tree/main/skill-enhancement) | 4 | 4 | 0 | 0 | 0 | ████████████████████ 100% | 2026-04-04 |
 | ✅ | [skills-audit](https://github.com/gentoobreaking/ai-tasks/tree/main/skills-audit) | 5 | 5 | 0 | 0 | 0 | ████████████████████ 100% | 2026-05-19 |
-| 🔄 | [slo-sentinel](https://github.com/gentoobreaking/ai-tasks/tree/main/slo-sentinel) | 36 | 30 | 3 | 3 | 0 | ████████████████░░░░ 83% | 2026-08-26 |
+| ⬜ | [slo-sentinel](https://github.com/gentoobreaking/ai-tasks/tree/main/slo-sentinel) | 36 | 34 | 2 | 0 | 0 | ██████████████████░░ 94% | 2026-08-26 |
 | ✅ | [taolive-ios](https://github.com/gentoobreaking/ai-tasks/tree/main/taolive-ios) | 67 | 19 | 0 | 0 | 48 | ████████████████████ 100% | 2026-05-14 |
 | ✅ | [task-url-repair](https://github.com/gentoobreaking/ai-tasks/tree/main/task-url-repair) | 1 | 1 | 0 | 0 | 0 | ████████████████████ 100% | 2026-04-20 |
 | ✅ | [tasks-executor](https://github.com/gentoobreaking/ai-tasks/tree/main/tasks-executor) | 8 | 8 | 0 | 0 | 0 | ████████████████████ 100% | 2026-05-12 |
 | ✅ | [tw-quant](https://github.com/gentoobreaking/ai-tasks/tree/main/tw-quant) | 14 | 14 | 0 | 0 | 0 | ████████████████████ 100% | 2026-08-25 |
 | ✅ | [tw-quant-daybrain](https://github.com/gentoobreaking/ai-tasks/tree/main/tw-quant-daybrain) | 28 | 28 | 0 | 0 | 0 | ████████████████████ 100% | 2026-08-12 |
-| ⬜ | [tw-quant-mcp](https://github.com/gentoobreaking/ai-tasks/tree/main/tw-quant-mcp) | 194 | 190 | 4 | 0 | 0 | ███████████████████░ 97% | 2026-08-26 |
-  **[T194-realtime-quote-single-shot](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T194-realtime-quote-single-shot.md)**: 新增工具 get_realtime_quote（任意多檔單發即時報價，MIS 直查模式）
+| ✅ | [tw-quant-mcp](https://github.com/gentoobreaking/ai-tasks/tree/main/tw-quant-mcp) | 194 | 194 | 0 | 0 | 0 | ████████████████████ 100% | 2026-08-26 |
 | ✅ | [tw-quant-pickup](https://github.com/gentoobreaking/ai-tasks/tree/main/tw-quant-pickup) | 47 | 47 | 0 | 0 | 0 | ████████████████████ 100% | 2026-08-24 |
 | ✅ | [tw-quant-selector](https://github.com/gentoobreaking/ai-tasks/tree/main/tw-quant-selector) | 148 | 148 | 0 | 0 | 0 | ████████████████████ 100% | 2026-08-15 |
 | ✅ | [tw-quant-signal](https://github.com/gentoobreaking/ai-tasks/tree/main/tw-quant-signal) | 32 | 32 | 0 | 0 | 0 | ████████████████████ 100% | 2026-08-19 |

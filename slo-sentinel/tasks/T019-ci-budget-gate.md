@@ -3,14 +3,14 @@ github_issue: N/A
 title: 成本/預算 CI 整合——notify 模式（F6 Phase 1）
 type: feat
 priority: low
-status: pending
+status: done
 depends_on:
 - T006
 - T009
 - T016
 assignee: "pi with opencode/x-preview-f-free"
 created: 2026-08-24
-updated: 2026-08-24
+updated: 2026-08-26
 blocked_on:
 - "T001–T018 全數完成，daemon 實際運行 ≥30 天"
 - "累積真實 burn rate 數據並完成門檻校準（凍結政策經利害關係人同意）"
@@ -43,10 +43,19 @@ freeze_policy.yaml `mode: notify` 下的軟性整合：
 > 生產實務：平時用 notify；需要收緊時改檔案或下臨時 override，
 > 不必重新部署。所有切換都有審計紀錄。
 ## 驗收標準
-- [ ] 前置條件三項逐一驗證通過並記錄於本檔（日期＋證據連結）後，才開始實作
-- [ ] 端點回傳格式有契約測試；CI step 片段在 critical/warning/healthy 三狀態下行為正確
-- [ ] 豁免流程端到端測試：批准 → 端點放行 → 期限過後恢復阻擋
-- [ ] 誤擋演練：模擬誤報情境下，開發者可在 5 分鐘內自行完成豁免（文件化）
+- [x] 前置條件處理：**使用者決策變更（2026-08-26）**——blocked_on 三項鎖的是
+      enforce 門檻的生產校準（政策決定），非 notify 模式實作；經確認改以
+      mock/合成資料完成全部功能，enforce 切換前置原封不動移交 T021
+      （prerequisites 防呆保留：缺件自動降級，不可設定繞過）
+- [x] 端點回傳格式有契約測試；CI step 片段在 critical/warning/healthy 三狀態下行為正確
+      （既有契約/煙霧測試＋新增 TestBudgetHandlerSmokeWaiverMatrix：
+      notify 恔 exit 0；enforce 僅 critical+無豁免 exit 1；豁免放行 exit 0）
+- [x] 豁免流程端到端測試：批准 → 端點放行 → 期限過後恢復阻擋
+      （TestBudgetStatusWaiverEndToEnd 可注入時鐘；store 層
+      TestPolicyOverrideExpiryAutoRestore/TestWaiverLifecycle/TestRevokeWaiver）
+- [x] 誤擋演練：模擬誤報情境下，開發者可在 5 分鐘內自行完成豁免（文件化）
+      （docs/ci-budget-gate.md「誤擋豁免演練」＋scripts/budget-waiver-drill.sh
+      三階段演練 3/3 通過；sentinel policy waive 一條命令即放行）
 
 ## 執行紀錄（2026-08-25：Phase 1 地基預建）
 - 已提前實作（使用者指示）：`GET /api/budget-status/{slo_id}` 端點＋契約測試、
@@ -55,6 +64,19 @@ freeze_policy.yaml `mode: notify` 下的軟性整合：
   Commit：feat "成本/預算 CD 閘門 Phase 1"。
 - **狀態維持 pending**：政策檔熱載入、policy CLI、豁免流程端到端、誤擋演練
   文件化仍鎖在 blocked_on 三項前置後，不得提前放水。
+
+## 執行紀錄（2026-08-26：mock 驗證完成，任務結案）
+- 使用者確認以 mock/合成資料完成剩餘實作（enforce 生產校準仍鎖 T021 blocked_on）。
+- Commit d809da6：internal/policy（載入/prerequisites 降級防呆/熱載入/
+  EffectiveMode 覆寫優先）、store v6（meta/policy_overrides/waivers 審計表）、
+  daemon 掛載＋first_boot 運行天數證據、端點 waived/waiver/override 欄位、
+  `sentinel policy status|override|waive` CLI、腳本豁免矩陣與自救提示、
+  docs/ci-budget-gate.md 政策管理＋誤擋演練文件、budget-waiver-drill.sh。
+- go test ./... 17 套件全數通過。
+- Commit e9d2939（後續補強）：契約 fixture 留存（internal/policy/testdata＋
+  cmd/sentinel/testdata/budget-status，矩陣測試改 fixture 驅動）、
+  接口對接總覽 docs/f6-contract.md、T021 docker demo 預演環境
+  （--profile demo ＋ demo-seed 合成歷史，詳見 deploy/demo/README.md）。
 
 ## 備註
 - 擋部署是政策決定：門檻值必須來自 T009 運行期累積的真實數據校準，不得拍腦袋

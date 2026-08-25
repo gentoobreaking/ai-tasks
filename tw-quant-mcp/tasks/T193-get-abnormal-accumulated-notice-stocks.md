@@ -3,7 +3,7 @@ github_issue: N/A
 title: 新增工具 get_abnormal_accumulated_notice_stocks（注意累計次數異常）
 type: feature
 priority: medium
-status: pending
+status: done
 depends_on: []
 assignee: pi with opencode/x-preview-f-free
 created: 2026-08-26
@@ -68,11 +68,11 @@ Args:
 - `name` 為本地端過濾；遵循 Envelope、`_lineage`、快取（TTL 對齊注意股系列）、Rate Limit
 
 ## 驗收標準
-- [ ] `tools/list` 可見 `get_abnormal_accumulated_notice_stocks`，inputSchema 與本任務附帶者語意一致
-- [ ] 以真實參數呼叫至少一次成功（含 name 過濾一次），回傳符合 Envelope 且含 `_lineage`
-- [ ] 快取生效：重複呼叫第二次零上游 HTTP
-- [ ] 單元測試（fixtures 對照上游回傳樣本，含權證列與空 Code 列案例）；`make test` / `go vet ./...` 通過
-- [ ] README 附錄（自動產生）重新彙出
+- [x] `tools/list` 可見 `get_abnormal_accumulated_notice_stocks`，inputSchema 與本任務附帶者語意一致
+- [x] 以真實參數呼叫至少一次成功（含 name 過濾一次），回傳符合 Envelope 且含 `_lineage`
+- [x] 快取生效：重複呼叫第二次零上游 HTTP
+- [x] 單元測試（fixtures 對照上游回傳樣本，含權證列與空 Code 列案例）；`make test` / `go vet ./...` 通過
+- [x] README 附錄（自動產生）重新彙出
 
 ## 備註
 - 遠端對照：TWSEMCPServer 同名工具，行為以官方 API 為準而非複製其程式碼

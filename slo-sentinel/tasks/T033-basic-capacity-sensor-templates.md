@@ -3,7 +3,7 @@ github_issue: N/A
 title: dev profile 基本容量感測範本集——memory/cpu/disk io/network/processes
 type: feat
 priority: medium
-status: in-progress
+status: done
 depends_on:
 - T028-defs-hot-reload
 assignee: "pi with opencode/x-preview-f-free"

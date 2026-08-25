@@ -3,7 +3,7 @@ github_issue: N/A
 title: 新增工具 get_twse_events（證交所活動訊息）
 type: feature
 priority: medium
-status: pending
+status: done
 depends_on: []
 assignee: pi with opencode/x-preview-f-free
 created: 2026-08-26
@@ -59,11 +59,11 @@ Args:
   Per-source Rate Limit（§4.4/§5.3）；活動訊息屬低頻更新，TTL 可較長（如 1h）
 
 ## 驗收標準
-- [ ] `tools/list` 可見 `get_twse_events`，inputSchema 與本任務附帶者語意一致
-- [ ] 以真實參數呼叫至少一次成功，回傳符合 Envelope 結構且含 `_lineage`
-- [ ] 快取生效：重複呼叫第二次零上游 HTTP（檢查 log 或 lineage）
-- [ ] 單元測試（fixtures 對照上游回傳樣本）；`make test` / `go vet ./...` 通過
-- [ ] README 附錄（自動產生）重新彙出
+- [x] `tools/list` 可見 `get_twse_events`，inputSchema 與本任務附帶者語意一致
+- [x] 以真實參數呼叫至少一次成功，回傳符合 Envelope 結構且含 `_lineage`
+- [x] 快取生效：重複呼叫第二次零上游 HTTP（檢查 log 或 lineage）
+- [x] 單元測試（fixtures 對照上游回傳樣本）；`make test` / `go vet ./...` 通過
+- [x] README 附錄（自動產生）重新彙出
 
 ## 備註
 - 遠端對照：TWSEMCPServer 同名工具（Python/FastMCP），行為以官方 API 為準而非複製其程式碼
