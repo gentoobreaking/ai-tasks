@@ -1,6 +1,6 @@
 # 📁 Projects Dashboard
 
-> 最後更新: 2026-08-25 03:40 · 自動生成
+> 最後更新: 2026-08-25 10:12 · 自動生成
 
 ---
 
@@ -8,13 +8,22 @@
 
 | 指標 | 數量 |
 |------|------|
-| 專案數 | 64 |
-| 任務總數 | 1183 |
-| ✅ 已完成 | 1111 |
-| ⬜ 待處理 | 5 |
+| 專案數 | 65 |
+| 任務總數 | 1197 |
+| ✅ 已完成 | 1124 |
+| ⬜ 待處理 | 6 |
 | 🔄 進行中 | 4 |
 | ⏭️ 跳過 | 63 |
 | 總完成率 | 99% |
+
+## 🔥 待處理高優先級任務
+
+| 專案 | 任務 | 標題 |
+|------|------|------|
+| tw-quant | [T003-tw-quant-buypoint](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant/tasks/T003-tw-quant-buypoint.md) | 台股篩選腳本-找買點 |
+
+---
+
 
 ## ⬜ 待處理
 
@@ -25,6 +34,7 @@
 | slo-sentinel | [T019-ci-budget-gate](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T019-ci-budget-gate.md) | 成本/預算 CI 整合——notify 模式（F6 Phase 1） | ⬜ |
 | slo-sentinel | [T021-freeze-enforce](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T021-freeze-enforce.md) | 成本/預算 CI 部署閘門——enforce 模式（F6 Phase 2） | ⬜ |
 | slo-sentinel | [T030-billing-real-verify](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T030-billing-real-verify.md) | 成本 adapter 真實雲端驗證（移除 NEEDS VERIFICATION） | ⬜ |
+| tw-quant | [T003-tw-quant-buypoint](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant/tasks/T003-tw-quant-buypoint.md) | 台股篩選腳本-找買點 | ⬜ |
 
 ## 🔄 進行中
 
@@ -109,8 +119,8 @@
 
 | 指標 | 數值 |
 |------|------|
-| 過去 7 天完成 | 160 |
-| 過去 30 天完成 | 455 |
+| 過去 7 天完成 | 171 |
+| 過去 30 天完成 | 466 |
 | 平均週期時間 | 1.8 天 |
 | 週期時間中位數 | 0.0 天 |
 
@@ -120,10 +130,10 @@ xychart-beta
     title "過去 14 天任務完成趨勢"
     x-axis ["08-12", "08-13", "08-14", "08-15", "08-16", "08-17", "08-18", "08-19", "08-20", "08-21", "08-22", "08-23", "08-24", "08-25"]
     y-axis "完成數" 0 --> 119
-    line [7, 0, 0, 8, 2, 119, 22, 16, 0, 3, 28, 0, 77, 2]
+    line [7, 0, 0, 8, 2, 119, 22, 16, 0, 3, 28, 0, 77, 13]
 ```
 
-📊 總計: 284 | 日均: 20.3 | 本週: 126 | 📉 下降中
+📊 總計: 295 | 日均: 21.1 | 本週: 137 | 📉 下降中
 
 ## 📋 專案列表
 
@@ -183,6 +193,8 @@ xychart-beta
 | ✅ | [taolive-ios](https://github.com/gentoobreaking/ai-tasks/tree/main/taolive-ios) | 67 | 19 | 0 | 0 | 48 | ████████████████████ 100% | 2026-05-14 |
 | ✅ | [task-url-repair](https://github.com/gentoobreaking/ai-tasks/tree/main/task-url-repair) | 1 | 1 | 0 | 0 | 0 | ████████████████████ 100% | 2026-04-20 |
 | ✅ | [tasks-executor](https://github.com/gentoobreaking/ai-tasks/tree/main/tasks-executor) | 8 | 8 | 0 | 0 | 0 | ████████████████████ 100% | 2026-05-12 |
+| ⬜ | [tw-quant](https://github.com/gentoobreaking/ai-tasks/tree/main/tw-quant) | 14 | 13 | 1 | 0 | 0 | ██████████████████░░ 92% | 2026-08-25 |
+  **[T003-tw-quant-buypoint](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant/tasks/T003-tw-quant-buypoint.md)**: 台股篩選腳本-找買點
 | ✅ | [tw-quant-daybrain](https://github.com/gentoobreaking/ai-tasks/tree/main/tw-quant-daybrain) | 28 | 28 | 0 | 0 | 0 | ████████████████████ 100% | 2026-08-12 |
 | ✅ | [tw-quant-mcp](https://github.com/gentoobreaking/ai-tasks/tree/main/tw-quant-mcp) | 39 | 39 | 0 | 0 | 0 | ████████████████████ 100% | 2026-08-22 |
 | ✅ | [tw-quant-pickup](https://github.com/gentoobreaking/ai-tasks/tree/main/tw-quant-pickup) | 47 | 47 | 0 | 0 | 0 | ████████████████████ 100% | 2026-08-24 |
