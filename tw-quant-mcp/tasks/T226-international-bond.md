@@ -26,6 +26,22 @@ updated: 2026-08-26
 | `tpex_international_bond_quotes` | 國際債券當日盤中報價行情表(含寶島債) |
 | `tpex_international_bond_trade` | 國際債券當日盤中成交行情表 |
 | `bond_ISSBD1_data` | 公債發行資料下載 |
+| `BDdos209UTF` | (無描述) |
+| `BDdos215UTF` | (無描述) |
+| `BDdos216UTF` | (無描述) |
+| `bond_ISSBD10_data` | (無描述) |
+| `bond_ISSBD11_data` | (無描述) |
+| `bond_ISSBD2_data` | (無描述) |
+| `bond_ISSBD3_data` | (無描述) |
+| `bond_ISSBD4_data` | (無描述) |
+| `bond_ISSBD5_data` | (無描述) |
+| `bond_ISSBD6_data` | (無描述) |
+| `bond_ISSBD7_data` | (無描述) |
+| `bond_ISSBD8_data` | (無描述) |
+| `bond_ISSBD9_data` | (無描述) |
+| `bond_cb_daily` | (無描述) |
+| `tpex_international_bond_issue_investor` | (無描述) |
+| `tpex_international_bond_issue_org` | (無描述) |
 
 > Swagger 目錄：https://www.tpex.org.tw/openapi/swagger.json
 > 回應格式以官方實測為準（實作第一步先用 curl 取樣存 fixtures）。

@@ -27,6 +27,8 @@ updated: 2026-08-26
 | `tpex_warrant_wcb_daily_quts` | 牛熊證收盤行情日報表 |
 | `tpex_warrant_wxy_issue` | 展延型牛熊證發行基本資料 |
 | `tpex_warrant_wxy_daily_quts` | 展延型牛熊證收盤行情日報表 |
+| `tpex_warrant_wcb_monthly_quts` | (無描述) |
+| `tpex_warrant_wxy_monthly_quts` | (無描述) |
 
 > Swagger 目錄：https://www.tpex.org.tw/openapi/swagger.json
 > 回應格式以官方實測為準（實作第一步先用 curl 取樣存 fixtures）。

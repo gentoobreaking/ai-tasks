@@ -28,6 +28,11 @@ updated: 2026-08-26
 | `BTDailyTradeInformationOptions` | 鉅額交易各商品成交資訊-選擇權 |
 | `DailySummaryOfBlockTradeFutures` | 鉅額交易成交量統計-期貨 |
 | `DailySummaryOfBlockTradeOptions` | 鉅額交易成交量統計-選擇權 |
+| `BTContinuousMatchingSingleOrderFutures` | (無描述) |
+| `BTContinuousMatchingSingleOrderOptions` | (無描述) |
+| `BlockTradeContinuousMatchingCombinationOrder` | (無描述) |
+| `BlockTradeContinuousMatchingSingleOrder` | (無描述) |
+| `BlockTradeNegotiation` | (無描述) |
 
 > Swagger 目錄：https://openapi.taifex.com.tw/swagger.json
 > 回應格式以官方實測為準（實作第一步先用 curl 取樣存 fixtures）。

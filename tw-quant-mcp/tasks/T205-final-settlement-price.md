@@ -28,6 +28,11 @@ updated: 2026-08-26
 | `FinalSettlementPriceIndexFutures` | 最後結算價-股價指數類期貨 |
 | `FinalSettlementPriceSSF` | 最後結算價-股票期貨 |
 | `FinalSettlementPriceIndexOptions` | 最後結算價-指數選擇權 |
+| `FinalSettlementPriceFx` | (無描述) |
+| `FinalSettlementPriceGold` | (無描述) |
+| `FinalSettlementPriceIR` | (無描述) |
+| `FinalSettlementPriceOptions` | (無描述) |
+| `FinalSettlementPriceSSO` | (無描述) |
 
 > Swagger 目錄：https://openapi.taifex.com.tw/swagger.json
 > 回應格式以官方實測為準（實作第一步先用 curl 取樣存 fixtures）。

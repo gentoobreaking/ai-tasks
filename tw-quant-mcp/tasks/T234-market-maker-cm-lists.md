@@ -27,6 +27,9 @@ updated: 2026-08-26
 | `MarketMakerListsOpt` | 選擇權商品造市者清單 |
 | `CMLists` | 結算會員名冊 |
 | `ClearingBankLists` | 結算銀行名冊 |
+| `CCP_CMLists` | (無描述) |
+| `CustodianBankLists` | (無描述) |
+| `MarketParticipants` | (無描述) |
 
 > Swagger 目錄：https://openapi.taifex.com.tw/swagger.json
 > 回應格式以官方實測為準（實作第一步先用 curl 取樣存 fixtures）。

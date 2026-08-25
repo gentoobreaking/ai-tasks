@@ -26,6 +26,14 @@ updated: 2026-08-26
 | `SettledPositionsOfContractsOnExpirationDate` | 到期契約履約交割（全部） |
 | `SettledPositionsFutures` | 到期契約履約交割-期貨商品 |
 | `SettledPositionsIndexOptions` | 到期契約履約交割-指數選擇權 |
+| `SettledPositionsFX` | (無描述) |
+| `SettledPositionsFXFutures` | (無描述) |
+| `SettledPositionsGold` | (無描述) |
+| `SettledPositionsIR` | (無描述) |
+| `SettledPositionsIndexFutures` | (無描述) |
+| `SettledPositionsOptions` | (無描述) |
+| `SettledPositionsSSF` | (無描述) |
+| `SettledPositionsSSO` | (無描述) |
 
 > Swagger 目錄：https://openapi.taifex.com.tw/swagger.json
 > 回應格式以官方實測為準（實作第一步先用 curl 取樣存 fixtures）。

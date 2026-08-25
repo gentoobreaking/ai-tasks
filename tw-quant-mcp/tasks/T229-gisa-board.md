@@ -26,6 +26,8 @@ updated: 2026-08-26
 | `tpex_gisa_company` | 創櫃板公司資訊 |
 | `tpex_gisa_highlight` | 創櫃板公司市場現況 |
 | `tpex_gisa_financing_in_process` | 創櫃板辦理中籌資資訊 |
+| `tpex_gisa_financing_before` | (無描述) |
+| `tpex_gisa_financing_history` | (無描述) |
 
 > Swagger 目錄：https://www.tpex.org.tw/openapi/swagger.json
 > 回應格式以官方實測為準（實作第一步先用 curl 取樣存 fixtures）。

@@ -26,6 +26,14 @@ updated: 2026-08-26
 | `tpex_warrant_daily_quts` | 上櫃權證收盤行情日報表 |
 | `mopsfin_t187ap37_O` | 上櫃權證基本資料彙總表 |
 | `tpex_warrant_issue` | 上櫃權證發行基本資料 |
+| `mopsfin_t187ap36_O` | (無描述) |
+| `mopsfin_t187ap42_O` | (無描述) |
+| `tpex_warrant` | (無描述) |
+| `tpex_warrant_monthly_quts` | (無描述) |
+| `tpex_warrant_quts` | (無描述) |
+| `tpex_warrant_statistics` | (無描述) |
+| `tpex_warrant_suspend_history` | (無描述) |
+| `tpex_warrant_suspend_today` | (無描述) |
 
 > Swagger 目錄：https://www.tpex.org.tw/openapi/swagger.json
 > 回應格式以官方實測為準（實作第一步先用 curl 取樣存 fixtures）。

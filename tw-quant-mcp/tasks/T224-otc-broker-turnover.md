@@ -25,6 +25,8 @@ updated: 2026-08-26
 |---|---|
 | `tpex_daily_broker1` | 上櫃各券商當日營業金額統計表 |
 | `tpex_daily_broker2` | 上櫃各券商總公司當日營業金額統計表 |
+| `mopsfin_t187ap01` | (無描述) |
+| `mopsfin_t187ap19_O` | (無描述) |
 
 > Swagger 目錄：https://www.tpex.org.tw/openapi/swagger.json
 > 回應格式以官方實測為準（實作第一步先用 curl 取樣存 fixtures）。

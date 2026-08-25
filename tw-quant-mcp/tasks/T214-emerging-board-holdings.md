@@ -24,6 +24,7 @@ updated: 2026-08-26
 | 端點 | 說明 |
 |---|---|
 | `mopsfin_t187ap11_R` | 興櫃公司董監事持股餘額明細資料 |
+| `mopsfin_t187ap03_R` | (無描述) |
 
 > Swagger 目錄：https://www.tpex.org.tw/openapi/swagger.json
 > 回應格式以官方實測為準（實作第一步先用 curl 取樣存 fixtures）。

@@ -27,6 +27,11 @@ updated: 2026-08-26
 | `Weekly_OPT` | 期貨商交易量週報表－選擇權 |
 | `Monthly_FUT` | 期貨商交易量月報表－期貨 |
 | `Yearly_OPT` | 期貨商交易量年報表－選擇權 |
+| `Daily_OPT` | (無描述) |
+| `Daily_OPT_W` | (無描述) |
+| `Monthly_OPT` | (無描述) |
+| `Weekly_FUT` | (無描述) |
+| `Yearly_FUT` | (無描述) |
 
 > Swagger 目錄：https://openapi.taifex.com.tw/swagger.json
 > 回應格式以官方實測為準（實作第一步先用 curl 取樣存 fixtures）。

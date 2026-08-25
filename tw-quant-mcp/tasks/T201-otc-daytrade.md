@@ -25,6 +25,8 @@ updated: 2026-08-26
 |---|---|
 | `tpex_securities` | 上櫃股票現股當沖交易標的資訊 |
 | `tpex_intraday_trading_statistics` | 上櫃股票現股當沖交易統計資訊 |
+| `tpex_intraday_trading_his` | (無描述) |
+| `tpex_intraday_trading_pre` | (無描述) |
 
 > Swagger 目錄：https://www.tpex.org.tw/openapi/swagger.json
 > 回應格式以官方實測為準（實作第一步先用 curl 取樣存 fixtures）。

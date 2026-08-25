@@ -25,6 +25,7 @@ updated: 2026-08-26
 |---|---|
 | `tpex_opfund_latest` | 開放式基金當日行情表 |
 | `tpex_opfund_recommended_dealer` | 受益憑證造市商與造市之基金 |
+| `tpex_opfund_market_highlight` | (無描述) |
 
 > Swagger 目錄：https://www.tpex.org.tw/openapi/swagger.json
 > 回應格式以官方實測為準（實作第一步先用 curl 取樣存 fixtures）。

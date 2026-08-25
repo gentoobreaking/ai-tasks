@@ -30,6 +30,10 @@ updated: 2026-08-26
 | `tpex_daily_market_value` | 上櫃歷史個股市值排行 |
 | `tpex_trading_amount_avg` | 上櫃歷史個股日均值排行 |
 | `tpex_trading_volumes_avg` | 上櫃歷史個股日均量排行 |
+| `tpex_active_advanced` | (無描述) |
+| `tpex_active_declined` | (無描述) |
+| `tpex_active_dollar_volume` | (無描述) |
+| `tpex_trading_volume_ratio` | (無描述) |
 
 > Swagger 目錄：https://www.tpex.org.tw/openapi/swagger.json
 > 回應格式以官方實測為準（實作第一步先用 curl 取樣存 fixtures）。

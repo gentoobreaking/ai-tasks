@@ -27,6 +27,21 @@ updated: 2026-08-26
 | `FCMBranchLists` | 期貨商分公司名冊 |
 | `NetValuePerShareStatement` | 期貨商每股淨值明細表 |
 | `IncomeStatementF` | 專營期貨商稅前累計損益彙總表 |
+| `AccumulatedIncomeStateF` | (無描述) |
+| `AccumulatedIncomeStateR` | (無描述) |
+| `AccumulatedIncomeStateS` | (無描述) |
+| `AccumulatedIncomeStatementBeforeTaxStatement` | (無描述) |
+| `EPSBeforeTaxF` | (無描述) |
+| `EPSBeforeTaxR` | (無描述) |
+| `EPSBeforeTaxS` | (無描述) |
+| `IncomeStatementR` | (無描述) |
+| `IncomeStatementS` | (無描述) |
+| `NetIncomeRankingF` | (無描述) |
+| `NetIncomeRankingR` | (無描述) |
+| `NetIncomeRankingS` | (無描述) |
+| `NetValuePerShareF` | (無描述) |
+| `NetValuePerShareR` | (無描述) |
+| `NetValuePerShareS` | (無描述) |
 
 > Swagger 目錄：https://openapi.taifex.com.tw/swagger.json
 > 回應格式以官方實測為準（實作第一步先用 curl 取樣存 fixtures）。

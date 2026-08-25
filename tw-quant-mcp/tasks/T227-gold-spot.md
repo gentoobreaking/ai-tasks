@@ -27,6 +27,7 @@ updated: 2026-08-26
 | `tpex_gold_market_highlight` | 黃金現貨市場現況 |
 | `tpex_warrant_gold` | 黃金現貨權證發行基本資料 |
 | `tpex_warrant_gold_quts` | 黃金現貨權證收盤行情 |
+| `tpex_gold_recommended_dealer` | (無描述) |
 
 > Swagger 目錄：https://www.tpex.org.tw/openapi/swagger.json
 > 回應格式以官方實測為準（實作第一步先用 curl 取樣存 fixtures）。

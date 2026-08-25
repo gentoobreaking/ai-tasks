@@ -27,6 +27,9 @@ updated: 2026-08-26
 | `tpex50_index` | 富櫃50指數歷史收盤 |
 | `tpex200_change` | 富櫃200指數當日收盤 |
 | `tpex200_constituents` | 富櫃200指數成分股 |
+| `tpex50_constituents` | (無描述) |
+| `tpex_index_consti` | (無描述) |
+| `tpex_reward_index` | (無描述) |
 
 > Swagger 目錄：https://www.tpex.org.tw/openapi/swagger.json
 > 回應格式以官方實測為準（實作第一步先用 curl 取樣存 fixtures）。

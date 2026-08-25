@@ -27,6 +27,12 @@ updated: 2026-08-26
 | `PositionLimitNonEquity` | 交易人部位限制-非個股類 |
 | `ContractAdj` | 股票期貨/選擇權契約調整一覽事項 |
 | `SSFAdjustedInfo` | 股票期貨/選擇權調整型契約資訊 |
+| `FuturesAndOptionsFeeSchedule` | (無描述) |
+| `SSFRefferedOpeningPrice` | (無描述) |
+| `SSFRefferedOpeningPriceAh` | (無描述) |
+| `SingleStockFuturesContractReferredOpeningPrice` | (無描述) |
+| `TotalMarketPositionLimitForSingleStockFuturesAndEquityOptions` | (無描述) |
+| `productsExemptedAH` | (無描述) |
 
 > Swagger 目錄：https://openapi.taifex.com.tw/swagger.json
 > 回應格式以官方實測為準（實作第一步先用 curl 取樣存 fixtures）。

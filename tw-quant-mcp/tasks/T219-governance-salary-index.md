@@ -27,6 +27,8 @@ updated: 2026-08-26
 | `tpcgi_constituents` | 公司治理指數成分股 |
 | `tpci_change` | 薪酬指數當日收盤 |
 | `tpci_constituents` | 薪酬指數成分股 |
+| `tpcgi_reward_index` | (無描述) |
+| `tpci_reward_index` | (無描述) |
 
 > Swagger 目錄：https://www.tpex.org.tw/openapi/swagger.json
 > 回應格式以官方實測為準（實作第一步先用 curl 取樣存 fixtures）。

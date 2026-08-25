@@ -27,6 +27,23 @@ updated: 2026-08-26
 | `va12` | 每日個股期貨交易量統計表 |
 | `va13` | 每月個股期貨交易量統計表 |
 | `va14` | 每年個股期貨交易量統計表 |
+| `AnnualTradingFX` | (無描述) |
+| `AnnualTradingGold` | (無描述) |
+| `AnnualTradingIR` | (無描述) |
+| `AnnualTradingIndexFutures` | (無描述) |
+| `AnnualTradingIndexOptions` | (無描述) |
+| `AnnualTradingSSF` | (無描述) |
+| `AnnualTradingSSO` | (無描述) |
+| `MonthlyTradingStatisticsOptions` | (無描述) |
+| `va03` | (無描述) |
+| `va04` | (無描述) |
+| `va05` | (無描述) |
+| `va06` | (無描述) |
+| `va07` | (無描述) |
+| `va08` | (無描述) |
+| `va09` | (無描述) |
+| `va10` | (無描述) |
+| `va11` | (無描述) |
 
 > Swagger 目錄：https://openapi.taifex.com.tw/swagger.json
 > 回應格式以官方實測為準（實作第一步先用 curl 取樣存 fixtures）。

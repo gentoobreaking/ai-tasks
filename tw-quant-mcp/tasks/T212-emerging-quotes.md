@@ -25,6 +25,11 @@ updated: 2026-08-26
 |---|---|
 | `tpex_esb_latest_statistics` | 興櫃股票當日行情表 |
 | `tpex_esb_highlight` | 興櫃股票市場現況 |
+| `t187ap05_R` | (無描述) |
+| `tpex_esb_applicant_companies` | (無描述) |
+| `tpex_esb_disposal_information` | (無描述) |
+| `tpex_esb_recommended_dealer` | (無描述) |
+| `tpex_esb_warning_information` | (無描述) |
 
 > Swagger 目錄：https://www.tpex.org.tw/openapi/swagger.json
 > 回應格式以官方實測為準（實作第一步先用 curl 取樣存 fixtures）。
