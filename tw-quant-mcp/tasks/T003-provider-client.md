@@ -4,9 +4,10 @@ title: Resilient HTTP Client、Rate Limiter 與 Circuit Breaker
 type: infrastructure
 priority: high
 status: done
-assignee: OpenCode with DeepSeek V4 Flash
+assignee: pi with opencode/x-preview-f-free
 created: 2026-07-31
 updated: 2026-07-31
+depends_on: []
 ---
 
 # T003 - Resilient HTTP Client 與 Rate Limit 防護
@@ -54,3 +55,7 @@ updated: 2026-07-31
 ## 備註
 - Rate Limit 參數是防 IP 封鎖之第一道防線，任何新來源加入必須更新 §4.4 表格後再實作
 - TAIFEX-DL 為大 CSV 下載，額外要求單請求 timeout 較長（可 60s）
+
+## 執行紀錄（2026-08-25 稽核）
+- 驗收條目全數已有勾選；本次稽核以全域門檻複核：`go vet ./...` 通過、`go test ./...` 16 套件全綠（含契約測試/Envelope 一致性/快取一致性/壓力腳本存在性）。
+- 本任務產出之模組為現行 155 註冊工具之作用中路徑（非死代碼），接線由 `cmd/mcp-server` 入口經 `App` 組裝達成；真實程序煙霧測試見 snapshots/raw/。

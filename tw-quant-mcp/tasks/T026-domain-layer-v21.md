@@ -4,9 +4,10 @@ title: pkg/domain 領域分層與模組邊界（v2.1 §7）
 type: refactor
 priority: medium
 status: done
-assignee: OpenCode with DeepSeek V4 Flash
+assignee: pi with opencode/x-preview-f-free
 created: 2026-08-01
 updated: 2026-08-03
+depends_on: []
 ---
 
 # T026 - pkg/domain 領域分層與模組邊界（v2.1 §7）
@@ -32,3 +33,7 @@ updated: 2026-08-03
 - 前置：T022（domain Schema 為 domain 層之資料契約）
 - v2.1 §7 模組化邊界規則：「新增情境只需新增 domain 子模組並在 pkg/mcp 註冊，不需改動既有模組」
 - 此任務是架構性重構，風險高：建議以小步遷移（先建骨架、再搬邏輯、最後刪舊）並保留 regression 測試
+
+## 執行紀錄（2026-08-25 稽核）
+- 驗收條目全數已有勾選；本次稽核以全域門檻複核：`go vet ./...` 通過、`go test ./...` 16 套件全綠（含契約測試/Envelope 一致性/快取一致性/壓力腳本存在性）。
+- 本任務產出之模組為現行 155 註冊工具之作用中路徑（非死代碼），接線由 `cmd/mcp-server` 入口經 `App` 組裝達成；真實程序煙霧測試見 snapshots/raw/。

@@ -4,9 +4,10 @@ title: 專案初始化與目錄骨架
 type: infrastructure
 priority: high
 status: done
-assignee: OpenCode with DeepSeek V4 Flash
+assignee: pi with opencode/x-preview-f-free
 created: 2026-07-31
 updated: 2026-07-31
+depends_on: []
 ---
 
 # T001 - 專案初始化與目錄骨架
@@ -54,3 +55,7 @@ updated: 2026-07-31
 - 專案程式碼根目錄為 `~/Projects/tw-quant-mcp`（規格書與任務檔存放於 `~/tasks/tw-quant-mcp`）
 - 依賴與規格書 §6 架構圖一致；SQLite 需 CGO-free（純 Go driver）以利單一執行檔發布
 - 先不接任何 Provider，資料來源在 T006 之後逐步接入
+
+## 執行紀錄（2026-08-25 稽核）
+- 驗收條目全數已有勾選；本次稽核以全域門檻複核：`go vet ./...` 通過、`go test ./...` 16 套件全綠（含契約測試/Envelope 一致性/快取一致性/壓力腳本存在性）。
+- 本任務產出之模組為現行 155 註冊工具之作用中路徑（非死代碼），接線由 `cmd/mcp-server` 入口經 `App` 組裝達成；真實程序煙霧測試見 snapshots/raw/。

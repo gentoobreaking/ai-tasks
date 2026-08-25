@@ -4,9 +4,10 @@ title: TWSE Adapter（OpenAPI + Web API 盤後）
 type: feature
 priority: high
 status: done
-assignee: OpenCode with DeepSeek V4 Flash
+assignee: pi with opencode/x-preview-f-free
 created: 2026-07-31
-updated: 2026-07-31 23:50
+updated: 2026-07-31
+depends_on: []
 ---
 
 # T008 - TWSE Adapter
@@ -39,3 +40,7 @@ updated: 2026-07-31 23:50
 - 各資料集 Rate Limit 依 T003 §4.4 表（TWSE-WEB 1/2s、TWSE-API 1/1s）
 - 全市場行情為大型 payload，建議支援欄位修剪（§12.7）以節省記憶體
 - 此 Adapter 供應 §10.B 之大部分工具（T011）
+
+## 執行紀錄（2026-08-25 稽核）
+- 驗收條目全數已有勾選；本次稽核以全域門檻複核：`go vet ./...` 通過、`go test ./...` 16 套件全綠（含契約測試/Envelope 一致性/快取一致性/壓力腳本存在性）。
+- 本任務產出之模組為現行 155 註冊工具之作用中路徑（非死代碼），接線由 `cmd/mcp-server` 入口經 `App` 組裝達成；真實程序煙霧測試見 snapshots/raw/。

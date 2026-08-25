@@ -4,9 +4,10 @@ title: D/E 組基本面、篩選與股利工具
 type: feature
 priority: medium
 status: done
-assignee: OpenCode with DeepSeek V4 Flash
+assignee: pi with opencode/x-preview-f-free
 created: 2026-07-31
 updated: 2026-08-01
+depends_on: []
 ---
 
 # T014 - D/E 組工具（基本面・篩選・股利）
@@ -35,3 +36,8 @@ updated: 2026-08-01
 - TTL 偏離說明：除權息行事曆採 24h + L2 tier 而非永久 TTL（預告表公司可變更/取消，永久快取有陳舊風險）；§4.2 文字列 L2 資格，此為權衡後之實作
 - `get_financial_health_check` 已登錄但回明確錯誤「由 T017 composite engine 提供」（未接線）；radar chart meta 已建置（`radarChart` helper），待 T017 供應
 - chart meta：營收/股利歷史 → bar、篩選 → scatter（PE/殖利率/市值）、財報健檢 → radar；測試工具計數 17→27 已同步更新
+
+## 執行紀錄（2026-08-25 稽核）
+- 驗收標準逐條對照程式碼與測試後勾選。
+- 證據：registry 註冊＋TestAllToolsEnvelopeConsistent 全工具 probe、snapshots/raw/get_financial_health_check.json、TestAllToolsCacheConsistency 全工具覆蓋、go vet/go test 全綠。
+- README 更新以 commit ac57a5c 之自動產生附錄形式補齊。

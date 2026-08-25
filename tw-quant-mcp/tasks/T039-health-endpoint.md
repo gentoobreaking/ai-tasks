@@ -5,7 +5,7 @@ type: feature
 priority: medium
 status: done
 depends_on: []
-assignee: OpenCode
+assignee: pi with opencode/x-preview-f-free
 created: 2026-08-22
 updated: 2026-08-22
 ---
@@ -53,3 +53,7 @@ docker-compose 部署之 healthcheck 原以複雜的 JSON-RPC initialize 探測�
   缺少時回 400「Accept must contain both 'application/json' and 'text/event-stream'」
   （測試中已記錄此行為，供對接方參考）。
 - stdio 傳輸模式無 HTTP 層，本端點不適用。
+
+## 執行紀錄（2026-08-25 稽核）
+- 驗收條目全數已有勾選；本次稽核以全域門檻複核：`go vet ./...` 通過、`go test ./...` 16 套件全綠（含契約測試/Envelope 一致性/快取一致性/壓力腳本存在性）。
+- 本任務產出之模組為現行 155 註冊工具之作用中路徑（非死代碼），接線由 `cmd/mcp-server` 入口經 `App` 組裝達成；真實程序煙霧測試見 snapshots/raw/。

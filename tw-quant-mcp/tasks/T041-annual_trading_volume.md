@@ -4,7 +4,8 @@ title: 新增工具 get_annual_trading_volume（交易輔助與全市場清單�
 type: feature
 priority: high
 status: done
-depends_on: ["T008"]
+depends_on:
+- T008
 assignee: pi with opencode/x-preview-f-free
 created: 2026-08-25
 updated: 2026-08-25
@@ -70,3 +71,8 @@ Returns:
 
 - model.TAFAnnualVolume、taifexAPIPaths /AnnualTradingVolume、normalizeTAIAnnualVolume（contract 過濾）
 - handlerGetAnnualTradingVolume（registry_fg.go 登錄）；envelope probe＋fake stub 已加
+
+## 執行紀錄（2026-08-25 稽核）
+- 驗收標準逐條對照程式碼與測試後勾選。
+- 證據：registry 註冊＋TestAllToolsEnvelopeConsistent 全工具 probe、snapshots/raw/get_annual_trading_volume.json、TestAllToolsCacheConsistency 全工具覆蓋、go vet/go test 全綠。
+- README 更新以 commit ac57a5c 之自動產生附錄形式補齊。

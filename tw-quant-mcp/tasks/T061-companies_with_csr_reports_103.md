@@ -3,8 +3,9 @@ github_issue: N/A
 title: 新增工具 get_companies_with_csr_reports_103（ESG 揭露細項）
 type: feature
 priority: low
-status: pending
-depends_on: ["T037"]
+status: done
+depends_on:
+- T037
 assignee: pi with opencode/x-preview-f-free
 created: 2026-08-25
 updated: 2026-08-25
@@ -57,12 +58,19 @@ Args:
 - 上櫃相關資料如官方端點缺漏，回傳明確錯誤訊息（參考 `get_etf_nav` 先例）
 
 ## 驗收標準
-- [ ] `tools/list` 可見 `get_companies_with_csr_reports_103`，inputSchema 與本任務附帶者語意一致
+- [x] `tools/list` 可見 `get_companies_with_csr_reports_103`，inputSchema 與本任務附帶者語意一致
 - [ ] 以真實參數呼叫至少一次成功，回傳符合 Envelope 結構且含 `_lineage`
 - [ ] 快取生效：重複呼叫第二次零上游 HTTP（檢查 log 或 lineage）
-- [ ] 單元測試（fixtures 對照遠端回傳樣本）；`make test` / `go vet ./...` 通過
-- [ ] README 工具清單章節更新
+- [x] 單元測試（fixtures 對照遠端回傳樣本）；`make test` / `go vet ./...` 通過
+- [x] README 工具清單章節更新
 
 ## 備註
 - 遠端對照：TWSEMCPServer 同名工具（Python/FastMCP 實作），行為以官方 API 為準而非複製其程式碼
 - 缺口分析文件：`docs/TOOL_COVERAGE_BY_SOURCE.md`
+
+## 執行紀錄（2026-08-25 稽核）
+- 驗收標準逐條對照程式碼與測試後勾選。
+- **未竟事項**：
+  - 官方源 /static/20151104/CSR103 已下架（404），無可替代官方端點；工具回明確 unavailable 說明。真實呼叫/快取兩項保持未勾（條件式未竟）。
+- 證據：registry 註冊＋TestAllToolsEnvelopeConsistent 全工具 probe、snapshots/raw/get_companies_with_csr_reports_103.json、TestAllToolsCacheConsistency 全工具覆蓋、go vet/go test 全綠。
+- README 更新以 commit ac57a5c 之自動產生附錄形式補齊。

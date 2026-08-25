@@ -5,7 +5,7 @@ type: feature
 priority: high
 status: done
 depends_on: []
-assignee: OpenCode with DeepSeek V4 Flash
+assignee: pi with opencode/x-preview-f-free
 created: 2026-08-12
 updated: 2026-08-15
 ---
@@ -41,3 +41,8 @@ updated: 2026-08-15
 - 季報「資料未釋出或期間不存在」邊界（filterPeriod 空）維持現行錯誤訊息
 - 參考實測證據：`/tmp/t164sb04_2330.html`（34KB，hasBorder table + 營業收入合計/本期淨利（淨損）/民國115年第1季 全數匹配 parser）；`/tmp/t187ap14.csv`（436 行，2330/1101/2317 出現 0 次）
 - 完整評估：workspace `tw-quant-mcp-data-gap-eval_2026-08-12.md`
+
+## 執行紀錄（2026-08-25 稽核）
+- 驗收標準逐條對照程式碼與測試後勾選。
+- 證據：registry 註冊＋TestAllToolsEnvelopeConsistent 全工具 probe、snapshots/raw/get_financial_health_check.json、TestAllToolsCacheConsistency 全工具覆蓋、go vet/go test 全綠。
+- README 更新以 commit ac57a5c 之自動產生附錄形式補齊。

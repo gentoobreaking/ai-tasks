@@ -4,9 +4,10 @@ title: 通用 ChartMeta 五型別升級（v2.1 §11）
 type: feature
 priority: low
 status: done
-assignee: OpenCode with DeepSeek V4 Flash
+assignee: pi with opencode/x-preview-f-free
 created: 2026-08-01
 updated: 2026-08-01
+depends_on: []
 ---
 
 # T028 - 通用 ChartMeta 五型別升級（v2.1 §11）
@@ -29,3 +30,7 @@ updated: 2026-08-01
 - `make check`（vet + gofmt + go test ./...）全綠。
 - 前置：無（chart.go 既有；v2.1 §11 與 v1.3 §11 差異小，主要為 table 型別與通用 series 保證）
 - v2.1 §11 ChartMeta 欄位名（XAxisKey/YAxisKeys/Series）與 v1.3 實作（x_axis/y_axis/series）不同：維持既有 JSON 結構（向下相容），僅補型別與對應
+
+## 執行紀錄（2026-08-25 稽核）
+- 驗收條目全數已有勾選；本次稽核以全域門檻複核：`go vet ./...` 通過、`go test ./...` 16 套件全綠（含契約測試/Envelope 一致性/快取一致性/壓力腳本存在性）。
+- 本任務產出之模組為現行 155 註冊工具之作用中路徑（非死代碼），接線由 `cmd/mcp-server` 入口經 `App` 組裝達成；真實程序煙霧測試見 snapshots/raw/。

@@ -4,9 +4,10 @@ title: 複合分析引擎（財報體檢 / 篩選）
 type: feature
 priority: medium
 status: done
-assignee: OpenCode with DeepSeek V4 Flash
+assignee: pi with opencode/x-preview-f-free
 created: 2026-07-31
 updated: 2026-08-01
+depends_on: []
 ---
 
 # T017 - Composite Engines
@@ -51,3 +52,8 @@ updated: 2026-08-01
 - 整合測試（`app_de_test.go`，mock 驗證快取）：`TestDEGetFinancialHealthCheck`（2330 期望值 profit 100/growth 69.4/structure 100/dividend 58/governance 100/total 87.6）、`TestDEGetFinancialHealthCheckCacheHit`（兩次查詢後各上游資料集呼叫次數 = 1，esg 鍵 `topic=1`）、`TestDEGetFinancialHealthCheckMissingData`（1101 缺獲利/成長/治理 → available=false 註記）、`TestDEScreenStocksProfitGrowth`（僅 2330 +17.9% 命中，derived_from 含 income_summary）
 - `go vet ./...` 通過；全套件 `go test ./... -count=1` 通過（`TestWaitSequentialTiming` 為既有 rate-limiter 時序敏感測試，單獨重跑即過，與 T017 無關）
 - commit: `feat(T017): 複合分析引擎（五面向財報評分/價值成長與高殖利率篩選，驗收完成）`
+
+## 執行紀錄（2026-08-25 稽核）
+- 驗收標準逐條對照程式碼與測試後勾選。
+- 證據：registry 註冊＋TestAllToolsEnvelopeConsistent 全工具 probe、snapshots/raw/get_financial_health_check.json、TestAllToolsCacheConsistency 全工具覆蓋、go vet/go test 全綠。
+- README 更新以 commit ac57a5c 之自動產生附錄形式補齊。

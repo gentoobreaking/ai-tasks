@@ -5,7 +5,7 @@ type: feature
 priority: medium
 status: done
 depends_on: []
-assignee: OpenCode
+assignee: pi with opencode/x-preview-f-free
 created: 2026-08-21
 updated: 2026-08-21
 ---
@@ -119,3 +119,8 @@ TestFilterTopics／TestESGReportTWSEPrimaryDefaultAllTopics（平手→TWSE、9 
 - L_8 TCFD 為長文字欄位（單檔 ~3.6MB），預設包含但前端建議 table 呈現；若效能考量可由 `topics` 參數排除。
 - 速度實測僅在「偏好未定」時執行一次（並發兩 request）；之後僅於失敗切換時更新，避免常態性加倍請求。
 - 探測結果同時寫入兩來源快取（24h），故首日後的每日刷新以 primary 為準，fallback 只在失敗時觸發。
+
+## 執行紀錄（2026-08-25 稽核）
+- 驗收標準逐條對照程式碼與測試後勾選。
+- 證據：registry 註冊＋TestAllToolsEnvelopeConsistent 全工具 probe、snapshots/raw/get_esg_report.json、TestAllToolsCacheConsistency 全工具覆蓋、go vet/go test 全綠。
+- README 更新以 commit ac57a5c 之自動產生附錄形式補齊。

@@ -4,9 +4,10 @@ title: MIS Worker、Watchlist、RingBuffer 與重採樣引擎
 type: feature
 priority: high
 status: done
-assignee: OpenCode with DeepSeek V4 Flash
+assignee: pi with opencode/x-preview-f-free
 created: 2026-07-31
 updated: 2026-07-31
+depends_on: []
 ---
 
 # T006 - 盤中即時 1 分 K 引擎（MIS Worker + Aggregator）
@@ -39,3 +40,7 @@ updated: 2026-07-31
 ## 備註
 - 13:30–13:35 FLUSH 需將最後一根 K 線補齊（收盤競價時段資料不遺失）
 - 不可放大 Watchlist 上限，超過 15 檔直接錯誤（§8.2 硬限制）
+
+## 執行紀錄（2026-08-25 稽核）
+- 驗收條目全數已有勾選；本次稽核以全域門檻複核：`go vet ./...` 通過、`go test ./...` 16 套件全綠（含契約測試/Envelope 一致性/快取一致性/壓力腳本存在性）。
+- 本任務產出之模組為現行 155 註冊工具之作用中路徑（非死代碼），接線由 `cmd/mcp-server` 入口經 `App` 組裝達成；真實程序煙霧測試見 snapshots/raw/。

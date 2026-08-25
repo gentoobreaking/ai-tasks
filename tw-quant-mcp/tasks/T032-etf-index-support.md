@@ -5,7 +5,7 @@ type: feature
 priority: medium
 status: done
 depends_on: []
-assignee: OpenCode with DeepSeek V4 Flash
+assignee: pi with opencode/x-preview-f-free
 created: 2026-08-12
 updated: 2026-08-15
 ---
@@ -84,3 +84,8 @@ A+B 合併：一次補齊兩塊缺口。ETF 掛進現有個股工具（資料源
 - 加權指數名稱對映：TWSE-WEB MI_INDEX（type=IND）與 openapi MI_INDEX 名稱一致（發行量加權股價指數等），`get_twse_index` 以名稱過濾即可；歷史日 K 端點僅回「發行量加權股價指數」單一指數。
 - 上櫃 ETF（如 00679B 反一）部分未在 `STOCK_DAY_ALL`（實測缺），如需完整上櫃 ETF 清單另以 TPEx 來源補（本次範圍僅上市 ETF）。
 - 前置：無（獨立於既有 31 tasks）。
+
+## 執行紀錄（2026-08-25 稽核）
+- 驗收標準逐條對照程式碼與測試後勾選。
+- 證據：registry 註冊＋TestAllToolsEnvelopeConsistent 全工具 probe、snapshots/raw/get_stock_daily_kline.json、TestAllToolsCacheConsistency 全工具覆蓋、go vet/go test 全綠。
+- README 更新以 commit ac57a5c 之自動產生附錄形式補齊。

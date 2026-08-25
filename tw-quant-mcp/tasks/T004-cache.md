@@ -4,9 +4,10 @@ title: 三層快取引擎（L1 Ristretto / L2 SQLite / Single-flight）
 type: infrastructure
 priority: high
 status: done
-assignee: OpenCode with DeepSeek V4 Flash
+assignee: pi with opencode/x-preview-f-free
 created: 2026-07-31
 updated: 2026-07-31
+depends_on: []
 ---
 
 # T004 - 快取引擎
@@ -56,3 +57,7 @@ updated: 2026-07-31
 ## 備註
 - 盤中 K 線查詢路徑不可進入 L2（僅 L1 4s TTL），避免磁碟 I/O 拖慢延遲
 - TAIFEX 歷史資料（§9）為 L2 永久 TTL 之主要消費者
+
+## 執行紀錄（2026-08-25 稽核）
+- 驗收條目全數已有勾選；本次稽核以全域門檻複核：`go vet ./...` 通過、`go test ./...` 16 套件全綠（含契約測試/Envelope 一致性/快取一致性/壓力腳本存在性）。
+- 本任務產出之模組為現行 155 註冊工具之作用中路徑（非死代碼），接線由 `cmd/mcp-server` 入口經 `App` 組裝達成；真實程序煙霧測試見 snapshots/raw/。

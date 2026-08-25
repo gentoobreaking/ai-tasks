@@ -4,7 +4,8 @@ title: 新增工具 get_warrant_basic_info（行情歷史與指數）
 type: feature
 priority: medium
 status: done
-depends_on: ["T008"]
+depends_on:
+- T008
 assignee: pi with opencode/x-preview-f-free
 created: 2026-08-25
 updated: 2026-08-25
@@ -60,3 +61,8 @@ Args:
 ## 備註
 - 遠端對照：TWSEMCPServer 同名工具（Python/FastMCP 實作），行為以官方 API 為準而非複製其程式碼
 - 缺口分析文件：`docs/TOOL_COVERAGE_BY_SOURCE.md`
+
+## 執行紀錄（2026-08-25 稽核）
+- 驗收標準逐條對照程式碼與測試後勾選。
+- 證據：registry 註冊＋TestAllToolsEnvelopeConsistent 全工具 probe、snapshots/raw/get_warrant_basic_info.json、TestAllToolsCacheConsistency 全工具覆蓋、go vet/go test 全綠。
+- README 更新以 commit ac57a5c 之自動產生附錄形式補齊。

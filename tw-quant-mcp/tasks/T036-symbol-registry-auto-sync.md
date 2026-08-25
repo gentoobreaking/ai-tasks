@@ -5,7 +5,7 @@ type: task
 priority: medium
 status: done
 depends_on: []
-assignee: OpenCode with DeepSeek V4 Flash
+assignee: pi with opencode/x-preview-f-free
 created: 2026-08-19
 updated: 2026-08-19
 ---
@@ -43,3 +43,7 @@ updated: 2026-08-19
 - 腳本邏輯：讀取 watch_stocks，對比 KNOWN_SYMBOLS (預定義的官方清單可能缺漏代碼)，自動補齊至 manual_overrides.json
 - MCP Server 啟動時透過 `SYMBOL_REGISTRY_OVERRIDE` 環境變數載入 manual_overrides.json，實現啟動時自動同步
 - 定期同步可透過 `--daemon` 模式或外部排程 (cron/systemd) 執行
+
+## 執行紀錄（2026-08-25 稽核）
+- 驗收條目全數已有勾選；本次稽核以全域門檻複核：`go vet ./...` 通過、`go test ./...` 16 套件全綠（含契約測試/Envelope 一致性/快取一致性/壓力腳本存在性）。
+- 本任務產出之模組為現行 155 註冊工具之作用中路徑（非死代碼），接線由 `cmd/mcp-server` 入口經 `App` 組裝達成；真實程序煙霧測試見 snapshots/raw/。

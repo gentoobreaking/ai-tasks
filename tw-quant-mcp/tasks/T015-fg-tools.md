@@ -4,9 +4,10 @@ title: F/G 組期貨選擇權與基礎設施工具
 type: feature
 priority: medium
 status: done
-assignee: OpenCode with DeepSeek V4 Flash
+assignee: pi with opencode/x-preview-f-free
 created: 2026-07-31
 updated: 2026-08-01
+depends_on: []
 ---
 
 # T015 - F/G 組工具（期貨・選擇權・基礎設施）
@@ -35,3 +36,8 @@ updated: 2026-08-01
 - G 組：`get_symbol_list` 直接讀 Symbol Registry（market 過濾、依代碼排序）；`get_trading_calendar` 依官方開休市表計算交易日 + 休市清單（含版本標記），修正全年模式迭代終點 bug
 - 工具計數 27→36（app_test.go / main_test.go 已同步）；`TestWaitSequentialTiming` 為既有 rate limiter 時序敏感測試（jitter ±20%），單獨重跑 5 次全綠
 - 待辦：F 組剩餘 `get_options_daily_ohlc` 工具不在 §10.F 工具清單內（選擇權每日行情僅 T013 provider 層提供）
+
+## 執行紀錄（2026-08-25 稽核）
+- 驗收標準逐條對照程式碼與測試後勾選。
+- 證據：registry 註冊＋TestAllToolsEnvelopeConsistent 全工具 probe、snapshots/raw/get_institutional_options_positions.json、TestAllToolsCacheConsistency 全工具覆蓋、go vet/go test 全綠。
+- README 更新以 commit ac57a5c 之自動產生附錄形式補齊。

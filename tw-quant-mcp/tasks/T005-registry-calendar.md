@@ -4,9 +4,10 @@ title: Symbol Registry 與交易日曆
 type: feature
 priority: medium
 status: done
-assignee: OpenCode with DeepSeek V4 Flash
+assignee: pi with opencode/x-preview-f-free
 created: 2026-07-31
 updated: 2026-07-31
+depends_on: []
 ---
 
 # T005 - Symbol Registry 與交易日曆
@@ -50,3 +51,7 @@ updated: 2026-07-31
 - Registry 市場清單任一市場載入失敗即 `Load` 整體失敗（缺市場別恐致 `ex_ch` 路由錯誤，寧可快速失敗）
 - 快取資料類別採用 `cache.DatasetCalendar`（§4.2 24h）
 - 測試端點以套件級變數供 httptest 注入（`holidayScheduleURL`/`twseListURL`/`tpexListURL`）
+
+## 執行紀錄（2026-08-25 稽核）
+- 驗收條目全數已有勾選；本次稽核以全域門檻複核：`go vet ./...` 通過、`go test ./...` 16 套件全綠（含契約測試/Envelope 一致性/快取一致性/壓力腳本存在性）。
+- 本任務產出之模組為現行 155 註冊工具之作用中路徑（非死代碼），接線由 `cmd/mcp-server` 入口經 `App` 組裝達成；真實程序煙霧測試見 snapshots/raw/。

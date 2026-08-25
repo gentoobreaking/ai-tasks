@@ -4,9 +4,10 @@ title: B/C 組盤後行情、籌碼與風險工具
 type: feature
 priority: high
 status: done
-assignee: OpenCode with DeepSeek V4 Flash
+assignee: pi with opencode/x-preview-f-free
 created: 2026-07-31
 updated: 2026-07-31
+depends_on: []
 ---
 
 # T011 - B/C 組工具（盤後行情・籌碼・風險）
@@ -71,3 +72,8 @@ updated: 2026-07-31
 ### 驗收
 - `go build ./... && go vet ./... && go test ./... -count=1 -race && make lint && gofmt -l` 全綠
 - commit: T011: B/C 組盤後行情、籌碼與風險工具（11 工具，驗收完成）
+
+## 執行紀錄（2026-08-25 稽核）
+- 驗收標準逐條對照程式碼與測試後勾選。
+- 證據：registry 註冊＋TestAllToolsEnvelopeConsistent 全工具 probe、snapshots/raw/get_attention_disposition_stocks.json、TestAllToolsCacheConsistency 全工具覆蓋、go vet/go test 全綠。
+- README 更新以 commit ac57a5c 之自動產生附錄形式補齊。

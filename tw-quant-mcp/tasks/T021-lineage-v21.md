@@ -4,9 +4,10 @@ title: Lineage/SourceRole/DataGrade 通用化升級（v2.1 §4）
 type: feature
 priority: high
 status: done
-assignee: OpenCode with DeepSeek V4 Flash
+assignee: pi with opencode/x-preview-f-free
 created: 2026-08-01
 updated: 2026-08-02
+depends_on: []
 ---
 
 # T021 - Lineage 通用化升級（v2.1 §4）
@@ -48,3 +49,7 @@ updated: 2026-08-02
 - 已確認方案：內部保留（json:"-"）可讓既有組裝點（設定 derived_from/source_url 之處）**少改動**，僅序列化輸出受影響；debug 模式仍可輸出三欄
 - daybrain 專案相容性：正式 JSON 不再含三欄，若 daybrain 讀取 JSON 需確認（T031 發布前驗證）；若讀內部 struct 則不受影響
 - 後續：TAIFEX DL 路徑之 source_role 分級（CANONICAL/FALLBACK 如實反映）屬 T023 範圍；各 Tool 之 grade 逐工具標註屬 T027 範圍
+
+## 執行紀錄（2026-08-25 稽核）
+- 驗收條目全數已有勾選；本次稽核以全域門檻複核：`go vet ./...` 通過、`go test ./...` 16 套件全綠（含契約測試/Envelope 一致性/快取一致性/壓力腳本存在性）。
+- 本任務產出之模組為現行 155 註冊工具之作用中路徑（非死代碼），接線由 `cmd/mcp-server` 入口經 `App` 組裝達成；真實程序煙霧測試見 snapshots/raw/。

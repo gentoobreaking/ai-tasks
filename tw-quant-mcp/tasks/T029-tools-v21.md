@@ -4,9 +4,10 @@ title: 25 個 v2.1 Tool 目錄對齊（v1.3 為主、僅新增缺口，v2.1 §9�
 type: feature
 priority: high
 status: done
-assignee: OpenCode with DeepSeek V4 Flash
+assignee: pi with opencode/x-preview-f-free
 created: 2026-08-01
 updated: 2026-08-03
+depends_on: []
 ---
 
 # T029 - v2.1 Tool 目錄對齊（v1.3 為主、僅新增缺口）
@@ -75,3 +76,8 @@ updated: 2026-08-03
 - **README**：工具清單 36→37 + H 組；新增「v2.1 §9 ↔ v1.3 工具對照」（A 12 / B 12 / C 1）；get_warrant_activity AVAILABLE 超前實作註記。
 - **其他**：修復 T027 遺留 `scoreUniverse` 併發 map write 競態（sync.Mutex）。
 - `make check` 全綠；`go test -race ./pkg/...` 無資料競態。
+
+## 執行紀錄（2026-08-25 稽核）
+- 驗收標準逐條對照程式碼與測試後勾選。
+- 證據：registry 註冊＋TestAllToolsEnvelopeConsistent 全工具 probe、snapshots/raw/get_stock_trend_composite.json、TestAllToolsCacheConsistency 全工具覆蓋、go vet/go test 全綠。
+- README 更新以 commit ac57a5c 之自動產生附錄形式補齊。

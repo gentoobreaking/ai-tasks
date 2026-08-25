@@ -5,7 +5,7 @@ type: feature
 priority: medium
 status: done
 depends_on: []
-assignee: OpenCode with DeepSeek V4 Flash
+assignee: pi with opencode/x-preview-f-free
 created: 2026-08-12
 updated: 2026-08-15
 ---
@@ -39,3 +39,8 @@ updated: 2026-08-15
 - 除息日與股利年度對應：例如 115 年股利（t187ap45 年度 115）之除息日多在 115 年 6~9 月；114 年股利之除息日多在 114 年 6~9 月——對應規則需以「除息日年份 = 股利年度」驗證，避免跨年錯配
 - 優先做「TWT48U 併入」段（成本低、立即消除部分 yfinance fallback）；歷史回溯僅在官方免費端點可行時才納入，避免過度工程
 - 完整評估：workspace `tw-quant-mcp-data-gap-eval_2026-08-12.md` §三
+
+## 執行紀錄（2026-08-25 稽核）
+- 驗收標準逐條對照程式碼與測試後勾選。
+- 證據：registry 註冊＋TestAllToolsEnvelopeConsistent 全工具 probe、snapshots/raw/get_exdividend_calendar.json、TestAllToolsCacheConsistency 全工具覆蓋、go vet/go test 全綠。
+- README 更新以 commit ac57a5c 之自動產生附錄形式補齊。

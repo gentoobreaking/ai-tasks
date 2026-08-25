@@ -4,9 +4,10 @@ title: 六大正規化 Schema 與 Normalize 層（v2.1 §6）
 type: feature
 priority: high
 status: done
-assignee: OpenCode with DeepSeek V4 Flash
+assignee: pi with opencode/x-preview-f-free
 created: 2026-08-01
 updated: 2026-08-02
+depends_on: []
 ---
 
 # T022 - 六大正規化 Schema 與 Normalize 層（v2.1 §6）
@@ -47,3 +48,7 @@ updated: 2026-08-02
 - 既有 pkg/model 中 v1.3 之 Normalized Models（Candle 等）保留不動，domain Schema 為其上層聚合結構
 - 後續：FromTWSEOpenAPI/FromTPEx/FromMOPS/FromTAIFEXOpenAPI/FromTAIFEXDownload 之輸出 Schema
   對應 T026 領域層與 T027 工具補齊時填實；provider deprecated 標記於遷移完成後移除
+
+## 執行紀錄（2026-08-25 稽核）
+- 驗收條目全數已有勾選；本次稽核以全域門檻複核：`go vet ./...` 通過、`go test ./...` 16 套件全綠（含契約測試/Envelope 一致性/快取一致性/壓力腳本存在性）。
+- 本任務產出之模組為現行 155 註冊工具之作用中路徑（非死代碼），接線由 `cmd/mcp-server` 入口經 `App` 組裝達成；真實程序煙霧測試見 snapshots/raw/。

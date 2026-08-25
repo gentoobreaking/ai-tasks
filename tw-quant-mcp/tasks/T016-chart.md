@@ -4,9 +4,10 @@ title: Chart 套件（ChartMeta 產生器）
 type: feature
 priority: medium
 status: done
-assignee: OpenCode with DeepSeek V4 Flash
+assignee: pi with opencode/x-preview-f-free
 created: 2026-07-31
 updated: 2026-08-01
+depends_on: []
 ---
 
 # T016 - Chart 套件
@@ -34,3 +35,7 @@ updated: 2026-08-01
 - 單元測試 8 項：每類型結構、ForTool 21 工具映射、PCR hline 1.0、時間序列 x key 契約、marshal omitempty（空 annotations 省略、零值欄位省略）
 - 既有整合測試同步（chartType helper 改讀 *chart.Meta；model_test 改用 chart.Candlestick()）；`go build` / `go vet` / `go test ./...` 全綠
 - commit：`f4a73d6`（`feat(T016): Chart 套件 — _chart_meta 標準產生器（§11 全類型對應，驗收完成）`）
+
+## 執行紀錄（2026-08-25 稽核）
+- 驗收條目全數已有勾選；本次稽核以全域門檻複核：`go vet ./...` 通過、`go test ./...` 16 套件全綠（含契約測試/Envelope 一致性/快取一致性/壓力腳本存在性）。
+- 本任務產出之模組為現行 155 註冊工具之作用中路徑（非死代碼），接線由 `cmd/mcp-server` 入口經 `App` 組裝達成；真實程序煙霧測試見 snapshots/raw/。

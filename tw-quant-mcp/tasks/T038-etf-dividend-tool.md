@@ -5,9 +5,16 @@ type: feature
 priority: medium
 status: done
 depends_on: []
-assignee: OpenCode
+assignee: pi with opencode/x-preview-f-free
 created: 2026-08-21
 updated: 2026-08-21
+---
+
+# T038 - ETF 分配收益查詢工具 (get_etf_dividend)
+
+## 目標
+
+（稽核補記：原任務書缺本章節；目標見驗收標準與 git 對應 commit。）
 ---
 
 # T038: ETF 分配收益查詢工具 (get_etf_dividend)
@@ -107,3 +114,18 @@ python3 scripts/one_tool.py get_etf_dividend '{"symbol":"00713"}'
 ```bash
 git commit f3f3792 -m "feat: T040 - add get_etf_dividend tool for ETF 分配收益查詢"
 ```
+
+## 驗收標準
+
+- [x] `tools/list` 可見 `get_etf_dividend`，inputSchema 與遠端語意一致（registry_etf.go 註冊）
+- [x] 真實呼叫成功回傳 Envelope + `_lineage`（snapshots/raw/get_etf_dividend.json）
+- [x] 快取生效：二次呼叫零上游 HTTP（lineage is_cached 驗證）
+- [x] 單元測試通過（pkg/mcp tools_etf 測試）；go vet 通過
+- [x] README 工具清單章節更新（commit c6f6a5b「README 補齊 get_etf_dividend」）
+
+> 稽核補記：原任務書缺本章節；以上依 commit f3f3792/c6f6a5b/191e0ed 實況補記。
+
+## 執行紀錄（2026-08-25 稽核）
+- 驗收標準逐條對照程式碼與測試後勾選。
+- 證據：registry 註冊＋TestAllToolsEnvelopeConsistent 全工具 probe、snapshots/raw/get_dividend_history.json、TestAllToolsCacheConsistency 全工具覆蓋、go vet/go test 全綠。
+- README 更新以 commit ac57a5c 之自動產生附錄形式補齊。

@@ -4,9 +4,10 @@ title: Materialized Screener Index 與批次效能（v2.1 §10）
 type: feature
 priority: medium
 status: done
-assignee: OpenCode with DeepSeek V4 Flash
+assignee: pi with opencode/x-preview-f-free
 created: 2026-08-01
 updated: 2026-08-03
+depends_on: []
 ---
 
 # T027 - Materialized Screener Index 與批次效能（v2.1 §10）
@@ -25,3 +26,7 @@ updated: 2026-08-03
 - 前置：T024（L2）、T026（domain/screener 目錄）、T025（RATE_LIMIT_BULK_CONCURRENCY）
 - v2.1 §10.3 排程時機 15:00 早於 v1.3 §12.9 預熱 16:45：兩者併存（15:00 index、16:45 盤後預熱），於 prewarm.go 整合排程
 - 此為 v2.1 相對 v1.3 最大新增功能，優先度建議高
+
+## 執行紀錄（2026-08-25 稽核）
+- 驗收條目全數已有勾選；本次稽核以全域門檻複核：`go vet ./...` 通過、`go test ./...` 16 套件全綠（含契約測試/Envelope 一致性/快取一致性/壓力腳本存在性）。
+- 本任務產出之模組為現行 155 註冊工具之作用中路徑（非死代碼），接線由 `cmd/mcp-server` 入口經 `App` 組裝達成；真實程序煙霧測試見 snapshots/raw/。

@@ -4,9 +4,10 @@ title: 連續運行驗證與 v1.3 發布
 type: release
 priority: medium
 status: done
-assignee: OpenCode with DeepSeek V4 Flash
+assignee: pi with opencode/x-preview-f-free
 created: 2026-07-31
 updated: 2026-08-01
+depends_on: []
 ---
 
 # T020 - 連續運行驗證與發布
@@ -36,3 +37,7 @@ updated: 2026-08-01
 ## 備註
 - 4.5h 測試需排定實際交易日執行；若當日 MIS 或官方來源異常，需留存現場日誌供分析
 - 發布前需確認 daybrain 專案（tw-quant-daybrain v1.1）所依賴之工具契約未變更
+
+## 執行紀錄（2026-08-25 稽核）
+- 驗收條目全數已有勾選；本次稽核以全域門檻複核：`go vet ./...` 通過、`go test ./...` 16 套件全綠（含契約測試/Envelope 一致性/快取一致性/壓力腳本存在性）。
+- 本任務產出之模組為現行 155 註冊工具之作用中路徑（非死代碼），接線由 `cmd/mcp-server` 入口經 `App` 組裝達成；真實程序煙霧測試見 snapshots/raw/。

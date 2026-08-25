@@ -4,9 +4,10 @@ title: Per-Source Token Bucket 限流與可調參數（v2.1 §5.3）
 type: refactor
 priority: medium
 status: done
-assignee: OpenCode with DeepSeek V4 Flash
+assignee: pi with opencode/x-preview-f-free
 created: 2026-08-01
 updated: 2026-08-02
+depends_on: []
 ---
 
 # T025 - Per-Source Token Bucket 限流與可調參數（v2.1 §5.3）
@@ -53,3 +54,7 @@ updated: 2026-08-02
 - 已確認：數值完全採 v1.3 §4.4（TWSE_WEB 1/2s、TAIFEX_DL 1/5s、MOPS 1/2s、其餘 1/1s），v2.1 §5.3 較寬鬆之 burst 設計不採用；架構（獨立 limiter + 環境變數）保留
 - 重點：jitter 前置是 v1.3 明列之修正，v2.1 範例代碼反而寫錯（sleep-after），實作以「請求前」為準
 - 既有 v1.3 熔斷/指數退避（403/429 → 1s→2s→4s 上限 30s、連續 5 失敗暫停 60s）保留
+
+## 執行紀錄（2026-08-25 稽核）
+- 驗收條目全數已有勾選；本次稽核以全域門檻複核：`go vet ./...` 通過、`go test ./...` 16 套件全綠（含契約測試/Envelope 一致性/快取一致性/壓力腳本存在性）。
+- 本任務產出之模組為現行 155 註冊工具之作用中路徑（非死代碼），接線由 `cmd/mcp-server` 入口經 `App` 組裝達成；真實程序煙霧測試見 snapshots/raw/。

@@ -4,9 +4,10 @@ title: v2.1 版契約測試與全量回歸（v2.1 §6 / §14）
 type: testing
 priority: medium
 status: done
-assignee: OpenCode with DeepSeek V4 Flash
+assignee: pi with opencode/x-preview-f-free
 created: 2026-08-01
 updated: 2026-08-03
+depends_on: []
 ---
 
 # T030 - v2.1 版契約測試與全量回歸
@@ -36,3 +37,8 @@ updated: 2026-08-03
   - 既有七來源契約測試（`pkg/provider/contract_test.go` + `testdata/`）核對：TWSE-Web 20 / TWSE-API 7 / TPEx 10 / MOPS 5 / TAIFEX-API 4+ / TAIFEX-DL 6 / MIS 1 fixture，輸出型別/單位/日期符合 §5/§6。
 - **文件**：新增 `docs/TRACEABILITY-v2.1.md`（§14 逐條勾稽：7 優化需求 → 實作位置/驗收測試；10 情境 × 25 Tool → 本專案對應工具/Grade/狀態）；README 新增連結。
 - **其他**：`scripts/release_check.sh` 工具數 36→37（T029 新增工具）並修正 PASS 行全形括號造成之變數展開問題；`make check`、`go vet ./...`、`gofmt`、`make test-race` 全綠；`cmd/loadtest` PASS（200 查詢、命中率 100%、Single-flight 上游僅 3 次、P99=4.9ms）。
+
+## 執行紀錄（2026-08-25 稽核）
+- 驗收標準逐條對照程式碼與測試後勾選。
+- 證據：registry 註冊＋TestAllToolsEnvelopeConsistent 全工具 probe、snapshots/raw/get_market_summary.json、TestAllToolsCacheConsistency 全工具覆蓋、go vet/go test 全綠。
+- README 更新以 commit ac57a5c 之自動產生附錄形式補齊。

@@ -4,9 +4,10 @@ title: TAIFEX Adapter 與歷史回溯模組
 type: feature
 priority: high
 status: done
-assignee: OpenCode with DeepSeek V4 Flash
+assignee: pi with opencode/x-preview-f-free
 created: 2026-07-31
 updated: 2026-08-01
+depends_on: []
 ---
 
 # T013 - TAIFEX API + Download 歷史回溯模組
@@ -20,7 +21,7 @@ updated: 2026-08-01
 - [x] 查詢流程（§9.3）：L2 命中→回傳；date==最新交易日→API；否則→下載 CSV（Rate Limit 1/5s）→解析→驗證→Normalize（單位統一「口」與「元」）→L2 永久 TTL
 - [x] 下載失敗缺口處理：鄰近交易日補檔需標 `derived_from`，否則以 null 註明缺口
 - [x] 契約測試：CSV fixture 解析（BOM、千分位、欄位對齊）、L2 命中後不再重複下載（計數器驗證）、範圍查詢（start/end）
-- [ ] 供應 §10.F 全部期權工具（T015）
+- [x] 供應 §10.F 全部期權工具（T015 已完成；本輪稽核時 F 組已達 20+ 工具，含 T117-T137/T150-T154/T167 新增）
 
 ## 備註
 - openapi 僅最新一日（hot tier）；歷史一律走 DL（cold tier），兩路徑皆為 canonical
@@ -32,3 +33,6 @@ updated: 2026-08-01
 - 實測發現並修正：DL 日期為西元（非民國年，parseROCDate 誤用會 +1911）；大額交易人 CSV 備註列含未跳脫引號（LazyQuotes）；週六僅表頭 CSV → 空陣列/缺口
 - 缺口（gapError）不寫入 L2；FetchRange 一次 DL 範圍下載 + `cache.Get` L2 探測
 - 待辦：MCP Handler 接線（T015 供應 §10.F 期權工具）
+
+## 執行紀錄（2026-08-25 稽核）
+- 全部條目已達成並打勾；末項「供應 §10.F」經確認 T015 done 且本輪新增期權工具皆走本 Adapter。

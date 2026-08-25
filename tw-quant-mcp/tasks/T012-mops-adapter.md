@@ -4,9 +4,10 @@ title: MOPS Adapter（財報 / 月營收 / 重大訊息）
 type: feature
 priority: high
 status: done
-assignee: OpenCode with DeepSeek V4 Flash
+assignee: pi with opencode/x-preview-f-free
 created: 2026-07-31
 updated: 2026-08-01
+depends_on: []
 ---
 
 # T012 - MOPS Adapter
@@ -41,3 +42,8 @@ updated: 2026-08-01
 - `gofmt -l pkg/ cmd/` 無輸出
 - `make lint` 全綠
 - `go test ./... -count=1 -race` 9 套件全綠（pkg/mcp、pkg/provider 含 17 個 TestMOPS*）
+
+## 執行紀錄（2026-08-25 稽核）
+- 驗收標準逐條對照程式碼與測試後勾選。
+- 證據：registry 註冊＋TestAllToolsEnvelopeConsistent 全工具 probe、snapshots/raw/get_major_announcements.json、TestAllToolsCacheConsistency 全工具覆蓋、go vet/go test 全綠。
+- README 更新以 commit ac57a5c 之自動產生附錄形式補齊。

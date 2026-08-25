@@ -4,9 +4,10 @@ title: 七來源 Source Role 分級落地（v2.1 §3）
 type: feature
 priority: high
 status: done
-assignee: OpenCode with DeepSeek V4 Flash
+assignee: pi with opencode/x-preview-f-free
 created: 2026-08-01
 updated: 2026-08-02
+depends_on: []
 ---
 
 # T023 - 七來源 Source Role 分級落地（v2.1 §3）
@@ -48,3 +49,7 @@ updated: 2026-08-02
 - v1.3 的 helper 角色（VWAP / 技術指標等派生計算）不屬來源分級：派生計算歸 domain 層（T026）
   業務邏輯，Lineage 不再需要 derived_from（已於 T021 移除）
 - 與 T024（stale-if-error 降級）相依：STALE_FALLBACK freshness 之 lineage 組合於 T024 驗證
+
+## 執行紀錄（2026-08-25 稽核）
+- 驗收條目全數已有勾選；本次稽核以全域門檻複核：`go vet ./...` 通過、`go test ./...` 16 套件全綠（含契約測試/Envelope 一致性/快取一致性/壓力腳本存在性）。
+- 本任務產出之模組為現行 155 註冊工具之作用中路徑（非死代碼），接線由 `cmd/mcp-server` 入口經 `App` 組裝達成；真實程序煙霧測試見 snapshots/raw/。

@@ -4,9 +4,10 @@ title: 雙層快取 TTL 矩陣與環境變數參數化（v2.1 §5）
 type: feature
 priority: medium
 status: done
-assignee: OpenCode with DeepSeek V4 Flash
+assignee: pi with opencode/x-preview-f-free
 created: 2026-08-01
 updated: 2026-08-02
+depends_on: []
 ---
 
 # T024 - 雙層快取 TTL 矩陣與環境變數參數化（v2.1 §5）
@@ -34,3 +35,7 @@ updated: 2026-08-02
 - 前置：T021（freshness 需支援 STALE_FALLBACK）
 - v1.3 §4.2 細粒度 TTL 表（盤中/盤後分列）與 v2.1 §5.2 矩陣並存：以 v2.1 矩陣為準，但保留 v1.3 較細的盤中分列（MIS 4s、日K 60s）於 policy 中不衝突
 - RingBuffer 獨立性（v2.1 §5.1）是與 v1.3 三層快取的主要差異點，須有測試守門
+
+## 執行紀錄（2026-08-25 稽核）
+- 驗收條目全數已有勾選；本次稽核以全域門檻複核：`go vet ./...` 通過、`go test ./...` 16 套件全綠（含契約測試/Envelope 一致性/快取一致性/壓力腳本存在性）。
+- 本任務產出之模組為現行 155 註冊工具之作用中路徑（非死代碼），接線由 `cmd/mcp-server` 入口經 `App` 組裝達成；真實程序煙霧測試見 snapshots/raw/。

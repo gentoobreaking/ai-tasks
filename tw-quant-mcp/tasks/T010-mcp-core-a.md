@@ -4,9 +4,10 @@ title: MCP 基礎層與 A 組盤中工具
 type: feature
 priority: high
 status: done
-assignee: OpenCode with DeepSeek V4 Flash
+assignee: pi with opencode/x-preview-f-free
 created: 2026-07-31
 updated: 2026-07-31
+depends_on: []
 ---
 
 # T010 - MCP 基礎層與 A 組盤中工具
@@ -40,3 +41,7 @@ updated: 2026-07-31
 - 順帶修正：MIS 五檔實測為 `_` 分隔字串（b/g=買價/買量、a/f=賣價/賣量），原 `[]string` 假設錯誤 → 改 parseBook 字串解析（真實 fixture 驗證 + 新測試）
 - 整合測試 `pkg/mcp/app_test.go`：in-memory SDK session 端到端（tools/list、6 工具呼叫）、`_lineage` 欄位、chart 注入/移除、錯誤路徑（>15 檔、空清單、未知代號、未加 watchlist、非法 timeframe、週末/盤後時段）
 - 驗收：`go build ./... && go vet ./... && go test ./... -count=1 -race && make lint && gofmt -l` 全綠
+
+## 執行紀錄（2026-08-25 稽核）
+- 驗收條目全數已有勾選；本次稽核以全域門檻複核：`go vet ./...` 通過、`go test ./...` 16 套件全綠（含契約測試/Envelope 一致性/快取一致性/壓力腳本存在性）。
+- 本任務產出之模組為現行 155 註冊工具之作用中路徑（非死代碼），接線由 `cmd/mcp-server` 入口經 `App` 組裝達成；真實程序煙霧測試見 snapshots/raw/。
