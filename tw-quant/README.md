@@ -6,6 +6,7 @@
 |------|
 | 台股篩選腳本 |
 | 台股篩選腳本-ETF 專屬優化修改方案 |
+| 台股篩選腳本-找買點 |
 | pipeline_screener.py 管線骨架＋config_pipeline.json＋universe.csv schema |
 | common/finmind.py — FinMind REST client 與 rate_limit 新通道 |
 | Stage0-A/B — Top5 ETF 排名與成分股去重（F1/F2） |
@@ -34,7 +35,7 @@
 
 | Task | 名稱 | 說明 |
 |------|------|------|
-| [T3-tw-quant-buypoint](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant/tasks/T003-tw-quant-buypoint.md) | 台股篩選腳本-找買點 | |
+| | | |
 
 ## Task 列表
 
@@ -42,7 +43,7 @@
 |---|------|------|
 | [T1-tw-quant](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant/tasks/T001-tw-quant.md) | 台股篩選腳本 | ✅ done |
 | [T2-tw-etf](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant/tasks/T002-tw-etf.md) | 台股篩選腳本-ETF 專屬優化修改方案 | ✅ done |
-| [T3-tw-quant-buypoint](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant/tasks/T003-tw-quant-buypoint.md) | 台股篩選腳本-找買點 | 📋 pending |
+| [T3-tw-quant-buypoint](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant/tasks/T003-tw-quant-buypoint.md) | 台股篩選腳本-找買點 | ✅ done |
 | [T4-pipeline-skeleton](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant/tasks/T004-pipeline-skeleton.md) | pipeline_screener.py 管線骨架＋config_pipeline.json＋universe.csv schema | ✅ done |
 | [T5-finmind-client](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant/tasks/T005-finmind-client.md) | common/finmind.py — FinMind REST client 與 rate_limit 新通道 | ✅ done |
 | [T6-etf-top5](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant/tasks/T006-etf-top5.md) | Stage0-A/B — Top5 ETF 排名與成分股去重（F1/F2） | ✅ done |
@@ -55,6 +56,6 @@
 | [T13-targets-grading](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant/tasks/T013-targets-grading.md) | 進場區/停損/目標價/風報比＋S/A/B 分級 → Top5（F11/F12） | ✅ done |
 | [T14-e2e-report](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant/tasks/T014-e2e-report.md) | e2e 全流程整合與 markdown/CSV 報表輸出（F14） | ✅ done |
 
-**✅ done: 13 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 1**
+**✅ done: 14 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 0**
 
-> 自動生成於 2026-08-25 23:41
+> 自動生成於 2026-08-26 02:03

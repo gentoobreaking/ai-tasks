@@ -2,11 +2,22 @@
 github_issue:
 title: 台股篩選腳本-找買點
 priority: high
-status: pending
+status: done
 depends_on: []
 assignee: "pi with opencode/x-preview-f-free"
 created: 2026-08-24
 updated: 2026-08-25
+
+# 結案紀錄（2026-08-25）
+
+本任務為總規格書，內容已拆解至 T004–T014（全數 done）並完成驗證：
+
+- 管線 `pipeline_screener.py` 端到端跑通，產出 `screening_results/pipeline_20260825.md`
+  （Top5 買點清單 + Top10 量化表 + 全量附錄 + 淘汰名單含規則編號）與 CSV 明細
+- 規格覆蓋核對：100 分量化表（五因子 f1–f5 權重 25/30/20/15/10）、
+  Top50→Top10→Top5、真實券商共識 EPS（無覆蓋者給 0 分標註）、
+  進場區/雙軌停損/1個月目標價/風報比門檻、S/A/B 分級、硬淘汰 H1–H5——全數符合 §架構 Spec
+- 品質閘門：`pytest tests/ -q` → 122 passed
 ---
 
 台股 50 檔 → 量化篩選 → Top 10 → Top 5

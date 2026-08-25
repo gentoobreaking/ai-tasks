@@ -211,7 +211,10 @@
 
 | Task | 名稱 | 說明 |
 |------|------|------|
-| | | |
+| [T191-get-twse-events](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T191-get-twse-events.md) | 新增工具 get_twse_events（證交所活動訊息） | |
+| [T192-get-all-stocks-daily-close](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T192-get-all-stocks-daily-close.md) | 新增工具 get_all_stocks_daily_close（單日全市場逐檔收盤行情） | |
+| [T193-get-abnormal-accumulated-notice-stocks](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T193-get-abnormal-accumulated-notice-stocks.md) | 新增工具 get_abnormal_accumulated_notice_stocks（注意累計次數異常） | |
+| [T194-realtime-quote-single-shot](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T194-realtime-quote-single-shot.md) | 新增工具 get_realtime_quote（任意多檔單發即時報價，MIS 直查模式） | |
 
 ## Task 列表
 
@@ -407,7 +410,11 @@
 | [T188-warrant_daily_trading](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T188-warrant_daily_trading.md) | 新增工具 get_warrant_daily_trading（行情歷史與指數） | ✅ done |
 | [T189-warrant_trader_count](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T189-warrant_trader_count.md) | 新增工具 get_warrant_trader_count（行情歷史與指數） | ✅ done |
 | [T190-warrant_yearly_issuance_statistics](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T190-warrant_yearly_issuance_statistics.md) | 新增工具 get_warrant_yearly_issuance_statistics（行情歷史與指數） | ✅ done |
+| [T191-get-twse-events](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T191-get-twse-events.md) | 新增工具 get_twse_events（證交所活動訊息） | 📋 pending |
+| [T192-get-all-stocks-daily-close](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T192-get-all-stocks-daily-close.md) | 新增工具 get_all_stocks_daily_close（單日全市場逐檔收盤行情） | 📋 pending |
+| [T193-get-abnormal-accumulated-notice-stocks](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T193-get-abnormal-accumulated-notice-stocks.md) | 新增工具 get_abnormal_accumulated_notice_stocks（注意累計次數異常） | 📋 pending |
+| [T194-realtime-quote-single-shot](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T194-realtime-quote-single-shot.md) | 新增工具 get_realtime_quote（任意多檔單發即時報價，MIS 直查模式） | 📋 pending |
 
-**✅ done: 190 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 0**
+**✅ done: 190 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 4**
 
-> 自動生成於 2026-08-25 23:41
+> 自動生成於 2026-08-26 02:03
