@@ -1,6 +1,6 @@
 # 📁 Projects Dashboard
 
-> 最後更新: 2026-08-26 08:51 · 自動生成
+> 最後更新: 2026-08-26 10:56 · 自動生成
 
 ---
 
@@ -10,11 +10,11 @@
 |------|------|
 | 專案數 | 65 |
 | 任務總數 | 1401 |
-| ✅ 已完成 | 1305 |
-| ⬜ 待處理 | 32 |
+| ✅ 已完成 | 1325 |
+| ⬜ 待處理 | 12 |
 | 🔄 進行中 | 1 |
 | ⏭️ 跳過 | 63 |
-| 總完成率 | 97% |
+| 總完成率 | 99% |
 
 ## ⬜ 待處理
 
@@ -24,26 +24,6 @@
 | gold-analysis-advanced | [T004](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis-advanced/tasks/T004.md) | 實盤交易對接 | ⬜ |
 | slo-sentinel | [T021-freeze-enforce](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T021-freeze-enforce.md) | 成本/預算 CI 部署閘門——enforce 模式（F6 Phase 2） | ⬜ |
 | slo-sentinel | [T030-billing-real-verify](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T030-billing-real-verify.md) | 成本 adapter 真實雲端驗證（移除 NEEDS VERIFICATION） | ⬜ |
-| tw-quant-mcp | [T213-emerging-ranks](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T213-emerging-ranks.md) | 新增工具 get_emerging_ranks（興櫃 EPS/資本額排名） | ⬜ |
-| tw-quant-mcp | [T214-emerging-board-holdings](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T214-emerging-board-holdings.md) | 新增工具 get_emerging_board_holdings（興櫃董監持股餘額） | ⬜ |
-| tw-quant-mcp | [T215-emerging-financials](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T215-emerging-financials.md) | 新增工具 get_emerging_financial_statements（興櫃財報三表） | ⬜ |
-| tw-quant-mcp | [T217-tpex200-index](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T217-tpex200-index.md) | 新增工具 get_tpex200_index（富櫃50/富櫃200 指數） | ⬜ |
-| tw-quant-mcp | [T219-governance-salary-index](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T219-governance-salary-index.md) | 新增工具 get_governance_salary_index（公司治理/薪酬指數） | ⬜ |
-| tw-quant-mcp | [T220-emp88-index](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T220-emp88-index.md) | 新增工具 get_emp88_index（勞工就業88指數） | ⬜ |
-| tw-quant-mcp | [T221-otc-warrant](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T221-otc-warrant.md) | 新增工具 get_otc_warrant_daily/basic（上櫃權證行情與基本資料） | ⬜ |
-| tw-quant-mcp | [T222-otc-wcb-wxy](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T222-otc-wcb-wxy.md) | 新增工具 get_otc_wcb_wxy（上櫃牛熊證/展延型牛熊證） | ⬜ |
-| tw-quant-mcp | [T223-otc-history-ranks](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T223-otc-history-ranks.md) | 新增工具 get_otc_history_ranks（上櫃歷史排行系列） | ⬜ |
-| tw-quant-mcp | [T224-otc-broker-turnover](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T224-otc-broker-turnover.md) | 新增工具 get_otc_broker_turnover（上櫃券商當日營業金額） | ⬜ |
-| tw-quant-mcp | [T225-otc-block-trade](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T225-otc-block-trade.md) | 新增工具 get_otc_block_trade（上櫃鉅額交易系列） | ⬜ |
-| tw-quant-mcp | [T226-international-bond](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T226-international-bond.md) | 新增工具 get_international_bond（國際債券/寶島債） | ⬜ |
-| tw-quant-mcp | [T227-gold-spot](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T227-gold-spot.md) | 新增工具 get_gold_spot（黃金現貨與黃金權證） | ⬜ |
-| tw-quant-mcp | [T228-open-end-fund](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T228-open-end-fund.md) | 新增工具 get_open_end_fund（開放式基金） | ⬜ |
-| tw-quant-mcp | [T229-gisa-board](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T229-gisa-board.md) | 新增工具 get_gisa_board（創櫃板） | ⬜ |
-| tw-quant-mcp | [T230-fcm-profiles](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T230-fcm-profiles.md) | 新增工具 get_fcm_profiles（期貨商名冊與財務概況） | ⬜ |
-| tw-quant-mcp | [T231-position-limits-contract-adj](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T231-position-limits-contract-adj.md) | 新增工具 get_position_limits/contract_adjust（部位限制與契約調整） | ⬜ |
-| tw-quant-mcp | [T232-acceptable-collateral](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T232-acceptable-collateral.md) | 新增工具 get_acceptable_collateral（保證金可抵繳標的） | ⬜ |
-| tw-quant-mcp | [T233-fx-rate-etraqty](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T233-fx-rate-etraqty.md) | 新增工具 get_fx_rate/e_trade_qty（外幣匯率與電子式交易統計） | ⬜ |
-| tw-quant-mcp | [T234-market-maker-cm-lists](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T234-market-maker-cm-lists.md) | 新增工具 get_market_maker_cm_lists（造市者與結算會員名冊） | ⬜ |
 | tw-quant-mcp | [T235-fcm-volume-reports](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T235-fcm-volume-reports.md) | 新增工具 get_fcm_volume_reports（期貨商交易量日/週/月/年報表） | ⬜ |
 | tw-quant-mcp | [T236-calendar-spread](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T236-calendar-spread.md) | 新增工具 get_calendar_spread_trades（期貨價差委託成交） | ⬜ |
 | tw-quant-mcp | [T238-otc-fundamental-stats](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T238-otc-fundamental-stats.md) | 新增擴充工具群組「上櫃基本面・營收統計・重大訊息」（9 端點） | ⬜ |
@@ -133,9 +113,9 @@
 
 | 指標 | 數值 |
 |------|------|
-| 過去 7 天完成 | 330 |
-| 過去 30 天完成 | 647 |
-| 平均週期時間 | 1.6 天 |
+| 過去 7 天完成 | 350 |
+| 過去 30 天完成 | 667 |
+| 平均週期時間 | 1.5 天 |
 | 週期時間中位數 | 0.0 天 |
 
 
@@ -144,10 +124,10 @@ xychart-beta
     title "過去 14 天任務完成趨勢"
     x-axis ["08-13", "08-14", "08-15", "08-16", "08-17", "08-18", "08-19", "08-20", "08-21", "08-22", "08-23", "08-24", "08-25", "08-26"]
     y-axis "完成數" 0 --> 165
-    line [0, 0, 8, 2, 119, 22, 16, 0, 3, 28, 0, 77, 165, 41]
+    line [0, 0, 8, 2, 119, 22, 16, 0, 3, 28, 0, 77, 165, 61]
 ```
 
-📊 總計: 481 | 日均: 34.4 | 本週: 314 | 📈 成長中
+📊 總計: 501 | 日均: 35.8 | 本週: 334 | 📈 成長中
 
 ## 📋 專案列表
 
@@ -209,7 +189,7 @@ xychart-beta
 | ✅ | [tasks-executor](https://github.com/gentoobreaking/ai-tasks/tree/main/tasks-executor) | 8 | 8 | 0 | 0 | 0 | ████████████████████ 100% | 2026-05-12 |
 | ✅ | [tw-quant](https://github.com/gentoobreaking/ai-tasks/tree/main/tw-quant) | 14 | 14 | 0 | 0 | 0 | ████████████████████ 100% | 2026-08-25 |
 | ✅ | [tw-quant-daybrain](https://github.com/gentoobreaking/ai-tasks/tree/main/tw-quant-daybrain) | 28 | 28 | 0 | 0 | 0 | ████████████████████ 100% | 2026-08-12 |
-| ⬜ | [tw-quant-mcp](https://github.com/gentoobreaking/ai-tasks/tree/main/tw-quant-mcp) | 243 | 215 | 28 | 0 | 0 | █████████████████░░░ 88% | 2026-08-26 |
+| ⬜ | [tw-quant-mcp](https://github.com/gentoobreaking/ai-tasks/tree/main/tw-quant-mcp) | 243 | 235 | 8 | 0 | 0 | ███████████████████░ 96% | 2026-08-26 |
 | ✅ | [tw-quant-pickup](https://github.com/gentoobreaking/ai-tasks/tree/main/tw-quant-pickup) | 47 | 47 | 0 | 0 | 0 | ████████████████████ 100% | 2026-08-24 |
 | ✅ | [tw-quant-selector](https://github.com/gentoobreaking/ai-tasks/tree/main/tw-quant-selector) | 148 | 148 | 0 | 0 | 0 | ████████████████████ 100% | 2026-08-15 |
 | ✅ | [tw-quant-signal](https://github.com/gentoobreaking/ai-tasks/tree/main/tw-quant-signal) | 32 | 32 | 0 | 0 | 0 | ████████████████████ 100% | 2026-08-19 |

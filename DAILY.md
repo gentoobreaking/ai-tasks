@@ -1,6 +1,6 @@
 # 📅 Daily Dashboard - 2026-08-26
 
-> 最後更新: 2026-08-26 08:51 · 自動生成
+> 最後更新: 2026-08-26 10:56 · 自動生成
 
 ---
 
@@ -113,8 +113,28 @@
 | tw-quant-mcp | [T210-stock-futures-stats](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T210-stock-futures-stats.md) | 新增工具 get_stock_futures_stats（個股期貨/選擇權交易統計 va 系列） |
 | tw-quant-mcp | [T211-ssf-overview](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T211-ssf-overview.md) | 新增工具 get_ssf_overview（股票期貨標的與前十大量） |
 | tw-quant-mcp | [T212-emerging-quotes](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T212-emerging-quotes.md) | 新增工具 get_emerging_quotes/market_status（興櫃當日行情與市場現況） |
+| tw-quant-mcp | [T213-emerging-ranks](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T213-emerging-ranks.md) | 新增工具 get_emerging_ranks（興櫃 EPS/資本額排名） |
+| tw-quant-mcp | [T214-emerging-board-holdings](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T214-emerging-board-holdings.md) | 新增工具 get_emerging_board_holdings（興櫃董監持股餘額） |
+| tw-quant-mcp | [T215-emerging-financials](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T215-emerging-financials.md) | 新增工具 get_emerging_financial_statements（興櫃財報三表） |
 | tw-quant-mcp | [T216-otc-esg-report](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T216-otc-esg-report.md) | 擴充 get_esg_report／新增 get_otc_esg_report（上櫃 ESG 揭露 t187ap46_O） |
+| tw-quant-mcp | [T217-tpex200-index](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T217-tpex200-index.md) | 新增工具 get_tpex200_index（富櫃50/富櫃200 指數） |
 | tw-quant-mcp | [T218-high-dividend-index](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T218-high-dividend-index.md) | 新增工具 get_high_dividend_index（櫃買高殖利率指數） |
+| tw-quant-mcp | [T219-governance-salary-index](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T219-governance-salary-index.md) | 新增工具 get_governance_salary_index（公司治理/薪酬指數） |
+| tw-quant-mcp | [T220-emp88-index](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T220-emp88-index.md) | 新增工具 get_emp88_index（勞工就業88指數） |
+| tw-quant-mcp | [T221-otc-warrant](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T221-otc-warrant.md) | 新增工具 get_otc_warrant_daily/basic（上櫃權證行情與基本資料） |
+| tw-quant-mcp | [T222-otc-wcb-wxy](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T222-otc-wcb-wxy.md) | 新增工具 get_otc_wcb_wxy（上櫃牛熊證/展延型牛熊證） |
+| tw-quant-mcp | [T223-otc-history-ranks](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T223-otc-history-ranks.md) | 新增工具 get_otc_history_ranks（上櫃歷史排行系列） |
+| tw-quant-mcp | [T224-otc-broker-turnover](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T224-otc-broker-turnover.md) | 新增工具 get_otc_broker_turnover（上櫃券商當日營業金額） |
+| tw-quant-mcp | [T225-otc-block-trade](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T225-otc-block-trade.md) | 新增工具 get_otc_block_trade（上櫃鉅額交易系列） |
+| tw-quant-mcp | [T226-international-bond](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T226-international-bond.md) | 新增工具 get_international_bond（國際債券/寶島債） |
+| tw-quant-mcp | [T227-gold-spot](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T227-gold-spot.md) | 新增工具 get_gold_spot（黃金現貨與黃金權證） |
+| tw-quant-mcp | [T228-open-end-fund](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T228-open-end-fund.md) | 新增工具 get_open_end_fund（開放式基金） |
+| tw-quant-mcp | [T229-gisa-board](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T229-gisa-board.md) | 新增工具 get_gisa_board（創櫃板） |
+| tw-quant-mcp | [T230-fcm-profiles](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T230-fcm-profiles.md) | 新增工具 get_fcm_profiles（期貨商名冊與財務概況） |
+| tw-quant-mcp | [T231-position-limits-contract-adj](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T231-position-limits-contract-adj.md) | 新增工具 get_position_limits/contract_adjust（部位限制與契約調整） |
+| tw-quant-mcp | [T232-acceptable-collateral](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T232-acceptable-collateral.md) | 新增工具 get_acceptable_collateral（保證金可抵繳標的） |
+| tw-quant-mcp | [T233-fx-rate-etraqty](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T233-fx-rate-etraqty.md) | 新增工具 get_fx_rate/e_trade_qty（外幣匯率與電子式交易統計） |
+| tw-quant-mcp | [T234-market-maker-cm-lists](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T234-market-maker-cm-lists.md) | 新增工具 get_market_maker_cm_lists（造市者與結算會員名冊） |
 | tw-quant-mcp | [T237-otc-governance-series](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T237-otc-governance-series.md) | 新增擴充工具群組「上櫃公司治理・監理・股務系列」（24 端點） |
 
 ---
@@ -137,11 +157,6 @@ _無_
 
 | 專案 | 任務 | 標題 | 優先 |
 | -- | -- | -- | -- |
-| tw-quant-mcp | [T215-emerging-financials](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T215-emerging-financials.md) | 新增工具 get_emerging_financial_statements（興櫃財報三表） | medium |
-| tw-quant-mcp | [T217-tpex200-index](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T217-tpex200-index.md) | 新增工具 get_tpex200_index（富櫃50/富櫃200 指數） | medium |
-| tw-quant-mcp | [T221-otc-warrant](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T221-otc-warrant.md) | 新增工具 get_otc_warrant_daily/basic（上櫃權證行情與基本資料） | medium |
-| tw-quant-mcp | [T223-otc-history-ranks](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T223-otc-history-ranks.md) | 新增工具 get_otc_history_ranks（上櫃歷史排行系列） | medium |
-| tw-quant-mcp | [T225-otc-block-trade](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T225-otc-block-trade.md) | 新增工具 get_otc_block_trade（上櫃鉅額交易系列） | medium |
 | tw-quant-mcp | [T238-otc-fundamental-stats](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T238-otc-fundamental-stats.md) | 新增擴充工具群組「上櫃基本面・營收統計・重大訊息」（9 端點） | medium |
 | tw-quant-mcp | [T239-otc-financial-statements](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T239-otc-financial-statements.md) | 新增擴充工具群組「上櫃財報三表（六產業 fallback）」（27 端點） | medium |
 | tw-quant-mcp | [T240-otc-margin-sbl-detail](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T240-otc-margin-sbl-detail.md) | 新增擴充工具群組「上櫃融資融券・借券細項」（11 端點） | medium |
@@ -150,21 +165,6 @@ _無_
 | gold-analysis-advanced | [T004](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis-advanced/tasks/T004.md) | 實盤交易對接 | low |
 | slo-sentinel | [T021-freeze-enforce](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T021-freeze-enforce.md) | 成本/預算 CI 部署閘門——enforce 模式（F6 Phase 2） | low |
 | slo-sentinel | [T030-billing-real-verify](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T030-billing-real-verify.md) | 成本 adapter 真實雲端驗證（移除 NEEDS VERIFICATION） | low |
-| tw-quant-mcp | [T213-emerging-ranks](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T213-emerging-ranks.md) | 新增工具 get_emerging_ranks（興櫃 EPS/資本額排名） | low |
-| tw-quant-mcp | [T214-emerging-board-holdings](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T214-emerging-board-holdings.md) | 新增工具 get_emerging_board_holdings（興櫃董監持股餘額） | low |
-| tw-quant-mcp | [T219-governance-salary-index](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T219-governance-salary-index.md) | 新增工具 get_governance_salary_index（公司治理/薪酬指數） | low |
-| tw-quant-mcp | [T220-emp88-index](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T220-emp88-index.md) | 新增工具 get_emp88_index（勞工就業88指數） | low |
-| tw-quant-mcp | [T222-otc-wcb-wxy](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T222-otc-wcb-wxy.md) | 新增工具 get_otc_wcb_wxy（上櫃牛熊證/展延型牛熊證） | low |
-| tw-quant-mcp | [T224-otc-broker-turnover](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T224-otc-broker-turnover.md) | 新增工具 get_otc_broker_turnover（上櫃券商當日營業金額） | low |
-| tw-quant-mcp | [T226-international-bond](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T226-international-bond.md) | 新增工具 get_international_bond（國際債券/寶島債） | low |
-| tw-quant-mcp | [T227-gold-spot](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T227-gold-spot.md) | 新增工具 get_gold_spot（黃金現貨與黃金權證） | low |
-| tw-quant-mcp | [T228-open-end-fund](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T228-open-end-fund.md) | 新增工具 get_open_end_fund（開放式基金） | low |
-| tw-quant-mcp | [T229-gisa-board](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T229-gisa-board.md) | 新增工具 get_gisa_board（創櫃板） | low |
-| tw-quant-mcp | [T230-fcm-profiles](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T230-fcm-profiles.md) | 新增工具 get_fcm_profiles（期貨商名冊與財務概況） | low |
-| tw-quant-mcp | [T231-position-limits-contract-adj](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T231-position-limits-contract-adj.md) | 新增工具 get_position_limits/contract_adjust（部位限制與契約調整） | low |
-| tw-quant-mcp | [T232-acceptable-collateral](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T232-acceptable-collateral.md) | 新增工具 get_acceptable_collateral（保證金可抵繳標的） | low |
-| tw-quant-mcp | [T233-fx-rate-etraqty](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T233-fx-rate-etraqty.md) | 新增工具 get_fx_rate/e_trade_qty（外幣匯率與電子式交易統計） | low |
-| tw-quant-mcp | [T234-market-maker-cm-lists](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T234-market-maker-cm-lists.md) | 新增工具 get_market_maker_cm_lists（造市者與結算會員名冊） | low |
 | tw-quant-mcp | [T235-fcm-volume-reports](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T235-fcm-volume-reports.md) | 新增工具 get_fcm_volume_reports（期貨商交易量日/週/月/年報表） | low |
 | tw-quant-mcp | [T236-calendar-spread](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T236-calendar-spread.md) | 新增工具 get_calendar_spread_trades（期貨價差委託成交） | low |
 | tw-quant-mcp | [T241-otc-trading-system-info](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T241-otc-trading-system-info.md) | 新增擴充工具群組「上櫃交易制度與市場資訊」（10 端點） | low |
