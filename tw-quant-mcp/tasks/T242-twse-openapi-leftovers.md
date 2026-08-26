@@ -3,7 +3,7 @@ github_issue: N/A
 title: 新增擴充工具群組「TWSE OpenAPI 餘量端點對齊」（12 端點）
 type: feature
 priority: low
-status: pending
+status: done
 depends_on: []
 assignee: pi with opencode/x-preview-f-free
 created: 2026-08-26
@@ -45,11 +45,11 @@ TWSE OpenAPI 目錄中尚未接線的 7 條端點，功能多已由既有工具�
 - passthrough 或正規化模型擇一；官方缺漏回明確錯誤訊息
 
 ## 驗收標準
-- [ ] 本任務所有端點均有對應工具且 `tools/list` 可見
-- [ ] 以真實參數呼叫至少一次成功，回傳符合 Envelope 且含 `_lineage`
-- [ ] 快取生效：重複呼叫第二次零上游 HTTP
-- [ ] 單元測試（fixtures 對照真實回傳）；`make test` / `go vet ./...` 通過
-- [ ] `make catalog` 重新彙出 docs/TOOL_CATALOG.md
+- [x] 本任務所有端點均有對應工具且 `tools/list` 可見
+- [x] 以真實參數呼叫至少一次成功，回傳符合 Envelope 且含 `_lineage`
+- [x] 快取生效：重複呼叫第二次零上游 HTTP
+- [x] 單元測試（fixtures 對照真實回傳）；`make test` / `go vet ./...` 通過
+- [x] `make catalog` 重新彙出 docs/TOOL_CATALOG.md
 
 ## 備註
 - 同批擴充任務系列；缺口分析文件：`docs/COMPARISON_TWSEMCPServer.md`

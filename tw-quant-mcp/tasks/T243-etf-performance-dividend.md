@@ -3,7 +3,7 @@ github_issue: N/A
 title: 新增工具 get_etf_performance / get_etf_dividend_detail（e添富績效與配息明細）
 type: feature
 priority: medium
-status: pending
+status: done
 depends_on: []
 assignee: pi with opencode/x-preview-f-free
 created: 2026-08-26
@@ -74,12 +74,12 @@ updated: 2026-08-26
   不靜默失敗
 
 ## 驗收標準
-- [ ] `tools/list` 可見兩工具，inputSchema 與上方參數設計語意一致
-- [ ] `get_etf_performance("0050")` 與 `get_etf_dividend_detail("0056")`
+- [x] `tools/list` 可見兩工具，inputSchema 與上方參數設計語意一致
+- [x] `get_etf_performance("0050")` 與 `get_etf_dividend_detail("0056")`
       各真實呼叫至少一次成功，回傳符合 Envelope 且含 `_lineage`
-- [ ] 快取生效：重複呼叫第二次零上游 HTTP
-- [ ] fixtures 對照真實回傳樣本之單元測試；`make test` / `go vet ./...` 通過
-- [ ] `make catalog` 重新彙出 docs/TOOL_CATALOG.md
+- [x] 快取生效：重複呼叫第二次零上游 HTTP
+- [x] fixtures 對照真實回傳樣本之單元測試；`make test` / `go vet ./...` 通過
+- [x] `make catalog` 重新彙出 docs/TOOL_CATALOG.md
 
 ## 備註
 - 探查方法留存：抓 `/zh/ETFortune/etfInfo/0050` 頁面 grep `"/zh/ETFortune/ajax*"`

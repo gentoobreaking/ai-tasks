@@ -238,7 +238,15 @@
 | 工具 get_acceptable_collateral（保證金可抵繳標的） |
 | 工具 get_fx_rate/e_trade_qty（外幣匯率與電子式交易統計） |
 | 工具 get_market_maker_cm_lists（造市者與結算會員名冊） |
+| 工具 get_fcm_volume_reports（期貨商交易量日/週/月/年報表） |
+| 工具 get_calendar_spread_trades（期貨價差委託成交） |
 | 擴充工具群組「上櫃公司治理・監理・股務系列」（24 端點） |
+| 擴充工具群組「上櫃基本面・營收統計・重大訊息」（9 端點） |
+| 擴充工具群組「上櫃財報三表（六產業 fallback）」（27 端點） |
+| 擴充工具群組「上櫃融資融券・借券細項」（11 端點） |
+| 擴充工具群組「上櫃交易制度與市場資訊」（10 端點） |
+| 擴充工具群組「TWSE OpenAPI 餘量端點對齊」（12 端點） |
+| 工具 get_etf_performance / get_etf_dividend_detail（e添富績效與配息明細） |
 
 ## Skip 項目
 
@@ -256,14 +264,7 @@
 
 | Task | 名稱 | 說明 |
 |------|------|------|
-| [T235-fcm-volume-reports](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T235-fcm-volume-reports.md) | 新增工具 get_fcm_volume_reports（期貨商交易量日/週/月/年報表） | |
-| [T236-calendar-spread](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T236-calendar-spread.md) | 新增工具 get_calendar_spread_trades（期貨價差委託成交） | |
-| [T238-otc-fundamental-stats](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T238-otc-fundamental-stats.md) | 新增擴充工具群組「上櫃基本面・營收統計・重大訊息」（9 端點） | |
-| [T239-otc-financial-statements](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T239-otc-financial-statements.md) | 新增擴充工具群組「上櫃財報三表（六產業 fallback）」（27 端點） | |
-| [T240-otc-margin-sbl-detail](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T240-otc-margin-sbl-detail.md) | 新增擴充工具群組「上櫃融資融券・借券細項」（11 端點） | |
-| [T241-otc-trading-system-info](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T241-otc-trading-system-info.md) | 新增擴充工具群組「上櫃交易制度與市場資訊」（10 端點） | |
-| [T242-twse-openapi-leftovers](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T242-twse-openapi-leftovers.md) | 新增擴充工具群組「TWSE OpenAPI 餘量端點對齊」（12 端點） | |
-| [T243-etf-performance-dividend](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T243-etf-performance-dividend.md) | 新增工具 get_etf_performance / get_etf_dividend_detail（e添富績效與配息明細） | |
+| | | |
 
 ## Task 列表
 
@@ -503,16 +504,16 @@
 | [T232-acceptable-collateral](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T232-acceptable-collateral.md) | 新增工具 get_acceptable_collateral（保證金可抵繳標的） | ✅ done |
 | [T233-fx-rate-etraqty](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T233-fx-rate-etraqty.md) | 新增工具 get_fx_rate/e_trade_qty（外幣匯率與電子式交易統計） | ✅ done |
 | [T234-market-maker-cm-lists](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T234-market-maker-cm-lists.md) | 新增工具 get_market_maker_cm_lists（造市者與結算會員名冊） | ✅ done |
-| [T235-fcm-volume-reports](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T235-fcm-volume-reports.md) | 新增工具 get_fcm_volume_reports（期貨商交易量日/週/月/年報表） | 📋 pending |
-| [T236-calendar-spread](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T236-calendar-spread.md) | 新增工具 get_calendar_spread_trades（期貨價差委託成交） | 📋 pending |
+| [T235-fcm-volume-reports](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T235-fcm-volume-reports.md) | 新增工具 get_fcm_volume_reports（期貨商交易量日/週/月/年報表） | ✅ done |
+| [T236-calendar-spread](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T236-calendar-spread.md) | 新增工具 get_calendar_spread_trades（期貨價差委託成交） | ✅ done |
 | [T237-otc-governance-series](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T237-otc-governance-series.md) | 新增擴充工具群組「上櫃公司治理・監理・股務系列」（24 端點） | ✅ done |
-| [T238-otc-fundamental-stats](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T238-otc-fundamental-stats.md) | 新增擴充工具群組「上櫃基本面・營收統計・重大訊息」（9 端點） | 📋 pending |
-| [T239-otc-financial-statements](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T239-otc-financial-statements.md) | 新增擴充工具群組「上櫃財報三表（六產業 fallback）」（27 端點） | 📋 pending |
-| [T240-otc-margin-sbl-detail](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T240-otc-margin-sbl-detail.md) | 新增擴充工具群組「上櫃融資融券・借券細項」（11 端點） | 📋 pending |
-| [T241-otc-trading-system-info](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T241-otc-trading-system-info.md) | 新增擴充工具群組「上櫃交易制度與市場資訊」（10 端點） | 📋 pending |
-| [T242-twse-openapi-leftovers](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T242-twse-openapi-leftovers.md) | 新增擴充工具群組「TWSE OpenAPI 餘量端點對齊」（12 端點） | 📋 pending |
-| [T243-etf-performance-dividend](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T243-etf-performance-dividend.md) | 新增工具 get_etf_performance / get_etf_dividend_detail（e添富績效與配息明細） | 📋 pending |
+| [T238-otc-fundamental-stats](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T238-otc-fundamental-stats.md) | 新增擴充工具群組「上櫃基本面・營收統計・重大訊息」（9 端點） | ✅ done |
+| [T239-otc-financial-statements](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T239-otc-financial-statements.md) | 新增擴充工具群組「上櫃財報三表（六產業 fallback）」（27 端點） | ✅ done |
+| [T240-otc-margin-sbl-detail](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T240-otc-margin-sbl-detail.md) | 新增擴充工具群組「上櫃融資融券・借券細項」（11 端點） | ✅ done |
+| [T241-otc-trading-system-info](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T241-otc-trading-system-info.md) | 新增擴充工具群組「上櫃交易制度與市場資訊」（10 端點） | ✅ done |
+| [T242-twse-openapi-leftovers](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T242-twse-openapi-leftovers.md) | 新增擴充工具群組「TWSE OpenAPI 餘量端點對齊」（12 端點） | ✅ done |
+| [T243-etf-performance-dividend](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T243-etf-performance-dividend.md) | 新增工具 get_etf_performance / get_etf_dividend_detail（e添富績效與配息明細） | ✅ done |
 
-**✅ done: 235 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 8**
+**✅ done: 243 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 0**
 
-> 自動生成於 2026-08-26 10:55
+> 自動生成於 2026-08-26 19:31

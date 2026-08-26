@@ -1,6 +1,6 @@
 # 📁 Projects Dashboard
 
-> 最後更新: 2026-08-26 10:56 · 自動生成
+> 最後更新: 2026-08-26 19:31 · 自動生成
 
 ---
 
@@ -10,8 +10,8 @@
 |------|------|
 | 專案數 | 65 |
 | 任務總數 | 1401 |
-| ✅ 已完成 | 1325 |
-| ⬜ 待處理 | 12 |
+| ✅ 已完成 | 1333 |
+| ⬜ 待處理 | 4 |
 | 🔄 進行中 | 1 |
 | ⏭️ 跳過 | 63 |
 | 總完成率 | 99% |
@@ -24,14 +24,6 @@
 | gold-analysis-advanced | [T004](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis-advanced/tasks/T004.md) | 實盤交易對接 | ⬜ |
 | slo-sentinel | [T021-freeze-enforce](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T021-freeze-enforce.md) | 成本/預算 CI 部署閘門——enforce 模式（F6 Phase 2） | ⬜ |
 | slo-sentinel | [T030-billing-real-verify](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T030-billing-real-verify.md) | 成本 adapter 真實雲端驗證（移除 NEEDS VERIFICATION） | ⬜ |
-| tw-quant-mcp | [T235-fcm-volume-reports](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T235-fcm-volume-reports.md) | 新增工具 get_fcm_volume_reports（期貨商交易量日/週/月/年報表） | ⬜ |
-| tw-quant-mcp | [T236-calendar-spread](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T236-calendar-spread.md) | 新增工具 get_calendar_spread_trades（期貨價差委託成交） | ⬜ |
-| tw-quant-mcp | [T238-otc-fundamental-stats](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T238-otc-fundamental-stats.md) | 新增擴充工具群組「上櫃基本面・營收統計・重大訊息」（9 端點） | ⬜ |
-| tw-quant-mcp | [T239-otc-financial-statements](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T239-otc-financial-statements.md) | 新增擴充工具群組「上櫃財報三表（六產業 fallback）」（27 端點） | ⬜ |
-| tw-quant-mcp | [T240-otc-margin-sbl-detail](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T240-otc-margin-sbl-detail.md) | 新增擴充工具群組「上櫃融資融券・借券細項」（11 端點） | ⬜ |
-| tw-quant-mcp | [T241-otc-trading-system-info](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T241-otc-trading-system-info.md) | 新增擴充工具群組「上櫃交易制度與市場資訊」（10 端點） | ⬜ |
-| tw-quant-mcp | [T242-twse-openapi-leftovers](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T242-twse-openapi-leftovers.md) | 新增擴充工具群組「TWSE OpenAPI 餘量端點對齊」（12 端點） | ⬜ |
-| tw-quant-mcp | [T243-etf-performance-dividend](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-mcp/tasks/T243-etf-performance-dividend.md) | 新增工具 get_etf_performance / get_etf_dividend_detail（e添富績效與配息明細） | ⬜ |
 
 ## 🔄 進行中
 
@@ -113,8 +105,8 @@
 
 | 指標 | 數值 |
 |------|------|
-| 過去 7 天完成 | 350 |
-| 過去 30 天完成 | 667 |
+| 過去 7 天完成 | 358 |
+| 過去 30 天完成 | 675 |
 | 平均週期時間 | 1.5 天 |
 | 週期時間中位數 | 0.0 天 |
 
@@ -124,10 +116,10 @@ xychart-beta
     title "過去 14 天任務完成趨勢"
     x-axis ["08-13", "08-14", "08-15", "08-16", "08-17", "08-18", "08-19", "08-20", "08-21", "08-22", "08-23", "08-24", "08-25", "08-26"]
     y-axis "完成數" 0 --> 165
-    line [0, 0, 8, 2, 119, 22, 16, 0, 3, 28, 0, 77, 165, 61]
+    line [0, 0, 8, 2, 119, 22, 16, 0, 3, 28, 0, 77, 165, 69]
 ```
 
-📊 總計: 501 | 日均: 35.8 | 本週: 334 | 📈 成長中
+📊 總計: 509 | 日均: 36.4 | 本週: 342 | 📈 成長中
 
 ## 📋 專案列表
 
@@ -189,7 +181,7 @@ xychart-beta
 | ✅ | [tasks-executor](https://github.com/gentoobreaking/ai-tasks/tree/main/tasks-executor) | 8 | 8 | 0 | 0 | 0 | ████████████████████ 100% | 2026-05-12 |
 | ✅ | [tw-quant](https://github.com/gentoobreaking/ai-tasks/tree/main/tw-quant) | 14 | 14 | 0 | 0 | 0 | ████████████████████ 100% | 2026-08-25 |
 | ✅ | [tw-quant-daybrain](https://github.com/gentoobreaking/ai-tasks/tree/main/tw-quant-daybrain) | 28 | 28 | 0 | 0 | 0 | ████████████████████ 100% | 2026-08-12 |
-| ⬜ | [tw-quant-mcp](https://github.com/gentoobreaking/ai-tasks/tree/main/tw-quant-mcp) | 243 | 235 | 8 | 0 | 0 | ███████████████████░ 96% | 2026-08-26 |
+| ✅ | [tw-quant-mcp](https://github.com/gentoobreaking/ai-tasks/tree/main/tw-quant-mcp) | 243 | 243 | 0 | 0 | 0 | ████████████████████ 100% | 2026-08-26 |
 | ✅ | [tw-quant-pickup](https://github.com/gentoobreaking/ai-tasks/tree/main/tw-quant-pickup) | 47 | 47 | 0 | 0 | 0 | ████████████████████ 100% | 2026-08-24 |
 | ✅ | [tw-quant-selector](https://github.com/gentoobreaking/ai-tasks/tree/main/tw-quant-selector) | 148 | 148 | 0 | 0 | 0 | ████████████████████ 100% | 2026-08-15 |
 | ✅ | [tw-quant-signal](https://github.com/gentoobreaking/ai-tasks/tree/main/tw-quant-signal) | 32 | 32 | 0 | 0 | 0 | ████████████████████ 100% | 2026-08-19 |
