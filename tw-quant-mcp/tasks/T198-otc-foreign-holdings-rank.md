@@ -3,7 +3,7 @@ github_issue: N/A
 title: 新增工具 get_otc_foreign_holdings_rank（上櫃外資持股排行）
 type: feature
 priority: medium
-status: pending
+status: done
 depends_on: []
 assignee: pi with opencode/x-preview-f-free
 created: 2026-08-26
@@ -41,11 +41,11 @@ updated: 2026-08-26
 
 
 ## 驗收標準
-- [ ] `tools/list` 可見本工具，inputSchema 與上方參數語意一致
-- [ ] 以真實參數呼叫至少一次成功（含過濾/分頁參數各一次，若適用），回傳符合 Envelope 且含 `_lineage`
-- [ ] 快取生效：重複呼叫第二次零上游 HTTP（檢查 log 或 lineage）
-- [ ] 單元測試（fixtures 對照上游真實回傳樣本）；`make test` / `go vet ./...` 通過
-- [ ] `make catalog` 重新彙出 docs/TOOL_CATALOG.md（工具數/分組更新）
+- [x] `tools/list` 可見本工具，inputSchema 與上方參數語意一致
+- [x] 以真實參數呼叫至少一次成功（含過濾/分頁參數各一次，若適用），回傳符合 Envelope 且含 `_lineage`
+- [x] 快取生效：重複呼叫第二次零上游 HTTP（檢查 log 或 lineage）
+- [x] 單元測試（fixtures 對照上游真實回傳樣本）；`make test` / `go vet ./...` 通過
+- [x] `make catalog` 重新彙出 docs/TOOL_CATALOG.md（工具數/分組更新）
 
 ## 備註
 - 同批擴充任務：P1 TPEx 上櫃對稱（詳見各任務書）
