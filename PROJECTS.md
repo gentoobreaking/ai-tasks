@@ -1,6 +1,6 @@
 # 📁 Projects Dashboard
 
-> 最後更新: 2026-08-28 06:16 · 自動生成
+> 最後更新: 2026-08-28 06:44 · 自動生成
 
 ---
 
@@ -8,9 +8,9 @@
 
 | 指標 | 數量 |
 |------|------|
-| 專案數 | 59 |
-| 任務總數 | 1346 |
-| ✅ 已完成 | 1282 |
+| 專案數 | 60 |
+| 任務總數 | 1355 |
+| ✅ 已完成 | 1291 |
 | ⬜ 待處理 | 0 |
 | 🔄 進行中 | 0 |
 | ⏭️ 跳過 | 64 |
@@ -57,6 +57,7 @@ xychart-beta
 | ✅ | [git-maintenance](https://github.com/gentoobreaking/ai-tasks/tree/main/git-maintenance) | 1 | 1 | 0 | 0 | 0 | ████████████████████ 100% | 2026-05-16 |
 | ✅ | [github-data-review](https://github.com/gentoobreaking/ai-tasks/tree/main/github-data-review) | 8 | 8 | 0 | 0 | 0 | ████████████████████ 100% | 2026-04-28 |
 | ✅ | [global-policy-refactor](https://github.com/gentoobreaking/ai-tasks/tree/main/global-policy-refactor) | 3 | 3 | 0 | 0 | 0 | ████████████████████ 100% | 2026-05-07 |
+| ✅ | [gold-analysis](https://github.com/gentoobreaking/ai-tasks/tree/main/gold-analysis) | 9 | 9 | 0 | 0 | 0 | ████████████████████ 100% | 2026-04-09 |
 | ✅ | [gold-monitor-issue](https://github.com/gentoobreaking/ai-tasks/tree/main/gold-monitor-issue) | 8 | 6 | 0 | 0 | 2 | ████████████████████ 100% | 2026-05-07 |
 | ✅ | [gold-monitor-pro-v4](https://github.com/gentoobreaking/ai-tasks/tree/main/gold-monitor-pro-v4) | 8 | 8 | 0 | 0 | 0 | ████████████████████ 100% | 2026-05-01 |
 | ✅ | [gpt-sovits-research](https://github.com/gentoobreaking/ai-tasks/tree/main/gpt-sovits-research) | 1 | 1 | 0 | 0 | 0 | ████████████████████ 100% | 2026-04-21 |

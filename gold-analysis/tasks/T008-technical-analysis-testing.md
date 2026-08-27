@@ -1,30 +1,28 @@
 ---
-
-github_issue: https://github.com/gentoobreaking/ai-tasks/issues/214
-
-id: core-T008
+id: T008
 project: gold-analysis
 source_project: gold-analysis-core
 title: 建立技術分析測試框架
 assignee: 樂樂
 priority: medium
+type: verification
 status: done
 created: 2026-04-07
 updated: 2026-04-09
 estimate: 2天
-depends_on: [core-T007]
+depends_on: [T007]
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/214
 ---
 
-
-## 描述
+## 目標
 對技術指標進行回測驗證，確保指標準確性和可靠性。
 
-## 完成條件
-- [✅] 回測框架搭建完成
-- [✅] 歷史數據準備完成
-- [✅] 各技術指標回測完成
-- [✅] 參數優化完成
-- [✅] 回測報告生成
+## 驗收標準
+- [ ] 回測框架搭建完成
+- [ ] 歷史數據準備完成
+- [ ] 各技術指標回測完成
+- [ ] 參數優化完成
+- [ ] 回測報告生成
 
 ## 產出
 - **檔案**: `backend/tests/test_technical_analysis.py`
@@ -38,7 +36,7 @@ depends_on: [core-T007]
   - ATR（TC-016~018）
   - 支撐/阻力位（TC-019~020，skip：代碼 Bug）
   - 趨勢分析（TC-021~022）
-  - 性能基准（TC-023）
+  - 性能基準（TC-023）
   - 端到端流程（TC-024~025）
 - **測試數據工廠**: `FixtureFactory` 類，提供 gold_prices / ohlc_prices / uptrend / downtrend / flat 等標準化測試數據
 - **依賴**: `app/tools/analysis_tools.py`
@@ -48,5 +46,5 @@ depends_on: [core-T007]
 |------|------|--------|
 | `analysis_tools.py:349` | `NameError: name 'w' is not defined`，應為 `window` | ⚠️ Bug |
 
-## 備備註
+## 備註
 驗證任務，由 樂樂 執行。測試框架以 pytest + pytest-asyncio 實現。
