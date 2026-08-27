@@ -1,6 +1,6 @@
 # 📁 Projects Dashboard
 
-> 最後更新: 2026-08-28 05:06 · 自動生成
+> 最後更新: 2026-08-28 05:17 · 自動生成
 
 ---
 
@@ -9,9 +9,9 @@
 | 指標 | 數量 |
 |------|------|
 | 專案數 | 65 |
-| 任務總數 | 1401 |
+| 任務總數 | 1402 |
 | ✅ 已完成 | 1336 |
-| ⬜ 待處理 | 1 |
+| ⬜ 待處理 | 2 |
 | 🔄 進行中 | 0 |
 | ⏭️ 跳過 | 64 |
 | 總完成率 | 99% |
@@ -20,6 +20,7 @@
 
 | 專案 | 任務 | 標題 | 狀態 |
 |------|------|------|------|
+| gold-analysis-advanced | [T005](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis-advanced/tasks/T005.md) | 生產環境接線（監控/重訓/A-B/交易執行） | ⬜ |
 | slo-sentinel | [T030-billing-real-verify](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T030-billing-real-verify.md) | 成本 adapter 真實雲端驗證（移除 NEEDS VERIFICATION） | ⬜ |
 
 ## ⏭️ 跳過
@@ -97,9 +98,9 @@
 
 | 指標 | 數值 |
 |------|------|
-| 過去 7 天完成 | 345 |
-| 過去 30 天完成 | 678 |
-| 平均週期時間 | 1.7 天 |
+| 過去 7 天完成 | 346 |
+| 過去 30 天完成 | 679 |
+| 平均週期時間 | 1.9 天 |
 | 週期時間中位數 | 0.0 天 |
 
 
@@ -108,10 +109,10 @@ xychart-beta
     title "過去 14 天任務完成趨勢"
     x-axis ["08-15", "08-16", "08-17", "08-18", "08-19", "08-20", "08-21", "08-22", "08-23", "08-24", "08-25", "08-26", "08-27", "08-28"]
     y-axis "完成數" 0 --> 165
-    line [8, 2, 119, 22, 16, 0, 3, 28, 0, 77, 165, 69, 0, 3]
+    line [8, 2, 119, 22, 16, 0, 3, 28, 0, 77, 165, 69, 0, 4]
 ```
 
-📊 總計: 512 | 日均: 36.6 | 本週: 342 | 📈 成長中
+📊 總計: 513 | 日均: 36.6 | 本週: 343 | 📈 成長中
 
 ## 📋 專案列表
 
@@ -132,7 +133,7 @@ xychart-beta
 | ✅ | [git-maintenance](https://github.com/gentoobreaking/ai-tasks/tree/main/git-maintenance) | 1 | 1 | 0 | 0 | 0 | ████████████████████ 100% | 2026-05-16 |
 | ✅ | [github-data-review](https://github.com/gentoobreaking/ai-tasks/tree/main/github-data-review) | 8 | 8 | 0 | 0 | 0 | ████████████████████ 100% | 2026-04-28 |
 | ✅ | [global-policy-refactor](https://github.com/gentoobreaking/ai-tasks/tree/main/global-policy-refactor) | 3 | 3 | 0 | 0 | 0 | ████████████████████ 100% | 2026-05-07 |
-| ✅ | [gold-analysis-advanced](https://github.com/gentoobreaking/ai-tasks/tree/main/gold-analysis-advanced) | 4 | 4 | 0 | 0 | 0 | ████████████████████ 100% | 2026-08-28 |
+| ⬜ | [gold-analysis-advanced](https://github.com/gentoobreaking/ai-tasks/tree/main/gold-analysis-advanced) | 5 | 4 | 1 | 0 | 0 | ████████████████░░░░ 80% | 2026-08-28 |
 | ✅ | [gold-analysis-core](https://github.com/gentoobreaking/ai-tasks/tree/main/gold-analysis-core) | 29 | 28 | 0 | 0 | 1 | ████████████████████ 100% | 2026-04-16 |
 | ✅ | [gold-analysis-extend](https://github.com/gentoobreaking/ai-tasks/tree/main/gold-analysis-extend) | 6 | 6 | 0 | 0 | 0 | ████████████████████ 100% | 2026-04-07 |
 | ✅ | [gold-analysis-improve](https://github.com/gentoobreaking/ai-tasks/tree/main/gold-analysis-improve) | 12 | 12 | 0 | 0 | 0 | ████████████████████ 100% | 2026-05-07 |
