@@ -1,0 +1,35 @@
+---
+
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/223
+
+id: ext-T001
+project: gold-analysis
+source_project: gold-analysis-extend
+title: 投資組合管理模塊
+assignee: 碼農 2 號
+priority: medium
+status: done
+created: 2026-04-07
+updated: 2026-04-07
+estimate: 4天
+depends_on: [core-T014]
+---
+
+
+## 描述
+實現用戶投資組合創建、編輯、刪除功能，跟蹤持倉和績效。
+
+## 完成條件
+- [☐] 投資組合數據模型設計完成
+- [☐] 組合 CRUD 功能完成
+- [☐] 持倉管理功能完成
+- [☐] 組合績效計算完成
+- [☐] 組合分析視圖完成
+
+## 產出
+- 投資組合管理模塊
+- 績效計算引擎
+- API 文檔
+
+## 備註
+需依賴 gold-analysis-core 的前端架構完成。

@@ -1,0 +1,35 @@
+---
+
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/239
+
+id: plt-T002
+project: gold-analysis
+source_project: gold-analysis-platform
+title: 社區功能
+assignee: 安安
+priority: low
+status: done
+created: 2026-04-07
+updated: 2026-04-07
+estimate: 3天
+depends_on: [plt-T001]
+---
+
+
+## 描述
+實現策略分享、討論等社區功能，建立用戶交流平台。
+
+## 完成條件
+- [☐] 社區模塊設計完成
+- [☐] 策略分享功能完成
+- [☐] 討論功能完成
+- [☐] 用戶互動功能完成
+- [☐] 內容審核功能完成
+
+## 產出
+- 社區功能模塊
+- 前端頁面
+- API 文檔
+
+## 備註
+需考慮內容安全和用戶隱私。
