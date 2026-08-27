@@ -44,6 +44,7 @@
 | Task | 說明 |
 |------|------|
 | [T21-freeze-enforce](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T021-freeze-enforce.md) | 成本/預算 CI 部署閘門——enforce 模式（F6 Phase 2） |
+| [T30-billing-real-verify](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T030-billing-real-verify.md) | 成本 adapter 真實雲端驗證（移除 NEEDS VERIFICATION） |
 
 ## 開發中
 
@@ -55,7 +56,7 @@
 
 | Task | 名稱 | 說明 |
 |------|------|------|
-| [T30-billing-real-verify](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T030-billing-real-verify.md) | 成本 adapter 真實雲端驗證（移除 NEEDS VERIFICATION） | |
+| | | |
 
 ## Task 列表
 
@@ -90,7 +91,7 @@
 | [T27-waste-saving-pricing](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T027-waste-saving-pricing.md) | waste 浪費金額接 pricing——候選清單顯示每月可省金額 | ✅ done |
 | [T28-defs-hot-reload](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T028-defs-hot-reload.md) | capacity_defs／slo_defs 熱載入 | ✅ done |
 | [T29-predictions-retention](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T029-predictions-retention.md) | predictions 表 retention 清理 | ✅ done |
-| [T30-billing-real-verify](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T030-billing-real-verify.md) | 成本 adapter 真實雲端驗證（移除 NEEDS VERIFICATION） | 📋 pending |
+| [T30-billing-real-verify](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T030-billing-real-verify.md) | 成本 adapter 真實雲端驗證（移除 NEEDS VERIFICATION） | ⏭️ skip |
 | [T31-sentinel-ui-human-readable-columns](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T031-sentinel-ui-human-readable-columns.md) | sentinel-ui 感測詳情欄位人話化——ETA 與用量呈現重設計 | ✅ done |
 | [T32-predictions-utilization-columns](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T032-predictions-utilization-columns.md) | predictions 補存 ceiling/utilization——「當下使用率」一等公民欄位 | ✅ done |
 | [T33-basic-capacity-sensor-templates](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T033-basic-capacity-sensor-templates.md) | dev profile 基本容量感測範本集——memory/cpu/disk io/network/processes | ✅ done |
@@ -98,6 +99,6 @@
 | [T35-template-library-k8s-cloud](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T035-template-library-k8s-cloud.md) | 範本庫擴充——k8s／EC2／EBS／SLB 負載平衡器資源範本 | ✅ done |
 | [T36-sentinel-gen-ai-cli](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T036-sentinel-gen-ai-cli.md) | sentinel-gen——LLM 協作產生/審查/驗證定義檔的 CLI（Go） | ✅ done |
 
-**✅ done: 34 | 🔧 in-progress: 0 | ⏭️ skip: 1 | 📋 pending: 1**
+**✅ done: 34 | 🔧 in-progress: 0 | ⏭️ skip: 2 | 📋 pending: 0**
 
-> 自動生成於 2026-08-28 06:06
+> 自動生成於 2026-08-28 06:16

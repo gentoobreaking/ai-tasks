@@ -1,6 +1,6 @@
 # 📁 Projects Dashboard
 
-> 最後更新: 2026-08-28 06:06 · 自動生成
+> 最後更新: 2026-08-28 06:16 · 自動生成
 
 ---
 
@@ -11,84 +11,10 @@
 | 專案數 | 59 |
 | 任務總數 | 1346 |
 | ✅ 已完成 | 1282 |
-| ⬜ 待處理 | 1 |
+| ⬜ 待處理 | 0 |
 | 🔄 進行中 | 0 |
-| ⏭️ 跳過 | 63 |
-| 總完成率 | 99% |
-
-## ⬜ 待處理
-
-| 專案 | 任務 | 標題 | 狀態 |
-|------|------|------|------|
-| slo-sentinel | [T030-billing-real-verify](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T030-billing-real-verify.md) | 成本 adapter 真實雲端驗證（移除 NEEDS VERIFICATION） | ⬜ |
-
-## ⏭️ 跳過
-
-| 專案 | 任務 | 標題 | 狀態 |
-|------|------|------|------|
-| gold-monitor-issue | [T005](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-monitor-issue/tasks/T005.md) | 請檢查及修正 黃金存摺價格監控 的問題（見 T001） | ⏭️ |
-| gold-monitor-issue | [T006](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-monitor-issue/tasks/T006.md) | 更新為同時抓取及顯示 黃金存摺 賣出 買入 價格（見 T004） | ⏭️ |
-| jarvis | [T021-jitsi-audio-capture](https://github.com/gentoobreaking/ai-tasks/blob/main/jarvis/tasks/T021-jitsi-audio-capture.md) | Jitsi 語音串接 — 音訊捕獲 | ⏭️ |
-| jarvis | [T022-jitsi-audio-playback](https://github.com/gentoobreaking/ai-tasks/blob/main/jarvis/tasks/T022-jitsi-audio-playback.md) | Jitsi 語音串接 — 音訊播放回會議室 | ⏭️ |
-| jarvis | [T043-KlingAI-LivePortrait](https://github.com/gentoobreaking/ai-tasks/blob/main/jarvis/tasks/T043-KlingAI-LivePortrait.md) | T043-KlingAI-LivePortrait | ⏭️ |
-| jarvis | [T044-uniTalker-MNN](https://github.com/gentoobreaking/ai-tasks/blob/main/jarvis/tasks/T044-uniTalker-MNN.md) | T044-uniTalker-MNN | ⏭️ |
-| md-viewer-app | [T004-實作-側邊欄-檔案列表](https://github.com/gentoobreaking/ai-tasks/blob/main/md-viewer-app/tasks/T004-實作-側邊欄-檔案列表.md) | 實作側邊欄檔案列表 | ⏭️ |
-| md-viewer-app | [T015-Quick-Look-插件](https://github.com/gentoobreaking/ai-tasks/blob/main/md-viewer-app/tasks/T015-Quick-Look-插件.md) | [T015] Quick Look 插件 | ⏭️ |
-| md-viewer-app | [T018-置頂小窗模式](https://github.com/gentoobreaking/ai-tasks/blob/main/md-viewer-app/tasks/T018-置頂小窗模式.md) | [T018] 置頂小窗模式 | ⏭️ |
-| md-viewer-app | [T023-滾動位置保持](https://github.com/gentoobreaking/ai-tasks/blob/main/md-viewer-app/tasks/T023-滾動位置保持.md) | [T023] 滾動位置保持 | ⏭️ |
-| md-viewer-app | [T026-專注模式](https://github.com/gentoobreaking/ai-tasks/blob/main/md-viewer-app/tasks/T026-專注模式.md) | [T026] 專注模式（Focus Mode） | ⏭️ |
-| md-viewer-app | [T027-預覽連結懸停](https://github.com/gentoobreaking/ai-tasks/blob/main/md-viewer-app/tasks/T027-預覽連結懸停.md) | [T027] 連結懸停預覽 | ⏭️ |
-| revenue-zero-cost | [T008](https://github.com/gentoobreaking/ai-tasks/blob/main/revenue-zero-cost/tasks/T008.md) | 技術社群曝光 | ⏭️ |
-| sinotrade-scraper | [T008](https://github.com/gentoobreaking/ai-tasks/blob/main/sinotrade-scraper/tasks/T008.md) | 完整報告內容讀取（需登入，暫緩） | ⏭️ |
-| slo-sentinel | [T021-freeze-enforce](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T021-freeze-enforce.md) | 成本/預算 CI 部署閘門——enforce 模式（F6 Phase 2） | ⏭️ |
-| taolive-ios | [T08-analyze-dependencies](https://github.com/gentoobreaking/ai-tasks/blob/main/taolive-ios/tasks/T08-analyze-dependencies.md) | T08-analyze-dependencies | ⏭️ |
-| taolive-ios | [T09-prepare-dev-environment](https://github.com/gentoobreaking/ai-tasks/blob/main/taolive-ios/tasks/T09-prepare-dev-environment.md) | T09-prepare-dev-environment | ⏭️ |
-| taolive-ios | [T12-setup-mnn-ios](https://github.com/gentoobreaking/ai-tasks/blob/main/taolive-ios/tasks/T12-setup-mnn-ios.md) | T12-setup-mnn-ios | ⏭️ |
-| taolive-ios | [T16-ios-capture](https://github.com/gentoobreaking/ai-tasks/blob/main/taolive-ios/tasks/T16-ios-capture.md) | T16-ios-capture | ⏭️ |
-| taolive-ios | [T17-avfoundation-video](https://github.com/gentoobreaking/ai-tasks/blob/main/taolive-ios/tasks/T17-avfoundation-video.md) | T17-avfoundation-video | ⏭️ |
-| taolive-ios | [T18-coreml-audio](https://github.com/gentoobreaking/ai-tasks/blob/main/taolive-ios/tasks/T18-coreml-audio.md) | T18-coreml-audio | ⏭️ |
-| taolive-ios | [T19-sherpa-integration](https://github.com/gentoobreaking/ai-tasks/blob/main/taolive-ios/tasks/T19-sherpa-integration.md) | T19-sherpa-integration | ⏭️ |
-| taolive-ios | [T21-sherpa-mnn-ios](https://github.com/gentoobreaking/ai-tasks/blob/main/taolive-ios/tasks/T21-sherpa-mnn-ios.md) | T21-sherpa-mnn-ios | ⏭️ |
-| taolive-ios | [T22-ios-pipeline](https://github.com/gentoobreaking/ai-tasks/blob/main/taolive-ios/tasks/T22-ios-pipeline.md) | T22-ios-pipeline | ⏭️ |
-| taolive-ios | [T23-kokoro-tts-ios](https://github.com/gentoobreaking/ai-tasks/blob/main/taolive-ios/tasks/T23-kokoro-tts-ios.md) | T23-kokoro-tts-ios | ⏭️ |
-| taolive-ios | [T24-gesture-control](https://github.com/gentoobreaking/ai-tasks/blob/main/taolive-ios/tasks/T24-gesture-control.md) | T24-gesture-control | ⏭️ |
-| taolive-ios | [T25-face-tracking](https://github.com/gentoobreaking/ai-tasks/blob/main/taolive-ios/tasks/T25-face-tracking.md) | T25-face-tracking | ⏭️ |
-| taolive-ios | [T26-body-tracking](https://github.com/gentoobreaking/ai-tasks/blob/main/taolive-ios/tasks/T26-body-tracking.md) | T26-body-tracking | ⏭️ |
-| taolive-ios | [T27-emotion-recognition](https://github.com/gentoobreaking/ai-tasks/blob/main/taolive-ios/tasks/T27-emotion-recognition.md) | T27-emotion-recognition | ⏭️ |
-| taolive-ios | [T28-lip-sync](https://github.com/gentoobreaking/ai-tasks/blob/main/taolive-ios/tasks/T28-lip-sync.md) | T28-lip-sync | ⏭️ |
-| taolive-ios | [T29-eye-tracking](https://github.com/gentoobreaking/ai-tasks/blob/main/taolive-ios/tasks/T29-eye-tracking.md) | T29-eye-tracking | ⏭️ |
-| taolive-ios | [T31-sceneKit-renderer](https://github.com/gentoobreaking/ai-tasks/blob/main/taolive-ios/tasks/T31-sceneKit-renderer.md) | T31-sceneKit-renderer | ⏭️ |
-| taolive-ios | [T32-metal-shaders](https://github.com/gentoobreaking/ai-tasks/blob/main/taolive-ios/tasks/T32-metal-shaders.md) | T32-metal-shaders | ⏭️ |
-| taolive-ios | [T33-pbr-materials](https://github.com/gentoobreaking/ai-tasks/blob/main/taolive-ios/tasks/T33-pbr-materials.md) | T33-pbr-materials | ⏭️ |
-| taolive-ios | [T34-skin-rendering](https://github.com/gentoobreaking/ai-tasks/blob/main/taolive-ios/tasks/T34-skin-rendering.md) | T34-skin-rendering | ⏭️ |
-| taolive-ios | [T35-hair-rendering](https://github.com/gentoobreaking/ai-tasks/blob/main/taolive-ios/tasks/T35-hair-rendering.md) | T35-hair-rendering | ⏭️ |
-| taolive-ios | [T36-clothing-simulation](https://github.com/gentoobreaking/ai-tasks/blob/main/taolive-ios/tasks/T36-clothing-simulation.md) | T36-clothing-simulation | ⏭️ |
-| taolive-ios | [T37-lighting-system](https://github.com/gentoobreaking/ai-tasks/blob/main/taolive-ios/tasks/T37-lighting-system.md) | T37-lighting-system | ⏭️ |
-| taolive-ios | [T38-camera-controller](https://github.com/gentoobreaking/ai-tasks/blob/main/taolive-ios/tasks/T38-camera-controller.md) | T38-camera-controller | ⏭️ |
-| taolive-ios | [T39-environment](https://github.com/gentoobreaking/ai-tasks/blob/main/taolive-ios/tasks/T39-environment.md) | T39-environment | ⏭️ |
-| taolive-ios | [T45-model-compression](https://github.com/gentoobreaking/ai-tasks/blob/main/taolive-ios/tasks/T45-model-compression.md) | T45-model-compression | ⏭️ |
-| taolive-ios | [T46-offline-cache](https://github.com/gentoobreaking/ai-tasks/blob/main/taolive-ios/tasks/T46-offline-cache.md) | T46-offline-cache | ⏭️ |
-| taolive-ios | [T47-offline-mode](https://github.com/gentoobreaking/ai-tasks/blob/main/taolive-ios/tasks/T47-offline-mode.md) | T47-offline-mode | ⏭️ |
-| taolive-ios | [T48-network-optimization](https://github.com/gentoobreaking/ai-tasks/blob/main/taolive-ios/tasks/T48-network-optimization.md) | T48-network-optimization | ⏭️ |
-| taolive-ios | [T49-error-handling](https://github.com/gentoobreaking/ai-tasks/blob/main/taolive-ios/tasks/T49-error-handling.md) | T49-error-handling | ⏭️ |
-| taolive-ios | [T50-internationalization](https://github.com/gentoobreaking/ai-tasks/blob/main/taolive-ios/tasks/T50-internationalization.md) | T50-internationalization | ⏭️ |
-| taolive-ios | [T51-test-framework](https://github.com/gentoobreaking/ai-tasks/blob/main/taolive-ios/tasks/T51-test-framework.md) | T51-test-framework | ⏭️ |
-| taolive-ios | [T52-ci-cd](https://github.com/gentoobreaking/ai-tasks/blob/main/taolive-ios/tasks/T52-ci-cd.md) | T52-ci-cd | ⏭️ |
-| taolive-ios | [T53-internal-testing](https://github.com/gentoobreaking/ai-tasks/blob/main/taolive-ios/tasks/T53-internal-testing.md) | T53-internal-testing | ⏭️ |
-| taolive-ios | [T54-release-candidate](https://github.com/gentoobreaking/ai-tasks/blob/main/taolive-ios/tasks/T54-release-candidate.md) | T54-release-candidate | ⏭️ |
-| taolive-ios | [T55-beta-release](https://github.com/gentoobreaking/ai-tasks/blob/main/taolive-ios/tasks/T55-beta-release.md) | T55-beta-release | ⏭️ |
-| taolive-ios | [T56-analytics](https://github.com/gentoobreaking/ai-tasks/blob/main/taolive-ios/tasks/T56-analytics.md) | T56-analytics | ⏭️ |
-| taolive-ios | [T57-privacy-policy](https://github.com/gentoobreaking/ai-tasks/blob/main/taolive-ios/tasks/T57-privacy-policy.md) | T57-privacy-policy | ⏭️ |
-| taolive-ios | [T58-in-app-purchase](https://github.com/gentoobreaking/ai-tasks/blob/main/taolive-ios/tasks/T58-in-app-purchase.md) | T58-in-app-purchase | ⏭️ |
-| taolive-ios | [T59-user-profile](https://github.com/gentoobreaking/ai-tasks/blob/main/taolive-ios/tasks/T59-user-profile.md) | T59-user-profile | ⏭️ |
-| taolive-ios | [T60-social-sharing](https://github.com/gentoobreaking/ai-tasks/blob/main/taolive-ios/tasks/T60-social-sharing.md) | T60-social-sharing | ⏭️ |
-| taolive-ios | [T61-cloud-sync](https://github.com/gentoobreaking/ai-tasks/blob/main/taolive-ios/tasks/T61-cloud-sync.md) | T61-cloud-sync | ⏭️ |
-| taolive-ios | [T62-documentation](https://github.com/gentoobreaking/ai-tasks/blob/main/taolive-ios/tasks/T62-documentation.md) | T62-documentation | ⏭️ |
-| taolive-ios | [T63-appstore-submit](https://github.com/gentoobreaking/ai-tasks/blob/main/taolive-ios/tasks/T63-appstore-submit.md) | T63-appstore-submit | ⏭️ |
-| taolive-ios | [T64-refactor-a2bs-api](https://github.com/gentoobreaking/ai-tasks/blob/main/taolive-ios/tasks/T64-refactor-a2bs-api.md) | 重構 A2BS 原始碼以適應新版 MNN API | ⏭️ |
-| taolive-ios | [T65-add-miniaudio](https://github.com/gentoobreaking/ai-tasks/blob/main/taolive-ios/tasks/T65-add-miniaudio.md) | 下載並將遺失的 miniaudio 程式庫加入專案 | ⏭️ |
-| taolive-ios | [T66-fix-headers-build-settings](https://github.com/gentoobreaking/ai-tasks/blob/main/taolive-ios/tasks/T66-fix-headers-build-settings.md) | 修正標頭檔路徑並清理重複編譯設定 | ⏭️ |
-| taolive-ios | [T67-excluded-architectures](https://github.com/gentoobreaking/ai-tasks/blob/main/taolive-ios/tasks/T67-excluded-architectures.md) | 調整 Excluded Architectures 設定以相容模擬器 | ⏭️ |
+| ⏭️ 跳過 | 64 |
+| 總完成率 | 100% |
 
 ---
 
@@ -160,7 +86,7 @@ xychart-beta
 | ✅ | [sinotrade-scraper](https://github.com/gentoobreaking/ai-tasks/tree/main/sinotrade-scraper) | 9 | 8 | 0 | 0 | 1 | ████████████████████ 100% | 2026-04-28 |
 | ✅ | [skill-enhancement](https://github.com/gentoobreaking/ai-tasks/tree/main/skill-enhancement) | 4 | 4 | 0 | 0 | 0 | ████████████████████ 100% | 2026-04-04 |
 | ✅ | [skills-audit](https://github.com/gentoobreaking/ai-tasks/tree/main/skills-audit) | 5 | 5 | 0 | 0 | 0 | ████████████████████ 100% | 2026-05-19 |
-| ⬜ | [slo-sentinel](https://github.com/gentoobreaking/ai-tasks/tree/main/slo-sentinel) | 36 | 34 | 1 | 0 | 1 | ███████████████████░ 97% | 2026-08-26 |
+| ✅ | [slo-sentinel](https://github.com/gentoobreaking/ai-tasks/tree/main/slo-sentinel) | 36 | 34 | 0 | 0 | 2 | ████████████████████ 100% | 2026-08-26 |
 | ✅ | [taolive-ios](https://github.com/gentoobreaking/ai-tasks/tree/main/taolive-ios) | 67 | 19 | 0 | 0 | 48 | ████████████████████ 100% | 2026-05-14 |
 | ✅ | [task-url-repair](https://github.com/gentoobreaking/ai-tasks/tree/main/task-url-repair) | 1 | 1 | 0 | 0 | 0 | ████████████████████ 100% | 2026-04-20 |
 | ✅ | [tasks-executor](https://github.com/gentoobreaking/ai-tasks/tree/main/tasks-executor) | 8 | 8 | 0 | 0 | 0 | ████████████████████ 100% | 2026-05-12 |

@@ -3,7 +3,7 @@ github_issue: N/A
 title: 成本 adapter 真實雲端驗證（移除 NEEDS VERIFICATION）
 type: chore
 priority: low
-status: skeip
+status: skip
 depends_on:
 - T010
 blocked_on:
