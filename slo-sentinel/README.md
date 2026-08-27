@@ -43,7 +43,7 @@
 
 | Task | 說明 |
 |------|------|
-| | |
+| [T21-freeze-enforce](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T021-freeze-enforce.md) | 成本/預算 CI 部署閘門——enforce 模式（F6 Phase 2） |
 
 ## 開發中
 
@@ -55,7 +55,6 @@
 
 | Task | 名稱 | 說明 |
 |------|------|------|
-| [T21-freeze-enforce](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T021-freeze-enforce.md) | 成本/預算 CI 部署閘門——enforce 模式（F6 Phase 2） | |
 | [T30-billing-real-verify](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T030-billing-real-verify.md) | 成本 adapter 真實雲端驗證（移除 NEEDS VERIFICATION） | |
 
 ## Task 列表
@@ -82,7 +81,7 @@
 | [T18-e2e-integration](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T018-e2e-integration.md) | 端到端整合測試（成功標準全覆蓋） | ✅ done |
 | [T19-ci-budget-gate](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T019-ci-budget-gate.md) | 成本/預算 CI 整合——notify 模式（F6 Phase 1） | ✅ done |
 | [T20-oncall-integration](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T020-oncall-integration.md) | 容量預警接 ai-oncall 分診閉環（F10） | ✅ done |
-| [T21-freeze-enforce](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T021-freeze-enforce.md) | 成本/預算 CI 部署閘門——enforce 模式（F6 Phase 2） | 📋 pending |
+| [T21-freeze-enforce](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T021-freeze-enforce.md) | 成本/預算 CI 部署閘門——enforce 模式（F6 Phase 2） | ⏭️ skip |
 | [T22-pricing-catalog](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T022-pricing-catalog.md) | 價目表目錄 internal/pricing（estimate 模式主路徑） | ✅ done |
 | [T23-slo-thresholds](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T023-slo-thresholds.md) | SLO 感測門檻可調整——slo_defs 支援 thresholds 區塊 | ✅ done |
 | [T24-waste-tracker-wiring](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T024-waste-tracker-wiring.md) | waste Tracker daemon 接線——定期掃描與候選生命週期 | ✅ done |
@@ -99,6 +98,6 @@
 | [T35-template-library-k8s-cloud](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T035-template-library-k8s-cloud.md) | 範本庫擴充——k8s／EC2／EBS／SLB 負載平衡器資源範本 | ✅ done |
 | [T36-sentinel-gen-ai-cli](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T036-sentinel-gen-ai-cli.md) | sentinel-gen——LLM 協作產生/審查/驗證定義檔的 CLI（Go） | ✅ done |
 
-**✅ done: 34 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 2**
+**✅ done: 34 | 🔧 in-progress: 0 | ⏭️ skip: 1 | 📋 pending: 1**
 
-> 自動生成於 2026-08-26 19:31
+> 自動生成於 2026-08-28 04:32

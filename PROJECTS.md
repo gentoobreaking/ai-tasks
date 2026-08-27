@@ -1,6 +1,6 @@
 # 📁 Projects Dashboard
 
-> 最後更新: 2026-08-26 19:31 · 自動生成
+> 最後更新: 2026-08-28 04:32 · 自動生成
 
 ---
 
@@ -11,9 +11,9 @@
 | 專案數 | 65 |
 | 任務總數 | 1401 |
 | ✅ 已完成 | 1333 |
-| ⬜ 待處理 | 4 |
+| ⬜ 待處理 | 3 |
 | 🔄 進行中 | 1 |
-| ⏭️ 跳過 | 63 |
+| ⏭️ 跳過 | 64 |
 | 總完成率 | 99% |
 
 ## ⬜ 待處理
@@ -22,7 +22,6 @@
 |------|------|------|------|
 | gold-analysis-advanced | [T002](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis-advanced/tasks/T002.md) | ML 模型整合與優化 | ⬜ |
 | gold-analysis-advanced | [T004](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis-advanced/tasks/T004.md) | 實盤交易對接 | ⬜ |
-| slo-sentinel | [T021-freeze-enforce](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T021-freeze-enforce.md) | 成本/預算 CI 部署閘門——enforce 模式（F6 Phase 2） | ⬜ |
 | slo-sentinel | [T030-billing-real-verify](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T030-billing-real-verify.md) | 成本 adapter 真實雲端驗證（移除 NEEDS VERIFICATION） | ⬜ |
 
 ## 🔄 進行中
@@ -50,6 +49,7 @@
 | md-viewer-app | [T027-預覽連結懸停](https://github.com/gentoobreaking/ai-tasks/blob/main/md-viewer-app/tasks/T027-預覽連結懸停.md) | [T027] 連結懸停預覽 | ⏭️ |
 | revenue-zero-cost | [T008](https://github.com/gentoobreaking/ai-tasks/blob/main/revenue-zero-cost/tasks/T008.md) | 技術社群曝光 | ⏭️ |
 | sinotrade-scraper | [T008](https://github.com/gentoobreaking/ai-tasks/blob/main/sinotrade-scraper/tasks/T008.md) | 完整報告內容讀取（需登入，暫緩） | ⏭️ |
+| slo-sentinel | [T021-freeze-enforce](https://github.com/gentoobreaking/ai-tasks/blob/main/slo-sentinel/tasks/T021-freeze-enforce.md) | 成本/預算 CI 部署閘門——enforce 模式（F6 Phase 2） | ⏭️ |
 | taolive-ios | [T08-analyze-dependencies](https://github.com/gentoobreaking/ai-tasks/blob/main/taolive-ios/tasks/T08-analyze-dependencies.md) | T08-analyze-dependencies | ⏭️ |
 | taolive-ios | [T09-prepare-dev-environment](https://github.com/gentoobreaking/ai-tasks/blob/main/taolive-ios/tasks/T09-prepare-dev-environment.md) | T09-prepare-dev-environment | ⏭️ |
 | taolive-ios | [T12-setup-mnn-ios](https://github.com/gentoobreaking/ai-tasks/blob/main/taolive-ios/tasks/T12-setup-mnn-ios.md) | T12-setup-mnn-ios | ⏭️ |
@@ -105,7 +105,7 @@
 
 | 指標 | 數值 |
 |------|------|
-| 過去 7 天完成 | 358 |
+| 過去 7 天完成 | 342 |
 | 過去 30 天完成 | 675 |
 | 平均週期時間 | 1.5 天 |
 | 週期時間中位數 | 0.0 天 |
@@ -114,12 +114,12 @@
 ```mermaid
 xychart-beta
     title "過去 14 天任務完成趨勢"
-    x-axis ["08-13", "08-14", "08-15", "08-16", "08-17", "08-18", "08-19", "08-20", "08-21", "08-22", "08-23", "08-24", "08-25", "08-26"]
+    x-axis ["08-15", "08-16", "08-17", "08-18", "08-19", "08-20", "08-21", "08-22", "08-23", "08-24", "08-25", "08-26", "08-27", "08-28"]
     y-axis "完成數" 0 --> 165
-    line [0, 0, 8, 2, 119, 22, 16, 0, 3, 28, 0, 77, 165, 69]
+    line [8, 2, 119, 22, 16, 0, 3, 28, 0, 77, 165, 69, 0, 0]
 ```
 
-📊 總計: 509 | 日均: 36.4 | 本週: 342 | 📈 成長中
+📊 總計: 509 | 日均: 36.4 | 本週: 339 | 📈 成長中
 
 ## 📋 專案列表
 
@@ -175,7 +175,7 @@ xychart-beta
 | ✅ | [sinotrade-scraper](https://github.com/gentoobreaking/ai-tasks/tree/main/sinotrade-scraper) | 9 | 8 | 0 | 0 | 1 | ████████████████████ 100% | 2026-04-28 |
 | ✅ | [skill-enhancement](https://github.com/gentoobreaking/ai-tasks/tree/main/skill-enhancement) | 4 | 4 | 0 | 0 | 0 | ████████████████████ 100% | 2026-04-04 |
 | ✅ | [skills-audit](https://github.com/gentoobreaking/ai-tasks/tree/main/skills-audit) | 5 | 5 | 0 | 0 | 0 | ████████████████████ 100% | 2026-05-19 |
-| ⬜ | [slo-sentinel](https://github.com/gentoobreaking/ai-tasks/tree/main/slo-sentinel) | 36 | 34 | 2 | 0 | 0 | ██████████████████░░ 94% | 2026-08-26 |
+| ⬜ | [slo-sentinel](https://github.com/gentoobreaking/ai-tasks/tree/main/slo-sentinel) | 36 | 34 | 1 | 0 | 1 | ███████████████████░ 97% | 2026-08-26 |
 | ✅ | [taolive-ios](https://github.com/gentoobreaking/ai-tasks/tree/main/taolive-ios) | 67 | 19 | 0 | 0 | 48 | ████████████████████ 100% | 2026-05-14 |
 | ✅ | [task-url-repair](https://github.com/gentoobreaking/ai-tasks/tree/main/task-url-repair) | 1 | 1 | 0 | 0 | 0 | ████████████████████ 100% | 2026-04-20 |
 | ✅ | [tasks-executor](https://github.com/gentoobreaking/ai-tasks/tree/main/tasks-executor) | 8 | 8 | 0 | 0 | 0 | ████████████████████ 100% | 2026-05-12 |

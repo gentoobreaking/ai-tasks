@@ -3,7 +3,7 @@ github_issue: N/A
 title: 成本/預算 CI 部署閘門——enforce 模式（F6 Phase 2）
 type: feat
 priority: low
-status: pending
+status: skip
 depends_on:
 - T019
 assignee: "pi with opencode/x-preview-f-free"
