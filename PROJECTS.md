@@ -1,6 +1,6 @@
 # 📁 Projects Dashboard
 
-> 最後更新: 2026-08-28 05:48 · 自動生成
+> 最後更新: 2026-08-28 06:06 · 自動生成
 
 ---
 
@@ -181,8 +181,8 @@ xychart-beta
 ## 🔗 快速連結
 
 - [任務看板](https://github.com/users/gentoobreaking/projects/1/views/1?groupedBy%5BcolumnId%5D=Status)
-- [每日儀表板 → DAILY.md](https://github.com/gentoobreaking/ai-tasks/blob/main/DAILY.md)
-- [Tasks 根目錄](https://github.com/gentoobreaking/ai-tasks/tree/main)
+        - [每日儀表板 → DAILY.md](https://github.com/gentoobreaking/ai-tasks/blob/main/DAILY.md)
+        - [Tasks 根目錄](https://github.com/gentoobreaking/ai-tasks/tree/main)
 - 腳本: `scripts/update_projects.py` · `scripts/update_daily.py`
 
 ---
