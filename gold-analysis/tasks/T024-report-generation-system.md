@@ -1,0 +1,36 @@
+---
+id: T024
+project: gold-analysis
+source_project: gold-analysis-extend
+title: 報告生成系統
+assignee: "pi with opencode/x-preview-f-free"
+priority: medium
+type: feature
+status: done
+created: 2026-04-07
+updated: 2026-04-07
+estimate: 3天
+depends_on:
+  - T023
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/226
+---
+
+## 目標
+實現日報、周報、月報的自動生成，支持 PDF/Excel 導出。
+
+## 驗收標準
+- [ ] 報告模板設計完成
+- [ ] 數據聚合和統計完成
+- [ ] 日報生成功能完成
+- [ ] 周報生成功能完成
+- [ ] 月報生成功能完成
+- [ ] PDF 導出功能完成
+- [ ] Excel 導出功能完成
+
+## 產出
+- 報告生成引擎
+- 報告模板
+- 導出功能
+
+## 備註
+Phase 6 擴展層。需依賴回測系統的數據。

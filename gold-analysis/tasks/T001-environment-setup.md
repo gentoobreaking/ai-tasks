@@ -3,7 +3,7 @@ id: T001
 project: gold-analysis
 source_project: gold-analysis-core
 title: 搭建開發環境
-assignee: 碼農 1 號
+assignee: "pi with opencode/x-preview-f-free"
 priority: high
 type: feature
 status: done

@@ -3,14 +3,15 @@ id: T005
 project: gold-analysis
 source_project: gold-analysis-core
 title: 集成 OpenClaw 框架
-assignee: 碼農 1 號
+assignee: "pi with opencode/x-preview-f-free"
 priority: high
 type: feature
 status: done
 created: 2026-04-07
 updated: 2026-04-07
 estimate: 2天
-depends_on: [T001]
+depends_on:
+  - T001
 github_issue: https://github.com/gentoobreaking/ai-tasks/issues/208
 ---
 

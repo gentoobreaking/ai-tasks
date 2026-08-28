@@ -3,14 +3,16 @@ id: T004
 project: gold-analysis
 source_project: gold-analysis-core
 title: 實現數據驗證和清洗
-assignee: 碼農 2 號
+assignee: "pi with opencode/x-preview-f-free"
 priority: high
 type: feature
 status: done
 created: 2026-04-07
 updated: 2026-04-07
 estimate: 2天
-depends_on: [T002, T003]
+depends_on:
+  - T002
+  - T003
 github_issue: https://github.com/gentoobreaking/ai-tasks/issues/207
 ---
 

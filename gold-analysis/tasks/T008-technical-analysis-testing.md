@@ -3,14 +3,15 @@ id: T008
 project: gold-analysis
 source_project: gold-analysis-core
 title: 建立技術分析測試框架
-assignee: 樂樂
+assignee: "pi with opencode/x-preview-f-free"
 priority: medium
 type: verification
 status: done
 created: 2026-04-07
 updated: 2026-04-09
 estimate: 2天
-depends_on: [T007]
+depends_on:
+  - T007
 github_issue: https://github.com/gentoobreaking/ai-tasks/issues/214
 ---
 

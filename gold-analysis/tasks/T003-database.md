@@ -3,14 +3,15 @@ id: T003
 project: gold-analysis
 source_project: gold-analysis-core
 title: 建立數據庫架構
-assignee: 碼農 2 號
+assignee: "pi with opencode/x-preview-f-free"
 priority: high
 type: feature
 status: done
 created: 2026-04-07
 updated: 2026-04-07
 estimate: 3天
-depends_on: [T001]
+depends_on:
+  - T001
 github_issue: https://github.com/gentoobreaking/ai-tasks/issues/202
 ---
 

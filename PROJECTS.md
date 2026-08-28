@@ -1,6 +1,6 @@
 # 📁 Projects Dashboard
 
-> 最後更新: 2026-08-28 06:44 · 自動生成
+> 最後更新: 2026-08-28 08:41 · 自動生成
 
 ---
 
@@ -8,13 +8,19 @@
 
 | 指標 | 數量 |
 |------|------|
-| 專案數 | 60 |
-| 任務總數 | 1355 |
-| ✅ 已完成 | 1291 |
-| ⬜ 待處理 | 0 |
+| 專案數 | 59 |
+| 任務總數 | 1390 |
+| ✅ 已完成 | 1327 |
+| ⬜ 待處理 | 1 |
 | 🔄 進行中 | 0 |
-| ⏭️ 跳過 | 64 |
-| 總完成率 | 100% |
+| ⏭️ 跳過 | 62 |
+| 總完成率 | 99% |
+
+## ⬜ 待處理
+
+| 專案 | 任務 | 標題 | 狀態 |
+|------|------|------|------|
+| gold-analysis | [T048-rest-exchange-client-verification](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T048-rest-exchange-client-verification.md) | RestExchangeClient 實盤冒煙測試 | ⬜ |
 
 ---
 
@@ -22,9 +28,9 @@
 
 | 指標 | 數值 |
 |------|------|
-| 過去 7 天完成 | 342 |
-| 過去 30 天完成 | 675 |
-| 平均週期時間 | 1.5 天 |
+| 過去 7 天完成 | 352 |
+| 過去 30 天完成 | 685 |
+| 平均週期時間 | 2.1 天 |
 | 週期時間中位數 | 0.0 天 |
 
 
@@ -33,10 +39,10 @@ xychart-beta
     title "過去 14 天任務完成趨勢"
     x-axis ["08-15", "08-16", "08-17", "08-18", "08-19", "08-20", "08-21", "08-22", "08-23", "08-24", "08-25", "08-26", "08-27", "08-28"]
     y-axis "完成數" 0 --> 165
-    line [8, 2, 119, 22, 16, 0, 3, 28, 0, 77, 165, 69, 0, 0]
+    line [8, 2, 119, 22, 16, 0, 3, 28, 0, 77, 165, 69, 0, 10]
 ```
 
-📊 總計: 509 | 日均: 36.4 | 本週: 339 | 📈 成長中
+📊 總計: 519 | 日均: 37.1 | 本週: 349 | 📈 成長中
 
 ## 📋 專案列表
 
@@ -57,9 +63,8 @@ xychart-beta
 | ✅ | [git-maintenance](https://github.com/gentoobreaking/ai-tasks/tree/main/git-maintenance) | 1 | 1 | 0 | 0 | 0 | ████████████████████ 100% | 2026-05-16 |
 | ✅ | [github-data-review](https://github.com/gentoobreaking/ai-tasks/tree/main/github-data-review) | 8 | 8 | 0 | 0 | 0 | ████████████████████ 100% | 2026-04-28 |
 | ✅ | [global-policy-refactor](https://github.com/gentoobreaking/ai-tasks/tree/main/global-policy-refactor) | 3 | 3 | 0 | 0 | 0 | ████████████████████ 100% | 2026-05-07 |
-| ✅ | [gold-analysis](https://github.com/gentoobreaking/ai-tasks/tree/main/gold-analysis) | 9 | 9 | 0 | 0 | 0 | ████████████████████ 100% | 2026-04-09 |
-| ✅ | [gold-monitor-issue](https://github.com/gentoobreaking/ai-tasks/tree/main/gold-monitor-issue) | 8 | 6 | 0 | 0 | 2 | ████████████████████ 100% | 2026-05-07 |
-| ✅ | [gold-monitor-pro-v4](https://github.com/gentoobreaking/ai-tasks/tree/main/gold-monitor-pro-v4) | 8 | 8 | 0 | 0 | 0 | ████████████████████ 100% | 2026-05-01 |
+| ⬜ | [gold-analysis](https://github.com/gentoobreaking/ai-tasks/tree/main/gold-analysis) | 52 | 51 | 1 | 0 | 0 | ███████████████████░ 98% | 2026-08-28 |
+| ✅ | [gold-monitor-pro](https://github.com/gentoobreaking/ai-tasks/tree/main/gold-monitor-pro) | 8 | 8 | 0 | 0 | 0 | ████████████████████ 100% | 2026-05-01 |
 | ✅ | [gpt-sovits-research](https://github.com/gentoobreaking/ai-tasks/tree/main/gpt-sovits-research) | 1 | 1 | 0 | 0 | 0 | ████████████████████ 100% | 2026-04-21 |
 | ✅ | [gpt-sovits-voice-presets-research](https://github.com/gentoobreaking/ai-tasks/tree/main/gpt-sovits-voice-presets-research) | 1 | 1 | 0 | 0 | 0 | ████████████████████ 100% | 2026-04-21 |
 | ✅ | [gpt-sovits-voices-research](https://github.com/gentoobreaking/ai-tasks/tree/main/gpt-sovits-voices-research) | 1 | 1 | 0 | 0 | 0 | ████████████████████ 100% | 2026-04-21 |

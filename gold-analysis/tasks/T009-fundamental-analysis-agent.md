@@ -3,14 +3,16 @@ id: T009
 project: gold-analysis
 source_project: gold-analysis-core
 title: 開發基本面分析 Agent
-assignee: 碼農 1 號
+assignee: "pi with opencode/x-preview-f-free"
 priority: high
 type: feature
 status: done
 created: 2026-04-07
 updated: 2026-04-09
 estimate: 4天
-depends_on: [T005, T006]
+depends_on:
+  - T005
+  - T006
 github_issue: https://github.com/gentoobreaking/ai-tasks/issues/215
 ---
 
