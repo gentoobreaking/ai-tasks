@@ -23,4 +23,4 @@ updated: 2026-05-01
 - [x] gold_local_monitor.py 正確讀取 gold_local 閾值
 - [x] gold_intl_monitor.py 正確讀取 gold_intl / silver_intl / platinum_intl 閾值
 - [x] 舊格式 config（gold/silver/platinum）自動轉換
-- [ ] 手動修改 config.json 閾值後，程式讀取正確（需手動測試）
+- [x] 手動修改 config.json 閾值後，程式讀取正確（需手動測試）（Test 3/7 驗證：temp 調低閾值後恢復，ConfigManager 讀取正確）

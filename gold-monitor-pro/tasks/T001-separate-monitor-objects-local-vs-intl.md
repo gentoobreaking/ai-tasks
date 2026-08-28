@@ -25,6 +25,6 @@ updated: 2026-05-01
 - [x] `InternationalPrice` 有 metal/price/fx_rate/source/timestamp
 - [x] 兩支程式可獨立 `--check` 執行
 - [x] 舊 config.json 自動轉換（gold → gold_local + gold_intl）
-- [ ] alert 訊息顯示「📊台銀黃金存摺」（需觸發 alert 才能驗證）
-- [ ] alert 訊息顯示「🌐國際黃金現貨」（需觸發 alert 才能驗證）
-- [ ] 不同來源的價格不互相影響（gold_local alert 不含 intl 價格，反之亦然）
+- [x] alert 訊息顯示「📊台銀黃金存摺」（Test 3 驗證：alert 含 📊台銀黃金存摺 價格變動）
+- [x] alert 訊息顯示「🌐國際黃金現貨」（Test 7 驗證：alert 含 🌐國際黃金現貨 價格變動）
+- [x] 不同來源的價格不互相影響（Test 3 gold_local alert 僅含台銀價格；Test 7 gold_intl alert 僅含國際價格，互不干擾）

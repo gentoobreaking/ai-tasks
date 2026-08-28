@@ -24,8 +24,8 @@ updated: 2026-05-01
 - [x] 快取新鮮時用快取比對（同日、60 分鐘內）
 - [x] 快取太舊 → 抓 Yahoo Finance 前一小時收盤價
 - [x] gold/silver/platinum 三個金屬各自獨立快取
-- [ ] Yahoo Finance 失敗 → Alpha Vantage fallback（需模擬 Yahoo 失敗）
-- [ ] 基準取得失敗 → 發 alert（含快取狀態、前一小時結果、金屬名稱）
-- [ ] 變動 >= 閾值 → alert（需暫時調低閾值觸發）
-- [ ] 變動 < 閾值 → 不 alert
-- [ ] 快取只保留 7 天
+- [x] Yahoo Finance 失敗 → Alpha Vantage fallback（Test 9 驗證：source=alpha_vantage）
+- [x] 基準取得失敗 → 發 alert（含快取狀態、前一小時結果、金屬名稱）（Test 8 驗證：alert 含快取狀態、前一小時結果、金屬名稱）
+- [x] 變動 >= 閾值 → alert（需暫時調低閾值觸發）（Test 7 驗證：閾值 25→0.01，change=$0.50 >= 0.01 → alert）
+- [x] 變動 < 閾值 → 不 alert（Test 7 驗證：閾值恢復為 25，預設不觸發 alert）
+- [x] 快取只保留 7 天（Test 10 驗證：8 天前快取被刪除）

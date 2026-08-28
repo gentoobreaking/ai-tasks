@@ -23,7 +23,7 @@ updated: 2026-05-01
 ## 驗證標準
 
 - [x] 快取寫入後 7 天內不會被清理
-- [ ] 快取超過 7 天會被刪除（需等待或手動模擬）
-- [ ] gold_local 基準失敗 alert 包含「快取狀態」「day page rows 數」「前一營業日」
-- [ ] gold_intl 基準失敗 alert 包含「快取狀態」「前一小時」「金屬名稱」
-- [ ] /tmp/gold_monitor_history.json 不再產生
+- [x] 快取超過 7 天會被刪除（需等待或手動模擬）（Test 10 驗證：8 天前快取檔案被刪除）
+- [x] gold_local 基準失敗 alert 包含「快存狀態」「day page rows 數」「前一營業日」（Test 5 驗證：alert 含快取狀態、rows 數、前一營業日結果）
+- [x] gold_intl 基準失敗 alert 包含「快存狀態」「前一小時」「金屬名稱」（Test 8 驗證：alert 含快取狀態、前一小時結果、金屬名稱）
+- [x] /tmp/gold_monitor_history.json 不再產生（實現中移除 history 快取，不再產生）

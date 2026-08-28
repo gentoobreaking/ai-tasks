@@ -21,4 +21,4 @@ silver/platinum 的 alert 訊息不含 local_sell/local_buy 欄位。
 - [x] gold_intl_monitor.py 不 import BOTAdapter
 - [x] silver/platinum 只用 Yahoo Finance
 - [x] silver_intl / platinum_intl alert 只顯示 USD 價格，無 NTD/公克
-- [ ] silver/platinum Yahoo Finance 失敗 → Alpha Vantage fallback 成功（需模擬）
+- [x] silver/platinum Yahoo Finance 失敗 → Alpha Vantage fallback 成功（需模擬）（Test 9 驗證：Yahoo → AV fallback，source=alpha_vantage）

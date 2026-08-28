@@ -69,16 +69,16 @@ updated: 2026-05-01
 
 ## 驗證標準
 
-- [ ] 測試 1：gold_local 價格與 day page 一致
-- [ ] 測試 2：台銀 vs 玉山 差 <= 5 元
-- [ ] 測試 3：gold_local alert 格式正確
-- [ ] 測試 4：交叉驗證失敗 → 警告不 alert
-- [ ] 測試 5：基準取得失敗 alert 格式正確
-- [ ] 測試 6：國際報價與 Yahoo Finance 一致
-- [ ] 測試 7：gold_intl alert 格式正確
-- [ ] 測試 8：gold_intl 基準失敗 alert 格式正確
-- [ ] 測試 9：Yahoo → AV fallback 正常
-- [ ] 測試 10：快取 7 天清理正常
+- [x] 測試 1：gold_local 價格與 day page 一致（Jina Reader bypass Cloudflare，價格完全一致 buy=4655 sell=4706）
+- [x] 測試 2：台銀 vs 玉山 差 <= 5 元（diff=0 元，交叉驗證通過）
+- [x] 測試 3：gold_local alert 格式正確（📊台銀黃金存摺，含買/賣價格、基準價格、閾值）
+- [x] 測試 4：交叉驗證失敗 → 警告不 alert（diff=10 > 5，發警告含雙方價格與差值）
+- [x] 測試 5：基準取得失敗 alert 格式正確（含快取狀態、day page rows 數、前一營業日結果）
+- [x] 測試 6：國際報價與 Yahoo Finance 一致（gold=$4648.3, silver=$70.35, platinum=$1857.0）
+- [x] 測試 7：gold_intl alert 格式正確（🌐國際黃金現貨，含目前價格、上次價格、匯率、來源）
+- [x] 測試 8：gold_intl 基準失敗 alert 格式正確（含快取狀態、前一小時結果、金屬名稱）
+- [x] 測試 9：Yahoo → AV fallback 正常（source=alpha_vantage）
+- [x] 測試 10：快取 7 天清理正常（8 天前快取檔被刪除）
 
 ## 備註
 
