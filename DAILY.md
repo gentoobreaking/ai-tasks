@@ -1,6 +1,6 @@
 # 📅 Daily Dashboard - 2026-08-28
 
-> 最後更新: 2026-08-28 11:38 · 自動生成
+> 最後更新: 2026-08-28 11:44 · 自動生成
 
 ---
 
@@ -8,11 +8,11 @@
 
 | 指標 | 數量 |
 |------|------|
-| 新增任務 | 21 |
+| 新增任務 | 26 |
 | 完成任務 | 21 |
 | 進行中 | 0 |
-| 待處理 | 11 |
-| 完成率 | 65% |
+| 待處理 | 16 |
+| 完成率 | 56% |
 
 ---
 
@@ -20,10 +20,10 @@
 
 | 指標 | 數值 |
 |------|------|
-| 今日完成速率 | 26 任務 |
-| 近 7 日速率 | 26 任務 |
-| 平均循環天數 | 27.3 天 |
-| 今日完成任務循環時間樣本 | 26 筆 |
+| 今日完成速率 | 31 任務 |
+| 近 7 日速率 | 31 任務 |
+| 平均循環天數 | 22.9 天 |
+| 今日完成任務循環時間樣本 | 31 筆 |
 
 ---
 
@@ -52,6 +52,11 @@
 | gold-analysis | [T065-llm-macro-digest](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T065-llm-macro-digest.md) | LLM 宏觀敘事每日摘要 (替換 mock 情緒) |
 | gold-analysis | [T066-data-freshness-sla](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T066-data-freshness-sla.md) | 資料新鮮度 SLA 監控 |
 | gold-analysis | [T067-webhook-signal-ingest](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T067-webhook-signal-ingest.md) | TradingView / 外部 webhook 訊號接入 |
+| gold-monitor-pro | [T015-web-dashboard](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-monitor-pro/tasks/T015-web-dashboard.md) | 人類可視化網頁儀表板（價格+走勢+健康） |
+| gold-monitor-pro | [T016-auto-scheduling-launchd](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-monitor-pro/tasks/T016-auto-scheduling-launchd.md) | macOS launchd 自動排程安裝 |
+| gold-monitor-pro | [T017-readme-sync](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-monitor-pro/tasks/T017-readme-sync.md) | README 同步到現狀 |
+| gold-monitor-pro | [T018-live-price-health-api](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-monitor-pro/tasks/T018-live-price-health-api.md) | 即時價格與強化健康 API |
+| gold-monitor-pro | [T019-human-readable-alerts](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-monitor-pro/tasks/T019-human-readable-alerts.md) | 人類易讀的 alert 訊息 |
 
 ---
 
@@ -85,7 +90,10 @@
 
 ## 🔥 待處理高優先級
 
-_無_
+| 專案 | 任務 | 標題 | 優先 |
+| -- | -- | -- | -- |
+| gold-monitor-pro | [T015-web-dashboard](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-monitor-pro/tasks/T015-web-dashboard.md) | 人類可視化網頁儀表板（價格+走勢+健康） | high |
+| gold-monitor-pro | [T016-auto-scheduling-launchd](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-monitor-pro/tasks/T016-auto-scheduling-launchd.md) | macOS launchd 自動排程安裝 | high |
 
 ---
 
@@ -99,8 +107,13 @@ _無_
 
 | 專案 | 任務 | 標題 | 優先 |
 | -- | -- | -- | -- |
+| gold-monitor-pro | [T015-web-dashboard](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-monitor-pro/tasks/T015-web-dashboard.md) | 人類可視化網頁儀表板（價格+走勢+健康） | high |
+| gold-monitor-pro | [T016-auto-scheduling-launchd](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-monitor-pro/tasks/T016-auto-scheduling-launchd.md) | macOS launchd 自動排程安裝 | high |
 | gold-analysis | [T058-fix-f821-undefined](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T058-fix-f821-undefined.md) | 修復 F821 未定義名稱 (macd List 等) | medium |
 | gold-analysis | [T059-ruff-cleanup-precommit](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T059-ruff-cleanup-precommit.md) | ruff 清理 + pre-commit + CI lint 閘門 | medium |
+| gold-monitor-pro | [T017-readme-sync](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-monitor-pro/tasks/T017-readme-sync.md) | README 同步到現狀 | medium |
+| gold-monitor-pro | [T018-live-price-health-api](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-monitor-pro/tasks/T018-live-price-health-api.md) | 即時價格與強化健康 API | medium |
+| gold-monitor-pro | [T019-human-readable-alerts](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-monitor-pro/tasks/T019-human-readable-alerts.md) | 人類易讀的 alert 訊息 | medium |
 | gold-analysis | [T048-rest-exchange-client-verification](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T048-rest-exchange-client-verification.md) | RestExchangeClient 實盤冒煙測試 | low |
 | gold-analysis | [T066-data-freshness-sla](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T066-data-freshness-sla.md) | 資料新鮮度 SLA 監控 | low |
 | gold-analysis | [T067-webhook-signal-ingest](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T067-webhook-signal-ingest.md) | TradingView / 外部 webhook 訊號接入 | low |
