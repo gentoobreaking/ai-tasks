@@ -1,6 +1,6 @@
 # 📁 Projects Dashboard
 
-> 最後更新: 2026-08-28 11:44 · 自動生成
+> 最後更新: 2026-08-28 12:13 · 自動生成
 
 ---
 
@@ -10,18 +10,17 @@
 |------|------|
 | 專案數 | 59 |
 | 任務總數 | 1416 |
-| ✅ 已完成 | 1338 |
-| ⬜ 待處理 | 16 |
+| ✅ 已完成 | 1341 |
+| ⬜ 待處理 | 13 |
 | 🔄 進行中 | 0 |
 | ⏭️ 跳過 | 62 |
-| 總完成率 | 98% |
+| 總完成率 | 99% |
 
 ## 🔥 待處理高優先級任務
 
 | 專案 | 任務 | 標題 |
 |------|------|------|
 | gold-monitor-pro | [T015-web-dashboard](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-monitor-pro/tasks/T015-web-dashboard.md) | 人類可視化網頁儀表板（價格+走勢+健康） |
-| gold-monitor-pro | [T016-auto-scheduling-launchd](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-monitor-pro/tasks/T016-auto-scheduling-launchd.md) | macOS launchd 自動排程安裝 |
 
 ---
 
@@ -42,10 +41,7 @@
 | gold-monitor-pro | [T013-health-check-endpoint](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-monitor-pro/tasks/T013-health-check-endpoint.md) | 新增 Health check endpoint + 結構化 JSON 日誌 | ⬜ |
 | gold-monitor-pro | [T014-multi-channel-notifications](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-monitor-pro/tasks/T014-multi-channel-notifications.md) | 新增多管道通知支援 (Discord / Telegram / Email) | ⬜ |
 | gold-monitor-pro | [T015-web-dashboard](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-monitor-pro/tasks/T015-web-dashboard.md) | 人類可視化網頁儀表板（價格+走勢+健康） | ⬜ |
-| gold-monitor-pro | [T016-auto-scheduling-launchd](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-monitor-pro/tasks/T016-auto-scheduling-launchd.md) | macOS launchd 自動排程安裝 | ⬜ |
 | gold-monitor-pro | [T017-readme-sync](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-monitor-pro/tasks/T017-readme-sync.md) | README 同步到現狀 | ⬜ |
-| gold-monitor-pro | [T018-live-price-health-api](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-monitor-pro/tasks/T018-live-price-health-api.md) | 即時價格與強化健康 API | ⬜ |
-| gold-monitor-pro | [T019-human-readable-alerts](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-monitor-pro/tasks/T019-human-readable-alerts.md) | 人類易讀的 alert 訊息 | ⬜ |
 
 ---
 
@@ -53,8 +49,8 @@
 
 | 指標 | 數值 |
 |------|------|
-| 過去 7 天完成 | 363 |
-| 過去 30 天完成 | 696 |
+| 過去 7 天完成 | 366 |
+| 過去 30 天完成 | 699 |
 | 平均週期時間 | 2.0 天 |
 | 週期時間中位數 | 0.0 天 |
 
@@ -64,10 +60,10 @@ xychart-beta
     title "過去 14 天任務完成趨勢"
     x-axis ["08-15", "08-16", "08-17", "08-18", "08-19", "08-20", "08-21", "08-22", "08-23", "08-24", "08-25", "08-26", "08-27", "08-28"]
     y-axis "完成數" 0 --> 165
-    line [8, 2, 119, 22, 16, 0, 3, 28, 0, 77, 165, 69, 0, 21]
+    line [8, 2, 119, 22, 16, 0, 3, 28, 0, 77, 165, 69, 0, 24]
 ```
 
-📊 總計: 530 | 日均: 37.9 | 本週: 360 | 📈 成長中
+📊 總計: 533 | 日均: 38.1 | 本週: 363 | 📈 成長中
 
 ## 📋 專案列表
 
@@ -89,7 +85,7 @@ xychart-beta
 | ✅ | [github-data-review](https://github.com/gentoobreaking/ai-tasks/tree/main/github-data-review) | 8 | 8 | 0 | 0 | 0 | ████████████████████ 100% | 2026-04-28 |
 | ✅ | [global-policy-refactor](https://github.com/gentoobreaking/ai-tasks/tree/main/global-policy-refactor) | 3 | 3 | 0 | 0 | 0 | ████████████████████ 100% | 2026-05-07 |
 | ⬜ | [gold-analysis](https://github.com/gentoobreaking/ai-tasks/tree/main/gold-analysis) | 67 | 62 | 5 | 0 | 0 | ██████████████████░░ 92% | 2026-08-28 |
-| ⬜ | [gold-monitor-pro](https://github.com/gentoobreaking/ai-tasks/tree/main/gold-monitor-pro) | 19 | 8 | 11 | 0 | 0 | ████████░░░░░░░░░░░░ 42% | 2026-08-28 |
+| ⬜ | [gold-monitor-pro](https://github.com/gentoobreaking/ai-tasks/tree/main/gold-monitor-pro) | 19 | 11 | 8 | 0 | 0 | ███████████░░░░░░░░░ 57% | 2026-08-28 |
 | ✅ | [gpt-sovits-research](https://github.com/gentoobreaking/ai-tasks/tree/main/gpt-sovits-research) | 1 | 1 | 0 | 0 | 0 | ████████████████████ 100% | 2026-04-21 |
 | ✅ | [gpt-sovits-voice-presets-research](https://github.com/gentoobreaking/ai-tasks/tree/main/gpt-sovits-voice-presets-research) | 1 | 1 | 0 | 0 | 0 | ████████████████████ 100% | 2026-04-21 |
 | ✅ | [gpt-sovits-voices-research](https://github.com/gentoobreaking/ai-tasks/tree/main/gpt-sovits-voices-research) | 1 | 1 | 0 | 0 | 0 | ████████████████████ 100% | 2026-04-21 |

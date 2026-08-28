@@ -3,7 +3,7 @@ github_issue: ""
 title: macOS launchd 自動排程安裝
 type: feature
 priority: high
-status: pending
+status: done
 depends_on: []
 assignee: pi
 created: 2026-08-28

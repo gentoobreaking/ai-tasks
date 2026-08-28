@@ -3,7 +3,7 @@ github_issue: ""
 title: 即時價格與強化健康 API
 type: feature
 priority: medium
-status: pending
+status: done
 depends_on: []
 assignee: pi
 created: 2026-08-28

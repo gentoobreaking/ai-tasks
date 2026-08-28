@@ -12,6 +12,9 @@
 | 銀/鉑金的 BOTAdapter 移除 |
 | 快取管理 + 基準取得失敗 alert |
 | 整合測試（比對官網報價） |
+| macOS launchd 自動排程安裝 |
+| 即時價格與強化健康 API |
+| 人類易讀的 alert 訊息 |
 
 ## Skip 項目
 
@@ -36,10 +39,7 @@
 | [T13-health-check-endpoint](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-monitor-pro/tasks/T013-health-check-endpoint.md) | 新增 Health check endpoint + 結構化 JSON 日誌 | |
 | [T14-multi-channel-notifications](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-monitor-pro/tasks/T014-multi-channel-notifications.md) | 新增多管道通知支援 (Discord / Telegram / Email) | |
 | [T15-web-dashboard](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-monitor-pro/tasks/T015-web-dashboard.md) | 人類可視化網頁儀表板（價格+走勢+健康） | |
-| [T16-auto-scheduling-launchd](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-monitor-pro/tasks/T016-auto-scheduling-launchd.md) | macOS launchd 自動排程安裝 | |
 | [T17-readme-sync](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-monitor-pro/tasks/T017-readme-sync.md) | README 同步到現狀 | |
-| [T18-live-price-health-api](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-monitor-pro/tasks/T018-live-price-health-api.md) | 即時價格與強化健康 API | |
-| [T19-human-readable-alerts](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-monitor-pro/tasks/T019-human-readable-alerts.md) | 人類易讀的 alert 訊息 | |
 
 ## Task 列表
 
@@ -60,11 +60,11 @@
 | [T13-health-check-endpoint](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-monitor-pro/tasks/T013-health-check-endpoint.md) | 新增 Health check endpoint + 結構化 JSON 日誌 | 📋 pending |
 | [T14-multi-channel-notifications](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-monitor-pro/tasks/T014-multi-channel-notifications.md) | 新增多管道通知支援 (Discord / Telegram / Email) | 📋 pending |
 | [T15-web-dashboard](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-monitor-pro/tasks/T015-web-dashboard.md) | 人類可視化網頁儀表板（價格+走勢+健康） | 📋 pending |
-| [T16-auto-scheduling-launchd](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-monitor-pro/tasks/T016-auto-scheduling-launchd.md) | macOS launchd 自動排程安裝 | 📋 pending |
+| [T16-auto-scheduling-launchd](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-monitor-pro/tasks/T016-auto-scheduling-launchd.md) | macOS launchd 自動排程安裝 | ✅ done |
 | [T17-readme-sync](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-monitor-pro/tasks/T017-readme-sync.md) | README 同步到現狀 | 📋 pending |
-| [T18-live-price-health-api](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-monitor-pro/tasks/T018-live-price-health-api.md) | 即時價格與強化健康 API | 📋 pending |
-| [T19-human-readable-alerts](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-monitor-pro/tasks/T019-human-readable-alerts.md) | 人類易讀的 alert 訊息 | 📋 pending |
+| [T18-live-price-health-api](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-monitor-pro/tasks/T018-live-price-health-api.md) | 即時價格與強化健康 API | ✅ done |
+| [T19-human-readable-alerts](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-monitor-pro/tasks/T019-human-readable-alerts.md) | 人類易讀的 alert 訊息 | ✅ done |
 
-**✅ done: 8 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 11**
+**✅ done: 11 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 8**
 
-> 自動生成於 2026-08-28 11:44
+> 自動生成於 2026-08-28 12:13

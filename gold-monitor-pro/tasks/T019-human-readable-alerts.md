@@ -3,7 +3,7 @@ github_issue: ""
 title: 人類易讀的 alert 訊息
 type: feature
 priority: medium
-status: pending
+status: done
 depends_on: []
 assignee: pi
 created: 2026-08-28
