@@ -5,7 +5,7 @@ title: 接線真實告警通道並替換 mock 情緒/資料
 project: gold-analysis
 type: feature
 priority: high
-status: pending
+status: done
 depends_on: []
 assignee: "pi"
 created: 2026-08-28

@@ -1,6 +1,6 @@
 # 📁 Projects Dashboard
 
-> 最後更新: 2026-08-28 09:40 · 自動生成
+> 最後更新: 2026-08-28 10:12 · 自動生成
 
 ---
 
@@ -10,33 +10,17 @@
 |------|------|
 | 專案數 | 59 |
 | 任務總數 | 1411 |
-| ✅ 已完成 | 1327 |
-| ⬜ 待處理 | 22 |
+| ✅ 已完成 | 1331 |
+| ⬜ 待處理 | 18 |
 | 🔄 進行中 | 0 |
 | ⏭️ 跳過 | 62 |
 | 總完成率 | 98% |
-
-## 🔥 待處理高優先級任務
-
-| 專案 | 任務 | 標題 |
-|------|------|------|
-| gold-analysis | [T053-fix-model-monitor-latest-bug](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T053-fix-model-monitor-latest-bug.md) | 修復 ModelHealthChecker.health_check 未定義 `latest` 錯誤 |
-| gold-analysis | [T054-scheduler-real-data](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T054-scheduler-real-data.md) | 排程監控/重訓改用真實資料來源 |
-| gold-analysis | [T055-trading-kill-switch](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T055-trading-kill-switch.md) | 新增全域交易開關 (kill-switch) 與 pre-trade 風險閘門 |
-| gold-analysis | [T056-real-notifications-mock-data](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T056-real-notifications-mock-data.md) | 接線真實告警通道並替換 mock 情緒/資料 |
-
----
-
 
 ## ⬜ 待處理
 
 | 專案 | 任務 | 標題 | 狀態 |
 |------|------|------|------|
 | gold-analysis | [T048-rest-exchange-client-verification](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T048-rest-exchange-client-verification.md) | RestExchangeClient 實盤冒煙測試 | ⬜ |
-| gold-analysis | [T053-fix-model-monitor-latest-bug](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T053-fix-model-monitor-latest-bug.md) | 修復 ModelHealthChecker.health_check 未定義 `latest` 錯誤 | ⬜ |
-| gold-analysis | [T054-scheduler-real-data](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T054-scheduler-real-data.md) | 排程監控/重訓改用真實資料來源 | ⬜ |
-| gold-analysis | [T055-trading-kill-switch](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T055-trading-kill-switch.md) | 新增全域交易開關 (kill-switch) 與 pre-trade 風險閘門 | ⬜ |
-| gold-analysis | [T056-real-notifications-mock-data](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T056-real-notifications-mock-data.md) | 接線真實告警通道並替換 mock 情緒/資料 | ⬜ |
 | gold-analysis | [T057-consolidate-codebases](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T057-consolidate-codebases.md) | 統一代碼庫：以 backend/app 為唯一來源 | ⬜ |
 | gold-analysis | [T058-fix-f821-undefined](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T058-fix-f821-undefined.md) | 修復 F821 未定義名稱 (macd List 等) | ⬜ |
 | gold-analysis | [T059-ruff-cleanup-precommit](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T059-ruff-cleanup-precommit.md) | ruff 清理 + pre-commit + CI lint 閘門 | ⬜ |
@@ -61,9 +45,9 @@
 
 | 指標 | 數值 |
 |------|------|
-| 過去 7 天完成 | 352 |
-| 過去 30 天完成 | 685 |
-| 平均週期時間 | 2.1 天 |
+| 過去 7 天完成 | 356 |
+| 過去 30 天完成 | 689 |
+| 平均週期時間 | 2.0 天 |
 | 週期時間中位數 | 0.0 天 |
 
 
@@ -72,10 +56,10 @@ xychart-beta
     title "過去 14 天任務完成趨勢"
     x-axis ["08-15", "08-16", "08-17", "08-18", "08-19", "08-20", "08-21", "08-22", "08-23", "08-24", "08-25", "08-26", "08-27", "08-28"]
     y-axis "完成數" 0 --> 165
-    line [8, 2, 119, 22, 16, 0, 3, 28, 0, 77, 165, 69, 0, 10]
+    line [8, 2, 119, 22, 16, 0, 3, 28, 0, 77, 165, 69, 0, 14]
 ```
 
-📊 總計: 519 | 日均: 37.1 | 本週: 349 | 📈 成長中
+📊 總計: 523 | 日均: 37.4 | 本週: 353 | 📈 成長中
 
 ## 📋 專案列表
 
@@ -96,7 +80,7 @@ xychart-beta
 | ✅ | [git-maintenance](https://github.com/gentoobreaking/ai-tasks/tree/main/git-maintenance) | 1 | 1 | 0 | 0 | 0 | ████████████████████ 100% | 2026-05-16 |
 | ✅ | [github-data-review](https://github.com/gentoobreaking/ai-tasks/tree/main/github-data-review) | 8 | 8 | 0 | 0 | 0 | ████████████████████ 100% | 2026-04-28 |
 | ✅ | [global-policy-refactor](https://github.com/gentoobreaking/ai-tasks/tree/main/global-policy-refactor) | 3 | 3 | 0 | 0 | 0 | ████████████████████ 100% | 2026-05-07 |
-| ⬜ | [gold-analysis](https://github.com/gentoobreaking/ai-tasks/tree/main/gold-analysis) | 67 | 51 | 16 | 0 | 0 | ███████████████░░░░░ 76% | 2026-08-28 |
+| ⬜ | [gold-analysis](https://github.com/gentoobreaking/ai-tasks/tree/main/gold-analysis) | 67 | 55 | 12 | 0 | 0 | ████████████████░░░░ 82% | 2026-08-28 |
 | ⬜ | [gold-monitor-pro](https://github.com/gentoobreaking/ai-tasks/tree/main/gold-monitor-pro) | 14 | 8 | 6 | 0 | 0 | ███████████░░░░░░░░░ 57% | 2026-08-28 |
 | ✅ | [gpt-sovits-research](https://github.com/gentoobreaking/ai-tasks/tree/main/gpt-sovits-research) | 1 | 1 | 0 | 0 | 0 | ████████████████████ 100% | 2026-04-21 |
 | ✅ | [gpt-sovits-voice-presets-research](https://github.com/gentoobreaking/ai-tasks/tree/main/gpt-sovits-voice-presets-research) | 1 | 1 | 0 | 0 | 0 | ████████████████████ 100% | 2026-04-21 |

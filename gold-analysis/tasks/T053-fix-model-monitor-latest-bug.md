@@ -5,7 +5,7 @@ title: 修復 ModelHealthChecker.health_check 未定義 `latest` 錯誤
 project: gold-analysis
 type: bug
 priority: high
-status: in-progress
+status: done
 depends_on: []
 assignee: "pi"
 created: 2026-08-28

@@ -1,6 +1,6 @@
 # 📅 Daily Dashboard - 2026-08-28
 
-> 最後更新: 2026-08-28 09:40 · 自動生成
+> 最後更新: 2026-08-28 10:12 · 自動生成
 
 ---
 
@@ -9,10 +9,10 @@
 | 指標 | 數量 |
 |------|------|
 | 新增任務 | 25 |
-| 完成任務 | 10 |
+| 完成任務 | 14 |
 | 進行中 | 0 |
-| 待處理 | 22 |
-| 完成率 | 31% |
+| 待處理 | 18 |
+| 完成率 | 43% |
 
 ---
 
@@ -73,17 +73,16 @@
 | gold-analysis | [T046-settings-extra-ignore](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T046-settings-extra-ignore.md) | 修復 pydantic Settings extra_forbidden 導致 API 啟動失敗 |
 | gold-analysis | [T047-rebuild-app-core-services](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T047-rebuild-app-core-services.md) | 重建 app.core + 缺失服務（price_service / decision_service / routes init 循環導入修復） |
 | gold-analysis | [T052-gold-monitor-issue-history](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T052-gold-monitor-issue-history.md) | gold-monitor-issue 歷史任務彙整（已完成/歸檔） |
+| gold-analysis | [T053-fix-model-monitor-latest-bug](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T053-fix-model-monitor-latest-bug.md) | 修復 ModelHealthChecker.health_check 未定義 `latest` 錯誤 |
+| gold-analysis | [T054-scheduler-real-data](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T054-scheduler-real-data.md) | 排程監控/重訓改用真實資料來源 |
+| gold-analysis | [T055-trading-kill-switch](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T055-trading-kill-switch.md) | 新增全域交易開關 (kill-switch) 與 pre-trade 風險閘門 |
+| gold-analysis | [T056-real-notifications-mock-data](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T056-real-notifications-mock-data.md) | 接線真實告警通道並替換 mock 情緒/資料 |
 
 ---
 
 ## 🔥 待處理高優先級
 
-| 專案 | 任務 | 標題 | 優先 |
-| -- | -- | -- | -- |
-| gold-analysis | [T053-fix-model-monitor-latest-bug](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T053-fix-model-monitor-latest-bug.md) | 修復 ModelHealthChecker.health_check 未定義 `latest` 錯誤 | high |
-| gold-analysis | [T054-scheduler-real-data](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T054-scheduler-real-data.md) | 排程監控/重訓改用真實資料來源 | high |
-| gold-analysis | [T055-trading-kill-switch](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T055-trading-kill-switch.md) | 新增全域交易開關 (kill-switch) 與 pre-trade 風險閘門 | high |
-| gold-analysis | [T056-real-notifications-mock-data](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T056-real-notifications-mock-data.md) | 接線真實告警通道並替換 mock 情緒/資料 | high |
+_無_
 
 ---
 
@@ -97,10 +96,6 @@ _無_
 
 | 專案 | 任務 | 標題 | 優先 |
 | -- | -- | -- | -- |
-| gold-analysis | [T053-fix-model-monitor-latest-bug](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T053-fix-model-monitor-latest-bug.md) | 修復 ModelHealthChecker.health_check 未定義 `latest` 錯誤 | high |
-| gold-analysis | [T054-scheduler-real-data](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T054-scheduler-real-data.md) | 排程監控/重訓改用真實資料來源 | high |
-| gold-analysis | [T055-trading-kill-switch](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T055-trading-kill-switch.md) | 新增全域交易開關 (kill-switch) 與 pre-trade 風險閘門 | high |
-| gold-analysis | [T056-real-notifications-mock-data](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T056-real-notifications-mock-data.md) | 接線真實告警通道並替換 mock 情緒/資料 | high |
 | gold-analysis | [T057-consolidate-codebases](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T057-consolidate-codebases.md) | 統一代碼庫：以 backend/app 為唯一來源 | medium |
 | gold-analysis | [T058-fix-f821-undefined](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T058-fix-f821-undefined.md) | 修復 F821 未定義名稱 (macd List 等) | medium |
 | gold-analysis | [T059-ruff-cleanup-precommit](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T059-ruff-cleanup-precommit.md) | ruff 清理 + pre-commit + CI lint 閘門 | medium |

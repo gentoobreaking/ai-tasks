@@ -5,7 +5,7 @@ title: 排程監控/重訓改用真實資料來源
 project: gold-analysis
 type: bug
 priority: high
-status: pending
+status: done
 depends_on: [T053]
 assignee: "pi"
 created: 2026-08-28

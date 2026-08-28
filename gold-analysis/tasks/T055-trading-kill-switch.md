@@ -5,7 +5,7 @@ title: 新增全域交易開關 (kill-switch) 與 pre-trade 風險閘門
 project: gold-analysis
 type: feature
 priority: high
-status: pending
+status: done
 depends_on: []
 assignee: "pi"
 created: 2026-08-28
