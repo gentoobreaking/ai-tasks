@@ -59,6 +59,12 @@
 | 排程監控/重訓改用真實資料來源 |
 | 全域交易開關 (kill-switch) 與 pre-trade 風險閘門 |
 | 接線真實告警通道並替換 mock 情緒/資料 |
+| 統一代碼庫：以 backend/app 為唯一來源 |
+| 環境可重現化 (uv + uv.lock；修正 venv 直譯器不一致) |
+| 文件 (README/AGENTS) 對齊實際架構 |
+| 決策可解釋性 — SHAP 特徵貢獻 |
+| 回測與模擬下單框架 + 策略比較視圖 |
+| 投資組合級風險 — 相關性矩陣與因子曝險 |
 
 ## Skip 項目
 
@@ -77,14 +83,8 @@
 | Task | 名稱 | 說明 |
 |------|------|------|
 | [T48-rest-exchange-client-verification](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T048-rest-exchange-client-verification.md) | RestExchangeClient 實盤冒煙測試 | |
-| [T57-consolidate-codebases](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T057-consolidate-codebases.md) | 統一代碼庫：以 backend/app 為唯一來源 | |
 | [T58-fix-f821-undefined](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T058-fix-f821-undefined.md) | 修復 F821 未定義名稱 (macd List 等) | |
 | [T59-ruff-cleanup-precommit](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T059-ruff-cleanup-precommit.md) | ruff 清理 + pre-commit + CI lint 閘門 | |
-| [T60-reproducible-env-uv](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T060-reproducible-env-uv.md) | 環境可重現化 (uv + uv.lock；修正 venv 直譯器不一致) | |
-| [T61-update-docs](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T061-update-docs.md) | 更新文件 (README/AGENTS) 對齊實際架構 | |
-| [T62-decision-explainability-shap](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T062-decision-explainability-shap.md) | 決策可解釋性 — SHAP 特徵貢獻 | |
-| [T63-backtest-paper-replay](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T063-backtest-paper-replay.md) | 回測與模擬下單框架 + 策略比較視圖 | |
-| [T64-portfolio-risk-correlation](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T064-portfolio-risk-correlation.md) | 投資組合級風險 — 相關性矩陣與因子曝險 | |
 | [T65-llm-macro-digest](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T065-llm-macro-digest.md) | LLM 宏觀敘事每日摘要 (替換 mock 情緒) | |
 | [T66-data-freshness-sla](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T066-data-freshness-sla.md) | 資料新鮮度 SLA 監控 | |
 | [T67-webhook-signal-ingest](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T067-webhook-signal-ingest.md) | TradingView / 外部 webhook 訊號接入 | |
@@ -149,18 +149,18 @@
 | [T54-scheduler-real-data](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T054-scheduler-real-data.md) | 排程監控/重訓改用真實資料來源 | ✅ done |
 | [T55-trading-kill-switch](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T055-trading-kill-switch.md) | 新增全域交易開關 (kill-switch) 與 pre-trade 風險閘門 | ✅ done |
 | [T56-real-notifications-mock-data](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T056-real-notifications-mock-data.md) | 接線真實告警通道並替換 mock 情緒/資料 | ✅ done |
-| [T57-consolidate-codebases](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T057-consolidate-codebases.md) | 統一代碼庫：以 backend/app 為唯一來源 | 📋 pending |
+| [T57-consolidate-codebases](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T057-consolidate-codebases.md) | 統一代碼庫：以 backend/app 為唯一來源 | ✅ done |
 | [T58-fix-f821-undefined](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T058-fix-f821-undefined.md) | 修復 F821 未定義名稱 (macd List 等) | 📋 pending |
 | [T59-ruff-cleanup-precommit](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T059-ruff-cleanup-precommit.md) | ruff 清理 + pre-commit + CI lint 閘門 | 📋 pending |
-| [T60-reproducible-env-uv](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T060-reproducible-env-uv.md) | 環境可重現化 (uv + uv.lock；修正 venv 直譯器不一致) | 📋 pending |
-| [T61-update-docs](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T061-update-docs.md) | 更新文件 (README/AGENTS) 對齊實際架構 | 📋 pending |
-| [T62-decision-explainability-shap](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T062-decision-explainability-shap.md) | 決策可解釋性 — SHAP 特徵貢獻 | 📋 pending |
-| [T63-backtest-paper-replay](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T063-backtest-paper-replay.md) | 回測與模擬下單框架 + 策略比較視圖 | 📋 pending |
-| [T64-portfolio-risk-correlation](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T064-portfolio-risk-correlation.md) | 投資組合級風險 — 相關性矩陣與因子曝險 | 📋 pending |
+| [T60-reproducible-env-uv](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T060-reproducible-env-uv.md) | 環境可重現化 (uv + uv.lock；修正 venv 直譯器不一致) | ✅ done |
+| [T61-update-docs](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T061-update-docs.md) | 更新文件 (README/AGENTS) 對齊實際架構 | ✅ done |
+| [T62-decision-explainability-shap](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T062-decision-explainability-shap.md) | 決策可解釋性 — SHAP 特徵貢獻 | ✅ done |
+| [T63-backtest-paper-replay](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T063-backtest-paper-replay.md) | 回測與模擬下單框架 + 策略比較視圖 | ✅ done |
+| [T64-portfolio-risk-correlation](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T064-portfolio-risk-correlation.md) | 投資組合級風險 — 相關性矩陣與因子曝險 | ✅ done |
 | [T65-llm-macro-digest](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T065-llm-macro-digest.md) | LLM 宏觀敘事每日摘要 (替換 mock 情緒) | 📋 pending |
 | [T66-data-freshness-sla](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T066-data-freshness-sla.md) | 資料新鮮度 SLA 監控 | 📋 pending |
 | [T67-webhook-signal-ingest](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T067-webhook-signal-ingest.md) | TradingView / 外部 webhook 訊號接入 | 📋 pending |
 
-**✅ done: 55 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 12**
+**✅ done: 61 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 6**
 
-> 自動生成於 2026-08-28 10:12
+> 自動生成於 2026-08-28 11:24

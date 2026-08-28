@@ -5,7 +5,7 @@ title: 決策可解釋性 — SHAP 特徵貢獻
 project: gold-analysis
 type: feature
 priority: low
-status: pending
+status: done
 depends_on: []
 assignee: "pi"
 created: 2026-08-28

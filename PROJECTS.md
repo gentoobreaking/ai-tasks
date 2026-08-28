@@ -1,6 +1,6 @@
 # 📁 Projects Dashboard
 
-> 最後更新: 2026-08-28 10:12 · 自動生成
+> 最後更新: 2026-08-28 11:24 · 自動生成
 
 ---
 
@@ -10,25 +10,19 @@
 |------|------|
 | 專案數 | 59 |
 | 任務總數 | 1411 |
-| ✅ 已完成 | 1331 |
-| ⬜ 待處理 | 18 |
+| ✅ 已完成 | 1337 |
+| ⬜ 待處理 | 12 |
 | 🔄 進行中 | 0 |
 | ⏭️ 跳過 | 62 |
-| 總完成率 | 98% |
+| 總完成率 | 99% |
 
 ## ⬜ 待處理
 
 | 專案 | 任務 | 標題 | 狀態 |
 |------|------|------|------|
 | gold-analysis | [T048-rest-exchange-client-verification](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T048-rest-exchange-client-verification.md) | RestExchangeClient 實盤冒煙測試 | ⬜ |
-| gold-analysis | [T057-consolidate-codebases](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T057-consolidate-codebases.md) | 統一代碼庫：以 backend/app 為唯一來源 | ⬜ |
 | gold-analysis | [T058-fix-f821-undefined](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T058-fix-f821-undefined.md) | 修復 F821 未定義名稱 (macd List 等) | ⬜ |
 | gold-analysis | [T059-ruff-cleanup-precommit](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T059-ruff-cleanup-precommit.md) | ruff 清理 + pre-commit + CI lint 閘門 | ⬜ |
-| gold-analysis | [T060-reproducible-env-uv](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T060-reproducible-env-uv.md) | 環境可重現化 (uv + uv.lock；修正 venv 直譯器不一致) | ⬜ |
-| gold-analysis | [T061-update-docs](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T061-update-docs.md) | 更新文件 (README/AGENTS) 對齊實際架構 | ⬜ |
-| gold-analysis | [T062-decision-explainability-shap](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T062-decision-explainability-shap.md) | 決策可解釋性 — SHAP 特徵貢獻 | ⬜ |
-| gold-analysis | [T063-backtest-paper-replay](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T063-backtest-paper-replay.md) | 回測與模擬下單框架 + 策略比較視圖 | ⬜ |
-| gold-analysis | [T064-portfolio-risk-correlation](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T064-portfolio-risk-correlation.md) | 投資組合級風險 — 相關性矩陣與因子曝險 | ⬜ |
 | gold-analysis | [T065-llm-macro-digest](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T065-llm-macro-digest.md) | LLM 宏觀敘事每日摘要 (替換 mock 情緒) | ⬜ |
 | gold-analysis | [T066-data-freshness-sla](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T066-data-freshness-sla.md) | 資料新鮮度 SLA 監控 | ⬜ |
 | gold-analysis | [T067-webhook-signal-ingest](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T067-webhook-signal-ingest.md) | TradingView / 外部 webhook 訊號接入 | ⬜ |
@@ -45,8 +39,8 @@
 
 | 指標 | 數值 |
 |------|------|
-| 過去 7 天完成 | 356 |
-| 過去 30 天完成 | 689 |
+| 過去 7 天完成 | 362 |
+| 過去 30 天完成 | 695 |
 | 平均週期時間 | 2.0 天 |
 | 週期時間中位數 | 0.0 天 |
 
@@ -56,10 +50,10 @@ xychart-beta
     title "過去 14 天任務完成趨勢"
     x-axis ["08-15", "08-16", "08-17", "08-18", "08-19", "08-20", "08-21", "08-22", "08-23", "08-24", "08-25", "08-26", "08-27", "08-28"]
     y-axis "完成數" 0 --> 165
-    line [8, 2, 119, 22, 16, 0, 3, 28, 0, 77, 165, 69, 0, 14]
+    line [8, 2, 119, 22, 16, 0, 3, 28, 0, 77, 165, 69, 0, 20]
 ```
 
-📊 總計: 523 | 日均: 37.4 | 本週: 353 | 📈 成長中
+📊 總計: 529 | 日均: 37.8 | 本週: 359 | 📈 成長中
 
 ## 📋 專案列表
 
@@ -80,8 +74,8 @@ xychart-beta
 | ✅ | [git-maintenance](https://github.com/gentoobreaking/ai-tasks/tree/main/git-maintenance) | 1 | 1 | 0 | 0 | 0 | ████████████████████ 100% | 2026-05-16 |
 | ✅ | [github-data-review](https://github.com/gentoobreaking/ai-tasks/tree/main/github-data-review) | 8 | 8 | 0 | 0 | 0 | ████████████████████ 100% | 2026-04-28 |
 | ✅ | [global-policy-refactor](https://github.com/gentoobreaking/ai-tasks/tree/main/global-policy-refactor) | 3 | 3 | 0 | 0 | 0 | ████████████████████ 100% | 2026-05-07 |
-| ⬜ | [gold-analysis](https://github.com/gentoobreaking/ai-tasks/tree/main/gold-analysis) | 67 | 55 | 12 | 0 | 0 | ████████████████░░░░ 82% | 2026-08-28 |
-| ⬜ | [gold-monitor-pro](https://github.com/gentoobreaking/ai-tasks/tree/main/gold-monitor-pro) | 14 | 8 | 6 | 0 | 0 | ███████████░░░░░░░░░ 57% | 2026-08-28 |
+| ⬜ | [gold-analysis](https://github.com/gentoobreaking/ai-tasks/tree/main/gold-analysis) | 67 | 61 | 6 | 0 | 0 | ██████████████████░░ 91% | 2026-08-28 |
+| ⬜ | [gold-monitor-pro](https://github.com/gentoobreaking/ai-tasks/tree/main/gold-monitor-pro) | 14 | 8 | 6 | 0 | 0 | ███████████░░░░░░░░░ 57% | 2026-05-01 |
 | ✅ | [gpt-sovits-research](https://github.com/gentoobreaking/ai-tasks/tree/main/gpt-sovits-research) | 1 | 1 | 0 | 0 | 0 | ████████████████████ 100% | 2026-04-21 |
 | ✅ | [gpt-sovits-voice-presets-research](https://github.com/gentoobreaking/ai-tasks/tree/main/gpt-sovits-voice-presets-research) | 1 | 1 | 0 | 0 | 0 | ████████████████████ 100% | 2026-04-21 |
 | ✅ | [gpt-sovits-voices-research](https://github.com/gentoobreaking/ai-tasks/tree/main/gpt-sovits-voices-research) | 1 | 1 | 0 | 0 | 0 | ████████████████████ 100% | 2026-04-21 |

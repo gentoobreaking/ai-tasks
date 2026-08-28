@@ -1,6 +1,6 @@
 # 📅 Daily Dashboard - 2026-08-28
 
-> 最後更新: 2026-08-28 10:12 · 自動生成
+> 最後更新: 2026-08-28 11:24 · 自動生成
 
 ---
 
@@ -8,11 +8,11 @@
 
 | 指標 | 數量 |
 |------|------|
-| 新增任務 | 25 |
-| 完成任務 | 14 |
+| 新增任務 | 21 |
+| 完成任務 | 20 |
 | 進行中 | 0 |
-| 待處理 | 18 |
-| 完成率 | 43% |
+| 待處理 | 12 |
+| 完成率 | 62% |
 
 ---
 
@@ -20,10 +20,10 @@
 
 | 指標 | 數值 |
 |------|------|
-| 今日完成速率 | 31 任務 |
-| 近 7 日速率 | 31 任務 |
-| 平均循環天數 | 23.7 天 |
-| 今日完成任務循環時間樣本 | 30 筆 |
+| 今日完成速率 | 26 任務 |
+| 近 7 日速率 | 26 任務 |
+| 平均循環天數 | 27.3 天 |
+| 今日完成任務循環時間樣本 | 26 筆 |
 
 ---
 
@@ -52,10 +52,6 @@
 | gold-analysis | [T065-llm-macro-digest](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T065-llm-macro-digest.md) | LLM 宏觀敘事每日摘要 (替換 mock 情緒) |
 | gold-analysis | [T066-data-freshness-sla](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T066-data-freshness-sla.md) | 資料新鮮度 SLA 監控 |
 | gold-analysis | [T067-webhook-signal-ingest](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T067-webhook-signal-ingest.md) | TradingView / 外部 webhook 訊號接入 |
-| gold-monitor-pro | [T009-bring-source-code-into-project](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-monitor-pro/tasks/T009-bring-source-code-into-project.md) | 將實現程式碼移入專案目錄 |
-| gold-monitor-pro | [T010-fix-readme-task-links](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-monitor-pro/tasks/T010-fix-readme-task-links.md) | 更新 README task 表格的 GitHub 連結 |
-| gold-monitor-pro | [T013-health-check-endpoint](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-monitor-pro/tasks/T013-health-check-endpoint.md) | 新增 Health check endpoint + 結構化 JSON 日誌 |
-| gold-monitor-pro | [T014-multi-channel-notifications](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-monitor-pro/tasks/T014-multi-channel-notifications.md) | 新增多管道通知支援 (Discord / Telegram / Email) |
 
 ---
 
@@ -77,6 +73,12 @@
 | gold-analysis | [T054-scheduler-real-data](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T054-scheduler-real-data.md) | 排程監控/重訓改用真實資料來源 |
 | gold-analysis | [T055-trading-kill-switch](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T055-trading-kill-switch.md) | 新增全域交易開關 (kill-switch) 與 pre-trade 風險閘門 |
 | gold-analysis | [T056-real-notifications-mock-data](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T056-real-notifications-mock-data.md) | 接線真實告警通道並替換 mock 情緒/資料 |
+| gold-analysis | [T057-consolidate-codebases](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T057-consolidate-codebases.md) | 統一代碼庫：以 backend/app 為唯一來源 |
+| gold-analysis | [T060-reproducible-env-uv](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T060-reproducible-env-uv.md) | 環境可重現化 (uv + uv.lock；修正 venv 直譯器不一致) |
+| gold-analysis | [T061-update-docs](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T061-update-docs.md) | 更新文件 (README/AGENTS) 對齊實際架構 |
+| gold-analysis | [T062-decision-explainability-shap](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T062-decision-explainability-shap.md) | 決策可解釋性 — SHAP 特徵貢獻 |
+| gold-analysis | [T063-backtest-paper-replay](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T063-backtest-paper-replay.md) | 回測與模擬下單框架 + 策略比較視圖 |
+| gold-analysis | [T064-portfolio-risk-correlation](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T064-portfolio-risk-correlation.md) | 投資組合級風險 — 相關性矩陣與因子曝險 |
 
 ---
 
@@ -96,15 +98,9 @@ _無_
 
 | 專案 | 任務 | 標題 | 優先 |
 | -- | -- | -- | -- |
-| gold-analysis | [T057-consolidate-codebases](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T057-consolidate-codebases.md) | 統一代碼庫：以 backend/app 為唯一來源 | medium |
 | gold-analysis | [T058-fix-f821-undefined](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T058-fix-f821-undefined.md) | 修復 F821 未定義名稱 (macd List 等) | medium |
 | gold-analysis | [T059-ruff-cleanup-precommit](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T059-ruff-cleanup-precommit.md) | ruff 清理 + pre-commit + CI lint 閘門 | medium |
-| gold-analysis | [T060-reproducible-env-uv](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T060-reproducible-env-uv.md) | 環境可重現化 (uv + uv.lock；修正 venv 直譯器不一致) | medium |
-| gold-analysis | [T063-backtest-paper-replay](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T063-backtest-paper-replay.md) | 回測與模擬下單框架 + 策略比較視圖 | medium |
 | gold-analysis | [T048-rest-exchange-client-verification](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T048-rest-exchange-client-verification.md) | RestExchangeClient 實盤冒煙測試 | low |
-| gold-analysis | [T061-update-docs](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T061-update-docs.md) | 更新文件 (README/AGENTS) 對齊實際架構 | low |
-| gold-analysis | [T062-decision-explainability-shap](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T062-decision-explainability-shap.md) | 決策可解釋性 — SHAP 特徵貢獻 | low |
-| gold-analysis | [T064-portfolio-risk-correlation](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T064-portfolio-risk-correlation.md) | 投資組合級風險 — 相關性矩陣與因子曝險 | low |
 | gold-analysis | [T065-llm-macro-digest](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T065-llm-macro-digest.md) | LLM 宏觀敘事每日摘要 (替換 mock 情緒) | low |
 | gold-analysis | [T066-data-freshness-sla](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T066-data-freshness-sla.md) | 資料新鮮度 SLA 監控 | low |
 | gold-analysis | [T067-webhook-signal-ingest](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T067-webhook-signal-ingest.md) | TradingView / 外部 webhook 訊號接入 | low |
