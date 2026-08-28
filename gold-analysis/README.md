@@ -65,6 +65,7 @@
 | 決策可解釋性 — SHAP 特徵貢獻 |
 | 回測與模擬下單框架 + 策略比較視圖 |
 | 投資組合級風險 — 相關性矩陣與因子曝險 |
+| LLM 宏觀敘事每日摘要 (替換 mock 情緒) |
 
 ## Skip 項目
 
@@ -85,7 +86,6 @@
 | [T48-rest-exchange-client-verification](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T048-rest-exchange-client-verification.md) | RestExchangeClient 實盤冒煙測試 | |
 | [T58-fix-f821-undefined](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T058-fix-f821-undefined.md) | 修復 F821 未定義名稱 (macd List 等) | |
 | [T59-ruff-cleanup-precommit](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T059-ruff-cleanup-precommit.md) | ruff 清理 + pre-commit + CI lint 閘門 | |
-| [T65-llm-macro-digest](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T065-llm-macro-digest.md) | LLM 宏觀敘事每日摘要 (替換 mock 情緒) | |
 | [T66-data-freshness-sla](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T066-data-freshness-sla.md) | 資料新鮮度 SLA 監控 | |
 | [T67-webhook-signal-ingest](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T067-webhook-signal-ingest.md) | TradingView / 外部 webhook 訊號接入 | |
 
@@ -157,10 +157,10 @@
 | [T62-decision-explainability-shap](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T062-decision-explainability-shap.md) | 決策可解釋性 — SHAP 特徵貢獻 | ✅ done |
 | [T63-backtest-paper-replay](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T063-backtest-paper-replay.md) | 回測與模擬下單框架 + 策略比較視圖 | ✅ done |
 | [T64-portfolio-risk-correlation](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T064-portfolio-risk-correlation.md) | 投資組合級風險 — 相關性矩陣與因子曝險 | ✅ done |
-| [T65-llm-macro-digest](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T065-llm-macro-digest.md) | LLM 宏觀敘事每日摘要 (替換 mock 情緒) | 📋 pending |
+| [T65-llm-macro-digest](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T065-llm-macro-digest.md) | LLM 宏觀敘事每日摘要 (替換 mock 情緒) | ✅ done |
 | [T66-data-freshness-sla](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T066-data-freshness-sla.md) | 資料新鮮度 SLA 監控 | 📋 pending |
 | [T67-webhook-signal-ingest](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T067-webhook-signal-ingest.md) | TradingView / 外部 webhook 訊號接入 | 📋 pending |
 
-**✅ done: 61 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 6**
+**✅ done: 62 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 5**
 
-> 自動生成於 2026-08-28 11:24
+> 自動生成於 2026-08-28 11:38

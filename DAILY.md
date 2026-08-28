@@ -1,6 +1,6 @@
 # 📅 Daily Dashboard - 2026-08-28
 
-> 最後更新: 2026-08-28 11:24 · 自動生成
+> 最後更新: 2026-08-28 11:38 · 自動生成
 
 ---
 
@@ -9,10 +9,10 @@
 | 指標 | 數量 |
 |------|------|
 | 新增任務 | 21 |
-| 完成任務 | 20 |
+| 完成任務 | 21 |
 | 進行中 | 0 |
-| 待處理 | 12 |
-| 完成率 | 62% |
+| 待處理 | 11 |
+| 完成率 | 65% |
 
 ---
 
@@ -79,6 +79,7 @@
 | gold-analysis | [T062-decision-explainability-shap](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T062-decision-explainability-shap.md) | 決策可解釋性 — SHAP 特徵貢獻 |
 | gold-analysis | [T063-backtest-paper-replay](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T063-backtest-paper-replay.md) | 回測與模擬下單框架 + 策略比較視圖 |
 | gold-analysis | [T064-portfolio-risk-correlation](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T064-portfolio-risk-correlation.md) | 投資組合級風險 — 相關性矩陣與因子曝險 |
+| gold-analysis | [T065-llm-macro-digest](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T065-llm-macro-digest.md) | LLM 宏觀敘事每日摘要 (替換 mock 情緒) |
 
 ---
 
@@ -101,7 +102,6 @@ _無_
 | gold-analysis | [T058-fix-f821-undefined](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T058-fix-f821-undefined.md) | 修復 F821 未定義名稱 (macd List 等) | medium |
 | gold-analysis | [T059-ruff-cleanup-precommit](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T059-ruff-cleanup-precommit.md) | ruff 清理 + pre-commit + CI lint 閘門 | medium |
 | gold-analysis | [T048-rest-exchange-client-verification](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T048-rest-exchange-client-verification.md) | RestExchangeClient 實盤冒煙測試 | low |
-| gold-analysis | [T065-llm-macro-digest](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T065-llm-macro-digest.md) | LLM 宏觀敘事每日摘要 (替換 mock 情緒) | low |
 | gold-analysis | [T066-data-freshness-sla](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T066-data-freshness-sla.md) | 資料新鮮度 SLA 監控 | low |
 | gold-analysis | [T067-webhook-signal-ingest](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T067-webhook-signal-ingest.md) | TradingView / 外部 webhook 訊號接入 | low |
 | gold-monitor-pro | [T009-bring-source-code-into-project](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-monitor-pro/tasks/T009-bring-source-code-into-project.md) | 將實現程式碼移入專案目錄 |  |
