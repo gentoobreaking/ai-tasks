@@ -3,7 +3,7 @@ github_issue: ""
 title: 人類可視化網頁儀表板（價格+走勢+健康）
 type: feature
 priority: high
-status: pending
+status: done
 depends_on: ["T018"]
 assignee: pi
 created: 2026-08-28

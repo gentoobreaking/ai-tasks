@@ -5,7 +5,7 @@ title: 資料新鮮度 SLA 監控
 project: gold-analysis
 type: feature
 priority: low
-status: pending
+status: done
 depends_on: []
 assignee: "pi"
 created: 2026-08-28

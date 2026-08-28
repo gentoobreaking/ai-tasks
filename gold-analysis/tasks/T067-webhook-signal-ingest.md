@@ -5,7 +5,7 @@ title: TradingView / 外部 webhook 訊號接入
 project: gold-analysis
 type: feature
 priority: low
-status: pending
+status: done
 depends_on: []
 assignee: "pi"
 created: 2026-08-28

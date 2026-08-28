@@ -3,7 +3,7 @@ github_issue: ""
 title: README 同步到現狀
 type: docs
 priority: medium
-status: pending
+status: done
 depends_on: ["T015","T016","T018","T019"]
 assignee: pi
 created: 2026-08-28
