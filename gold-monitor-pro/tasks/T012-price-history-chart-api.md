@@ -1,10 +1,10 @@
 ---
 github_issue: https://github.com/gentoobreaking/ai-tasks/issues/258
 title: 新增黃金/白銀/鉑金價格歷史圖表 API
-status: pending
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/258
+/title: 新增黃金/白銀/鉑金價格歷史圖表 API
+/status: done
 assignee: 寶寶
-updated: 2026-08-28
----
 
 ## 目標
 
@@ -20,8 +20,8 @@ v2 T004 曾實作雙線走勢圖（sell=buy），但 v4 SPEC.md 未列入此功�
 
 ## 驗證標準
 
-- [ ] `/api/v1/history/gold_local` 回傳最近 7 天 buy/sell 歷史
-- [ ] `/api/v1/history/gold_intl` 回傳最近 7 天國際黃金價格
-- [ ] `/api/v1/history/silver_intl` 回傳白銀價格
-- [ ] `/api/v1/history/platinum_intl` 回傳鉑金價格
-- [ ] 回應包含 baseline 字段，用於走勢比對
+- [x] `/api/v1/history/gold_local` 回傳最近 7 天 buy/sell 歷史
+- [x] `/api/v1/history/gold_intl` 回傳最近 7 天國際黃金價格
+- [x] `/api/v1/history/silver_intl` 回傳白銀價格
+- [x] `/api/v1/history/platinum_intl` 回傳鉑金價格
+- [x] 回應包含 baseline 字段，用於走勢比對
