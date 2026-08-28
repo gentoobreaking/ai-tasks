@@ -5,7 +5,7 @@ title: 環境可重現化 (uv + uv.lock；修正 venv 直譯器不一致)
 project: gold-analysis
 type: infra
 priority: medium
-status: pending
+status: done
 depends_on: []
 assignee: "pi"
 created: 2026-08-28

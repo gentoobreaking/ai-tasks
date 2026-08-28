@@ -5,7 +5,7 @@ title: 更新文件 (README/AGENTS) 對齊實際架構
 project: gold-analysis
 type: docs
 priority: low
-status: pending
+status: done
 depends_on: [T057]
 assignee: "pi"
 created: 2026-08-28
