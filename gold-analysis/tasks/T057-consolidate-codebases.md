@@ -5,7 +5,7 @@ title: 統一代碼庫：以 backend/app 為唯一來源
 project: gold-analysis
 type: refactor
 priority: medium
-status: pending
+status: done
 depends_on: []
 assignee: "pi"
 created: 2026-08-28

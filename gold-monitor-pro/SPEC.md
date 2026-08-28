@@ -111,7 +111,7 @@ gold_intl / silver_intl / platinum_intl:
 ## 程式架構（拆分為兩支獨立程式）
 
 ```
-/Users/claw/Projects/gold-monitor-pro-v4/
+/Users/david/Projects/gold-monitor-pro/src/
 ├── gold_local_monitor.py     ← 📊黃金存摺（台銀 + 玉山交叉驗證）
 └── gold_intl_monitor.py      ← 🌐國際金屬（gold/silver/platinum）
 ```
@@ -133,8 +133,8 @@ gold_intl / silver_intl / platinum_intl:
 cp /Users/claw/scripts/gold_monitor_pro.py /Users/claw/scripts/gold_monitor_pro.py.bak
 
 # 2. 複製兩支新程式
-cp /Users/claw/Projects/gold-monitor-pro-v4/gold_local_monitor.py /Users/claw/scripts/
-cp /Users/claw/Projects/gold-monitor-pro-v4/gold_intl_monitor.py /Users/claw/scripts/
+cp /Users/david/Projects/gold-monitor-pro/src/gold_local_monitor.py /Users/claw/scripts/
+cp /Users/david/Projects/gold-monitor-pro/src/gold_intl_monitor.py /Users/claw/scripts/
 
 # 3. 驗證
 python3 /Users/claw/scripts/gold_local_monitor.py --check
@@ -143,6 +143,10 @@ python3 /Users/claw/scripts/gold_intl_monitor.py --check
 # 4. 確認無誤後，刪除備份（可選）
 # rm /Users/claw/scripts/gold_monitor_pro.py.bak
 ```
+
+---
+
+*更新：2026-08-28*
 
 ---
 

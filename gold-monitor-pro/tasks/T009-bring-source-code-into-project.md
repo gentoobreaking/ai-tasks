@@ -1,10 +1,10 @@
 ---
 github_issue: https://github.com/gentoobreaking/ai-tasks/issues/255
 title: 將實現程式碼移入專案目錄
-status: pending
+github_issue: https://github.com/gentoobreaking/ai-tasks/issues/255
+/title: 將實現程式碼移入專案目錄
+/status: done
 assignee: 寶寶
-created: 2026-08-28
-updated: 2026-08-28
 ---
 
 ## 目標
@@ -19,7 +19,7 @@ SPEC.md 指定將 `gold_local_monitor.py` / `gold_intl_monitor.py` 放入 `~/scr
 
 ## 驗證標準
 
-- [ ] `src/gold_local_monitor.py` 存在且可獨立 `--check` 執行
-- [ ] `src/gold_intl_monitor.py` 存在且可獨立 `--check` 執行
-- [ ] SPEC.md 的檔案路徑參考更新為 `src/` 而非 `~/scripts/`
-- [ ] 兩支程式 `import` 路徑僅依賴 `src/` 內部模組，無外部依賴
+- [x] `src/gold_local_monitor.py` 存在且可獨立 `--check` 執行
+- [x] `src/gold_intl_monitor.py` 存在且可獨立 `--check` 執行
+- [x] SPEC.md 的檔案路徑參考更新為 `src/` 而非 `~/scripts/`
+- [x] 兩支程式 `import` 路徑僅依賴 `src/` 內部模組，無外部依賴
