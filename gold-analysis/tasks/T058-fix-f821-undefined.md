@@ -5,11 +5,11 @@ title: 修復 F821 未定義名稱 (macd List 等)
 project: gold-analysis
 type: bug
 priority: medium
-status: pending
+status: done
 depends_on: []
 assignee: "pi"
 created: 2026-08-28
-updated: 2026-08-28
+updated: 2026-08-30
 ---
 
 # T058 - 修復 F821 未定義名稱 (macd List 等)

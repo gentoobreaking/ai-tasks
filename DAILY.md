@@ -1,6 +1,6 @@
 # 📅 Daily Dashboard - 2026-08-30
 
-> 最後更新: 2026-08-30 18:12 · 自動生成
+> 最後更新: 2026-08-30 19:03 · 自動生成
 
 ---
 
@@ -9,10 +9,10 @@
 | 指標 | 數量 |
 |------|------|
 | 新增任務 | 2 |
-| 完成任務 | 21 |
+| 完成任務 | 22 |
 | 進行中 | 0 |
-| 待處理 | 3 |
-| 完成率 | 87% |
+| 待處理 | 2 |
+| 完成率 | 91% |
 
 ---
 
@@ -20,10 +20,10 @@
 
 | 指標 | 數值 |
 |------|------|
-| 今日完成速率 | 21 任務 |
-| 近 7 日速率 | 21 任務 |
-| 平均循環天數 | 64.1 天 |
-| 今日完成任務循環時間樣本 | 21 筆 |
+| 今日完成速率 | 22 任務 |
+| 近 7 日速率 | 22 任務 |
+| 平均循環天數 | 61.3 天 |
+| 今日完成任務循環時間樣本 | 22 筆 |
 
 ---
 
@@ -40,6 +40,7 @@
 
 | 專案 | 任務 | 標題 |
 | -- | -- | -- |
+| gold-analysis | [T058-fix-f821-undefined](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T058-fix-f821-undefined.md) | 修復 F821 未定義名稱 (macd List 等) |
 | gold-monitor-pro | [T001-separate-monitor-objects-local-vs-intl](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-monitor-pro/tasks/T001-separate-monitor-objects-local-vs-intl.md) | 分離監控物件（存摺 vs 國際分開） |
 | gold-monitor-pro | [T002-rewrite-gold-local-monitoring-logic](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-monitor-pro/tasks/T002-rewrite-gold-local-monitoring-logic.md) | 重寫 gold_local 監控邏輯 |
 | gold-monitor-pro | [T003-rewrite-international-price-monitoring-logic](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-monitor-pro/tasks/T003-rewrite-international-price-monitoring-logic.md) | 重寫國際報價監控邏輯 |
@@ -80,7 +81,6 @@ _無_
 
 | 專案 | 任務 | 標題 | 優先 |
 | -- | -- | -- | -- |
-| gold-analysis | [T058-fix-f821-undefined](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T058-fix-f821-undefined.md) | 修復 F821 未定義名稱 (macd List 等) | medium |
 | gold-analysis | [T059-ruff-cleanup-precommit](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T059-ruff-cleanup-precommit.md) | ruff 清理 + pre-commit + CI lint 閘門 | medium |
 | gold-analysis | [T048-rest-exchange-client-verification](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T048-rest-exchange-client-verification.md) | RestExchangeClient 實盤冒煙測試 | low |
 

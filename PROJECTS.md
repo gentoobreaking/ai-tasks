@@ -1,6 +1,6 @@
 # 📁 Projects Dashboard
 
-> 最後更新: 2026-08-30 18:12 · 自動生成
+> 最後更新: 2026-08-30 19:03 · 自動生成
 
 ---
 
@@ -10,8 +10,8 @@
 |------|------|
 | 專案數 | 59 |
 | 任務總數 | 1418 |
-| ✅ 已完成 | 1353 |
-| ⬜ 待處理 | 3 |
+| ✅ 已完成 | 1354 |
+| ⬜ 待處理 | 2 |
 | 🔄 進行中 | 0 |
 | ⏭️ 跳過 | 62 |
 | 總完成率 | 99% |
@@ -21,7 +21,6 @@
 | 專案 | 任務 | 標題 | 狀態 |
 |------|------|------|------|
 | gold-analysis | [T048-rest-exchange-client-verification](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T048-rest-exchange-client-verification.md) | RestExchangeClient 實盤冒煙測試 | ⬜ |
-| gold-analysis | [T058-fix-f821-undefined](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T058-fix-f821-undefined.md) | 修復 F821 未定義名稱 (macd List 等) | ⬜ |
 | gold-analysis | [T059-ruff-cleanup-precommit](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T059-ruff-cleanup-precommit.md) | ruff 清理 + pre-commit + CI lint 閘門 | ⬜ |
 
 ---
@@ -30,8 +29,8 @@
 
 | 指標 | 數值 |
 |------|------|
-| 過去 7 天完成 | 355 |
-| 過去 30 天完成 | 707 |
+| 過去 7 天完成 | 356 |
+| 過去 30 天完成 | 708 |
 | 平均週期時間 | 3.0 天 |
 | 週期時間中位數 | 0.0 天 |
 
@@ -41,10 +40,10 @@ xychart-beta
     title "過去 14 天任務完成趨勢"
     x-axis ["08-17", "08-18", "08-19", "08-20", "08-21", "08-22", "08-23", "08-24", "08-25", "08-26", "08-27", "08-28", "08-29", "08-30"]
     y-axis "完成數" 0 --> 165
-    line [119, 22, 16, 0, 3, 28, 0, 77, 165, 69, 0, 23, 0, 21]
+    line [119, 22, 16, 0, 3, 28, 0, 77, 165, 69, 0, 23, 0, 22]
 ```
 
-📊 總計: 543 | 日均: 38.8 | 本週: 355 | 📈 成長中
+📊 總計: 544 | 日均: 38.9 | 本週: 356 | 📈 成長中
 
 ## 📋 專案列表
 
@@ -65,7 +64,7 @@ xychart-beta
 | ✅ | [git-maintenance](https://github.com/gentoobreaking/ai-tasks/tree/main/git-maintenance) | 1 | 1 | 0 | 0 | 0 | ████████████████████ 100% | 2026-05-16 |
 | ✅ | [github-data-review](https://github.com/gentoobreaking/ai-tasks/tree/main/github-data-review) | 8 | 8 | 0 | 0 | 0 | ████████████████████ 100% | 2026-04-28 |
 | ✅ | [global-policy-refactor](https://github.com/gentoobreaking/ai-tasks/tree/main/global-policy-refactor) | 3 | 3 | 0 | 0 | 0 | ████████████████████ 100% | 2026-05-07 |
-| ⬜ | [gold-analysis](https://github.com/gentoobreaking/ai-tasks/tree/main/gold-analysis) | 67 | 64 | 3 | 0 | 0 | ███████████████████░ 95% | 2026-08-28 |
+| ⬜ | [gold-analysis](https://github.com/gentoobreaking/ai-tasks/tree/main/gold-analysis) | 67 | 65 | 2 | 0 | 0 | ███████████████████░ 97% | 2026-08-30 |
 | ✅ | [gold-monitor-pro](https://github.com/gentoobreaking/ai-tasks/tree/main/gold-monitor-pro) | 21 | 21 | 0 | 0 | 0 | ████████████████████ 100% | 2026-08-30 |
 | ✅ | [gpt-sovits-research](https://github.com/gentoobreaking/ai-tasks/tree/main/gpt-sovits-research) | 1 | 1 | 0 | 0 | 0 | ████████████████████ 100% | 2026-04-21 |
 | ✅ | [gpt-sovits-voice-presets-research](https://github.com/gentoobreaking/ai-tasks/tree/main/gpt-sovits-voice-presets-research) | 1 | 1 | 0 | 0 | 0 | ████████████████████ 100% | 2026-04-21 |
