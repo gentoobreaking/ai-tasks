@@ -1,6 +1,6 @@
-# 📅 Daily Dashboard - 2026-08-28
+# 📅 Daily Dashboard - 2026-08-30
 
-> 最後更新: 2026-08-28 12:50 · 自動生成
+> 最後更新: 2026-08-30 15:18 · 自動生成
 
 ---
 
@@ -8,11 +8,11 @@
 
 | 指標 | 數量 |
 |------|------|
-| 新增任務 | 26 |
-| 完成任務 | 28 |
+| 新增任務 | 0 |
+| 完成任務 | 0 |
 | 進行中 | 0 |
 | 待處理 | 9 |
-| 完成率 | 75% |
+| 完成率 | 0% |
 
 ---
 
@@ -20,78 +20,22 @@
 
 | 指標 | 數值 |
 |------|------|
-| 今日完成速率 | 31 任務 |
-| 近 7 日速率 | 31 任務 |
-| 平均循環天數 | 22.9 天 |
-| 今日完成任務循環時間樣本 | 31 筆 |
+| 今日完成速率 | 0 任務 |
+| 近 7 日速率 | 0 任務 |
+| 平均循環天數 | 0.0 天 |
+| 今日完成任務循環時間樣本 | 0 筆 |
 
 ---
 
 ## 🆕 今日新增任務
 
-| 專案 | 任務 | 標題 |
-| -- | -- | -- |
-| gold-analysis | [T043-ab-test-scheduler](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T043-ab-test-scheduler.md) | A/B 分流入口與週期排程 |
-| gold-analysis | [T044-frontend-mlops-integration](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T044-frontend-mlops-integration.md) | 前端接線顯示監控/重訓/交易執行狀態 |
-| gold-analysis | [T045-advanced-runtime-wiring](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T045-advanced-runtime-wiring.md) | 生產環境接線（監控/重訓/A-B/交易執行） |
-| gold-analysis | [T046-settings-extra-ignore](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T046-settings-extra-ignore.md) | 修復 pydantic Settings extra_forbidden 導致 API 啟動失敗 |
-| gold-analysis | [T047-rebuild-app-core-services](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T047-rebuild-app-core-services.md) | 重建 app.core + 缺失服務（price_service / decision_service / routes init 循環導入修復） |
-| gold-analysis | [T048-rest-exchange-client-verification](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T048-rest-exchange-client-verification.md) | RestExchangeClient 實盤冒煙測試 |
-| gold-analysis | [T053-fix-model-monitor-latest-bug](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T053-fix-model-monitor-latest-bug.md) | 修復 ModelHealthChecker.health_check 未定義 `latest` 錯誤 |
-| gold-analysis | [T054-scheduler-real-data](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T054-scheduler-real-data.md) | 排程監控/重訓改用真實資料來源 |
-| gold-analysis | [T055-trading-kill-switch](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T055-trading-kill-switch.md) | 新增全域交易開關 (kill-switch) 與 pre-trade 風險閘門 |
-| gold-analysis | [T056-real-notifications-mock-data](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T056-real-notifications-mock-data.md) | 接線真實告警通道並替換 mock 情緒/資料 |
-| gold-analysis | [T057-consolidate-codebases](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T057-consolidate-codebases.md) | 統一代碼庫：以 backend/app 為唯一來源 |
-| gold-analysis | [T058-fix-f821-undefined](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T058-fix-f821-undefined.md) | 修復 F821 未定義名稱 (macd List 等) |
-| gold-analysis | [T059-ruff-cleanup-precommit](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T059-ruff-cleanup-precommit.md) | ruff 清理 + pre-commit + CI lint 閘門 |
-| gold-analysis | [T060-reproducible-env-uv](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T060-reproducible-env-uv.md) | 環境可重現化 (uv + uv.lock；修正 venv 直譯器不一致) |
-| gold-analysis | [T061-update-docs](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T061-update-docs.md) | 更新文件 (README/AGENTS) 對齊實際架構 |
-| gold-analysis | [T062-decision-explainability-shap](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T062-decision-explainability-shap.md) | 決策可解釋性 — SHAP 特徵貢獻 |
-| gold-analysis | [T063-backtest-paper-replay](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T063-backtest-paper-replay.md) | 回測與模擬下單框架 + 策略比較視圖 |
-| gold-analysis | [T064-portfolio-risk-correlation](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T064-portfolio-risk-correlation.md) | 投資組合級風險 — 相關性矩陣與因子曝險 |
-| gold-analysis | [T065-llm-macro-digest](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T065-llm-macro-digest.md) | LLM 宏觀敘事每日摘要 (替換 mock 情緒) |
-| gold-analysis | [T066-data-freshness-sla](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T066-data-freshness-sla.md) | 資料新鮮度 SLA 監控 |
-| gold-analysis | [T067-webhook-signal-ingest](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T067-webhook-signal-ingest.md) | TradingView / 外部 webhook 訊號接入 |
-| gold-monitor-pro | [T015-web-dashboard](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-monitor-pro/tasks/T015-web-dashboard.md) | 人類可視化網頁儀表板（價格+走勢+健康） |
-| gold-monitor-pro | [T016-auto-scheduling-launchd](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-monitor-pro/tasks/T016-auto-scheduling-launchd.md) | macOS launchd 自動排程安裝 |
-| gold-monitor-pro | [T017-readme-sync](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-monitor-pro/tasks/T017-readme-sync.md) | README 同步到現狀 |
-| gold-monitor-pro | [T018-live-price-health-api](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-monitor-pro/tasks/T018-live-price-health-api.md) | 即時價格與強化健康 API |
-| gold-monitor-pro | [T019-human-readable-alerts](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-monitor-pro/tasks/T019-human-readable-alerts.md) | 人類易讀的 alert 訊息 |
+_無_
 
 ---
 
 ## ✅ 今日完成任務
 
-| 專案 | 任務 | 標題 |
-| -- | -- | -- |
-| gold-analysis | [T017-ml-model-development](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T017-ml-model-development.md) | 機器學習模型開發 |
-| gold-analysis | [T018-ml-integration-optimization](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T018-ml-integration-optimization.md) | ML 模型整合與優化 |
-| gold-analysis | [T019-trading-interface-design](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T019-trading-interface-design.md) | 實盤交易接口設計 |
-| gold-analysis | [T020-trading-integration](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T020-trading-integration.md) | 實盤交易對接 |
-| gold-analysis | [T043-ab-test-scheduler](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T043-ab-test-scheduler.md) | A/B 分流入口與週期排程 |
-| gold-analysis | [T044-frontend-mlops-integration](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T044-frontend-mlops-integration.md) | 前端接線顯示監控/重訓/交易執行狀態 |
-| gold-analysis | [T045-advanced-runtime-wiring](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T045-advanced-runtime-wiring.md) | 生產環境接線（監控/重訓/A-B/交易執行） |
-| gold-analysis | [T046-settings-extra-ignore](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T046-settings-extra-ignore.md) | 修復 pydantic Settings extra_forbidden 導致 API 啟動失敗 |
-| gold-analysis | [T047-rebuild-app-core-services](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T047-rebuild-app-core-services.md) | 重建 app.core + 缺失服務（price_service / decision_service / routes init 循環導入修復） |
-| gold-analysis | [T052-gold-monitor-issue-history](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T052-gold-monitor-issue-history.md) | gold-monitor-issue 歷史任務彙整（已完成/歸檔） |
-| gold-analysis | [T053-fix-model-monitor-latest-bug](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T053-fix-model-monitor-latest-bug.md) | 修復 ModelHealthChecker.health_check 未定義 `latest` 錯誤 |
-| gold-analysis | [T054-scheduler-real-data](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T054-scheduler-real-data.md) | 排程監控/重訓改用真實資料來源 |
-| gold-analysis | [T055-trading-kill-switch](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T055-trading-kill-switch.md) | 新增全域交易開關 (kill-switch) 與 pre-trade 風險閘門 |
-| gold-analysis | [T056-real-notifications-mock-data](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T056-real-notifications-mock-data.md) | 接線真實告警通道並替換 mock 情緒/資料 |
-| gold-analysis | [T057-consolidate-codebases](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T057-consolidate-codebases.md) | 統一代碼庫：以 backend/app 為唯一來源 |
-| gold-analysis | [T060-reproducible-env-uv](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T060-reproducible-env-uv.md) | 環境可重現化 (uv + uv.lock；修正 venv 直譯器不一致) |
-| gold-analysis | [T061-update-docs](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T061-update-docs.md) | 更新文件 (README/AGENTS) 對齊實際架構 |
-| gold-analysis | [T062-decision-explainability-shap](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T062-decision-explainability-shap.md) | 決策可解釋性 — SHAP 特徵貢獻 |
-| gold-analysis | [T063-backtest-paper-replay](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T063-backtest-paper-replay.md) | 回測與模擬下單框架 + 策略比較視圖 |
-| gold-analysis | [T064-portfolio-risk-correlation](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T064-portfolio-risk-correlation.md) | 投資組合級風險 — 相關性矩陣與因子曝險 |
-| gold-analysis | [T065-llm-macro-digest](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T065-llm-macro-digest.md) | LLM 宏觀敘事每日摘要 (替換 mock 情緒) |
-| gold-analysis | [T066-data-freshness-sla](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T066-data-freshness-sla.md) | 資料新鮮度 SLA 監控 |
-| gold-analysis | [T067-webhook-signal-ingest](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T067-webhook-signal-ingest.md) | TradingView / 外部 webhook 訊號接入 |
-| gold-monitor-pro | [T015-web-dashboard](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-monitor-pro/tasks/T015-web-dashboard.md) | 人類可視化網頁儀表板（價格+走勢+健康） |
-| gold-monitor-pro | [T016-auto-scheduling-launchd](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-monitor-pro/tasks/T016-auto-scheduling-launchd.md) | macOS launchd 自動排程安裝 |
-| gold-monitor-pro | [T017-readme-sync](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-monitor-pro/tasks/T017-readme-sync.md) | README 同步到現狀 |
-| gold-monitor-pro | [T018-live-price-health-api](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-monitor-pro/tasks/T018-live-price-health-api.md) | 即時價格與強化健康 API |
-| gold-monitor-pro | [T019-human-readable-alerts](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-monitor-pro/tasks/T019-human-readable-alerts.md) | 人類易讀的 alert 訊息 |
+_無_
 
 ---
 
