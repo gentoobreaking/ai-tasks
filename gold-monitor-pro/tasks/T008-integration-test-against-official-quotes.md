@@ -1,10 +1,19 @@
 ---
 github_issue: https://github.com/gentoobreaking/ai-tasks/issues/254
 title: 整合測試（比對官網報價）
+type: test
+priority: high
 status: done
-assignee: 寶寶
+depends_on:
+  - T002
+  - T003
+  - T004
+  - T005
+  - T006
+  - T007
+assignee: "pi with opencode"
 created: 2026-05-01
-updated: 2026-05-01
+updated: 2026-08-30
 ---
 
 ## 目標
@@ -14,60 +23,49 @@ updated: 2026-05-01
 ## 測試項目
 
 ### 測試 1：gold_local 存摺價格
-
 前往 https://rate.bot.com.tw/gold/chart/day/TWD
-比對：
-- day page 最後一筆 buy/sell vs 程式輸出
+比對：day page 最後一筆 buy/sell vs 程式輸出
 
 ### 測試 2：gold_local 交叉驗證
-
 前往 https://wealth.esunbank.com/zh-tw/gold/price/current-price
 比對：台銀 vs 玉山 sell 差值
 
 ### 測試 3：gold_local alert 觸發
-
 暫時調低閾值（gold_local=1）→ 強制觸發 alert → 驗證：
 - alert 訊息顯示「📊台銀黃金存摺」
 - 基準價格欄位有值
 - 交叉驗證有執行
 
 ### 測試 4：gold_local 交叉驗證失敗
-
 暫時改 cross_validate 閾值為 1 元 → 強制觸發「資料異常」警告 → 驗證：
 - 發警告不發 alert
 - 警告含雙方價格與差值
 
 ### 測試 5：gold_local 基準取得失敗
-
 模擬：刪快取 + day page 只有 1 row + 前一營業日抓取失敗
 驗證：發 alert（含快取狀態、rows 數、前一營業日結果）
 
 ### 測試 6：國際報價
-
 前往 https://finance.yahoo.com/quote/GC%3DF/
 比對：GC=F / SI=F / PL=F 最新報價 vs 程式輸出
 
 ### 測試 7：gold_intl alert 觸發
-
 暫時調低閾值（gold_intl=0.01）→ 強制觸發 alert → 驗證：
 - alert 訊息顯示「🌐國際黃金現貨」
 - 上次價格有值
 
 ### 測試 8：gold_intl 基準取得失敗
-
 模擬：刪快取 + Yahoo Finance 前一小時抓取失敗
 驗證：發 alert（含快取狀態、前一小時結果、金屬名稱）
 
 ### 測試 9：Yahoo Finance fallback
-
 模擬 Yahoo Finance 失敗 → Alpha Vantage 成功
 驗證：程式不中斷，source 顯示 "alpha_vantage"
 
 ### 測試 10：快取 7 天清理
-
 手動建立 8 天前的快取檔案 → 執行 --check → 確認舊快取被刪除
 
-## 驗證標準
+## 驗收標準
 
 - [x] 測試 1：gold_local 價格與 day page 一致（Jina Reader bypass Cloudflare，價格完全一致 buy=4655 sell=4706）
 - [x] 測試 2：台銀 vs 玉山 差 <= 5 元（diff=0 元，交叉驗證通過）
@@ -80,7 +78,7 @@ updated: 2026-05-01
 - [x] 測試 9：Yahoo → AV fallback 正常（source=alpha_vantage）
 - [x] 測試 10：快取 7 天清理正常（8 天前快取檔被刪除）
 
-## 備註
-
-由樂樂（Reviewer）或豪執行驗證。
-測試 3/4/5/7/8/9/10 需要暫時修改程式或快取來模擬。
+## 執行紀錄
+- tests/test_01_local_price_match.py ~ test_10_cache_cleanup.py 覆蓋全部 10 測試
+- tests/run_all.py 可批次執行
+- 由樂樂（Reviewer）或豪執行驗證

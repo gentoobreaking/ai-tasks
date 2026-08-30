@@ -1,10 +1,14 @@
 ---
 github_issue: https://github.com/gentoobreaking/ai-tasks/issues/257
 title: 完成 T008 剩餘整合測試案例
-github_issue: https://github.com/gentoobreaking/ai-tasks/issues/257
-/title: 完成 T008 剩餘整合測試案例
-/status: done
-assignee: 寶寶
+type: test
+priority: high
+status: done
+depends_on:
+  - T008
+assignee: "pi with opencode"
+created: 2026-05-01
+updated: 2026-08-30
 ---
 
 ## 目標
@@ -21,7 +25,7 @@ T008 (整合測試) 目前僅標記 done，但**驗證標準全未勾**（0/10�
 | 測試 9 | T006 | Yahoo Finance → Alpha Vantage fallback |
 | 測試 10 | T007 | 快取 7 天清理驗證 |
 
-## 驗證標準
+## 驗收標準
 
 - [x] 測試 3：暫時調低 gold_local 閾值為 1，驗證 alert 包含「📊台銀黃金存摺」標籤（pass: change=3 >= 1, alert 含 📊台銀黃金存摺，閾值恢復為 30）
 - [x] 測試 4：暫時設定 cross_validate 閾值為 1 元，驗證發警告不發 alert，警告含雙方價格與差值（pass: diff=10 > 5, 發資料異常警告含台銀 sell=4703、玉山 sell=4713、差值 10 元）
@@ -31,6 +35,5 @@ T008 (整合測試) 目前僅標記 done，但**驗證標準全未勾**（0/10�
 - [x] 測試 9：模擬 Yahoo Finance 失敗，驗證 Alpha Vantage fallback 成功，source 顯示 "alpha_vantage"（pass: source=alpha_vantage, price=$4630.0）
 - [x] 測試 10：建立 8 天前的快期檔案，執行 --check，確認舊快取被刪除（pass: 8 天前快取檔案已刪除）
 
-## 備註
-
-測試 3/4/5/7/8/9/10 需要暫時修改程式或快取來模擬失敗情境。
+## 執行紀錄
+- tests/test_03_local_alert.py, test_04_cross_validation.py, test_05_local_baseline_fail.py, test_07_intl_alert.py, test_08_intl_baseline_fail.py, test_09_av_fallback.py, test_10_cache_cleanup.py 已實作並通過

@@ -1,10 +1,15 @@
 ---
 github_issue: https://github.com/gentoobreaking/ai-tasks/issues/253
 title: 快取管理 + 基準取得失敗 alert
+type: feature
+priority: medium
 status: done
-assignee: 寶寶
+depends_on:
+  - T002
+  - T003
+assignee: "pi with opencode"
 created: 2026-05-01
-updated: 2026-05-01
+updated: 2026-08-30
 ---
 
 ## 目標
@@ -20,10 +25,14 @@ updated: 2026-05-01
 - history 快取已移除（不需要）
 - `--daily` 模式已移除（不需要）
 
-## 驗證標準
+## 驗收標準
 
 - [x] 快取寫入後 7 天內不會被清理
 - [x] 快取超過 7 天會被刪除（需等待或手動模擬）（Test 10 驗證：8 天前快取檔案被刪除）
 - [x] gold_local 基準失敗 alert 包含「快存狀態」「day page rows 數」「前一營業日」（Test 5 驗證：alert 含快取狀態、rows 數、前一營業日結果）
 - [x] gold_intl 基準失敗 alert 包含「快存狀態」「前一小時」「金屬名稱」（Test 8 驗證：alert 含快取狀態、前一小時結果、金屬名稱）
 - [x] /tmp/gold_monitor_history.json 不再產生（實現中移除 history 快取，不再產生）
+
+## 執行紀錄
+- CacheManager._cleanup_old_cache() 在每次 _save_json_cache() 時呼叫
+- AlertManager 格式化基準失敗 alert 含完整診斷資訊

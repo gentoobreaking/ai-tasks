@@ -1,10 +1,14 @@
 ---
 github_issue: https://github.com/gentoobreaking/ai-tasks/issues/251
 title: 更新 config.json schema + 閾值設定
+type: feature
+priority: medium
 status: done
-assignee: 寶寶
+depends_on:
+  - T001
+assignee: "pi with opencode"
 created: 2026-05-01
-updated: 2026-05-01
+updated: 2026-08-30
 ---
 
 ## 目標
@@ -17,10 +21,14 @@ updated: 2026-05-01
 - 新增 monitor_types、intl_sources、cache_cleanup_after_daily
 - 兩支程式各自有 ConfigManager，讀舊格式自動轉換
 
-## 驗證標準
+## 驗收標準
 
 - [x] config.json 已更新為新格式
 - [x] gold_local_monitor.py 正確讀取 gold_local 閾值
 - [x] gold_intl_monitor.py 正確讀取 gold_intl / silver_intl / platinum_intl 閾值
 - [x] 舊格式 config（gold/silver/platinum）自動轉換
 - [x] 手動修改 config.json 閾值後，程式讀取正確（需手動測試）（Test 3/7 驗證：temp 調低閾值後恢復，ConfigManager 讀取正確）
+
+## 執行紀錄
+- config.example.json 包含新 schema
+- ConfigManager.migrate() 處理舊格式轉換

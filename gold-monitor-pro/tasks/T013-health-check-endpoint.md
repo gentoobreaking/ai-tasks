@@ -1,10 +1,14 @@
 ---
 github_issue: https://github.com/gentoobreaking/ai-tasks/issues/259
 title: 新增 Health check endpoint + 結構化 JSON 日誌
-github_issue: https://github.com/gentoobreaking/ai-tasks/issues/259
-/title: 新增 Health check endpoint + 結構化 JSON 日誌
-/status: done
-assignee: 寶寶
+type: feature
+priority: medium
+status: done
+depends_on:
+  - T012
+assignee: "pi with opencode"
+created: 2026-08-28
+updated: 2026-08-30
 ---
 
 ## 目標
@@ -24,9 +28,13 @@ assignee: 寶寶
 - `--log-format json` 選項
 - 每次 `--check` 輸出 JSON 格式日誌：`{"timestamp":..., "metal":..., "source":..., "buy":..., "sell":..., "change":..., "threshold":..., "alert":true/false}`
 
-## 驗證標準
+## 驗收標準
 
 - [x] `--serve` 模式下 `GET /health` 回傳 200 與 sources 狀態
 - [x] `--log-format json` 輸出符合 JSON schema
 - [x] 日誌包含 metal, source, buy, sell, change, threshold, alert 欄位
 - [x] Health check 可配置監聽 port (預設 8080)
+
+## 執行紀錄
+- history_api.py 實作 /health 端點與 --serve 模式
+- 結構化 JSON 日誌輸出已實作

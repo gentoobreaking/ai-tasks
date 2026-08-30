@@ -1,10 +1,14 @@
 ---
 github_issue: https://github.com/gentoobreaking/ai-tasks/issues/248
 title: 重寫 gold_local 監控邏輯
+type: feature
+priority: high
 status: done
-assignee: 寶寶
+depends_on:
+  - T001
+assignee: "pi with opencode"
 created: 2026-05-01
-updated: 2026-05-01
+updated: 2026-08-30
 ---
 
 ## 目標
@@ -20,7 +24,7 @@ updated: 2026-05-01
 | 快取太舊 + 只有 1 row | 同上 | 前一營業日 day page 最後一筆 | 比對 |
 | 都拿不到 | 快取太舊 + rows < 2 + 前一營業日也失敗 | 無 | 發 alert（基準取得失敗） |
 
-## 驗證標準
+## 驗收標準
 
 - [x] 快取新鮮時用快取比對（同日、10 分鐘內）
 - [x] 快取太舊 + >= 2 rows → 用 day page 倒數第二筆
@@ -30,3 +34,8 @@ updated: 2026-05-01
 - [x] 變動 >= 閾值 → 交叉驗證 → alert（需暫時調低閾值觸發）（Test 3 驗證：閾值 30→1，change=3 >= 1 → alert）
 - [x] 變動 < 閾值 → 不 alert（Test 3 驗證：閾值恢復為 30，預設不觸發 alert）
 - [x] 快取只保留 7 天（Test 10 驗證：8 天前快取被刪除）
+
+## 執行紀錄
+- 已在 src/gold_local_monitor.py 實作完整比對邏輯
+- CacheManager 實作快取 TTL 與清理
+- fetch_prev_business_day_close 處理連假最多往前 5 天

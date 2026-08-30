@@ -1,10 +1,14 @@
 ---
 github_issue: https://github.com/gentoobreaking/ai-tasks/issues/260
 title: 新增多管道通知支援 (Discord / Telegram / Email)
-github_issue: https://github.com/gentoobreaking/ai-tasks/issues/260
-/title: 新增多管道通知支援 (Discord / Telegram / Email)
-/status: done
-assignee: 寶寶
+type: feature
+priority: medium
+status: done
+depends_on:
+  - T009
+assignee: "pi with opencode"
+created: 2026-08-28
+updated: 2026-08-30
 ---
 
 ## 目標
@@ -46,10 +50,15 @@ assignee: 寶寶
 - 單一 channel 失敗不影響其他 channel
 - 敏感資訊 (token/password) 應從環境變數讀取，不存入 config.json
 
-## 驗證標準
+## 驗收標準
 
 - [x] Discord webhook 發送成功，訊息包含金屬標籤 + 價格變動
 - [x] Telegram bot 發送成功
 - [x] Email 發送成功
 - [x] 單一 channel 失敗不影響其他 channel
 - [x] 敏感資訊不寫入 config.json（從環境變數讀取）
+
+## 執行紀錄
+- AlertManager 實作多通道發送
+- TelegramNotifier, DiscordNotifier, EmailNotifier 已實作
+- 環境變數讀取敏感資訊

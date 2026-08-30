@@ -1,6 +1,6 @@
 # 📁 Projects Dashboard
 
-> 最後更新: 2026-08-30 15:18 · 自動生成
+> 最後更新: 2026-08-30 16:07 · 自動生成
 
 ---
 
@@ -9,9 +9,9 @@
 | 指標 | 數量 |
 |------|------|
 | 專案數 | 59 |
-| 任務總數 | 1416 |
-| ✅ 已完成 | 1345 |
-| ⬜ 待處理 | 9 |
+| 任務總數 | 1418 |
+| ✅ 已完成 | 1353 |
+| ⬜ 待處理 | 3 |
 | 🔄 進行中 | 0 |
 | ⏭️ 跳過 | 62 |
 | 總完成率 | 99% |
@@ -23,12 +23,6 @@
 | gold-analysis | [T048-rest-exchange-client-verification](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T048-rest-exchange-client-verification.md) | RestExchangeClient 實盤冒煙測試 | ⬜ |
 | gold-analysis | [T058-fix-f821-undefined](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T058-fix-f821-undefined.md) | 修復 F821 未定義名稱 (macd List 等) | ⬜ |
 | gold-analysis | [T059-ruff-cleanup-precommit](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T059-ruff-cleanup-precommit.md) | ruff 清理 + pre-commit + CI lint 閘門 | ⬜ |
-| gold-monitor-pro | [T009-bring-source-code-into-project](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-monitor-pro/tasks/T009-bring-source-code-into-project.md) | 將實現程式碼移入專案目錄 | ⬜ |
-| gold-monitor-pro | [T010-fix-readme-task-links](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-monitor-pro/tasks/T010-fix-readme-task-links.md) | 更新 README task 表格的 GitHub 連結 | ⬜ |
-| gold-monitor-pro | [T011-complete-t008-integration-tests](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-monitor-pro/tasks/T011-complete-t008-integration-tests.md) | 完成 T008 剩餘整合測試案例 | ⬜ |
-| gold-monitor-pro | [T012-price-history-chart-api](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-monitor-pro/tasks/T012-price-history-chart-api.md) | 新增黃金/白銀/鉑金價格歷史圖表 API | ⬜ |
-| gold-monitor-pro | [T013-health-check-endpoint](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-monitor-pro/tasks/T013-health-check-endpoint.md) | 新增 Health check endpoint + 結構化 JSON 日誌 | ⬜ |
-| gold-monitor-pro | [T014-multi-channel-notifications](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-monitor-pro/tasks/T014-multi-channel-notifications.md) | 新增多管道通知支援 (Discord / Telegram / Email) | ⬜ |
 
 ---
 
@@ -36,9 +30,9 @@
 
 | 指標 | 數值 |
 |------|------|
-| 過去 7 天完成 | 339 |
-| 過去 30 天完成 | 691 |
-| 平均週期時間 | 2.0 天 |
+| 過去 7 天完成 | 355 |
+| 過去 30 天完成 | 707 |
+| 平均週期時間 | 3.0 天 |
 | 週期時間中位數 | 0.0 天 |
 
 
@@ -47,10 +41,10 @@ xychart-beta
     title "過去 14 天任務完成趨勢"
     x-axis ["08-17", "08-18", "08-19", "08-20", "08-21", "08-22", "08-23", "08-24", "08-25", "08-26", "08-27", "08-28", "08-29", "08-30"]
     y-axis "完成數" 0 --> 165
-    line [119, 22, 16, 0, 3, 28, 0, 77, 165, 69, 0, 28, 0, 0]
+    line [119, 22, 16, 0, 3, 28, 0, 77, 165, 69, 0, 23, 0, 21]
 ```
 
-📊 總計: 527 | 日均: 37.6 | 本週: 339 | 📈 成長中
+📊 總計: 543 | 日均: 38.8 | 本週: 355 | 📈 成長中
 
 ## 📋 專案列表
 
@@ -72,7 +66,7 @@ xychart-beta
 | ✅ | [github-data-review](https://github.com/gentoobreaking/ai-tasks/tree/main/github-data-review) | 8 | 8 | 0 | 0 | 0 | ████████████████████ 100% | 2026-04-28 |
 | ✅ | [global-policy-refactor](https://github.com/gentoobreaking/ai-tasks/tree/main/global-policy-refactor) | 3 | 3 | 0 | 0 | 0 | ████████████████████ 100% | 2026-05-07 |
 | ⬜ | [gold-analysis](https://github.com/gentoobreaking/ai-tasks/tree/main/gold-analysis) | 67 | 64 | 3 | 0 | 0 | ███████████████████░ 95% | 2026-08-28 |
-| ⬜ | [gold-monitor-pro](https://github.com/gentoobreaking/ai-tasks/tree/main/gold-monitor-pro) | 19 | 13 | 6 | 0 | 0 | █████████████░░░░░░░ 68% | 2026-08-28 |
+| ✅ | [gold-monitor-pro](https://github.com/gentoobreaking/ai-tasks/tree/main/gold-monitor-pro) | 21 | 21 | 0 | 0 | 0 | ████████████████████ 100% | 2026-08-30 |
 | ✅ | [gpt-sovits-research](https://github.com/gentoobreaking/ai-tasks/tree/main/gpt-sovits-research) | 1 | 1 | 0 | 0 | 0 | ████████████████████ 100% | 2026-04-21 |
 | ✅ | [gpt-sovits-voice-presets-research](https://github.com/gentoobreaking/ai-tasks/tree/main/gpt-sovits-voice-presets-research) | 1 | 1 | 0 | 0 | 0 | ████████████████████ 100% | 2026-04-21 |
 | ✅ | [gpt-sovits-voices-research](https://github.com/gentoobreaking/ai-tasks/tree/main/gpt-sovits-voices-research) | 1 | 1 | 0 | 0 | 0 | ████████████████████ 100% | 2026-04-21 |
