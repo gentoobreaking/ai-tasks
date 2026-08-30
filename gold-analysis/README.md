@@ -51,6 +51,7 @@
 | 生產環境接線（監控/重訓/A-B/交易執行） |
 | pydantic Settings extra_forbidden 導致 API 啟動失敗 |
 | 重建 app.core + 缺失服務（price_service / decision_service / routes init 循環導入修復） |
+| RestExchangeClient 實盤冒煙測試 |
 | 開發環境驗證 |
 | 數據庫架構階段驗證 |
 | 數據庫拆分任務最終驗收 |
@@ -61,6 +62,7 @@
 | 接線真實告警通道並替換 mock 情緒/資料 |
 | 統一代碼庫：以 backend/app 為唯一來源 |
 | F821 未定義名稱 (macd List 等) |
+| ruff 清理 + pre-commit + CI lint 閘門 |
 | 環境可重現化 (uv + uv.lock；修正 venv 直譯器不一致) |
 | 文件 (README/AGENTS) 對齊實際架構 |
 | 決策可解釋性 — SHAP 特徵貢獻 |
@@ -86,8 +88,7 @@
 
 | Task | 名稱 | 說明 |
 |------|------|------|
-| [T48-rest-exchange-client-verification](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T048-rest-exchange-client-verification.md) | RestExchangeClient 實盤冒煙測試 | |
-| [T59-ruff-cleanup-precommit](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T059-ruff-cleanup-precommit.md) | ruff 清理 + pre-commit + CI lint 閘門 | |
+| | | |
 
 ## Task 列表
 
@@ -140,7 +141,7 @@
 | [T45-advanced-runtime-wiring](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T045-advanced-runtime-wiring.md) | 生產環境接線（監控/重訓/A-B/交易執行） | ✅ done |
 | [T46-settings-extra-ignore](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T046-settings-extra-ignore.md) | 修復 pydantic Settings extra_forbidden 導致 API 啟動失敗 | ✅ done |
 | [T47-rebuild-app-core-services](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T047-rebuild-app-core-services.md) | 重建 app.core + 缺失服務（price_service / decision_service / routes init 循環導入修復） | ✅ done |
-| [T48-rest-exchange-client-verification](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T048-rest-exchange-client-verification.md) | RestExchangeClient 實盤冒煙測試 | 📋 pending |
+| [T48-rest-exchange-client-verification](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T048-rest-exchange-client-verification.md) | RestExchangeClient 實盤冒煙測試 | ✅ done |
 | [T49-environment-verification](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T049-environment-verification.md) | 開發環境驗證 | ✅ done |
 | [T50-database-stage-verification](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T050-database-stage-verification.md) | 數據庫架構階段驗證 | ✅ done |
 | [T51-database-final-verification](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T051-database-final-verification.md) | 數據庫拆分任務最終驗收 | ✅ done |
@@ -151,7 +152,7 @@
 | [T56-real-notifications-mock-data](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T056-real-notifications-mock-data.md) | 接線真實告警通道並替換 mock 情緒/資料 | ✅ done |
 | [T57-consolidate-codebases](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T057-consolidate-codebases.md) | 統一代碼庫：以 backend/app 為唯一來源 | ✅ done |
 | [T58-fix-f821-undefined](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T058-fix-f821-undefined.md) | 修復 F821 未定義名稱 (macd List 等) | ✅ done |
-| [T59-ruff-cleanup-precommit](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T059-ruff-cleanup-precommit.md) | ruff 清理 + pre-commit + CI lint 閘門 | 📋 pending |
+| [T59-ruff-cleanup-precommit](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T059-ruff-cleanup-precommit.md) | ruff 清理 + pre-commit + CI lint 閘門 | ✅ done |
 | [T60-reproducible-env-uv](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T060-reproducible-env-uv.md) | 環境可重現化 (uv + uv.lock；修正 venv 直譯器不一致) | ✅ done |
 | [T61-update-docs](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T061-update-docs.md) | 更新文件 (README/AGENTS) 對齊實際架構 | ✅ done |
 | [T62-decision-explainability-shap](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T062-decision-explainability-shap.md) | 決策可解釋性 — SHAP 特徵貢獻 | ✅ done |
@@ -161,6 +162,6 @@
 | [T66-data-freshness-sla](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T066-data-freshness-sla.md) | 資料新鮮度 SLA 監控 | ✅ done |
 | [T67-webhook-signal-ingest](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T067-webhook-signal-ingest.md) | TradingView / 外部 webhook 訊號接入 | ✅ done |
 
-**✅ done: 65 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 2**
+**✅ done: 67 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 0**
 
-> 自動生成於 2026-08-30 19:03
+> 自動生成於 2026-08-30 20:03

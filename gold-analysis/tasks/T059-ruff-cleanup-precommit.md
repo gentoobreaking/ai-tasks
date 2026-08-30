@@ -5,11 +5,11 @@ title: ruff 清理 + pre-commit + CI lint 閘門
 project: gold-analysis
 type: refactor
 priority: medium
-status: pending
+status: done
 depends_on: [T058]
 assignee: "pi"
 created: 2026-08-28
-updated: 2026-08-28
+updated: 2026-08-30
 ---
 
 # T059 - ruff 清理 + pre-commit + CI lint 閘門
