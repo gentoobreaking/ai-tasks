@@ -1,6 +1,6 @@
-# 📅 Daily Dashboard - 2026-08-30
+# 📅 Daily Dashboard - 2026-08-31
 
-> 最後更新: 2026-08-30 20:03 · 自動生成
+> 最後更新: 2026-08-31 21:20 · 自動生成
 
 ---
 
@@ -8,11 +8,11 @@
 
 | 指標 | 數量 |
 |------|------|
-| 新增任務 | 2 |
-| 完成任務 | 24 |
+| 新增任務 | 17 |
+| 完成任務 | 23 |
 | 進行中 | 0 |
-| 待處理 | 0 |
-| 完成率 | 100% |
+| 待處理 | 1 |
+| 完成率 | 95% |
 
 ---
 
@@ -22,7 +22,7 @@
 |------|------|
 | 今日完成速率 | 24 任務 |
 | 近 7 日速率 | 24 任務 |
-| 平均循環天數 | 56.4 天 |
+| 平均循環天數 | 0.3 天 |
 | 今日完成任務循環時間樣本 | 24 筆 |
 
 ---
@@ -31,8 +31,23 @@
 
 | 專案 | 任務 | 標題 |
 | -- | -- | -- |
-| gold-monitor-pro | [T020-monitor-cli-entrypoints-and-scheduler-wiring](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-monitor-pro/tasks/T020-monitor-cli-entrypoints-and-scheduler-wiring.md) | 監控器 CLI 進入點與排程器接線 |
-| gold-monitor-pro | [T021-all-entrypoint-e2e-tests](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-monitor-pro/tasks/T021-all-entrypoint-e2e-tests.md) | 所有入口點的 e2e 煙霧測試 |
+| tw-quant-db | [T020-trading-calendar](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-db/tasks/T020-trading-calendar.md) | core.trading_calendar Table |
+| tw-quant-db | [T021-missing-dates-detection](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-db/tasks/T021-missing-dates-detection.md) | Missing Date Detection Query |
+| tw-quant-db | [T022-stock-selection-loader](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-db/tasks/T022-stock-selection-loader.md) | Stock Selection Loader |
+| tw-quant-db | [T023-pgx-dependency](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-db/tasks/T023-pgx-dependency.md) | pgx Dependency + DB Connection |
+| tw-quant-db | [T024-upsert-prices](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-db/tasks/T024-upsert-prices.md) | Upsert Prices to core.daily_prices |
+| tw-quant-db | [T025-wire-persistence](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-db/tasks/T025-wire-persistence.md) | Wire runBackfill to Persist Fetched Data |
+| tw-quant-db | [T026-quality-scoring](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-db/tasks/T026-quality-scoring.md) | Quality Scoring + Coverage Score |
+| tw-quant-db | [T027-rate-limiting](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-db/tasks/T027-rate-limiting.md) | Rate Limiting |
+| tw-quant-db | [T028-retry-backoff](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-db/tasks/T028-retry-backoff.md) | Retry + Backoff |
+| tw-quant-db | [T029-cli-flags](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-db/tasks/T029-cli-flags.md) | CLI Flags |
+| tw-quant-db | [T030-monthly-orchestrator](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-db/tasks/T030-monthly-orchestrator.md) | Monthly Backfill Orchestrator |
+| tw-quant-db | [T031-checkpoint-resume](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-db/tasks/T031-checkpoint-resume.md) | Checkpoint/Resume Mechanism |
+| tw-quant-db | [T032-dockerfile-go](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-db/tasks/T032-dockerfile-go.md) | Dockerfile.backfill for Go Binary |
+| tw-quant-db | [T033-docker-compose](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-db/tasks/T033-docker-compose.md) | docker-compose.yml Backfill Service |
+| tw-quant-db | [T034-integration-test](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-db/tasks/T034-integration-test.md) | Integration Test |
+| tw-quant-db | [T035-acceptance-audit](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-db/tasks/T035-acceptance-audit.md) | Acceptance Audit |
+| tw-quant-db | [T036-mcp-go-migration](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-db/tasks/T036-mcp-go-migration.md) | Migrate all 4 MCP sources to mcp-go client |
 
 ---
 
@@ -40,36 +55,37 @@
 
 | 專案 | 任務 | 標題 |
 | -- | -- | -- |
-| gold-analysis | [T048-rest-exchange-client-verification](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T048-rest-exchange-client-verification.md) | RestExchangeClient 實盤冒煙測試 |
-| gold-analysis | [T058-fix-f821-undefined](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T058-fix-f821-undefined.md) | 修復 F821 未定義名稱 (macd List 等) |
-| gold-analysis | [T059-ruff-cleanup-precommit](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-analysis/tasks/T059-ruff-cleanup-precommit.md) | ruff 清理 + pre-commit + CI lint 閘門 |
-| gold-monitor-pro | [T001-separate-monitor-objects-local-vs-intl](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-monitor-pro/tasks/T001-separate-monitor-objects-local-vs-intl.md) | 分離監控物件（存摺 vs 國際分開） |
-| gold-monitor-pro | [T002-rewrite-gold-local-monitoring-logic](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-monitor-pro/tasks/T002-rewrite-gold-local-monitoring-logic.md) | 重寫 gold_local 監控邏輯 |
-| gold-monitor-pro | [T003-rewrite-international-price-monitoring-logic](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-monitor-pro/tasks/T003-rewrite-international-price-monitoring-logic.md) | 重寫國際報價監控邏輯 |
-| gold-monitor-pro | [T004-cross-validation-taiwan-vs-esun-bank](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-monitor-pro/tasks/T004-cross-validation-taiwan-vs-esun-bank.md) | 交叉驗證機制（台銀 vs 玉山銀行） |
-| gold-monitor-pro | [T005-update-config-schema-and-thresholds](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-monitor-pro/tasks/T005-update-config-schema-and-thresholds.md) | 更新 config.json schema + 閾值設定 |
-| gold-monitor-pro | [T006-remove-botadapter-for-silver-platinum](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-monitor-pro/tasks/T006-remove-botadapter-for-silver-platinum.md) | 銀/鉑金的 BOTAdapter 移除 |
-| gold-monitor-pro | [T007-cache-management-and-baseline-failure-alert](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-monitor-pro/tasks/T007-cache-management-and-baseline-failure-alert.md) | 快取管理 + 基準取得失敗 alert |
-| gold-monitor-pro | [T008-integration-test-against-official-quotes](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-monitor-pro/tasks/T008-integration-test-against-official-quotes.md) | 整合測試（比對官網報價） |
-| gold-monitor-pro | [T009-bring-source-code-into-project](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-monitor-pro/tasks/T009-bring-source-code-into-project.md) | 將實現程式碼移入專案目錄 |
-| gold-monitor-pro | [T010-fix-readme-task-links](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-monitor-pro/tasks/T010-fix-readme-task-links.md) | 更新 README task 表格的 GitHub 連結 |
-| gold-monitor-pro | [T011-complete-t008-integration-tests](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-monitor-pro/tasks/T011-complete-t008-integration-tests.md) | 完成 T008 剩餘整合測試案例 |
-| gold-monitor-pro | [T012-price-history-chart-api](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-monitor-pro/tasks/T012-price-history-chart-api.md) | 新增黃金/白銀/鉑金價格歷史圖表 API |
-| gold-monitor-pro | [T013-health-check-endpoint](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-monitor-pro/tasks/T013-health-check-endpoint.md) | 新增 Health check endpoint + 結構化 JSON 日誌 |
-| gold-monitor-pro | [T014-multi-channel-notifications](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-monitor-pro/tasks/T014-multi-channel-notifications.md) | 新增多管道通知支援 (Discord / Telegram / Email) |
-| gold-monitor-pro | [T015-web-dashboard](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-monitor-pro/tasks/T015-web-dashboard.md) | 人類可視化網頁儀表板（價格+走勢+健康） |
-| gold-monitor-pro | [T016-auto-scheduling-launchd](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-monitor-pro/tasks/T016-auto-scheduling-launchd.md) | macOS launchd 自動排程安裝 |
-| gold-monitor-pro | [T017-readme-sync](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-monitor-pro/tasks/T017-readme-sync.md) | README 同步到現狀 |
-| gold-monitor-pro | [T018-live-price-health-api](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-monitor-pro/tasks/T018-live-price-health-api.md) | 即時價格與強化健康 API |
-| gold-monitor-pro | [T019-human-readable-alerts](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-monitor-pro/tasks/T019-human-readable-alerts.md) | 人類易讀的 alert 訊息 |
-| gold-monitor-pro | [T020-monitor-cli-entrypoints-and-scheduler-wiring](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-monitor-pro/tasks/T020-monitor-cli-entrypoints-and-scheduler-wiring.md) | 監控器 CLI 進入點與排程器接線 |
-| gold-monitor-pro | [T021-all-entrypoint-e2e-tests](https://github.com/gentoobreaking/ai-tasks/blob/main/gold-monitor-pro/tasks/T021-all-entrypoint-e2e-tests.md) | 所有入口點的 e2e 煙霧測試 |
+| tw-quant-db | [T006-phase1b-pickup-switch](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-db/tasks/T006-phase1b-pickup-switch.md) | Phase 1b: tw-quant-pickup 切換到共享 PostgreSQL |
+| tw-quant-db | [T007-phase2-signal-selector](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-db/tasks/T007-phase2-signal-selector.md) | Phase 2: signal + selector 唯讀接入 core |
+| tw-quant-db | [T008-phase3-cleanup-monitoring](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-db/tasks/T008-phase3-cleanup-monitoring.md) | Phase 3: 收斂與優化 |
+| tw-quant-db | [T011-tw-quant-signal-db-postgres](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-db/tasks/T011-tw-quant-signal-db-postgres.md) | tw-quant-signal: SignalDB 切換到 PostgreSQL |
+| tw-quant-db | [T012-tw-quant-signal-frontend-api-test](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-db/tasks/T012-tw-quant-signal-frontend-api-test.md) | tw-quant-signal: 前端 API 驗證 |
+| tw-quant-db | [T016-tw-quant-daybrain-backfill](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-db/tasks/T016-tw-quant-daybrain-backfill.md) | Backfill from tw-quant-daybrain cache.db |
+| tw-quant-db | [T019-gold-analysis-mock-data-replacement](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-db/tasks/T019-gold-analysis-mock-data-replacement.md) | gold-analysis: 替換 Mock 數據為真實 PostgreSQL 資料 |
+| tw-quant-db | [T020-trading-calendar](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-db/tasks/T020-trading-calendar.md) | core.trading_calendar Table |
+| tw-quant-db | [T021-missing-dates-detection](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-db/tasks/T021-missing-dates-detection.md) | Missing Date Detection Query |
+| tw-quant-db | [T022-stock-selection-loader](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-db/tasks/T022-stock-selection-loader.md) | Stock Selection Loader |
+| tw-quant-db | [T023-pgx-dependency](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-db/tasks/T023-pgx-dependency.md) | pgx Dependency + DB Connection |
+| tw-quant-db | [T024-upsert-prices](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-db/tasks/T024-upsert-prices.md) | Upsert Prices to core.daily_prices |
+| tw-quant-db | [T025-wire-persistence](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-db/tasks/T025-wire-persistence.md) | Wire runBackfill to Persist Fetched Data |
+| tw-quant-db | [T026-quality-scoring](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-db/tasks/T026-quality-scoring.md) | Quality Scoring + Coverage Score |
+| tw-quant-db | [T027-rate-limiting](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-db/tasks/T027-rate-limiting.md) | Rate Limiting |
+| tw-quant-db | [T028-retry-backoff](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-db/tasks/T028-retry-backoff.md) | Retry + Backoff |
+| tw-quant-db | [T029-cli-flags](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-db/tasks/T029-cli-flags.md) | CLI Flags |
+| tw-quant-db | [T030-monthly-orchestrator](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-db/tasks/T030-monthly-orchestrator.md) | Monthly Backfill Orchestrator |
+| tw-quant-db | [T031-checkpoint-resume](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-db/tasks/T031-checkpoint-resume.md) | Checkpoint/Resume Mechanism |
+| tw-quant-db | [T032-dockerfile-go](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-db/tasks/T032-dockerfile-go.md) | Dockerfile.backfill for Go Binary |
+| tw-quant-db | [T033-docker-compose](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-db/tasks/T033-docker-compose.md) | docker-compose.yml Backfill Service |
+| tw-quant-db | [T034-integration-test](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-db/tasks/T034-integration-test.md) | Integration Test |
+| tw-quant-db | [T035-acceptance-audit](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-db/tasks/T035-acceptance-audit.md) | Acceptance Audit |
 
 ---
 
 ## 🔥 待處理高優先級
 
-_無_
+| 專案 | 任務 | 標題 | 優先 |
+| -- | -- | -- | -- |
+| tw-quant-db | [T036-mcp-go-migration](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-db/tasks/T036-mcp-go-migration.md) | Migrate all 4 MCP sources to mcp-go client | high |
 
 ---
 
@@ -81,7 +97,9 @@ _無_
 
 ## 📋 所有待處理任務
 
-_無_
+| 專案 | 任務 | 標題 | 優先 |
+| -- | -- | -- | -- |
+| tw-quant-db | [T036-mcp-go-migration](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-db/tasks/T036-mcp-go-migration.md) | Migrate all 4 MCP sources to mcp-go client | high |
 
 ---
 
