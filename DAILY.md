@@ -1,6 +1,6 @@
 # 📅 Daily Dashboard - 2026-08-31
 
-> 最後更新: 2026-08-31 21:20 · 自動生成
+> 最後更新: 2026-08-31 21:24 · 自動生成
 
 ---
 
@@ -9,10 +9,10 @@
 | 指標 | 數量 |
 |------|------|
 | 新增任務 | 17 |
-| 完成任務 | 23 |
+| 完成任務 | 24 |
 | 進行中 | 0 |
-| 待處理 | 1 |
-| 完成率 | 95% |
+| 待處理 | 0 |
+| 完成率 | 100% |
 
 ---
 
@@ -78,14 +78,13 @@
 | tw-quant-db | [T033-docker-compose](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-db/tasks/T033-docker-compose.md) | docker-compose.yml Backfill Service |
 | tw-quant-db | [T034-integration-test](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-db/tasks/T034-integration-test.md) | Integration Test |
 | tw-quant-db | [T035-acceptance-audit](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-db/tasks/T035-acceptance-audit.md) | Acceptance Audit |
+| tw-quant-db | [T036-mcp-go-migration](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-db/tasks/T036-mcp-go-migration.md) | Migrate all 4 MCP sources to mcp-go client |
 
 ---
 
 ## 🔥 待處理高優先級
 
-| 專案 | 任務 | 標題 | 優先 |
-| -- | -- | -- | -- |
-| tw-quant-db | [T036-mcp-go-migration](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-db/tasks/T036-mcp-go-migration.md) | Migrate all 4 MCP sources to mcp-go client | high |
+_無_
 
 ---
 
@@ -97,9 +96,7 @@ _無_
 
 ## 📋 所有待處理任務
 
-| 專案 | 任務 | 標題 | 優先 |
-| -- | -- | -- | -- |
-| tw-quant-db | [T036-mcp-go-migration](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-db/tasks/T036-mcp-go-migration.md) | Migrate all 4 MCP sources to mcp-go client | high |
+_無_
 
 ---
 

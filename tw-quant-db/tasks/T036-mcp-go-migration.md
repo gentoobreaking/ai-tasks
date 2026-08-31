@@ -5,7 +5,7 @@ title: Migrate all 4 MCP sources to mcp-go client
 assignee: "pi"
 priority: high
 type: 
-status: 
+status: done 
 depends_on: 
 github_issue: 
 created: 2026-08-31

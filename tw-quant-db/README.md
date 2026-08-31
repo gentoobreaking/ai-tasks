@@ -38,6 +38,7 @@
 | 任務 T033-docker-compose |
 | 任務 T034-integration-test |
 | 任務 T035-acceptance-audit |
+| Migrate all 4 MCP sources to mcp-go client |
 
 ## Skip 項目
 
@@ -55,7 +56,7 @@
 
 | Task | 名稱 | 說明 |
 |------|------|------|
-| [T36-mcp-go-migration](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-db/tasks/T036-mcp-go-migration.md) | Migrate all 4 MCP sources to mcp-go client | |
+| | | |
 
 ## Task 列表
 
@@ -96,8 +97,8 @@
 | [T33-docker-compose](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-db/tasks/T033-docker-compose.md) | 任務 T033-docker-compose | ✅ done |
 | [T34-integration-test](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-db/tasks/T034-integration-test.md) | 任務 T034-integration-test | ✅ done |
 | [T35-acceptance-audit](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-db/tasks/T035-acceptance-audit.md) | 任務 T035-acceptance-audit | ✅ done |
-| [T36-mcp-go-migration](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-db/tasks/T036-mcp-go-migration.md) | Migrate all 4 MCP sources to mcp-go client | 📋 pending |
+| [T36-mcp-go-migration](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-db/tasks/T036-mcp-go-migration.md) | Migrate all 4 MCP sources to mcp-go client | ✅ done |
 
-**✅ done: 34 | 🔧 in-progress: 0 | ⏭️ skip: 1 | 📋 pending: 1**
+**✅ done: 35 | 🔧 in-progress: 0 | ⏭️ skip: 1 | 📋 pending: 0**
 
-> 自動生成於 2026-08-31 21:20
+> 自動生成於 2026-08-31 21:24

@@ -1,6 +1,6 @@
 # 📁 Projects Dashboard
 
-> 最後更新: 2026-08-31 21:20 · 自動生成
+> 最後更新: 2026-08-31 21:24 · 自動生成
 
 ---
 
@@ -10,26 +10,11 @@
 |------|------|
 | 專案數 | 60 |
 | 任務總數 | 1454 |
-| ✅ 已完成 | 1390 |
-| ⬜ 待處理 | 1 |
+| ✅ 已完成 | 1391 |
+| ⬜ 待處理 | 0 |
 | 🔄 進行中 | 0 |
 | ⏭️ 跳過 | 63 |
-| 總完成率 | 99% |
-
-## 🔥 待處理高優先級任務
-
-| 專案 | 任務 | 標題 |
-|------|------|------|
-| tw-quant-db | [T036-mcp-go-migration](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-db/tasks/T036-mcp-go-migration.md) | Migrate all 4 MCP sources to mcp-go client |
-
----
-
-
-## ⬜ 待處理
-
-| 專案 | 任務 | 標題 | 狀態 |
-|------|------|------|------|
-| tw-quant-db | [T036-mcp-go-migration](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-db/tasks/T036-mcp-go-migration.md) | Migrate all 4 MCP sources to mcp-go client | ⬜ |
+| 總完成率 | 100% |
 
 ---
 
@@ -37,8 +22,8 @@
 
 | 指標 | 數值 |
 |------|------|
-| 過去 7 天完成 | 387 |
-| 過去 30 天完成 | 728 |
+| 過去 7 天完成 | 388 |
+| 過去 30 天完成 | 729 |
 | 平均週期時間 | 3.0 天 |
 | 週期時間中位數 | 0.0 天 |
 
@@ -48,10 +33,10 @@ xychart-beta
     title "過去 14 天任務完成趨勢"
     x-axis ["08-18", "08-19", "08-20", "08-21", "08-22", "08-23", "08-24", "08-25", "08-26", "08-27", "08-28", "08-29", "08-30", "08-31"]
     y-axis "完成數" 0 --> 165
-    line [22, 16, 0, 3, 28, 0, 77, 165, 69, 0, 23, 0, 30, 23]
+    line [22, 16, 0, 3, 28, 0, 77, 165, 69, 0, 23, 0, 30, 24]
 ```
 
-📊 總計: 456 | 日均: 32.6 | 本週: 310 | 📈 成長中
+📊 總計: 457 | 日均: 32.6 | 本週: 311 | 📈 成長中
 
 ## 📋 專案列表
 
@@ -107,7 +92,7 @@ xychart-beta
 | ✅ | [tasks-executor](https://github.com/gentoobreaking/ai-tasks/tree/main/tasks-executor) | 8 | 8 | 0 | 0 | 0 | ████████████████████ 100% | 2026-05-12 |
 | ✅ | [tw-quant](https://github.com/gentoobreaking/ai-tasks/tree/main/tw-quant) | 14 | 14 | 0 | 0 | 0 | ████████████████████ 100% | 2026-08-25 |
 | ✅ | [tw-quant-daybrain](https://github.com/gentoobreaking/ai-tasks/tree/main/tw-quant-daybrain) | 28 | 28 | 0 | 0 | 0 | ████████████████████ 100% | 2026-08-12 |
-| ⬜ | [tw-quant-db](https://github.com/gentoobreaking/ai-tasks/tree/main/tw-quant-db) | 36 | 34 | 1 | 0 | 1 | ███████████████████░ 97% | 2026-08-31 |
+| ✅ | [tw-quant-db](https://github.com/gentoobreaking/ai-tasks/tree/main/tw-quant-db) | 36 | 35 | 0 | 0 | 1 | ████████████████████ 100% | 2026-08-31 |
 | ✅ | [tw-quant-mcp](https://github.com/gentoobreaking/ai-tasks/tree/main/tw-quant-mcp) | 243 | 243 | 0 | 0 | 0 | ████████████████████ 100% | 2026-08-26 |
 | ✅ | [tw-quant-pickup](https://github.com/gentoobreaking/ai-tasks/tree/main/tw-quant-pickup) | 47 | 47 | 0 | 0 | 0 | ████████████████████ 100% | 2026-08-24 |
 | ✅ | [tw-quant-selector](https://github.com/gentoobreaking/ai-tasks/tree/main/tw-quant-selector) | 148 | 148 | 0 | 0 | 0 | ████████████████████ 100% | 2026-08-15 |
