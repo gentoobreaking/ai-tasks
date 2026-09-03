@@ -12,9 +12,11 @@
 | Data Normalizer |
 | Data Validator |
 | Transaction Repository |
+| Transaction Service |
 | Parcel Model & Repository |
 | GIS Adapter & Geometry Engine |
 | GIS 匯入管線（Parcel / Road） |
+| Algorithm / Valuation Config 版本化與鎖定 |
 
 ## Skip 項目
 
@@ -32,7 +34,6 @@
 
 | Task | 名稱 | 說明 |
 |------|------|------|
-| [T9-transaction-service](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T009-transaction-service.md) | Transaction Service | |
 | [T12-road-access-engine](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T012-road-access-engine.md) | Road Access Engine | |
 | [T13-comparable-engine](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T013-comparable-engine.md) | Comparable Engine | |
 | [T14-statistics-engine](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T014-statistics-engine.md) | Statistics Engine | |
@@ -48,7 +49,6 @@
 | [T24-observability](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T024-observability.md) | Observability Implementation | |
 | [T25-e2e-acceptance-test](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T025-e2e-acceptance-test.md) | End-to-End Acceptance Test | |
 | [T26-data-import-pipeline](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T026-data-import-pipeline.md) | Data Import Pipeline Integration | |
-| [T28-algorithm-config-versioning](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T028-algorithm-config-versioning.md) | Algorithm / Valuation Config 版本化與鎖定 | |
 | [T29-comparable-valuation-persistence](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T029-comparable-valuation-persistence.md) | Comparable / Valuation 結果持久化 | |
 
 ## Task 列表
@@ -63,7 +63,7 @@
 | [T6-data-normalizer](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T006-data-normalizer.md) | Data Normalizer | ✅ done |
 | [T7-data-validator](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T007-data-validator.md) | Data Validator | ✅ done |
 | [T8-transaction-repository](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T008-transaction-repository.md) | Transaction Repository | ✅ done |
-| [T9-transaction-service](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T009-transaction-service.md) | Transaction Service | 📋 pending |
+| [T9-transaction-service](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T009-transaction-service.md) | Transaction Service | ✅ done |
 | [T10-parcel-model-repository](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T010-parcel-model-repository.md) | Parcel Model & Repository | ✅ done |
 | [T11-gis-adapter-geometry-engine](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T011-gis-adapter-geometry-engine.md) | GIS Adapter & Geometry Engine | ✅ done |
 | [T12-road-access-engine](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T012-road-access-engine.md) | Road Access Engine | 📋 pending |
@@ -82,9 +82,9 @@
 | [T25-e2e-acceptance-test](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T025-e2e-acceptance-test.md) | End-to-End Acceptance Test | 📋 pending |
 | [T26-data-import-pipeline](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T026-data-import-pipeline.md) | Data Import Pipeline Integration | 📋 pending |
 | [T27-gis-import-pipeline](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T027-gis-import-pipeline.md) | GIS 匯入管線（Parcel / Road） | ✅ done |
-| [T28-algorithm-config-versioning](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T028-algorithm-config-versioning.md) | Algorithm / Valuation Config 版本化與鎖定 | 📋 pending |
+| [T28-algorithm-config-versioning](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T028-algorithm-config-versioning.md) | Algorithm / Valuation Config 版本化與鎖定 | ✅ done |
 | [T29-comparable-valuation-persistence](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T029-comparable-valuation-persistence.md) | Comparable / Valuation 結果持久化 | 📋 pending |
 
-**✅ done: 11 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 18**
+**✅ done: 13 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 16**
 
-> 自動生成於 2026-09-03 16:30
+> 自動生成於 2026-09-03 22:42
