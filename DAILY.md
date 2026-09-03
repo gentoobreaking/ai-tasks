@@ -1,6 +1,6 @@
 # 📅 Daily Dashboard - 2026-09-03
 
-> 最後更新: 2026-09-03 15:21 · 自動生成
+> 最後更新: 2026-09-03 16:30 · 自動生成
 
 ---
 
@@ -9,10 +9,10 @@
 | 指標 | 數量 |
 |------|------|
 | 新增任務 | 29 |
-| 完成任務 | 10 |
+| 完成任務 | 11 |
 | 進行中 | 0 |
-| 待處理 | 19 |
-| 完成率 | 34% |
+| 待處理 | 18 |
+| 完成率 | 37% |
 
 ---
 
@@ -77,6 +77,7 @@
 | tw-prop-mcp | [T008-transaction-repository](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T008-transaction-repository.md) | Transaction Repository |
 | tw-prop-mcp | [T010-parcel-model-repository](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T010-parcel-model-repository.md) | Parcel Model & Repository |
 | tw-prop-mcp | [T011-gis-adapter-geometry-engine](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T011-gis-adapter-geometry-engine.md) | GIS Adapter & Geometry Engine |
+| tw-prop-mcp | [T027-gis-import-pipeline](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T027-gis-import-pipeline.md) | GIS 匯入管線（Parcel / Road） |
 
 ---
 
@@ -97,7 +98,6 @@
 | tw-prop-mcp | [T021-ai-isolation-tests](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T021-ai-isolation-tests.md) | AI Isolation Tests | high |
 | tw-prop-mcp | [T025-e2e-acceptance-test](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T025-e2e-acceptance-test.md) | End-to-End Acceptance Test | high |
 | tw-prop-mcp | [T026-data-import-pipeline](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T026-data-import-pipeline.md) | Data Import Pipeline Integration | high |
-| tw-prop-mcp | [T027-gis-import-pipeline](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T027-gis-import-pipeline.md) | GIS 匯入管線（Parcel / Road） | high |
 | tw-prop-mcp | [T028-algorithm-config-versioning](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T028-algorithm-config-versioning.md) | Algorithm / Valuation Config 版本化與鎖定 | high |
 | tw-prop-mcp | [T029-comparable-valuation-persistence](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T029-comparable-valuation-persistence.md) | Comparable / Valuation 結果持久化 | high |
 
@@ -126,7 +126,6 @@ _無_
 | tw-prop-mcp | [T021-ai-isolation-tests](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T021-ai-isolation-tests.md) | AI Isolation Tests | high |
 | tw-prop-mcp | [T025-e2e-acceptance-test](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T025-e2e-acceptance-test.md) | End-to-End Acceptance Test | high |
 | tw-prop-mcp | [T026-data-import-pipeline](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T026-data-import-pipeline.md) | Data Import Pipeline Integration | high |
-| tw-prop-mcp | [T027-gis-import-pipeline](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T027-gis-import-pipeline.md) | GIS 匯入管線（Parcel / Road） | high |
 | tw-prop-mcp | [T028-algorithm-config-versioning](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T028-algorithm-config-versioning.md) | Algorithm / Valuation Config 版本化與鎖定 | high |
 | tw-prop-mcp | [T029-comparable-valuation-persistence](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T029-comparable-valuation-persistence.md) | Comparable / Valuation 結果持久化 | high |
 | tw-prop-mcp | [T022-frontend](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T022-frontend.md) | Frontend Implementation | medium |
