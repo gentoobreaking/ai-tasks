@@ -2,8 +2,8 @@
 github_issue: ""
 title: Valuation Engine
 type: task
-priority: high
-status: pending
+status: done
+updated: 2026-09-04
 depends_on: ["T014", "T028"]
 assignee: pi
 created: 2026-09-03

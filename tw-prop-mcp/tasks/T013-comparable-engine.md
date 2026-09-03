@@ -3,7 +3,7 @@ github_issue: ""
 title: Comparable Engine
 type: task
 priority: high
-status: pending
+status: done
 depends_on: ["T009", "T010", "T012", "T028"]
 assignee: pi
 created: 2026-09-03

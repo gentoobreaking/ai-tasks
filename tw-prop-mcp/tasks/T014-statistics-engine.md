@@ -2,12 +2,11 @@
 github_issue: ""
 title: Statistics Engine
 type: task
-priority: high
-status: pending
+status: done
 depends_on: ["T013"]
 assignee: pi
 created: 2026-09-03
-updated: 2026-09-03
+updated: 2026-09-04
 ---
 
 # T014 - Statistics Engine

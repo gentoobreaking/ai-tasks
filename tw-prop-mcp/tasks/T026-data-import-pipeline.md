@@ -2,12 +2,11 @@
 github_issue: ""
 title: Data Import Pipeline Integration
 type: task
-priority: high
-status: pending
+status: done
 depends_on: ["T004", "T005", "T006", "T007", "T008"]
 assignee: pi
 created: 2026-09-03
-updated: 2026-09-03
+updated: 2026-09-04
 ---
 
 # T026 - Data Import Pipeline Integration

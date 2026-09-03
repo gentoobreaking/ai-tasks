@@ -3,7 +3,7 @@ github_issue: ""
 title: Road Access Engine
 type: task
 priority: high
-status: pending
+status: done
 depends_on: ["T011", "T027"]
 assignee: pi
 created: 2026-09-03
@@ -24,7 +24,7 @@ updated: 2026-09-03
   - ROAD_NEARBY：道路在指定距離內但無法證明直接臨路
   - NO_ROAD_DETECTED：搜尋範圍內無道路
   - UNKNOWN：GIS 來源不足
-- [ ] 道路寬度來源分類：OFFICIAL, GIS_DERIVED, UNKNOWN
+- [x] 道路寬度來源分類：OFFICIAL, GIS_DERIVED, UNKNOWN
 - [ ] 四種 case (ROAD_ADJACENT, ROAD_NEARBY, NO_ROAD_DETECTED, UNKNOWN) 皆有測試案例
 - [ ] 禁止從衛星圖「猜」道路寬度當成官方資料
 
