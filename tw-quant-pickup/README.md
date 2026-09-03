@@ -51,6 +51,8 @@
 | 個股 CMoney 四法合理價計算器 |
 | ETF 兩法合理價計算器 |
 | 合理價 Markdown 報表匯出 |
+| pickup: remove daily_prices backfill, delegate to tw-quant-db Go backfill |
+| scheduler: integrate HTTP API to trigger backfill before daily pipeline |
 
 ## Skip 項目
 
@@ -121,7 +123,9 @@
 | [T44-stock-fair-value-cmoney4](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T044-stock-fair-value-cmoney4.md) | 個股 CMoney 四法合理價計算器 | ✅ done |
 | [T45-etf-fair-value](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T045-etf-fair-value.md) | ETF 兩法合理價計算器 | ✅ done |
 | [T46-fair-value-md-report](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T046-fair-value-md-report.md) | 合理價 Markdown 報表匯出 | ✅ done |
+| [T47-remove-daily-prices-backfill](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T047-remove-daily-prices-backfill.md) | pickup: remove daily_prices backfill, delegate to tw-quant-db Go backfill | ✅ done |
+| [T48-scheduler-http-backfill-integration](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-pickup/tasks/T048-scheduler-http-backfill-integration.md) | scheduler: integrate HTTP API to trigger backfill before daily pipeline | ✅ done |
 
-**✅ done: 47 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 0**
+**✅ done: 49 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 0**
 
-> 自動生成於 2026-08-31 21:24
+> 自動生成於 2026-09-03 11:23

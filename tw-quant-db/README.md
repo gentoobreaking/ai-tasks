@@ -39,6 +39,8 @@
 | 任務 T034-integration-test |
 | 任務 T035-acceptance-audit |
 | Migrate all 4 MCP sources to mcp-go client |
+| backfill: add CANONICAL/FALLBACK dual-write with signal handling |
+| backfill: add HTTP API endpoint to trigger/check backfill status |
 
 ## Skip 項目
 
@@ -98,7 +100,9 @@
 | [T34-integration-test](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-db/tasks/T034-integration-test.md) | 任務 T034-integration-test | ✅ done |
 | [T35-acceptance-audit](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-db/tasks/T035-acceptance-audit.md) | 任務 T035-acceptance-audit | ✅ done |
 | [T36-mcp-go-migration](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-db/tasks/T036-mcp-go-migration.md) | Migrate all 4 MCP sources to mcp-go client | ✅ done |
+| [T37-backfill-canonical-fallback-dualwrite](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-db/tasks/T037-backfill-canonical-fallback-dualwrite.md) | backfill: add CANONICAL/FALLBACK dual-write with signal handling | ✅ done |
+| [T38-backfill-http-api](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-quant-db/tasks/T038-backfill-http-api.md) | backfill: add HTTP API endpoint to trigger/check backfill status | ✅ done |
 
-**✅ done: 35 | 🔧 in-progress: 0 | ⏭️ skip: 1 | 📋 pending: 0**
+**✅ done: 37 | 🔧 in-progress: 0 | ⏭️ skip: 1 | 📋 pending: 0**
 
-> 自動生成於 2026-08-31 21:24
+> 自動生成於 2026-09-03 11:23

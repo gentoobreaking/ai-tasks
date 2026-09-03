@@ -1,6 +1,6 @@
 # 📁 Projects Dashboard
 
-> 最後更新: 2026-08-31 21:24 · 自動生成
+> 最後更新: 2026-09-03 11:23 · 自動生成
 
 ---
 
@@ -8,13 +8,65 @@
 
 | 指標 | 數量 |
 |------|------|
-| 專案數 | 60 |
-| 任務總數 | 1454 |
-| ✅ 已完成 | 1391 |
-| ⬜ 待處理 | 0 |
+| 專案數 | 61 |
+| 任務總數 | 1487 |
+| ✅ 已完成 | 1403 |
+| ⬜ 待處理 | 21 |
 | 🔄 進行中 | 0 |
 | ⏭️ 跳過 | 63 |
-| 總完成率 | 100% |
+| 總完成率 | 98% |
+
+## 🔥 待處理高優先級任務
+
+| 專案 | 任務 | 標題 |
+|------|------|------|
+| tw-prop-mcp | [T008-transaction-repository](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T008-transaction-repository.md) | Transaction Repository |
+| tw-prop-mcp | [T009-transaction-service](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T009-transaction-service.md) | Transaction Service |
+| tw-prop-mcp | [T011-gis-adapter-geometry-engine](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T011-gis-adapter-geometry-engine.md) | GIS Adapter & Geometry Engine |
+| tw-prop-mcp | [T012-road-access-engine](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T012-road-access-engine.md) | Road Access Engine |
+| tw-prop-mcp | [T013-comparable-engine](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T013-comparable-engine.md) | Comparable Engine |
+| tw-prop-mcp | [T014-statistics-engine](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T014-statistics-engine.md) | Statistics Engine |
+| tw-prop-mcp | [T015-valuation-engine](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T015-valuation-engine.md) | Valuation Engine |
+| tw-prop-mcp | [T016-provenance-system](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T016-provenance-system.md) | Provenance System |
+| tw-prop-mcp | [T017-mcp-server](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T017-mcp-server.md) | MCP Server Implementation |
+| tw-prop-mcp | [T018-mcp-contract-tests](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T018-mcp-contract-tests.md) | MCP Contract Tests |
+| tw-prop-mcp | [T019-reproducibility-tests](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T019-reproducibility-tests.md) | Reproducibility Tests |
+| tw-prop-mcp | [T020-artifact-lock-tests](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T020-artifact-lock-tests.md) | Artifact Lock Tests |
+| tw-prop-mcp | [T021-ai-isolation-tests](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T021-ai-isolation-tests.md) | AI Isolation Tests |
+| tw-prop-mcp | [T025-e2e-acceptance-test](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T025-e2e-acceptance-test.md) | End-to-End Acceptance Test |
+| tw-prop-mcp | [T026-data-import-pipeline](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T026-data-import-pipeline.md) | Data Import Pipeline Integration |
+| tw-prop-mcp | [T027-gis-import-pipeline](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T027-gis-import-pipeline.md) | GIS 匯入管線（Parcel / Road） |
+| tw-prop-mcp | [T028-algorithm-config-versioning](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T028-algorithm-config-versioning.md) | Algorithm / Valuation Config 版本化與鎖定 |
+| tw-prop-mcp | [T029-comparable-valuation-persistence](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T029-comparable-valuation-persistence.md) | Comparable / Valuation 結果持久化 |
+
+---
+
+
+## ⬜ 待處理
+
+| 專案 | 任務 | 標題 | 狀態 |
+|------|------|------|------|
+| tw-prop-mcp | [T008-transaction-repository](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T008-transaction-repository.md) | Transaction Repository | ⬜ |
+| tw-prop-mcp | [T009-transaction-service](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T009-transaction-service.md) | Transaction Service | ⬜ |
+| tw-prop-mcp | [T011-gis-adapter-geometry-engine](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T011-gis-adapter-geometry-engine.md) | GIS Adapter & Geometry Engine | ⬜ |
+| tw-prop-mcp | [T012-road-access-engine](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T012-road-access-engine.md) | Road Access Engine | ⬜ |
+| tw-prop-mcp | [T013-comparable-engine](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T013-comparable-engine.md) | Comparable Engine | ⬜ |
+| tw-prop-mcp | [T014-statistics-engine](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T014-statistics-engine.md) | Statistics Engine | ⬜ |
+| tw-prop-mcp | [T015-valuation-engine](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T015-valuation-engine.md) | Valuation Engine | ⬜ |
+| tw-prop-mcp | [T016-provenance-system](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T016-provenance-system.md) | Provenance System | ⬜ |
+| tw-prop-mcp | [T017-mcp-server](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T017-mcp-server.md) | MCP Server Implementation | ⬜ |
+| tw-prop-mcp | [T018-mcp-contract-tests](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T018-mcp-contract-tests.md) | MCP Contract Tests | ⬜ |
+| tw-prop-mcp | [T019-reproducibility-tests](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T019-reproducibility-tests.md) | Reproducibility Tests | ⬜ |
+| tw-prop-mcp | [T020-artifact-lock-tests](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T020-artifact-lock-tests.md) | Artifact Lock Tests | ⬜ |
+| tw-prop-mcp | [T021-ai-isolation-tests](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T021-ai-isolation-tests.md) | AI Isolation Tests | ⬜ |
+| tw-prop-mcp | [T022-frontend](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T022-frontend.md) | Frontend Implementation | ⬜ |
+| tw-prop-mcp | [T023-k8s-deployment](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T023-k8s-deployment.md) | Kubernetes / OpenShift Deployment | ⬜ |
+| tw-prop-mcp | [T024-observability](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T024-observability.md) | Observability Implementation | ⬜ |
+| tw-prop-mcp | [T025-e2e-acceptance-test](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T025-e2e-acceptance-test.md) | End-to-End Acceptance Test | ⬜ |
+| tw-prop-mcp | [T026-data-import-pipeline](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T026-data-import-pipeline.md) | Data Import Pipeline Integration | ⬜ |
+| tw-prop-mcp | [T027-gis-import-pipeline](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T027-gis-import-pipeline.md) | GIS 匯入管線（Parcel / Road） | ⬜ |
+| tw-prop-mcp | [T028-algorithm-config-versioning](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T028-algorithm-config-versioning.md) | Algorithm / Valuation Config 版本化與鎖定 | ⬜ |
+| tw-prop-mcp | [T029-comparable-valuation-persistence](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T029-comparable-valuation-persistence.md) | Comparable / Valuation 結果持久化 | ⬜ |
 
 ---
 
@@ -22,21 +74,21 @@
 
 | 指標 | 數值 |
 |------|------|
-| 過去 7 天完成 | 388 |
-| 過去 30 天完成 | 729 |
-| 平均週期時間 | 3.0 天 |
+| 過去 7 天完成 | 85 |
+| 過去 30 天完成 | 707 |
+| 平均週期時間 | 2.9 天 |
 | 週期時間中位數 | 0.0 天 |
 
 
 ```mermaid
 xychart-beta
     title "過去 14 天任務完成趨勢"
-    x-axis ["08-18", "08-19", "08-20", "08-21", "08-22", "08-23", "08-24", "08-25", "08-26", "08-27", "08-28", "08-29", "08-30", "08-31"]
+    x-axis ["08-21", "08-22", "08-23", "08-24", "08-25", "08-26", "08-27", "08-28", "08-29", "08-30", "08-31", "09-01", "09-02", "09-03"]
     y-axis "完成數" 0 --> 165
-    line [22, 16, 0, 3, 28, 0, 77, 165, 69, 0, 23, 0, 30, 24]
+    line [3, 28, 0, 77, 165, 69, 0, 23, 0, 30, 24, 0, 0, 8]
 ```
 
-📊 總計: 457 | 日均: 32.6 | 本週: 311 | 📈 成長中
+📊 總計: 427 | 日均: 30.5 | 本週: 85 | 📉 下降中
 
 ## 📋 專案列表
 
@@ -90,11 +142,12 @@ xychart-beta
 | ✅ | [taolive-ios](https://github.com/gentoobreaking/ai-tasks/tree/main/taolive-ios) | 67 | 19 | 0 | 0 | 48 | ████████████████████ 100% | 2026-05-14 |
 | ✅ | [task-url-repair](https://github.com/gentoobreaking/ai-tasks/tree/main/task-url-repair) | 1 | 1 | 0 | 0 | 0 | ████████████████████ 100% | 2026-04-20 |
 | ✅ | [tasks-executor](https://github.com/gentoobreaking/ai-tasks/tree/main/tasks-executor) | 8 | 8 | 0 | 0 | 0 | ████████████████████ 100% | 2026-05-12 |
+| ⬜ | [tw-prop-mcp](https://github.com/gentoobreaking/ai-tasks/tree/main/tw-prop-mcp) | 29 | 8 | 21 | 0 | 0 | █████░░░░░░░░░░░░░░░ 27% | 2026-09-03 |
 | ✅ | [tw-quant](https://github.com/gentoobreaking/ai-tasks/tree/main/tw-quant) | 14 | 14 | 0 | 0 | 0 | ████████████████████ 100% | 2026-08-25 |
 | ✅ | [tw-quant-daybrain](https://github.com/gentoobreaking/ai-tasks/tree/main/tw-quant-daybrain) | 28 | 28 | 0 | 0 | 0 | ████████████████████ 100% | 2026-08-12 |
-| ✅ | [tw-quant-db](https://github.com/gentoobreaking/ai-tasks/tree/main/tw-quant-db) | 36 | 35 | 0 | 0 | 1 | ████████████████████ 100% | 2026-08-31 |
+| ✅ | [tw-quant-db](https://github.com/gentoobreaking/ai-tasks/tree/main/tw-quant-db) | 38 | 37 | 0 | 0 | 1 | ████████████████████ 100% | 2026-09-02T05:45:00Z |
 | ✅ | [tw-quant-mcp](https://github.com/gentoobreaking/ai-tasks/tree/main/tw-quant-mcp) | 243 | 243 | 0 | 0 | 0 | ████████████████████ 100% | 2026-08-26 |
-| ✅ | [tw-quant-pickup](https://github.com/gentoobreaking/ai-tasks/tree/main/tw-quant-pickup) | 47 | 47 | 0 | 0 | 0 | ████████████████████ 100% | 2026-08-24 |
+| ✅ | [tw-quant-pickup](https://github.com/gentoobreaking/ai-tasks/tree/main/tw-quant-pickup) | 49 | 49 | 0 | 0 | 0 | ████████████████████ 100% | 2026-09-02T06:30:00Z |
 | ✅ | [tw-quant-selector](https://github.com/gentoobreaking/ai-tasks/tree/main/tw-quant-selector) | 148 | 148 | 0 | 0 | 0 | ████████████████████ 100% | 2026-08-15 |
 | ✅ | [tw-quant-signal](https://github.com/gentoobreaking/ai-tasks/tree/main/tw-quant-signal) | 32 | 32 | 0 | 0 | 0 | ████████████████████ 100% | 2026-08-19 |
 | ✅ | [twse-monitor](https://github.com/gentoobreaking/ai-tasks/tree/main/twse-monitor) | 11 | 11 | 0 | 0 | 0 | ████████████████████ 100% | 2026-05-07 |
