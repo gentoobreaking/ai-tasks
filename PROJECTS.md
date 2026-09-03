@@ -1,6 +1,6 @@
 # 📁 Projects Dashboard
 
-> 最後更新: 2026-09-03 11:23 · 自動生成
+> 最後更新: 2026-09-03 15:21 · 自動生成
 
 ---
 
@@ -10,8 +10,8 @@
 |------|------|
 | 專案數 | 61 |
 | 任務總數 | 1487 |
-| ✅ 已完成 | 1403 |
-| ⬜ 待處理 | 21 |
+| ✅ 已完成 | 1405 |
+| ⬜ 待處理 | 19 |
 | 🔄 進行中 | 0 |
 | ⏭️ 跳過 | 63 |
 | 總完成率 | 98% |
@@ -20,9 +20,7 @@
 
 | 專案 | 任務 | 標題 |
 |------|------|------|
-| tw-prop-mcp | [T008-transaction-repository](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T008-transaction-repository.md) | Transaction Repository |
 | tw-prop-mcp | [T009-transaction-service](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T009-transaction-service.md) | Transaction Service |
-| tw-prop-mcp | [T011-gis-adapter-geometry-engine](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T011-gis-adapter-geometry-engine.md) | GIS Adapter & Geometry Engine |
 | tw-prop-mcp | [T012-road-access-engine](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T012-road-access-engine.md) | Road Access Engine |
 | tw-prop-mcp | [T013-comparable-engine](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T013-comparable-engine.md) | Comparable Engine |
 | tw-prop-mcp | [T014-statistics-engine](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T014-statistics-engine.md) | Statistics Engine |
@@ -46,9 +44,7 @@
 
 | 專案 | 任務 | 標題 | 狀態 |
 |------|------|------|------|
-| tw-prop-mcp | [T008-transaction-repository](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T008-transaction-repository.md) | Transaction Repository | ⬜ |
 | tw-prop-mcp | [T009-transaction-service](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T009-transaction-service.md) | Transaction Service | ⬜ |
-| tw-prop-mcp | [T011-gis-adapter-geometry-engine](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T011-gis-adapter-geometry-engine.md) | GIS Adapter & Geometry Engine | ⬜ |
 | tw-prop-mcp | [T012-road-access-engine](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T012-road-access-engine.md) | Road Access Engine | ⬜ |
 | tw-prop-mcp | [T013-comparable-engine](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T013-comparable-engine.md) | Comparable Engine | ⬜ |
 | tw-prop-mcp | [T014-statistics-engine](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T014-statistics-engine.md) | Statistics Engine | ⬜ |
@@ -74,8 +70,8 @@
 
 | 指標 | 數值 |
 |------|------|
-| 過去 7 天完成 | 85 |
-| 過去 30 天完成 | 707 |
+| 過去 7 天完成 | 87 |
+| 過去 30 天完成 | 709 |
 | 平均週期時間 | 2.9 天 |
 | 週期時間中位數 | 0.0 天 |
 
@@ -85,10 +81,10 @@ xychart-beta
     title "過去 14 天任務完成趨勢"
     x-axis ["08-21", "08-22", "08-23", "08-24", "08-25", "08-26", "08-27", "08-28", "08-29", "08-30", "08-31", "09-01", "09-02", "09-03"]
     y-axis "完成數" 0 --> 165
-    line [3, 28, 0, 77, 165, 69, 0, 23, 0, 30, 24, 0, 0, 8]
+    line [3, 28, 0, 77, 165, 69, 0, 23, 0, 30, 24, 0, 0, 10]
 ```
 
-📊 總計: 427 | 日均: 30.5 | 本週: 85 | 📉 下降中
+📊 總計: 429 | 日均: 30.6 | 本週: 87 | 📉 下降中
 
 ## 📋 專案列表
 
@@ -142,7 +138,7 @@ xychart-beta
 | ✅ | [taolive-ios](https://github.com/gentoobreaking/ai-tasks/tree/main/taolive-ios) | 67 | 19 | 0 | 0 | 48 | ████████████████████ 100% | 2026-05-14 |
 | ✅ | [task-url-repair](https://github.com/gentoobreaking/ai-tasks/tree/main/task-url-repair) | 1 | 1 | 0 | 0 | 0 | ████████████████████ 100% | 2026-04-20 |
 | ✅ | [tasks-executor](https://github.com/gentoobreaking/ai-tasks/tree/main/tasks-executor) | 8 | 8 | 0 | 0 | 0 | ████████████████████ 100% | 2026-05-12 |
-| ⬜ | [tw-prop-mcp](https://github.com/gentoobreaking/ai-tasks/tree/main/tw-prop-mcp) | 29 | 8 | 21 | 0 | 0 | █████░░░░░░░░░░░░░░░ 27% | 2026-09-03 |
+| ⬜ | [tw-prop-mcp](https://github.com/gentoobreaking/ai-tasks/tree/main/tw-prop-mcp) | 29 | 10 | 19 | 0 | 0 | ██████░░░░░░░░░░░░░░ 34% | 2026-09-03 |
 | ✅ | [tw-quant](https://github.com/gentoobreaking/ai-tasks/tree/main/tw-quant) | 14 | 14 | 0 | 0 | 0 | ████████████████████ 100% | 2026-08-25 |
 | ✅ | [tw-quant-daybrain](https://github.com/gentoobreaking/ai-tasks/tree/main/tw-quant-daybrain) | 28 | 28 | 0 | 0 | 0 | ████████████████████ 100% | 2026-08-12 |
 | ✅ | [tw-quant-db](https://github.com/gentoobreaking/ai-tasks/tree/main/tw-quant-db) | 38 | 37 | 0 | 0 | 1 | ████████████████████ 100% | 2026-09-02T05:45:00Z |

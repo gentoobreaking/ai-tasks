@@ -11,7 +11,9 @@
 | CSV Parser Implementation |
 | Data Normalizer |
 | Data Validator |
+| Transaction Repository |
 | Parcel Model & Repository |
+| GIS Adapter & Geometry Engine |
 
 ## Skip 項目
 
@@ -29,9 +31,7 @@
 
 | Task | 名稱 | 說明 |
 |------|------|------|
-| [T8-transaction-repository](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T008-transaction-repository.md) | Transaction Repository | |
 | [T9-transaction-service](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T009-transaction-service.md) | Transaction Service | |
-| [T11-gis-adapter-geometry-engine](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T011-gis-adapter-geometry-engine.md) | GIS Adapter & Geometry Engine | |
 | [T12-road-access-engine](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T012-road-access-engine.md) | Road Access Engine | |
 | [T13-comparable-engine](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T013-comparable-engine.md) | Comparable Engine | |
 | [T14-statistics-engine](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T014-statistics-engine.md) | Statistics Engine | |
@@ -62,10 +62,10 @@
 | [T5-csv-parser](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T005-csv-parser.md) | CSV Parser Implementation | ✅ done |
 | [T6-data-normalizer](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T006-data-normalizer.md) | Data Normalizer | ✅ done |
 | [T7-data-validator](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T007-data-validator.md) | Data Validator | ✅ done |
-| [T8-transaction-repository](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T008-transaction-repository.md) | Transaction Repository | 📋 pending |
+| [T8-transaction-repository](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T008-transaction-repository.md) | Transaction Repository | ✅ done |
 | [T9-transaction-service](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T009-transaction-service.md) | Transaction Service | 📋 pending |
 | [T10-parcel-model-repository](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T010-parcel-model-repository.md) | Parcel Model & Repository | ✅ done |
-| [T11-gis-adapter-geometry-engine](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T011-gis-adapter-geometry-engine.md) | GIS Adapter & Geometry Engine | 📋 pending |
+| [T11-gis-adapter-geometry-engine](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T011-gis-adapter-geometry-engine.md) | GIS Adapter & Geometry Engine | ✅ done |
 | [T12-road-access-engine](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T012-road-access-engine.md) | Road Access Engine | 📋 pending |
 | [T13-comparable-engine](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T013-comparable-engine.md) | Comparable Engine | 📋 pending |
 | [T14-statistics-engine](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T014-statistics-engine.md) | Statistics Engine | 📋 pending |
@@ -85,6 +85,6 @@
 | [T28-algorithm-config-versioning](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T028-algorithm-config-versioning.md) | Algorithm / Valuation Config 版本化與鎖定 | 📋 pending |
 | [T29-comparable-valuation-persistence](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T029-comparable-valuation-persistence.md) | Comparable / Valuation 結果持久化 | 📋 pending |
 
-**✅ done: 8 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 21**
+**✅ done: 10 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 19**
 
-> 自動生成於 2026-09-03 11:23
+> 自動生成於 2026-09-03 15:21

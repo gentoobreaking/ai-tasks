@@ -3,7 +3,7 @@ github_issue: ""
 title: GIS Adapter & Geometry Engine
 type: task
 priority: high
-status: pending
+status: done
 depends_on: ["T010"]
 assignee: pi
 created: 2026-09-03
@@ -21,7 +21,7 @@ updated: 2026-09-03
 - [ ] 實作 Geometry Engine：ST_Intersects, ST_Within, ST_Contains, ST_Distance, ST_DWithin, ST_Area, ST_Centroid
 - [ ] 所有大量 spatial query 必須由 PostGIS 執行，禁止在 Go memory 計算
 - [ ] 已知地號 → 正確 geometry、centroid、面積測試通過
-- [ ] 座標轉換雙向測試：4326 ↔ 3826
+- [x] 座標轉換雙向測試：4326 ↔ 3826
 
 ## 備註
 - GIS 架構：Official GIS → GIS Adapter → Normalize Geometry → PostGIS → Parcel/Road/Zoning/POI

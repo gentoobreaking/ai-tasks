@@ -1,6 +1,6 @@
 # 📅 Daily Dashboard - 2026-09-03
 
-> 最後更新: 2026-09-03 11:23 · 自動生成
+> 最後更新: 2026-09-03 15:21 · 自動生成
 
 ---
 
@@ -9,10 +9,10 @@
 | 指標 | 數量 |
 |------|------|
 | 新增任務 | 29 |
-| 完成任務 | 8 |
+| 完成任務 | 10 |
 | 進行中 | 0 |
-| 待處理 | 21 |
-| 完成率 | 27% |
+| 待處理 | 19 |
+| 完成率 | 34% |
 
 ---
 
@@ -74,7 +74,9 @@
 | tw-prop-mcp | [T005-csv-parser](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T005-csv-parser.md) | CSV Parser Implementation |
 | tw-prop-mcp | [T006-data-normalizer](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T006-data-normalizer.md) | Data Normalizer |
 | tw-prop-mcp | [T007-data-validator](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T007-data-validator.md) | Data Validator |
+| tw-prop-mcp | [T008-transaction-repository](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T008-transaction-repository.md) | Transaction Repository |
 | tw-prop-mcp | [T010-parcel-model-repository](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T010-parcel-model-repository.md) | Parcel Model & Repository |
+| tw-prop-mcp | [T011-gis-adapter-geometry-engine](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T011-gis-adapter-geometry-engine.md) | GIS Adapter & Geometry Engine |
 
 ---
 
@@ -82,9 +84,7 @@
 
 | 專案 | 任務 | 標題 | 優先 |
 | -- | -- | -- | -- |
-| tw-prop-mcp | [T008-transaction-repository](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T008-transaction-repository.md) | Transaction Repository | high |
 | tw-prop-mcp | [T009-transaction-service](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T009-transaction-service.md) | Transaction Service | high |
-| tw-prop-mcp | [T011-gis-adapter-geometry-engine](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T011-gis-adapter-geometry-engine.md) | GIS Adapter & Geometry Engine | high |
 | tw-prop-mcp | [T012-road-access-engine](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T012-road-access-engine.md) | Road Access Engine | high |
 | tw-prop-mcp | [T013-comparable-engine](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T013-comparable-engine.md) | Comparable Engine | high |
 | tw-prop-mcp | [T014-statistics-engine](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T014-statistics-engine.md) | Statistics Engine | high |
@@ -113,9 +113,7 @@ _無_
 
 | 專案 | 任務 | 標題 | 優先 |
 | -- | -- | -- | -- |
-| tw-prop-mcp | [T008-transaction-repository](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T008-transaction-repository.md) | Transaction Repository | high |
 | tw-prop-mcp | [T009-transaction-service](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T009-transaction-service.md) | Transaction Service | high |
-| tw-prop-mcp | [T011-gis-adapter-geometry-engine](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T011-gis-adapter-geometry-engine.md) | GIS Adapter & Geometry Engine | high |
 | tw-prop-mcp | [T012-road-access-engine](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T012-road-access-engine.md) | Road Access Engine | high |
 | tw-prop-mcp | [T013-comparable-engine](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T013-comparable-engine.md) | Comparable Engine | high |
 | tw-prop-mcp | [T014-statistics-engine](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T014-statistics-engine.md) | Statistics Engine | high |
