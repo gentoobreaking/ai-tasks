@@ -3,7 +3,7 @@ github_issue: N/A
 title: P1 - External Storage Implementation
 type: feat
 priority: medium
-status: pending
+status: done
 depends_on:
   - T017
 assignee: "pi with opencode"

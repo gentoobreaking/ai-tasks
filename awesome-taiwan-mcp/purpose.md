@@ -1,0 +1,1 @@
+目標是做一份真正「完整」的清單，我下一步會建議直接做 「台灣 MCP 100+ 掃描」：掃 GitHub + MCP Registry + mcp.so + PulseMCP + Glama + MCP directories，去重後再依金融、政府、房地產、交通、GIS、醫療、法律、教育、新聞、電商、支付、DevOps分類，並標出 GitHub URL / 官方 URL / MCP Endpoint / Tool 數 / 是否仍維護 / 資料來源。
