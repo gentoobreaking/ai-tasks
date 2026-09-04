@@ -25,17 +25,17 @@ Build 後執行 server，驗證 MCP handshake、tool listing、tool invocation�
 
 ## 驗收標準
 
-- [ ] Build server binary (profile=minimal)
-- [ ] 執行 `./dist/server` → process starts
-- [ ] Send MCP `initialize` request → valid `initialize` response (proper protocolVersion, capabilities)
-- [ ] Send `tools/list` → correct tool list
-- [ ] Send `tools/call` with test tool → correct result
-- [ ] Send `shutdown` → graceful shutdown (process exits)
-- [ ] `RT-001` test: server starts
-- [ ] `RT-002` test: valid initialize response
-- [ ] `RT-003` test: tool list correct
-- [ ] `RT-004` test: tool call returns correct result
-- [ ] `RT-005` test: graceful shutdown
+- [x] Build server binary (profile=minimal)
+- [x] 執行 `./dist/server` → process starts
+- [x] Send MCP `initialize` request → valid `initialize` response (proper protocolVersion, capabilities)
+- [x] Send `tools/list` → correct tool list
+- [x] Send `tools/call` with test tool → correct result
+- [x] Send `shutdown` → graceful shutdown (process exits)
+- [x] `RT-001` test: server starts
+- [x] `RT-002` test: valid initialize response
+- [x] `RT-003` test: tool list correct
+- [x] `RT-004` test: tool call returns correct result
+- [x] `RT-005` test: graceful shutdown
 
 ## 備註
 
@@ -48,3 +48,8 @@ Smoke test validates the end-to-end pipeline: code generation → static composi
   - 未建立 dist/server binary 並執行
   - 未測試 tools/list, tools/call, shutdown 流程
 - 補充: smoke tests 存在但不符合接受標準中的 RT-00x 項目。
+
+## 執行紀錄 (2026-09-04 稽核)
+- 已達成 11 項並打勾。
+- **未竟事項**: 無
+- 補充: tests/smoke/protocol_test.go 建立完成，包含 RT-001~RT-005 及 TestFullMCPRoundTrip。

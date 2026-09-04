@@ -39,4 +39,5 @@ mcp-go-core 不是一個 mandatory authentication framework。OAuth is a modular
 - 已達成 6 項並打勾。
 - **未竟事項**: 無
 - 補充: PKCE code generation (RFC 7636) implemented without external dependency.
+- ✅ 已接線：CLI run --oauth flag 使用 oauth.NewAuthenticator() (cmd/mcp-go-core/main.go:152)
   Token introspection added via IntrospectToken(). OAuth module does not import JWT/OTel/K8s.

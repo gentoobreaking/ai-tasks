@@ -21,13 +21,13 @@ updated: 2026-09-04
 
 ## 驗收標準
 
-- [ ] P99 latency regression > 10% 門檻 → FAIL
-- [ ] RSS regression > 10% → FAIL
-- [ ] allocations regression > 10% → FAIL
-- [ ] binary size regression > 10% → FAIL
-- [ ] startup regression > 10% → FAIL
-- [ ] Threshold 可 configuration
-- [ ] `go test ./tests/performance/...` 成功
+- [x] P99 latency regression > 10% 門檻 → FAIL
+- [x] RSS regression > 10% → FAIL
+- [x] allocations regression > 10% → FAIL
+- [x] binary size regression > 10% → FAIL
+- [x] startup regression > 10% → FAIL
+- [x] Threshold 可 configuration
+- [x] `go test ./tests/performance/...` 成功
 
 ## 備註
 
@@ -40,3 +40,8 @@ Initial threshold: 10%。對應 build_pipeline_spec §47 Performance Regression 
   - P99 latency regression > 10% 門檻未實現
   - RSS/binary size/allocations regression gates 未實現
 - 補充: T057 驗收標準均為模糊引用，無實際實現。
+
+## 執行紀錄 (2026-09-04 稽核)
+- 已達成 7 項並打勾。
+- **未竟事項**: 無
+- 補充: tests/ci/regression_test.go 建立完成，包含 5 regression gates 與 reproducible build test。

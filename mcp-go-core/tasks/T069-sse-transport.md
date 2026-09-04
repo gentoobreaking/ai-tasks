@@ -41,4 +41,5 @@ updated: 2026-09-04
 - 已達成 7 項並打勾。
 - **未竟事項**: 無
 - 補充: SSE transport now imports github.com/mark3labs/mcp-go/server directly.
+- ✅ 已接線：CLI run --transport sse 使用 sse.New() (cmd/mcp-go-core/main.go:119)
   Session management added: GET /sse registers session, POST /message?sessionId=xxx routes.
