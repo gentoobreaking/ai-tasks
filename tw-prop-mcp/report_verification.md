@@ -117,12 +117,12 @@
 ### Gap D: `/readyz` endpoint missing → FIXED
 - **Before:** Only `/healthz` existed
 - **After:** Added `/readyz` readiness probe returning JSON `{"status":"ready"}`
-- **Commit:** `2446a05`
+- **Commit:** `c62e8c8`
 
 ### Gap E: Dockerfile non-root → FIXED
 - **Before:** No `USER` directive
 - **After:** `USER appuser` + `addgroup`/`adduser` in Dockerfile
-- **Commit:** `2446a05`
+- **Commit:** `c62e8c8`
 
 ### Gap F: OTel exporter misconfiguration → FIXED
 - **Root cause:** `InitTracer()` in `internal/mcp/observability.go` had three bugs:
