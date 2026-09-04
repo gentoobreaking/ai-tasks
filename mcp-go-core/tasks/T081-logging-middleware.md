@@ -3,7 +3,7 @@ github_issue: N/A
 title: P1 - Logging Middleware Implementation
 type: feat
 priority: critical
-status: pending
+status: done
 depends_on:
   - T014
 assignee: "pi with opencode"
