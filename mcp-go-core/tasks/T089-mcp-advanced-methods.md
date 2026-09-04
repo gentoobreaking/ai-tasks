@@ -28,7 +28,7 @@ Implement MCP spec's advanced optional methods to reach **A+ compliance** (full 
 - [x] `router.Dispatch()` handles `complete/arg` / `complete/prompt` → returns `Completion` with `completion.values`
 - [x] `router.Dispatch()` handles `notifications/roots/list_changed` → internal roots refresh hook
 - [x] `router.Dispatch()` handles `resources/subscribe` → stores subscription, returns success
-- [~] Server emits `notifications/resources/update` and `notifications/resources/deleted` on resource changes
+- [x] Server emits `notifications/resources/update` and `notifications/resources/deleted` on resource changes
 - [x] Protocol types added: `PingResult`, `Completion`, `CompletionParams`, `SubscribeParams`, `RootsListChangedParams`
 - [x] Tests cover each new method (6 tests)
 - [x] `go test -race ./... -count=1` all packages pass

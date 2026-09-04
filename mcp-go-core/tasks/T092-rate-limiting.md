@@ -27,7 +27,7 @@ Add per-method rate limiting via token bucket algorithm:
 - [ ] Default limits: tools/call 30/sec, tools/list 10/sec, prompts/get 10/sec
 - [ ] Configurable via YAML `rateLimits:` section
 - [ ] JSON-RPC error response on limit exceeded (-32402)
-- [ ] Health endpoint `/rate-limits` reports current bucket status
+- [ ] Health endpoint `/rate-limits` reports current bucket status — NOT IMPLEMENTED: no HTTP health endpoint registered on server. See T103.
 - [ ] 4 new tests: within-limit/burst/over-limit/per-method
 - [ ] `go test -race ./... -count=1` all pass
 - [ ] `go vet ./...` clean
@@ -42,3 +42,8 @@ Add per-method rate limiting via token bucket algorithm:
 ## 執行紀錄
 - 2026-09-04: Created task, pending implementation
 - 2026-09-04: Implemented core/middleware/ratelimit, Manager/Allow/Status, server.WithRateLimiter(), 8 tests. 43 pkgs -race PASS, 353 tests. Committed at d09f977.
+
+## 執行紀錄（2026-09-05 稽核）
+- 已達成 4 項並打勾。
+- **未竟事項**: Health endpoint `/rate-limits` -- NOT IMPLEMENTED: no HTTP health route exists on server. 回流為 T103。
+- 補充: core/middleware/ratelimit/ Manager with Allow/Status, default limits 30/10/10, -32402 error code, server integration; 8 tests pass.
