@@ -1,0 +1,43 @@
+---
+github_issue: N/A
+title: GitHub Rate Limit — rate limiter, retry, 429 handling, timeout, context cancellation
+type: feat
+priority: high
+status: pending
+depends_on: [T006]
+assignee: agent
+created: 2026-09-05
+updated: 2026-09-05
+---
+
+# T007 - GitHub Rate Limit — rate limiter, retry, 429 handling, timeout, context cancellation
+
+## 目標
+
+實作成 GitHub API 的 rate limiting, retry with backoff, 429/5xx handling, 
+timeout, and context cancellation. 對應 CRAWLER_AGENT_TASKS.md §9 TASK-007, §40 Rate Limit, §22 Retry Policy。
+
+## 驗收標準
+
+- [ ] `RateLimitConfig` struct 實現 (§40): RequestsPerSecond (float64), Burst (int), MaxConcurrency (int)
+- [ ] GitHub adapter 使用 token bucket rate limiter (RequestsPerSecond=2, Burst=1 for GitHub unauthenticated)
+- [ ] HTTP 429 response → exponential backoff, 尊重 Retry-After header
+- [ ] HTTP 5xx response → retry with exponential backoff
+- [ ] HTTP 4xx response → 不重試 (除了 429)
+- [ ] Timeout → 重試 (network timeout)
+- [ ] DNS failure → 重試
+- [ ] Max retries = 3 (initial + 3 retries = 4 requests max, §TST-035)
+- [ ] Base delay = 1s, max delay = 30s (§22 Retry Policy)
+- [ ] Context cancellation 在所有 HTTP 請求中傳播
+- [ ] 429 不會造成 crawler crash (§TST-007 Task-007 Acceptance: 429 不會造成 crash)
+- [ ] 每次重試之間有 exponential backoff (1s → 2s → 4s → 8s, capped at 30s)
+- [ ] Retry-After header 為 0 或未設置時使用 exponential backoff
+- [ ] 每次請求有 timeout (<= 30s for API, <= 10s for MCP protocol)
+- [ ] 單元測試: mock 伺服器回傳 429 → backoff 發生, rate limit respected, no infinite retry (§TST-034)
+- [ ] 單元測試: mock 伺服器連續 5 次回傳 500 → 實際請求 <= 4 次 (§TST-035)
+
+## 備註
+
+- GitHub 獨立 rate limiter, 不影響其他 source (§41 Failure Isolation)
+- Rate limiter 配置來自 `config/sources.yaml` (§50 Configuration)
+- retry 配置: max_retry=3, base_delay=1s, max_delay=30s
