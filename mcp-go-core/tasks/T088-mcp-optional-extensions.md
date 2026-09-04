@@ -3,7 +3,7 @@ github_issue: N/A
 title: P2 - MCP Spec Compliance: Optional extensions (logging/setLogLevel, sampling/createMessage, resources/created)
 type: feat
 priority: medium
-status: pending
+status: done
 depends_on:
   - T087
 assignee: "pi with opencode"
@@ -23,17 +23,13 @@ Implement optional MCP protocol extensions to reach **A+ compliance**:
 
 ## 驗收標準
 
-- [ ] `router.Dispatch()` handles `logging/setLogLevel` → stores level, returns success
-- [ ] `router.Dispatch()` handles `sampling/createMessage` → returns `SamplingMessage` response
-- [ ] Server can emit `resources/created` notification when resource registered via `AddResource`
-- [ ] `core/response.PromptResponse` unified with `core/prompt.PromptResponse` (no type duplication)
-- [ ] Tests cover each new method (3+ tests)
-- [ ] `go test -race ./... -count=1` all packages pass
-- [ ] `go vet ./...` no errors
-
-## 備註
-
-### Context
+- [x] `router.Dispatch()` handles `logging/setLogLevel` → stores level, returns success
+- [x] `router.Dispatch()` handles `sampling/createMessage` → returns `SamplingMessage` response
+- [x] Server can emit `resources/created` notification when resource registered via `AddResource`
+- [x] `core/response.PromptResponse` unified with `core/prompt.PromptResponse` (no type duplication)
+- [x] Tests cover each new method (3+ tests)
+- [x] `go test -race ./... -count=1` all packages pass
+- [x] `go vet ./...` no errors
 
 After T086/T087, the core MCP protocol is functional (B+). Remaining gaps are **optional MCP extensions**:
 
@@ -62,3 +58,4 @@ After T086/T087, the core MCP protocol is functional (B+). Remaining gaps are **
 
 ## 執行紀錄
 - 2026-09-04: Created task, pending implementation
+- 2026-09-04: Implemented all 4 items. PromptResponse unified via type aliases. logging/setLogLevel handler added. sampling/createMessage handler added with SamplingHandler. resources/created notification via CreatedNotifier callback. 5 new tests added. 40 packages -race PASS, 333 tests pass, go vet clean. Committed at a6747ac.
