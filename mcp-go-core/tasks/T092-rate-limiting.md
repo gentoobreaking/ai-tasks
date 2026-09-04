@@ -51,3 +51,9 @@ Add per-method rate limiting via token bucket algorithm:
 ## 執行紀錄（2026-09-05 稽核）
 - 已達成 4 項並打勾 (1-4, 6-7)。
 - **未竟事項**: Health endpoint `/rate-limits` — NOT IMPLEMENTED. Rate limiter Status() exists but no HTTP route exposes it. 回流為 T103。
+
+
+## 環境變數審計（2026-09-05）
+- mcp-go-core production code: **0 env var 讀取** (`os.Getenv`/`os.LookupEnv` 均無使用)
+- 全域 AGENTS.md 中提及的 `OPENAI_API_KEY` 等屬 ai-howto 專案設定，與本專案無關
+- **結論**: 無未滿足需求的 env var

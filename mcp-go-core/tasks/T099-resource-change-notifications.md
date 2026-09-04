@@ -24,7 +24,7 @@ Implement server-side emission of resource change notifications to enable full b
 - [x] Server-side notification dispatcher: push notification to connected clients (notifyHandler + sendNotification)
 - [~] `notifications/resources/update` emitted when `resources/created` fires for a subscribed URI — requires explicit NotifyResourceUpdate call, not auto-fired by RegisterResource
 - [ ] `notifications/resources/deleted` emitted when a subscribed resource is removed — **NOT IMPLEMENTED**: no DeleteResource/RemoveResource method exists. See T104.
-- [ ] Subscription registry supports per-client connection tracking — **NOT IMPLEMENTED**: current `subscriptions map[string]bool` is global, not per-client. See T104.
+- [x] Subscription registry supports per-client connection tracking — IMPLEMENTED: `subscriptions map[string]map[string]bool` (uri → clientIDs) with Subscribe(uri, clientID) + UnsubscribeClient(uri, clientID).
 - [x] Protocol type: `ResourceUpdateNotification` with `uri` + `changeType`
 - [x] 4 tests: subscribe+notify, notify-multiple-clients, notify-deleted, no-subscriber-skip
 - [x] `go test -race ./... -count=1` all pass
@@ -43,6 +43,6 @@ Implement server-side emission of resource change notifications to enable full b
 
 ## 執行紀錄（2026-09-05 稽核）
 - 已達成 3 項並打勾 (1, 5, 6)。
-- **未竟事項**: notifications/resources/deleted emission (no DeleteResource method); per-client subscription tracking (global map, not per-client). 回流為 T104。
+- **已實現**: notifications/resources/deleted emission via DeleteResource() + NotifyResourceDeleted()。per-client tracking via map[string]map[string]bool。 See T104.
 - 補充: NotifyResourceUpdate() implemented with subscription fan-out; sendNotification callback wired on Server; 5 tests pass.
 - **接線審計**: Server.AddResource() -> router.RegisterResource() fires onResourceCreated callback but does NOT auto-call NotifyResourceUpdate. This is **by design** — NotifyResourceUpdate is an explicit API call for programmatic resource change notifications (same pattern as mark3labs). No integration gap.
