@@ -3,7 +3,7 @@ github_issue: N/A
 title: P1 - Filesystem Storage Implementation
 type: feat
 priority: high
-status: pending
+status: done
 depends_on:
   - T017
 assignee: "pi with opencode"
