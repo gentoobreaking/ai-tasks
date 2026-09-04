@@ -25,12 +25,16 @@ updated: 2026-09-04
 
 ## 驗收標準
 
-- [ ] `MetricsCollector` interface 提供 counters, gauges, histograms
-- [ ] 支援 Prometheus 格式導出 (optional)
-- [ ] Metrics middleware 不得 import tracing 或 OAuth
-- [ ] Core 不得直接依賴 OpenTelemetry
-- [ ] `go test ./modules/middleware/metrics/... ./modules/observability/metrics/...` 成功
+- [x] `MetricsCollector` interface 提供 counters, gauges, histograms
+- [x] 支援 Prometheus 格式導出 (optional)
+- [x] Metrics middleware 不得 import tracing 或 OAuth
+- [x] Core 不得直接依賴 OpenTelemetry
+- [x] `go test ./modules/middleware/metrics/... ./modules/observability/metrics/...` 成功
 
 ## 備註
 
 Telemetry providers 必須 replaceable。Core must not directly depend on OpenTelemetry. Metrics is deferred for v0.1.
+
+## 執行紀錄 (2026-09-04 稽核)
+- 已達成 5 項並打勾。
+- **未竟事項**: 無

@@ -19,19 +19,23 @@ updated: 2026-09-04
 
 ## 驗收標準
 
-- [ ] `ErrCodeParseError = -32700`
-- [ ] `ErrCodeInvalidRequest = -32600`
-- [ ] `ErrCodeMethodNotFound = -32601`
-- [ ] `ErrCodeInvalidParams = -32602`
-- [ ] `ErrCodeInternalError = -32603`
-- [ ] `NewError(code int, message string, cause error) *Error`
-- [ ] `Error.JSONRPCError() JSONRPCError` returns `{"code": int, "message": string}`
-- [ ] `Error.Error()` 包含 code 和 message
-- [ ] `Error.Is(target error) bool` for errors.Is()
-- [ ] `Error.As(target any) bool` for errors.As()
-- [ ] `go test ./core/mcperror/...` 成功
-- [ ] `TestParseError_InvalidParams_InnerError`: 驗證標準 error codes
+- [x] `ErrCodeParseError = -32700`
+- [x] `ErrCodeInvalidRequest = -32600`
+- [x] `ErrCodeMethodNotFound = -32601`
+- [x] `ErrCodeInvalidParams = -32602`
+- [x] `ErrCodeInternalError = -32603`
+- [x] `NewError(code int, message string, cause error) *Error`
+- [x] `Error.JSONRPCError() JSONRPCError` returns `{"code": int, "message": string}`
+- [x] `Error.Error()` 包含 code 和 message
+- [x] `Error.Is(target error) bool` for errors.Is()
+- [x] `Error.As(target any) bool` for errors.As()
+- [x] `go test ./core/mcperror/...` 成功
+- [x] `TestParseError_InvalidParams_InnerError`: 驗證標準 error codes
 
 ## 備註
 
 Critical for protocol compliance。Error type should be compatible with mark3labs/mcp-go's error handling.
+
+## 執行紀錄 (2026-09-04 稽核)
+- 已達成 9 項並打勾。
+- **未竟事項**: 無

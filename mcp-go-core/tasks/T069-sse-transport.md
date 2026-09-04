@@ -25,14 +25,20 @@ updated: 2026-09-04
 
 ## 驗收標準
 
-- [ ] `Transport` interface: `Serve(ctx context.Context, handler Handler) error`
-- [ ] SSE transport supports `GET /sse` endpoint for event stream
-- [ ] SSE transport handles `POST /message` endpoint for sending messages
-- [ ] JSON-RPC over SSE
-- [ ] SSE module 獨立 package boundary (不 import stdio 或 http)
-- [ ] `go test ./modules/transport/sse/...` 成功
-- [ ] SSE transport 可與 stdio 和 http transport 並存 (independent build)
+- [x] `Transport` interface: `Serve(ctx context.Context, handler Handler) error`
+- [x] SSE transport supports `GET /sse` endpoint for event stream
+- [x] SSE transport handles `POST /message` endpoint for sending messages
+- [x] JSON-RPC over SSE
+- [x] SSE module 獨立 package boundary (不 import stdio 或 http)
+- [x] `go test ./modules/transport/sse/...` 成功
+- [x] SSE transport 可與 stdio 和 http transport 並存 (independent build)
 
 ## 備註
 
 對應 algs/transport-stdio.md pattern。SSE transport is deferred for v0.1 — only implement when underlying MCP library supports it.
+
+## 執行紀錄 (2026-09-04 稽核)
+- 已達成 7 項並打勾。
+- **未竟事項**: 無
+- 補充: SSE transport now imports github.com/mark3labs/mcp-go/server directly.
+  Session management added: GET /sse registers session, POST /message?sessionId=xxx routes.

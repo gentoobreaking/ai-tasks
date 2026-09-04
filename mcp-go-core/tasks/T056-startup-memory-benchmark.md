@@ -42,3 +42,12 @@ updated: 2026-09-04
 ## 備註
 
 RSS 受 OS/runtime/allocator/container 影響。Baseline + regression 比單一絕對值重要。Binary size 不得硬編碼目標，必須基於 benchmark。
+
+## 執行紀錄 (2026-09-04 稽核)
+- 已達成 0 項。
+- **未竟事項**：
+  - `benchmarks/startup_test.go` 不存在
+  - startup latency measurement 未實現
+  - at least 10 measurements 未完成
+  - min/median/p95/max report 未產生
+- 補充: benchmarks/ 目錄為空。任務標示 done 但驗收標準均未實現。

@@ -30,3 +30,11 @@ updated: 2026-09-04
 ## 備註
 
 不要硬編碼 binary size target。Binary size 用於 regression detection。Profile → Expected Dependency Set → Actual Binary consistency is the real criterion.
+
+## 執行紀錄 (2026-09-04 稽核)
+- 已達成 0 項。
+- **未竟事項**：
+  - `tests/build/` directory 不存在
+  - `binary-size-report.json` 未產生
+  - binary size regression threshold (10% > FAIL) 未實現
+- 補充: 任務標示 done 但驗收標準均為未實現。已降級為 in-progress。

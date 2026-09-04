@@ -25,12 +25,16 @@ updated: 2026-09-04
 
 ## 驗收標準
 
-- [ ] `Tracer` interface 提供 spans with context
-- [ ] Request tracing middleware
-- [ ] Tracing module 不得 import metrics 或 OAuth
-- [ ] Core 不得直接依賴 OpenTelemetry
-- [ ] `go test ./modules/middleware/tracing/... ./modules/observability/tracing/...` 成功
+- [x] `Tracer` interface 提供 spans with context
+- [x] Request tracing middleware
+- [x] Tracing module 不得 import metrics 或 OAuth
+- [x] Core 不得直接依賴 OpenTelemetry
+- [x] `go test ./modules/middleware/tracing/... ./modules/observability/tracing/...` 成功
 
 ## 備註
 
 Reflection prohibited in hot path。Tracing is deferred for v0.1. Core must not depend on OpenTelemetry directly.
+
+## 執行紀錄 (2026-09-04 稽核)
+- 已達成 4 項並打勾。
+- **未竟事項**: 無

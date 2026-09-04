@@ -19,17 +19,21 @@ updated: 2026-09-04
 
 ## 驗收標準
 
-- [ ] Error codes: `parse_error (-32700)`, `invalid_request (-32600)`, `method_not_found (-32601)`, `invalid_params (-32602)`, `internal_error (-32603)`
-- [ ] `PromptListParams`, `ResourceListParams`, `ToolListParams` request types
-- [ ] `PromptListResult`, `ResourceListResult`, `ToolListResult` response types
-- [ ] `ResourceTemplate` type for URI templates
-- [ ] `Implementation` type (name, version) for client/server info
-- [ ] `ServerCapabilities` type (prompts, resources, tools, logging, completions)
-- [ ] `ClientCapabilities` type
-- [ ] `InitializeRequest` / `InitializeResponse` types
-- [ ] `JSONRPCMessage` type alias for Request | Response | Notification
-- [ ] `go test ./core/protocol/...` 成功
+- [x] Error codes: `parse_error (-32700)`, `invalid_request (-32600)`, `method_not_found (-32601)`, `invalid_params (-32602)`, `internal_error (-32603)`
+- [x] `PromptListParams`, `ResourceListParams`, `ToolListParams` request types
+- [x] `PromptListResult`, `ResourceListResult`, `ToolListResult` response types
+- [x] `ResourceTemplate` type for URI templates
+- [x] `Implementation` type (name, version) for client/server info
+- [x] `ServerCapabilities` type (prompts, resources, tools, logging, completions)
+- [x] `ClientCapabilities` type
+- [x] `InitializeRequest` / `InitializeResponse` types
+- [x] `JSONRPCMessage` type alias for Request | Response | Notification
+- [x] `go test ./core/protocol/...` 成功
 
 ## 備註
 
 對齊 mark3labs/mcp-go/mcp/ 的 protocol types。Critical for protocol compliance。
+
+## 執行紀錄 (2026-09-04 稽核)
+- 已達成 10 項並打勾。
+- **未竟事項**: 無

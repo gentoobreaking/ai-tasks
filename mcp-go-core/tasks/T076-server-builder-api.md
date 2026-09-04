@@ -19,18 +19,22 @@ updated: 2026-09-04
 
 ## 驗收標準
 
-- [ ] `Builder` struct 提供 fluent API
-- [ ] `NewBuilder() *Builder`
-- [ ] `Builder.WithName(name string) *Builder`
-- [ ] `Builder.WithTool(tool Tool) *Builder`
-- [ ] `Builder.WithResource(r Resource) *Builder`
-- [ ] `Builder.WithPrompt(p Prompt) *Builder`
-- [ ] `Builder.WithTransport(t Transport) *Builder`
-- [ ] `Builder.WithMiddleware(mw ...Middleware) *Builder`
-- [ ] `Builder.Build() (*Server, error)`
-- [ ] `Builder.MustBuild() *Server` (panics on error)
-- [ ] `go test ./core/server/...` 成功
+- [x] `Builder` struct 提供 fluent API
+- [x] `NewBuilder() *Builder`
+- [x] `Builder.WithName(name string) *Builder`
+- [x] `Builder.WithTool(tool Tool) *Builder`
+- [x] `Builder.WithResource(r Resource) *Builder`
+- [x] `Builder.WithPrompt(p Prompt) *Builder`
+- [x] `Builder.WithTransport(t Transport) *Builder`
+- [x] `Builder.WithMiddleware(mw ...Middleware) *Builder`
+- [x] `Builder.Build() (*Server, error)`
+- [x] `Builder.MustBuild() *Server` (panics on error)
+- [x] `go test ./core/server/...` 成功
 
 ## 備註
 
 Builder pattern 提升開發者體驗。Builder 必須確保 lifecycle 順序正確 (AddTool → Configure → Start)。
+
+## 執行紀錄 (2026-09-04 稽核)
+- 已達成 10 項並打勾。
+- **未竟事項**: 無

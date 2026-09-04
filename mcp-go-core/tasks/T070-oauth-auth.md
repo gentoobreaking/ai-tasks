@@ -25,12 +25,18 @@ updated: 2026-09-04
 
 ## 驗收標準
 
-- [ ] `Authenticator` interface: `Authenticate(ctx, req) (Identity, error)`
-- [ ] OAuth 2.1 authorization code flow with PKCE
-- [ ] Token introspection and validation
-- [ ] OAuth module 不得 import JWT 或 OTel 或 Kubernetes
-- [ ] `go test ./modules/security/oauth/...` 成功
+- [x] `Authenticator` interface: `Authenticate(ctx, req) (Identity, error)`
+- [x] OAuth 2.1 authorization code flow with PKCE
+- [x] Token introspection and validation
+- [x] OAuth module 不得 import JWT 或 OTel 或 Kubernetes
+- [x] `go test ./modules/security/oauth/...` 成功
 
 ## 備註
 
 mcp-go-core 不是一個 mandatory authentication framework。OAuth is a modular extension, NOT required for v0.1. JWT module must not import OAuth.
+
+## 執行紀錄 (2026-09-04 稽核)
+- 已達成 6 項並打勾。
+- **未竟事項**: 無
+- 補充: PKCE code generation (RFC 7636) implemented without external dependency.
+  Token introspection added via IntrospectToken(). OAuth module does not import JWT/OTel/K8s.

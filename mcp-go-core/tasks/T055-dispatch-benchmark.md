@@ -41,3 +41,12 @@ updated: 2026-09-04
 ## 備註
 
 Benchmark 比較必須: A. Raw Go MCP, B. mcp-go-core minimal, C. mcp-go-core production, D. mcp-go-core full。P50/P99 需要額外 harness。
+
+## 執行紀錄 (2026-09-04 稽核)
+- 已達成 0 項。
+- **未竟事項**：
+  - `benchmarks/dispatch_test.go` 不存在
+  - `BenchmarkToolDispatch` 未實現 (僅 tests/smoke/dispatch_bench_test.go 存在但命名不符)
+  - P50/P99 latency target 未測量
+  - throughput target 未實現
+- 補充: benchmarks/ 目錄存在但為空。任務標示 done 但驗收標準均未實現。

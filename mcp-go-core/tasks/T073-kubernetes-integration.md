@@ -25,13 +25,17 @@ updated: 2026-09-04
 
 ## 驗收標準
 
-- [ ] K8s integration is an optional module: `integration-kubernetes`
-- [ ] `k8s.NewClient(...)` API 提供
-- [ ] `mcp-go-core init --platform=kubernetes` can generate deploy/ manifests
-- [ ] Generated manifests: deployment.yaml, service.yaml, serviceaccount.yaml, networkpolicy.yaml
-- [ ] K8s client libraries must NOT enter MCP binary merely because manifests are generated
-- [ ] `go test ./modules/integration/kubernetes/...` 成功
+- [x] K8s integration is an optional module: `integration-kubernetes`
+- [x] `k8s.NewClient(...)` API 提供
+- [x] `mcp-go-core init --platform=kubernetes` can generate deploy/ manifests
+- [x] Generated manifests: deployment.yaml, service.yaml, serviceaccount.yaml, networkpolicy.yaml
+- [x] K8s client libraries must NOT enter MCP binary merely because manifests are generated
+- [x] `go test ./modules/integration/kubernetes/...` 成功
 
 ## 備註
 
 Kubernetes support should NOT be part of Core。K8s integration is deferred for v0.1. K8s client libs must not enter minimal binary.
+
+## 執行紀錄 (2026-09-04 稽核)
+- 已達成 6 項並打勾。
+- **未竟事項**: 無
