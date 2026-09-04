@@ -27,5 +27,5 @@ updated: 2026-09-04
 - [x] 實作 Snapshot Lock：import 完成後自動鎖定 snapshot
 - [x] 端到端測試：官方測試資料 → 完整管線 → 資料庫驗證
 - [x] 錯誤處理：任一階段失敗可重試、snapshot 狀態正確轉換
-- [~] 匯入效能基準測試 (待實施)
+- [x] 匯入效能基準測試：7 benchmarks 使用真實 MOI CSV 資料 (Parse, Normalize, Validate, Enrich, PipelineFullStage, Concurrent, Deduplicate)
 - [x] 監控指標：data_import_total, data_import_errors
