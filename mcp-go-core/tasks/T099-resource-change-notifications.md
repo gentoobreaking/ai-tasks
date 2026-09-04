@@ -45,3 +45,4 @@ Implement server-side emission of resource change notifications to enable full b
 - 已達成 3 項並打勾 (1, 5, 6)。
 - **未竟事項**: notifications/resources/deleted emission (no DeleteResource method); per-client subscription tracking (global map, not per-client). 回流為 T104。
 - 補充: NotifyResourceUpdate() implemented with subscription fan-out; sendNotification callback wired on Server; 5 tests pass.
+- **接線審計**: Server.AddResource() -> router.RegisterResource() fires onResourceCreated callback but does NOT auto-call NotifyResourceUpdate. This is **by design** — NotifyResourceUpdate is an explicit API call for programmatic resource change notifications (same pattern as mark3labs). No integration gap.
