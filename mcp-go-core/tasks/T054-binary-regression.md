@@ -3,7 +3,8 @@ github_issue: N/A
 title: P8 - Binary Regression Verification
 type: test
 priority: medium
-status: pending
+status: done
+updated: 2026-09-04
 depends_on:
 - T052
 - T056

@@ -3,7 +3,8 @@ github_issue: N/A
 title: P7 - CLI Doctor Command
 type: feat
 priority: medium
-status: pending
+status: done
+updated: 2026-09-04
 depends_on:
 - T041
 - T049

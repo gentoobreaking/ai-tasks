@@ -12,7 +12,7 @@ created: 2026-09-04
 updated: 2026-09-04
 ---
 
-# T106 - CLI Enhancement (Builder Patterns & Commands)
+# T079 - CLI Enhancement (Builder Patterns & Commands)
 
 ## 目標
 

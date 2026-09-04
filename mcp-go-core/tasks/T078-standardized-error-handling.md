@@ -11,7 +11,7 @@ created: 2026-09-04
 updated: 2026-09-04
 ---
 
-# T105 - Standardized Error Handling
+# T078 - Standardized Error Handling
 
 ## 目標
 

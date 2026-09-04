@@ -3,7 +3,8 @@ github_issue: N/A
 title: P8 - Dispatch and Throughput Benchmarks
 type: test
 priority: medium
-status: pending
+status: done
+updated: 2026-09-04
 depends_on:
 - T009
 - T010

@@ -3,7 +3,8 @@ github_issue: N/A
 title: P7 - Binary Metadata Reader and Module Verification
 type: test
 priority: high
-status: pending
+status: done
+updated: 2026-09-04
 depends_on:
 - T039
 assignee: "pi with opencode"

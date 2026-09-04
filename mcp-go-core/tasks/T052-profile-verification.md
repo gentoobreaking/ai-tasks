@@ -3,7 +3,8 @@ github_issue: N/A
 title: P8 - Profile Verification (Minimal, HTTP, Secure)
 type: test
 priority: high
-status: pending
+status: done
+updated: 2026-09-04
 depends_on:
 - T051
 - T010

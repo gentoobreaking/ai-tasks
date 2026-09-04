@@ -3,7 +3,8 @@ github_issue: N/A
 title: P2 - Stdio Transport Module
 type: feat
 priority: high
-status: pending
+status: done
+updated: 2026-09-04
 depends_on:
 - T015
 - T009

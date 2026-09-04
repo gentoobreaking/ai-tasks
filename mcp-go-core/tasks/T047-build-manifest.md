@@ -3,7 +3,8 @@ github_issue: N/A
 title: P7 - Build Manifest Generation
 type: feat
 priority: medium
-status: pending
+status: done
+updated: 2026-09-04
 depends_on:
 - T040
 assignee: "pi with opencode"

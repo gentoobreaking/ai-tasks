@@ -3,7 +3,8 @@ github_issue: N/A
 title: P10 - Architecture and Example Documentation
 type: docs
 priority: medium
-status: pending
+status: done
+updated: 2026-09-04
 depends_on:
 - T066
 assignee: "pi with opencode"

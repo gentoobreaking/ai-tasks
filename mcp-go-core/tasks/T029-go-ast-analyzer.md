@@ -3,7 +3,8 @@ github_issue: N/A
 title: P4 - Go AST Analyzer (Minimal)
 type: feat
 priority: medium
-status: pending
+status: done
+updated: 2026-09-04
 depends_on:
 - T026
 assignee: "pi with opencode"

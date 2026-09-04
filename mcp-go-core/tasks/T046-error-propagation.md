@@ -3,7 +3,8 @@ github_issue: N/A
 title: P6 - Error Propagation and Actionable Errors
 type: test
 priority: high
-status: pending
+status: done
+updated: 2026-09-04
 depends_on:
 - T038
 assignee: "pi with opencode"

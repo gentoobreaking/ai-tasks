@@ -3,7 +3,8 @@ github_issue: N/A
 title: P1 - Resource API
 type: feat
 priority: high
-status: pending
+status: done
+updated: 2026-09-04
 depends_on:
 - T004
 assignee: "pi with opencode"

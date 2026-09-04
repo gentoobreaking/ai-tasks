@@ -3,7 +3,8 @@ github_issue: N/A
 title: P3 - Feature Descriptor and Module Descriptor Types
 type: feat
 priority: high
-status: pending
+status: done
+updated: 2026-09-04
 depends_on:
 - T015
 assignee: "pi with opencode"

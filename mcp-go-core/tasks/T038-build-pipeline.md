@@ -3,7 +3,8 @@ github_issue: N/A
 title: P6 - Build Context and Pipeline Interface
 type: feat
 priority: high
-status: pending
+status: done
+updated: 2026-09-04
 depends_on:
 - T026
 - T030

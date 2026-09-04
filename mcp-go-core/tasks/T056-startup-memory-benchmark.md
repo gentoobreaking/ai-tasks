@@ -3,7 +3,8 @@ github_issue: N/A
 title: P8 - Startup and Memory Benchmarks
 type: test
 priority: medium
-status: pending
+status: done
+updated: 2026-09-04
 depends_on:
 - T055
 - T039

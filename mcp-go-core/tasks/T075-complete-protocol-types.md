@@ -11,7 +11,7 @@ created: 2026-09-04
 updated: 2026-09-04
 ---
 
-# T102 - Complete MCP Protocol Types
+# T075 - Complete MCP Protocol Types
 
 ## 目標
 

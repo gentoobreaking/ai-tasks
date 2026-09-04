@@ -11,7 +11,7 @@ created: 2026-09-04
 updated: 2026-09-04
 ---
 
-# T104 - MCP Test Infrastructure
+# T077 - MCP Test Infrastructure
 
 ## 目標
 

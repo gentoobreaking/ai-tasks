@@ -3,7 +3,8 @@ github_issue: N/A
 title: P6 - Benchmark Stage
 type: feat
 priority: medium
-status: pending
+status: done
+updated: 2026-09-04
 depends_on:
 - T044
 - T055

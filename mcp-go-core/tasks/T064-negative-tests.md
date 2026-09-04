@@ -3,7 +3,8 @@ github_issue: N/A
 title: P9 - Negative Verification Test Suite
 type: test
 priority: high
-status: pending
+status: done
+updated: 2026-09-04
 depends_on:
 - T020
 - T019

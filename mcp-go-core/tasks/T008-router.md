@@ -3,7 +3,8 @@ github_issue: N/A
 title: P1 - Router for Tool/Resource/Prompt Dispatch
 type: feat
 priority: high
-status: pending
+status: done
+updated: 2026-09-04
 depends_on:
 - T004
 - T005

@@ -3,7 +3,8 @@ github_issue: N/A
 title: P1 - Core Protocol Types (Request/Response/Error)
 type: feat
 priority: high
-status: pending
+status: done
+updated: 2026-09-04
 depends_on:
 - T001
 assignee: "pi with opencode"

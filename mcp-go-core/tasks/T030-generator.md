@@ -3,7 +3,8 @@ github_issue: N/A
 title: P5 - Generator Interface and Generated Features
 type: feat
 priority: high
-status: pending
+status: done
+updated: 2026-09-04
 depends_on:
 - T018
 - T026
