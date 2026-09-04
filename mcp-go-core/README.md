@@ -89,6 +89,9 @@
 | P1 - Filesystem Storage Implementation |
 | P1 - External Storage Implementation |
 | P2 - Task Runtime and Session Runtime Implementation |
+| P0 - MCP Spec Conformity: Fix Server-Transport-Router wiring |
+| P0 - MCP Spec Compliance: JSON tags, notifications/cancel, dispatch coverage |
+| P2 - MCP Spec Compliance: Optional extensions (logging/setLogLevel, sampling/createMessage, resources/created) |
 
 ## Skip 項目
 
@@ -106,7 +109,7 @@
 
 | Task | 名稱 | 說明 |
 |------|------|------|
-| [T86-mcp-conformance-fix](https://github.com/gentoobreaking/ai-tasks/blob/main/mcp-go-core/tasks/T086-mcp-conformance-fix.md) | P0 - MCP Spec Conformity: Fix Server-Transport-Router wiring | |
+| | | |
 
 ## Task 列表
 
@@ -197,8 +200,10 @@
 | [T83-filesystem-storage](https://github.com/gentoobreaking/ai-tasks/blob/main/mcp-go-core/tasks/T083-filesystem-storage.md) | P1 - Filesystem Storage Implementation | ✅ done |
 | [T84-external-storage](https://github.com/gentoobreaking/ai-tasks/blob/main/mcp-go-core/tasks/T084-external-storage.md) | P1 - External Storage Implementation | ✅ done |
 | [T85-task-session-runtime](https://github.com/gentoobreaking/ai-tasks/blob/main/mcp-go-core/tasks/T085-task-session-runtime.md) | P2 - Task Runtime and Session Runtime Implementation | ✅ done |
-| [T86-mcp-conformance-fix](https://github.com/gentoobreaking/ai-tasks/blob/main/mcp-go-core/tasks/T086-mcp-conformance-fix.md) | P0 - MCP Spec Conformity: Fix Server-Transport-Router wiring | 📋 pending |
+| [T86-mcp-conformance-fix](https://github.com/gentoobreaking/ai-tasks/blob/main/mcp-go-core/tasks/T086-mcp-conformance-fix.md) | P0 - MCP Spec Conformity: Fix Server-Transport-Router wiring | ✅ done |
+| [T87-mcp-compliance-fix](https://github.com/gentoobreaking/ai-tasks/blob/main/mcp-go-core/tasks/T087-mcp-compliance-fix.md) | P0 - MCP Spec Compliance: JSON tags, notifications/cancel, dispatch coverage | ✅ done |
+| [T88-mcp-optional-extensions](https://github.com/gentoobreaking/ai-tasks/blob/main/mcp-go-core/tasks/T088-mcp-optional-extensions.md) | P2 - MCP Spec Compliance: Optional extensions (logging/setLogLevel, sampling/createMessage, resources/created) | ✅ done |
 
-**✅ done: 85 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 1**
+**✅ done: 88 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 0**
 
-> 自動生成於 2026-09-04 21:34
+> 自動生成於 2026-09-04 23:11

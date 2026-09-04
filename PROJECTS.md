@@ -1,6 +1,6 @@
 # 📁 Projects Dashboard
 
-> 最後更新: 2026-09-04 21:34 · 自動生成
+> 最後更新: 2026-09-04 23:11 · 自動生成
 
 ---
 
@@ -9,18 +9,12 @@
 | 指標 | 數量 |
 |------|------|
 | 專案數 | 62 |
-| 任務總數 | 1573 |
-| ✅ 已完成 | 1509 |
-| ⬜ 待處理 | 1 |
+| 任務總數 | 1575 |
+| ✅ 已完成 | 1512 |
+| ⬜ 待處理 | 0 |
 | 🔄 進行中 | 0 |
 | ⏭️ 跳過 | 63 |
-| 總完成率 | 99% |
-
-## ⬜ 待處理
-
-| 專案 | 任務 | 標題 | 狀態 |
-|------|------|------|------|
-| mcp-go-core | [T086-mcp-conformance-fix](https://github.com/gentoobreaking/ai-tasks/blob/main/mcp-go-core/tasks/T086-mcp-conformance-fix.md) | P0 - MCP Spec Conformity: Fix Server-Transport-Router wiring | ⬜ |
+| 總完成率 | 100% |
 
 ---
 
@@ -28,8 +22,8 @@
 
 | 指標 | 數值 |
 |------|------|
-| 過去 7 天完成 | 191 |
-| 過去 30 天完成 | 742 |
+| 過去 7 天完成 | 194 |
+| 過去 30 天完成 | 745 |
 | 平均週期時間 | 2.7 天 |
 | 週期時間中位數 | 0.0 天 |
 
@@ -39,10 +33,10 @@ xychart-beta
     title "過去 14 天任務完成趨勢"
     x-axis ["08-22", "08-23", "08-24", "08-25", "08-26", "08-27", "08-28", "08-29", "08-30", "08-31", "09-01", "09-02", "09-03", "09-04"]
     y-axis "完成數" 0 --> 165
-    line [28, 0, 77, 165, 69, 0, 23, 0, 30, 24, 0, 0, 17, 97]
+    line [28, 0, 77, 165, 69, 0, 23, 0, 30, 24, 0, 0, 17, 100]
 ```
 
-📊 總計: 530 | 日均: 37.9 | 本週: 168 | 📉 下降中
+📊 總計: 533 | 日均: 38.1 | 本週: 171 | 📉 下降中
 
 ## 📋 專案列表
 
@@ -76,7 +70,7 @@ xychart-beta
 | ✅ | [lifecycle-sync-fix](https://github.com/gentoobreaking/ai-tasks/tree/main/lifecycle-sync-fix) | 2 | 2 | 0 | 0 | 0 | ████████████████████ 100% | 2026-04-21 |
 | ✅ | [llm-router](https://github.com/gentoobreaking/ai-tasks/tree/main/llm-router) | 1 | 1 | 0 | 0 | 0 | ████████████████████ 100% | 2026-04-16 |
 | ✅ | [local-ai-controlpanel](https://github.com/gentoobreaking/ai-tasks/tree/main/local-ai-controlpanel) | 41 | 41 | 0 | 0 | 0 | ████████████████████ 100% | 2026-08-18 |
-| ⬜ | [mcp-go-core](https://github.com/gentoobreaking/ai-tasks/tree/main/mcp-go-core) | 86 | 85 | 1 | 0 | 0 | ███████████████████░ 98% | 2026-09-04 |
+| ✅ | [mcp-go-core](https://github.com/gentoobreaking/ai-tasks/tree/main/mcp-go-core) | 88 | 88 | 0 | 0 | 0 | ████████████████████ 100% | 2026-09-04 |
 | ✅ | [md-viewer-app](https://github.com/gentoobreaking/ai-tasks/tree/main/md-viewer-app) | 44 | 38 | 0 | 0 | 6 | ████████████████████ 100% | 2026-05-12 |
 | ✅ | [member-backup](https://github.com/gentoobreaking/ai-tasks/tree/main/member-backup) | 1 | 1 | 0 | 0 | 0 | ████████████████████ 100% | 2026-04-16 |
 | ✅ | [member-config-review](https://github.com/gentoobreaking/ai-tasks/tree/main/member-config-review) | 7 | 7 | 0 | 0 | 0 | ████████████████████ 100% | 2026-04-19 |
