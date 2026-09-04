@@ -3,7 +3,7 @@ github_issue: N/A
 title: P2 - Task Runtime and Session Runtime Implementation
 type: feat
 priority: medium
-status: pending
+status: done
 depends_on:
   - T009
 assignee: "pi with opencode"
