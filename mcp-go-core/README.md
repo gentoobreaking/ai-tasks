@@ -92,6 +92,10 @@
 | P0 - MCP Spec Conformity: Fix Server-Transport-Router wiring |
 | P0 - MCP Spec Compliance: JSON tags, notifications/cancel, dispatch coverage |
 | P2 - MCP Spec Compliance: Optional extensions (logging/setLogLevel, sampling/createMessage, resources/created) |
+| P2 - MCP Spec Compliance: Advanced optional methods (ping, complete, resource subscriptions) |
+| P1 - Dynamic Config: Hot-reload config without server restart |
+| P0 - Feature Flags: Runtime toggle system with config-backed flags |
+| P0 - Rate Limiting: Per-method token bucket rate limiter |
 
 ## Skip 項目
 
@@ -109,7 +113,8 @@
 
 | Task | 名稱 | 說明 |
 |------|------|------|
-| | | |
+| [T99-resource-change-notifications](https://github.com/gentoobreaking/ai-tasks/blob/main/mcp-go-core/tasks/T099-resource-change-notifications.md) | P2 - MCP Resource Change Notifications (bidirectional) | |
+| [T100-mcp-optional-methods-continued](https://github.com/gentoobreaking/ai-tasks/blob/main/mcp-go-core/tasks/T100-mcp-optional-methods-continued.md) | P3 - MCP Spec Conformance: Missing optional methods (prompts/create, notifications/list_changed) | |
 
 ## Task 列表
 
@@ -203,7 +208,13 @@
 | [T86-mcp-conformance-fix](https://github.com/gentoobreaking/ai-tasks/blob/main/mcp-go-core/tasks/T086-mcp-conformance-fix.md) | P0 - MCP Spec Conformity: Fix Server-Transport-Router wiring | ✅ done |
 | [T87-mcp-compliance-fix](https://github.com/gentoobreaking/ai-tasks/blob/main/mcp-go-core/tasks/T087-mcp-compliance-fix.md) | P0 - MCP Spec Compliance: JSON tags, notifications/cancel, dispatch coverage | ✅ done |
 | [T88-mcp-optional-extensions](https://github.com/gentoobreaking/ai-tasks/blob/main/mcp-go-core/tasks/T088-mcp-optional-extensions.md) | P2 - MCP Spec Compliance: Optional extensions (logging/setLogLevel, sampling/createMessage, resources/created) | ✅ done |
+| [T89-mcp-advanced-methods](https://github.com/gentoobreaking/ai-tasks/blob/main/mcp-go-core/tasks/T089-mcp-advanced-methods.md) | P2 - MCP Spec Compliance: Advanced optional methods (ping, complete, resource subscriptions) | ✅ done |
+| [T90-dynamic-config-hot-reload](https://github.com/gentoobreaking/ai-tasks/blob/main/mcp-go-core/tasks/T090-dynamic-config-hot-reload.md) | P1 - Dynamic Config: Hot-reload config without server restart | ✅ done |
+| [T91-feature-flags](https://github.com/gentoobreaking/ai-tasks/blob/main/mcp-go-core/tasks/T091-feature-flags.md) | P0 - Feature Flags: Runtime toggle system with config-backed flags | ✅ done |
+| [T92-rate-limiting](https://github.com/gentoobreaking/ai-tasks/blob/main/mcp-go-core/tasks/T092-rate-limiting.md) | P0 - Rate Limiting: Per-method token bucket rate limiter | ✅ done |
+| [T99-resource-change-notifications](https://github.com/gentoobreaking/ai-tasks/blob/main/mcp-go-core/tasks/T099-resource-change-notifications.md) | P2 - MCP Resource Change Notifications (bidirectional) | 📋 pending |
+| [T100-mcp-optional-methods-continued](https://github.com/gentoobreaking/ai-tasks/blob/main/mcp-go-core/tasks/T100-mcp-optional-methods-continued.md) | P3 - MCP Spec Conformance: Missing optional methods (prompts/create, notifications/list_changed) | 📋 pending |
 
-**✅ done: 88 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 0**
+**✅ done: 92 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 2**
 
-> 自動生成於 2026-09-04 23:11
+> 自動生成於 2026-09-05 00:20
