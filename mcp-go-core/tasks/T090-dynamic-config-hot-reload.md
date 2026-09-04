@@ -1,0 +1,39 @@
+---
+github_issue: N/A
+title: P1 - Dynamic Config: Hot-reload config without server restart
+type: feat
+priority: medium
+status: pending
+depends_on:
+  - T007
+assignee: "pi with opencode"
+created: 2026-09-04
+updated: 2026-09-04
+---
+
+# T090 - Dynamic Config: Hot-Reload
+
+## 目標
+
+Enable runtime configuration reload without restarting the MCP server:
+- File watcher on config file (YAML) via `fsnotify`
+- Atomic config swap — no race conditions
+- `/config/reload` endpoint for forced reload (admin only)
+- Graceful degradation on invalid config (keep last good state)
+
+## 驗收標準
+- [ ] Config struct supports atomic swap via `sync.RWMutex`
+- [ ] File watcher reloads YAML config on save
+- [ ] Invalid config: log error, keep previous valid config
+- [ ] Health check endpoint reports config load timestamp
+- [ ] 3 new tests covering reload/degradation/atomicity
+- [ ] `go test -race ./... -count=1` all pass
+- [ ] `go vet ./...` clean
+
+## 備註
+**Priority:** Medium — needed for zero-downtime production operation.
+
+**Key files:** `core/config/`, `core/server/`, `core/middleware/health.go`
+
+## 執行紀錄
+- 2026-09-04: Created task, pending implementation
