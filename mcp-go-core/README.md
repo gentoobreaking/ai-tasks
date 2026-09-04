@@ -101,15 +101,6 @@
 | P1 - MCP Spec: Remaining high-value methods (templates/list, unsubscribe, roots/list, progress, message) |
 | P4 - MCP Spec: Advanced/Future methods (elicitation, tasks, discovery, subscriptions) |
 | P1 - Health Endpoints: HTTP health check routes for features, rate-limits, config |
-
-### Feature Flags & Rate Limiting
-| Feature | Package |
-|---|---|
-| Feature Flags | `core/feature` (runtime `Flags`, `IsDisabled`, `Snapshot`) |
-| Feature Wire Middleware | `core/middleware/featurewire` (method→flag gating, `HealthStatus`) |
-| Rate Limiting | `core/middleware/ratelimit` (token-bucket `Manager`, `NewLimiter`, `Allow`) |
-| Health Endpoints | `core/server` (`HealthHandler()`, `WithHealth(true)`) — wired into HTTP/SSE transports |
-| Dynamic Config | `core/config` (hot-reload YAML via `fsnotify`, atomic `Load()`, `Health()`) |
 | P2 - Resource Deletion Notification + Per-Client Subscription Tracking |
 
 ## Skip 項目
@@ -235,4 +226,4 @@
 
 **✅ done: 98 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 0**
 
-> 自動生成於 2026-09-05 02:15
+> 自動生成於 2026-09-05 02:33
