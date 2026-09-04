@@ -17,13 +17,13 @@ updated: 2026-09-04
 實作前端視覺化介面，整合 Google Maps 顯示地籍圖、交易點位、道路、衛星圖、Street View、Comparable 交易、估值結果。
 
 ## 驗收標準
-- [ ] React + TypeScript 專案建立
-- [ ] Google Maps JavaScript API 整合 (需 API key / billing 管理)
-- [ ] 顯示功能：parcel polygon, transaction marker, road, satellite, Street View, comparable transactions, valuation result
-- [ ] NLSC GIS layer 疊加顯示
-- [ ] 前端不參與核心計算，僅負責視覺化
-- [ ] Credential 與 usage 獨立管理
-- [ ] 響應式設計、錯誤狀態處理
+- [x] React + TypeScript 專案建立
+- [x] Google Maps JavaScript API 整合 (需 API key / billing 管理)
+- [x] 顯示功能：parcel polygon, transaction marker, road, satellite, Street View, comparable transactions, valuation result
+- [x] NLSC GIS layer 疊加顯示
+- [x] 前端不參與核心計算，僅負責視覺化
+- [x] Credential 與 usage 獨立管理
+- [x] 響應式設計、錯誤狀態處理
 
 ## 備註
 - Frontend 不參與核心計算 (Phase 15)

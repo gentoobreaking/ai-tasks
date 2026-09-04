@@ -19,13 +19,13 @@ updated: 2026-09-04
 驗證 Artifact Locking 機制，確保 locked 狀態下資料不可修改。
 
 ## 驗收標準
-- [ ] 驗證 raw data 在 locked 狀態：UPDATE → FAIL, DELETE → FAIL
-- [ ] 驗證 snapshot 在 LOCKED 狀態：UPDATE → FAIL, DELETE → FAIL
-- [ ] 驗證 algorithm version 不可修改
-- [ ] 驗證 valuation configuration 不可修改
-- [ ] 驗證 GIS source metadata 不可修改
-- [ ] 驗證 snapshot manifest 不可修改
-- [ ] 測試涵蓋所有 P5 列舉的 artifact 類型
+- [x] 驗證 raw data 在 locked 狀態：UPDATE → FAIL, DELETE → FAIL
+- [x] 驗證 snapshot 在 LOCKED 狀態：UPDATE → FAIL, DELETE → FAIL
+- [x] 驗證 algorithm version 不可修改
+- [x] 驗證 valuation configuration 不可修改
+- [x] 驗證 GIS source metadata 不可修改
+- [x] 驗證 snapshot manifest 不可修改
+- [x] 測試涵蓋所有 P5 列舉的 artifact 類型
 
 ## 備註
 - P5 Artifact Locking 核心要求

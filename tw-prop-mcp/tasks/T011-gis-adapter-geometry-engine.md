@@ -17,11 +17,11 @@ updated: 2026-09-03
 實作 GIS Adapter 介接官方圖資來源，以及 Geometry Engine 提供空間運算功能。
 
 ## 驗收標準
-- [ ] 實作 GIS Adapter 介面 (支援國土測繪圖資服務雲、地籍圖資網路便民服務系統)
-- [ ] 實作 Geometry 正規化：官方座標系 (EPSG:4326) → 內部 EPSG:3826
-- [ ] 實作 Geometry Engine：ST_Intersects, ST_Within, ST_Contains, ST_Distance, ST_DWithin, ST_Area, ST_Centroid
-- [ ] 所有大量 spatial query 必須由 PostGIS 執行，禁止在 Go memory 計算
-- [ ] 已知地號 → 正確 geometry、centroid、面積測試通過
+- [x] 實作 GIS Adapter 介面 (支援國土測繪圖資服務雲、地籍圖資網路便民服務系統)
+- [x] 實作 Geometry 正規化：官方座標系 (EPSG:4326) → 內部 EPSG:3826
+- [x] 實作 Geometry Engine：ST_Intersects, ST_Within, ST_Contains, ST_Distance, ST_DWithin, ST_Area, ST_Centroid
+- [x] 所有大量 spatial query 必須由 PostGIS 執行，禁止在 Go memory 計算
+- [x] 已知地號 → 正確 geometry、centroid、面積測試通過
 - [x] 座標轉換雙向測試：4326 ↔ 3826
 
 ## 備註

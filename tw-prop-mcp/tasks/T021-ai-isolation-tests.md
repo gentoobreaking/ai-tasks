@@ -17,12 +17,12 @@ updated: 2026-09-04
 測試 AI 是否能繞過 MCP boundary 直接操作底層資源。
 
 ## 驗收標準
-- [ ] 測試 AI 嘗試 inject SQL → ALL DENIED
-- [ ] 測試 AI 嘗試 inject PostGIS expression → ALL DENIED
-- [ ] 測試 AI 嘗試 change valuation weights → ALL DENIED
-- [ ] 測試 AI 嘗試 modify snapshot → ALL DENIED
-- [ ] 驗證 MCP tool 參數結構化，無 raw SQL/PostGIS 欄位
-- [ ] 驗證 Service Layer 為唯一轉換 SQL/PostGIS 的路徑
+- [x] 測試 AI 嘗試 inject SQL → ALL DENIED
+- [x] 測試 AI 嘗試 inject PostGIS expression → ALL DENIED
+- [x] 測試 AI 嘗試 change valuation weights → ALL DENIED
+- [x] 測試 AI 嘗試 modify snapshot → ALL DENIED
+- [x] 驗證 MCP tool 參數結構化，無 raw SQL/PostGIS 欄位
+- [x] 驗證 Service Layer 為唯一轉換 SQL/PostGIS 的路徑
 
 ## 備註
 - P4 AI Isolation 核心要求
