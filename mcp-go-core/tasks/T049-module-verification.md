@@ -1,0 +1,33 @@
+---
+github_issue: N/A
+title: P7 - Expected and Unexpected Module Verification
+type: feat
+priority: high
+status: pending
+depends_on:
+- T041
+- T048
+assignee: "pi with opencode"
+created: 2026-09-04
+updated: 2026-09-04
+---
+
+# T049 - P7: Expected and Unexpected Module Verification
+
+## 目標
+
+驗證 binary 中的 modules 與 feature lock 一致: expected modules 存在, unexpected modules 不存在。
+
+## 驗收標準
+
+- [ ] Expected modules (from feature lock) 必須在 binary 中
+- [ ] Unexpected modules 不得在 binary 中
+- [ ] Unexpected module → ERROR `UNEXPECTED_MODULE` with module name and reason
+- [ ] Missing expected module → ERROR `MISSING_MODULE`
+- [ ] `N004` test: binary intentionally contains otel → `UNEXPECTED_MODULE`, FAIL
+- [ ] `BIN-001` to `BIN-005` tests for minimal build
+- [ ] `go test ./internal/builder/...` 成功
+
+## 備註
+
+Verification matrix in algs/binary-analysis.md。Critical for Build Pipeline correctness.

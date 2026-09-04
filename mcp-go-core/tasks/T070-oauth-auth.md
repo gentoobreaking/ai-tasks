@@ -1,0 +1,36 @@
+---
+github_issue: N/A
+title: P2 - OAuth Security Module (Deferred - External Condition)
+type: feat
+priority: low
+status: pending
+depends_on: []
+assignee: "pi with opencode"
+created: 2026-09-04
+updated: 2026-09-04
+blocked_on:
+- "mTLS/OAuth dependency not required for v0.1"
+---
+
+> ⛔ 本任務受外部條件約束：blocked_on 全數滿足前不得開工。  
+> 排程器挑到時應先逐項驗條件，未滿足則跳過並記錄原因。
+
+# T070 - P2: OAuth Security Module
+
+## 目標
+
+建立 `modules/security/oauth/`，實現 OAuth 2.1 認證。
+
+對應 feature_graph_spec F24, architecture §24 Security API, §66 Non-Goals, agent_tasks TASK-033。
+
+## 驗收標準
+
+- [ ] `Authenticator` interface: `Authenticate(ctx, req) (Identity, error)`
+- [ ] OAuth 2.1 authorization code flow with PKCE
+- [ ] Token introspection and validation
+- [ ] OAuth module 不得 import JWT 或 OTel 或 Kubernetes
+- [ ] `go test ./modules/security/oauth/...` 成功
+
+## 備註
+
+mcp-go-core 不是一個 mandatory authentication framework。OAuth is a modular extension, NOT required for v0.1. JWT module must not import OAuth.
