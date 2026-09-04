@@ -27,10 +27,10 @@ Add per-method rate limiting via token bucket algorithm:
 - [x] Default limits: tools/call 30/sec, tools/list 10/sec, prompts/get 10/sec
 - [x] Configurable via YAML `rateLimits:` section
 - [x] JSON-RPC error response on limit exceeded (-32402)
-- [ ] Health endpoint `/rate-limits` reports current bucket status — NOT IMPLEMENTED: no HTTP health endpoint registered on server. See T103.
+- [x] Health endpoint `/rate-limits` reports current bucket status — IMPLEMENTED via T103
 - [x] 4 new tests: within-limit/burst/over-limit/per-method
 - [x] `go test -race ./... -count=1` all pass
-- [ ] `go vet ./...` clean
+- [x] `go vet ./...` clean
 
 ## 備註
 **Priority:** High — production DoS protection.

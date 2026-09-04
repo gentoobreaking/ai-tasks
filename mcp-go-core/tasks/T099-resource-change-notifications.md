@@ -23,7 +23,7 @@ Implement server-side emission of resource change notifications to enable full b
 ## 驗收標準
 - [x] Server-side notification dispatcher: push notification to connected clients (notifyHandler + sendNotification)
 - [~] `notifications/resources/update` emitted when `resources/created` fires for a subscribed URI — requires explicit NotifyResourceUpdate call, not auto-fired by RegisterResource
-- [ ] `notifications/resources/deleted` emitted when a subscribed resource is removed — **NOT IMPLEMENTED**: no DeleteResource/RemoveResource method exists. See T104.
+- [x] `notifications/resources/deleted` emitted when a subscribed resource is removed — IMPLEMENTED via T104
 - [x] Subscription registry supports per-client connection tracking — IMPLEMENTED: `subscriptions map[string]map[string]bool` (uri → clientIDs) with Subscribe(uri, clientID) + UnsubscribeClient(uri, clientID).
 - [x] Protocol type: `ResourceUpdateNotification` with `uri` + `changeType`
 - [x] 4 tests: subscribe+notify, notify-multiple-clients, notify-deleted, no-subscriber-skip

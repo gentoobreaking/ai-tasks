@@ -25,7 +25,7 @@ Implement a runtime feature flag system:
 - [x] `core/feature/flag.go`: `Flags` struct with `Get`, `Set`, `IsDisabled`
 - [x] Config includes `features:` map
 - [x] Middleware `FeatureFlagMiddleware` gates tool/resource/prompt methods
-- [ ] Health endpoint `/features/<name>` reports per-flag status — NOT IMPLEMENTED: no HTTP health endpoint registered on server. See T103.
+- [x] Health endpoint `/features/<name>` reports per-flag status — IMPLEMENTED via T103
 - [x] 4 new tests covering enable/disable/gate (health endpoint not implemented)
 - [x] `go test -race ./... -count=1` all pass
 - [x] `go vet ./...` clean

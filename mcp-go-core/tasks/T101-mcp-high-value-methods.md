@@ -23,15 +23,15 @@ Implement the remaining high-value MCP spec methods to reach **A++ compliance** 
 - `notifications/message` — server→client logging message notification
 
 ## 驗收標準
-- [ ] `resources/templates/list` handled by `router.Dispatch()` → returns template list
-- [ ] `resources/unsubscribe` handled → removes subscription, returns success
-- [ ] `roots/list` handled → stores client roots, returns roots array
-- [ ] `notifications/progress` handled → stores progress updates
-- [ ] `notifications/message` handled → logs server message
-- [ ] Protocol types added: `ResourceTemplateListResult`, `UnsubscribeParams`, `RootsListParams`, `RootsListResult`, `ProgressNotification`, `MessageNotification`, `MessageNotificationParams`
-- [ ] `Unsubscribe(uri string)` method on Router
-- [ ] `RootsHandler` callback registered on Router for roots/list
-- [ ] 5 tests: templates/list, unsubscribe, roots/list, notifications/progress, notifications/message
+- [x] `resources/templates/list` handled by `router.Dispatch()` → returns template list
+- [x] `resources/unsubscribe` handled → removes subscription, returns success
+- [x] `roots/list` handled → stores client roots, returns roots array
+- [x] `notifications/progress` handled → stores progress updates
+- [x] `notifications/message` handled → logs server message
+- [x] Protocol types added: `ResourceTemplateListResult`, `UnsubscribeParams`, `RootsListParams`, `RootsListResult`, `ProgressNotification`, `MessageNotification`, `MessageNotificationParams`
+- [x] `Unsubscribe(uri string)` method on Router
+- [x] `RootsHandler` callback registered on Router for roots/list
+- [x] 5 tests: templates/list, unsubscribe, roots/list, notifications/progress, notifications/message
 - [x] `go test -race ./... -count=1` all pass
 - [x] `go vet ./...` no errors
 
