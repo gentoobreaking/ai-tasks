@@ -1,6 +1,6 @@
 # 📅 Daily Dashboard - 2026-09-04
 
-> 最後更新: 2026-09-04 20:54 · 自動生成
+> 最後更新: 2026-09-04 21:34 · 自動生成
 
 ---
 
@@ -8,11 +8,11 @@
 
 | 指標 | 數量 |
 |------|------|
-| 新增任務 | 85 |
+| 新增任務 | 86 |
 | 完成任務 | 97 |
 | 進行中 | 0 |
-| 待處理 | 0 |
-| 完成率 | 100% |
+| 待處理 | 1 |
+| 完成率 | 98% |
 
 ---
 
@@ -20,10 +20,10 @@
 
 | 指標 | 數值 |
 |------|------|
-| 今日完成速率 | 97 任務 |
-| 近 7 日速率 | 97 任務 |
+| 今日完成速率 | 98 任務 |
+| 近 7 日速率 | 98 任務 |
 | 平均循環天數 | 0.1 天 |
-| 今日完成任務循環時間樣本 | 97 筆 |
+| 今日完成任務循環時間樣本 | 98 筆 |
 
 ---
 
@@ -116,6 +116,7 @@
 | mcp-go-core | [T083-filesystem-storage](https://github.com/gentoobreaking/ai-tasks/blob/main/mcp-go-core/tasks/T083-filesystem-storage.md) | P1 - Filesystem Storage Implementation |
 | mcp-go-core | [T084-external-storage](https://github.com/gentoobreaking/ai-tasks/blob/main/mcp-go-core/tasks/T084-external-storage.md) | P1 - External Storage Implementation |
 | mcp-go-core | [T085-task-session-runtime](https://github.com/gentoobreaking/ai-tasks/blob/main/mcp-go-core/tasks/T085-task-session-runtime.md) | P2 - Task Runtime and Session Runtime Implementation |
+| mcp-go-core | [T086-mcp-conformance-fix](https://github.com/gentoobreaking/ai-tasks/blob/main/mcp-go-core/tasks/T086-mcp-conformance-fix.md) | P0 - MCP Spec Conformity: Fix Server-Transport-Router wiring |
 
 ---
 
@@ -237,7 +238,9 @@ _無_
 
 ## 📋 所有待處理任務
 
-_無_
+| 專案 | 任務 | 標題 | 優先 |
+| -- | -- | -- | -- |
+| mcp-go-core | [T086-mcp-conformance-fix](https://github.com/gentoobreaking/ai-tasks/blob/main/mcp-go-core/tasks/T086-mcp-conformance-fix.md) | P0 - MCP Spec Conformity: Fix Server-Transport-Router wiring | critical |
 
 ---
 
