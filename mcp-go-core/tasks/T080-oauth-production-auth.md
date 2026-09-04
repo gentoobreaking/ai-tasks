@@ -3,7 +3,7 @@ github_issue: N/A
 title: P1 - OAuth Production Authentication
 type: feat
 priority: critical
-status: pending
+status: done
 depends_on:
   - T070
 assignee: "pi with opencode"
