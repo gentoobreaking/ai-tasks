@@ -3,7 +3,7 @@ github_issue: N/A
 title: P1 - Dynamic Config: Hot-reload config without server restart
 type: feat
 priority: medium
-status: pending
+status: done
 depends_on:
   - T007
 assignee: "pi with opencode"
@@ -37,3 +37,4 @@ Enable runtime configuration reload without restarting the MCP server:
 
 ## 執行紀錄
 - 2026-09-04: Created task, pending implementation
+- 2026-09-04: Implemented core/config (Config, Watcher, Health, atomic swap). 7 tests. 44 pkgs -race PASS, 360 tests. Committed at 3c70209.

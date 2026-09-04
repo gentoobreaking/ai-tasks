@@ -37,4 +37,5 @@ Implement a runtime feature flag system:
 
 ## 執行紀錄
 - 2026-09-04: Created task, pending implementation
+- 2026-09-04: Implemented core/feature, featurewire middleware, server.WithFlags(). 42 pkgs -race PASS, 333 tests. Committed at 8cbab1e.
 - 2026-09-04: Implemented core/feature, featurewire middleware, server integration. 42 pkgs -race PASS, 345 tests. Committed at 8cbab1e.

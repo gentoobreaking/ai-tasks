@@ -3,7 +3,7 @@ github_issue: N/A
 title: P0 - Rate Limiting: Per-method token bucket rate limiter
 type: feat
 priority: high
-status: pending
+status: done
 depends_on:
   - T086
 assignee: "pi with opencode"
@@ -41,3 +41,4 @@ Add per-method rate limiting via token bucket algorithm:
 
 ## 執行紀錄
 - 2026-09-04: Created task, pending implementation
+- 2026-09-04: Implemented core/middleware/ratelimit, Manager/Allow/Status, server.WithRateLimiter(), 8 tests. 43 pkgs -race PASS, 353 tests. Committed at d09f977.
