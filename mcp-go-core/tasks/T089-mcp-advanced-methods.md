@@ -28,7 +28,7 @@ Implement MCP spec's advanced optional methods to reach **A+ compliance** (full 
 - [x] `router.Dispatch()` handles `complete/arg` / `complete/prompt` → returns `Completion` with `completion.values`
 - [x] `router.Dispatch()` handles `notifications/roots/list_changed` → internal roots refresh hook
 - [x] `router.Dispatch()` handles `resources/subscribe` → stores subscription, returns success
-- [x] Server emits `notifications/resources/update` and `notifications/resources/deleted` on resource changes
+- [~] Server emits `notifications/resources/update` (implemented) and `notifications/resources/deleted` on resource removal (NOT implemented — no DeleteResource method. See T099/T104.)
 - [x] Protocol types added: `PingResult`, `Completion`, `CompletionParams`, `SubscribeParams`, `RootsListChangedParams`
 - [x] Tests cover each new method (6 tests)
 - [x] `go test -race ./... -count=1` all packages pass
@@ -65,3 +65,8 @@ After T088, core MCP protocol is at **A- compliance** (all 11 core spec methods 
 ## 執行紀錄
 - 2026-09-04: Created task, pending implementation
 - 2026-09-05: Implemented ping, complete, roots/list_changed, resources/subscribe. Types: PingResult, Completion, CompletionParams, CompleteResult, SubscribeParams, Subscription, RootsListChangedParams. Tests: 6. 44 pkgs pass -race, 366 tests. Committed at 7055fbf2
+
+## 執行紀錄（2026-09-05 稽核）
+- 已達成 4 項並打勾 (1-4, 6, 7)。
+- **未竟事項**: `notifications/resources/deleted` — NOT IMPLEMENTED. No DeleteResource/RemoveResource method exists on Router to trigger notification emission. 回流為 T104。
+- 補充: ping (pong), complete (values return), roots/list_changed (callback), resources/subscribe (stores URI) — all dispatched + tested. Protocol types: PingResult, CompleteResult, CompletionParams, SubscribeParams, RootsListChangedParams added.

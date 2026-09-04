@@ -22,13 +22,13 @@ Enable runtime configuration reload without restarting the MCP server:
 - Graceful degradation on invalid config (keep last good state)
 
 ## 驗收標準
-- [ ] Config struct supports atomic swap via `sync.RWMutex`
+- [x] Config struct supports atomic swap via `sync.RWMutex`
 - [x] File watcher reloads YAML config on save
 - [x] Invalid config: log error, keep previous valid config
 - [x] Health check endpoint reports config load timestamp
-- [ ] 3 new tests covering reload/degradation/atomicity
-- [ ] `go test -race ./... -count=1` all pass
-- [ ] `go vet ./...` clean
+- [x] 3 new tests covering reload/degradation/atomicity
+- [x] `go test -race ./... -count=1` all pass
+- [x] `go vet ./...` clean
 
 ## 備註
 **Priority:** Medium — needed for zero-downtime production operation.
@@ -38,3 +38,8 @@ Enable runtime configuration reload without restarting the MCP server:
 ## 執行紀錄
 - 2026-09-04: Created task, pending implementation
 - 2026-09-04: Implemented core/config (Config, Watcher, Health, atomic swap). 7 tests. 44 pkgs -race PASS, 360 tests. Committed at 3c70209.
+
+## 執行紀錄（2026-09-05 稽核）
+- 已達成 6 項並打勻（超過 3 tests 要求）。
+- **未竟事項**: 無
+- 補充: /config/reload HTTP endpoint not implemented (task mentioned it, not in acceptance criteria).

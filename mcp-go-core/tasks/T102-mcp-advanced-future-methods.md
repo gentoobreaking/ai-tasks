@@ -59,3 +59,8 @@ Implement remaining MCP spec methods that are either advanced (elicitation) or f
 - `mcp.MethodListRoots` = `"roots/list"`
 - `mcp.MethodServerDiscover` = `"server/discover"`
 - Task-related methods use `tasks/` prefix
+
+## 執行紀錄（2026-09-05 稽核）
+- 已達成 9 項並打勾。
+- **未竟事項**: 無
+- 補充: elicitation/create + complete, tasks/get+list+cancel, server/discover, subscriptions/listen — all dispatched + tested. Protocol types added.
