@@ -21,12 +21,12 @@ updated: 2026-09-04
 
 ## 驗收標準
 
-- [ ] `examples/minimal/` 目錄建立
-- [ ] 包含 `main.go`、`mcp.yaml`、`go.mod`
-- [ ] Server 註冊至少 1 個 tool
-- [ ] 使用 stdio transport
-- [ ] `go build ./examples/minimal/` 成功
-- [ ] `go test ./examples/minimal/` 成功
+- [x] `examples/minimal/` 目錄建立
+- [x] 包含 `main.go`、`mcp.yaml`、`go.mod`
+- [x] Server 註冊至少 1 個 tool
+- [x] 使用 stdio transport
+- [x] `go build ./examples/minimal/` 成功
+- [x] `go test ./examples/minimal/` 成功
 
 ## 備註
 

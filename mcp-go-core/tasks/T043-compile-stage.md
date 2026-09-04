@@ -20,13 +20,13 @@ updated: 2026-09-04
 
 ## 驗收標準
 
-- [ ] Default: `go build ./cmd/server`
-- [ ] Production: `go build -trimpath -ldflags="-s -w" ./cmd/server`
-- [ ] CGO_ENABLED=0 default
-- [ ] Flags configurable
-- [ ] Binary output to dist/server
-- [ ] `BUILD-001` test: dist/server exists and executable
-- [ ] `go test ./internal/builder/...` 成功
+- [x] Default: `go build ./cmd/server`
+- [x] Production: `go build -trimpath -ldflags="-s -w" ./cmd/server`
+- [x] CGO_ENABLED=0 default
+- [x] Flags configurable
+- [x] Binary output to dist/server
+- [x] `BUILD-001` test: dist/server exists and executable
+- [x] `go test ./internal/builder/...` 成功
 
 ## 備註
 

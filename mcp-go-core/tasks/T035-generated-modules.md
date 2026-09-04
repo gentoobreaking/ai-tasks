@@ -20,10 +20,10 @@ updated: 2026-09-04
 
 ## 驗收標準
 
-- [ ] Only enabled modules appear in import block
-- [ ] `modules.ConfigureAll(server)` 禁止
-- [ ] `GEN-003` test: direct module.Configure calls
-- [ ] `go test ./internal/generator/...` 成功
+- [x] Only enabled modules appear in import block
+- [x] `modules.ConfigureAll(server)` 禁止
+- [x] `GEN-003` test: direct module.Configure calls
+- [x] `go test ./internal/generator/...` 成功
 
 ## 備註
 

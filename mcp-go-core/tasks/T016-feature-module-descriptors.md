@@ -22,10 +22,10 @@ updated: 2026-09-04
 
 ## 驗收標準
 
-- [ ] `FeatureDescriptor` struct: Name, Version, Description, Module, Dependencies, Conflicts, Implies, Default, Optional, BuildOnly, Runtime
-- [ ] `ModuleDescriptor` struct: Name, Version, Category, Features, Dependencies, Package, RuntimeInit
-- [ ] Dependency type 支援 HARD, OPTIONAL, IMPLICIT
-- [ ] `go test ./internal/featuregraph/...` 成功 (type definitions with basic validation)
+- [x] `FeatureDescriptor` struct: Name, Version, Description, Module, Dependencies, Conflicts, Implies, Default, Optional, BuildOnly, Runtime
+- [x] `ModuleDescriptor` struct: Name, Version, Category, Features, Dependencies, Package, RuntimeInit
+- [x] Dependency type 支援 HARD, OPTIONAL, IMPLICIT
+- [x] `go test ./internal/featuregraph/...` 成功 (type definitions with basic validation)
 
 ## 備註
 

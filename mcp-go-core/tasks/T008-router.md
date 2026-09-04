@@ -25,12 +25,12 @@ updated: 2026-09-04
 
 ## 驗收標準
 
-- [ ] `Router` struct 提供: `RegisterTool`, `RegisterResource`, `RegisterPrompt`, `Dispatch` 方法
-- [ ] `Dispatch` 根據方法名稱路由到對應 handler
-- [ ] 支援 `tools/call`, `resources/read`, `prompts/get` 路由
-- [ ] 未知方法回傳 `MethodNotFoundError`
-- [ ] Request path 中不得查詢 Feature Graph (驗證: `grep` 不得出現 `featuregraph` 或 `registry.Resolve`)
-- [ ] `go test ./core/router/...` 成功
+- [x] `Router` struct 提供: `RegisterTool`, `RegisterResource`, `RegisterPrompt`, `Dispatch` 方法
+- [x] `Dispatch` 根據方法名稱路由到對應 handler
+- [x] 支援 `tools/call`, `resources/read`, `prompts/get` 路由
+- [x] 未知方法回傳 `MethodNotFoundError`
+- [x] Request path 中不得查詢 Feature Graph (驗證: `grep` 不得出現 `featuregraph` 或 `registry.Resolve`)
+- [x] `go test ./core/router/...` 成功
 
 ## 備註
 

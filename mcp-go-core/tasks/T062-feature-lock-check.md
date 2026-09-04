@@ -22,10 +22,10 @@ CI 必須確認 features.lock 與 source/config 一致。
 
 ## 驗收標準
 
-- [ ] `CI-001` test: source changed but lock not regenerated → FAIL
-- [ ] Error code: `FEATURE_LOCK_OUTDATED`
-- [ ] 提示用戶執行 `mcp-go-core analyze` and `mcp-go-core generate`
-- [ ] `go test ./tests/ci/...` 成功
+- [x] `CI-001` test: source changed but lock not regenerated → FAIL
+- [x] Error code: `FEATURE_LOCK_OUTDATED`
+- [x] 提示用戶執行 `mcp-go-core analyze` and `mcp-go-core generate`
+- [x] `go test ./tests/ci/...` 成功
 
 ## 備註
 

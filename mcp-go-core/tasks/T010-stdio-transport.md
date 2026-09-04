@@ -23,14 +23,14 @@ updated: 2026-09-04
 
 ## 驗收標準
 
-- [ ] `Transport` interface: `Serve(ctx context.Context, handler Handler) error`
-- [ ] Stdio transport reads from `os.Stdin` (newline-delimited JSON)
-- [ ] Stdio transport writes to `os.Stdout` (newline-delimited JSON)
-- [ ] Support MCP JSON-RPC 2.0 消息格式
-- [ ] Handle `initialize`, `tools/list`, `tools/call`, `shutdown`, `exit`
-- [ ] Graceful shutdown on SIGINT/SIGTERM
-- [ ] `go test ./modules/transport/stdio/...` 成功
-- [ ] minimal example 使用 stdio 成功
+- [x] `Transport` interface: `Serve(ctx context.Context, handler Handler) error`
+- [x] Stdio transport reads from `os.Stdin` (newline-delimited JSON)
+- [x] Stdio transport writes to `os.Stdout` (newline-delimited JSON)
+- [x] Support MCP JSON-RPC 2.0 消息格式
+- [x] Handle `initialize`, `tools/list`, `tools/call`, `shutdown`, `exit`
+- [x] Graceful shutdown on SIGINT/SIGTERM
+- [x] `go test ./modules/transport/stdio/...` 成功
+- [x] minimal example 使用 stdio 成功
 
 ## 備註
 

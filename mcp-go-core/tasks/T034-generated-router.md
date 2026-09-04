@@ -20,10 +20,10 @@ updated: 2026-09-04
 
 ## 驗收標準
 
-- [ ] `Dispatch(ctx, name, req) Response` switch-based router
-- [ ] 只包含 enabled tools 的 routes
-- [ ] Unknown tool 回傳 UnknownTool(name)
-- [ ] `go test ./internal/generator/...` 成功
+- [x] `Dispatch(ctx, name, req) Response` switch-based router
+- [x] 只包含 enabled tools 的 routes
+- [x] Unknown tool 回傳 UnknownTool(name)
+- [x] `go test ./internal/generator/...` 成功
 
 ## 備註
 

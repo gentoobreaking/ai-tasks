@@ -22,19 +22,19 @@ updated: 2026-09-04
 
 ## 驗收標準
 
-- [ ] `go tool nm dist/server` 解析 linked packages
-- [ ] `go version -m dist/server` 驗證 linked module versions
-- [ ] Binary size measurement (raw + stripped)
-- [ ] Expected modules (from feature lock) 必須在 binary 中
-- [ ] Unexpected modules 不得在 binary 中
-- [ ] Unexpected module → ERROR `UNEXPECTED_MODULE` with module name and reason
-- [ ] Missing expected module → ERROR `MISSING_MODULE`
-- [ ] `BIN-001` test: minimal build, http absent → PASS
-- [ ] `BIN-002` test: minimal build, jwt absent → PASS
-- [ ] `BIN-003` test: minimal build, oauth absent → PASS
-- [ ] `BIN-004` test: minimal build, otel absent → PASS
-- [ ] `N004` test: binary intentionally contains otel → `UNEXPECTED_MODULE`, FAIL
-- [ ] `go test ./internal/builder/...` 成功
+- [x] `go tool nm dist/server` 解析 linked packages
+- [x] `go version -m dist/server` 驗證 linked module versions
+- [x] Binary size measurement (raw + stripped)
+- [x] Expected modules (from feature lock) 必須在 binary 中
+- [x] Unexpected modules 不得在 binary 中
+- [x] Unexpected module → ERROR `UNEXPECTED_MODULE` with module name and reason
+- [x] Missing expected module → ERROR `MISSING_MODULE`
+- [x] `BIN-001` test: minimal build, http absent → PASS
+- [x] `BIN-002` test: minimal build, jwt absent → PASS
+- [x] `BIN-003` test: minimal build, oauth absent → PASS
+- [x] `BIN-004` test: minimal build, otel absent → PASS
+- [x] `N004` test: binary intentionally contains otel → `UNEXPECTED_MODULE`, FAIL
+- [x] `go test ./internal/builder/...` 成功
 
 ## 備註
 

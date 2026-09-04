@@ -22,10 +22,10 @@ updated: 2026-09-04
 
 ## 驗收標準
 
-- [ ] `Prompt` interface 包含: `Name() string`, `Description() string`, `Get(ctx, req) (PromptResponse, error)`
-- [ ] `PromptRequest` struct with name 和 arguments
-- [ ] Prompt name 驗證: 非空字串
-- [ ] `go test ./core/prompt/...` 成功
+- [x] `Prompt` interface 包含: `Name() string`, `Description() string`, `Get(ctx, req) (PromptResponse, error)`
+- [x] `PromptRequest` struct with name 和 arguments
+- [x] Prompt name 驗證: 非空字串
+- [x] `go test ./core/prompt/...` 成功
 
 ## 備註
 

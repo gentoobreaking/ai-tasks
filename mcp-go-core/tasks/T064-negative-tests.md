@@ -22,18 +22,18 @@ updated: 2026-09-04
 
 ## 驗收標準
 
-- [ ] Invalid config → fail with deterministic error
-- [ ] Unknown feature → fail with error
-- [ ] Missing dependency → fail
-- [ ] Conflicting feature → ERROR `FEATURE_CONFLICT`
-- [ ] Dependency cycle → ERROR `FEATURE_CYCLE`
-- [ ] Explicit disable of required → ERROR `FEATURE_REQUIRED`
-- [ ] Stale generated code → `GENERATED_CODE_STALE`
-- [ ] Unexpected binary module → `UNEXPECTED_MODULE`
-- [ ] Invalid authentication → reject
-- [ ] Runtime startup failure → fail correctly
-- [ ] All errors have: machine-readable code + human-readable message + context
-- [ ] `go test ./tests/negative/...` 成功
+- [x] Invalid config → fail with deterministic error
+- [x] Unknown feature → fail with error
+- [x] Missing dependency → fail
+- [x] Conflicting feature → ERROR `FEATURE_CONFLICT`
+- [x] Dependency cycle → ERROR `FEATURE_CYCLE`
+- [x] Explicit disable of required → ERROR `FEATURE_REQUIRED`
+- [x] Stale generated code → `GENERATED_CODE_STALE`
+- [x] Unexpected binary module → `UNEXPECTED_MODULE`
+- [x] Invalid authentication → reject
+- [x] Runtime startup failure → fail correctly
+- [x] All errors have: machine-readable code + human-readable message + context
+- [x] `go test ./tests/negative/...` 成功
 
 ## 備註
 

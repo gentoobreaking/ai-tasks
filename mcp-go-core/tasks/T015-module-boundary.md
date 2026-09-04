@@ -22,12 +22,12 @@ updated: 2026-09-04
 
 ## 驗收標準
 
-- [ ] `modules/` 子目錄結構建立: `transport/{stdio,http,sse}`, `security/{api_key,jwt,oauth,mtls}`, `middleware/{logging,recovery,metrics,tracing}`
-- [ ] 每個 module 套件可獨立 import (無 circular dependency)
-- [ ] Module 不依賴 umbrella package (`modules/all`)
-- [ ] Module 只能依賴 Core，不能依賴其他 Module (除非明確需要)
-- [ ] 驗證: `go list -deps ./modules/...` 不顯示 inter-module cycles
-- [ ] `go build ./modules/...` 成功
+- [x] `modules/` 子目錄結構建立: `transport/{stdio,http,sse}`, `security/{api_key,jwt,oauth,mtls}`, `middleware/{logging,recovery,metrics,tracing}`
+- [x] 每個 module 套件可獨立 import (無 circular dependency)
+- [x] Module 不依賴 umbrella package (`modules/all`)
+- [x] Module 只能依賴 Core，不能依賴其他 Module (除非明確需要)
+- [x] 驗證: `go list -deps ./modules/...` 不顯示 inter-module cycles
+- [x] `go build ./modules/...` 成功
 
 ## 備註
 

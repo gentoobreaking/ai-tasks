@@ -20,10 +20,10 @@ updated: 2026-09-04
 
 ## 驗收標準
 
-- [ ] 掃描 application source for known Configure() calls
-- [ ] Map each call to inferred feature
-- [ ] `AN-002` test: app calls jwt.Configure → inferred: [jwt, security]
-- [ ] `go test ./internal/analyzer/...` 成功
+- [x] 掃描 application source for known Configure() calls
+- [x] Map each call to inferred feature
+- [x] `AN-002` test: app calls jwt.Configure → inferred: [jwt, security]
+- [x] `go test ./internal/analyzer/...` 成功
 
 ## 備註
 

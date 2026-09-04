@@ -20,15 +20,15 @@ Realize the static composition algorithm: generated code directly imports only e
 
 ## 驗收標準
 
-- [ ] Review algs/static-composition.md for composition rules
-- [ ] Generated modules.go import block contains ONLY resolved modules
-- [ ] No `import "github.com/project/mcp-go-core/modules/all"` pattern
-- [ ] Each enabled module has a `Configure(*core.Server)` call in generated modules.go
-- [ ] Disabled modules have NO import or call in generated code
-- [ ] `GEN-001` test: resolution [core,http,jwt] → generated imports contain http, jwt
-- [ ] `GEN-002` test: oauth disabled → oauth import NOT present
-- [ ] `GEN-003` test: `http.Configure(server)` + `jwt.Configure(server)`, NOT `ConfigureAll`
-- [ ] `GEN-004` test: deterministic (same resolution ×3 → identical checksum)
+- [x] Review algs/static-composition.md for composition rules
+- [x] Generated modules.go import block contains ONLY resolved modules
+- [x] No `import "github.com/project/mcp-go-core/modules/all"` pattern
+- [x] Each enabled module has a `Configure(*core.Server)` call in generated modules.go
+- [x] Disabled modules have NO import or call in generated code
+- [x] `GEN-001` test: resolution [core,http,jwt] → generated imports contain http, jwt
+- [x] `GEN-002` test: oauth disabled → oauth import NOT present
+- [x] `GEN-003` test: `http.Configure(server)` + `jwt.Configure(server)`, NOT `ConfigureAll`
+- [x] `GEN-004` test: deterministic (same resolution ×3 → identical checksum)
 
 ## 備註
 

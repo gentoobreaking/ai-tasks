@@ -22,15 +22,15 @@ updated: 2026-09-04
 
 ## 驗收標準
 
-- [ ] `dist/build-manifest.json` 建立
-- [ ] Manifest 包含: application name, version, profile, features, modules, go_version, framework_version, git_commit, feature_lock_hash, binary_size
-- [ ] JSON 格式正確可 parse
-- [ ] `dist/features.lock` 複製到 dist/
-- [ ] `dist/checksums.txt` 建立 (sha256 of server binary)
-- [ ] `BUILD-002` test: build-manifest.json exists
-- [ ] `BUILD-003` test: features.lock in dist matches build input
-- [ ] `BUILD-004` test: sha256sum dist/server matches checksums.txt
-- [ ] `go test ./internal/manifest/...` 成功
+- [x] `dist/build-manifest.json` 建立
+- [x] Manifest 包含: application name, version, profile, features, modules, go_version, framework_version, git_commit, feature_lock_hash, binary_size
+- [x] JSON 格式正確可 parse
+- [x] `dist/features.lock` 複製到 dist/
+- [x] `dist/checksums.txt` 建立 (sha256 of server binary)
+- [x] `BUILD-002` test: build-manifest.json exists
+- [x] `BUILD-003` test: features.lock in dist matches build input
+- [x] `BUILD-004` test: sha256sum dist/server matches checksums.txt
+- [x] `go test ./internal/manifest/...` 成功
 
 ## 備註
 

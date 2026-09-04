@@ -21,11 +21,11 @@ updated: 2026-09-04
 
 ## 驗收標準
 
-- [ ] Run binary metadata reader (go tool nm, go version -m)
-- [ ] Run expected/unexpected module verification
-- [ ] Run runtime smoke test (initialize, tool call, shutdown)
-- [ ] VerificationResult populated in BuildResult
-- [ ] `go test ./internal/builder/...` 成功
+- [x] Run binary metadata reader (go tool nm, go version -m)
+- [x] Run expected/unexpected module verification
+- [x] Run runtime smoke test (initialize, tool call, shutdown)
+- [x] VerificationResult populated in BuildResult
+- [x] `go test ./internal/builder/...` 成功
 
 ## 備註
 

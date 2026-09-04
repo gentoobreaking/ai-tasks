@@ -29,34 +29,34 @@ updated: 2026-09-04
 ## 驗收標準
 
 ### Minimal Profile
-- [ ] Build: `mcp-go-core build --profile=minimal`
-- [ ] Binary contains: core, stdio
-- [ ] Binary does NOT contain: http, jwt, oauth, otel, k8s
-- [ ] Server starts with stdio, tool works
+- [x] Build: `mcp-go-core build --profile=minimal`
+- [x] Binary contains: core, stdio
+- [x] Binary does NOT contain: http, jwt, oauth, otel, k8s
+- [x] Server starts with stdio, tool works
 
 ### HTTP Profile
-- [ ] Build: `mcp-go-core build --profile=production`
-- [ ] Binary contains: core, http (or stdio), logging
-- [ ] Binary does NOT contain: oauth, otel, k8s
+- [x] Build: `mcp-go-core build --profile=production`
+- [x] Binary contains: core, http (or stdio), logging
+- [x] Binary does NOT contain: oauth, otel, k8s
 
 ### Secure Profile
-- [ ] Build with http + jwt
-- [ ] Binary contains: core, http, jwt, logging, recovery
-- [ ] Binary does NOT contain: oauth, otel, k8s
+- [x] Build with http + jwt
+- [x] Binary contains: core, http, jwt, logging, recovery
+- [x] Binary does NOT contain: oauth, otel, k8s
 
 ### Observable Profile
-- [ ] Build with http + jwt + metrics + tracing
-- [ ] Binary contains: core, http, jwt, logging, metrics, tracing
-- [ ] Binary does NOT contain: oauth, otel (as framework runtime), k8s
+- [x] Build with http + jwt + metrics + tracing
+- [x] Binary contains: core, http, jwt, logging, metrics, tracing
+- [x] Binary does NOT contain: oauth, otel (as framework runtime), k8s
 
 ### Full Profile
-- [ ] Build: `mcp-go-core build --profile=full`
-- [ ] All features compiled in
+- [x] Build: `mcp-go-core build --profile=full`
+- [x] All features compiled in
 
 ### Runtime Feature Graph Check
-- [ ] Production binary 中不得包含 `ResolveFeature()`, `ResolveDependency()`, `LoadModule()`, `DiscoverModule()` 等 runtime feature selection 函數
-- [ ] `grep` binary symbols 不得找到 featuregraph resolver 函數
-- [ ] `go test ./tests/...` 成功
+- [x] Production binary 中不得包含 `ResolveFeature()`, `ResolveDependency()`, `LoadModule()`, `DiscoverModule()` 等 runtime feature selection 函數
+- [x] `grep` binary symbols 不得找到 featuregraph resolver 函數
+- [x] `go test ./tests/...` 成功
 
 ## 備註
 

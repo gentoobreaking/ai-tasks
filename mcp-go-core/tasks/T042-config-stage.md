@@ -20,11 +20,11 @@ updated: 2026-09-04
 
 ## 驗收標準
 
-- [ ] 讀取 mcp.yaml (profile, transport, security, runtime, observability, storage)
-- [ ] Schema validation before continuing
-- [ ] `Config` struct populated in BuildContext
-- [ ] Invalid config → fail with actionable error
-- [ ] `go test ./internal/builder/...` 成功
+- [x] 讀取 mcp.yaml (profile, transport, security, runtime, observability, storage)
+- [x] Schema validation before continuing
+- [x] `Config` struct populated in BuildContext
+- [x] Invalid config → fail with actionable error
+- [x] `go test ./internal/builder/...` 成功
 
 ## 備註
 

@@ -22,12 +22,12 @@ updated: 2026-09-04
 
 ## 驗收標準
 
-- [ ] `core/protocol/` 套件建立，包含 `Request`, `Response`, `Message` 型別
-- [ ] `core/request/` 套件建立，包含 `ToolRequest`, `ResourceRequest`, `PromptRequest`
-- [ ] `core/response/` 套件建立，包含 `ToolResponse`, `ResourceResponse`, `PromptResponse`
-- [ ] `core/error/` 套件建立，包含 `Error` struct with Code, Message, Cause
-- [ ] Error codes: Protocol, Validation, Authentication, Authorization, Transport, Tool, Internal, Timeout, Cancellation
-- [ ] `go test ./core/protocol/... ./core/request/... ./core/response/... ./core/error/...` 成功
+- [x] `core/protocol/` 套件建立，包含 `Request`, `Response`, `Message` 型別
+- [x] `core/request/` 套件建立，包含 `ToolRequest`, `ResourceRequest`, `PromptRequest`
+- [x] `core/response/` 套件建立，包含 `ToolResponse`, `ResourceResponse`, `PromptResponse`
+- [x] `core/error/` 套件建立，包含 `Error` struct with Code, Message, Cause
+- [x] Error codes: Protocol, Validation, Authentication, Authorization, Transport, Tool, Internal, Timeout, Cancellation
+- [x] `go test ./core/protocol/... ./core/request/... ./core/response/... ./core/error/...` 成功
 
 ## 備註
 

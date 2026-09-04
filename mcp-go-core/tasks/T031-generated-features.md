@@ -20,10 +20,10 @@ updated: 2026-09-04
 
 ## 驗收標準
 
-- [ ] `features.go` 包含 FeatureCore, FeatureHTTP, FeatureJWT, FeatureOTel, FeatureOAuth 等 constants
-- [ ] Enabled features = true, disabled = false
-- [ ] Constants 為 metadata，不作為主要 optimization mechanism
-- [ ] `go test ./internal/generator/...` 成功
+- [x] `features.go` 包含 FeatureCore, FeatureHTTP, FeatureJWT, FeatureOTel, FeatureOAuth 等 constants
+- [x] Enabled features = true, disabled = false
+- [x] Constants 為 metadata，不作為主要 optimization mechanism
+- [x] `go test ./internal/generator/...` 成功
 
 ## 備註
 

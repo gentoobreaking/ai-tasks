@@ -20,9 +20,9 @@ updated: 2026-09-04
 
 ## 驗收標準
 
-- [ ] `FrameworkVersion`, `BuildProfile`, `FeatureLockHash`, `BuildTimestamp`, `GitCommit` variables
-- [ ] Values injected at build time via ldflags
-- [ ] `go test ./internal/generator/...` 成功
+- [x] `FrameworkVersion`, `BuildProfile`, `FeatureLockHash`, `BuildTimestamp`, `GitCommit` variables
+- [x] Values injected at build time via ldflags
+- [x] `go test ./internal/generator/...` 成功
 
 ## 備註
 

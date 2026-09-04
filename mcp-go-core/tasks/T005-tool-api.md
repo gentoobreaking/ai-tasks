@@ -22,12 +22,12 @@ updated: 2026-09-04
 
 ## 驗收標準
 
-- [ ] `Tool` interface 包含: `Name() string`, `Description() string`, `InputSchema() Schema`, `Handler() ToolHandler`
-- [ ] `ToolHandler` type: `func(context.Context, Request) (Response, error)`
-- [ ] `NewTool[T any, R any]()` generic helper 建立 (developer convenience)
-- [ ] Tool name 驗證: 非空字串
-- [ ] InputSchema 支援 JSON Schema 格式
-- [ ] `go test ./core/tool/...` 成功
+- [x] `Tool` interface 包含: `Name() string`, `Description() string`, `InputSchema() Schema`, `Handler() ToolHandler`
+- [x] `ToolHandler` type: `func(context.Context, Request) (Response, error)`
+- [x] `NewTool[T any, R any]()` generic helper 建立 (developer convenience)
+- [x] Tool name 驗證: 非空字串
+- [x] InputSchema 支援 JSON Schema 格式
+- [x] `go test ./core/tool/...` 成功
 
 ## 備註
 

@@ -20,11 +20,11 @@ Minimal v0.1 Go AST analysis: 掃描 imports for known module packages。不得�
 
 ## 驗收標準
 
-- [ ] Parse Go files in application directory
-- [ ] Scan import paths for known module packages
-- [ ] Map known imports to features
-- [ ] Inference priority: Explicit Config > Generated Metadata > Known API > Go AST Analysis
-- [ ] `go test ./internal/analyzer/...` 成功
+- [x] Parse Go files in application directory
+- [x] Scan import paths for known module packages
+- [x] Map known imports to features
+- [x] Inference priority: Explicit Config > Generated Metadata > Known API > Go AST Analysis
+- [x] `go test ./internal/analyzer/...` 成功
 
 ## 備註
 

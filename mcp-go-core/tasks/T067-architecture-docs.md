@@ -22,14 +22,14 @@ updated: 2026-09-04
 
 ## 驗收標準
 
-- [ ] `docs/ARCHITECTURE.md` 建立: Core, Module, Feature Graph, Generator, Build Pipeline, Binary Audit
-- [ ] `docs/FEATURE_GRAPH_SPEC.md` 建立: Feature Resolver, Dependency Graph, Conflict Detection, Cycle Detection, Feature Lock
-- [ ] `docs/BUILD_PIPELINE_SPEC.md` 建立: Build Stages, Static Composition, CGO, Binary Analysis, CI Mode
-- [ ] `docs/IMPLEMENTATION_PLAN.md` 建立: Phase P0-P10, Dependency Order, Definition of Done
-- [ ] `docs/AGENT_TASKS.md` 建立: Task execution protocol, Phase breakdown, Test matrix, Forbidden architecture
-- [ ] `examples/` documentation: minimal, http, secure, production
-- [ ] All docs 基於實際 implementation (not aspirational)
-- [ ] Architecture docs reflect actual directory structure
+- [x] `docs/ARCHITECTURE.md` 建立: Core, Module, Feature Graph, Generator, Build Pipeline, Binary Audit
+- [x] `docs/FEATURE_GRAPH_SPEC.md` 建立: Feature Resolver, Dependency Graph, Conflict Detection, Cycle Detection, Feature Lock
+- [x] `docs/BUILD_PIPELINE_SPEC.md` 建立: Build Stages, Static Composition, CGO, Binary Analysis, CI Mode
+- [x] `docs/IMPLEMENTATION_PLAN.md` 建立: Phase P0-P10, Dependency Order, Definition of Done
+- [x] `docs/AGENT_TASKS.md` 建立: Task execution protocol, Phase breakdown, Test matrix, Forbidden architecture
+- [x] `examples/` documentation: minimal, http, secure, production
+- [x] All docs 基於實際 implementation (not aspirational)
+- [x] Architecture docs reflect actual directory structure
 
 ## 備註
 

@@ -21,13 +21,13 @@ updated: 2026-09-04
 
 ## 驗收標準
 
-- [ ] `mcp-go-core doctor` 執行
-- [ ] `mcp-go-core doctor dist/server` inspect binary
-- [ ] 可以 show enabled features
-- [ ] 可以 show modules
-- [ ] 可以 detect unexpected dependency
-- [ ] 驗證: Go version, Configuration, Feature graph, Dependency cycles, Missing dependencies, Conflicting features, Generated code, Build configuration, Transport configuration, Security configuration
-- [ ] `go test ./cmd/... ` 成功
+- [x] `mcp-go-core doctor` 執行
+- [x] `mcp-go-core doctor dist/server` inspect binary
+- [x] 可以 show enabled features
+- [x] 可以 show modules
+- [x] 可以 detect unexpected dependency
+- [x] 驗證: Go version, Configuration, Feature graph, Dependency cycles, Missing dependencies, Conflicting features, Generated code, Build configuration, Transport configuration, Security configuration
+- [x] `go test ./cmd/... ` 成功
 
 ## 備註
 

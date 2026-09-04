@@ -23,18 +23,18 @@ updated: 2026-09-04
 
 ## 驗收標準
 
-- [ ] 讀取 `mcp.yaml` 中的 explicit features list
-- [ ] 讀取 `.mcp/generated/metadata.json` (generated metadata)
-- [ ] 偵測 known API patterns: `http.Configure(`, `jwt.Configure(`, `stdio.Configure(`, `sessions.Configure(`, `logging.Configure(`
-- [ ] Minimal v0.1 Go AST analysis: scan imports for known module packages
-- [ ] 推導優先順序: Explicit Config > Generated Metadata > Known API > Go AST
-- [ ] 產生 `.mcp/inferred-features.json` with features list, source, hash
-- [ ] Output 必須 deterministic (sort by name)
-- [ ] `AN-001` test: mcp.yaml lists http → inferred: [http]
-- [ ] `AN-002` test: app calls jwt.Configure → inferred: [jwt, security]
-- [ ] `AN-003` test: app doesn't use oauth → oauth NOT in inferred
-- [ ] `AN-004` test: determinism (identical source ×2 → identical result)
-- [ ] `go test ./internal/analyzer/...` 成功
+- [x] 讀取 `mcp.yaml` 中的 explicit features list
+- [x] 讀取 `.mcp/generated/metadata.json` (generated metadata)
+- [x] 偵測 known API patterns: `http.Configure(`, `jwt.Configure(`, `stdio.Configure(`, `sessions.Configure(`, `logging.Configure(`
+- [x] Minimal v0.1 Go AST analysis: scan imports for known module packages
+- [x] 推導優先順序: Explicit Config > Generated Metadata > Known API > Go AST
+- [x] 產生 `.mcp/inferred-features.json` with features list, source, hash
+- [x] Output 必須 deterministic (sort by name)
+- [x] `AN-001` test: mcp.yaml lists http → inferred: [http]
+- [x] `AN-002` test: app calls jwt.Configure → inferred: [jwt, security]
+- [x] `AN-003` test: app doesn't use oauth → oauth NOT in inferred
+- [x] `AN-004` test: determinism (identical source ×2 → identical result)
+- [x] `go test ./internal/analyzer/...` 成功
 
 ## 備註
 

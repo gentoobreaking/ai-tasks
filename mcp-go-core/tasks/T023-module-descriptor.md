@@ -22,12 +22,12 @@ updated: 2026-09-04
 
 ## 驗收標準
 
-- [ ] `ModuleDescriptor` struct: Name, Version, Category, Features, Dependencies, Package, RuntimeInit
-- [ ] Category 支援: Core, Transport, Security, Middleware, Runtime, Observability, Storage, Developer, Integration
-- [ ] 支援 Module dependency declaration (string list)
-- [ ] Package field 為 Go module path
-- [ ] RuntimeInit bool 控制是否在 startup 初始化
-- [ ] `go test ./internal/featuregraph/...` 成功
+- [x] `ModuleDescriptor` struct: Name, Version, Category, Features, Dependencies, Package, RuntimeInit
+- [x] Category 支援: Core, Transport, Security, Middleware, Runtime, Observability, Storage, Developer, Integration
+- [x] 支援 Module dependency declaration (string list)
+- [x] Package field 為 Go module path
+- [x] RuntimeInit bool 控制是否在 startup 初始化
+- [x] `go test ./internal/featuregraph/...` 成功
 
 ## 備註
 

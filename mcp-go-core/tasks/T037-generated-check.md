@@ -22,13 +22,13 @@ updated: 2026-09-04
 
 ## 驗收標準
 
-- [ ] `generate --check` 命令實現
-- [ ] 若 `.mcp/generated/` 與當前 resolution 不一致 → FAIL
-- [ ] Error code: `GENERATED_CODE_STALE`
-- [ ] 提示用戶執行 `mcp-go-core generate` 來更新
-- [ ] 若 generated code 與 resolution 一致 → PASS (exit 0)
-- [ ] 可用於 CI pipeline
-- [ ] `go test ./internal/generator/...` 成功
+- [x] `generate --check` 命令實現
+- [x] 若 `.mcp/generated/` 與當前 resolution 不一致 → FAIL
+- [x] Error code: `GENERATED_CODE_STALE`
+- [x] 提示用戶執行 `mcp-go-core generate` 來更新
+- [x] 若 generated code 與 resolution 一致 → PASS (exit 0)
+- [x] 可用於 CI pipeline
+- [x] `go test ./internal/generator/...` 成功
 
 ## 備註
 

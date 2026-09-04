@@ -24,13 +24,13 @@ updated: 2026-09-04
 
 ## 驗收標準
 
-- [ ] `BuildContext` struct: Config, Resolution, Manifest, GeneratedDir, OutputPath
-- [ ] `Stage` interface: `Name() string`, `Run(ctx, *BuildContext) error`
-- [ ] `Pipeline` struct: Analyzer, Resolver, Generator, Builder, Verifier
-- [ ] `Pipeline.Run(ctx, cfg) (*BuildResult, error)`
-- [ ] `BuildResult` struct: OutputPath, Features, Modules, BinarySize, Duration, Verification
-- [ ] Stages: ConfigStage, AnalyzeStage, ResolveStage, LockStage, GenerateStage, CompileStage, VerifyStage, BenchmarkStage
-- [ ] `go test ./internal/builder/...` 成功
+- [x] `BuildContext` struct: Config, Resolution, Manifest, GeneratedDir, OutputPath
+- [x] `Stage` interface: `Name() string`, `Run(ctx, *BuildContext) error`
+- [x] `Pipeline` struct: Analyzer, Resolver, Generator, Builder, Verifier
+- [x] `Pipeline.Run(ctx, cfg) (*BuildResult, error)`
+- [x] `BuildResult` struct: OutputPath, Features, Modules, BinarySize, Duration, Verification
+- [x] Stages: ConfigStage, AnalyzeStage, ResolveStage, LockStage, GenerateStage, CompileStage, VerifyStage, BenchmarkStage
+- [x] `go test ./internal/builder/...` 成功
 
 ## 備註
 

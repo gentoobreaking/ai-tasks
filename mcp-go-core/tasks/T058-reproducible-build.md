@@ -21,11 +21,11 @@ updated: 2026-09-04
 
 ## 驗收標準
 
-- [ ] `REP-001` test: 同一 git commit build A/B → features.lock, generated source, build manifest, binary checksum 相同
-- [ ] `REP-002` test: 相同 mcp.yaml/profile/dependency lock → same feature graph, same generated composition
-- [ ] Build metadata: source, config, commit, feature lock 作為 reproducibility identity
-- [ ] Prefer deterministic timestamps (exclude build timestamp from hash)
-- [ ] `go test ./tests/reproducibility/...` 成功
+- [x] `REP-001` test: 同一 git commit build A/B → features.lock, generated source, build manifest, binary checksum 相同
+- [x] `REP-002` test: 相同 mcp.yaml/profile/dependency lock → same feature graph, same generated composition
+- [x] Build metadata: source, config, commit, feature lock 作為 reproducibility identity
+- [x] Prefer deterministic timestamps (exclude build timestamp from hash)
+- [x] `go test ./tests/reproducibility/...` 成功
 
 ## 備註
 

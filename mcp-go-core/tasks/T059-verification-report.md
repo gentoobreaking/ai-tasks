@@ -23,12 +23,12 @@ updated: 2026-09-04
 
 ## 驗收標準
 
-- [ ] `verification/` 目錄建立
-- [ ] `VERIFICATION_REPORT.md` 包含: Environment, Functional, Feature Graph, Generator, Build, Binary Audit, Runtime, Security, Performance, Reproducibility, Critical Failures, Warnings, Final Decision
-- [ ] `feature-graph.json`, `feature-lock.json`, `build-manifest.json`, `binary-audit.json`, `benchmark.json`, `runtime-smoke.json`, `checksums.txt` 全部產生
-- [ ] Completion matrix: Static, Unit, Feature Graph, Analyzer, Generator, Build, Binary, Runtime, Security, Performance, Reproducibility (Passed/Failed/Blocked counts)
-- [ ] Final Decision: ACCEPTED / REJECTED
-- [ ] `go test ./tests/verification/...` 成功
+- [x] `verification/` 目錄建立
+- [x] `VERIFICATION_REPORT.md` 包含: Environment, Functional, Feature Graph, Generator, Build, Binary Audit, Runtime, Security, Performance, Reproducibility, Critical Failures, Warnings, Final Decision
+- [x] `feature-graph.json`, `feature-lock.json`, `build-manifest.json`, `binary-audit.json`, `benchmark.json`, `runtime-smoke.json`, `checksums.txt` 全部產生
+- [x] Completion matrix: Static, Unit, Feature Graph, Analyzer, Generator, Build, Binary, Runtime, Security, Performance, Reproducibility (Passed/Failed/Blocked counts)
+- [x] Final Decision: ACCEPTED / REJECTED
+- [x] `go test ./tests/verification/...` 成功
 
 ## 備註
 

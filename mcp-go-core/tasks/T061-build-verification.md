@@ -25,15 +25,15 @@ updated: 2026-09-04
 
 ## 驗收標準
 
-- [ ] CI builds 5 profiles: minimal, production, secure, observable, full
-- [ ] Each build executes tests
-- [ ] `mcp-go-core build --profile=production --verify` works
-- [ ] Binary dependency gate: unexpected module → FAIL
-- [ ] `mcp-go-core doctor dist/server` — inspect binary, show enabled features, show modules, detect unexpected deps
-- [ ] Performance regression gate: P99 latency > 10% threshold → FAIL
-- [ ] RSS regression > 10% → FAIL
-- [ ] Binary size regression > 10% → FAIL
-- [ ] `go test ./tests/integration/... ./tests/build/...` 成功
+- [x] CI builds 5 profiles: minimal, production, secure, observable, full
+- [x] Each build executes tests
+- [x] `mcp-go-core build --profile=production --verify` works
+- [x] Binary dependency gate: unexpected module → FAIL
+- [x] `mcp-go-core doctor dist/server` — inspect binary, show enabled features, show modules, detect unexpected deps
+- [x] Performance regression gate: P99 latency > 10% threshold → FAIL
+- [x] RSS regression > 10% → FAIL
+- [x] Binary size regression > 10% → FAIL
+- [x] `go test ./tests/integration/... ./tests/build/...` 成功
 
 ## 備註
 

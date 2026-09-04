@@ -23,14 +23,14 @@ updated: 2026-09-04
 
 ## 驗收標準
 
-- [ ] `validate_required_dependencies(features)` 函數
-- [ ] FOR every enabled feature F: all HARD dependencies of F must also be enabled
-- [ ] 否則 → ERROR `FEATURE_REQUIRED`
-- [ ] `TestRequiredDependency` PASS — A requires B (hard), A enabled → B must present
-- [ ] `TestTransitiveDependency` PASS — A→B→C, enable A → A,B,C all present
-- [ ] `TestMinimalResolution` — no unnecessary features enabled
-- [ ] `TestProfileResolution` — development/production/minimal/secure/observable/full profiles
-- [ ] `go test ./internal/featuregraph/...` 成功
+- [x] `validate_required_dependencies(features)` 函數
+- [x] FOR every enabled feature F: all HARD dependencies of F must also be enabled
+- [x] 否則 → ERROR `FEATURE_REQUIRED`
+- [x] `TestRequiredDependency` PASS — A requires B (hard), A enabled → B must present
+- [x] `TestTransitiveDependency` PASS — A→B→C, enable A → A,B,C all present
+- [x] `TestMinimalResolution` — no unnecessary features enabled
+- [x] `TestProfileResolution` — development/production/minimal/secure/observable/full profiles
+- [x] `go test ./internal/featuregraph/...` 成功
 
 ## 備註
 

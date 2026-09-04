@@ -21,12 +21,12 @@ updated: 2026-09-04
 
 ## 驗收標準
 
-- [ ] Run dispatch benchmark (ns/op, allocs/op, B/op)
-- [ ] Run startup benchmark (process start → ready)
-- [ ] Run memory benchmark (RSS, heap)
-- [ ] Run binary size measurement
-- [ ] Report baseline metrics
-- [ ] `go test ./internal/builder/...` 成功
+- [x] Run dispatch benchmark (ns/op, allocs/op, B/op)
+- [x] Run startup benchmark (process start → ready)
+- [x] Run memory benchmark (RSS, heap)
+- [x] Run binary size measurement
+- [x] Report baseline metrics
+- [x] `go test ./internal/builder/...` 成功
 
 ## 備訊
 

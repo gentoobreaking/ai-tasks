@@ -18,9 +18,9 @@ updated: 2026-09-04
 
 建立 ModuleDescriptor 型別 (consolidated with T023 for single task deliverable)。
 ## 驗收標準
-- [ ] T023 實作 ModuleDescriptor struct
-- [ ] Module 不可依賴其他 Module (除非明確需要)
-- [ ] `go test ./internal/featuregraph/...` 成功
+- [x] T023 實作 ModuleDescriptor struct
+- [x] Module 不可依賴其他 Module (除非明確需要)
+- [x] `go test ./internal/featuregraph/...` 成功
 
 ## 備註
 

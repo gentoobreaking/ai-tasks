@@ -23,20 +23,20 @@ updated: 2026-09-04
 
 ## 驗收標準
 
-- [ ] `Generator` interface: `Generate(ctx context.Context, resolution Resolution) error`
-- [ ] 生成 `.mcp/generated/features.go` (feature flag constants, metadata only)
-- [ ] 生成 `.mcp/generated/modules.go` (static module composition — ONLY enabled modules)
-- [ ] Generated modules.go 只 import resolved modules，NOT `modules/all`
-- [ ] `modules.ConfigureAll(server)` 禁止出現在 generated code
-- [ ] Import ordering deterministic (sorted by path)
-- [ ] 產生 `.mcp/generated/server.go` (server bootstrap with Configure call)
-- [ ] 產生 `.mcp/generated/router.go` (generated router)
-- [ ] 產生 `.mcp/generated/buildinfo.go` (framework version, profile, lock hash, timestamp, git commit)
-- [ ] `GEN-001` test: resolution [core,http,jwt] → generated imports contain http, jwt
-- [ ] `GEN-002` test: oauth disabled → oauth import NOT present in generated code
-- [ ] `GEN-003` test: direct module.Configure calls, not ConfigureAll
-- [ ] `GEN-004` test: deterministic generation (same resolution ×3 → identical checksum)
-- [ ] `go test ./internal/generator/...` 成功
+- [x] `Generator` interface: `Generate(ctx context.Context, resolution Resolution) error`
+- [x] 生成 `.mcp/generated/features.go` (feature flag constants, metadata only)
+- [x] 生成 `.mcp/generated/modules.go` (static module composition — ONLY enabled modules)
+- [x] Generated modules.go 只 import resolved modules，NOT `modules/all`
+- [x] `modules.ConfigureAll(server)` 禁止出現在 generated code
+- [x] Import ordering deterministic (sorted by path)
+- [x] 產生 `.mcp/generated/server.go` (server bootstrap with Configure call)
+- [x] 產生 `.mcp/generated/router.go` (generated router)
+- [x] 產生 `.mcp/generated/buildinfo.go` (framework version, profile, lock hash, timestamp, git commit)
+- [x] `GEN-001` test: resolution [core,http,jwt] → generated imports contain http, jwt
+- [x] `GEN-002` test: oauth disabled → oauth import NOT present in generated code
+- [x] `GEN-003` test: direct module.Configure calls, not ConfigureAll
+- [x] `GEN-004` test: deterministic generation (same resolution ×3 → identical checksum)
+- [x] `go test ./internal/generator/...` 成功
 
 ## 備註
 

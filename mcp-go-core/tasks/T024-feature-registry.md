@@ -22,12 +22,12 @@ updated: 2026-09-04
 
 ## 驗收標準
 
-- [ ] `Registry` type 提供: `Register`, `Get`, `List`, `Validate` 方法
-- [ ] Registry 位於 `internal/featuregraph/`
-- [ ] `go list -deps ./core/...` 不得顯示 internal/featuregraph
-- [ ] `go list -deps ./examples/minimal/...` 不得顯示 internal/analyzer, internal/generator, internal/builder, internal/featuregraph
-- [ ] Registry 只允許 build-time 存取 (CLI, builder, generator)
-- [ ] `go test ./internal/featuregraph/...` 成功
+- [x] `Registry` type 提供: `Register`, `Get`, `List`, `Validate` 方法
+- [x] Registry 位於 `internal/featuregraph/`
+- [x] `go list -deps ./core/...` 不得顯示 internal/featuregraph
+- [x] `go list -deps ./examples/minimal/...` 不得顯示 internal/analyzer, internal/generator, internal/builder, internal/featuregraph
+- [x] Registry 只允許 build-time 存取 (CLI, builder, generator)
+- [x] `go test ./internal/featuregraph/...` 成功
 
 ## 備註
 

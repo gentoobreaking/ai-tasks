@@ -20,12 +20,12 @@ updated: 2026-09-04
 
 ## 驗收標準
 
-- [ ] `go tool nm dist/server` 解析 linked packages
-- [ ] `go version -m dist/server` 驗證 module versions  
-- [ ] Binary size measurement (raw + stripped)
-- [ ] Parse symbols to detect mcp-go-core/modules/ imports
-- [ ] Extract module paths from binary symbol table
-- [ ] `go test ./internal/builder/...` 成功
+- [x] `go tool nm dist/server` 解析 linked packages
+- [x] `go version -m dist/server` 驗證 module versions  
+- [x] Binary size measurement (raw + stripped)
+- [x] Parse symbols to detect mcp-go-core/modules/ imports
+- [x] Extract module paths from binary symbol table
+- [x] `go test ./internal/builder/...` 成功
 
 ## 備註
 

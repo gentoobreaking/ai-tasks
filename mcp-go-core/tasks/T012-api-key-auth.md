@@ -23,13 +23,13 @@ updated: 2026-09-04
 
 ## 驗收標準
 
-- [ ] `Authenticator` interface: `Authenticate(ctx, req) (Identity, error)`
-- [ ] API Key transport: header `Authorization: Bearer <key>` 或 `X-API-Key`
-- [ ] Valid key → Identity with principal
-- [ ] Invalid key → Reject with error
-- [ ] Missing key → Reject with error
-- [ ] API Key module 不得 import core 或其他 security module
-- [ ] `go test ./modules/security/api_key/...` 成功
+- [x] `Authenticator` interface: `Authenticate(ctx, req) (Identity, error)`
+- [x] API Key transport: header `Authorization: Bearer <key>` 或 `X-API-Key`
+- [x] Valid key → Identity with principal
+- [x] Invalid key → Reject with error
+- [x] Missing key → Reject with error
+- [x] API Key module 不得 import core 或其他 security module
+- [x] `go test ./modules/security/api_key/...` 成功
 
 ## 備註
 

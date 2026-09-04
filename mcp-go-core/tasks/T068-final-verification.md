@@ -29,50 +29,50 @@ updated: 2026-09-04
 ## 驗收標準
 
 ### End-to-End Pipeline (clean workspace)
-- [ ] `rm -rf .mcp dist`
-- [ ] `mcp-go-core analyze` — generates inferred-features.json
-- [ ] `mcp-go-core generate` — generates .mcp/generated/
-- [ ] `mcp-go-core build --profile=minimal --verify` — produces dist/server
-- [ ] `mcp-go-core doctor` — runs all checks
-- [ ] `mcp-go-core benchmark` — runs benchmark suite
-- [ ] `go test ./...` — 0 failed
-- [ ] `go test -race ./...` — 0 race
-- [ ] `go vet ./...` — 0 errors
-- [ ] `gofmt -l .` — empty output
+- [x] `rm -rf .mcp dist`
+- [x] `mcp-go-core analyze` — generates inferred-features.json
+- [x] `mcp-go-core generate` — generates .mcp/generated/
+- [x] `mcp-go-core build --profile=minimal --verify` — produces dist/server
+- [x] `mcp-go-core doctor` — runs all checks
+- [x] `mcp-go-core benchmark` — runs benchmark suite
+- [x] `go test ./...` — 0 failed
+- [x] `go test -race ./...` — 0 race
+- [x] `go vet ./...` — 0 errors
+- [x] `gofmt -l .` — empty output
 
 ### Case A — Minimal (stdio + 1 tool)
-- [ ] Feature Graph: core, stdio
-- [ ] Generated imports: core, stdio only
-- [ ] Binary: core, stdio, application
-- [ ] Runtime: starts, initialize, tool call, shutdown
+- [x] Feature Graph: core, stdio
+- [x] Generated imports: core, stdio only
+- [x] Binary: core, stdio, application
+- [x] Runtime: starts, initialize, tool call, shutdown
 
 ### Case B — HTTP (http + 1 tool)
-- [ ] Feature Graph: core, http
-- [ ] Binary does NOT contain: jwt, oauth, otel, k8s
+- [x] Feature Graph: core, http
+- [x] Binary does NOT contain: jwt, oauth, otel, k8s
 
 ### Case C — Secure HTTP (http + jwt)
-- [ ] Feature Graph: core, http, jwt
-- [ ] Binary does NOT contain: oauth, otel, k8s
+- [x] Feature Graph: core, http, jwt
+- [x] Binary does NOT contain: oauth, otel, k8s
 
 ### Case D — Unused Feature
-- [ ] Application not using: OAuth, OTel, Kubernetes, Storage, Tasks
-- [ ] These capabilities: not initialized, not generated-imported, not in binary
+- [x] Application not using: OAuth, OTel, Kubernetes, Storage, Tasks
+- [x] These capabilities: not initialized, not generated-imported, not in binary
 
 ### Architecture Integrity
-- [ ] Feature Graph is build-time (not runtime)
-- [ ] Generated Composition is static
-- [ ] Runtime does not do feature resolution
-- [ ] Unused modules not generated-imported
-- [ ] Unused modules not in production binary
-- [ ] Core does not depend on optional modules
-- [ ] Optional modules in independent packages
+- [x] Feature Graph is build-time (not runtime)
+- [x] Generated Composition is static
+- [x] Runtime does not do feature resolution
+- [x] Unused modules not generated-imported
+- [x] Unused modules not in production binary
+- [x] Core does not depend on optional modules
+- [x] Optional modules in independent packages
 
 ### Final Proof Equation
-- [ ] Unused Feature = Not Resolved = Not Generated = Not Imported = Not Initialized = Not Linked = Not In Production Binary
+- [x] Unused Feature = Not Resolved = Not Generated = Not Imported = Not Initialized = Not Linked = Not In Production Binary
 
 ### Verification Report
-- [ ] `verification/VERIFICATION_REPORT.md` 建立
-- [ ] 包含: Environment, Functional, Feature Graph, Generator, Build, Binary Audit, Runtime, Security, Performance, Reproducibility, Critical Failures, Warnings, Final Decision
+- [x] `verification/VERIFICATION_REPORT.md` 建立
+- [x] 包含: Environment, Functional, Feature Graph, Generator, Build, Binary Audit, Runtime, Security, Performance, Reproducibility, Critical Failures, Warnings, Final Decision
 
 ## 備註
 

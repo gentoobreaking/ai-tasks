@@ -21,14 +21,14 @@ CI 驗證所有 build profiles: minimal, production, secure, observable, full。
 
 ## 驗收標準
 
-- [ ] `mcp-go-core build --profile=minimal` → PASS
-- [ ] `mcp-go-core build --profile=production` → PASS
-- [ ] `mcp-go-core build --profile=secure` → PASS
-- [ ] `mcp-go-core build --profile=observable` → PASS
-- [ ] `mcp-go-core build --profile=full` → PASS
-- [ ] Each build executes tests
-- [ ] Profile → Expected Dependency Set → Actual Binary consistency
-- [ ] `go test ./tests/profile/...` 成功
+- [x] `mcp-go-core build --profile=minimal` → PASS
+- [x] `mcp-go-core build --profile=production` → PASS
+- [x] `mcp-go-core build --profile=secure` → PASS
+- [x] `mcp-go-core build --profile=observable` → PASS
+- [x] `mcp-go-core build --profile=full` → PASS
+- [x] Each build executes tests
+- [x] Profile → Expected Dependency Set → Actual Binary consistency
+- [x] `go test ./tests/profile/...` 成功
 
 ## 備註
 

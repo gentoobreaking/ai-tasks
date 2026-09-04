@@ -21,11 +21,11 @@ updated: 2026-09-04
 
 ## 驗收標準
 
-- [ ] `cmd/mcp-go-core/main.go` 建立
-- [ ] CLI 支援 subcommands: `init`, `analyze`, `generate`, `build`, `test`, `benchmark`, `doctor`, `overview`, `clean`
-- [ ] `mcp-go-core --help` 顯示所有 subcommands
-- [ ] 每個 subcommand 至少顯示 `--help`（可用 stub）
-- [ ] `go build ./cmd/mcp-go-core/` 成功
+- [x] `cmd/mcp-go-core/main.go` 建立
+- [x] CLI 支援 subcommands: `init`, `analyze`, `generate`, `build`, `test`, `benchmark`, `doctor`, `overview`, `clean`
+- [x] `mcp-go-core --help` 顯示所有 subcommands
+- [x] 每個 subcommand 至少顯示 `--help`（可用 stub）
+- [x] `go build ./cmd/mcp-go-core/` 成功
 
 ## 備註
 

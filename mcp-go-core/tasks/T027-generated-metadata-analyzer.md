@@ -20,10 +20,10 @@ updated: 2026-09-04
 
 ## 驗收標準
 
-- [ ] 讀取 `.mcp/generated/metadata.json`
-- [ ] 解析 metadata 中的 features 列表
-- [ ] 將推導的 features 加入 inferred set
-- [ ] `go test ./internal/analyzer/...` 成功
+- [x] 讀取 `.mcp/generated/metadata.json`
+- [x] 解析 metadata 中的 features 列表
+- [x] 將推導的 features 加入 inferred set
+- [x] `go test ./internal/analyzer/...` 成功
 
 ## 備註
 

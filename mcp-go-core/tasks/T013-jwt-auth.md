@@ -23,14 +23,14 @@ updated: 2026-09-04
 
 ## 驗收標準
 
-- [ ] `Authenticator` interface: `Authenticate(ctx, req) (Identity, error)`
-- [ ] JWT token parse from `Authorization: Bearer <token>` header
-- [ ] Valid token → Identity with claims
-- [ ] Expired token → Reject
-- [ ] Invalid signature → Reject
-- [ ] Missing token → Reject
-- [ ] JWT module 不得 import OAuth, OTel, Kubernetes packages
-- [ ] `go test ./modules/security/jwt/...` 成功
+- [x] `Authenticator` interface: `Authenticate(ctx, req) (Identity, error)`
+- [x] JWT token parse from `Authorization: Bearer <token>` header
+- [x] Valid token → Identity with claims
+- [x] Expired token → Reject
+- [x] Invalid signature → Reject
+- [x] Missing token → Reject
+- [x] JWT module 不得 import OAuth, OTel, Kubernetes packages
+- [x] `go test ./modules/security/jwt/...` 成功
 
 ## 備註
 

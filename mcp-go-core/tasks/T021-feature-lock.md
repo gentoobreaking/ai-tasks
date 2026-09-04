@@ -23,14 +23,14 @@ updated: 2026-09-04
 
 ## 驗收標準
 
-- [ ] 生成 `.mcp/features.lock`
-- [ ] Lock file 包含: framework_version, profile, features, modules, dependency_graph, graph_hash
-- [ ] graph_hash 使用 sha256 計算
-- [ ] `TestDeterministicResolution` — same input ×3 runs → byte-identical features.lock
-- [ ] `LOCK-001` — graph_hash 相同輸入產生相同 hash
-- [ ] `LOCK-002` — config change → graph_hash changed
-- [ ] `LOCK-003` — dependency graph change → graph_hash changed
-- [ ] `go test ./internal/featuregraph/...` 成功
+- [x] 生成 `.mcp/features.lock`
+- [x] Lock file 包含: framework_version, profile, features, modules, dependency_graph, graph_hash
+- [x] graph_hash 使用 sha256 計算
+- [x] `TestDeterministicResolution` — same input ×3 runs → byte-identical features.lock
+- [x] `LOCK-001` — graph_hash 相同輸入產生相同 hash
+- [x] `LOCK-002` — config change → graph_hash changed
+- [x] `LOCK-003` — dependency graph change → graph_hash changed
+- [x] `go test ./internal/featuregraph/...` 成功
 
 ## 備註
 

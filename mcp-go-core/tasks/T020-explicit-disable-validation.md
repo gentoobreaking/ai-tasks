@@ -22,12 +22,12 @@ updated: 2026-09-04
 
 ## 驗收標準
 
-- [ ] 若 ENABLED feature A 依賴 hard dependency B，且 B 被 DISABLED → ERROR `FEATURE_REQUIRED`
-- [ ] 錯誤訊息包含: feature 名稱, required_by 關係
-- [ ] `DISABLED` 不得覆蓋 true HARD dependency (必須 error，不得 silently re-enable)
-- [ ] `N001` test: enable A, A→B, disable B → ERROR `FEATURE_REQUIRED`
-- [ ] 非 hard dependency的 disable 不會產生錯誤
-- [ ] `go test ./internal/featuregraph/...` 成功
+- [x] 若 ENABLED feature A 依賴 hard dependency B，且 B 被 DISABLED → ERROR `FEATURE_REQUIRED`
+- [x] 錯誤訊息包含: feature 名稱, required_by 關係
+- [x] `DISABLED` 不得覆蓋 true HARD dependency (必須 error，不得 silently re-enable)
+- [x] `N001` test: enable A, A→B, disable B → ERROR `FEATURE_REQUIRED`
+- [x] 非 hard dependency的 disable 不會產生錯誤
+- [x] `go test ./internal/featuregraph/...` 成功
 
 ## 備註
 

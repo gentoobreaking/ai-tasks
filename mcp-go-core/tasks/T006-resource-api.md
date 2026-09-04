@@ -22,10 +22,10 @@ updated: 2026-09-04
 
 ## 驗收標準
 
-- [ ] `Resource` interface 包含: `URI() string`, `Name() string`, `Description() string`, `Read(ctx, req) (ResourceResponse, error)`
-- [ ] `ResourceRequest` struct with URI 和 optional params
-- [ ] Resource URI 驗證: 支援 `mcp://` scheme
-- [ ] `go test ./core/resource/...` 成功
+- [x] `Resource` interface 包含: `URI() string`, `Name() string`, `Description() string`, `Read(ctx, req) (ResourceResponse, error)`
+- [x] `ResourceRequest` struct with URI 和 optional params
+- [x] Resource URI 驗證: 支援 `mcp://` scheme
+- [x] `go test ./core/resource/...` 成功
 
 ## 備註
 

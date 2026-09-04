@@ -23,16 +23,16 @@ updated: 2026-09-04
 
 ## 驗收標準
 
-- [ ] `NewServer(opts ...Option) *Server` 函數
-- [ ] `Server.AddTool(tool Tool)` 方法
-- [ ] `Server.AddResource(resource Resource)` 方法
-- [ ] `Server.AddPrompt(prompt Prompt)` 方法
-- [ ] `Server.Run(ctx context.Context) error` 方法
-- [ ] Lifecycle: Create → Configure → Initialize → Start → Running → Shutdown → Cleanup
-- [ ] 支援 `context.Context` 取消
-- [ ] `Shutdown` 必須 graceful (等待 in-flight requests 完成)
-- [ ] minimal MCP server 可以啟動與 shutdown
-- [ ] `go test ./core/server/... ./core/lifecycle/...` 成功
+- [x] `NewServer(opts ...Option) *Server` 函數
+- [x] `Server.AddTool(tool Tool)` 方法
+- [x] `Server.AddResource(resource Resource)` 方法
+- [x] `Server.AddPrompt(prompt Prompt)` 方法
+- [x] `Server.Run(ctx context.Context) error` 方法
+- [x] Lifecycle: Create → Configure → Initialize → Start → Running → Shutdown → Cleanup
+- [x] 支援 `context.Context` 取消
+- [x] `Shutdown` 必須 graceful (等待 in-flight requests 完成)
+- [x] minimal MCP server 可以啟動與 shutdown
+- [x] `go test ./core/server/... ./core/lifecycle/...` 成功
 
 ## 備註
 

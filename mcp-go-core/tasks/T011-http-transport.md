@@ -23,12 +23,12 @@ updated: 2026-09-04
 
 ## 驗收標準
 
-- [ ] `Transport` interface: `Serve(ctx context.Context, handler Handler) error`
-- [ ] HTTP transport 支援 Streamable HTTP 協定
-- [ ] 處理 `POST /mcp` 初始化, `GET /mcp` 事件流
-- [ ] JSON-RPC over HTTP
-- [ ] HTTP server 獨立 package boundary (不 import stdio 或 sse)
-- [ ] `go test ./modules/transport/http/...` 成功
+- [x] `Transport` interface: `Serve(ctx context.Context, handler Handler) error`
+- [x] HTTP transport 支援 Streamable HTTP 協定
+- [x] 處理 `POST /mcp` 初始化, `GET /mcp` 事件流
+- [x] JSON-RPC over HTTP
+- [x] HTTP server 獨立 package boundary (不 import stdio 或 sse)
+- [x] `go test ./modules/transport/http/...` 成功
 
 ## 備註
 

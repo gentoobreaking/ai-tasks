@@ -23,13 +23,13 @@ updated: 2026-09-04
 
 ## 驗收標準
 
-- [ ] `Middleware` type: `func(Handler) Handler`
-- [ ] `Logger` interface: Debug, Info, Warn, Error
-- [ ] `Logging()` middleware 實現，支援 request/response logging
-- [ ] `Recovery()` middleware 實現，catch panic and return internal error
-- [ ] Middleware order preserved (Server.Use 保持順序)
-- [ ] Disabled middleware 不會在 runtime branch (production build 無 if-check)
-- [ ] `go test ./core/middleware/...` 成功
+- [x] `Middleware` type: `func(Handler) Handler`
+- [x] `Logger` interface: Debug, Info, Warn, Error
+- [x] `Logging()` middleware 實現，支援 request/response logging
+- [x] `Recovery()` middleware 實現，catch panic and return internal error
+- [x] Middleware order preserved (Server.Use 保持順序)
+- [x] Disabled middleware 不會在 runtime branch (production build 無 if-check)
+- [x] `go test ./core/middleware/...` 成功
 
 ## 備註
 

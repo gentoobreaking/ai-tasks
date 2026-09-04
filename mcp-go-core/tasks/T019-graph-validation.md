@@ -23,17 +23,17 @@ updated: 2026-09-04
 
 ## 驗收標準
 
-- [ ] `Validate() error` on Graph 類別
-- [ ] Duplicate feature detection → ERROR `DUPLICATE_FEATURE`
-- [ ] Missing dependency detection → ERROR `MISSING_DEPENDENCY`
-- [ ] Missing feature detection → ERROR `MISSING_FEATURE`
-- [ ] Missing module detection → ERROR `MISSING_MODULE`
-- [ ] Cycle detection (DFS) → ERROR `FEATURE_CYCLE` with path (e.g., A→B→C→A)
-- [ ] Conflict validation → ERROR `FEATURE_CONFLICT`
-- [ ] `TestCycle` — A→B, B→C, C→A → FAIL with FEATURE_CYCLE
-- [ ] `TestSelfDependency` — A→A → FAIL with FEATURE_CYCLE
-- [ ] `TestConflict` — A conflicts B → FAIL with FEATURE_CONFLICT
-- [ ] `go test ./internal/featuregraph/...` 成功
+- [x] `Validate() error` on Graph 類別
+- [x] Duplicate feature detection → ERROR `DUPLICATE_FEATURE`
+- [x] Missing dependency detection → ERROR `MISSING_DEPENDENCY`
+- [x] Missing feature detection → ERROR `MISSING_FEATURE`
+- [x] Missing module detection → ERROR `MISSING_MODULE`
+- [x] Cycle detection (DFS) → ERROR `FEATURE_CYCLE` with path (e.g., A→B→C→A)
+- [x] Conflict validation → ERROR `FEATURE_CONFLICT`
+- [x] `TestCycle` — A→B, B→C, C→A → FAIL with FEATURE_CYCLE
+- [x] `TestSelfDependency` — A→A → FAIL with FEATURE_CYCLE
+- [x] `TestConflict` — A conflicts B → FAIL with FEATURE_CONFLICT
+- [x] `go test ./internal/featuregraph/...` 成功
 
 ## 備註
 

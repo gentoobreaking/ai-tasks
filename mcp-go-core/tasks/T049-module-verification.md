@@ -21,13 +21,13 @@ updated: 2026-09-04
 
 ## 驗收標準
 
-- [ ] Expected modules (from feature lock) 必須在 binary 中
-- [ ] Unexpected modules 不得在 binary 中
-- [ ] Unexpected module → ERROR `UNEXPECTED_MODULE` with module name and reason
-- [ ] Missing expected module → ERROR `MISSING_MODULE`
-- [ ] `N004` test: binary intentionally contains otel → `UNEXPECTED_MODULE`, FAIL
-- [ ] `BIN-001` to `BIN-005` tests for minimal build
-- [ ] `go test ./internal/builder/...` 成功
+- [x] Expected modules (from feature lock) 必須在 binary 中
+- [x] Unexpected modules 不得在 binary 中
+- [x] Unexpected module → ERROR `UNEXPECTED_MODULE` with module name and reason
+- [x] Missing expected module → ERROR `MISSING_MODULE`
+- [x] `N004` test: binary intentionally contains otel → `UNEXPECTED_MODULE`, FAIL
+- [x] `BIN-001` to `BIN-005` tests for minimal build
+- [x] `go test ./internal/builder/...` 成功
 
 ## 備註
 

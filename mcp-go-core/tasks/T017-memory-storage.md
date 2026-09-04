@@ -23,11 +23,11 @@ updated: 2026-09-04
 
 ## 驗收標準
 
-- [ ] `Store` interface: `Get(ctx, key) ([]byte, error)`, `Set(ctx, key, value) error`, `Delete(ctx, key) error`
-- [ ] In-memory map-backed implementation
-- [ ] Thread-safe (use RWMutex)
-- [ ] No external dependencies (no Redis, no database client)
-- [ ] `go test ./modules/storage/memory/...` 成功
+- [x] `Store` interface: `Get(ctx, key) ([]byte, error)`, `Set(ctx, key, value) error`, `Delete(ctx, key) error`
+- [x] In-memory map-backed implementation
+- [x] Thread-safe (use RWMutex)
+- [x] No external dependencies (no Redis, no database client)
+- [x] `go test ./modules/storage/memory/...` 成功
 
 ## 備註
 

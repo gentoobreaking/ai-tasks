@@ -21,11 +21,11 @@ updated: 2026-09-04
 
 ## 驗收標準
 
-- [ ] `mcp-go-core verify` 執行所有驗證階段
-- [ ] Pipeline: Static Check → Unit Test → Feature Graph Test → Analyzer Test → Generator Check → Build → Binary Audit → Runtime Smoke Test → Benchmark → Reproducibility Check → Verification Report
-- [ ] Final output 顯示: Static PASS/FAIL, Unit PASS/FAIL, Feature Graph PASS/FAIL, etc.
-- [ ] `FINAL RESULT: ACCEPTED / REJECTED`
-- [ ] `go test ./tests/verification/...` 成功
+- [x] `mcp-go-core verify` 執行所有驗證階段
+- [x] Pipeline: Static Check → Unit Test → Feature Graph Test → Analyzer Test → Generator Check → Build → Binary Audit → Runtime Smoke Test → Benchmark → Reproducibility Check → Verification Report
+- [x] Final output 顯示: Static PASS/FAIL, Unit PASS/FAIL, Feature Graph PASS/FAIL, etc.
+- [x] `FINAL RESULT: ACCEPTED / REJECTED`
+- [x] `go test ./tests/verification/...` 成功
 
 ## 備註
 

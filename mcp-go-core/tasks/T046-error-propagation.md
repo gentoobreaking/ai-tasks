@@ -20,11 +20,11 @@ updated: 2026-09-04
 
 ## 驗收標準
 
-- [ ] BUILD FAILED with Stage + Error + Graph context format
-- [ ] Error codes: FEATURE_DEPENDENCY_CYCLE, FEATURE_CONFLICT, FEATURE_REQUIRED, UNEXPECTED_MODULE
-- [ ] Error format: code + human message + context (not generic "build failed")
-- [ ] Example: `FEATURE_REQUIRED\nFeature "http" is required by "streamable-http"`
-- [ ] `go test ./internal/builder/...` 成功
+- [x] BUILD FAILED with Stage + Error + Graph context format
+- [x] Error codes: FEATURE_DEPENDENCY_CYCLE, FEATURE_CONFLICT, FEATURE_REQUIRED, UNEXPECTED_MODULE
+- [x] Error format: code + human message + context (not generic "build failed")
+- [x] Example: `FEATURE_REQUIRED\nFeature "http" is required by "streamable-http"`
+- [x] `go test ./internal/builder/...` 成功
 
 ## 備註
 

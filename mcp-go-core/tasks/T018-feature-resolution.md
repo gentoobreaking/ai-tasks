@@ -23,18 +23,18 @@ updated: 2026-09-04
 
 ## 驗收標準
 
-- [ ] `Resolve(cfg Config) (*Resolution, error)` 方法
-- [ ] 實作 explicit enable/disable
-- [ ] 實作 inferred feature 合併
-- [ ] 實作 `implies` 擴展
-- [ ] 實作 HARD dependency 擴展 (transitive closure)
-- [ ] 實作用戶 explicit disable 時，若其為 hard dependency → ERROR `FEATURE_REQUIRED`
-- [ ] Output 排序 deterministic (category → name)
-- [ ] `TestBasicDependency` PASS (A→B, enable A → A,B)
-- [ ] `TestTransitiveDependency` PASS (A→B→C, enable A → A,B,C)
-- [ ] `TestExplicitDisable` — disable hard dependency → ERROR `FEATURE_REQUIRED`
-- [ ] `TestConflict` — conflict features → ERROR `FEATURE_CONFLICT`
-- [ ] `TestDeterministicResolution` — same input ×3 → byte-identical
+- [x] `Resolve(cfg Config) (*Resolution, error)` 方法
+- [x] 實作 explicit enable/disable
+- [x] 實作 inferred feature 合併
+- [x] 實作 `implies` 擴展
+- [x] 實作 HARD dependency 擴展 (transitive closure)
+- [x] 實作用戶 explicit disable 時，若其為 hard dependency → ERROR `FEATURE_REQUIRED`
+- [x] Output 排序 deterministic (category → name)
+- [x] `TestBasicDependency` PASS (A→B, enable A → A,B)
+- [x] `TestTransitiveDependency` PASS (A→B→C, enable A → A,B,C)
+- [x] `TestExplicitDisable` — disable hard dependency → ERROR `FEATURE_REQUIRED`
+- [x] `TestConflict` — conflict features → ERROR `FEATURE_CONFLICT`
+- [x] `TestDeterministicResolution` — same input ×3 → byte-identical
 
 ## 備註
 

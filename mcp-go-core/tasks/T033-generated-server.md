@@ -20,9 +20,9 @@ updated: 2026-09-04
 
 ## 驗收標準
 
-- [ ] `NewServer(opts ...core.Option) *core.Server` 函數
-- [ ] Server 初始化後呼叫 `Configure(s)` for static module composition
-- [ ] `go test ./internal/generator/...` 成功
+- [x] `NewServer(opts ...core.Option) *core.Server` 函數
+- [x] Server 初始化後呼叫 `Configure(s)` for static module composition
+- [x] `go test ./internal/generator/...` 成功
 
 ## 備註
 

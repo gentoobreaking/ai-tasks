@@ -26,19 +26,19 @@ updated: 2026-09-04
 
 ## 驗收標準
 
-- [ ] `ConfigStage`: load mcp.yaml, validate schema
-- [ ] `AnalyzeStage`: run analyzer → inferred-features.json
-- [ ] `ResolveStage`: run feature resolver → Resolution
-- [ ] `LockStage`: write features.lock
-- [ ] `GenerateStage`: generate .mcp/generated/*.go
-- [ ] `CompileStage`: go build with profile-specific flags (minimal: -trimpath; production: -trimpath -ldflags="-s -w")
-- [ ] CGO_ENABLED=0 default
-- [ ] Verbose mode: [1/7]...[7/7] progress output
-- [ ] Error: invalid config → fail with actionable error code
-- [ ] Error: feature conflict → fail with FEATURE_CONFLICT
-- [ ] Error: feature cycle → fail with FEATURE_CYCLE
-- [ ] Error: FEATURE_REQUIRED → fail
-- [ ] `go test ./internal/builder/...` 成功
+- [x] `ConfigStage`: load mcp.yaml, validate schema
+- [x] `AnalyzeStage`: run analyzer → inferred-features.json
+- [x] `ResolveStage`: run feature resolver → Resolution
+- [x] `LockStage`: write features.lock
+- [x] `GenerateStage`: generate .mcp/generated/*.go
+- [x] `CompileStage`: go build with profile-specific flags (minimal: -trimpath; production: -trimpath -ldflags="-s -w")
+- [x] CGO_ENABLED=0 default
+- [x] Verbose mode: [1/7]...[7/7] progress output
+- [x] Error: invalid config → fail with actionable error code
+- [x] Error: feature conflict → fail with FEATURE_CONFLICT
+- [x] Error: feature cycle → fail with FEATURE_CYCLE
+- [x] Error: FEATURE_REQUIRED → fail
+- [x] `go test ./internal/builder/...` 成功
 
 ## 備註
 

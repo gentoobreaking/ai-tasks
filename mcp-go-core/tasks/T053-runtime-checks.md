@@ -21,10 +21,10 @@ updated: 2026-09-04
 
 ## 驗收標準
 
-- [ ] `go tool nm dist/server` 不得包含 `ResolveFeature`, `ResolveDependency`, `LoadModule`, `DiscoverModule`
-- [ ] `grep` binary symbols 不得找到 featuregraph resolver 函數
-- [ ] `RT-001` test: minimal runtime — HTTP/JWT/OAuth/OTel/K8s 不被 initialize
-- [ ] `go test ./tests/runtime/...` 成功
+- [x] `go tool nm dist/server` 不得包含 `ResolveFeature`, `ResolveDependency`, `LoadModule`, `DiscoverModule`
+- [x] `grep` binary symbols 不得找到 featuregraph resolver 函數
+- [x] `RT-001` test: minimal runtime — HTTP/JWT/OAuth/OTel/K8s 不被 initialize
+- [x] `go test ./tests/runtime/...` 成功
 
 ## 備註
 

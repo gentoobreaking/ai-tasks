@@ -26,16 +26,16 @@ updated: 2026-09-04
 
 ## 驗收標準
 
-- [ ] README.md 建立在 repo root
-- [ ] 包含: What is mcp-go-core (MCP server framework)
-- [ ] 包含: Why it exists (compile-time feature pruning, minimal production binary)
-- [ ] 包含: Build Complete, Deploy Minimal 哲學
-- [ ] 包含: Quick Start (init → analyze → generate → build)
-- [ ] 包含: Architecture overview (Feature Graph → Static Composition → Go Compiler)
-- [ ] 包含: CLI commands reference (init, analyze, generate, build, doctor, overview, etc.)
-- [ ] 包含: Examples 連結 (minimal, http, secure, production)
-- [ ] 包含: Benchmark 說明 (how to run, what metrics)
-- [ ] README 基於實際 implementation (not aspirational)
+- [x] README.md 建立在 repo root
+- [x] 包含: What is mcp-go-core (MCP server framework)
+- [x] 包含: Why it exists (compile-time feature pruning, minimal production binary)
+- [x] 包含: Build Complete, Deploy Minimal 哲學
+- [x] 包含: Quick Start (init → analyze → generate → build)
+- [x] 包含: Architecture overview (Feature Graph → Static Composition → Go Compiler)
+- [x] 包含: CLI commands reference (init, analyze, generate, build, doctor, overview, etc.)
+- [x] 包含: Examples 連結 (minimal, http, secure, production)
+- [x] 包含: Benchmark 說明 (how to run, what metrics)
+- [x] README 基於實際 implementation (not aspirational)
 
 ## 備註
 
