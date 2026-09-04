@@ -6,9 +6,9 @@ priority: critical
 status: pending
 depends_on:
   - T008
-updated: 2026-09-04
-assignee: "pi"
+assignee: "pi with opencode"
 created: 2026-09-04
+updated: 2026-09-04
 ---
 
 # T086 - MCP Spec Conformity: Fix Server-Transport-Router wiring
