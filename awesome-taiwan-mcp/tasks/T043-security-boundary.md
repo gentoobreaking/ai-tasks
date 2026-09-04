@@ -3,7 +3,7 @@ github_issue: N/A
 title: Security Boundary — enforce never-execute-discovered-code policy
 type: security
 priority: high
-status: pending
+^status: done
 depends_on: [T006, T009, T026]
 assignee: agent
 created: 2026-09-05

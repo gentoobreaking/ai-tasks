@@ -3,7 +3,7 @@ github_issue: N/A
 title: Unit Tests — >=80% coverage for critical modules
 type: test
 priority: high
-status: pending
+^status: done
 depends_on: [T038]
 assignee: agent
 created: 2026-09-05

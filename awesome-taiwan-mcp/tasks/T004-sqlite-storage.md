@@ -3,7 +3,7 @@ github_issue: N/A
 title: SQLite 持久化 — migrations, storage 層實現
 type: feat
 priority: high
-status: pending
+^status: done
 depends_on: [T002, T003]
 assignee: agent
 created: 2026-09-05

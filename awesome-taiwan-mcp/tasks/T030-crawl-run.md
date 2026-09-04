@@ -3,7 +3,7 @@ github_issue: N/A
 title: Crawl Run — metadata tracking per execution
 type: feat
 priority: high
-status: pending
+^status: done
 depends_on: [T027]
 assignee: agent
 created: 2026-09-05

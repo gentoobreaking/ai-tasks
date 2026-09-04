@@ -3,7 +3,7 @@ github_issue: N/A
 title: > ⛔ PulseMCP Adapter — discovery + metadata fetch (Phase 2, needs PulseMCP API)
 type: feat
 priority: low
-status: pending
+^status: done
 depends_on: [T005]
 blocked_on:
 - "PulseMCP API access available (Phase 2 completion, see §67 MVP Scope Phase 2)"

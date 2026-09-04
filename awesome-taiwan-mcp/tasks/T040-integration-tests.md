@@ -3,7 +3,7 @@ github_issue: N/A
 title: Integration Tests — adapter, SQLite, MCP handshake via mock servers
 type: test
 priority: high
-status: pending
+^status: done
 depends_on: [T039]
 assignee: agent
 created: 2026-09-05

@@ -3,7 +3,7 @@ github_issue: N/A
 title: GitHub Adapter — keyword matrix 搜尋 + candidate 提取
 type: feat
 priority: high
-status: pending
+^status: done
 depends_on: [T005]
 assignee: agent
 created: 2026-09-05

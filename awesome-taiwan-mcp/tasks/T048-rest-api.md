@@ -3,7 +3,7 @@ github_issue: N/A
 title: > ⛔ REST API — HTTP API for registry search + metadata (Phase 4)
 type: feat
 priority: low
-status: pending
+status: deferred
 depends_on: [T036, T028]
 blocked_on:
 - "Phase 1+2+3 complete (crawler, historical snapshots, web UI foundation)"

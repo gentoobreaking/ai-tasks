@@ -3,7 +3,7 @@ github_issue: N/A
 title: Performance Benchmark — 10k candidates, <10min, no OOM
 type: bench
 priority: medium
-status: pending
+^status: done
 depends_on: [T029]
 assignee: agent
 created: 2026-09-05

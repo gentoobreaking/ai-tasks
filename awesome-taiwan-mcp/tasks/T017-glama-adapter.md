@@ -3,7 +3,7 @@ github_issue: N/A
 title: > ⛔ Glama Adapter — discovery + metadata fetch (Phase 2, needs Glama API)
 type: feat
 priority: low
-status: pending
+^status: done
 depends_on: [T005]
 blocked_on:
 - "Glama API access available (Phase 2 completion, see §67 MVP Scope Phase 2)"

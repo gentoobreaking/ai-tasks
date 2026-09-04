@@ -3,7 +3,7 @@ github_issue: N/A
 title: KPI Verification — Recall, Precision, Duplicate rate, False positive
 type: test
 priority: high
-status: pending
+^status: done
 depends_on: [T046, T051, T041]
 assignee: agent
 created: 2026-09-05

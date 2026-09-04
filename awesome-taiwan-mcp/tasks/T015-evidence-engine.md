@@ -3,7 +3,7 @@ github_issue: N/A
 title: Evidence Engine — scoring rule evidence provenance
 type: feat
 priority: high
-status: pending
+^status: done
 depends_on: [T014]
 assignee: agent
 created: 2026-09-05

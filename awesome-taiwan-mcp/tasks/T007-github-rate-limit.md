@@ -3,7 +3,7 @@ github_issue: N/A
 title: GitHub Rate Limit — rate limiter, retry, 429 handling, timeout, context cancellation
 type: feat
 priority: high
-status: pending
+^status: done
 depends_on: [T006]
 assignee: agent
 created: 2026-09-05

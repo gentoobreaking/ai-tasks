@@ -3,7 +3,7 @@ github_issue: N/A
 title: Regression Golden Dataset — TST-068 classification/identity/dedup accuracy
 type: test
 priority: medium
-status: pending
+^status: done
 depends_on: [T041, T038]
 assignee: agent
 created: 2026-09-05

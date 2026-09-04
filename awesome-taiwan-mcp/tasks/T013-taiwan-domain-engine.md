@@ -3,7 +3,7 @@ github_issue: N/A
 title: Taiwan Domain Engine — official domains config + detection
 type: feat
 priority: high
-status: pending
+^status: done
 depends_on: [T002]
 assignee: agent
 created: 2026-09-05

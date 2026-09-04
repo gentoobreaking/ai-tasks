@@ -3,7 +3,7 @@ github_issue: N/A
 title: Capability Search — tool/resource/data-source capability matching
 type: feat
 priority: medium
-status: pending
+^status: done
 depends_on: [T036]
 assignee: agent
 created: 2026-09-05

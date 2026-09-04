@@ -3,7 +3,7 @@ github_issue: N/A
 title: 專案初始化 — Go module, Dockerfile, README, CLI scaffold
 type: chore
 priority: high
-status: pending
+^status: done
 depends_on: []
 assignee: agent
 created: 2026-09-05

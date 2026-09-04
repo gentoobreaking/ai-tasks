@@ -3,7 +3,7 @@ github_issue: N/A
 title: Taiwan Scoring — deterministic relevance score + level mapping
 type: feat
 priority: high
-status: pending
+^status: done
 depends_on: [T012, T013]
 assignee: agent
 created: 2026-09-05

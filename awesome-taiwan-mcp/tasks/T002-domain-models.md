@@ -3,7 +3,7 @@ github_issue: N/A
 title: 領域模型 — MCPServer, RawCandidate, RawRecord, TaiwanRelevance 等
 type: feat
 priority: high
-status: pending
+^status: done
 depends_on: [T001]
 assignee: agent
 created: 2026-09-05

@@ -3,7 +3,7 @@ github_issue: N/A
 title: Static Analysis CI — golangci-lint + gosec security linting
 type: chore
 priority: medium
-status: pending
+^status: done
 depends_on: [T001]
 assignee: agent
 created: 2026-09-05

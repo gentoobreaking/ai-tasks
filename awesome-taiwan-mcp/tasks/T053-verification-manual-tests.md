@@ -3,7 +3,7 @@ github_issue: N/A
 title: Verification Manual Tests — mapping CRAWLER_VERIFICATION_MANUAL to automated tests
 type: test
 priority: medium
-status: pending
+^status: done
 depends_on: [T041]
 assignee: agent
 created: 2026-09-05

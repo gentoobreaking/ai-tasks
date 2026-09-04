@@ -3,7 +3,7 @@ github_issue: N/A
 title: Test Fixtures — taiwan, non-taiwan, duplicate, archived, dead endpoint, invalid, official, scraping
 type: test
 priority: high
-status: pending
+^status: done
 depends_on: [T002, T003]
 assignee: agent
 created: 2026-09-05

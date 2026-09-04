@@ -3,7 +3,7 @@ github_issue: N/A
 title: Endpoint Health — DNS, TLS, HTTP, MCP initialize, latency
 type: feat
 priority: high
-status: pending
+^status: done
 depends_on: [T022]
 assignee: agent
 created: 2026-09-05

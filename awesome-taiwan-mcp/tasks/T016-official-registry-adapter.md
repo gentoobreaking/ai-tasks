@@ -3,7 +3,7 @@ github_issue: N/A
 title: Official MCP Registry Adapter — discovery + metadata fetch
 type: feat
 priority: high
-status: pending
+^status: done
 depends_on: [T005]
 assignee: agent
 created: 2026-09-05

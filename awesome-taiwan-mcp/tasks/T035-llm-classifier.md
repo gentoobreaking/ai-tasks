@@ -3,7 +3,7 @@ github_issue: N/A
 title: > ⛔ LLM Classifier — ambiguous Taiwan classification (Phase 4, needs LLM API)
 type: feat
 priority: low
-status: pending
+status: deferred
 depends_on: [T014]
 blocked_on:
 - "OpenAI-compatible LLM API key (OPENAI_API_KEY) env var available"

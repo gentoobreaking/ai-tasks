@@ -3,7 +3,7 @@ github_issue: N/A
 title: Search API — registry search by keyword, level, category, min-score
 type: feat
 priority: medium
-status: pending
+^status: done
 depends_on: [T027]
 assignee: agent
 created: 2026-09-05

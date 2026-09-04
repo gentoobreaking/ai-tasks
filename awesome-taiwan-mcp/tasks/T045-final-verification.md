@@ -3,7 +3,7 @@ github_issue: N/A
 title: Final Verification — full build + test + crawl + export validation
 type: test
 priority: high
-status: pending
+^status: done
 depends_on: [T039, T040, T041]
 assignee: agent
 created: 2026-09-05

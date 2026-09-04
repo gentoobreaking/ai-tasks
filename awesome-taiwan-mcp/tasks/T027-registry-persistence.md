@@ -3,7 +3,7 @@ github_issue: N/A
 title: Registry Persistence — pipeline → SQLite idempotent write
 type: feat
 priority: high
-status: pending
+^status: done
 depends_on: [T004, T020]
 assignee: agent
 created: 2026-09-05

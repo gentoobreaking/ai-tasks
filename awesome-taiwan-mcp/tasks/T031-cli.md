@@ -3,7 +3,7 @@ github_issue: N/A
 title: CLI — crawl, verify, dedupe, score, export, stats, search commands
 type: feat
 priority: high
-status: pending
+^status: done
 depends_on: [T027, T028, T029]
 assignee: agent
 created: 2026-09-05

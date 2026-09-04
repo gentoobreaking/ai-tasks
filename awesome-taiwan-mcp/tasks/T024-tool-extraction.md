@@ -3,7 +3,7 @@ github_issue: N/A
 title: Tool Extraction — tools/list 結果保存
 type: feat
 priority: high
-status: pending
+^status: done
 depends_on: [T022]
 assignee: agent
 created: 2026-09-05

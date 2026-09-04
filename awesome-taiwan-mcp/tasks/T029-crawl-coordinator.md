@@ -3,7 +3,7 @@ github_issue: N/A
 title: Crawl Coordinator — full pipeline orchestration
 type: feat
 priority: high
-status: pending
+^status: done
 depends_on: [T005, T008, T011, T014, T021, T025, T027, T028]
 assignee: agent
 created: 2026-09-05

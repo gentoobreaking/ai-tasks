@@ -3,7 +3,7 @@ github_issue: N/A
 title: JSON Schema — mcp-server.json, registry.json schema 驗證
 type: feat
 priority: high
-status: pending
+^status: done
 depends_on: [T002]
 assignee: agent
 created: 2026-09-05

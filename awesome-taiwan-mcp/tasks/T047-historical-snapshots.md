@@ -3,7 +3,7 @@ github_issue: N/A
 title: > ⛔ Historical Snapshots — crawl run history + time-series data (Phase 2)
 type: feat
 priority: low
-status: pending
+status: deferred
 depends_on: [T030, T027]
 blocked_on:
 - "Phase 1 complete (all T001–T046 tasks done)"

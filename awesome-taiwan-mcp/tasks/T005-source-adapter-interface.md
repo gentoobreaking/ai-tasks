@@ -3,7 +3,7 @@ github_issue: N/A
 title: Source Adapter 介面 — Discover + Fetch interface + mock adapter
 type: feat
 priority: high
-status: pending
+^status: done
 depends_on: [T002]
 assignee: agent
 created: 2026-09-05

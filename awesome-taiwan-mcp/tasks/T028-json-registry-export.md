@@ -3,7 +3,7 @@ github_issue: N/A
 title: JSON Registry Export — registry.json, registry.min.json, categories, sources, statistics, health
 type: feat
 priority: high
-status: pending
+^status: done
 depends_on: [T027]
 assignee: agent
 created: 2026-09-05

@@ -3,7 +3,7 @@ github_issue: N/A
 title: Deduplication Engine — 合併來自多個 source 的相同 MCP
 type: feat
 priority: high
-status: pending
+^status: done
 depends_on: [T010]
 assignee: agent
 created: 2026-09-05

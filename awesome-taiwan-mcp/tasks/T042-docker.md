@@ -3,7 +3,7 @@ github_issue: N/A
 title: Docker — Dockerfile + docker-compose with security best practices
 type: chore
 priority: high
-status: pending
+^status: done
 depends_on: [T001]
 assignee: agent
 created: 2026-09-05

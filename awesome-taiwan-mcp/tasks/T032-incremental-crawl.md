@@ -3,7 +3,7 @@ github_issue: N/A
 title: Incremental Crawl — ETag, pushed_at, last_seen tracking
 type: feat
 priority: high
-status: pending
+^status: done
 depends_on: [T004, T027]
 assignee: agent
 created: 2026-09-05

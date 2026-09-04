@@ -3,7 +3,7 @@ github_issue: N/A
 title: > ⛔ Web UI — registry browse + Taiwan MCP discovery dashboard (Phase 4)
 type: feat
 priority: low
-status: pending
+status: deferred
 depends_on: [T048]
 blocked_on:
 - "REST API complete (T048)"

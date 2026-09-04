@@ -3,7 +3,7 @@ github_issue: N/A
 title: > ⛔ MCP.so Adapter — discovery + metadata fetch (Phase 2, needs MCP.so API)
 type: feat
 priority: low
-status: pending
+^status: done
 depends_on: [T005]
 blocked_on:
 - "MCP.so API access available (Phase 2 completion, see §67 MVP Scope Phase 2)"

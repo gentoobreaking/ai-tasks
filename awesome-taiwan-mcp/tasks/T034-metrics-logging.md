@@ -3,7 +3,7 @@ github_issue: N/A
 title: Metrics & Logging — Prometheus metrics + structured JSON logging
 type: feat
 priority: high
-status: pending
+^status: done
 depends_on: []
 assignee: agent
 created: 2026-09-05

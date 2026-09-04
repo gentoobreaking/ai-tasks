@@ -3,7 +3,7 @@ github_issue: N/A
 title: Manifest Detector — 偵測 package.json, pyproject.toml, go.mod, Cargo.toml, mcp.json 等
 type: feat
 priority: high
-status: pending
+^status: done
 depends_on: [T006]
 assignee: agent
 created: 2026-09-05

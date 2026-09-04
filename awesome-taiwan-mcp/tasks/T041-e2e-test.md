@@ -3,7 +3,7 @@ github_issue: N/A
 title: End-to-End Test — full pipeline with mock sources
 type: test
 priority: high
-status: pending
+^status: done
 depends_on: [T040, T029, T028]
 assignee: agent
 created: 2026-09-05

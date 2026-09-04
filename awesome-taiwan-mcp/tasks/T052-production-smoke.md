@@ -3,7 +3,7 @@ github_issue: N/A
 title: Production Smoke Test — live GitHub + Registry crawl + export
 type: test
 priority: medium
-status: pending
+^status: done
 depends_on: [T045]
 blocked_on:
 - "GITHUB_TOKEN available (environment variable)"
