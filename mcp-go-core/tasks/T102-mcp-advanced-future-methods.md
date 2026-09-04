@@ -3,7 +3,7 @@ github_issue: N/A
 title: P4 - MCP Spec: Advanced/Future methods (elicitation, tasks, discovery, subscriptions)
 type: feat
 priority: low
-status: pending
+status: done
 depends_on:
   - T101
 assignee: "pi with opencode"
