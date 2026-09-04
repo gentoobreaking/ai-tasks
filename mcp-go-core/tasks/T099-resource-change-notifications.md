@@ -3,7 +3,7 @@ github_issue: N/A
 title: P2 - MCP Resource Change Notifications (bidirectional)
 type: feat
 priority: low
-status: pending
+status: done
 depends_on:
   - T089
 assignee: "pi with opencode"

@@ -3,7 +3,7 @@ github_issue: N/A
 title: P3 - MCP Spec Conformance: Missing optional methods (prompts/create, notifications/list_changed)
 type: feat
 priority: low
-status: pending
+status: done
 depends_on:
   - T089
 assignee: "pi with opencode"
