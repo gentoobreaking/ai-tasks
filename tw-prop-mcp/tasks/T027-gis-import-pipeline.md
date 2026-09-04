@@ -4,8 +4,9 @@ title: GIS 匯入管線（Parcel / Road）
 type: task
 priority: high
 status: done
-depends_on: ["T011"]
-assignee: pi
+depends_on:
+  - T011
+assignee: "pi with opencode"
 created: 2026-09-03
 updated: 2026-09-03
 ---

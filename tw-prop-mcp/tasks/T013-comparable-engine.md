@@ -4,8 +4,12 @@ title: Comparable Engine
 type: task
 priority: high
 status: done
-depends_on: ["T009", "T010", "T012", "T028"]
-assignee: pi
+depends_on:
+  - T009
+  - T010
+  - T012
+  - T028
+assignee: "pi with opencode"
 created: 2026-09-03
 updated: 2026-09-03
 ---

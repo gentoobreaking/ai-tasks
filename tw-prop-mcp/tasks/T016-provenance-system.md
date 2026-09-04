@@ -2,10 +2,15 @@
 github_issue: ""
 title: Provenance System
 type: task
+priority: medium
 status: done
 updated: 2026-09-04
-depends_on: ["T003", "T009", "T010", "T015"]
-assignee: pi
+depends_on:
+  - T003
+  - T009
+  - T010
+  - T015
+assignee: "pi with opencode"
 created: 2026-09-03
 updated: 2026-09-03
 ---

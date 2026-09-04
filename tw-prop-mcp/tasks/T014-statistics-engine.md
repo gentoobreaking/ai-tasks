@@ -2,9 +2,11 @@
 github_issue: ""
 title: Statistics Engine
 type: task
+priority: medium
 status: done
-depends_on: ["T013"]
-assignee: pi
+depends_on:
+  - T013
+assignee: "pi with opencode"
 created: 2026-09-03
 updated: 2026-09-04
 ---

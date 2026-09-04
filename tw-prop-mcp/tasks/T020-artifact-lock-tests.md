@@ -3,11 +3,14 @@ github_issue: ""
 title: Artifact Lock Tests
 type: task
 priority: high
-status: pending
-depends_on: ["T003", "T015", "T016"]
-assignee: pi
+status: done
+depends_on:
+  - T003
+  - T015
+  - T016
+assignee: "pi with opencode"
 created: 2026-09-03
-updated: 2026-09-03
+updated: 2026-09-04
 ---
 
 # T020 - Artifact Lock Tests

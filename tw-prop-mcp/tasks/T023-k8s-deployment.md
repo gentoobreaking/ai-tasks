@@ -3,11 +3,12 @@ github_issue: ""
 title: Kubernetes / OpenShift Deployment
 type: task
 priority: medium
-status: pending
-depends_on: ["T017"]
-assignee: pi
+status: done
+depends_on:
+  - T017
+assignee: "pi with opencode"
 created: 2026-09-03
-updated: 2026-09-03
+updated: 2026-09-04
 ---
 
 # T023 - Kubernetes / OpenShift Deployment

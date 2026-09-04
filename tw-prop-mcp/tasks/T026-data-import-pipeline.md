@@ -2,9 +2,15 @@
 github_issue: ""
 title: Data Import Pipeline Integration
 type: task
+priority: medium
 status: done
-depends_on: ["T004", "T005", "T006", "T007", "T008"]
-assignee: pi
+depends_on:
+  - T004
+  - T005
+  - T006
+  - T007
+  - T008
+assignee: "pi with opencode"
 created: 2026-09-03
 updated: 2026-09-04
 ---

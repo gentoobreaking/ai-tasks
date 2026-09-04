@@ -3,11 +3,13 @@ github_issue: ""
 title: Reproducibility Tests
 type: task
 priority: high
-status: pending
-depends_on: ["T017", "T018"]
-assignee: pi
+status: done
+depends_on:
+  - T017
+  - T018
+assignee: "pi with opencode"
 created: 2026-09-03
-updated: 2026-09-03
+updated: 2026-09-04
 ---
 
 # T019 - Reproducibility Tests

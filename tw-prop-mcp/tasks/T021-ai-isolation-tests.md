@@ -3,11 +3,12 @@ github_issue: ""
 title: AI Isolation Tests
 type: task
 priority: high
-status: pending
-depends_on: ["T017"]
-assignee: pi
+status: done
+depends_on:
+  - T017
+assignee: "pi with opencode"
 created: 2026-09-03
-updated: 2026-09-03
+updated: 2026-09-04
 ---
 
 # T021 - AI Isolation Tests

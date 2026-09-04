@@ -4,8 +4,11 @@ title: Comparable / Valuation 結果持久化
 type: task
 priority: high
 status: done
-depends_on: ["T002", "T015", "T028"]
-assignee: pi
+depends_on:
+  - T002
+  - T015
+  - T028
+assignee: "pi with opencode"
 created: 2026-09-03
 updated: 2026-09-04
 ---
@@ -15,6 +18,7 @@ updated: 2026-09-04
 ## 目標
 將 `DATA_MODEL.md §2.11` 的 `comparable_result` 與 `valuation_result` 從「計算即丟」改為可持久化、可追溯、可重放，供 `T017 MCP` 與 `T019 重現性` 直接讀取歷史結果。
 
+## 驗收標準
 - [x] 定義 `sql/comparable_result.sql` 與 `sql/valuation_result.sql`，`sqlc generate` 產生 `ComparableResultRepository` / `ValuationResultRepository`（pgx + sqlc，無 ORM）
 - [x] `ComparableResultRepository`：`BatchInsert(results)`, `ListByTarget(target_parcel_id, snapshot_id)`, `GetByID(id)`；欄位對齊 `T002` DDL（含 `distance_m, area_similarity, zoning_match, land_use_match, road_access_match, time_score, total_score, algorithm_version`）
 - [x] `ValuationResultRepository`：`Insert(result)`, `GetByID(valuation_id)`, `ListByParcel(parcel_id, snapshot_id)`；欄位含 `comparable_ids(JSONB), algorithm_version, configuration_version, outlier_method, weights(JSONB), statistics(JSONB), bear_value, base_value, bull_value, confidence, status`

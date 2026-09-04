@@ -3,11 +3,12 @@ github_issue: ""
 title: MCP Contract Tests
 type: task
 priority: high
-status: pending
-depends_on: ["T017"]
-assignee: pi
+status: done
+depends_on:
+  - T017
+assignee: "pi with opencode"
 created: 2026-09-03
-updated: 2026-09-03
+updated: 2026-09-04
 ---
 
 # T018 - MCP Contract Tests

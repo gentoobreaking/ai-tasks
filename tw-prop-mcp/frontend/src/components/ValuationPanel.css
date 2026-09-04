@@ -1,0 +1,204 @@
+/* ValuationPanel: right-positioned overlay / side sheet. */
+
+.valuation-panel {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  z-index: 10;
+  width: 320px;
+  max-width: calc(100vw - 24px);
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  backdrop-filter: blur(4px);
+}
+
+.valuation-panel__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+  background: #f5f7fa;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.valuation-panel__header h3 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+}
+
+.valuation-panel__close {
+  width: 28px;
+  height: 28px;
+  border: none;
+  background: transparent;
+  font-size: 20px;
+  line-height: 1;
+  color: #999;
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 0;
+  transition: all 0.15s ease;
+}
+
+.valuation-panel__close:hover {
+  color: #333;
+  background: #e8f0fe;
+}
+
+.valuation-panel__body {
+  padding: 16px;
+}
+
+.valuation-panel__loading,
+.valuation-panel__empty,
+.valuation-panel__error,
+.valuation-panel__insufficient {
+  font-size: 13px;
+  color: #666;
+  text-align: center;
+  padding: 24px 12px;
+}
+
+.valuation-panel__error {
+  color: #d32f2f;
+}
+
+.valuation-panel__insufficient {
+  color: #d32f2f;
+}
+
+/* Valuation value cards */
+.valuation-panel__range {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.valuation-panel__value {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 12px;
+  background: #f8f9fa;
+  border-radius: 6px;
+  border: 1px solid #e8e8e8;
+}
+
+.valuation-panel__value--base {
+  background: #e8f0fe;
+  border-color: #1976d2;
+}
+
+.valuation-panel__label {
+  font-size: 12px;
+  color: #666;
+}
+
+.valuation-panel__amount {
+  font-size: 16px;
+  font-weight: 700;
+  color: #1976d2;
+}
+
+/* Confidence badge */
+.valuation-panel__confidence {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #555;
+  margin-bottom: 12px;
+}
+
+.badge {
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.badge--high {
+  background: #c8e6c9;
+  color: #2e7d32;
+}
+
+.badge--medium {
+  background: #fff9c4;
+  color: #f57f17;
+}
+
+.badge--low {
+  background: #ffcdd2;
+  color: #c62828;
+}
+
+.badge--insufficient {
+  background: #ffcdd2;
+  color: #c62828;
+}
+
+.valuation-panel__comparables-count {
+  color: #888;
+}
+
+/* Statistics table */
+.stats-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 12px;
+  font-size: 12px;
+  color: #555;
+}
+
+.stats-table td {
+  padding: 4px 8px;
+  border-bottom: 1px solid #eee;
+}
+
+.stats-table td:first-child {
+  text-align: left;
+  color: #888;
+}
+
+.stats-table td:last-child {
+  text-align: right;
+  font-weight: 600;
+}
+
+/* Provenance footer */
+.valuation-panel__provenance {
+  margin-top: 12px;
+  padding-top: 8px;
+  border-top: 1px solid #e0e0e0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.valuation-panel__hash {
+  font-family: 'Fira Code', monospace;
+  color: #888;
+}
+
+.valuation-panel__meta {
+  margin-top: 8px;
+  font-size: 11px;
+  color: #999;
+  text-align: right;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .valuation-panel {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 280px;
+    max-width: calc(100vw - 16px);
+  }
+}

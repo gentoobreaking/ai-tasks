@@ -1,0 +1,143 @@
+/* MapView: full-bleed map with floating controls and overlays. */
+
+.map-view {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.map-view::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: #e8f0fe;
+  z-index: 0;
+}
+
+.map-view__container {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+/* Ensure the #root height propagates */
+html,
+body,
+#root {
+  height: 100%;
+}
+
+/* Loading / error overlays */
+.map-view__overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.85);
+  z-index: 50;
+  pointer-events: none;
+}
+
+.map-view__loading {
+  padding: 16px 24px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  font-size: 14px;
+  color: #555;
+}
+
+.map-view__error,
+.map-view__overlay.error {
+  pointer-events: none;
+}
+
+.map-view__error {
+  padding: 24px 32px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.map-view__error h3 {
+  color: #d32f2f;
+  margin-bottom: 8px;
+}
+
+.map-view__error p {
+  color: #555;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* Layer toggle buttons */
+.map-view__controls {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.map-view__layer-toggle,
+.map-view__view-toggle {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 8px;
+  padding: 4px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(4px);
+}
+
+.map-view__btn {
+  padding: 6px 12px;
+  font-size: 12px;
+  font-weight: 500;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  background: transparent;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  white-space: nowrap;
+}
+
+.map-view__btn:hover {
+  background: #f0f0f0;
+}
+
+.map-view__btn--active {
+  background: #1976d2;
+  color: #fff;
+  border-color: #1976d2;
+}
+
+.map-view__layer-toggle .map-view__btn {
+  flex: 1 1 auto;
+}
+
+.map-view__view-toggle .map-view__btn {
+  flex: 1 1 auto;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .map-view__controls {
+    top: 8px;
+    left: 8px;
+    right: 8px;
+    left: auto;
+  }
+  .map-view__btn {
+    font-size: 11px;
+    padding: 4px 8px;
+  }
+}

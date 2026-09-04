@@ -4,8 +4,9 @@ title: Data Validator
 type: task
 priority: high
 status: done
-depends_on: ["T006"]
-assignee: pi
+depends_on:
+  - T006
+assignee: "pi with opencode"
 created: 2026-09-03
 updated: 2026-09-03
 ---
