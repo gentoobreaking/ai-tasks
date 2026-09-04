@@ -3,7 +3,7 @@ github_issue: N/A
 title: P0 - Feature Flags: Runtime toggle system with config-backed flags
 type: feat
 priority: high
-status: pending
+status: done
 depends_on:
   - T007
 assignee: "pi with opencode"
@@ -37,3 +37,4 @@ Implement a runtime feature flag system:
 
 ## 執行紀錄
 - 2026-09-04: Created task, pending implementation
+- 2026-09-04: Implemented core/feature, featurewire middleware, server integration. 42 pkgs -race PASS, 345 tests. Committed at 8cbab1e.
