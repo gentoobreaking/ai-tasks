@@ -100,6 +100,8 @@
 | P3 - MCP Spec Conformance: Missing optional methods (prompts/create, notifications/list_changed) |
 | P1 - MCP Spec: Remaining high-value methods (templates/list, unsubscribe, roots/list, progress, message) |
 | P4 - MCP Spec: Advanced/Future methods (elicitation, tasks, discovery, subscriptions) |
+| P1 - Health Endpoints: HTTP health check routes for features, rate-limits, config |
+| P2 - Resource Deletion Notification + Per-Client Subscription Tracking |
 
 ## Skip 項目
 
@@ -117,7 +119,7 @@
 
 | Task | 名稱 | 說明 |
 |------|------|------|
-| [T103-health-endpoints](https://github.com/gentoobreaking/ai-tasks/blob/main/mcp-go-core/tasks/T103-health-endpoints.md) | P1 - Health Endpoints: HTTP health check routes for features, rate-limits, config | |
+| | | |
 
 ## Task 列表
 
@@ -219,8 +221,9 @@
 | [T100-mcp-optional-methods-continued](https://github.com/gentoobreaking/ai-tasks/blob/main/mcp-go-core/tasks/T100-mcp-optional-methods-continued.md) | P3 - MCP Spec Conformance: Missing optional methods (prompts/create, notifications/list_changed) | ✅ done |
 | [T101-mcp-high-value-methods](https://github.com/gentoobreaking/ai-tasks/blob/main/mcp-go-core/tasks/T101-mcp-high-value-methods.md) | P1 - MCP Spec: Remaining high-value methods (templates/list, unsubscribe, roots/list, progress, message) | ✅ done |
 | [T102-mcp-advanced-future-methods](https://github.com/gentoobreaking/ai-tasks/blob/main/mcp-go-core/tasks/T102-mcp-advanced-future-methods.md) | P4 - MCP Spec: Advanced/Future methods (elicitation, tasks, discovery, subscriptions) | ✅ done |
-| [T103-health-endpoints](https://github.com/gentoobreaking/ai-tasks/blob/main/mcp-go-core/tasks/T103-health-endpoints.md) | P1 - Health Endpoints: HTTP health check routes for features, rate-limits, config | 📋 pending |
+| [T103-health-endpoints](https://github.com/gentoobreaking/ai-tasks/blob/main/mcp-go-core/tasks/T103-health-endpoints.md) | P1 - Health Endpoints: HTTP health check routes for features, rate-limits, config | ✅ done |
+| [T104-resource-deletion-per-client-tracking](https://github.com/gentoobreaking/ai-tasks/blob/main/mcp-go-core/tasks/T104-resource-deletion-per-client-tracking.md) | P2 - Resource Deletion Notification + Per-Client Subscription Tracking | ✅ done |
 
-**✅ done: 96 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 1**
+**✅ done: 98 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 0**
 
-> 自動生成於 2026-09-05 01:23
+> 自動生成於 2026-09-05 02:15

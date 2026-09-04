@@ -1,6 +1,6 @@
 # 📅 Daily Dashboard - 2026-09-05
 
-> 最後更新: 2026-09-05 01:23 · 自動生成
+> 最後更新: 2026-09-05 02:15 · 自動生成
 
 ---
 
@@ -8,11 +8,11 @@
 
 | 指標 | 數量 |
 |------|------|
-| 新增任務 | 5 |
-| 完成任務 | 4 |
+| 新增任務 | 6 |
+| 完成任務 | 6 |
 | 進行中 | 0 |
-| 待處理 | 1 |
-| 完成率 | 80% |
+| 待處理 | 0 |
+| 完成率 | 100% |
 
 ---
 
@@ -20,10 +20,10 @@
 
 | 指標 | 數值 |
 |------|------|
-| 今日完成速率 | 5 任務 |
-| 近 7 日速率 | 5 任務 |
+| 今日完成速率 | 6 任務 |
+| 近 7 日速率 | 6 任務 |
 | 平均循環天數 | 0.0 天 |
-| 今日完成任務循環時間樣本 | 5 筆 |
+| 今日完成任務循環時間樣本 | 6 筆 |
 
 ---
 
@@ -36,6 +36,7 @@
 | mcp-go-core | [T101-mcp-high-value-methods](https://github.com/gentoobreaking/ai-tasks/blob/main/mcp-go-core/tasks/T101-mcp-high-value-methods.md) | P1 - MCP Spec: Remaining high-value methods (templates/list, unsubscribe, roots/list, progress, message) |
 | mcp-go-core | [T102-mcp-advanced-future-methods](https://github.com/gentoobreaking/ai-tasks/blob/main/mcp-go-core/tasks/T102-mcp-advanced-future-methods.md) | P4 - MCP Spec: Advanced/Future methods (elicitation, tasks, discovery, subscriptions) |
 | mcp-go-core | [T103-health-endpoints](https://github.com/gentoobreaking/ai-tasks/blob/main/mcp-go-core/tasks/T103-health-endpoints.md) | P1 - Health Endpoints: HTTP health check routes for features, rate-limits, config |
+| mcp-go-core | [T104-resource-deletion-per-client-tracking](https://github.com/gentoobreaking/ai-tasks/blob/main/mcp-go-core/tasks/T104-resource-deletion-per-client-tracking.md) | P2 - Resource Deletion Notification + Per-Client Subscription Tracking |
 
 ---
 
@@ -47,6 +48,8 @@
 | mcp-go-core | [T100-mcp-optional-methods-continued](https://github.com/gentoobreaking/ai-tasks/blob/main/mcp-go-core/tasks/T100-mcp-optional-methods-continued.md) | P3 - MCP Spec Conformance: Missing optional methods (prompts/create, notifications/list_changed) |
 | mcp-go-core | [T101-mcp-high-value-methods](https://github.com/gentoobreaking/ai-tasks/blob/main/mcp-go-core/tasks/T101-mcp-high-value-methods.md) | P1 - MCP Spec: Remaining high-value methods (templates/list, unsubscribe, roots/list, progress, message) |
 | mcp-go-core | [T102-mcp-advanced-future-methods](https://github.com/gentoobreaking/ai-tasks/blob/main/mcp-go-core/tasks/T102-mcp-advanced-future-methods.md) | P4 - MCP Spec: Advanced/Future methods (elicitation, tasks, discovery, subscriptions) |
+| mcp-go-core | [T103-health-endpoints](https://github.com/gentoobreaking/ai-tasks/blob/main/mcp-go-core/tasks/T103-health-endpoints.md) | P1 - Health Endpoints: HTTP health check routes for features, rate-limits, config |
+| mcp-go-core | [T104-resource-deletion-per-client-tracking](https://github.com/gentoobreaking/ai-tasks/blob/main/mcp-go-core/tasks/T104-resource-deletion-per-client-tracking.md) | P2 - Resource Deletion Notification + Per-Client Subscription Tracking |
 
 ---
 
@@ -64,9 +67,7 @@ _無_
 
 ## 📋 所有待處理任務
 
-| 專案 | 任務 | 標題 | 優先 |
-| -- | -- | -- | -- |
-| mcp-go-core | [T103-health-endpoints](https://github.com/gentoobreaking/ai-tasks/blob/main/mcp-go-core/tasks/T103-health-endpoints.md) | P1 - Health Endpoints: HTTP health check routes for features, rate-limits, config | medium |
+_無_
 
 ---
 
