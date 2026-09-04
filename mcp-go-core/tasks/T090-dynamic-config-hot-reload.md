@@ -23,9 +23,9 @@ Enable runtime configuration reload without restarting the MCP server:
 
 ## 驗收標準
 - [ ] Config struct supports atomic swap via `sync.RWMutex`
-- [ ] File watcher reloads YAML config on save
-- [ ] Invalid config: log error, keep previous valid config
-- [ ] Health check endpoint reports config load timestamp
+- [x] File watcher reloads YAML config on save
+- [x] Invalid config: log error, keep previous valid config
+- [x] Health check endpoint reports config load timestamp
 - [ ] 3 new tests covering reload/degradation/atomicity
 - [ ] `go test -race ./... -count=1` all pass
 - [ ] `go vet ./...` clean
