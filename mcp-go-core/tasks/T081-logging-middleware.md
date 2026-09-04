@@ -19,17 +19,22 @@ updated: 2026-09-04
 
 ## 驗收標準
 
-- [ ] 實現 `Logging` middleware: 記錄 method、duration、error
-- [ ] 支援 `core/middleware.Logger` interface
-- [ ] 支援標準日誌格式 (RFC 3339 timestamp + level + message)
-- [ ] 支援 JSON 結構化日誌輸出
-- [ ] `modules/middleware/logging/logging.go` 存在且編譯
-- [ ] `go test ./modules/middleware/logging/...` 成功
-- [ ] `go vet ./modules/middleware/logging/...` 無錯誤
+- [x] 實現 `Logging` middleware: 記錄 method、duration、error
+- [x] 支援 `core/middleware.Logger` interface
+- [x] 支援標準日誌格式 (RFC 3339 timestamp + level + message)
+- [x] 支援 JSON 結構化日誌輸出
+- [x] `modules/middleware/logging/logging.go` 存在且編譯
+- [x] `go test ./modules/middleware/logging/...` 成功
+- [x] `go vet ./modules/middleware/logging/...` 無錯誤
 
 ## 備註
 
 `modules/middleware/logging/` 目錄存在但內無 `.go` 文件。`core/middleware` 中已有 `Logger` interface、`LoggerFunc`、`Logging(l Logger)` middleware 函數。
 
 ## 執行紀錄
-- 等待實作
+- 2026-09-04: T081-Production Logging middleware implementation complete
+  - Structured Logger with text/JSON formats
+  - Level filtering, field support
+  - Middleware chain integration
+  - 15 tests passing
+  - Committed

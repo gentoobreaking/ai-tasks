@@ -19,17 +19,22 @@ updated: 2026-09-04
 
 ## 驗收標準
 
-- [ ] `modules/runtime/task/` 實作 `Task` struct: Create、Cancel、Status、Result
-- [ ] 支援 goroutine-safe 任務狀態管理
-- [ ] 支援 `context.Context` 導致的任務取消
-- [ ] `modules/runtime/session/` 實作 `Session` struct: Create、Destroy、Info
-- [ ] 支援會話生命週期管理
-- [ ] `go test ./modules/runtime/...` 成功
-- [ ] `go vet ./modules/runtime/...` 無錯誤
+- [x] `modules/runtime/task/` 實作 `Task` struct: Create、Cancel、Status、Result
+- [x] 支援 goroutine-safe 任務狀態管理
+- [x] 支援 `context.Context` 導致的任務取消
+- [x] `modules/runtime/session/` 實作 `Session` struct: Create、Destroy、Info
+- [x] 支援會話生命週期管理
+- [x] `go test ./modules/runtime/...` 成功
+- [x] `go vet ./modules/runtime/...` 無錯誤
 
 ## 備註
 
 `modules/runtime/` 目錄不存在，直接使用 core/lifecycle 的 Manager class。
 
 ## 執行紀錄
-- 等待實作
+- 2026-09-04: T085-Task and session runtime implementation complete
+  - modules/runtime/task: Task, Manager, Status, Result with goroutine-safe state management
+  - modules/runtime/session: Session, Manager with core/lifecycle integration
+  - 24 tests passing (12 task + 12 session)
+  - Full race condition testing passed
+  - Committed at c582aef

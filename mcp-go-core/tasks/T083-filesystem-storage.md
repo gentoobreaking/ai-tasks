@@ -19,17 +19,22 @@ updated: 2026-09-04
 
 ## 驗收標準
 
-- [ ] 實現 `Store` struct: `Get`、`Set`、`Delete`、`List` 操作
-- [ ] 支援基於 URI 的文件路徑映射
-- [ ] 支援 `context.Context` 取消
-- [ ] 處理文件權限與路徑安全 (防止 path traversal)
-- [ ] `modules/storage/filesystem/storage.go` 存在且編譯
-- [ ] `go test ./modules/storage/filesystem/...` 成功
-- [ ] `go vet ./modules/storage/filesystem/...` 無錯誤
+- [x] 實現 `Store` struct: `Get`、`Set`、`Delete`、`List` 操作
+- [x] 支援基於 URI 的文件路徑映射
+- [x] 支援 `context.Context` 取消
+- [x] 處理文件權限與路徑安全 (防止 path traversal)
+- [x] `modules/storage/filesystem/storage.go` 存在且編譯
+- [x] `go test ./modules/storage/filesystem/...` 成功
+- [x] `go vet ./modules/storage/filesystem/...` 無錯誤
 
 ## 備註
 
 `modules/storage/filesystem/` 目錄不存在，需要從 `modules/storage/memory/` 為參考實現。
 
 ## 執行紀錄
-- 等待實作
+- 2026-09-04: T083-Filesystem storage implementation complete
+  - Store with Get/Set/Delete/Keys operations
+  - Path traversal protection
+  - Context cancellation support
+  - 13 tests passing
+  - Committed

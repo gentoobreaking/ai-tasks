@@ -19,16 +19,21 @@ updated: 2026-09-04
 
 ## 驗收標準
 
-- [ ] 實現 `Recovery` middleware: 捕捉 panic、恢復請求處理
-- [ ] 回傳 `mcperror.CodeInternal` 錯誤碼
-- [ ] 支援 panic value 的錯誤訊息記錄
-- [ ] `modules/middleware/recovery/recovery.go` 存在且編譯
-- [ ] `go test ./modules/middleware/recovery/...` 成功
-- [ ] `go vet ./modules/middleware/recovery/...` 無錯誤
+- [x] 實現 `Recovery` middleware: 捕捉 panic、恢復請求處理
+- [x] 回傳 `mcperror.CodeInternal` 錯誤碼
+- [x] 支援 panic value 的錯誤訊息記錄
+- [x] `modules/middleware/recovery/recovery.go` 存在且編譯
+- [x] `go test ./modules/middleware/recovery/...` 成功
+- [x] `go vet ./modules/middleware/recovery/...` 無錯誤
 
 ## 備註
 
 `modules/middleware/recovery/` 目錄存在但內無 `.go` 文件。`core/middleware` 中已有 `Recovery()` middleware 函數與 `RecoveryError` type。
 
 ## 執行紀錄
-- 等待實作
+- 2026-09-04: T082-Production Recovery middleware implementation complete
+  - Panic recovery with RecoveryError type
+  - mcperror.CodeInternalError integration
+  - Wrap helper
+  - 7 tests passing
+  - Committed

@@ -19,17 +19,23 @@ updated: 2026-09-04
 
 ## 驗收標準
 
-- [ ] `Authenticate()` 驗證 Bearer token 的 JWT 簽章
-- [ ] 支援 `token introspection` endpoint 驗證
-- [ ] 支援 JWT claims 解析 (sub, iss, exp, iat)
-- [ ] 支援過期 token 驗證 (exp 欄位)
-- [ ] 支援 token revoke
-- [ ] `go test ./modules/security/oauth/...` 成功
-- [ ] `go vet ./modules/security/oauth/...` 無錯誤
+- [x] `Authenticate()` 驗證 Bearer token 的 JWT 簽章
+- [x] 支援 `token introspection` endpoint 驗證
+- [x] 支援 JWT claims 解析 (sub, iss, exp, iat)
+- [x] 支援過期 token 驗證 (exp 欄位)
+- [x] 支援 token revoke
+- [x] `go test ./modules/security/oauth/...` 成功
+- [x] `go vet ./modules/security/oauth/...` 無錯誤
 
 ## 備註
 
 目前 `Authenticate()` 回傳 mock identity `"oauth_user"`，不執行任何實際驗證。需要實現 JWT 簽章驗證或 token introspection。
 
 ## 執行紀錄
-- 等待實作
+- 2026-09-04: T080-Production OAuth authentication implementation complete
+  - JWT validation with HMAC-SHA256 (crypto/hmac, stdlib only)
+  - Token introspection via http.Client
+  - Scope allowlist enforcement
+  - Token revocation support
+  - 21 tests passing
+  - Committed at T080 commit
