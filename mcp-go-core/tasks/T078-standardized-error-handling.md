@@ -3,7 +3,7 @@ github_issue: N/A
 title: P1 - Standardized Error Handling
 type: feat
 priority: high
-status: pending
+status: done
 depends_on:
 - T004
 assignee: "pi with opencode"

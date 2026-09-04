@@ -3,7 +3,7 @@ github_issue: N/A
 title: P2 - MCP Test Infrastructure
 type: feat
 priority: medium
-status: pending
+status: done
 depends_on:
 - T001
 assignee: "pi with opencode"

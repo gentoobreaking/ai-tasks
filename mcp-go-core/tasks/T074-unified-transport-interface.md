@@ -3,7 +3,7 @@ github_issue: N/A
 title: P3 - Unified Transport Interface with Session Management
 type: feat
 priority: medium
-status: pending
+status: done
 depends_on: []
 assignee: "pi with opencode"
 created: 2026-09-04

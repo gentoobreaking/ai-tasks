@@ -3,7 +3,7 @@ github_issue: N/A
 title: P3 - CLI Enhancement (Builder Patterns & Commands)
 type: feat
 priority: medium
-status: pending
+status: done
 depends_on:
 - T002
 - T010

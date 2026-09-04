@@ -77,6 +77,12 @@
 | P2 - Metrics Middleware Module (Deferred - External Condition) |
 | P2 - Tracing Middleware Module (Deferred - External Condition) |
 | P2 - Kubernetes Integration Module (Deferred - External Condition) |
+| P3 - Unified Transport Interface with Session Management |
+| P1 - Complete MCP Protocol Types |
+| P2 - Server Builder API |
+| P2 - MCP Test Infrastructure |
+| P1 - Standardized Error Handling |
+| P3 - CLI Enhancement (Builder Patterns & Commands) |
 
 ## Skip 項目
 
@@ -94,12 +100,7 @@
 
 | Task | 名稱 | 說明 |
 |------|------|------|
-| [T74-unified-transport-interface](https://github.com/gentoobreaking/ai-tasks/blob/main/mcp-go-core/tasks/T074-unified-transport-interface.md) | P3 - Unified Transport Interface with Session Management | |
-| [T75-complete-protocol-types](https://github.com/gentoobreaking/ai-tasks/blob/main/mcp-go-core/tasks/T075-complete-protocol-types.md) | P1 - Complete MCP Protocol Types | |
-| [T76-server-builder-api](https://github.com/gentoobreaking/ai-tasks/blob/main/mcp-go-core/tasks/T076-server-builder-api.md) | P2 - Server Builder API | |
-| [T77-test-infrastructure](https://github.com/gentoobreaking/ai-tasks/blob/main/mcp-go-core/tasks/T077-test-infrastructure.md) | P2 - MCP Test Infrastructure | |
-| [T78-standardized-error-handling](https://github.com/gentoobreaking/ai-tasks/blob/main/mcp-go-core/tasks/T078-standardized-error-handling.md) | P1 - Standardized Error Handling | |
-| [T79-cli-enhancement](https://github.com/gentoobreaking/ai-tasks/blob/main/mcp-go-core/tasks/T079-cli-enhancement.md) | P3 - CLI Enhancement (Builder Patterns & Commands) | |
+| | | |
 
 ## Task 列表
 
@@ -178,13 +179,13 @@
 | [T71-metrics-middleware](https://github.com/gentoobreaking/ai-tasks/blob/main/mcp-go-core/tasks/T071-metrics-middleware.md) | P2 - Metrics Middleware Module (Deferred - External Condition) | ✅ done |
 | [T72-tracing-middleware](https://github.com/gentoobreaking/ai-tasks/blob/main/mcp-go-core/tasks/T072-tracing-middleware.md) | P2 - Tracing Middleware Module (Deferred - External Condition) | ✅ done |
 | [T73-kubernetes-integration](https://github.com/gentoobreaking/ai-tasks/blob/main/mcp-go-core/tasks/T073-kubernetes-integration.md) | P2 - Kubernetes Integration Module (Deferred - External Condition) | ✅ done |
-| [T74-unified-transport-interface](https://github.com/gentoobreaking/ai-tasks/blob/main/mcp-go-core/tasks/T074-unified-transport-interface.md) | P3 - Unified Transport Interface with Session Management | 📋 pending |
-| [T75-complete-protocol-types](https://github.com/gentoobreaking/ai-tasks/blob/main/mcp-go-core/tasks/T075-complete-protocol-types.md) | P1 - Complete MCP Protocol Types | 📋 pending |
-| [T76-server-builder-api](https://github.com/gentoobreaking/ai-tasks/blob/main/mcp-go-core/tasks/T076-server-builder-api.md) | P2 - Server Builder API | 📋 pending |
-| [T77-test-infrastructure](https://github.com/gentoobreaking/ai-tasks/blob/main/mcp-go-core/tasks/T077-test-infrastructure.md) | P2 - MCP Test Infrastructure | 📋 pending |
-| [T78-standardized-error-handling](https://github.com/gentoobreaking/ai-tasks/blob/main/mcp-go-core/tasks/T078-standardized-error-handling.md) | P1 - Standardized Error Handling | 📋 pending |
-| [T79-cli-enhancement](https://github.com/gentoobreaking/ai-tasks/blob/main/mcp-go-core/tasks/T079-cli-enhancement.md) | P3 - CLI Enhancement (Builder Patterns & Commands) | 📋 pending |
+| [T74-unified-transport-interface](https://github.com/gentoobreaking/ai-tasks/blob/main/mcp-go-core/tasks/T074-unified-transport-interface.md) | P3 - Unified Transport Interface with Session Management | ✅ done |
+| [T75-complete-protocol-types](https://github.com/gentoobreaking/ai-tasks/blob/main/mcp-go-core/tasks/T075-complete-protocol-types.md) | P1 - Complete MCP Protocol Types | ✅ done |
+| [T76-server-builder-api](https://github.com/gentoobreaking/ai-tasks/blob/main/mcp-go-core/tasks/T076-server-builder-api.md) | P2 - Server Builder API | ✅ done |
+| [T77-test-infrastructure](https://github.com/gentoobreaking/ai-tasks/blob/main/mcp-go-core/tasks/T077-test-infrastructure.md) | P2 - MCP Test Infrastructure | ✅ done |
+| [T78-standardized-error-handling](https://github.com/gentoobreaking/ai-tasks/blob/main/mcp-go-core/tasks/T078-standardized-error-handling.md) | P1 - Standardized Error Handling | ✅ done |
+| [T79-cli-enhancement](https://github.com/gentoobreaking/ai-tasks/blob/main/mcp-go-core/tasks/T079-cli-enhancement.md) | P3 - CLI Enhancement (Builder Patterns & Commands) | ✅ done |
 
-**✅ done: 73 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 6**
+**✅ done: 79 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 0**
 
-> 自動生成於 2026-09-04 17:59
+> 自動生成於 2026-09-04 18:27
