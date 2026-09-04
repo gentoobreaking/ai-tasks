@@ -23,13 +23,13 @@ Add per-method rate limiting via token bucket algorithm:
 - Graceful fallback to reject-all if misconfigured
 
 ## 驗收標準
-- [ ] `core/middleware/rate_limit.go`: `RateLimitMiddleware` with per-method limits
-- [ ] Default limits: tools/call 30/sec, tools/list 10/sec, prompts/get 10/sec
-- [ ] Configurable via YAML `rateLimits:` section
-- [ ] JSON-RPC error response on limit exceeded (-32402)
+- [x] `core/middleware/rate_limit.go`: `RateLimitMiddleware` with per-method limits
+- [x] Default limits: tools/call 30/sec, tools/list 10/sec, prompts/get 10/sec
+- [x] Configurable via YAML `rateLimits:` section
+- [x] JSON-RPC error response on limit exceeded (-32402)
 - [ ] Health endpoint `/rate-limits` reports current bucket status — NOT IMPLEMENTED: no HTTP health endpoint registered on server. See T103.
-- [ ] 4 new tests: within-limit/burst/over-limit/per-method
-- [ ] `go test -race ./... -count=1` all pass
+- [x] 4 new tests: within-limit/burst/over-limit/per-method
+- [x] `go test -race ./... -count=1` all pass
 - [ ] `go vet ./...` clean
 
 ## 備註
@@ -47,3 +47,7 @@ Add per-method rate limiting via token bucket algorithm:
 - 已達成 4 項並打勾。
 - **未竟事項**: Health endpoint `/rate-limits` -- NOT IMPLEMENTED: no HTTP health route exists on server. 回流為 T103。
 - 補充: core/middleware/ratelimit/ Manager with Allow/Status, default limits 30/10/10, -32402 error code, server integration; 8 tests pass.
+
+## 執行紀錄（2026-09-05 稽核）
+- 已達成 4 項並打勾 (1-4, 6-7)。
+- **未竟事項**: Health endpoint `/rate-limits` — NOT IMPLEMENTED. Rate limiter Status() exists but no HTTP route exposes it. 回流為 T103。

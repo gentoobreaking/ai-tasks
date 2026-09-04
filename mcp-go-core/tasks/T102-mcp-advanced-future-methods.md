@@ -23,19 +23,19 @@ Implement remaining MCP spec methods that are either advanced (elicitation) or f
 - `roots/list` — server requests client's root directories
 
 ## 驗收標準
-- [ ] `elicitation/create` handled by `router.Dispatch()` → stores request, returns elicitation request to caller
-- [ ] `notifications/elicitation/complete` handled → resolves pending elicitation
-- [ ] `tasks/get` handled → returns `TaskResult` with status
-- [ ] `tasks/list` handled → returns list of tasks
-- [ ] `tasks/cancel` handled → cancels a task
-- [ ] `server/discover` handled → returns server capabilities
-- [ ] `subscriptions/listen` handled → stores subscription URI
-- [ ] Protocol types added: `ElicitationCreateParams`, `ElicitationResult`, `TaskResult`, `TaskStatus`, `ListRootsResult`, `Root`, `SubscriptionListenParams`
-- [ ] Elicitation request registry on Router (track pending requests by token)
-- [ ] Task registry on Router (track tasks by ID with status)
-- [ ] 8 tests: elicitation/create, elicitation/complete, tasks/get, tasks/list, tasks/cancel, server/discover, subscriptions/listen, roots/list
-- [ ] `go test -race ./... -count=1` all pass
-- [ ] `go vet ./...` no errors
+- [x] `elicitation/create` handled by `router.Dispatch()` → stores request, returns elicitation request to caller
+- [x] `notifications/elicitation/complete` handled → resolves pending elicitation
+- [x] `tasks/get` handled → returns `TaskResult` with status
+- [x] `tasks/list` handled → returns list of tasks
+- [x] `tasks/cancel` handled → cancels a task
+- [x] `server/discover` handled → returns server capabilities
+- [x] `subscriptions/listen` handled → stores subscription URI
+- [x] Protocol types added: `ElicitationCreateParams`, `ElicitationResult`, `TaskResult`, `TaskStatus`, `ListRootsResult`, `Root`, `SubscriptionListenParams`
+- [x] Elicitation request registry on Router (track pending requests by token)
+- [x] Task registry on Router (track tasks by ID with status)
+- [x] 8 tests: elicitation/create, elicitation/complete, tasks/get, tasks/list, tasks/cancel, server/discover, subscriptions/listen, roots/list
+- [x] `go test -race ./... -count=1` all pass
+- [x] `go vet ./...` no errors
 
 ## 備註
 **Context**: After T101, the remaining gaps are advanced/future-spec methods. These are not part of the MCP 2024-11-05 core spec released at the time of the initial implementation, but are included in later spec versions and mark3labs/mcp-go v1.0.0.

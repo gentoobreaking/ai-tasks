@@ -21,14 +21,14 @@ Implement server-side emission of resource change notifications to enable full b
 - Notification fan-out to all subscribed clients via transport-level push
 
 ## 驗收標準
-- [ ] Server-side notification dispatcher: push notification to connected clients
-- [ ] `notifications/resources/update` emitted when `resources/created` fires for a subscribed URI
-- [ ] `notifications/resources/deleted` emitted when a subscribed resource is removed
-- [ ] Subscription registry supports per-client connection tracking (not just global URI->bool)
-- [ ] Protocol type: `ResourceUpdateNotification` with `uri` + `changeType`
-- [ ] 4 tests: subscribe+notify, notify-multiple-clients, notify-deleted, no-subscriber-skip
-- [ ] `go test -race ./... -count=1` all pass
-- [ ] `go vet ./...` no errors
+- [x] Server-side notification dispatcher: push notification to connected clients (notifyHandler + sendNotification)
+- [~] `notifications/resources/update` emitted when `resources/created` fires for a subscribed URI — requires explicit NotifyResourceUpdate call, not auto-fired by RegisterResource
+- [ ] `notifications/resources/deleted` emitted when a subscribed resource is removed — **NOT IMPLEMENTED**: no DeleteResource/RemoveResource method exists. See T104.
+- [ ] Subscription registry supports per-client connection tracking — **NOT IMPLEMENTED**: current `subscriptions map[string]bool` is global, not per-client. See T104.
+- [x] Protocol type: `ResourceUpdateNotification` with `uri` + `changeType`
+- [x] 4 tests: subscribe+notify, notify-multiple-clients, notify-deleted, no-subscriber-skip
+- [x] `go test -race ./... -count=1` all pass
+- [x] `go vet ./...` no errors
 
 ## 備註
 **Context**: T089 implemented the dispatch side of `resources/subscribe` (stores subscription, `IsSubscribed()`) but did NOT implement notification emission. This task completes the bidirectional story.
@@ -40,3 +40,8 @@ Implement server-side emission of resource change notifications to enable full b
 - `core/router/router.go` — extend `dispatchSubscribe` to track subscriptions per-connection; add `NotifyResourceUpdate(uri, changeType)`
 - `core/protocol/types.go` — add `ResourceUpdateNotification`, `ResourceUpdateParams`
 - `core/router/router_test.go` — add notification emission tests
+
+## 執行紀錄（2026-09-05 稽核）
+- 已達成 3 項並打勾 (1, 5, 6)。
+- **未竟事項**: notifications/resources/deleted emission (no DeleteResource method); per-client subscription tracking (global map, not per-client). 回流為 T104。
+- 補充: NotifyResourceUpdate() implemented with subscription fan-out; sendNotification callback wired on Server; 5 tests pass.

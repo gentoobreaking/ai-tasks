@@ -21,15 +21,15 @@ Implement remaining MCP spec optional server-side methods and client→server no
 - `notifications/tools/list_changed` — server notifies client that tools changed (server→client)
 
 ## 驗收標準
-- [ ] `prompts/create` handled by `router.Dispatch()` → stores prompt, returns success
-- [ ] `notifications/prompts/list_changed` handled → clears prompt cache / triggers refresh
-- [ ] `notifications/resources/list_changed` handled → triggers resource registry refresh
-- [ ] `notifications/tools/list_changed` — protocol type for server→client notification
-- [ ] `PromptCreateParams` type in `core/protocol/types.go`
-- [ ] `ToolListChangedNotification` type in `core/protocol/types.go`
-- [ ] 4 tests: prompts/create, prompts/list_changed notification, resources/list_changed notification, tools/list_changed notification
-- [ ] `go test -race ./... -count=1` all pass
-- [ ] `go vet ./...` no errors
+- [x] `prompts/create` handled by `router.Dispatch()` → stores prompt, returns success
+- [x] `notifications/prompts/list_changed` handled → clears prompt cache / triggers refresh
+- [x] `notifications/resources/list_changed` handled → triggers resource registry refresh
+- [x] `notifications/tools/list_changed` — protocol type for server→client notification
+- [x] `PromptCreateParams` type in `core/protocol/types.go`
+- [x] `ToolListChangedNotification` type in `core/protocol/types.go`
+- [x] 4 tests: prompts/create, prompts/list_changed notification, resources/list_changed notification, tools/list_changed notification
+- [x] `go test -race ./... -count=1` all pass
+- [x] `go vet ./...` no errors
 
 ## 備註
 **Context**: After T089 + T099, the remaining gaps are low-priority optional methods. These are all either:
@@ -48,3 +48,8 @@ Implement remaining MCP spec optional server-side methods and client→server no
 - `core/router/router_test.go` — add tests
 
 **Note**: If T099 is implemented first, `notifications/tools/list_changed` can use the existing push infrastructure. If T099 is not done, this method is deferred to T099's follow-up task.
+
+## 執行紀錄（2026-09-05 稽核）
+- 已達成 7 項並打勾。
+- **未竟事項**: 無
+- 補充: All dispatch handlers + protocol types implemented. 4 tests pass.

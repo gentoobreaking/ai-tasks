@@ -96,6 +96,10 @@
 | P1 - Dynamic Config: Hot-reload config without server restart |
 | P0 - Feature Flags: Runtime toggle system with config-backed flags |
 | P0 - Rate Limiting: Per-method token bucket rate limiter |
+| P2 - MCP Resource Change Notifications (bidirectional) |
+| P3 - MCP Spec Conformance: Missing optional methods (prompts/create, notifications/list_changed) |
+| P1 - MCP Spec: Remaining high-value methods (templates/list, unsubscribe, roots/list, progress, message) |
+| P4 - MCP Spec: Advanced/Future methods (elicitation, tasks, discovery, subscriptions) |
 
 ## Skip 項目
 
@@ -113,8 +117,7 @@
 
 | Task | 名稱 | 說明 |
 |------|------|------|
-| [T99-resource-change-notifications](https://github.com/gentoobreaking/ai-tasks/blob/main/mcp-go-core/tasks/T099-resource-change-notifications.md) | P2 - MCP Resource Change Notifications (bidirectional) | |
-| [T100-mcp-optional-methods-continued](https://github.com/gentoobreaking/ai-tasks/blob/main/mcp-go-core/tasks/T100-mcp-optional-methods-continued.md) | P3 - MCP Spec Conformance: Missing optional methods (prompts/create, notifications/list_changed) | |
+| [T103-health-endpoints](https://github.com/gentoobreaking/ai-tasks/blob/main/mcp-go-core/tasks/T103-health-endpoints.md) | P1 - Health Endpoints: HTTP health check routes for features, rate-limits, config | |
 
 ## Task 列表
 
@@ -212,9 +215,12 @@
 | [T90-dynamic-config-hot-reload](https://github.com/gentoobreaking/ai-tasks/blob/main/mcp-go-core/tasks/T090-dynamic-config-hot-reload.md) | P1 - Dynamic Config: Hot-reload config without server restart | ✅ done |
 | [T91-feature-flags](https://github.com/gentoobreaking/ai-tasks/blob/main/mcp-go-core/tasks/T091-feature-flags.md) | P0 - Feature Flags: Runtime toggle system with config-backed flags | ✅ done |
 | [T92-rate-limiting](https://github.com/gentoobreaking/ai-tasks/blob/main/mcp-go-core/tasks/T092-rate-limiting.md) | P0 - Rate Limiting: Per-method token bucket rate limiter | ✅ done |
-| [T99-resource-change-notifications](https://github.com/gentoobreaking/ai-tasks/blob/main/mcp-go-core/tasks/T099-resource-change-notifications.md) | P2 - MCP Resource Change Notifications (bidirectional) | 📋 pending |
-| [T100-mcp-optional-methods-continued](https://github.com/gentoobreaking/ai-tasks/blob/main/mcp-go-core/tasks/T100-mcp-optional-methods-continued.md) | P3 - MCP Spec Conformance: Missing optional methods (prompts/create, notifications/list_changed) | 📋 pending |
+| [T99-resource-change-notifications](https://github.com/gentoobreaking/ai-tasks/blob/main/mcp-go-core/tasks/T099-resource-change-notifications.md) | P2 - MCP Resource Change Notifications (bidirectional) | ✅ done |
+| [T100-mcp-optional-methods-continued](https://github.com/gentoobreaking/ai-tasks/blob/main/mcp-go-core/tasks/T100-mcp-optional-methods-continued.md) | P3 - MCP Spec Conformance: Missing optional methods (prompts/create, notifications/list_changed) | ✅ done |
+| [T101-mcp-high-value-methods](https://github.com/gentoobreaking/ai-tasks/blob/main/mcp-go-core/tasks/T101-mcp-high-value-methods.md) | P1 - MCP Spec: Remaining high-value methods (templates/list, unsubscribe, roots/list, progress, message) | ✅ done |
+| [T102-mcp-advanced-future-methods](https://github.com/gentoobreaking/ai-tasks/blob/main/mcp-go-core/tasks/T102-mcp-advanced-future-methods.md) | P4 - MCP Spec: Advanced/Future methods (elicitation, tasks, discovery, subscriptions) | ✅ done |
+| [T103-health-endpoints](https://github.com/gentoobreaking/ai-tasks/blob/main/mcp-go-core/tasks/T103-health-endpoints.md) | P1 - Health Endpoints: HTTP health check routes for features, rate-limits, config | 📋 pending |
 
-**✅ done: 92 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 2**
+**✅ done: 96 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 1**
 
-> 自動生成於 2026-09-05 00:20
+> 自動生成於 2026-09-05 01:23
