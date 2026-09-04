@@ -15,8 +15,24 @@
 | Transaction Service |
 | Parcel Model & Repository |
 | GIS Adapter & Geometry Engine |
+| Road Access Engine |
+| Comparable Engine |
+| Statistics Engine |
+| Valuation Engine |
+| Provenance System |
+| MCP Server Implementation |
+| MCP Contract Tests |
+| Reproducibility Tests |
+| Artifact Lock Tests |
+| AI Isolation Tests |
+| Frontend Implementation |
+| Kubernetes / OpenShift Deployment |
+| Observability Implementation |
+| End-to-End Acceptance Test |
+| Data Import Pipeline Integration |
 | GIS 匯入管線（Parcel / Road） |
 | Algorithm / Valuation Config 版本化與鎖定 |
+| Comparable / Valuation 結果持久化 |
 
 ## Skip 項目
 
@@ -34,22 +50,7 @@
 
 | Task | 名稱 | 說明 |
 |------|------|------|
-| [T12-road-access-engine](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T012-road-access-engine.md) | Road Access Engine | |
-| [T13-comparable-engine](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T013-comparable-engine.md) | Comparable Engine | |
-| [T14-statistics-engine](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T014-statistics-engine.md) | Statistics Engine | |
-| [T15-valuation-engine](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T015-valuation-engine.md) | Valuation Engine | |
-| [T16-provenance-system](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T016-provenance-system.md) | Provenance System | |
-| [T17-mcp-server](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T017-mcp-server.md) | MCP Server Implementation | |
-| [T18-mcp-contract-tests](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T018-mcp-contract-tests.md) | MCP Contract Tests | |
-| [T19-reproducibility-tests](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T019-reproducibility-tests.md) | Reproducibility Tests | |
-| [T20-artifact-lock-tests](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T020-artifact-lock-tests.md) | Artifact Lock Tests | |
-| [T21-ai-isolation-tests](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T021-ai-isolation-tests.md) | AI Isolation Tests | |
-| [T22-frontend](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T022-frontend.md) | Frontend Implementation | |
-| [T23-k8s-deployment](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T023-k8s-deployment.md) | Kubernetes / OpenShift Deployment | |
-| [T24-observability](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T024-observability.md) | Observability Implementation | |
-| [T25-e2e-acceptance-test](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T025-e2e-acceptance-test.md) | End-to-End Acceptance Test | |
-| [T26-data-import-pipeline](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T026-data-import-pipeline.md) | Data Import Pipeline Integration | |
-| [T29-comparable-valuation-persistence](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T029-comparable-valuation-persistence.md) | Comparable / Valuation 結果持久化 | |
+| | | |
 
 ## Task 列表
 
@@ -66,25 +67,25 @@
 | [T9-transaction-service](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T009-transaction-service.md) | Transaction Service | ✅ done |
 | [T10-parcel-model-repository](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T010-parcel-model-repository.md) | Parcel Model & Repository | ✅ done |
 | [T11-gis-adapter-geometry-engine](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T011-gis-adapter-geometry-engine.md) | GIS Adapter & Geometry Engine | ✅ done |
-| [T12-road-access-engine](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T012-road-access-engine.md) | Road Access Engine | 📋 pending |
-| [T13-comparable-engine](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T013-comparable-engine.md) | Comparable Engine | 📋 pending |
-| [T14-statistics-engine](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T014-statistics-engine.md) | Statistics Engine | 📋 pending |
-| [T15-valuation-engine](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T015-valuation-engine.md) | Valuation Engine | 📋 pending |
-| [T16-provenance-system](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T016-provenance-system.md) | Provenance System | 📋 pending |
-| [T17-mcp-server](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T017-mcp-server.md) | MCP Server Implementation | 📋 pending |
-| [T18-mcp-contract-tests](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T018-mcp-contract-tests.md) | MCP Contract Tests | 📋 pending |
-| [T19-reproducibility-tests](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T019-reproducibility-tests.md) | Reproducibility Tests | 📋 pending |
-| [T20-artifact-lock-tests](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T020-artifact-lock-tests.md) | Artifact Lock Tests | 📋 pending |
-| [T21-ai-isolation-tests](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T021-ai-isolation-tests.md) | AI Isolation Tests | 📋 pending |
-| [T22-frontend](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T022-frontend.md) | Frontend Implementation | 📋 pending |
-| [T23-k8s-deployment](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T023-k8s-deployment.md) | Kubernetes / OpenShift Deployment | 📋 pending |
-| [T24-observability](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T024-observability.md) | Observability Implementation | 📋 pending |
-| [T25-e2e-acceptance-test](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T025-e2e-acceptance-test.md) | End-to-End Acceptance Test | 📋 pending |
-| [T26-data-import-pipeline](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T026-data-import-pipeline.md) | Data Import Pipeline Integration | 📋 pending |
+| [T12-road-access-engine](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T012-road-access-engine.md) | Road Access Engine | ✅ done |
+| [T13-comparable-engine](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T013-comparable-engine.md) | Comparable Engine | ✅ done |
+| [T14-statistics-engine](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T014-statistics-engine.md) | Statistics Engine | ✅ done |
+| [T15-valuation-engine](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T015-valuation-engine.md) | Valuation Engine | ✅ done |
+| [T16-provenance-system](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T016-provenance-system.md) | Provenance System | ✅ done |
+| [T17-mcp-server](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T017-mcp-server.md) | MCP Server Implementation | ✅ done |
+| [T18-mcp-contract-tests](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T018-mcp-contract-tests.md) | MCP Contract Tests | ✅ done |
+| [T19-reproducibility-tests](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T019-reproducibility-tests.md) | Reproducibility Tests | ✅ done |
+| [T20-artifact-lock-tests](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T020-artifact-lock-tests.md) | Artifact Lock Tests | ✅ done |
+| [T21-ai-isolation-tests](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T021-ai-isolation-tests.md) | AI Isolation Tests | ✅ done |
+| [T22-frontend](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T022-frontend.md) | Frontend Implementation | ✅ done |
+| [T23-k8s-deployment](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T023-k8s-deployment.md) | Kubernetes / OpenShift Deployment | ✅ done |
+| [T24-observability](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T024-observability.md) | Observability Implementation | ✅ done |
+| [T25-e2e-acceptance-test](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T025-e2e-acceptance-test.md) | End-to-End Acceptance Test | ✅ done |
+| [T26-data-import-pipeline](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T026-data-import-pipeline.md) | Data Import Pipeline Integration | ✅ done |
 | [T27-gis-import-pipeline](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T027-gis-import-pipeline.md) | GIS 匯入管線（Parcel / Road） | ✅ done |
 | [T28-algorithm-config-versioning](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T028-algorithm-config-versioning.md) | Algorithm / Valuation Config 版本化與鎖定 | ✅ done |
-| [T29-comparable-valuation-persistence](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T029-comparable-valuation-persistence.md) | Comparable / Valuation 結果持久化 | 📋 pending |
+| [T29-comparable-valuation-persistence](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T029-comparable-valuation-persistence.md) | Comparable / Valuation 結果持久化 | ✅ done |
 
-**✅ done: 13 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 16**
+**✅ done: 29 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 0**
 
-> 自動生成於 2026-09-03 22:42
+> 自動生成於 2026-09-04 13:28
