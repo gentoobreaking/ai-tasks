@@ -3,7 +3,7 @@ github_issue: N/A
 title: P1 - MCP Spec: Remaining high-value methods (templates/list, unsubscribe, roots/list, progress, message)
 type: feat
 priority: medium
-status: pending
+status: done
 depends_on:
   - T089
   - T099
