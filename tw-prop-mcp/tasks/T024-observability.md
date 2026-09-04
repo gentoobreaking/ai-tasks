@@ -40,3 +40,4 @@ updated: 2026-09-03
   - Alert rules: `deploy/monitoring/alert-rules.yaml` (10 rules)
 - **未竟事項**: 無
 - 補充: 所有 15 個 MCP tool handler 已透過 `instrument()` wrapper 加入 metrics + tracing
+- 接線審計 (2026-09-04): `IncDataImport` 和 `IncSnapshotLocked` 已接到 `internal/importpipeline/pipeline.go` — `ImportFromSource` 呼叫 `mcp.IncDataImport(true)`，`validate()` 呼叫 `mcp.IncDataImport(false)`，`lockSnapshot()` 呼叫 `mcp.IncSnapshotLocked()`
