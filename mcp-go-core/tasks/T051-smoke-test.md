@@ -40,3 +40,11 @@ Build 後執行 server，驗證 MCP handshake、tool listing、tool invocation�
 ## 備註
 
 Smoke test validates the end-to-end pipeline: code generation → static composition → Go compiler → binary → runtime.
+
+## 執行紀錄 (2026-09-04 稽核)
+- 已達成 2 項（TestSmokeServerStartShutdown, TestSmokeServerAddTool）。
+- **未竟事項**：
+  - RT-001~RT-005 未實現 (tests/smoke/smoke_test.go 僅測試 server start/shutdown，未測試 MCP protocol round-trip)
+  - 未建立 dist/server binary 並執行
+  - 未測試 tools/list, tools/call, shutdown 流程
+- 補充: smoke tests 存在但不符合接受標準中的 RT-00x 項目。

@@ -32,3 +32,11 @@ updated: 2026-09-04
 ## 備註
 
 Initial threshold: 10%。對應 build_pipeline_spec §47 Performance Regression Gate, architecture §50。
+
+## 執行紀錄 (2026-09-04 稽核)
+- 已達成 0 項。
+- **未竟事項**：
+  - Performance regression gates 未實現 (tests/ci/verification_test.go:58 的 TestBenchmarkRegression 為空 stub)
+  - P99 latency regression > 10% 門檻未實現
+  - RSS/binary size/allocations regression gates 未實現
+- 補充: T057 驗收標準均為模糊引用，無實際實現。

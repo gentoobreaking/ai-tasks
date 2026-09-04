@@ -34,3 +34,7 @@ updated: 2026-09-04
 ## 備註
 
 Metrics / tracing 可以先建立 descriptor，不要求完整 implementation。Server.Use(Logging(), Recovery()) pattern.
+
+## 執行紀錄 (2026-09-04 稽核)
+- 驗收標準已核對 against 程式碼與測試（go build, go vet, go test 均通過）。
+- 未發現缺口。

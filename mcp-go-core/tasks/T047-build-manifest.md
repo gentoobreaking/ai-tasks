@@ -31,3 +31,7 @@ updated: 2026-09-04
 ## 備註
 
 Production builds should record framework version, Go version, git commit, feature lock hash, build timestamp, build profile. Prefer deterministic timestamps.
+
+## 執行紀錄 (2026-09-04 稽核)
+- 驗收標準已核對 against 程式碼與測試（go build, go vet, go test 均通過）。
+- 未發現缺口。

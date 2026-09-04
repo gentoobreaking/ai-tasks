@@ -30,3 +30,7 @@ updated: 2026-09-04
 ## 備註
 
 Prompt 是 MCP 協定的可選 capability。Core 不得依賴具體 Prompt 實現。
+
+## 執行紀錄 (2026-09-04 稽核)
+- 驗收標準已核對 against 程式碼與測試（go build, go vet, go test 均通過）。
+- 未發現缺口。

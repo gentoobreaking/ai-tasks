@@ -32,3 +32,7 @@ updated: 2026-09-04
 ## 備註
 
 Core → Module 方向 forbidden。Module → Core 方向 valid。每個 module 必須明確聲明 dependency。
+
+## 執行紀錄 (2026-09-04 稽核)
+- 驗收標準已核對 against 程式碼與測試（go build, go vet, go test 均通過）。
+- 未發現缺口。

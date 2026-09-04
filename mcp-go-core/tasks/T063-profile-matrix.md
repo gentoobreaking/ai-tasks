@@ -33,3 +33,7 @@ CI 驗證所有 build profiles: minimal, production, secure, observable, full。
 ## 備註
 
 對應 verification_manual §35 V14 Profile Verification Matrix 和 build_pipeline_spec §52 Build Verification。
+
+## 執行紀錄 (2026-09-04 稽核)
+- 驗收標準已核對 against 程式碼與測試（go build, go vet, go test 均通過）。
+- 未發現缺口。

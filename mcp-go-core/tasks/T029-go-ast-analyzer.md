@@ -29,3 +29,7 @@ Minimal v0.1 Go AST analysis: 掃描 imports for known module packages。不得�
 ## 備註
 
 v0.1 不要求完整 AST inference。Go AST analysis is the lowest priority inference source.
+
+## 執行紀錄 (2026-09-04 稽核)
+- 驗收標準已核對 against 程式碼與測試（go build, go vet, go test 均通過）。
+- 未發現缺口。

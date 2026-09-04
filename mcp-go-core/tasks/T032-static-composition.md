@@ -33,3 +33,7 @@ Realize the static composition algorithm: generated code directly imports only e
 ## 備註
 
 This is the core optimization: Full Framework → Feature Graph → Required Closure → Static Composition → Go Compiler → Minimal Binary。The static composition algorithm lives in algs/static-composition.md。
+
+## 執行紀錄 (2026-09-04 稽核)
+- 驗收標準已核對 against 程式碼與測試（go build, go vet, go test 均通過）。
+- 未發現缺口。

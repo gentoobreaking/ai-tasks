@@ -30,3 +30,7 @@ CI 必須確認 features.lock 與 source/config 一致。
 ## 備註
 
 Build verification: 不能在 source 變更但未重新生成 feature lock 的情況下 passing。
+
+## 執行紀錄 (2026-09-04 稽核)
+- 驗收標準已核對 against 程式碼與測試（go build, go vet, go test 均通過）。
+- 未發現缺口。
