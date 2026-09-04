@@ -3,9 +3,8 @@
 **Manual:** VERIFICATION_MANUAL.md v2.0  
 **Codebase:** ~/Projects/tw-prop-mcp/  
 **Date:** 2026-09-04  
-**Commit:** `2446a05` (latest)
+**Commit:** `9159c93` (latest)
 
----
 
 ## 1. 四層驗證模型 Results
 
@@ -125,7 +124,13 @@
 - **After:** `USER appuser` + `addgroup`/`adduser` in Dockerfile
 - **Commit:** `2446a05`
 
----
+### Gap F: OTel exporter misconfiguration → FIXED
+- **Root cause:** `InitTracer()` in `internal/mcp/observability.go` had three bugs:
+  1. `resource.NewWithAttributes` called without schema URL first arg (should be `https://opentelemetry.io/schemas/1.28.0`)
+  2. Endpoint not normalized — `otlptracehttp.WithEndpoint` expects `host:port` but received full URL like `http://localhost:4318`
+  3. Silent no-op when `OTEL_EXPORTER_OTLP_ENDPOINT` unset — no warning to user
+- **Fix:** Strip `http(s)://` prefix and trailing slash from endpoint; add proper schema URL; emit stderr warning when no endpoint configured
+- **Commit:** `9159c93`
 
 ## 4. Missing Artifacts — FIXED
 | Artifact | Spec section | Status | Notes |
@@ -220,21 +225,19 @@ cd frontend && npx tsc --noEmit
 |-------|-------|
 | Project | taiwan-real-estate-mcp |
 | Version | v2.0.0 |
-| Git commit | `2446a05` |
-| Go version | 1.26 |
+| Git commit | `9159c93` |
 | Test count | 300 (244 unit + 56 integration/E2E/contract/isolation/reproducibility) |
 | Build | PASS |
 | Vet | PASS |
 | TypeScript | PASS |
-|| Reproducibility | ✅ (16 tests) |
-|| Artifact Lock | ✅ (10 tests) |
-|| AI Isolation | ✅ (11 tests) |
-|| E2E | ✅ (7 tests) |
-|| Benchmarks | ✅ (7 benchmarks, real MOI data) |
-|| Automated verify | scripts/verify.sh: 20/20 PASS |
-|| Import transactionality | ✅ (BEGIN/COMMIT/ROLLBACK — spec §62) |
-|| Spec coverage | ✅ (35 requirements mapped in spec_coverage.yaml) |
-|| Golden dataset | ✅ (tests/golden/ with known-good expected values) |
+| Reproducibility | ✅ (16 tests) |
+| Artifact Lock | ✅ (10 tests) |
+| AI Isolation | ✅ (11 tests) |
+| E2E | ✅ (7 tests) |
+| Benchmarks | ✅ (7 benchmarks, real MOI data) |
+| Automated verify | scripts/verify.sh: 20/20 PASS |
+| Import transactionality | ✅ (BEGIN/COMMIT/ROLLBACK — spec §62) |
+| Spec coverage | ✅ (35 requirements mapped in spec_coverage.yaml) |
+| Golden dataset | ✅ (tests/golden/ with known-good expected values) |
 
 ---
-*Report generated 2026-09-04. All evidence grounded in automated test execution.*
