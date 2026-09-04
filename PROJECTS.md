@@ -1,6 +1,6 @@
 # 📁 Projects Dashboard
 
-> 最後更新: 2026-09-04 19:53 · 自動生成
+> 最後更新: 2026-09-04 20:54 · 自動生成
 
 ---
 
@@ -9,8 +9,8 @@
 | 指標 | 數量 |
 |------|------|
 | 專案數 | 62 |
-| 任務總數 | 1566 |
-| ✅ 已完成 | 1503 |
+| 任務總數 | 1572 |
+| ✅ 已完成 | 1509 |
 | ⬜ 待處理 | 0 |
 | 🔄 進行中 | 0 |
 | ⏭️ 跳過 | 63 |
@@ -22,9 +22,9 @@
 
 | 指標 | 數值 |
 |------|------|
-| 過去 7 天完成 | 185 |
-| 過去 30 天完成 | 736 |
-| 平均週期時間 | 2.8 天 |
+| 過去 7 天完成 | 191 |
+| 過去 30 天完成 | 742 |
+| 平均週期時間 | 2.7 天 |
 | 週期時間中位數 | 0.0 天 |
 
 
@@ -33,10 +33,10 @@ xychart-beta
     title "過去 14 天任務完成趨勢"
     x-axis ["08-22", "08-23", "08-24", "08-25", "08-26", "08-27", "08-28", "08-29", "08-30", "08-31", "09-01", "09-02", "09-03", "09-04"]
     y-axis "完成數" 0 --> 165
-    line [28, 0, 77, 165, 69, 0, 23, 0, 30, 24, 0, 0, 17, 91]
+    line [28, 0, 77, 165, 69, 0, 23, 0, 30, 24, 0, 0, 17, 97]
 ```
 
-📊 總計: 524 | 日均: 37.4 | 本週: 162 | 📉 下降中
+📊 總計: 530 | 日均: 37.9 | 本週: 168 | 📉 下降中
 
 ## 📋 專案列表
 
@@ -70,7 +70,7 @@ xychart-beta
 | ✅ | [lifecycle-sync-fix](https://github.com/gentoobreaking/ai-tasks/tree/main/lifecycle-sync-fix) | 2 | 2 | 0 | 0 | 0 | ████████████████████ 100% | 2026-04-21 |
 | ✅ | [llm-router](https://github.com/gentoobreaking/ai-tasks/tree/main/llm-router) | 1 | 1 | 0 | 0 | 0 | ████████████████████ 100% | 2026-04-16 |
 | ✅ | [local-ai-controlpanel](https://github.com/gentoobreaking/ai-tasks/tree/main/local-ai-controlpanel) | 41 | 41 | 0 | 0 | 0 | ████████████████████ 100% | 2026-08-18 |
-| ✅ | [mcp-go-core](https://github.com/gentoobreaking/ai-tasks/tree/main/mcp-go-core) | 79 | 79 | 0 | 0 | 0 | ████████████████████ 100% | 2026-09-04 |
+| ✅ | [mcp-go-core](https://github.com/gentoobreaking/ai-tasks/tree/main/mcp-go-core) | 85 | 85 | 0 | 0 | 0 | ████████████████████ 100% | 2026-09-04 |
 | ✅ | [md-viewer-app](https://github.com/gentoobreaking/ai-tasks/tree/main/md-viewer-app) | 44 | 38 | 0 | 0 | 6 | ████████████████████ 100% | 2026-05-12 |
 | ✅ | [member-backup](https://github.com/gentoobreaking/ai-tasks/tree/main/member-backup) | 1 | 1 | 0 | 0 | 0 | ████████████████████ 100% | 2026-04-16 |
 | ✅ | [member-config-review](https://github.com/gentoobreaking/ai-tasks/tree/main/member-config-review) | 7 | 7 | 0 | 0 | 0 | ████████████████████ 100% | 2026-04-19 |

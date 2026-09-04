@@ -83,6 +83,12 @@
 | P2 - MCP Test Infrastructure |
 | P1 - Standardized Error Handling |
 | P3 - CLI Enhancement (Builder Patterns & Commands) |
+| P1 - OAuth Production Authentication |
+| P1 - Logging Middleware Implementation |
+| P1 - Recovery Middleware Implementation |
+| P1 - Filesystem Storage Implementation |
+| P1 - External Storage Implementation |
+| P2 - Task Runtime and Session Runtime Implementation |
 
 ## Skip 項目
 
@@ -185,7 +191,13 @@
 | [T77-test-infrastructure](https://github.com/gentoobreaking/ai-tasks/blob/main/mcp-go-core/tasks/T077-test-infrastructure.md) | P2 - MCP Test Infrastructure | ✅ done |
 | [T78-standardized-error-handling](https://github.com/gentoobreaking/ai-tasks/blob/main/mcp-go-core/tasks/T078-standardized-error-handling.md) | P1 - Standardized Error Handling | ✅ done |
 | [T79-cli-enhancement](https://github.com/gentoobreaking/ai-tasks/blob/main/mcp-go-core/tasks/T079-cli-enhancement.md) | P3 - CLI Enhancement (Builder Patterns & Commands) | ✅ done |
+| [T80-oauth-production-auth](https://github.com/gentoobreaking/ai-tasks/blob/main/mcp-go-core/tasks/T080-oauth-production-auth.md) | P1 - OAuth Production Authentication | ✅ done |
+| [T81-logging-middleware](https://github.com/gentoobreaking/ai-tasks/blob/main/mcp-go-core/tasks/T081-logging-middleware.md) | P1 - Logging Middleware Implementation | ✅ done |
+| [T82-recovery-middleware](https://github.com/gentoobreaking/ai-tasks/blob/main/mcp-go-core/tasks/T082-recovery-middleware.md) | P1 - Recovery Middleware Implementation | ✅ done |
+| [T83-filesystem-storage](https://github.com/gentoobreaking/ai-tasks/blob/main/mcp-go-core/tasks/T083-filesystem-storage.md) | P1 - Filesystem Storage Implementation | ✅ done |
+| [T84-external-storage](https://github.com/gentoobreaking/ai-tasks/blob/main/mcp-go-core/tasks/T084-external-storage.md) | P1 - External Storage Implementation | ✅ done |
+| [T85-task-session-runtime](https://github.com/gentoobreaking/ai-tasks/blob/main/mcp-go-core/tasks/T085-task-session-runtime.md) | P2 - Task Runtime and Session Runtime Implementation | ✅ done |
 
-**✅ done: 79 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 0**
+**✅ done: 85 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 0**
 
-> 自動生成於 2026-09-04 19:53
+> 自動生成於 2026-09-04 20:54
