@@ -1,13 +1,13 @@
 ---
 github_issue: N/A
 title: > ⛔ Historical Snapshots — crawl run history + time-series data (Phase 2)
+assignee: pi with opencode
 type: feat
 priority: low
-status: deferred
-depends_on: [T030, T027]
+status: pending
+depends_on: []
 blocked_on:
 - "Phase 1 complete (all T001–T046 tasks done)"
-assignee: agent
 created: 2026-09-05
 updated: 2026-09-05
 ---

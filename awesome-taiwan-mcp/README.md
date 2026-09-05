@@ -4,7 +4,7 @@
 
 | 功能 |
 |------|
-| （無） |
+| > ⛔ LLM Classifier — ambiguous Taiwan classification (Phase 4, needs LLM API) |
 
 ## Skip 項目
 
@@ -56,7 +56,6 @@
 | [T32-incremental-crawl](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-mcp/tasks/T032-incremental-crawl.md) | Incremental Crawl — ETag, pushed_at, last_seen tracking | |
 | [T33-retry-backoff](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-mcp/tasks/T033-retry-backoff.md) | Retry & Backoff — unified retry logic, context cancellation | |
 | [T34-metrics-logging](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-mcp/tasks/T034-metrics-logging.md) | Metrics & Logging — Prometheus metrics + structured JSON logging | |
-| [T35-llm-classifier](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-mcp/tasks/T035-llm-classifier.md) | > ⛔ LLM Classifier — ambiguous Taiwan classification (Phase 4, needs LLM API) | |
 | [T36-search-api](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-mcp/tasks/T036-search-api.md) | Search API — registry search by keyword, level, category, min-score | |
 | [T37-capability-search](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-mcp/tasks/T037-capability-search.md) | Capability Search — tool/resource/data-source capability matching | |
 | [T38-test-fixtures](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-mcp/tasks/T038-test-fixtures.md) | Test Fixtures — taiwan, non-taiwan, duplicate, archived, dead endpoint, invalid, official, scraping | |
@@ -115,7 +114,7 @@
 | [T32-incremental-crawl](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-mcp/tasks/T032-incremental-crawl.md) | Incremental Crawl — ETag, pushed_at, last_seen tracking | 📋 pending |
 | [T33-retry-backoff](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-mcp/tasks/T033-retry-backoff.md) | Retry & Backoff — unified retry logic, context cancellation | 📋 pending |
 | [T34-metrics-logging](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-mcp/tasks/T034-metrics-logging.md) | Metrics & Logging — Prometheus metrics + structured JSON logging | 📋 pending |
-| [T35-llm-classifier](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-mcp/tasks/T035-llm-classifier.md) | > ⛔ LLM Classifier — ambiguous Taiwan classification (Phase 4, needs LLM API) | 📋 pending |
+| [T35-llm-classifier](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-mcp/tasks/T035-llm-classifier.md) | > ⛔ LLM Classifier — ambiguous Taiwan classification (Phase 4, needs LLM API) | ✅ done |
 | [T36-search-api](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-mcp/tasks/T036-search-api.md) | Search API — registry search by keyword, level, category, min-score | 📋 pending |
 | [T37-capability-search](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-mcp/tasks/T037-capability-search.md) | Capability Search — tool/resource/data-source capability matching | 📋 pending |
 | [T38-test-fixtures](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-mcp/tasks/T038-test-fixtures.md) | Test Fixtures — taiwan, non-taiwan, duplicate, archived, dead endpoint, invalid, official, scraping | 📋 pending |
@@ -136,6 +135,6 @@
 | [T53-verification-manual-tests](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-mcp/tasks/T053-verification-manual-tests.md) | Verification Manual Tests — mapping CRAWLER_VERIFICATION_MANUAL to automated tests | 📋 pending |
 | [T54-kpi-verification](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-mcp/tasks/T054-kpi-verification.md) | KPI Verification — Recall, Precision, Duplicate rate, False positive | 📋 pending |
 
-**✅ done: 0 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 54**
+**✅ done: 1 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 53**
 
-> 自動生成於 2026-09-05 07:50
+> 自動生成於 2026-09-05 10:03

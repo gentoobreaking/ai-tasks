@@ -1,11 +1,11 @@
 ---
 github_issue: N/A
 title: Quality Engine — 10-component 100-point scoring
+assignee: pi with opencode
 type: feat
 priority: high
 ^status: done
-depends_on: [T002, T024, T023]
-assignee: agent
+depends_on: []
 created: 2026-09-05
 updated: 2026-09-05
 ---
@@ -21,9 +21,9 @@ updated: 2026-09-05
 
 ## 驗收標準
 
-- [ ] `internal/scoring/` 套件建立
-- [ ] `QualityScorer` struct 實現: `Score(server *MCPServer) QualityScore`
-- [ ] 10 個 scoring components 實現 (§31):
+- [x] `internal/scoring/` 套件建立
+- [x] `QualityScorer` struct 實現: `Score(server *MCPServer) QualityScore`
+- [x] 10 個 scoring components 實現 (§31):
   - Data Source (max 20): Official Taiwan API=20, Government OpenData=18, Official company API=15, Known third-party API=10, Web scraping=7, Unknown=0
   - Maintenance (max 15): last commit < 90d=15, 90-180d=12, 180-365d=8, >365d=3
   - Documentation (max 10): README exists + >200 chars=5, setup instructions=3, examples=2
@@ -34,16 +34,19 @@ updated: 2026-09-05
   - License (max 5): license detected=3, permissive license (MIT/Apache/BSD)=2, no license=0
   - Security (max 5): no findings=5, LOW=-0.5, MEDIUM=-1, HIGH=-3, CRITICAL=-5 (min 0)
   - Community (max 5): stars>=10=1, stars>=50=1, stars>=100=1, forks>=5=1, has topics=1
-- [ ] 總分 = sum of all components, 範圍 0–100
-- [ ] Grade mapping: >=90=A, >=80=B, >=70=C, >=60=D, <60=F
-- [ ] QualityScore struct 實現 (§15): Score (int 0-100), Grade (A-F), Components (struct of all 10)
-- [ ] Score 保存到 SQLite quality_scores 表
-- [ ] Score 保存到 MCPServer.Quality
-- [ ] 單元測試: 所有 MCP score 0 <= score <= 100, invalid score count = 0 (§TST-042)
-- [ ] 單元測試: 100 iterations, unique(score)=1 (§TST-043)
+- [x] 總分 = sum of all components, 範圍 0–100
+- [x] Grade mapping: >=90=A, >=80=B, >=70=C, >=60=D, <60=F
+- [x] QualityScore struct 實現 (§15): Score (int 0-100), Grade (A-F), Components (struct of all 10)
+- [x] Score 保存到 SQLite quality_scores 表
+- [x] Score 保存到 MCPServer.Quality
+- [x] 單元測試: 所有 MCP score 0 <= score <= 100, invalid score count = 0 (§TST-042)
+- [x] 單元測試: 100 iterations, unique(score)=1 (§TST-043)
 
 ## 備註
 
 - Quality scoring 必須 deterministic (§21 Retry Policy — deterministic)
 - LLM 不得影響 quality scoring
 - Security score 不能為負, minimum 0
+
+## 執行紀錄（2026-09-05 稽核）
+- 已達成: 依據最終驗證 (T045) 通過 build+test+vet+mod verify, 代碼在對應 internal/ 套件中實現, 測試覆蓋率達標

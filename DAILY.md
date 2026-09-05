@@ -1,6 +1,6 @@
 # 📅 Daily Dashboard - 2026-09-05
 
-> 最後更新: 2026-09-05 07:50 · 自動生成
+> 最後更新: 2026-09-05 10:03 · 自動生成
 
 ---
 
@@ -9,10 +9,10 @@
 | 指標 | 數量 |
 |------|------|
 | 新增任務 | 60 |
-| 完成任務 | 6 |
+| 完成任務 | 7 |
 | 進行中 | 0 |
-| 待處理 | 54 |
-| 完成率 | 10% |
+| 待處理 | 53 |
+| 完成率 | 11% |
 
 ---
 
@@ -20,10 +20,10 @@
 
 | 指標 | 數值 |
 |------|------|
-| 今日完成速率 | 59 任務 |
-| 近 7 日速率 | 59 任務 |
+| 今日完成速率 | 60 任務 |
+| 近 7 日速率 | 60 任務 |
 | 平均循環天數 | 0.0 天 |
-| 今日完成任務循環時間樣本 | 59 筆 |
+| 今日完成任務循環時間樣本 | 60 筆 |
 
 ---
 
@@ -98,6 +98,7 @@
 
 | 專案 | 任務 | 標題 |
 | -- | -- | -- |
+| awesome-taiwan-mcp | [T035-llm-classifier](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-mcp/tasks/T035-llm-classifier.md) | > ⛔ LLM Classifier — ambiguous Taiwan classification (Phase 4, needs LLM API) |
 | mcp-go-core | [T099-resource-change-notifications](https://github.com/gentoobreaking/ai-tasks/blob/main/mcp-go-core/tasks/T099-resource-change-notifications.md) | P2 - MCP Resource Change Notifications (bidirectional) |
 | mcp-go-core | [T100-mcp-optional-methods-continued](https://github.com/gentoobreaking/ai-tasks/blob/main/mcp-go-core/tasks/T100-mcp-optional-methods-continued.md) | P3 - MCP Spec Conformance: Missing optional methods (prompts/create, notifications/list_changed) |
 | mcp-go-core | [T101-mcp-high-value-methods](https://github.com/gentoobreaking/ai-tasks/blob/main/mcp-go-core/tasks/T101-mcp-high-value-methods.md) | P1 - MCP Spec: Remaining high-value methods (templates/list, unsubscribe, roots/list, progress, message) |
@@ -214,7 +215,6 @@ _無_
 | awesome-taiwan-mcp | [T017-glama-adapter](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-mcp/tasks/T017-glama-adapter.md) | > ⛔ Glama Adapter — discovery + metadata fetch (Phase 2, needs Glama API) | low |
 | awesome-taiwan-mcp | [T018-pulsemcp-adapter](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-mcp/tasks/T018-pulsemcp-adapter.md) | > ⛔ PulseMCP Adapter — discovery + metadata fetch (Phase 2, needs PulseMCP API) | low |
 | awesome-taiwan-mcp | [T019-mcpso-adapter](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-mcp/tasks/T019-mcpso-adapter.md) | > ⛔ MCP.so Adapter — discovery + metadata fetch (Phase 2, needs MCP.so API) | low |
-| awesome-taiwan-mcp | [T035-llm-classifier](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-mcp/tasks/T035-llm-classifier.md) | > ⛔ LLM Classifier — ambiguous Taiwan classification (Phase 4, needs LLM API) | low |
 | awesome-taiwan-mcp | [T047-historical-snapshots](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-mcp/tasks/T047-historical-snapshots.md) | > ⛔ Historical Snapshots — crawl run history + time-series data (Phase 2) | low |
 | awesome-taiwan-mcp | [T048-rest-api](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-mcp/tasks/T048-rest-api.md) | > ⛔ REST API — HTTP API for registry search + metadata (Phase 4) | low |
 | awesome-taiwan-mcp | [T049-web-ui](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-mcp/tasks/T049-web-ui.md) | > ⛔ Web UI — registry browse + Taiwan MCP discovery dashboard (Phase 4) | low |

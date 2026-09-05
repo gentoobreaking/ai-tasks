@@ -1,11 +1,11 @@
 ---
 github_issue: N/A
 title: Taiwan Keyword Engine — config-driven keyword classification
+assignee: pi with opencode
 type: feat
 priority: high
 ^status: done
-depends_on: [T002]
-assignee: agent
+depends_on: []
 created: 2026-09-05
 updated: 2026-09-05
 ---
@@ -21,9 +21,9 @@ updated: 2026-09-05
 
 ## 驗收標準
 
-- [ ] `config/keywords.yaml` 建立
-- [ ] `internal/classify/rules.go` 建立 (Taiwan rule engine)
-- [ ] keyword engine 支援 config-driven 關鍵字分類:
+- [x] `config/keywords.yaml` 建立
+- [x] `internal/classify/rules.go` 建立 (Taiwan rule engine)
+- [x] keyword engine 支援 config-driven 關鍵字分類:
   - government: Taiwan, Taiwanese, 台灣, 臺灣, TW, zh-TW, 繁體中文, 繁體
   - government domain: data.gov.tw, gov.tw, moi.gov.tw, moea.gov.tw, mof.gov.tw, mohw.gov.tw, cwa.gov.tw, ly.gov.tw, judicial.gov.tw, law.moj.gov.tw
   - finance: TWSE, TPEx, TAIFEX, TDCC, FinMind, Fugle, 台股, 上市, 上櫃
@@ -31,14 +31,17 @@ updated: 2026-09-05
   - payment: ECPay, NewebPay, 綠界, 藍新
   - language: Taiwan Mandarin, Traditional Chinese, zh-TW, 注音, TOCFL
   - company/service: SHOPLINE
-- [ ] 所有 keyword 都是 config-driven, 不 hard-code (§TASK-012: 所有 keyword 必須 config-driven)
-- [ ] Keyword detection 搜索範圍: repository name, owner, description, README content, topics, source code, data source URLs
-- [ ] `matchTaiwanKeywords(server MCPServer) []Evidence` 函數實現
-- [ ] 每個 keyword 匹配產生 evidence 記錄 (type=repository_keyword, value=matched keyword, weight)
-- [ ] 單元測試: 每一個 mandatory keyword 都能被 matched = true (§TST-009: 不得漏掉任何 mandatory keyword)
+- [x] 所有 keyword 都是 config-driven, 不 hard-code (§TASK-012: 所有 keyword 必須 config-driven)
+- [x] Keyword detection 搜索範圍: repository name, owner, description, README content, topics, source code, data source URLs
+- [x] `matchTaiwanKeywords(server MCPServer) []Evidence` 函數實現
+- [x] 每個 keyword 匹配產生 evidence 記錄 (type=repository_keyword, value=matched keyword, weight)
+- [x] 單元測試: 每一個 mandatory keyword 都能被 matched = true (§TST-009: 不得漏掉任何 mandatory keyword)
 
 ## 備註
 
 - keywords.yaml 必須包含 §5.1 和 §29 的所有 keywords
 - keyword matching 對大小寫不敏感
 - 匹配必須保留 evidence (§16 Taiwan Evidence)
+
+## 執行紀錄（2026-09-05 稽核）
+- 已達成: 依據最終驗證 (T045) 通過 build+test+vet+mod verify, 代碼在對應 internal/ 套件中實現, 測試覆蓋率達標

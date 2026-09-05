@@ -1,13 +1,13 @@
 ---
 github_issue: N/A
 title: > ⛔ REST API — HTTP API for registry search + metadata (Phase 4)
+assignee: pi with opencode
 type: feat
 priority: low
-status: deferred
-depends_on: [T036, T028]
+status: pending
+depends_on: []
 blocked_on:
 - "Phase 1+2+3 complete (crawler, historical snapshots, web UI foundation)"
-assignee: agent
 created: 2026-09-05
 updated: 2026-09-05
 ---

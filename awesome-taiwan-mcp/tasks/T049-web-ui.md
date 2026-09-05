@@ -1,14 +1,14 @@
 ---
 github_issue: N/A
 title: > ⛔ Web UI — registry browse + Taiwan MCP discovery dashboard (Phase 4)
+assignee: pi with opencode
 type: feat
 priority: low
-status: deferred
-depends_on: [T048]
+status: pending
+depends_on: []
 blocked_on:
 - "REST API complete (T048)"
 - "Phase 1+2+3 complete (crawler, historical snapshots, REST API)"
-assignee: agent
 created: 2026-09-05
 updated: 2026-09-05
 ---

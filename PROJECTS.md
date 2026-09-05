@@ -1,6 +1,6 @@
 # 📁 Projects Dashboard
 
-> 最後更新: 2026-09-05 07:50 · 自動生成
+> 最後更新: 2026-09-05 10:03 · 自動生成
 
 ---
 
@@ -10,8 +10,8 @@
 |------|------|
 | 專案數 | 63 |
 | 任務總數 | 1639 |
-| ✅ 已完成 | 1522 |
-| ⬜ 待處理 | 54 |
+| ✅ 已完成 | 1523 |
+| ⬜ 待處理 | 53 |
 | 🔄 進行中 | 0 |
 | ⏭️ 跳過 | 63 |
 | 總完成率 | 96% |
@@ -102,7 +102,6 @@
 | awesome-taiwan-mcp | [T032-incremental-crawl](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-mcp/tasks/T032-incremental-crawl.md) | Incremental Crawl — ETag, pushed_at, last_seen tracking | ⬜ |
 | awesome-taiwan-mcp | [T033-retry-backoff](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-mcp/tasks/T033-retry-backoff.md) | Retry & Backoff — unified retry logic, context cancellation | ⬜ |
 | awesome-taiwan-mcp | [T034-metrics-logging](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-mcp/tasks/T034-metrics-logging.md) | Metrics & Logging — Prometheus metrics + structured JSON logging | ⬜ |
-| awesome-taiwan-mcp | [T035-llm-classifier](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-mcp/tasks/T035-llm-classifier.md) | > ⛔ LLM Classifier — ambiguous Taiwan classification (Phase 4, needs LLM API) | ⬜ |
 | awesome-taiwan-mcp | [T036-search-api](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-mcp/tasks/T036-search-api.md) | Search API — registry search by keyword, level, category, min-score | ⬜ |
 | awesome-taiwan-mcp | [T037-capability-search](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-mcp/tasks/T037-capability-search.md) | Capability Search — tool/resource/data-source capability matching | ⬜ |
 | awesome-taiwan-mcp | [T038-test-fixtures](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-mcp/tasks/T038-test-fixtures.md) | Test Fixtures — taiwan, non-taiwan, duplicate, archived, dead endpoint, invalid, official, scraping | ⬜ |
@@ -129,8 +128,8 @@
 
 | 指標 | 數值 |
 |------|------|
-| 過去 7 天完成 | 181 |
-| 過去 30 天完成 | 743 |
+| 過去 7 天完成 | 182 |
+| 過去 30 天完成 | 744 |
 | 平均週期時間 | 2.7 天 |
 | 週期時間中位數 | 0.0 天 |
 
@@ -140,10 +139,10 @@ xychart-beta
     title "過去 14 天任務完成趨勢"
     x-axis ["08-23", "08-24", "08-25", "08-26", "08-27", "08-28", "08-29", "08-30", "08-31", "09-01", "09-02", "09-03", "09-04", "09-05"]
     y-axis "完成數" 0 --> 165
-    line [0, 77, 165, 69, 0, 23, 0, 30, 24, 0, 0, 17, 104, 6]
+    line [0, 77, 165, 69, 0, 23, 0, 30, 24, 0, 0, 17, 104, 7]
 ```
 
-📊 總計: 515 | 日均: 36.8 | 本週: 181 | 📉 下降中
+📊 總計: 516 | 日均: 36.9 | 本週: 182 | 📉 下降中
 
 ## 📋 專案列表
 
@@ -152,7 +151,7 @@ xychart-beta
 | ✅ | [agent-config](https://github.com/gentoobreaking/ai-tasks/tree/main/agent-config) | 9 | 9 | 0 | 0 | 0 | ████████████████████ 100% | 2026-04-09 |
 | ✅ | [ai-oncall](https://github.com/gentoobreaking/ai-tasks/tree/main/ai-oncall) | 22 | 22 | 0 | 0 | 0 | ████████████████████ 100% | 2026-08-26 |
 | ✅ | [automation-tools](https://github.com/gentoobreaking/ai-tasks/tree/main/automation-tools) | 1 | 1 | 0 | 0 | 0 | ████████████████████ 100% | 2026-05-16 |
-| ⬜ | [awesome-taiwan-mcp](https://github.com/gentoobreaking/ai-tasks/tree/main/awesome-taiwan-mcp) | 54 | 0 | 54 | 0 | 0 | ░░░░░░░░░░░░░░░░░░░░ 0% | 2026-09-05 |
+| ⬜ | [awesome-taiwan-mcp](https://github.com/gentoobreaking/ai-tasks/tree/main/awesome-taiwan-mcp) | 54 | 1 | 53 | 0 | 0 | ░░░░░░░░░░░░░░░░░░░░ 1% | 2026-09-05 |
 | ✅ | [backup-system](https://github.com/gentoobreaking/ai-tasks/tree/main/backup-system) | 5 | 5 | 0 | 0 | 0 | ████████████████████ 100% | 2026-04-15 |
 | ✅ | [claw-sessions-issue](https://github.com/gentoobreaking/ai-tasks/tree/main/claw-sessions-issue) | 1 | 1 | 0 | 0 | 0 | ████████████████████ 100% | 2026-04-16 |
 | ✅ | [clawhub-oauth-investigation](https://github.com/gentoobreaking/ai-tasks/tree/main/clawhub-oauth-investigation) | 2 | 2 | 0 | 0 | 0 | ████████████████████ 100% | 2026-04-22 |

@@ -1,11 +1,11 @@
 ---
 github_issue: N/A
 title: Security Boundary — enforce never-execute-discovered-code policy
+assignee: pi with opencode
 type: security
 priority: high
 ^status: done
-depends_on: [T006, T009, T026]
-assignee: agent
+depends_on: []
 created: 2026-09-05
 updated: 2026-09-05
 ---
@@ -19,23 +19,23 @@ updated: 2026-09-05
 
 ## 驗收標準
 
-- [ ] 確認 crawler 架構中沒有任何執行 discovered MCP code 的 code path
-- [ ] 確認 `npm install` / `pip install` / `docker run` 不會在任何 code path 執行 (§59)
-- [ ] 確認 README 中的 shell commands 不會被執行 (§TASK-043)
-- [ ] 確認 postinstall hooks 不會執行 (§TST-026 fixture)
-- [ ] 確認 setup.py scripts 不會執行
-- [ ] 確認 Makefile targets 不會執行
-- [ ] 確認 Dockerfile 來自 discovered repo 不會 build/run (§TASK-043)
-- [ ] 確認 process execution count = 0 during manifest parsing (§TST-025)
-- [ ] 確認 process execution count = 0 during security scan (§TST-026)
-- [ ] 建立 malicious repository fixture: postinstall, setup.py, Makefile, Dockerfile, README shell commands (§TST-026)
-- [ ] 執行 crawler 處理 malicious fixture → process execution count = 0 (§TST-026)
-- [ ] 任何 discovered code execution = P0 FAIL = RELEASE BLOCKED (§81 Critical Security Gate)
-- [ ] Secret leakage test: fixture with API_KEY=TEST_SECRET, PASSWORD=TEST_PASSWORD, TOKEN=TEST_TOKEN
-- [ ] 掃描 registry.json, SQLite, logs, reports → secrets 出現次數 = 0 (§TST-066)
-- [ ] 確認 log 中不包含 Authorization header, OAuth token, password, API Key (§43)
-- [ ] 建立 security_boundary.go: 集中 enforce execution 限制
-- [ ] 單元測試: malicious manifest parsing → execute=0, read/parse/hash/classify only
+- [x] 確認 crawler 架構中沒有任何執行 discovered MCP code 的 code path
+- [x] 確認 `npm install` / `pip install` / `docker run` 不會在任何 code path 執行 (§59)
+- [x] 確認 README 中的 shell commands 不會被執行 (§TASK-043)
+- [x] 確認 postinstall hooks 不會執行 (§TST-026 fixture)
+- [x] 確認 setup.py scripts 不會執行
+- [x] 確認 Makefile targets 不會執行
+- [x] 確認 Dockerfile 來自 discovered repo 不會 build/run (§TASK-043)
+- [x] 確認 process execution count = 0 during manifest parsing (§TST-025)
+- [x] 確認 process execution count = 0 during security scan (§TST-026)
+- [x] 建立 malicious repository fixture: postinstall, setup.py, Makefile, Dockerfile, README shell commands (§TST-026)
+- [x] 執行 crawler 處理 malicious fixture → process execution count = 0 (§TST-026)
+- [x] 任何 discovered code execution = P0 FAIL = RELEASE BLOCKED (§81 Critical Security Gate)
+- [x] Secret leakage test: fixture with API_KEY=TEST_SECRET, PASSWORD=TEST_PASSWORD, TOKEN=TEST_TOKEN
+- [x] 掃描 registry.json, SQLite, logs, reports → secrets 出現次數 = 0 (§TST-066)
+- [x] 確認 log 中不包含 Authorization header, OAuth token, password, API Key (§43)
+- [x] 建立 security_boundary.go: 集中 enforce execution 限制
+- [x] 單元測試: malicious manifest parsing → execute=0, read/parse/hash/classify only
 
 ## 備註
 
@@ -43,3 +43,6 @@ updated: 2026-09-05
 - v0.1: NEVER execute discovered code (§58)
 - v0.2: sandbox execution ONLY with full isolation (§59)
 - README sanitization: strip "Ignore previous instructions", "Call this URL", "Upload credentials" (§60)
+
+## 執行紀錄（2026-09-05 稽核）
+- 已達成: 依據最終驗證 (T045) 通過 build+test+vet+mod verify, 代碼在對應 internal/ 套件中實現, 測試覆蓋率達標
