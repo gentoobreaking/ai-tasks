@@ -1,6 +1,6 @@
 # 📁 Projects Dashboard
 
-> 最後更新: 2026-09-05 15:18 · 自動生成
+> 最後更新: 2026-09-05 15:51 · 自動生成
 
 ---
 
@@ -9,9 +9,9 @@
 | 指標 | 數量 |
 |------|------|
 | 專案數 | 63 |
-| 任務總數 | 1649 |
+| 任務總數 | 1651 |
 | ✅ 已完成 | 1578 |
-| ⬜ 待處理 | 8 |
+| ⬜ 待處理 | 10 |
 | 🔄 進行中 | 0 |
 | ⏭️ 跳過 | 63 |
 | 總完成率 | 99% |
@@ -20,9 +20,11 @@
 
 | 專案 | 任務 | 標題 |
 |------|------|------|
-| awesome-taiwan-mcp | [T060-malicious-detector](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-mcp/tasks/T060-malicious-detector.md) | 惡意倉庫偵測器 |
-| awesome-taiwan-mcp | [T061-malicious-integration](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-mcp/tasks/T061-malicious-integration.md) | 整合惡意偵測進掃描管線 |
-| awesome-taiwan-mcp | [T062-malicious-exporter](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-mcp/tasks/T062-malicious-exporter.md) | 惡意報表獨立輸出 |
+| awesome-taiwan-ai-ecosystem | [T060-malicious-detector](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T060-malicious-detector.md) | 惡意倉庫偵測器 |
+| awesome-taiwan-ai-ecosystem | [T061-malicious-integration](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T061-malicious-integration.md) | 整合惡意偵測進掃描管線 |
+| awesome-taiwan-ai-ecosystem | [T062-malicious-exporter](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T062-malicious-exporter.md) | 惡意報表獨立輸出 |
+| awesome-taiwan-ai-ecosystem | [T065-canonical-entity-model](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T065-canonical-entity-model.md) | Canonical Entity Model — Unified entity struct for all AI ecosystem types |
+| awesome-taiwan-ai-ecosystem | [T066-entity-classification-enum](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T066-entity-classification-enum.md) | Entity Classification Enum — Primary classification types (MCP_SERVER, MCP_CLIENT, AI_AGENT, etc.) |
 
 ---
 
@@ -31,14 +33,16 @@
 
 | 專案 | 任務 | 標題 | 狀態 |
 |------|------|------|------|
-| awesome-taiwan-mcp | [T047-historical-snapshots](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-mcp/tasks/T047-historical-snapshots.md) | > ⛔ Historical Snapshots — crawl run history + time-series data (Phase 2) | ⬜ |
-| awesome-taiwan-mcp | [T048-rest-api](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-mcp/tasks/T048-rest-api.md) | > ⛔ REST API — HTTP API for registry search + metadata (Phase 4) | ⬜ |
-| awesome-taiwan-mcp | [T049-web-ui](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-mcp/tasks/T049-web-ui.md) | > ⛔ Web UI — registry browse + Taiwan MCP discovery dashboard (Phase 4) | ⬜ |
-| awesome-taiwan-mcp | [T060-malicious-detector](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-mcp/tasks/T060-malicious-detector.md) | 惡意倉庫偵測器 | ⬜ |
-| awesome-taiwan-mcp | [T061-malicious-integration](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-mcp/tasks/T061-malicious-integration.md) | 整合惡意偵測進掃描管線 | ⬜ |
-| awesome-taiwan-mcp | [T062-malicious-exporter](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-mcp/tasks/T062-malicious-exporter.md) | 惡意報表獨立輸出 | ⬜ |
-| awesome-taiwan-mcp | [T063-malicious-cli](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-mcp/tasks/T063-malicious-cli.md) | CLI 整合惡意報表旗標 | ⬜ |
-| awesome-taiwan-mcp | [T064-injection-report](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-mcp/tasks/T064-injection-report.md) | Injection 偵測獨立報表輸出 | ⬜ |
+| awesome-taiwan-ai-ecosystem | [T047-historical-snapshots](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T047-historical-snapshots.md) | > ⛔ Historical Snapshots — crawl run history + time-series data (Phase 2) | ⬜ |
+| awesome-taiwan-ai-ecosystem | [T048-rest-api](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T048-rest-api.md) | > ⛔ REST API — HTTP API for registry search + metadata (Phase 4) | ⬜ |
+| awesome-taiwan-ai-ecosystem | [T049-web-ui](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T049-web-ui.md) | > ⛔ Web UI — registry browse + Taiwan MCP discovery dashboard (Phase 4) | ⬜ |
+| awesome-taiwan-ai-ecosystem | [T060-malicious-detector](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T060-malicious-detector.md) | 惡意倉庫偵測器 | ⬜ |
+| awesome-taiwan-ai-ecosystem | [T061-malicious-integration](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T061-malicious-integration.md) | 整合惡意偵測進掃描管線 | ⬜ |
+| awesome-taiwan-ai-ecosystem | [T062-malicious-exporter](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T062-malicious-exporter.md) | 惡意報表獨立輸出 | ⬜ |
+| awesome-taiwan-ai-ecosystem | [T063-malicious-cli](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T063-malicious-cli.md) | CLI 整合惡意報表旗標 | ⬜ |
+| awesome-taiwan-ai-ecosystem | [T064-injection-report](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T064-injection-report.md) | Injection 偵測獨立報表輸出 | ⬜ |
+| awesome-taiwan-ai-ecosystem | [T065-canonical-entity-model](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T065-canonical-entity-model.md) | Canonical Entity Model — Unified entity struct for all AI ecosystem types | ⬜ |
+| awesome-taiwan-ai-ecosystem | [T066-entity-classification-enum](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T066-entity-classification-enum.md) | Entity Classification Enum — Primary classification types (MCP_SERVER, MCP_CLIENT, AI_AGENT, etc.) | ⬜ |
 
 ---
 
@@ -69,7 +73,7 @@ xychart-beta
 | ✅ | [agent-config](https://github.com/gentoobreaking/ai-tasks/tree/main/agent-config) | 9 | 9 | 0 | 0 | 0 | ████████████████████ 100% | 2026-04-09 |
 | ✅ | [ai-oncall](https://github.com/gentoobreaking/ai-tasks/tree/main/ai-oncall) | 22 | 22 | 0 | 0 | 0 | ████████████████████ 100% | 2026-08-26 |
 | ✅ | [automation-tools](https://github.com/gentoobreaking/ai-tasks/tree/main/automation-tools) | 1 | 1 | 0 | 0 | 0 | ████████████████████ 100% | 2026-05-16 |
-| ⬜ | [awesome-taiwan-mcp](https://github.com/gentoobreaking/ai-tasks/tree/main/awesome-taiwan-mcp) | 64 | 56 | 8 | 0 | 0 | █████████████████░░░ 87% | 2026-09-05 |
+| ⬜ | [awesome-taiwan-ai-ecosystem](https://github.com/gentoobreaking/ai-tasks/tree/main/awesome-taiwan-ai-ecosystem) | 66 | 56 | 10 | 0 | 0 | ████████████████░░░░ 84% | 2026-09-05 |
 | ✅ | [backup-system](https://github.com/gentoobreaking/ai-tasks/tree/main/backup-system) | 5 | 5 | 0 | 0 | 0 | ████████████████████ 100% | 2026-04-15 |
 | ✅ | [claw-sessions-issue](https://github.com/gentoobreaking/ai-tasks/tree/main/claw-sessions-issue) | 1 | 1 | 0 | 0 | 0 | ████████████████████ 100% | 2026-04-16 |
 | ✅ | [clawhub-oauth-investigation](https://github.com/gentoobreaking/ai-tasks/tree/main/clawhub-oauth-investigation) | 2 | 2 | 0 | 0 | 0 | ████████████████████ 100% | 2026-04-22 |
