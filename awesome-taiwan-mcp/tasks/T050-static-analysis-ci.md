@@ -4,7 +4,7 @@ title: Static Analysis CI — golangci-lint + gosec security linting
 assignee: pi with opencode
 type: chore
 priority: medium
-^status: done
+status: done
 depends_on: []
 created: 2026-09-05
 updated: 2026-09-05

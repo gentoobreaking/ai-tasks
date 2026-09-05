@@ -4,7 +4,7 @@ title: > ⛔ Glama Adapter — discovery + metadata fetch (Phase 2, needs Glama 
 assignee: pi with opencode
 type: feat
 priority: low
-^status: done
+status: done
 depends_on: []
 blocked_on:
 - "Glama API access available (Phase 2 completion, see §67 MVP Scope Phase 2)"

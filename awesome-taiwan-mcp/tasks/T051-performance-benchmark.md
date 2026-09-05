@@ -4,7 +4,7 @@ title: Performance Benchmark — 10k candidates, <10min, no OOM
 assignee: pi with opencode
 type: bench
 priority: medium
-^status: done
+status: done
 depends_on: []
 created: 2026-09-05
 updated: 2026-09-05

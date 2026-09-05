@@ -4,7 +4,7 @@ title: Regression Golden Dataset — TST-068 classification/identity/dedup accur
 assignee: pi with opencode
 type: test
 priority: medium
-^status: done
+status: done
 depends_on: []
 created: 2026-09-05
 updated: 2026-09-05

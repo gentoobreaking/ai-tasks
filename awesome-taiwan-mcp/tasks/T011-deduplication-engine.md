@@ -4,7 +4,7 @@ title: Deduplication Engine — 合併來自多個 source 的相同 MCP
 assignee: pi with opencode
 type: feat
 priority: high
-^status: done
+status: done
 depends_on: []
 created: 2026-09-05
 updated: 2026-09-05

@@ -4,7 +4,7 @@ title: Endpoint Health — DNS, TLS, HTTP, MCP initialize, latency
 assignee: pi with opencode
 type: feat
 priority: high
-^status: done
+status: done
 depends_on: []
 created: 2026-09-05
 updated: 2026-09-05

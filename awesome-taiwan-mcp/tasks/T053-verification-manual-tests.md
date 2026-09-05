@@ -4,7 +4,7 @@ title: Verification Manual Tests — mapping CRAWLER_VERIFICATION_MANUAL to auto
 assignee: pi with opencode
 type: test
 priority: medium
-^status: done
+status: done
 depends_on: []
 created: 2026-09-05
 updated: 2026-09-05

@@ -4,7 +4,7 @@ title: Documentation — README with all required sections
 assignee: pi with opencode
 type: docs
 priority: high
-^status: done
+status: done
 depends_on: []
 created: 2026-09-05
 updated: 2026-09-05

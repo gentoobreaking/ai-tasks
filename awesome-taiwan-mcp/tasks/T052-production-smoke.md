@@ -4,7 +4,7 @@ title: Production Smoke Test — live GitHub + Registry crawl + export
 assignee: pi with opencode
 type: test
 priority: medium
-^status: done
+status: done
 depends_on: []
 blocked_on:
 - "GITHUB_TOKEN available (environment variable)"

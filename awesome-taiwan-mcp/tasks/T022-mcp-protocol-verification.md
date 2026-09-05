@@ -4,7 +4,7 @@ title: MCP Protocol Verification — initialize, tools/list, resources/list, pro
 assignee: pi with opencode
 type: feat
 priority: high
-^status: done
+status: done
 depends_on: []
 created: 2026-09-05
 updated: 2026-09-05

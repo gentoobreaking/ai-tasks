@@ -4,7 +4,7 @@ title: Search API — registry search by keyword, level, category, min-score
 assignee: pi with opencode
 type: feat
 priority: medium
-^status: done
+status: done
 depends_on: []
 created: 2026-09-05
 updated: 2026-09-05

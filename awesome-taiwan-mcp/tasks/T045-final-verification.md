@@ -4,7 +4,7 @@ title: Final Verification — full build + test + crawl + export validation
 assignee: pi with opencode
 type: test
 priority: high
-^status: done
+status: done
 depends_on: []
 created: 2026-09-05
 updated: 2026-09-05
