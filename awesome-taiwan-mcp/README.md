@@ -55,6 +55,11 @@
 | Production Smoke Test — live GitHub + Registry crawl + export |
 | Verification Manual Tests — mapping CRAWLER_VERIFICATION_MANUAL to automated tests |
 | KPI Verification — Recall, Precision, Duplicate rate, False positive |
+| GitHub Rate Limit — 遷移至 go-github-ratelimit |
+| REGISTRY.md charset=unknown-8bit 編碼混亂 |
+| LLM API 401 — 模型名 typo 與 Docker 環境錯配 |
+| 3 Sources — mcpmarket/mcpservers.org/modelcontextprotocol/servers |
+| Markdown Export 分類錯配 |
 
 ## Skip 項目
 
@@ -75,6 +80,11 @@
 | [T47-historical-snapshots](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-mcp/tasks/T047-historical-snapshots.md) | > ⛔ Historical Snapshots — crawl run history + time-series data (Phase 2) | |
 | [T48-rest-api](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-mcp/tasks/T048-rest-api.md) | > ⛔ REST API — HTTP API for registry search + metadata (Phase 4) | |
 | [T49-web-ui](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-mcp/tasks/T049-web-ui.md) | > ⛔ Web UI — registry browse + Taiwan MCP discovery dashboard (Phase 4) | |
+| [T60-malicious-detector](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-mcp/tasks/T060-malicious-detector.md) | 惡意倉庫偵測器 | |
+| [T61-malicious-integration](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-mcp/tasks/T061-malicious-integration.md) | 整合惡意偵測進掃描管線 | |
+| [T62-malicious-exporter](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-mcp/tasks/T062-malicious-exporter.md) | 惡意報表獨立輸出 | |
+| [T63-malicious-cli](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-mcp/tasks/T063-malicious-cli.md) | CLI 整合惡意報表旗標 | |
+| [T64-injection-report](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-mcp/tasks/T064-injection-report.md) | Injection 偵測獨立報表輸出 | |
 
 ## Task 列表
 
@@ -134,7 +144,17 @@
 | [T52-production-smoke](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-mcp/tasks/T052-production-smoke.md) | Production Smoke Test — live GitHub + Registry crawl + export | ✅ done |
 | [T53-verification-manual-tests](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-mcp/tasks/T053-verification-manual-tests.md) | Verification Manual Tests — mapping CRAWLER_VERIFICATION_MANUAL to automated tests | ✅ done |
 | [T54-kpi-verification](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-mcp/tasks/T054-kpi-verification.md) | KPI Verification — Recall, Precision, Duplicate rate, False positive | ✅ done |
+| [T55-github-ratelimit-gofri-migration](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-mcp/tasks/T055-github-ratelimit-gofri-migration.md) | 修復 GitHub Rate Limit — 遷移至 go-github-ratelimit | ✅ done |
+| [T56-registry-encoding-utf8-fix](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-mcp/tasks/T056-registry-encoding-utf8-fix.md) | 修復 REGISTRY.md charset=unknown-8bit 編碼混亂 | ✅ done |
+| [T57-llm-401-fallback-fix](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-mcp/tasks/T057-llm-401-fallback-fix.md) | 修復 LLM API 401 — 模型名 typo 與 Docker 環境錯配 | ✅ done |
+| [T58-new-sources-mcpmarket-mcpserversorg](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-mcp/tasks/T058-new-sources-mcpmarket-mcpserversorg.md) | 新增 3 Sources — mcpmarket/mcpservers.org/modelcontextprotocol/servers | ✅ done |
+| [T59-markdown-classification-fix](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-mcp/tasks/T059-markdown-classification-fix.md) | 修復 Markdown Export 分類錯配 | ✅ done |
+| [T60-malicious-detector](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-mcp/tasks/T060-malicious-detector.md) | 惡意倉庫偵測器 | 📋 pending |
+| [T61-malicious-integration](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-mcp/tasks/T061-malicious-integration.md) | 整合惡意偵測進掃描管線 | 📋 pending |
+| [T62-malicious-exporter](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-mcp/tasks/T062-malicious-exporter.md) | 惡意報表獨立輸出 | 📋 pending |
+| [T63-malicious-cli](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-mcp/tasks/T063-malicious-cli.md) | CLI 整合惡意報表旗標 | 📋 pending |
+| [T64-injection-report](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-mcp/tasks/T064-injection-report.md) | Injection 偵測獨立報表輸出 | 📋 pending |
 
-**✅ done: 51 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 3**
+**✅ done: 56 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 8**
 
-> 自動生成於 2026-09-05 10:06
+> 自動生成於 2026-09-05 15:18

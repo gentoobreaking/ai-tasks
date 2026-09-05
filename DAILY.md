@@ -1,6 +1,6 @@
 # 📅 Daily Dashboard - 2026-09-05
 
-> 最後更新: 2026-09-05 10:06 · 自動生成
+> 最後更新: 2026-09-05 15:18 · 自動生成
 
 ---
 
@@ -8,11 +8,11 @@
 
 | 指標 | 數量 |
 |------|------|
-| 新增任務 | 60 |
-| 完成任務 | 57 |
+| 新增任務 | 70 |
+| 完成任務 | 62 |
 | 進行中 | 0 |
-| 待處理 | 3 |
-| 完成率 | 95% |
+| 待處理 | 8 |
+| 完成率 | 88% |
 
 ---
 
@@ -20,10 +20,10 @@
 
 | 指標 | 數值 |
 |------|------|
-| 今日完成速率 | 60 任務 |
-| 近 7 日速率 | 60 任務 |
+| 今日完成速率 | 70 任務 |
+| 近 7 日速率 | 70 任務 |
 | 平均循環天數 | 0.0 天 |
-| 今日完成任務循環時間樣本 | 60 筆 |
+| 今日完成任務循環時間樣本 | 70 筆 |
 
 ---
 
@@ -85,6 +85,16 @@
 | awesome-taiwan-mcp | [T052-production-smoke](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-mcp/tasks/T052-production-smoke.md) | Production Smoke Test — live GitHub + Registry crawl + export |
 | awesome-taiwan-mcp | [T053-verification-manual-tests](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-mcp/tasks/T053-verification-manual-tests.md) | Verification Manual Tests — mapping CRAWLER_VERIFICATION_MANUAL to automated tests |
 | awesome-taiwan-mcp | [T054-kpi-verification](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-mcp/tasks/T054-kpi-verification.md) | KPI Verification — Recall, Precision, Duplicate rate, False positive |
+| awesome-taiwan-mcp | [T055-github-ratelimit-gofri-migration](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-mcp/tasks/T055-github-ratelimit-gofri-migration.md) | 修復 GitHub Rate Limit — 遷移至 go-github-ratelimit |
+| awesome-taiwan-mcp | [T056-registry-encoding-utf8-fix](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-mcp/tasks/T056-registry-encoding-utf8-fix.md) | 修復 REGISTRY.md charset=unknown-8bit 編碼混亂 |
+| awesome-taiwan-mcp | [T057-llm-401-fallback-fix](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-mcp/tasks/T057-llm-401-fallback-fix.md) | 修復 LLM API 401 — 模型名 typo 與 Docker 環境錯配 |
+| awesome-taiwan-mcp | [T058-new-sources-mcpmarket-mcpserversorg](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-mcp/tasks/T058-new-sources-mcpmarket-mcpserversorg.md) | 新增 3 Sources — mcpmarket/mcpservers.org/modelcontextprotocol/servers |
+| awesome-taiwan-mcp | [T059-markdown-classification-fix](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-mcp/tasks/T059-markdown-classification-fix.md) | 修復 Markdown Export 分類錯配 |
+| awesome-taiwan-mcp | [T060-malicious-detector](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-mcp/tasks/T060-malicious-detector.md) | 惡意倉庫偵測器 |
+| awesome-taiwan-mcp | [T061-malicious-integration](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-mcp/tasks/T061-malicious-integration.md) | 整合惡意偵測進掃描管線 |
+| awesome-taiwan-mcp | [T062-malicious-exporter](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-mcp/tasks/T062-malicious-exporter.md) | 惡意報表獨立輸出 |
+| awesome-taiwan-mcp | [T063-malicious-cli](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-mcp/tasks/T063-malicious-cli.md) | CLI 整合惡意報表旗標 |
+| awesome-taiwan-mcp | [T064-injection-report](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-mcp/tasks/T064-injection-report.md) | Injection 偵測獨立報表輸出 |
 | mcp-go-core | [T099-resource-change-notifications](https://github.com/gentoobreaking/ai-tasks/blob/main/mcp-go-core/tasks/T099-resource-change-notifications.md) | P2 - MCP Resource Change Notifications (bidirectional) |
 | mcp-go-core | [T100-mcp-optional-methods-continued](https://github.com/gentoobreaking/ai-tasks/blob/main/mcp-go-core/tasks/T100-mcp-optional-methods-continued.md) | P3 - MCP Spec Conformance: Missing optional methods (prompts/create, notifications/list_changed) |
 | mcp-go-core | [T101-mcp-high-value-methods](https://github.com/gentoobreaking/ai-tasks/blob/main/mcp-go-core/tasks/T101-mcp-high-value-methods.md) | P1 - MCP Spec: Remaining high-value methods (templates/list, unsubscribe, roots/list, progress, message) |
@@ -149,6 +159,11 @@
 | awesome-taiwan-mcp | [T052-production-smoke](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-mcp/tasks/T052-production-smoke.md) | Production Smoke Test — live GitHub + Registry crawl + export |
 | awesome-taiwan-mcp | [T053-verification-manual-tests](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-mcp/tasks/T053-verification-manual-tests.md) | Verification Manual Tests — mapping CRAWLER_VERIFICATION_MANUAL to automated tests |
 | awesome-taiwan-mcp | [T054-kpi-verification](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-mcp/tasks/T054-kpi-verification.md) | KPI Verification — Recall, Precision, Duplicate rate, False positive |
+| awesome-taiwan-mcp | [T055-github-ratelimit-gofri-migration](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-mcp/tasks/T055-github-ratelimit-gofri-migration.md) | 修復 GitHub Rate Limit — 遷移至 go-github-ratelimit |
+| awesome-taiwan-mcp | [T056-registry-encoding-utf8-fix](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-mcp/tasks/T056-registry-encoding-utf8-fix.md) | 修復 REGISTRY.md charset=unknown-8bit 編碼混亂 |
+| awesome-taiwan-mcp | [T057-llm-401-fallback-fix](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-mcp/tasks/T057-llm-401-fallback-fix.md) | 修復 LLM API 401 — 模型名 typo 與 Docker 環境錯配 |
+| awesome-taiwan-mcp | [T058-new-sources-mcpmarket-mcpserversorg](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-mcp/tasks/T058-new-sources-mcpmarket-mcpserversorg.md) | 新增 3 Sources — mcpmarket/mcpservers.org/modelcontextprotocol/servers |
+| awesome-taiwan-mcp | [T059-markdown-classification-fix](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-mcp/tasks/T059-markdown-classification-fix.md) | 修復 Markdown Export 分類錯配 |
 | mcp-go-core | [T099-resource-change-notifications](https://github.com/gentoobreaking/ai-tasks/blob/main/mcp-go-core/tasks/T099-resource-change-notifications.md) | P2 - MCP Resource Change Notifications (bidirectional) |
 | mcp-go-core | [T100-mcp-optional-methods-continued](https://github.com/gentoobreaking/ai-tasks/blob/main/mcp-go-core/tasks/T100-mcp-optional-methods-continued.md) | P3 - MCP Spec Conformance: Missing optional methods (prompts/create, notifications/list_changed) |
 | mcp-go-core | [T101-mcp-high-value-methods](https://github.com/gentoobreaking/ai-tasks/blob/main/mcp-go-core/tasks/T101-mcp-high-value-methods.md) | P1 - MCP Spec: Remaining high-value methods (templates/list, unsubscribe, roots/list, progress, message) |
@@ -160,7 +175,11 @@
 
 ## 🔥 待處理高優先級
 
-_無_
+| 專案 | 任務 | 標題 | 優先 |
+| -- | -- | -- | -- |
+| awesome-taiwan-mcp | [T060-malicious-detector](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-mcp/tasks/T060-malicious-detector.md) | 惡意倉庫偵測器 | high |
+| awesome-taiwan-mcp | [T061-malicious-integration](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-mcp/tasks/T061-malicious-integration.md) | 整合惡意偵測進掃描管線 | high |
+| awesome-taiwan-mcp | [T062-malicious-exporter](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-mcp/tasks/T062-malicious-exporter.md) | 惡意報表獨立輸出 | high |
 
 ---
 
@@ -174,6 +193,11 @@ _無_
 
 | 專案 | 任務 | 標題 | 優先 |
 | -- | -- | -- | -- |
+| awesome-taiwan-mcp | [T060-malicious-detector](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-mcp/tasks/T060-malicious-detector.md) | 惡意倉庫偵測器 | high |
+| awesome-taiwan-mcp | [T061-malicious-integration](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-mcp/tasks/T061-malicious-integration.md) | 整合惡意偵測進掃描管線 | high |
+| awesome-taiwan-mcp | [T062-malicious-exporter](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-mcp/tasks/T062-malicious-exporter.md) | 惡意報表獨立輸出 | high |
+| awesome-taiwan-mcp | [T063-malicious-cli](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-mcp/tasks/T063-malicious-cli.md) | CLI 整合惡意報表旗標 | medium |
+| awesome-taiwan-mcp | [T064-injection-report](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-mcp/tasks/T064-injection-report.md) | Injection 偵測獨立報表輸出 | medium |
 | awesome-taiwan-mcp | [T047-historical-snapshots](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-mcp/tasks/T047-historical-snapshots.md) | > ⛔ Historical Snapshots — crawl run history + time-series data (Phase 2) | low |
 | awesome-taiwan-mcp | [T048-rest-api](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-mcp/tasks/T048-rest-api.md) | > ⛔ REST API — HTTP API for registry search + metadata (Phase 4) | low |
 | awesome-taiwan-mcp | [T049-web-ui](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-mcp/tasks/T049-web-ui.md) | > ⛔ Web UI — registry browse + Taiwan MCP discovery dashboard (Phase 4) | low |
