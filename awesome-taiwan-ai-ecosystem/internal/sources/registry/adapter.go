@@ -24,7 +24,9 @@ func (a *Adapter) Discover(ctx context.Context) ([]models.RawCandidate, error) {
 }
 
 func (a *Adapter) Fetch(ctx context.Context, candidate models.RawCandidate) (*models.RawRecord, error) {
-	return &models.RawRecord{Candidate: candidate}, nil
+	return &models.RawRecord{
+		RawCandidate: candidate,
+	}, nil
 }
 
 var _ sources.SourceAdapter = (*Adapter)(nil)

@@ -1,0 +1,4 @@
+# Malicious Repository Blocklist
+# Generated at: 2026-09-05T11:48:47Z
+# Format: owner/repo # RISK: LEVEL - PRIMARY_SIGNAL
+

@@ -51,7 +51,7 @@ func (a *GitHubRepoAdapter) Discover(ctx context.Context) ([]models.RawCandidate
 // Fetch retrieves server details (placeholder).
 func (a *GitHubRepoAdapter) Fetch(ctx context.Context, candidate models.RawCandidate) (*models.RawRecord, error) {
 	return &models.RawRecord{
-		Candidate: candidate,
+		RawCandidate: candidate,
 	}, nil
 }
 

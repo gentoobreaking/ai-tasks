@@ -44,7 +44,7 @@ func (a *GitHubAdapter) Discover(ctx context.Context) ([]models.RawCandidate, er
 // Fetch retrieves full metadata for a candidate (placeholder).
 func (a *GitHubAdapter) Fetch(ctx context.Context, candidate models.RawCandidate) (*models.RawRecord, error) {
 	return &models.RawRecord{
-		Candidate: candidate,
+		RawCandidate: candidate,
 	}, nil
 }
 

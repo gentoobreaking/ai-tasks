@@ -367,13 +367,13 @@ func (a *Adapter) Fetch(ctx context.Context, candidate models.RawCandidate) (*mo
 
 	// Build record
 	rec := &models.RawRecord{
-		Candidate: candidate,
-		Readme:    readme,
+		RawCandidate: candidate,
+		Readme:       readme,
 	}
 	// Update candidate's RepositoryURL for downstream dedup
 	if repoURL != "" {
-		rec.Candidate.RepositoryURL = repoURL
-		rec.Repository = &models.RepositoryInfo{
+		rec.RawCandidate.RepositoryURL = repoURL
+		rec.Repository = models.RepositoryInfo{
 			URL:  repoURL,
 			Host: "github.com",
 		}
@@ -386,9 +386,7 @@ func (a *Adapter) Fetch(ctx context.Context, candidate models.RawCandidate) (*mo
 			}
 		}
 	} else if homepage != "" {
-		rec.Candidate.HomepageURL = homepage
-	} else {
-		// keep original
+		rec.RawCandidate.HomepageURL = homepage
 	}
 
 	return rec, nil

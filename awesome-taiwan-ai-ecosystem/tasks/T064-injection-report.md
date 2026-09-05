@@ -3,7 +3,7 @@ github_issue: N/A
 title: Injection 偵測獨立報表輸出
 type: feat
 priority: medium
-status: pending
+status: done
 depends_on: [T026]
 assignee: pi
 created: 2026-09-05

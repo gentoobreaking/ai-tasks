@@ -3,7 +3,7 @@ github_issue: N/A
 title: CLI 整合惡意報表旗標
 type: feat
 priority: medium
-status: pending
+status: done
 depends_on: [T062]
 assignee: pi
 created: 2026-09-05
