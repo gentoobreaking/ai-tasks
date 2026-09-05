@@ -1,6 +1,6 @@
 # 📅 Daily Dashboard - 2026-09-05
 
-> 最後更新: 2026-09-05 17:12 · 自動生成
+> 最後更新: 2026-09-05 22:57 · 自動生成
 
 ---
 
@@ -8,11 +8,11 @@
 
 | 指標 | 數量 |
 |------|------|
-| 新增任務 | 98 |
-| 完成任務 | 62 |
+| 新增任務 | 100 |
+| 完成任務 | 76 |
 | 進行中 | 0 |
-| 待處理 | 36 |
-| 完成率 | 63% |
+| 待處理 | 24 |
+| 完成率 | 76% |
 
 ---
 
@@ -20,10 +20,10 @@
 
 | 指標 | 數值 |
 |------|------|
-| 今日完成速率 | 98 任務 |
-| 近 7 日速率 | 98 任務 |
+| 今日完成速率 | 100 任務 |
+| 近 7 日速率 | 100 任務 |
 | 平均循環天數 | 0.0 天 |
-| 今日完成任務循環時間樣本 | 98 筆 |
+| 今日完成任務循環時間樣本 | 100 筆 |
 
 ---
 
@@ -123,6 +123,8 @@
 | awesome-taiwan-ai-ecosystem | [T090-source-adapter-updates](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T090-source-adapter-updates.md) | Source Adapter Updates — Treat registries as discovery sources, not proof |
 | awesome-taiwan-ai-ecosystem | [T091-cli-coordinator-updates](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T091-cli-coordinator-updates.md) | CLI & Coordinator Updates — New pipeline stages |
 | awesome-taiwan-ai-ecosystem | [T092-documentation-update](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T092-documentation-update.md) | Documentation Update — README, spec.md alignment |
+| awesome-taiwan-ai-ecosystem | [T093-coordinator-refactor](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T093-coordinator-refactor.md) | Crawler Coordinator 重構 - 適配新 Entity 模型與協調器邏輯修復 |
+| awesome-taiwan-ai-ecosystem | [T094-incremental-refactor](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T094-incremental-refactor.md) | Crawler Incremental 重構 - 適配新 Entity 模型與增量爬蟲邏輯修復 |
 | mcp-go-core | [T099-resource-change-notifications](https://github.com/gentoobreaking/ai-tasks/blob/main/mcp-go-core/tasks/T099-resource-change-notifications.md) | P2 - MCP Resource Change Notifications (bidirectional) |
 | mcp-go-core | [T100-mcp-optional-methods-continued](https://github.com/gentoobreaking/ai-tasks/blob/main/mcp-go-core/tasks/T100-mcp-optional-methods-continued.md) | P3 - MCP Spec Conformance: Missing optional methods (prompts/create, notifications/list_changed) |
 | mcp-go-core | [T101-mcp-high-value-methods](https://github.com/gentoobreaking/ai-tasks/blob/main/mcp-go-core/tasks/T101-mcp-high-value-methods.md) | P1 - MCP Spec: Remaining high-value methods (templates/list, unsubscribe, roots/list, progress, message) |
@@ -192,6 +194,20 @@
 | awesome-taiwan-ai-ecosystem | [T057-llm-401-fallback-fix](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T057-llm-401-fallback-fix.md) | 修復 LLM API 401 — 模型名 typo 與 Docker 環境錯配 |
 | awesome-taiwan-ai-ecosystem | [T058-new-sources-mcpmarket-mcpserversorg](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T058-new-sources-mcpmarket-mcpserversorg.md) | 新增 3 Sources — mcpmarket/mcpservers.org/modelcontextprotocol/servers |
 | awesome-taiwan-ai-ecosystem | [T059-markdown-classification-fix](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T059-markdown-classification-fix.md) | 修復 Markdown Export 分類錯配 |
+| awesome-taiwan-ai-ecosystem | [T060-malicious-detector](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T060-malicious-detector.md) | 惡意倉庫偵測器 |
+| awesome-taiwan-ai-ecosystem | [T061-malicious-integration](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T061-malicious-integration.md) | 整合惡意偵測進掃描管線 |
+| awesome-taiwan-ai-ecosystem | [T062-malicious-exporter](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T062-malicious-exporter.md) | 惡意報表獨立輸出 |
+| awesome-taiwan-ai-ecosystem | [T063-malicious-cli](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T063-malicious-cli.md) | CLI 整合惡意報表旗標 |
+| awesome-taiwan-ai-ecosystem | [T064-injection-report](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T064-injection-report.md) | Injection 偵測獨立報表輸出 |
+| awesome-taiwan-ai-ecosystem | [T065-canonical-entity-model](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T065-canonical-entity-model.md) | Canonical Entity Model — Unified entity struct for all AI ecosystem types |
+| awesome-taiwan-ai-ecosystem | [T066-entity-classification-enum](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T066-entity-classification-enum.md) | Entity Classification Enum — Primary classification types (MCP_SERVER, MCP_CLIENT, AI_AGENT, etc.) |
+| awesome-taiwan-ai-ecosystem | [T067-entity-status-enum](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T067-entity-status-enum.md) | Entity Status Enum — DISCOVERED, CANDIDATE, VERIFIED, QUARANTINED, REJECTED |
+| awesome-taiwan-ai-ecosystem | [T068-taiwan-relevance-engine](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T068-taiwan-relevance-engine.md) | Taiwan Relevance Engine — Decouple from MCP identity, independent scoring |
+| awesome-taiwan-ai-ecosystem | [T069-taiwan-signal-dictionary](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T069-taiwan-signal-dictionary.md) | Taiwan Signal Dictionary — Configurable Taiwan keywords/domains (YAML) |
+| awesome-taiwan-ai-ecosystem | [T070-ai-relevance-engine](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T070-ai-relevance-engine.md) | AI Relevance Engine — Independent AI scoring (LLM, agent, RAG, etc.) |
+| awesome-taiwan-ai-ecosystem | [T071-ai-signal-dictionary](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T071-ai-signal-dictionary.md) | AI Signal Dictionary — Configurable AI keywords/patterns (YAML) |
+| awesome-taiwan-ai-ecosystem | [T072-entity-classifier](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T072-entity-classifier.md) | Entity Classifier — Rule-based primary classification with evidence |
+| awesome-taiwan-ai-ecosystem | [T074-mcp-identity-engine](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T074-mcp-identity-engine.md) | MCP Identity Engine — Static analysis for MCP server implementation |
 | mcp-go-core | [T099-resource-change-notifications](https://github.com/gentoobreaking/ai-tasks/blob/main/mcp-go-core/tasks/T099-resource-change-notifications.md) | P2 - MCP Resource Change Notifications (bidirectional) |
 | mcp-go-core | [T100-mcp-optional-methods-continued](https://github.com/gentoobreaking/ai-tasks/blob/main/mcp-go-core/tasks/T100-mcp-optional-methods-continued.md) | P3 - MCP Spec Conformance: Missing optional methods (prompts/create, notifications/list_changed) |
 | mcp-go-core | [T101-mcp-high-value-methods](https://github.com/gentoobreaking/ai-tasks/blob/main/mcp-go-core/tasks/T101-mcp-high-value-methods.md) | P1 - MCP Spec: Remaining high-value methods (templates/list, unsubscribe, roots/list, progress, message) |
@@ -205,18 +221,6 @@
 
 | 專案 | 任務 | 標題 | 優先 |
 | -- | -- | -- | -- |
-| awesome-taiwan-ai-ecosystem | [T060-malicious-detector](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T060-malicious-detector.md) | 惡意倉庫偵測器 | high |
-| awesome-taiwan-ai-ecosystem | [T061-malicious-integration](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T061-malicious-integration.md) | 整合惡意偵測進掃描管線 | high |
-| awesome-taiwan-ai-ecosystem | [T062-malicious-exporter](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T062-malicious-exporter.md) | 惡意報表獨立輸出 | high |
-| awesome-taiwan-ai-ecosystem | [T065-canonical-entity-model](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T065-canonical-entity-model.md) | Canonical Entity Model — Unified entity struct for all AI ecosystem types | high |
-| awesome-taiwan-ai-ecosystem | [T066-entity-classification-enum](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T066-entity-classification-enum.md) | Entity Classification Enum — Primary classification types (MCP_SERVER, MCP_CLIENT, AI_AGENT, etc.) | high |
-| awesome-taiwan-ai-ecosystem | [T067-entity-status-enum](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T067-entity-status-enum.md) | Entity Status Enum — DISCOVERED, CANDIDATE, VERIFIED, QUARANTINED, REJECTED | high |
-| awesome-taiwan-ai-ecosystem | [T068-taiwan-relevance-engine](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T068-taiwan-relevance-engine.md) | Taiwan Relevance Engine — Decouple from MCP identity, independent scoring | high |
-| awesome-taiwan-ai-ecosystem | [T069-taiwan-signal-dictionary](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T069-taiwan-signal-dictionary.md) | Taiwan Signal Dictionary — Configurable Taiwan keywords/domains (YAML) | high |
-| awesome-taiwan-ai-ecosystem | [T070-ai-relevance-engine](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T070-ai-relevance-engine.md) | AI Relevance Engine — Independent AI scoring (LLM, agent, RAG, etc.) | high |
-| awesome-taiwan-ai-ecosystem | [T071-ai-signal-dictionary](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T071-ai-signal-dictionary.md) | AI Signal Dictionary — Configurable AI keywords/patterns (YAML) | high |
-| awesome-taiwan-ai-ecosystem | [T072-entity-classifier](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T072-entity-classifier.md) | Entity Classifier — Rule-based primary classification with evidence | high |
-| awesome-taiwan-ai-ecosystem | [T074-mcp-identity-engine](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T074-mcp-identity-engine.md) | MCP Identity Engine — Static analysis for MCP server implementation | high |
 | awesome-taiwan-ai-ecosystem | [T075-mcp-role-detection](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T075-mcp-role-detection.md) | MCP Role Detection — CLIENT, HOST, SDK, SKILL, EXTENSION separation | high |
 | awesome-taiwan-ai-ecosystem | [T076-endpoint-type-classifier](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T076-endpoint-type-classifier.md) | Endpoint Type Classifier — REPOSITORY_URL, DOCUMENTATION_URL, INSTALLER_URL, MCP_RUNTIME_ENDPOINT | high |
 | awesome-taiwan-ai-ecosystem | [T077-url-evidence-tracking](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T077-url-evidence-tracking.md) | URL Evidence Tracking — Record why each URL was classified | high |
@@ -233,6 +237,8 @@
 | awesome-taiwan-ai-ecosystem | [T089-discovery-pipeline-refactor](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T089-discovery-pipeline-refactor.md) | Discovery Pipeline Refactor — Broad discovery (Taiwan + AI), no MCP keyword filter | high |
 | awesome-taiwan-ai-ecosystem | [T090-source-adapter-updates](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T090-source-adapter-updates.md) | Source Adapter Updates — Treat registries as discovery sources, not proof | high |
 | awesome-taiwan-ai-ecosystem | [T091-cli-coordinator-updates](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T091-cli-coordinator-updates.md) | CLI & Coordinator Updates — New pipeline stages | high |
+| awesome-taiwan-ai-ecosystem | [T093-coordinator-refactor](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T093-coordinator-refactor.md) | Crawler Coordinator 重構 - 適配新 Entity 模型與協調器邏輯修復 | high |
+| awesome-taiwan-ai-ecosystem | [T094-incremental-refactor](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T094-incremental-refactor.md) | Crawler Incremental 重構 - 適配新 Entity 模型與增量爬蟲邏輯修復 | high |
 
 ---
 
@@ -246,18 +252,6 @@ _無_
 
 | 專案 | 任務 | 標題 | 優先 |
 | -- | -- | -- | -- |
-| awesome-taiwan-ai-ecosystem | [T060-malicious-detector](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T060-malicious-detector.md) | 惡意倉庫偵測器 | high |
-| awesome-taiwan-ai-ecosystem | [T061-malicious-integration](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T061-malicious-integration.md) | 整合惡意偵測進掃描管線 | high |
-| awesome-taiwan-ai-ecosystem | [T062-malicious-exporter](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T062-malicious-exporter.md) | 惡意報表獨立輸出 | high |
-| awesome-taiwan-ai-ecosystem | [T065-canonical-entity-model](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T065-canonical-entity-model.md) | Canonical Entity Model — Unified entity struct for all AI ecosystem types | high |
-| awesome-taiwan-ai-ecosystem | [T066-entity-classification-enum](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T066-entity-classification-enum.md) | Entity Classification Enum — Primary classification types (MCP_SERVER, MCP_CLIENT, AI_AGENT, etc.) | high |
-| awesome-taiwan-ai-ecosystem | [T067-entity-status-enum](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T067-entity-status-enum.md) | Entity Status Enum — DISCOVERED, CANDIDATE, VERIFIED, QUARANTINED, REJECTED | high |
-| awesome-taiwan-ai-ecosystem | [T068-taiwan-relevance-engine](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T068-taiwan-relevance-engine.md) | Taiwan Relevance Engine — Decouple from MCP identity, independent scoring | high |
-| awesome-taiwan-ai-ecosystem | [T069-taiwan-signal-dictionary](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T069-taiwan-signal-dictionary.md) | Taiwan Signal Dictionary — Configurable Taiwan keywords/domains (YAML) | high |
-| awesome-taiwan-ai-ecosystem | [T070-ai-relevance-engine](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T070-ai-relevance-engine.md) | AI Relevance Engine — Independent AI scoring (LLM, agent, RAG, etc.) | high |
-| awesome-taiwan-ai-ecosystem | [T071-ai-signal-dictionary](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T071-ai-signal-dictionary.md) | AI Signal Dictionary — Configurable AI keywords/patterns (YAML) | high |
-| awesome-taiwan-ai-ecosystem | [T072-entity-classifier](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T072-entity-classifier.md) | Entity Classifier — Rule-based primary classification with evidence | high |
-| awesome-taiwan-ai-ecosystem | [T074-mcp-identity-engine](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T074-mcp-identity-engine.md) | MCP Identity Engine — Static analysis for MCP server implementation | high |
 | awesome-taiwan-ai-ecosystem | [T075-mcp-role-detection](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T075-mcp-role-detection.md) | MCP Role Detection — CLIENT, HOST, SDK, SKILL, EXTENSION separation | high |
 | awesome-taiwan-ai-ecosystem | [T076-endpoint-type-classifier](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T076-endpoint-type-classifier.md) | Endpoint Type Classifier — REPOSITORY_URL, DOCUMENTATION_URL, INSTALLER_URL, MCP_RUNTIME_ENDPOINT | high |
 | awesome-taiwan-ai-ecosystem | [T077-url-evidence-tracking](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T077-url-evidence-tracking.md) | URL Evidence Tracking — Record why each URL was classified | high |
@@ -274,8 +268,8 @@ _無_
 | awesome-taiwan-ai-ecosystem | [T089-discovery-pipeline-refactor](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T089-discovery-pipeline-refactor.md) | Discovery Pipeline Refactor — Broad discovery (Taiwan + AI), no MCP keyword filter | high |
 | awesome-taiwan-ai-ecosystem | [T090-source-adapter-updates](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T090-source-adapter-updates.md) | Source Adapter Updates — Treat registries as discovery sources, not proof | high |
 | awesome-taiwan-ai-ecosystem | [T091-cli-coordinator-updates](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T091-cli-coordinator-updates.md) | CLI & Coordinator Updates — New pipeline stages | high |
-| awesome-taiwan-ai-ecosystem | [T063-malicious-cli](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T063-malicious-cli.md) | CLI 整合惡意報表旗標 | medium |
-| awesome-taiwan-ai-ecosystem | [T064-injection-report](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T064-injection-report.md) | Injection 偵測獨立報表輸出 | medium |
+| awesome-taiwan-ai-ecosystem | [T093-coordinator-refactor](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T093-coordinator-refactor.md) | Crawler Coordinator 重構 - 適配新 Entity 模型與協調器邏輯修復 | high |
+| awesome-taiwan-ai-ecosystem | [T094-incremental-refactor](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T094-incremental-refactor.md) | Crawler Incremental 重構 - 適配新 Entity 模型與增量爬蟲邏輯修復 | high |
 | awesome-taiwan-ai-ecosystem | [T073-llm-classifier-fallback](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T073-llm-classifier-fallback.md) | LLM Classifier Fallback — For ambiguous cases (score 20-55) | medium |
 | awesome-taiwan-ai-ecosystem | [T086-backward-compatibility](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T086-backward-compatibility.md) | Backward Compatibility — Keep awesome-taiwan-mcp.md as generated view | medium |
 | awesome-taiwan-ai-ecosystem | [T092-documentation-update](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T092-documentation-update.md) | Documentation Update — README, spec.md alignment | medium |

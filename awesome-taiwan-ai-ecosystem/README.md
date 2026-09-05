@@ -60,6 +60,20 @@
 | LLM API 401 — 模型名 typo 與 Docker 環境錯配 |
 | 3 Sources — mcpmarket/mcpservers.org/modelcontextprotocol/servers |
 | Markdown Export 分類錯配 |
+| 惡意倉庫偵測器 |
+| 整合惡意偵測進掃描管線 |
+| 惡意報表獨立輸出 |
+| CLI 整合惡意報表旗標 |
+| Injection 偵測獨立報表輸出 |
+| Canonical Entity Model — Unified entity struct for all AI ecosystem types |
+| Entity Classification Enum — Primary classification types (MCP_SERVER, MCP_CLIENT, AI_AGENT, etc.) |
+| Entity Status Enum — DISCOVERED, CANDIDATE, VERIFIED, QUARANTINED, REJECTED |
+| Taiwan Relevance Engine — Decouple from MCP identity, independent scoring |
+| Taiwan Signal Dictionary — Configurable Taiwan keywords/domains (YAML) |
+| AI Relevance Engine — Independent AI scoring (LLM, agent, RAG, etc.) |
+| AI Signal Dictionary — Configurable AI keywords/patterns (YAML) |
+| Entity Classifier — Rule-based primary classification with evidence |
+| MCP Identity Engine — Static analysis for MCP server implementation |
 
 ## Skip 項目
 
@@ -80,21 +94,7 @@
 | [T47-historical-snapshots](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T047-historical-snapshots.md) | > ⛔ Historical Snapshots — crawl run history + time-series data (Phase 2) | |
 | [T48-rest-api](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T048-rest-api.md) | > ⛔ REST API — HTTP API for registry search + metadata (Phase 4) | |
 | [T49-web-ui](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T049-web-ui.md) | > ⛔ Web UI — registry browse + Taiwan MCP discovery dashboard (Phase 4) | |
-| [T60-malicious-detector](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T060-malicious-detector.md) | 惡意倉庫偵測器 | |
-| [T61-malicious-integration](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T061-malicious-integration.md) | 整合惡意偵測進掃描管線 | |
-| [T62-malicious-exporter](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T062-malicious-exporter.md) | 惡意報表獨立輸出 | |
-| [T63-malicious-cli](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T063-malicious-cli.md) | CLI 整合惡意報表旗標 | |
-| [T64-injection-report](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T064-injection-report.md) | Injection 偵測獨立報表輸出 | |
-| [T65-canonical-entity-model](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T065-canonical-entity-model.md) | Canonical Entity Model — Unified entity struct for all AI ecosystem types | |
-| [T66-entity-classification-enum](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T066-entity-classification-enum.md) | Entity Classification Enum — Primary classification types (MCP_SERVER, MCP_CLIENT, AI_AGENT, etc.) | |
-| [T67-entity-status-enum](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T067-entity-status-enum.md) | Entity Status Enum — DISCOVERED, CANDIDATE, VERIFIED, QUARANTINED, REJECTED | |
-| [T68-taiwan-relevance-engine](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T068-taiwan-relevance-engine.md) | Taiwan Relevance Engine — Decouple from MCP identity, independent scoring | |
-| [T69-taiwan-signal-dictionary](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T069-taiwan-signal-dictionary.md) | Taiwan Signal Dictionary — Configurable Taiwan keywords/domains (YAML) | |
-| [T70-ai-relevance-engine](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T070-ai-relevance-engine.md) | AI Relevance Engine — Independent AI scoring (LLM, agent, RAG, etc.) | |
-| [T71-ai-signal-dictionary](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T071-ai-signal-dictionary.md) | AI Signal Dictionary — Configurable AI keywords/patterns (YAML) | |
-| [T72-entity-classifier](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T072-entity-classifier.md) | Entity Classifier — Rule-based primary classification with evidence | |
 | [T73-llm-classifier-fallback](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T073-llm-classifier-fallback.md) | LLM Classifier Fallback — For ambiguous cases (score 20-55) | |
-| [T74-mcp-identity-engine](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T074-mcp-identity-engine.md) | MCP Identity Engine — Static analysis for MCP server implementation | |
 | [T75-mcp-role-detection](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T075-mcp-role-detection.md) | MCP Role Detection — CLIENT, HOST, SDK, SKILL, EXTENSION separation | |
 | [T76-endpoint-type-classifier](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T076-endpoint-type-classifier.md) | Endpoint Type Classifier — REPOSITORY_URL, DOCUMENTATION_URL, INSTALLER_URL, MCP_RUNTIME_ENDPOINT | |
 | [T77-url-evidence-tracking](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T077-url-evidence-tracking.md) | URL Evidence Tracking — Record why each URL was classified | |
@@ -113,6 +113,7 @@
 | [T90-source-adapter-updates](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T090-source-adapter-updates.md) | Source Adapter Updates — Treat registries as discovery sources, not proof | |
 | [T91-cli-coordinator-updates](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T091-cli-coordinator-updates.md) | CLI & Coordinator Updates — New pipeline stages | |
 | [T92-documentation-update](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T092-documentation-update.md) | Documentation Update — README, spec.md alignment | |
+| [T93-coordinator-refactor](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T093-coordinator-refactor.md) | Crawler Coordinator 重構 - 適配新 Entity 模型與協調器邏輯修復 | |
 
 ## Task 列表
 
@@ -177,21 +178,21 @@
 | [T57-llm-401-fallback-fix](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T057-llm-401-fallback-fix.md) | 修復 LLM API 401 — 模型名 typo 與 Docker 環境錯配 | ✅ done |
 | [T58-new-sources-mcpmarket-mcpserversorg](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T058-new-sources-mcpmarket-mcpserversorg.md) | 新增 3 Sources — mcpmarket/mcpservers.org/modelcontextprotocol/servers | ✅ done |
 | [T59-markdown-classification-fix](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T059-markdown-classification-fix.md) | 修復 Markdown Export 分類錯配 | ✅ done |
-| [T60-malicious-detector](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T060-malicious-detector.md) | 惡意倉庫偵測器 | 📋 pending |
-| [T61-malicious-integration](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T061-malicious-integration.md) | 整合惡意偵測進掃描管線 | 📋 pending |
-| [T62-malicious-exporter](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T062-malicious-exporter.md) | 惡意報表獨立輸出 | 📋 pending |
-| [T63-malicious-cli](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T063-malicious-cli.md) | CLI 整合惡意報表旗標 | 📋 pending |
-| [T64-injection-report](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T064-injection-report.md) | Injection 偵測獨立報表輸出 | 📋 pending |
-| [T65-canonical-entity-model](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T065-canonical-entity-model.md) | Canonical Entity Model — Unified entity struct for all AI ecosystem types | 📋 pending |
-| [T66-entity-classification-enum](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T066-entity-classification-enum.md) | Entity Classification Enum — Primary classification types (MCP_SERVER, MCP_CLIENT, AI_AGENT, etc.) | 📋 pending |
-| [T67-entity-status-enum](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T067-entity-status-enum.md) | Entity Status Enum — DISCOVERED, CANDIDATE, VERIFIED, QUARANTINED, REJECTED | 📋 pending |
-| [T68-taiwan-relevance-engine](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T068-taiwan-relevance-engine.md) | Taiwan Relevance Engine — Decouple from MCP identity, independent scoring | 📋 pending |
-| [T69-taiwan-signal-dictionary](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T069-taiwan-signal-dictionary.md) | Taiwan Signal Dictionary — Configurable Taiwan keywords/domains (YAML) | 📋 pending |
-| [T70-ai-relevance-engine](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T070-ai-relevance-engine.md) | AI Relevance Engine — Independent AI scoring (LLM, agent, RAG, etc.) | 📋 pending |
-| [T71-ai-signal-dictionary](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T071-ai-signal-dictionary.md) | AI Signal Dictionary — Configurable AI keywords/patterns (YAML) | 📋 pending |
-| [T72-entity-classifier](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T072-entity-classifier.md) | Entity Classifier — Rule-based primary classification with evidence | 📋 pending |
+| [T60-malicious-detector](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T060-malicious-detector.md) | 惡意倉庫偵測器 | ✅ done |
+| [T61-malicious-integration](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T061-malicious-integration.md) | 整合惡意偵測進掃描管線 | ✅ done |
+| [T62-malicious-exporter](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T062-malicious-exporter.md) | 惡意報表獨立輸出 | ✅ done |
+| [T63-malicious-cli](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T063-malicious-cli.md) | CLI 整合惡意報表旗標 | ✅ done |
+| [T64-injection-report](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T064-injection-report.md) | Injection 偵測獨立報表輸出 | ✅ done |
+| [T65-canonical-entity-model](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T065-canonical-entity-model.md) | Canonical Entity Model — Unified entity struct for all AI ecosystem types | ✅ done |
+| [T66-entity-classification-enum](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T066-entity-classification-enum.md) | Entity Classification Enum — Primary classification types (MCP_SERVER, MCP_CLIENT, AI_AGENT, etc.) | ✅ done |
+| [T67-entity-status-enum](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T067-entity-status-enum.md) | Entity Status Enum — DISCOVERED, CANDIDATE, VERIFIED, QUARANTINED, REJECTED | ✅ done |
+| [T68-taiwan-relevance-engine](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T068-taiwan-relevance-engine.md) | Taiwan Relevance Engine — Decouple from MCP identity, independent scoring | ✅ done |
+| [T69-taiwan-signal-dictionary](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T069-taiwan-signal-dictionary.md) | Taiwan Signal Dictionary — Configurable Taiwan keywords/domains (YAML) | ✅ done |
+| [T70-ai-relevance-engine](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T070-ai-relevance-engine.md) | AI Relevance Engine — Independent AI scoring (LLM, agent, RAG, etc.) | ✅ done |
+| [T71-ai-signal-dictionary](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T071-ai-signal-dictionary.md) | AI Signal Dictionary — Configurable AI keywords/patterns (YAML) | ✅ done |
+| [T72-entity-classifier](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T072-entity-classifier.md) | Entity Classifier — Rule-based primary classification with evidence | ✅ done |
 | [T73-llm-classifier-fallback](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T073-llm-classifier-fallback.md) | LLM Classifier Fallback — For ambiguous cases (score 20-55) | 📋 pending |
-| [T74-mcp-identity-engine](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T074-mcp-identity-engine.md) | MCP Identity Engine — Static analysis for MCP server implementation | 📋 pending |
+| [T74-mcp-identity-engine](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T074-mcp-identity-engine.md) | MCP Identity Engine — Static analysis for MCP server implementation | ✅ done |
 | [T75-mcp-role-detection](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T075-mcp-role-detection.md) | MCP Role Detection — CLIENT, HOST, SDK, SKILL, EXTENSION separation | 📋 pending |
 | [T76-endpoint-type-classifier](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T076-endpoint-type-classifier.md) | Endpoint Type Classifier — REPOSITORY_URL, DOCUMENTATION_URL, INSTALLER_URL, MCP_RUNTIME_ENDPOINT | 📋 pending |
 | [T77-url-evidence-tracking](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T077-url-evidence-tracking.md) | URL Evidence Tracking — Record why each URL was classified | 📋 pending |
@@ -210,7 +211,8 @@
 | [T90-source-adapter-updates](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T090-source-adapter-updates.md) | Source Adapter Updates — Treat registries as discovery sources, not proof | 📋 pending |
 | [T91-cli-coordinator-updates](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T091-cli-coordinator-updates.md) | CLI & Coordinator Updates — New pipeline stages | 📋 pending |
 | [T92-documentation-update](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T092-documentation-update.md) | Documentation Update — README, spec.md alignment | 📋 pending |
+| [T93-coordinator-refactor](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T093-coordinator-refactor.md) | Crawler Coordinator 重構 - 適配新 Entity 模型與協調器邏輯修復 | 📋 pending |
 
-**✅ done: 56 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 36**
+**✅ done: 70 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 23**
 
-> 自動生成於 2026-09-05 17:12
+> 自動生成於 2026-09-05 22:57
