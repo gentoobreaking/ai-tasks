@@ -3,7 +3,7 @@ github_issue: N/A
 title: 整合惡意偵測進掃描管線
 type: feat
 priority: high
-status: pending
+status: done
 depends_on: [T060]
 assignee: pi
 created: 2026-09-05

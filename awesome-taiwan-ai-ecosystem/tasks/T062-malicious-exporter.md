@@ -3,7 +3,7 @@ github_issue: N/A
 title: 惡意報表獨立輸出
 type: feat
 priority: high
-status: pending
+status: done
 depends_on: [T061]
 assignee: pi
 created: 2026-09-05
