@@ -514,25 +514,26 @@ type EndpointWithType struct {
 
 // RepositoryInfo holds GitHub/repository metadata (spec §7).
 type RepositoryInfo struct {
-	URL           string   `json:"url"`
-	Host          string   `json:"host"`
-	Owner         string   `json:"owner"`
-	Name          string   `json:"name"`
-	Stars         int      `json:"stars"`
-	Forks         int      `json:"forks"`
-	Watchers      int      `json:"watchers"`
-	OpenIssues    int      `json:"open_issues"`
-	Language      string   `json:"language"`
-	License       string   `json:"license"`
-	Topics        []string `json:"topics"`
-	DefaultBranch string   `json:"default_branch"`
-	Archived      bool     `json:"archived"`
-	Fork          bool     `json:"fork"`
-	Homepage      string   `json:"homepage"`
-	CreatedAt     RFC3339Time `json:"created_at"`
-	UpdatedAt     RFC3339Time `json:"updated_at"`
-	PushedAt      RFC3339Time `json:"pushed_at"`
-	LastCommitAt  RFC3339Time `json:"last_commit_at"`
+	URL           string            `json:"url"`
+	Host          string            `json:"host"`
+	Owner         string            `json:"owner"`
+	Name          string            `json:"name"`
+	Stars         int               `json:"stars"`
+	Forks         int               `json:"forks"`
+	Watchers      int               `json:"watchers"`
+	OpenIssues    int               `json:"open_issues"`
+	Language      string            `json:"language"`
+	License       string            `json:"license"`
+	Topics        []string          `json:"topics"`
+	DefaultBranch string            `json:"default_branch"`
+	Archived      bool              `json:"archived"`
+	Fork          bool              `json:"fork"`
+	Homepage      string            `json:"homepage"`
+	CreatedAt     RFC3339Time       `json:"created_at"`
+	UpdatedAt     RFC3339Time       `json:"updated_at"`
+	PushedAt      RFC3339Time       `json:"pushed_at"`
+	LastCommitAt  RFC3339Time       `json:"last_commit_at"`
+	PackageFiles  map[string]string `json:"package_files"`
 }
 
 // SourceReference holds discovery source info (spec §16, §64).

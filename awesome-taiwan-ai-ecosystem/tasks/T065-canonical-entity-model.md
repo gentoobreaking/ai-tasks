@@ -4,7 +4,7 @@ title: Canonical Entity Model — Unified entity struct for all AI ecosystem typ
 assignee: pi
 type: feat
 priority: high
-status: pending
+status: done
 depends_on: []
 created: 2026-09-05
 updated: 2026-09-05

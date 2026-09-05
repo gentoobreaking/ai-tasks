@@ -4,7 +4,7 @@ title: Entity Status Enum — DISCOVERED, CANDIDATE, VERIFIED, QUARANTINED, REJE
 assignee: pi
 type: feat
 priority: high
-status: pending
+status: done
 depends_on: ["T065"]
 created: 2026-09-05
 updated: 2026-09-05

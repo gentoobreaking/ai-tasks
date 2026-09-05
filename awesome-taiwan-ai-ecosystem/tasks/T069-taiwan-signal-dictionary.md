@@ -4,7 +4,7 @@ title: Taiwan Signal Dictionary — Configurable Taiwan keywords/domains (YAML)
 assignee: pi
 type: feat
 priority: high
-status: pending
+status: done
 depends_on: ["T068"]
 created: 2026-09-05
 updated: 2026-09-05

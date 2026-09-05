@@ -4,7 +4,7 @@ title: AI Relevance Engine — Independent AI scoring (LLM, agent, RAG, etc.)
 assignee: pi
 type: feat
 priority: high
-status: pending
+status: done
 depends_on: ["T065", "T066", "T067"]
 created: 2026-09-05
 updated: 2026-09-05

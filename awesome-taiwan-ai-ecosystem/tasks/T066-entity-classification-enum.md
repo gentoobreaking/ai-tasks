@@ -4,7 +4,7 @@ title: Entity Classification Enum — Primary classification types (MCP_SERVER, 
 assignee: pi
 type: feat
 priority: high
-status: pending
+status: done
 depends_on: ["T065"]
 created: 2026-09-05
 updated: 2026-09-05

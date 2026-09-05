@@ -4,7 +4,7 @@ title: Entity Classifier — Rule-based primary classification with evidence
 assignee: pi
 type: feat
 priority: high
-status: pending
+status: done
 depends_on: ["T065", "T066", "T067", "T068", "T070"]
 created: 2026-09-05
 updated: 2026-09-05
