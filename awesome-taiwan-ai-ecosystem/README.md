@@ -114,6 +114,9 @@
 | [T91-cli-coordinator-updates](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T091-cli-coordinator-updates.md) | CLI & Coordinator Updates — New pipeline stages | |
 | [T92-documentation-update](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T092-documentation-update.md) | Documentation Update — README, spec.md alignment | |
 | [T93-coordinator-refactor](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T093-coordinator-refactor.md) | Crawler Coordinator 重構 - 適配新 Entity 模型與協調器邏輯修復 | |
+| [T94-incremental-refactor](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T094-incremental-refactor.md) | Crawler Incremental 重構 - 適配新 Entity 模型與增量爬蟲邏輯修復 | |
+| [T95-storage-refactor](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T095-storage-refactor.md) | Storage Store 重構 - 適配新 Entity 模型與存儲邏輯修復 | |
+| [T96-classify-refactor](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T096-classify-refactor.md) | Classify/LLM 分類器與 Rules 完善 - 適配新模型 | |
 
 ## Task 列表
 
@@ -212,7 +215,10 @@
 | [T91-cli-coordinator-updates](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T091-cli-coordinator-updates.md) | CLI & Coordinator Updates — New pipeline stages | 📋 pending |
 | [T92-documentation-update](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T092-documentation-update.md) | Documentation Update — README, spec.md alignment | 📋 pending |
 | [T93-coordinator-refactor](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T093-coordinator-refactor.md) | Crawler Coordinator 重構 - 適配新 Entity 模型與協調器邏輯修復 | 📋 pending |
+| [T94-incremental-refactor](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T094-incremental-refactor.md) | Crawler Incremental 重構 - 適配新 Entity 模型與增量爬蟲邏輯修復 | 📋 pending |
+| [T95-storage-refactor](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T095-storage-refactor.md) | Storage Store 重構 - 適配新 Entity 模型與存儲邏輯修復 | 📋 pending |
+| [T96-classify-refactor](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T096-classify-refactor.md) | Classify/LLM 分類器與 Rules 完善 - 適配新模型 | 📋 pending |
 
-**✅ done: 70 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 23**
+**✅ done: 70 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 26**
 
-> 自動生成於 2026-09-05 22:57
+> 自動生成於 2026-09-05 22:58

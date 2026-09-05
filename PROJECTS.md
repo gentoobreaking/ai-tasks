@@ -1,6 +1,6 @@
 # 📁 Projects Dashboard
 
-> 最後更新: 2026-09-05 22:57 · 自動生成
+> 最後更新: 2026-09-05 22:59 · 自動生成
 
 ---
 
@@ -9,9 +9,9 @@
 | 指標 | 數量 |
 |------|------|
 | 專案數 | 63 |
-| 任務總數 | 1679 |
+| 任務總數 | 1681 |
 | ✅ 已完成 | 1592 |
-| ⬜ 待處理 | 24 |
+| ⬜ 待處理 | 26 |
 | 🔄 進行中 | 0 |
 | ⏭️ 跳過 | 63 |
 | 總完成率 | 98% |
@@ -38,6 +38,7 @@
 | awesome-taiwan-ai-ecosystem | [T091-cli-coordinator-updates](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T091-cli-coordinator-updates.md) | CLI & Coordinator Updates — New pipeline stages |
 | awesome-taiwan-ai-ecosystem | [T093-coordinator-refactor](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T093-coordinator-refactor.md) | Crawler Coordinator 重構 - 適配新 Entity 模型與協調器邏輯修復 |
 | awesome-taiwan-ai-ecosystem | [T094-incremental-refactor](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T094-incremental-refactor.md) | Crawler Incremental 重構 - 適配新 Entity 模型與增量爬蟲邏輯修復 |
+| awesome-taiwan-ai-ecosystem | [T095-storage-refactor](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T095-storage-refactor.md) | Storage Store 重構 - 適配新 Entity 模型與存儲邏輯修復 |
 
 ---
 
@@ -70,6 +71,8 @@
 | awesome-taiwan-ai-ecosystem | [T092-documentation-update](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T092-documentation-update.md) | Documentation Update — README, spec.md alignment | ⬜ |
 | awesome-taiwan-ai-ecosystem | [T093-coordinator-refactor](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T093-coordinator-refactor.md) | Crawler Coordinator 重構 - 適配新 Entity 模型與協調器邏輯修復 | ⬜ |
 | awesome-taiwan-ai-ecosystem | [T094-incremental-refactor](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T094-incremental-refactor.md) | Crawler Incremental 重構 - 適配新 Entity 模型與增量爬蟲邏輯修復 | ⬜ |
+| awesome-taiwan-ai-ecosystem | [T095-storage-refactor](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T095-storage-refactor.md) | Storage Store 重構 - 適配新 Entity 模型與存儲邏輯修復 | ⬜ |
+| awesome-taiwan-ai-ecosystem | [T096-classify-refactor](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T096-classify-refactor.md) | Classify/LLM 分類器與 Rules 完善 - 適配新模型 | ⬜ |
 
 ---
 
@@ -100,7 +103,7 @@ xychart-beta
 | ✅ | [agent-config](https://github.com/gentoobreaking/ai-tasks/tree/main/agent-config) | 9 | 9 | 0 | 0 | 0 | ████████████████████ 100% | 2026-04-09 |
 | ✅ | [ai-oncall](https://github.com/gentoobreaking/ai-tasks/tree/main/ai-oncall) | 22 | 22 | 0 | 0 | 0 | ████████████████████ 100% | 2026-08-26 |
 | ✅ | [automation-tools](https://github.com/gentoobreaking/ai-tasks/tree/main/automation-tools) | 1 | 1 | 0 | 0 | 0 | ████████████████████ 100% | 2026-05-16 |
-| ⬜ | [awesome-taiwan-ai-ecosystem](https://github.com/gentoobreaking/ai-tasks/tree/main/awesome-taiwan-ai-ecosystem) | 94 | 70 | 24 | 0 | 0 | ██████████████░░░░░░ 74% | 2026-09-05 |
+| ⬜ | [awesome-taiwan-ai-ecosystem](https://github.com/gentoobreaking/ai-tasks/tree/main/awesome-taiwan-ai-ecosystem) | 96 | 70 | 26 | 0 | 0 | ██████████████░░░░░░ 72% | 2026-09-05 |
 | ✅ | [backup-system](https://github.com/gentoobreaking/ai-tasks/tree/main/backup-system) | 5 | 5 | 0 | 0 | 0 | ████████████████████ 100% | 2026-04-15 |
 | ✅ | [claw-sessions-issue](https://github.com/gentoobreaking/ai-tasks/tree/main/claw-sessions-issue) | 1 | 1 | 0 | 0 | 0 | ████████████████████ 100% | 2026-04-16 |
 | ✅ | [clawhub-oauth-investigation](https://github.com/gentoobreaking/ai-tasks/tree/main/clawhub-oauth-investigation) | 2 | 2 | 0 | 0 | 0 | ████████████████████ 100% | 2026-04-22 |

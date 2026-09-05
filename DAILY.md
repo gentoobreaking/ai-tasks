@@ -1,6 +1,6 @@
 # 📅 Daily Dashboard - 2026-09-05
 
-> 最後更新: 2026-09-05 22:57 · 自動生成
+> 最後更新: 2026-09-05 22:58 · 自動生成
 
 ---
 
@@ -8,11 +8,11 @@
 
 | 指標 | 數量 |
 |------|------|
-| 新增任務 | 100 |
+| 新增任務 | 102 |
 | 完成任務 | 76 |
 | 進行中 | 0 |
-| 待處理 | 24 |
-| 完成率 | 76% |
+| 待處理 | 26 |
+| 完成率 | 74% |
 
 ---
 
@@ -20,10 +20,10 @@
 
 | 指標 | 數值 |
 |------|------|
-| 今日完成速率 | 100 任務 |
-| 近 7 日速率 | 100 任務 |
+| 今日完成速率 | 102 任務 |
+| 近 7 日速率 | 102 任務 |
 | 平均循環天數 | 0.0 天 |
-| 今日完成任務循環時間樣本 | 100 筆 |
+| 今日完成任務循環時間樣本 | 102 筆 |
 
 ---
 
@@ -125,6 +125,8 @@
 | awesome-taiwan-ai-ecosystem | [T092-documentation-update](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T092-documentation-update.md) | Documentation Update — README, spec.md alignment |
 | awesome-taiwan-ai-ecosystem | [T093-coordinator-refactor](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T093-coordinator-refactor.md) | Crawler Coordinator 重構 - 適配新 Entity 模型與協調器邏輯修復 |
 | awesome-taiwan-ai-ecosystem | [T094-incremental-refactor](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T094-incremental-refactor.md) | Crawler Incremental 重構 - 適配新 Entity 模型與增量爬蟲邏輯修復 |
+| awesome-taiwan-ai-ecosystem | [T095-storage-refactor](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T095-storage-refactor.md) | Storage Store 重構 - 適配新 Entity 模型與存儲邏輯修復 |
+| awesome-taiwan-ai-ecosystem | [T096-classify-refactor](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T096-classify-refactor.md) | Classify/LLM 分類器與 Rules 完善 - 適配新模型 |
 | mcp-go-core | [T099-resource-change-notifications](https://github.com/gentoobreaking/ai-tasks/blob/main/mcp-go-core/tasks/T099-resource-change-notifications.md) | P2 - MCP Resource Change Notifications (bidirectional) |
 | mcp-go-core | [T100-mcp-optional-methods-continued](https://github.com/gentoobreaking/ai-tasks/blob/main/mcp-go-core/tasks/T100-mcp-optional-methods-continued.md) | P3 - MCP Spec Conformance: Missing optional methods (prompts/create, notifications/list_changed) |
 | mcp-go-core | [T101-mcp-high-value-methods](https://github.com/gentoobreaking/ai-tasks/blob/main/mcp-go-core/tasks/T101-mcp-high-value-methods.md) | P1 - MCP Spec: Remaining high-value methods (templates/list, unsubscribe, roots/list, progress, message) |
@@ -239,6 +241,7 @@
 | awesome-taiwan-ai-ecosystem | [T091-cli-coordinator-updates](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T091-cli-coordinator-updates.md) | CLI & Coordinator Updates — New pipeline stages | high |
 | awesome-taiwan-ai-ecosystem | [T093-coordinator-refactor](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T093-coordinator-refactor.md) | Crawler Coordinator 重構 - 適配新 Entity 模型與協調器邏輯修復 | high |
 | awesome-taiwan-ai-ecosystem | [T094-incremental-refactor](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T094-incremental-refactor.md) | Crawler Incremental 重構 - 適配新 Entity 模型與增量爬蟲邏輯修復 | high |
+| awesome-taiwan-ai-ecosystem | [T095-storage-refactor](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T095-storage-refactor.md) | Storage Store 重構 - 適配新 Entity 模型與存儲邏輯修復 | high |
 
 ---
 
@@ -270,9 +273,11 @@ _無_
 | awesome-taiwan-ai-ecosystem | [T091-cli-coordinator-updates](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T091-cli-coordinator-updates.md) | CLI & Coordinator Updates — New pipeline stages | high |
 | awesome-taiwan-ai-ecosystem | [T093-coordinator-refactor](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T093-coordinator-refactor.md) | Crawler Coordinator 重構 - 適配新 Entity 模型與協調器邏輯修復 | high |
 | awesome-taiwan-ai-ecosystem | [T094-incremental-refactor](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T094-incremental-refactor.md) | Crawler Incremental 重構 - 適配新 Entity 模型與增量爬蟲邏輯修復 | high |
+| awesome-taiwan-ai-ecosystem | [T095-storage-refactor](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T095-storage-refactor.md) | Storage Store 重構 - 適配新 Entity 模型與存儲邏輯修復 | high |
 | awesome-taiwan-ai-ecosystem | [T073-llm-classifier-fallback](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T073-llm-classifier-fallback.md) | LLM Classifier Fallback — For ambiguous cases (score 20-55) | medium |
 | awesome-taiwan-ai-ecosystem | [T086-backward-compatibility](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T086-backward-compatibility.md) | Backward Compatibility — Keep awesome-taiwan-mcp.md as generated view | medium |
 | awesome-taiwan-ai-ecosystem | [T092-documentation-update](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T092-documentation-update.md) | Documentation Update — README, spec.md alignment | medium |
+| awesome-taiwan-ai-ecosystem | [T096-classify-refactor](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T096-classify-refactor.md) | Classify/LLM 分類器與 Rules 完善 - 適配新模型 | medium |
 | awesome-taiwan-ai-ecosystem | [T047-historical-snapshots](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T047-historical-snapshots.md) | > ⛔ Historical Snapshots — crawl run history + time-series data (Phase 2) | low |
 | awesome-taiwan-ai-ecosystem | [T048-rest-api](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T048-rest-api.md) | > ⛔ REST API — HTTP API for registry search + metadata (Phase 4) | low |
 | awesome-taiwan-ai-ecosystem | [T049-web-ui](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T049-web-ui.md) | > ⛔ Web UI — registry browse + Taiwan MCP discovery dashboard (Phase 4) | low |
