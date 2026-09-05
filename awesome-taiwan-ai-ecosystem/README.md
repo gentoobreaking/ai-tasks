@@ -50,6 +50,7 @@
 | Documentation — README with all required sections |
 | Final Verification — full build + test + crawl + export validation |
 | Regression Golden Dataset — TST-068 classification/identity/dedup accuracy |
+| > ⛔ Historical Snapshots — crawl run history + time-series data (Phase 2) |
 | Static Analysis CI — golangci-lint + gosec security linting |
 | Performance Benchmark — 10k candidates, <10min, no OOM |
 | Production Smoke Test — live GitHub + Registry crawl + export |
@@ -74,6 +75,7 @@
 | AI Signal Dictionary — Configurable AI keywords/patterns (YAML) |
 | Entity Classifier — Rule-based primary classification with evidence |
 | MCP Identity Engine — Static analysis for MCP server implementation |
+| MCP Role Detection — CLIENT, HOST, SDK, SKILL, EXTENSION separation |
 
 ## Skip 項目
 
@@ -91,11 +93,9 @@
 
 | Task | 名稱 | 說明 |
 |------|------|------|
-| [T47-historical-snapshots](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T047-historical-snapshots.md) | > ⛔ Historical Snapshots — crawl run history + time-series data (Phase 2) | |
 | [T48-rest-api](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T048-rest-api.md) | > ⛔ REST API — HTTP API for registry search + metadata (Phase 4) | |
 | [T49-web-ui](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T049-web-ui.md) | > ⛔ Web UI — registry browse + Taiwan MCP discovery dashboard (Phase 4) | |
 | [T73-llm-classifier-fallback](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T073-llm-classifier-fallback.md) | LLM Classifier Fallback — For ambiguous cases (score 20-55) | |
-| [T75-mcp-role-detection](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T075-mcp-role-detection.md) | MCP Role Detection — CLIENT, HOST, SDK, SKILL, EXTENSION separation | |
 | [T76-endpoint-type-classifier](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T076-endpoint-type-classifier.md) | Endpoint Type Classifier — REPOSITORY_URL, DOCUMENTATION_URL, INSTALLER_URL, MCP_RUNTIME_ENDPOINT | |
 | [T77-url-evidence-tracking](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T077-url-evidence-tracking.md) | URL Evidence Tracking — Record why each URL was classified | |
 | [T78-mcp-runtime-verifier](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T078-mcp-runtime-verifier.md) | MCP Runtime Verifier — initialize + tools/list handshake | |
@@ -168,7 +168,7 @@
 | [T44-documentation](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T044-documentation.md) | Documentation — README with all required sections | ✅ done |
 | [T45-final-verification](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T045-final-verification.md) | Final Verification — full build + test + crawl + export validation | ✅ done |
 | [T46-regression-golden](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T046-regression-golden.md) | Regression Golden Dataset — TST-068 classification/identity/dedup accuracy | ✅ done |
-| [T47-historical-snapshots](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T047-historical-snapshots.md) | > ⛔ Historical Snapshots — crawl run history + time-series data (Phase 2) | 📋 pending |
+| [T47-historical-snapshots](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T047-historical-snapshots.md) | > ⛔ Historical Snapshots — crawl run history + time-series data (Phase 2) | ✅ done |
 | [T48-rest-api](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T048-rest-api.md) | > ⛔ REST API — HTTP API for registry search + metadata (Phase 4) | 📋 pending |
 | [T49-web-ui](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T049-web-ui.md) | > ⛔ Web UI — registry browse + Taiwan MCP discovery dashboard (Phase 4) | 📋 pending |
 | [T50-static-analysis-ci](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T050-static-analysis-ci.md) | Static Analysis CI — golangci-lint + gosec security linting | ✅ done |
@@ -196,7 +196,7 @@
 | [T72-entity-classifier](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T072-entity-classifier.md) | Entity Classifier — Rule-based primary classification with evidence | ✅ done |
 | [T73-llm-classifier-fallback](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T073-llm-classifier-fallback.md) | LLM Classifier Fallback — For ambiguous cases (score 20-55) | 📋 pending |
 | [T74-mcp-identity-engine](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T074-mcp-identity-engine.md) | MCP Identity Engine — Static analysis for MCP server implementation | ✅ done |
-| [T75-mcp-role-detection](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T075-mcp-role-detection.md) | MCP Role Detection — CLIENT, HOST, SDK, SKILL, EXTENSION separation | 📋 pending |
+| [T75-mcp-role-detection](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T075-mcp-role-detection.md) | MCP Role Detection — CLIENT, HOST, SDK, SKILL, EXTENSION separation | ✅ done |
 | [T76-endpoint-type-classifier](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T076-endpoint-type-classifier.md) | Endpoint Type Classifier — REPOSITORY_URL, DOCUMENTATION_URL, INSTALLER_URL, MCP_RUNTIME_ENDPOINT | 📋 pending |
 | [T77-url-evidence-tracking](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T077-url-evidence-tracking.md) | URL Evidence Tracking — Record why each URL was classified | 📋 pending |
 | [T78-mcp-runtime-verifier](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T078-mcp-runtime-verifier.md) | MCP Runtime Verifier — initialize + tools/list handshake | 📋 pending |
@@ -219,6 +219,6 @@
 | [T95-storage-refactor](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T095-storage-refactor.md) | Storage Store 重構 - 適配新 Entity 模型與存儲邏輯修復 | 📋 pending |
 | [T96-classify-refactor](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T096-classify-refactor.md) | Classify/LLM 分類器與 Rules 完善 - 適配新模型 | 📋 pending |
 
-**✅ done: 70 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 26**
+**✅ done: 72 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 24**
 
-> 自動生成於 2026-09-05 22:58
+> 自動生成於 2026-09-06 00:53

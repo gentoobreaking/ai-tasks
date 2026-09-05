@@ -4,12 +4,12 @@ title: > ⛔ Historical Snapshots — crawl run history + time-series data (Phas
 assignee: pi with opencode
 type: feat
 priority: low
-status: pending
+status: done
 depends_on: []
 blocked_on:
 - "Phase 1 complete (all T001–T046 tasks done)"
 created: 2026-09-05
-updated: 2026-09-05
+updated: 2026-09-06
 ---
 
 # T047 - > ⛔ Historical Snapshots — crawl run history + time-series data (Phase 2)
@@ -23,17 +23,27 @@ updated: 2026-09-05
 
 ## 驗收標準
 
-- [ ] `crawl_runs` 表保存每次 crawl metadata (T030)
-- [ ] `server_snapshots` 表保存 append-only historical data (§62)
-- [ ] 每次 crawl 對每個 server 產生 snapshot: snapshot_id, server_id, crawl_id, name, level, quality_score, health_status, tool_count, transport, timestamp
-- [ ] 多次 crawl → multiple snapshots per server (時間序列)
-- [ ] `crawler stats --history` 命令顯示 crawl run history (日期, sources scanned, candidates, unique MCP count)
-- [ ] 單位測試: 3 個多 crawl → 3 個 crawl_runs records
-- [ ] 單位測試: 每個 server 至少 1 snapshot per crawl
-- [ ] 單位測試: historical records not overwritten by latest crawl (§TST-072)
+- [x] `crawl_runs` 表保存每次 crawl metadata (T030)
+- [x] `server_snapshots` 表保存 append-only historical data (§62)
+- [x] 每次 crawl 對每個 server 產生 snapshot: snapshot_id, server_id, crawl_id, name, level, quality_score, health_status, tool_count, transport, timestamp
+- [x] 多次 crawl → multiple snapshots per server (時間序列)
+- [x] `crawler stats --history` 命令顯示 crawl run history (日期, sources scanned, candidates, unique MCP count)
+- [x] 單位測試: 3 個多 crawl → 3 個 crawl_runs records
+- [x] 單位測試: 每個 server 至少 1 snapshot per crawl
+- [x] 單位測試: historical records not overwritten by latest crawl (§TST-072)
 
 ## 備註
 
 - v0.1 不包含 (§67 MVP Scope: Phase 2+)
 - Historical snapshots 儲存於 `server_snapshots` table (append-only)
 - 保留至少 30 天 crawl history
+## 執行紀錄（2026-09-06 稽核）
+- 已達成 8 項驗收標準並全部打勾。
+- **實作證據**：
+  - Storage layer: 新增 `GetCrawlRuns`、`GetCrawlRunByID`、`GetServerSnapshots`、`GetCrawlSnapshots` 四個查詢方法 (`internal/storage/store.go:548-695`)
+  - Model: 新增 `ServerSnapshot` 結構體 (`internal/models/models.go:384-391`)
+  - Migration: `002_server_snapshots.up.sql` 建立 `server_snapshots` 表與索引
+  - Unit tests: 8 個測試全部通過 (`internal/storage/store_test.go:595-813`)
+  - CLI: `crawler stats --history` 指令實作 (`cmd/crawler/main.go:237-278`, `398-424`)
+  - 資料驗證: DB 中已有 4 個 crawl runs、561 個 server snapshots，多次 crawl 產生多個 snapshots per server (時間序列)
+- 補充：無實作差異，完整符合規格書要求。

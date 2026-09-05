@@ -1,6 +1,6 @@
 # 📁 Projects Dashboard
 
-> 最後更新: 2026-09-05 22:59 · 自動生成
+> 最後更新: 2026-09-06 00:53 · 自動生成
 
 ---
 
@@ -10,8 +10,8 @@
 |------|------|
 | 專案數 | 63 |
 | 任務總數 | 1681 |
-| ✅ 已完成 | 1592 |
-| ⬜ 待處理 | 26 |
+| ✅ 已完成 | 1594 |
+| ⬜ 待處理 | 24 |
 | 🔄 進行中 | 0 |
 | ⏭️ 跳過 | 63 |
 | 總完成率 | 98% |
@@ -20,7 +20,6 @@
 
 | 專案 | 任務 | 標題 |
 |------|------|------|
-| awesome-taiwan-ai-ecosystem | [T075-mcp-role-detection](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T075-mcp-role-detection.md) | MCP Role Detection — CLIENT, HOST, SDK, SKILL, EXTENSION separation |
 | awesome-taiwan-ai-ecosystem | [T076-endpoint-type-classifier](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T076-endpoint-type-classifier.md) | Endpoint Type Classifier — REPOSITORY_URL, DOCUMENTATION_URL, INSTALLER_URL, MCP_RUNTIME_ENDPOINT |
 | awesome-taiwan-ai-ecosystem | [T077-url-evidence-tracking](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T077-url-evidence-tracking.md) | URL Evidence Tracking — Record why each URL was classified |
 | awesome-taiwan-ai-ecosystem | [T078-mcp-runtime-verifier](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T078-mcp-runtime-verifier.md) | MCP Runtime Verifier — initialize + tools/list handshake |
@@ -47,11 +46,9 @@
 
 | 專案 | 任務 | 標題 | 狀態 |
 |------|------|------|------|
-| awesome-taiwan-ai-ecosystem | [T047-historical-snapshots](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T047-historical-snapshots.md) | > ⛔ Historical Snapshots — crawl run history + time-series data (Phase 2) | ⬜ |
 | awesome-taiwan-ai-ecosystem | [T048-rest-api](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T048-rest-api.md) | > ⛔ REST API — HTTP API for registry search + metadata (Phase 4) | ⬜ |
 | awesome-taiwan-ai-ecosystem | [T049-web-ui](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T049-web-ui.md) | > ⛔ Web UI — registry browse + Taiwan MCP discovery dashboard (Phase 4) | ⬜ |
 | awesome-taiwan-ai-ecosystem | [T073-llm-classifier-fallback](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T073-llm-classifier-fallback.md) | LLM Classifier Fallback — For ambiguous cases (score 20-55) | ⬜ |
-| awesome-taiwan-ai-ecosystem | [T075-mcp-role-detection](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T075-mcp-role-detection.md) | MCP Role Detection — CLIENT, HOST, SDK, SKILL, EXTENSION separation | ⬜ |
 | awesome-taiwan-ai-ecosystem | [T076-endpoint-type-classifier](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T076-endpoint-type-classifier.md) | Endpoint Type Classifier — REPOSITORY_URL, DOCUMENTATION_URL, INSTALLER_URL, MCP_RUNTIME_ENDPOINT | ⬜ |
 | awesome-taiwan-ai-ecosystem | [T077-url-evidence-tracking](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T077-url-evidence-tracking.md) | URL Evidence Tracking — Record why each URL was classified | ⬜ |
 | awesome-taiwan-ai-ecosystem | [T078-mcp-runtime-verifier](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T078-mcp-runtime-verifier.md) | MCP Runtime Verifier — initialize + tools/list handshake | ⬜ |
@@ -80,8 +77,8 @@
 
 | 指標 | 數值 |
 |------|------|
-| 過去 7 天完成 | 251 |
-| 過去 30 天完成 | 813 |
+| 過去 7 天完成 | 253 |
+| 過去 30 天完成 | 815 |
 | 平均週期時間 | 2.6 天 |
 | 週期時間中位數 | 0.0 天 |
 
@@ -89,12 +86,12 @@
 ```mermaid
 xychart-beta
     title "過去 14 天任務完成趨勢"
-    x-axis ["08-23", "08-24", "08-25", "08-26", "08-27", "08-28", "08-29", "08-30", "08-31", "09-01", "09-02", "09-03", "09-04", "09-05"]
+    x-axis ["08-24", "08-25", "08-26", "08-27", "08-28", "08-29", "08-30", "08-31", "09-01", "09-02", "09-03", "09-04", "09-05", "09-06"]
     y-axis "完成數" 0 --> 165
-    line [0, 77, 165, 69, 0, 23, 0, 30, 24, 0, 0, 17, 104, 76]
+    line [77, 165, 69, 0, 23, 0, 30, 24, 0, 0, 17, 104, 75, 3]
 ```
 
-📊 總計: 585 | 日均: 41.8 | 本週: 251 | 📉 下降中
+📊 總計: 587 | 日均: 41.9 | 本週: 223 | 📉 下降中
 
 ## 📋 專案列表
 
@@ -103,7 +100,7 @@ xychart-beta
 | ✅ | [agent-config](https://github.com/gentoobreaking/ai-tasks/tree/main/agent-config) | 9 | 9 | 0 | 0 | 0 | ████████████████████ 100% | 2026-04-09 |
 | ✅ | [ai-oncall](https://github.com/gentoobreaking/ai-tasks/tree/main/ai-oncall) | 22 | 22 | 0 | 0 | 0 | ████████████████████ 100% | 2026-08-26 |
 | ✅ | [automation-tools](https://github.com/gentoobreaking/ai-tasks/tree/main/automation-tools) | 1 | 1 | 0 | 0 | 0 | ████████████████████ 100% | 2026-05-16 |
-| ⬜ | [awesome-taiwan-ai-ecosystem](https://github.com/gentoobreaking/ai-tasks/tree/main/awesome-taiwan-ai-ecosystem) | 96 | 70 | 26 | 0 | 0 | ██████████████░░░░░░ 72% | 2026-09-05 |
+| ⬜ | [awesome-taiwan-ai-ecosystem](https://github.com/gentoobreaking/ai-tasks/tree/main/awesome-taiwan-ai-ecosystem) | 96 | 72 | 24 | 0 | 0 | ███████████████░░░░░ 75% | 2026-09-06 |
 | ✅ | [backup-system](https://github.com/gentoobreaking/ai-tasks/tree/main/backup-system) | 5 | 5 | 0 | 0 | 0 | ████████████████████ 100% | 2026-04-15 |
 | ✅ | [claw-sessions-issue](https://github.com/gentoobreaking/ai-tasks/tree/main/claw-sessions-issue) | 1 | 1 | 0 | 0 | 0 | ████████████████████ 100% | 2026-04-16 |
 | ✅ | [clawhub-oauth-investigation](https://github.com/gentoobreaking/ai-tasks/tree/main/clawhub-oauth-investigation) | 2 | 2 | 0 | 0 | 0 | ████████████████████ 100% | 2026-04-22 |
