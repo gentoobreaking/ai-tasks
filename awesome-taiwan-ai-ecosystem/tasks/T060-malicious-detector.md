@@ -3,7 +3,7 @@ github_issue: N/A
 title: 惡意倉庫偵測器
 type: feat
 priority: high
-status: pending
+status: done
 depends_on: [T026]
 assignee: pi
 created: 2026-09-05

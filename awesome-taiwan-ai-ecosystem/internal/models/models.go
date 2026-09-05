@@ -12,6 +12,7 @@ const (
 	StatusActive   Status = "active"
 	StatusInactive Status = "inactive"
 	StatusArchived Status = "archived"
+	StatusUnknown  Status = "unknown"
 )
 
 // HealthStatus represents MCP endpoint health.
@@ -31,6 +32,9 @@ const (
 	TransportStdio          Transport = "stdio"
 	TransportSSE            Transport = "sse"
 	TransportStreamableHTTP Transport = "streamable-http"
+	TransportHTTP           Transport = "http"
+	TransportWebsocket      Transport = "websocket"
+	TransportUnknown        Transport = "unknown"
 )
 
 // DataSourceType classifies data source types.
@@ -101,11 +105,43 @@ var categoryAliases = map[string]string{
 	"fintech":           "finance",
 	"taiwan-stock":      "stock",
 	"taiwan_stock":      "stock",
-	"taiwan-stock-etf":  "stock",
-	"open data":         "open-data",
-	"traditional chinese": "traditional-chinese",
+	"stock-market":      "stock",
+	"etf-fund":          "etf",
+	"bank":              "banking",
+	"insurance-fin":     "insurance",
 	"real estate":       "real-estate",
-	"open_data":         "open-data",
+	"land-registry":     "land",
+	"housing-price":     "housing",
+	"gov":               "government",
+	"open data":         "open-data",
+	"legislative-yuan":  "legislative",
+	"judicial-yuan":     "judicial",
+	"gov-procurement":   "procurement",
+	"weather-cwa":       "weather",
+	"earthquake-tw":     "earthquake",
+	"transport-tw":      "transport",
+	"traffic-tw":        "traffic",
+	"railway-tw":        "railway",
+	"metro-tw":          "metro",
+	"bus-tw":            "bus",
+	"logistics-tw":      "logistics",
+	"payment-tw":        "payment",
+	"invoice-tw":        "invoice",
+	"tax-tw":            "tax",
+	"company-tw":        "company",
+	"business-tw":       "business",
+	"healthcare-tw":     "healthcare",
+	"education-tw":      "education",
+	"agriculture-tw":    "agriculture",
+	"food-tw":           "food",
+	"tourism-tw":        "tourism",
+	"geography-tw":      "geography",
+	"gis-tw":            "gis",
+	"chinese-traditional": "traditional-chinese",
+	"culture-tw":        "culture",
+	"ecommerce-tw":      "ecommerce",
+	"devops-tw":         "devops",
+	"news-tw":           "news",
 }
 
 // IsValidCategory returns true if cat is in the controlled vocabulary.
@@ -118,40 +154,25 @@ var ValidLevels = []string{"T0", "T1", "T2", "T3", "T4", "T5"}
 
 // IsValidLevel returns true if level is T0–T5.
 func IsValidLevel(level string) bool {
-	for _, l := range ValidLevels {
-		if l == level {
-			return true
-		}
+	switch level {
+	case "T0", "T1", "T2", "T3", "T4", "T5":
+		return true
+	default:
+		return false
 	}
-	return false
 }
 
 // NormalizeCategory maps any raw category to its functional parent or "other".
 func NormalizeCategory(cat string) string {
-	c0 := strings.TrimSpace(strings.ToLower(cat))
-	if c0 == "" {
-		return "other"
+	cat = strings.ToLower(strings.TrimSpace(cat))
+	if alias, ok := categoryAliases[cat]; ok {
+		cat = alias
 	}
-	if a, ok := categoryAliases[c0]; ok {
-		c0 = a
-	}
-	c := strings.ReplaceAll(c0, " ", "-")
-	c = strings.ReplaceAll(c, "_", "-")
-	for strings.Contains(c, "--") {
-		c = strings.ReplaceAll(c, "--", "-")
-	}
-	c = strings.Trim(c, "-")
-	if a, ok := categoryAliases[c]; ok {
-		c = a
-	}
-	if parent, ok := categoryParentMap[c]; ok {
+	if parent, ok := categoryParentMap[cat]; ok {
 		return parent
 	}
-	if functionalSet[c] {
-		return c
-	}
-	if validCategoriesSet[c] {
-		return "other"
+	if validCategoriesSet[cat] {
+		return cat
 	}
 	return "other"
 }
@@ -159,28 +180,15 @@ func NormalizeCategory(cat string) string {
 // NormalizeCategories deduplicates and normalizes a slice.
 func NormalizeCategories(cats []string) []string {
 	seen := make(map[string]bool)
-	var out []string
+	var result []string
 	for _, c := range cats {
-		n := NormalizeCategory(c)
-		if !seen[n] {
-			seen[n] = true
-			out = append(out, n)
+		norm := NormalizeCategory(c)
+		if !seen[norm] {
+			seen[norm] = true
+			result = append(result, norm)
 		}
 	}
-	if len(out) == 1 && out[0] == "other" {
-		return out
-	}
-	filtered := out[:0]
-	for _, v := range out {
-		if v == "other" {
-			continue
-		}
-		filtered = append(filtered, v)
-	}
-	if len(filtered) > 0 {
-		return filtered
-	}
-	return out
+	return result
 }
 
 // IsFunctionalKey reports whether key is a functional category key.
@@ -210,19 +218,16 @@ type Prompt struct {
 
 // RawRecord is a fully fetched candidate with all metadata (§12, §16).
 type RawRecord struct {
-	Candidate    RawCandidate      `json:"candidate"`
-	Repository   *RepositoryInfo   `json:"repository"`
-	Manifest     map[string]any    `json:"manifest"`
-	Tools        []Tool            `json:"tools"`
-	Resources    []Resource        `json:"resources"`
-	Prompts      []Prompt          `json:"prompts"`
-	Endpoints    []Endpoint        `json:"endpoints"`
-	Transport    []string          `json:"transport"`
-	Readme       string            `json:"readme"`
+	RawCandidate
+	Repository RepositoryInfo `json:"repository"`
+	Endpoints  []Endpoint     `json:"endpoints"`
+	Transport  []string       `json:"transport"`
+	Readme     string         `json:"readme"`
 	PackageFiles map[string]string `json:"package_files"`
 }
 
 // MCPServer is the normalized, classified MCP server (§13).
+// Deprecated: Use Entity with ToMCPServerView() instead.
 type MCPServer struct {
 	ID              string           `json:"id"`
 	Name            string           `json:"name"`
@@ -247,50 +252,34 @@ type MCPServer struct {
 	LastVerified    time.Time        `json:"last_verified"`
 }
 
-// TaiwanRelevance holds the Taiwan classification (§14, §17).
-type TaiwanRelevance struct {
-	Level      string     `json:"level"`
-	Score      float64    `json:"score"`
-	Confidence float64    `json:"confidence"`
-	Evidence   []Evidence `json:"evidence"`
-}
-
-// RepositoryInfo holds GitHub/repository metadata (§7).
-type RepositoryInfo struct {
-	URL           string    `json:"url"`
-	Host          string    `json:"host"`
-	Owner         string    `json:"owner"`
-	Name          string    `json:"name"`
-	Stars         int       `json:"stars"`
-	Forks         int       `json:"forks"`
-	Watchers      int       `json:"watchers"`
-	OpenIssues    int       `json:"open_issues"`
-	Language      string    `json:"language"`
-	License       string    `json:"license"`
-	Topics        []string  `json:"topics"`
-	DefaultBranch string    `json:"default_branch"`
-	Archived      bool      `json:"archived"`
-	Fork          bool      `json:"fork"`
-	Homepage      string    `json:"homepage"`
-	CreatedAt     time.Time `json:"created_at"`
-	UpdatedAt     time.Time `json:"updated_at"`
-	PushedAt      time.Time `json:"pushed_at"`
-}
-
 // Endpoint holds MCP endpoint connection info (§8).
 type Endpoint struct {
-	URL             string `json:"url"`
-	Transport       string `json:"transport"`
-	ProtocolVersion string `json:"protocol_version"`
-	TLS             bool   `json:"tls"`
-	Status          string `json:"status"`
+	URL            string            `json:"url"`
+	Transport      string            `json:"transport"`
+	ProtocolVersion string           `json:"protocol_version"`
+	Authentication AuthenticationInfo `json:"authentication"`
+	TLS            bool              `json:"tls"`
+	Status         string            `json:"status"`
+}
+
+// AuthenticationInfo holds authentication details.
+type AuthenticationInfo struct {
+	Required bool   `json:"required"`
+	Type     string `json:"type"`
 }
 
 // Tool represents an MCP tool (§9.1).
 type Tool struct {
-	Name        string         `json:"name"`
-	Description string         `json:"description"`
-	InputSchema map[string]any `json:"input_schema"`
+	Name        string                 `json:"name"`
+	Description string                 `json:"description"`
+	InputSchema map[string]any         `json:"input_schema"`
+	Annotations ToolAnnotations        `json:"annotations"`
+}
+
+// ToolAnnotations holds tool annotations.
+type ToolAnnotations struct {
+	ReadOnly    bool `json:"read_only"`
+	Destructive bool `json:"destructive"`
 }
 
 // Resource represents an MCP resource (§9.2).
@@ -303,89 +292,30 @@ type Resource struct {
 
 // DataSource represents a data source used by the MCP (§10).
 type DataSource struct {
-	Name         string         `json:"name"`
+	Name         string        `json:"name"`
 	Type         DataSourceType `json:"type"`
-	URL          string         `json:"url"`
-	Country      string         `json:"country"`
-	Official     bool           `json:"official"`
-	AccessMethod string         `json:"access_method"`
-}
-
-// Evidence holds scoring rule evidence (§16, §66).
-type Evidence struct {
-	Type        string  `json:"type"`
-	Source      string  `json:"source"`
-	Location    string  `json:"location"`
-	ContentHash string  `json:"content_hash"`
-	MatchedText string  `json:"matched_text"`
-	Rule        string  `json:"rule"`
-	Score       float64 `json:"score"`
-	Confidence  float64 `json:"confidence"`
-}
-
-// QualityScore holds the 100-point quality assessment (§15, §31).
-type QualityScore struct {
-	Score      int               `json:"score"`
-	Grade      string            `json:"grade"`
-	Components QualityComponents `json:"components"`
-}
-
-// QualityComponents holds the 10 scoring components (§31).
-type QualityComponents struct {
-	DataSource    int `json:"data_source"`
-	Maintenance   int `json:"maintenance"`
-	Documentation int `json:"documentation"`
-	MCPCompliance int `json:"mcp_compliance"`
-	ToolSchema    int `json:"tool_schema"`
-	Health        int `json:"health"`
-	Repository    int `json:"repository"`
-	License       int `json:"license"`
-	Security      int `json:"security"`
-	Community     int `json:"community"`
-}
-
-// SourceReference holds discovery source info (§16, §64).
-type SourceReference struct {
-	Source     string  `json:"source"`
-	URL        string  `json:"url"`
-	TrustScore float64 `json:"trust_score"`
+	URL          string        `json:"url"`
+	Country      string        `json:"country"`
+	Official     bool          `json:"official"`
+	AccessMethod string        `json:"access_method"`
 }
 
 // Level thresholds (§17)
 var LevelThresholds = []struct {
-	MinScore float64
-	Level    string
+	Level  string
+	Min    float64
+	Max    float64
 }{
-	{70, "T5"},
-	{55, "T4"},
-	{40, "T3"},
-	{20, "T2"},
-	{5, "T1"},
-	{0, "T0"},
+	{"T5", 70, 100},
+	{"T4", 55, 69.99},
+	{"T3", 40, 54.99},
+	{"T2", 20, 39.99},
+	{"T1", 5, 19.99},
+	{"T0", 0, 4.99},
 }
 
 // ScoreToLevel maps a score to its Taiwan relevance level.
+// Deprecated: Use ScoreToTaiwanLevel instead.
 func ScoreToLevel(score float64) string {
-	for _, th := range LevelThresholds {
-		if score >= th.MinScore {
-			return th.Level
-		}
-	}
-	return "T0"
-}
-
-// GradeForScore converts quality score to grade (§31).
-func GradeForScore(score int) string {
-	switch {
-	case score >= 90:
-		return "A"
-	case score >= 80:
-		return "B"
-	case score >= 60:
-		return "C"
-	case score >= 40:
-		return "D"
-	default:
-		return "F"
-	}
+	return string(ScoreToTaiwanLevel(score))
 }
