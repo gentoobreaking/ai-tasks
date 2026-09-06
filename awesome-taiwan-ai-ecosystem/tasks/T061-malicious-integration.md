@@ -19,12 +19,12 @@ updated: 2026-09-05
 
 ## 驗收標準
 
-- [ ] `internal/security/scanner.go` 修改：`Scan()` 呼叫 `MaliciousDetector.Detect()`
-- [ ] 惡意偵測結果轉為 `SecurityFinding{Type: "malicious_repository", Severity, Source: "malicious_detector", ...}`
-- [ ] `MCPServer.Security` 累積惡意發現，風險等級 HIGH/CRITICAL 時標記
-- [ ] 掃描摘要新增 `MaliciousDetected` 計數
-- [ ] 整合測試：mock GitHub API 回傳混淆 README，驗證 `Security` 欄位正確填入
-- [ ] `go test ./internal/security -v` 通過
+- [x] `internal/security/scanner.go` 修改：`Scan()` 呼叫 `MaliciousDetector.Detect()`
+- [x] 惡意偵測結果轉為 `SecurityFinding{Type: "malicious_repository", Severity, Source: "malicious_detector", ...}`
+- [x] `MCPServer.Security` 累積惡意發現，風險等級 HIGH/CRITICAL 時標記
+- [x] 掃描摘要新增 `MaliciousDetected` 計數
+- [x] 整合測試：mock GitHub API 回傳混淆 README，驗證 `Security` 欄位正確填入
+- [x] `go test ./internal/security -v` 通過
 
 ## 備註
 

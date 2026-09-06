@@ -19,16 +19,16 @@ updated: 2026-09-05
 
 ## 驗收標準
 
-- [ ] `internal/security/malicious.go` 建立，實作 `MaliciousDetector` struct
-- [ ] 偵測規則涵蓋：
-  - [ ] README 熵值檢測（Shannon entropy > 7.0 且非文檔結構）
-  - [ ] README 大小異常（> 100KB 且無標準 Markdown 標題/段落）
-  - [ ] 混淆代碼模式匹配：Lua VM 指令 (`while W[`, `0x[0-9A-F]`)、JS `eval(atob`、`base64` 大塊
-  - [ ] 帳號異常：建立 < 90 天 + 0 followers + 0 profile + repos < 5
-  - [ ] 非文本比例（non-printable chars > 30%）
-- [ ] 回傳 `MaliciousResult{RiskLevel, Signals[], Confidence}`，可串接進掃描管線
-- [ ] 單元測試覆蓋：正常 README、混淆 Lua、混淆 JS、大型二進位 README
-- [ ] `go test ./internal/security -v` 通過
+- [x] `internal/security/malicious.go` 建立，實作 `MaliciousDetector` struct
+- [x] 偵測規則涵蓋：
+  - [x] README 熵值檢測（Shannon entropy > 7.0 且非文檔結構）
+  - [x] README 大小異常（> 100KB 且無標準 Markdown 標題/段落）
+  - [x] 混淆代碼模式匹配：Lua VM 指令 (`while W[`, `0x[0-9A-F]`)、JS `eval(atob`、`base64` 大塊
+  - [x] 帳號異常：建立 < 90 天 + 0 followers + 0 profile + repos < 5
+  - [x] 非文本比例（non-printable chars > 30%）
+- [x] 回傳 `MaliciousResult{RiskLevel, Signals[], Confidence}`，可串接進掃描管線
+- [x] 單元測試覆蓋：正常 README、混淆 Lua、混淆 JS、大型二進位 README
+- [x] `go test ./internal/security -v` 通過
 
 ## 備註
 

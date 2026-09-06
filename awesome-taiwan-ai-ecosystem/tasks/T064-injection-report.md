@@ -19,15 +19,15 @@ updated: 2026-09-05
 
 ## 驗收標準
 
-- [ ] `internal/export/injection_exporter.go` 建立（或擴充 `malicious_exporter` 共用架構）
-- [ ] 輸出 `INJECTION_REPORT.md` 包含：
-  - [ ] 摘要：掃描總數、命中數、模式分布
-  - [ ] 詳細列表：Server、匹配模式、匹配文本位置、風險等級
-  - [ ] 統計表：各模式命中次數、Top 10 高風險 Server
-- [ ] CLI 旗標 `--injection-report` (bool, default true)
-- [ ] 輸出目錄：`registry/security/injection/`
-- [ ] 測試：含已知 injection fixture 驗證輸出
-- [ ] `go test ./internal/export -v` 通過
+- [x] `internal/export/injection_exporter.go` 建立（或擴充 `malicious_exporter` 共用架構）
+- [x] 輸出 `INJECTION_REPORT.md` 包含：
+  - [x] 摘要：掃描總數、命中數、模式分布
+  - [x] 詳細列表：Server、匹配模式、匹配文本位置、風險等級
+  - [x] 統計表：各模式命中次數、Top 10 高風險 Server
+- [x] CLI 旗標 `--injection-report` (bool, default true)
+- [x] 輸出目錄：`registry/security/injection/`
+- [x] 測試：含已知 injection fixture 驗證輸出
+- [x] `go test ./internal/export -v` 通過
 
 ## 備註
 

@@ -19,15 +19,15 @@ updated: 2026-09-05
 
 ## 驗收標準
 
-- [ ] `cmd/crawler/main.go` 新增：
+- [x] `cmd/crawler/main.go` 新增：
   - `--malicious-report` (bool, default true) — 輸出 MALICIOUS_REPORT.md
   - `--malicious-dir` (string, default "registry/malicious") — 輸出目錄
   - `--malicious-threshold` (string, default "MEDIUM") — 最低風險等級輸出
-- [ ] `crawl` 指令結束時自動生成報表
-- [ ] `export` 指令新增 `--malicious` 旗標單獨輸出惡意報表
-- [ ] 旗標說明更新於 `--help`
+- [ ] `crawl` 指令結束時自動生成報表 — **未完成**，僅掃描未生成報表（程式碼印出 "Malicious report generation skipped"）
+- [ ] `export` 指令新增 `--malicious` 旗標單獨輸出惡意報表 — **未完成**，export 子命令僅有 `--markdown` 旗標
+- [x] 旗標說明更新於 `--help`
 - [ ] 整合測試：`./crawler crawl --malicious-report=false` 不生成報表
-- [ ] `go build ./cmd/crawler` 通過
+- [x] `go build ./cmd/crawler` 通過
 
 ## 備註
 

@@ -32,10 +32,10 @@ updated: 2026-09-06
   - [x] Registry Views 列表與說明
   - [x] 快速開始：安裝、配置、運行 `crawler run`
   - [x] 開發指南：測試、遷移、貢獻
-- [x] `spec.md` 更新：
-  - [x] 與 `TAIWAN_AI_ECOSYSTEM_REGISTRY_SPEC.md` 對齊
-  - [x] 移除舊的 MCP-centric 描述
-  - [x] 更新 schema 參考新 Entity 模型
+- [ ] `spec.md` 更新： — **未完成**，spec.md 檔案不存在
+  - [ ] 與 `TAIWAN_AI_ECOSYSTEM_REGISTRY_SPEC.md` 對齊
+  - [ ] 移除舊的 MCP-centric 描述
+  - [ ] 更新 schema 參考新 Entity 模型
 - [x] `AGENTS.md` 更新（如存在）：
   - [x] 專案結構說明
   - [x] 開發命令、測試命令
