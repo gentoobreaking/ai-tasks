@@ -1,6 +1,6 @@
 # 📅 Daily Dashboard - 2026-09-06
 
-> 最後更新: 2026-09-06 18:32 · 自動生成
+> 最後更新: 2026-09-06 19:10 · 自動生成
 
 ---
 
@@ -74,7 +74,7 @@ _無_
 | 專案 | 任務 | 標題 | 優先 |
 | -- | -- | -- | -- |
 | awesome-taiwan-ai-ecosystem | [T048-rest-api](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T048-rest-api.md) | > ⛔ REST API — HTTP API for registry search + metadata (Phase 4) | low |
-| awesome-taiwan-ai-ecosystem | [T049-web-ui](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T049-web-ui.md) | > ⛔ Web UI — registry browse + Taiwan MCP discovery dashboard (Phase 4) | low |
+| awesome-taiwan-ai-ecosystem | [T049-web-ui](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T049-web-ui.md) | > ⛔ Web UI — registry browse + Taiwan AI Ecosystem Registry discovery dashboard (Phase 4) | low |
 
 ---
 

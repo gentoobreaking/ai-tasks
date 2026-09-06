@@ -116,7 +116,7 @@
 | Task | 名稱 | 說明 |
 |------|------|------|
 | [T48-rest-api](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T048-rest-api.md) | > ⛔ REST API — HTTP API for registry search + metadata (Phase 4) | |
-| [T49-web-ui](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T049-web-ui.md) | > ⛔ Web UI — registry browse + Taiwan MCP discovery dashboard (Phase 4) | |
+| [T49-web-ui](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T049-web-ui.md) | > ⛔ Web UI — registry browse + Taiwan AI Ecosystem Registry discovery dashboard (Phase 4) | |
 
 ## Task 列表
 
@@ -170,7 +170,7 @@
 | [T46-regression-golden](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T046-regression-golden.md) | Regression Golden Dataset — TST-068 classification/identity/dedup accuracy | ✅ done |
 | [T47-historical-snapshots](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T047-historical-snapshots.md) | > ⛔ Historical Snapshots — crawl run history + time-series data (Phase 2) | ✅ done |
 | [T48-rest-api](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T048-rest-api.md) | > ⛔ REST API — HTTP API for registry search + metadata (Phase 4) | 📋 pending |
-| [T49-web-ui](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T049-web-ui.md) | > ⛔ Web UI — registry browse + Taiwan MCP discovery dashboard (Phase 4) | 📋 pending |
+| [T49-web-ui](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T049-web-ui.md) | > ⛔ Web UI — registry browse + Taiwan AI Ecosystem Registry discovery dashboard (Phase 4) | 📋 pending |
 | [T50-static-analysis-ci](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T050-static-analysis-ci.md) | Static Analysis CI — golangci-lint + gosec security linting | ✅ done |
 | [T51-performance-benchmark](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T051-performance-benchmark.md) | Performance Benchmark — 10k candidates, <10min, no OOM | ✅ done |
 | [T52-production-smoke](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T052-production-smoke.md) | Production Smoke Test — live GitHub + Registry crawl + export | ✅ done |
@@ -221,4 +221,4 @@
 
 **✅ done: 94 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 2**
 
-> 自動生成於 2026-09-06 18:32
+> 自動生成於 2026-09-06 19:10
