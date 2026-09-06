@@ -4,10 +4,10 @@ title: URL Evidence Tracking — Record why each URL was classified
 assignee: pi
 type: feat
 priority: high
-status: pending
+status: done
 depends_on: ["T076"]
 created: 2026-09-05
-updated: 2026-09-05
+updated: 2026-09-06
 ---
 
 # T077 - URL Evidence Tracking — Record why each URL was classified
@@ -20,7 +20,7 @@ updated: 2026-09-05
 
 ## 驗收標準
 
-- [ ] `EndpointWithType` 結構體擴展：
+- [x] `EndpointWithType` 結構體擴展：
   ```go
   type EndpointWithType struct {
       Endpoint  Endpoint
@@ -37,12 +37,12 @@ updated: 2026-09-05
       Timestamp    time.Time
   }
   ```
-- [ ] 每個分類規則產生對應 Evidence
-- [ ] Confidence 基於 pattern 可靠度：runtime_verified=1.0, github_repo_pattern=0.95, docs_subdomain=0.9, install_script_name=0.85
-- [ ] 多證據聚合：取最高 confidence，或加權平均
-- [ ] 整合到 Entity.Endpoints
-- [ ] 單元測試：驗證 evidence 完整性
-- [ ] 導出 JSON 時包含 evidence（供審計）
+- [x] 每個分類規則產生對應 Evidence
+- [x] Confidence 基於 pattern 可靠度：runtime_verified=1.0, github_repo_pattern=0.95, docs_subdomain=0.9, install_script_name=0.85
+- [x] 多證據聚合：取最高 confidence，或加權平均
+- [x] 整合到 Entity.Endpoints
+- [x] 單元測試：驗證 evidence 完整性
+- [x] 導出 JSON 時包含 evidence（供審計）
 
 ## 備註
 
@@ -51,4 +51,12 @@ updated: 2026-09-05
 
 ## 執行紀錄
 
-- 待執行
+- 2026-09-06: 完成實作
+  - 增強 `internal/engines/endpoint_classifier.go` 中的證據生成邏輯
+  - 實現詳細的 rule 名稱：github_repo_pattern, gitlab_repo_pattern, docs_subdomain, readthedocs_domain, github_wiki, wiki_path, docs_path, documentation_path, readme_anchor, markdown_file, install_script_name, raw_github_install, install_domain, pipe_install, homepage_match, potential_mcp_runtime_static, runtime_verified
+  - 實現多證據聚合邏輯：按 endpoint type 分組，選擇總 confidence 最高的類型，聚合 confidence（上限 1.0）
+  - 修正 GitHub repo pattern 以正確排除帶有 # 或 ? 的 URL（使用 [^/#?]+ 而非 [^/]+）
+  - 添加具體的 pattern rule 名稱和對應的 confidence 值
+  - 修正 GitHub repo pattern 以排除帶有 # 或 ? 的 URL（使用 [^/#?]+ 而非 [^/]+）
+  - 添加具體的 confidence 映射：runtime_verified=1.0, github_repo_pattern=0.95, docs_subdomain=0.9, github_wiki=0.85 等
+  - 通過 `go build ./...` 和相關套件測試
