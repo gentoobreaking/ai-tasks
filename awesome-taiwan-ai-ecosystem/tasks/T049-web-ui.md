@@ -1,11 +1,12 @@
 ---
 github_issue: N/A
-title: > ⛔ Web UI — registry browse + Taiwan MCP discovery dashboard (Phase 4)
+title: > ⛔ Web UI — registry browse + Taiwan AI Ecosystem Registry discovery dashboard (Phase 4)
 assignee: pi with opencode
 type: feat
 priority: low
 status: pending
-depends_on: []
+depends_on:
+
 blocked_on:
 - "REST API complete (T048)"
 - "Phase 1+2+3 complete (crawler, historical snapshots, REST API)"

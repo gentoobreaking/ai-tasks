@@ -4,8 +4,9 @@ title: Storage Store 重構 - 適配新 Entity 模型與存儲邏輯修復
 type: refactor
 priority: high
 status: done
-assignee: pi
+assignee: pi with opencode
 created: 2026-09-05
+depends_on: []
 updated: 2026-09-05
 ---
 

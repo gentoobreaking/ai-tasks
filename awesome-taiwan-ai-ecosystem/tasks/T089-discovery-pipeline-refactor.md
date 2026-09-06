@@ -1,11 +1,15 @@
 ---
 github_issue: N/A
 title: Discovery Pipeline Refactor — Broad discovery (Taiwan + AI), no MCP keyword filter
-assignee: pi
+assignee: pi with opencode
 type: feat
 priority: high
 status: done
-depends_on: ["T065", "T068", "T070", "T072"]
+depends_on:
+  - T065
+  - T068
+  - T070
+  - T072
 created: 2026-09-05
 updated: 2026-09-05
 ---

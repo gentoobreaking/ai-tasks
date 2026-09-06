@@ -1,11 +1,12 @@
 ---
 github_issue: N/A
 title: LLM Classifier Fallback — For ambiguous cases (score 20-55)
-assignee: pi
+assignee: pi with opencode
 type: feat
 priority: medium
 status: done
-depends_on: ["T072"]
+depends_on:
+  - T072
 created: 2026-09-05
 updated: 2026-09-06
 ---

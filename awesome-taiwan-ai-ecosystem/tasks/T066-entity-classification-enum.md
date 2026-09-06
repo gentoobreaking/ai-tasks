@@ -1,11 +1,12 @@
 ---
 github_issue: N/A
 title: Entity Classification Enum — Primary classification types (MCP_SERVER, MCP_CLIENT, AI_AGENT, etc.)
-assignee: pi
+assignee: pi with opencode
 type: feat
 priority: high
 status: done
-depends_on: ["T065"]
+depends_on:
+  - T065
 created: 2026-09-05
 updated: 2026-09-05
 ---
@@ -20,41 +21,41 @@ updated: 2026-09-05
 
 ## 驗收標準
 
-- [ ] `PrimaryClassification` string enum 定義（規格書 §2 完整列表）：
-  - [ ] `MCP_SERVER`
-  - [ ] `MCP_CLIENT`
-  - [ ] `MCP_HOST`
-  - [ ] `MCP_SDK`
-  - [ ] `MCP_LIBRARY`
-  - [ ] `MCP_EXTENSION`
-  - [ ] `MCP_SKILL`
-  - [ ] `MCP_COLLECTION`
-  - [ ] `AI_AGENT`
-  - [ ] `AI_TOOL`
-  - [ ] `AI_SDK`
-  - [ ] `AI_FRAMEWORK`
-  - [ ] `AI_SKILL`
-  - [ ] `AI_KNOWLEDGE_BASE`
-  - [ ] `AI_DATASET`
-  - [ ] `AI_API`
-  - [ ] `AI_APPLICATION`
-  - [ ] `AI_INFRASTRUCTURE`
-  - [ ] `AI_PLUGIN`
-  - [ ] `AI_TUTORIAL`
-  - [ ] `AI_EXAMPLE`
-  - [ ] `AI_COLLECTION`
-  - [ ] `AI_REGISTRY`
-  - [ ] `AI_RELATED_PROJECT`
-  - [ ] `NON_AI_PROJECT`
-  - [ ] `UNKNOWN`
-- [ ] `MCPRole` string enum 定義：
-  - [ ] `SERVER`, `CLIENT`, `HOST`, `SDK`, `LIBRARY`, `EXTENSION`, `SKILL`, `NONE`
-- [ ] `IsMCPRelated(classification PrimaryClassification) bool` helper 函數
-- [ ] `IsAIRelated(classification PrimaryClassification) bool` helper 函數
-- [ ] `ValidPrimaryClassifications` slice 包含所有有效值
-- [ ] `IsValidPrimaryClassification(c string) bool` 驗證函數
-- [ ] JSON marshal/unmarshal 測試
-- [ ] 單元測試覆蓋所有 enum 值
+- [x] `PrimaryClassification` string enum 定義（規格書 §2 完整列表）：
+  - [x] `MCP_SERVER`
+  - [x] `MCP_CLIENT`
+  - [x] `MCP_HOST`
+  - [x] `MCP_SDK`
+  - [x] `MCP_LIBRARY`
+  - [x] `MCP_EXTENSION`
+  - [x] `MCP_SKILL`
+  - [x] `MCP_COLLECTION`
+  - [x] `AI_AGENT`
+  - [x] `AI_TOOL`
+  - [x] `AI_SDK`
+  - [x] `AI_FRAMEWORK`
+  - [x] `AI_SKILL`
+  - [x] `AI_KNOWLEDGE_BASE`
+  - [x] `AI_DATASET`
+  - [x] `AI_API`
+  - [x] `AI_APPLICATION`
+  - [x] `AI_INFRASTRUCTURE`
+  - [x] `AI_PLUGIN`
+  - [x] `AI_TUTORIAL`
+  - [x] `AI_EXAMPLE`
+  - [x] `AI_COLLECTION`
+  - [x] `AI_REGISTRY`
+  - [x] `AI_RELATED_PROJECT`
+  - [x] `NON_AI_PROJECT`
+  - [x] `UNKNOWN`
+- [x] `MCPRole` string enum 定義：
+  - [x] `SERVER`, `CLIENT`, `HOST`, `SDK`, `LIBRARY`, `EXTENSION`, `SKILL`, `NONE`
+- [x] `IsMCPRelated(classification PrimaryClassification) bool` helper 函數
+- [x] `IsAIRelated(classification PrimaryClassification) bool` helper 函數
+- [x] `ValidPrimaryClassifications` slice 包含所有有效值
+- [x] `IsValidPrimaryClassification(c string) bool` 驗證函數
+- [x] JSON marshal/unmarshal 測試
+- [x] 單元測試覆蓋所有 enum 值
 
 ## 備註
 
@@ -67,4 +68,10 @@ updated: 2026-09-05
 
 ## 執行紀錄
 
-- 待執行
+- 2026-09-06: 完成實作成果，代碼與規格書對齊。
+- `internal/models/classification.go` 定義 25 種 PrimaryClassification string enum values，對應規格書 §2 完整列表
+- `MCPRole` string enum 定義 8 種角色：SERVER, CLIENT, HOST, SDK, LIBRARY, EXTENSION, SKILL, NONE
+- `IsMCPRelated()` 和 `IsAIRelated()` helper 函數已實現
+- `ValidPrimaryClassifications` slice 和 `IsValidPrimaryClassification()` 驗證函數已實現
+- `internal/models/entity_test.go` 包含 TestPrimaryClassification_JSONRoundTrip 等單元測試
+- `go test ./internal/models/... -v -count=1` — PASS

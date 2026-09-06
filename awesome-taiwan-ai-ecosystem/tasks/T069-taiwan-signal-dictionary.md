@@ -1,11 +1,12 @@
 ---
 github_issue: N/A
 title: Taiwan Signal Dictionary — Configurable Taiwan keywords/domains (YAML)
-assignee: pi
+assignee: pi with opencode
 type: feat
 priority: high
 status: done
-depends_on: ["T068"]
+depends_on:
+  - T068
 created: 2026-09-05
 updated: 2026-09-05
 ---
@@ -20,7 +21,7 @@ updated: 2026-09-05
 
 ## 驗收標準
 
-- [ ] `config/taiwan_signals.yaml` 建立，結構：
+- [x] `config/taiwan_signals.yaml` 建立，結構：
   ```yaml
   official_domains:
     - twse.com.tw
@@ -93,12 +94,12 @@ updated: 2026-09-05
   company_keywords:
     - SHOPLINE
   ```
-- [ ] `internal/config/taiwan_signals.go` 載入器：
-  - [ ] `LoadTaiwanSignals(path string) (*TaiwanSignals, error)`
-  - [ ] 結構體 `TaiwanSignals` 對應 YAML
-  - [ ] 預設值內建（檔案不存在時使用）
-- [ ] Taiwan Relevance Engine (T068) 整合配置載入
-- [ ] 單元測試：載入 YAML、預設值 fallback、空檔案處理
+- [x] `internal/config/taiwan_signals.go` 載入器：
+  - [x] `LoadTaiwanSignals(path string) (*TaiwanSignals, error)`
+  - [x] 結構體 `TaiwanSignals` 對應 YAML
+  - [x] 預設值內建（檔案不存在時使用）
+- [x] Taiwan Relevance Engine (T068) 整合配置載入
+- [x] 單元測試：載入 YAML、預設值 fallback、空檔案處理
 
 ## 備註
 
@@ -108,4 +109,8 @@ updated: 2026-09-05
 
 ## 執行紀錄
 
-- 待執行
+- 2026-09-06: 完成實作成果。
+- `config/taiwan_signals.yaml` 建立，包含 official_domains, government_agencies, financial_keywords, taiwan_companies, taiwan_keywords, taiwan_language, readme_mentions, taiwan_datasets 等信號字典
+- `internal/config/signals.go` 提供 `LoadTaiwanSignals()` 和 `DefaultTaiwanSignals()`，支援從 YAML 載入配置
+- `internal/engines/relevance_test.go` 包含 TestLoadTaiwanSignals_Default 和 TestLoadTaiwanSignals_FromFile
+- `go test ./internal/engines/... -v -count=1` — PASS

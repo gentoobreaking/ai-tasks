@@ -1,11 +1,12 @@
 ---
 github_issue: N/A
 title: Canonical Entity Model — Unified entity struct for all AI ecosystem types
-assignee: pi
+assignee: pi with opencode
 type: feat
 priority: high
 status: done
-depends_on: []
+depends_on:
+
 created: 2026-09-05
 updated: 2026-09-05
 ---
@@ -27,24 +28,24 @@ updated: 2026-09-05
 
 ## 驗收標準
 
-- [ ] `internal/models/entity.go` 新建，定義 `Entity` 結構體包含：
-  - [ ] `ID` (sha256 hex), `Name`, `Slug`, `Description`
-  - [ ] `Classification` 嵌套結構：`Primary` (enum), `Confidence` (float64), `Evidence` ([]Evidence), `MCPRole` (enum: SERVER/CLIENT/HOST/SDK/LIBRARY/EXTENSION/SKILL/NONE)
-  - [ ] `TaiwanRelevance` (Score, Level T0-T5, Evidence, Confidence) — 獨立於 MCP
-  - [ ] `AIRelevance` (Score, Level, Evidence, Confidence) — 新增，獨立於 MCP
-  - [ ] `MCPIdentity` (Status enum: CANDIDATE/STATIC_VERIFIED/RUNTIME_VERIFIED/NOT_MCP, Evidence, Confidence) — 新增
-  - [ ] `RuntimeVerification` (Status, InitializeResult, ToolsListResult, Timestamp) — 新增
-  - [ ] `SecurityStatus` (Status enum: CLEAN/SUSPICIOUS/QUARANTINED/BLOCKED, Findings, Timestamp) — 新增
-  - [ ] `Quality` (Score 0-100, Grade A-F, Components) — 獨立於分類
-  - [ ] `Repository` (RepositoryInfo), `Endpoints` ([]Endpoint with Type classification)
-  - [ ] `EntityStatus` (enum: DISCOVERED/CANDIDATE/VERIFIED/QUARANTINED/REJECTED) — 新增
-  - [ ] `Sources` ([]SourceReference), `FirstSeen`, `LastSeen`, `LastVerified`
-- [ ] 所有 enum 使用 string constants (非 iota)
-- [ ] 所有時間欄位使用 RFC3339 格式 JSON
-- [ ] JSON field names 使用 snake_case
-- [ ] 所有 struct 支援 JSON marshal/unmarshal round-trip
-- [ ] 單元測試：每個 struct 的 JSON round-trip 測試
-- [ ] 現有 `MCPServer` 可透過 `Entity.ToMCPServerView()` 轉換（向後相容）
+- [x] `internal/models/entity.go` 新建，定義 `Entity` 結構體包含：
+  - [x] `ID` (sha256 hex), `Name`, `Slug`, `Description`
+  - [x] `Classification` 嵌套結構：`Primary` (enum), `Confidence` (float64), `Evidence` ([]Evidence), `MCPRole` (enum: SERVER/CLIENT/HOST/SDK/LIBRARY/EXTENSION/SKILL/NONE)
+  - [x] `TaiwanRelevance` (Score, Level T0-T5, Evidence, Confidence) — 獨立於 MCP
+  - [x] `AIRelevance` (Score, Level, Evidence, Confidence) — 新增，獨立於 MCP
+  - [x] `MCPIdentity` (Status enum: CANDIDATE/STATIC_VERIFIED/RUNTIME_VERIFIED/NOT_MCP, Evidence, Confidence) — 新增
+  - [x] `RuntimeVerification` (Status, InitializeResult, ToolsListResult, Timestamp) — 新增
+  - [x] `SecurityStatus` (Status enum: CLEAN/SUSPICIOUS/QUARANTINED/BLOCKED, Findings, Timestamp) — 新增
+  - [x] `Quality` (Score 0-100, Grade A-F, Components) — 獨立於分類
+  - [x] `Repository` (RepositoryInfo), `Endpoints` ([]Endpoint with Type classification)
+  - [x] `EntityStatus` (enum: DISCOVERED/CANDIDATE/VERIFIED/QUARANTINED/REJECTED) — 新增
+  - [x] `Sources` ([]SourceReference), `FirstSeen`, `LastSeen`, `LastVerified`
+- [x] 所有 enum 使用 string constants (非 iota)
+- [x] 所有時間欄位使用 RFC3339 格式 JSON
+- [x] JSON field names 使用 snake_case
+- [x] 所有 struct 支援 JSON marshal/unmarshal round-trip
+- [x] 單元測試：每個 struct 的 JSON round-trip 測試
+- [x] 現有 `MCPServer` 可透過 `Entity.ToMCPServerView()` 轉換（向後相容）
 
 ## 備註
 
@@ -66,4 +67,11 @@ updated: 2026-09-05
 
 ## 執行紀錄
 
-- 待執行
+- 2026-09-06: 完成實作成果，代碼與規格書對齊。
+- `internal/models/entity.go` 已建立 `Entity` 結構體，包含所有必需字段：ID, Name, Slug, Description, Classification (嵌套 ClassificationResult), TaiwanRelevance, AIRelevance, MCPIdentity, RuntimeVerification, SecurityStatusDetail, QualityScore, RepositoryInfo, Endpoints ([]EndpointWithType), Tools, Resources, Prompts, DataSources, EntityStatus, Sources, FirstSeen, LastSeen, LastVerified
+- 所有 enum 使用 string constants (非 iota)：EntityStatus, MCPIdentityStatus, SecurityStatus, EndpointType, MCPRole, PrimaryClassification 等
+- 所有時間欄位使用 RFC3339Time（custom MarshalJSON/UnmarshalJSON），JSON field names 使用 snake_case
+- `Entity.ToMCPServerView()` 提供向後兼容（`internal/models/entity.go:560`）
+- 單元測試：`internal/models/entity_test.go` 包含 TestEntity_JSONRoundTrip、TestToMCPServerView 等 11 項 JSON round-trip 測試
+- `go test ./internal/models/... -v -count=1` — PASS (all tests)
+- `go build ./...` — PASS

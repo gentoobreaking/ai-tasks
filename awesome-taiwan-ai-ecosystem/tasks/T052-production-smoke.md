@@ -5,7 +5,8 @@ assignee: pi with opencode
 type: test
 priority: medium
 status: done
-depends_on: []
+depends_on:
+
 blocked_on:
 - "GITHUB_TOKEN available (environment variable)"
 created: 2026-09-05

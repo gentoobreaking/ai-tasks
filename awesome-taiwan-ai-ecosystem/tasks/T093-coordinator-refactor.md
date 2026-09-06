@@ -2,11 +2,17 @@
 github_issue: N/A
 title: Crawler Coordinator 重構 - 適配新 Entity 模型與協調器邏輯修復
 type: refactor
+priority: high
 status: done
-assignee: pi
+depends_on:
+  - T089
+  - T090
+  - T091
+assignee: pi with opencode
 created: 2026-09-05
 updated: 2026-09-05
 ---
+
 
 # T093 - Crawler Coordinator 重構 - 適配新 Entity 模型與協調器邏輯修復
 

@@ -1,11 +1,12 @@
 ---
 github_issue: N/A
 title: Security Status Enum — CLEAN, SUSPICIOUS, QUARANTINED, BLOCKED
-assignee: pi
+assignee: pi with opencode
 type: feat
 priority: high
 status: done
-depends_on: ["T080"]
+depends_on:
+  - T080
 created: 2026-09-05
 updated: 2026-09-06
 ---

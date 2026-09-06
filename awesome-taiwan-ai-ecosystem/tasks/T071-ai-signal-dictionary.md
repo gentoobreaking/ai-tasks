@@ -1,11 +1,12 @@
 ---
 github_issue: N/A
 title: AI Signal Dictionary — Configurable AI keywords/patterns (YAML)
-assignee: pi
+assignee: pi with opencode
 type: feat
 priority: high
 status: done
-depends_on: ["T070"]
+depends_on:
+  - T070
 created: 2026-09-05
 updated: 2026-09-05
 ---
@@ -20,7 +21,7 @@ updated: 2026-09-05
 
 ## 驗收標準
 
-- [ ] `config/ai_signals.yaml` 建立，結構：
+- [x] `config/ai_signals.yaml` 建立，結構：
   ```yaml
   core_ai_keywords:
     - AI
@@ -80,12 +81,12 @@ updated: 2026-09-05
     - "anthropic"
     - "google-generativeai"
   ```
-- [ ] `internal/config/ai_signals.go` 載入器：
-  - [ ] `LoadAISignals(path string) (*AISignals, error)`
-  - [ ] 結構體 `AISignals` 對應 YAML
-  - [ ] 預設值內建
-- [ ] AI Relevance Engine (T070) 整合配置載入
-- [ ] 單元測試：載入 YAML、預設值 fallback
+- [x] `internal/config/ai_signals.go` 載入器：
+  - [x] `LoadAISignals(path string) (*AISignals, error)`
+  - [x] 結構體 `AISignals` 對應 YAML
+  - [x] 預設值內建
+- [x] AI Relevance Engine (T070) 整合配置載入
+- [x] 單元測試：載入 YAML、預設值 fallback
 
 ## 備註
 
@@ -95,4 +96,8 @@ updated: 2026-09-05
 
 ## 執行紀錄
 
-- 待執行
+- 2026-09-06: 完成實作成果。
+- `config/ai_signals.yaml` 建立，包含 core_ai_keywords, agent_keywords, rag_keywords, llm_provider_keywords, ai_keywords, package_dependencies 等信號字典
+- `internal/config/signals.go` 提供 `LoadAISignals()` 和 `DefaultAISignals()`，支援從 YAML 載入配置
+- `internal/engines/relevance_test.go` 包含 TestLoadAISignals_Default 和 TestLoadAISignals_FromFile
+- `go test ./internal/engines/... -v -count=1` — PASS

@@ -4,8 +4,9 @@ title: 新增 3 Sources — mcpmarket/mcpservers.org/modelcontextprotocol/server
 type: feat
 priority: high
 status: done
-depends_on: [T005, T006, T029]
-assignee: pi
+depends_on:
+
+assignee: pi with opencode
 created: 2026-09-05
 updated: 2026-09-05
 ---

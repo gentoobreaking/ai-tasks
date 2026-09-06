@@ -4,8 +4,9 @@ title: Injection 偵測獨立報表輸出
 type: feat
 priority: medium
 status: done
-depends_on: [T026]
-assignee: pi
+depends_on:
+
+assignee: pi with opencode
 created: 2026-09-05
 updated: 2026-09-05
 ---

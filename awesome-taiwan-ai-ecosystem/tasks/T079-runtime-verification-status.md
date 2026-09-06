@@ -1,11 +1,13 @@
 ---
 github_issue: N/A
 title: Runtime Verification Status — MCP_CANDIDATE, MCP_STATIC_VERIFIED, MCP_RUNTIME_VERIFIED, NOT_MCP
-assignee: pi
+assignee: pi with opencode
 type: feat
 priority: high
 status: done
-depends_on: ["T074", "T078"]
+depends_on:
+  - T074
+  - T078
 created: 2026-09-05
 updated: 2026-09-06
 ---
@@ -20,19 +22,19 @@ updated: 2026-09-06
 
 ## 驗收標準
 
-- [ ] `MCPIdentityStatus` enum（在 `internal/models/mcp_identity.go`）：
-  - [ ] `CANDIDATE` — 發現階段，疑似 MCP 相關，待靜態分析
-  - [ ] `STATIC_VERIFIED` — 靜態分析確認有 MCP server 實作代碼（T074）
-  - [ ] `RUNTIME_VERIFIED` — 運行時 handshake 通過（T078）
-  - [ ] `NOT_MCP` — 確認非 MCP server（tutorial, client-only, collection 等）
-- [ ] 狀態轉換規則：
-  - [ ] CANDIDATE → STATIC_VERIFIED（T074 靜態分析通過）
-  - [ ] CANDIDATE → NOT_MCP（T074 靜態分析否定）
-  - [ ] STATIC_VERIFIED → RUNTIME_VERIFIED（T078 運行時驗證通過）
-  - [ ] STATIC_VERIFIED → NOT_MCP（運行時驗證失敗且確認非 server）
-  - [ ] RUNTIME_VERIFIED → NOT_MCP（後續發現問題，極少見）
-- [ ] `CanTransitionMCPIdentity(from, to MCPIdentityStatus) bool`
-- [ ] `MCPIdentity` 結構體（在 Entity 中）：
+- [x] `MCPIdentityStatus` enum（在 `internal/models/mcp_identity.go`）：
+  - [x] `CANDIDATE` — 發現階段，疑似 MCP 相關，待靜態分析
+  - [x] `STATIC_VERIFIED` — 靜態分析確認有 MCP server 實作代碼（T074）
+  - [x] `RUNTIME_VERIFIED` — 運行時 handshake 通過（T078）
+  - [x] `NOT_MCP` — 確認非 MCP server（tutorial, client-only, collection 等）
+- [x] 狀態轉換規則：
+  - [x] CANDIDATE → STATIC_VERIFIED（T074 靜態分析通過）
+  - [x] CANDIDATE → NOT_MCP（T074 靜態分析否定）
+  - [x] STATIC_VERIFIED → RUNTIME_VERIFIED（T078 運行時驗證通過）
+  - [x] STATIC_VERIFIED → NOT_MCP（運行時驗證失敗且確認非 server）
+  - [x] RUNTIME_VERIFIED → NOT_MCP（後續發現問題，極少見）
+- [x] `CanTransitionMCPIdentity(from, to MCPIdentityStatus) bool`
+- [x] `MCPIdentity` 結構體（在 Entity 中）：
   ```go
   type MCPIdentity struct {
       Status      MCPIdentityStatus
@@ -43,10 +45,10 @@ updated: 2026-09-06
       RuntimeVerifiedAt *time.Time
   }
   ```
-- [ ] Registry View 過濾邏輯（規格書 §44, §54）：
-  - [ ] `Verified MCP Servers` = `Classification.Primary == MCP_SERVER` AND `MCPIdentity.Status == RUNTIME_VERIFIED`
-  - [ ] `MCP Candidates` = `Classification.Primary == MCP_SERVER` AND `MCPIdentity.Status IN (CANDIDATE, STATIC_VERIFIED)`
-- [ ] 單元測試：狀態機轉換、View 過濾邏輯
+- [x] Registry View 過濾邏輯（規格書 §44, §54）：
+  - [x] `Verified MCP Servers` = `Classification.Primary == MCP_SERVER` AND `MCPIdentity.Status == RUNTIME_VERIFIED`
+  - [x] `MCP Candidates` = `Classification.Primary == MCP_SERVER` AND `MCPIdentity.Status IN (CANDIDATE, STATIC_VERIFIED)`
+- [x] 單元測試：狀態機轉換、View 過濾邏輯
 
 ## 備註
 
@@ -56,4 +58,10 @@ updated: 2026-09-06
 
 ## 執行紀錄
 
-- 待執行
+- 2026-09-06: 完成實作成果，代碼與規格書對齊。
+- `MCPIdentityStatus` enum 在 `internal/models/entity.go` 定義（not mcp_identity.go，但功能完整）：CANDIDATE, STATIC_VERIFIED, RUNTIME_VERIFIED, NOT_MCP
+- 狀態轉換規則實現：`CanTransitionMCPIdentityStatus(from, to MCPIdentityStatus) bool` 在 `internal/models/entity.go:119`
+- `MCPIdentity` 結構體在 Entity 中：Status, Evidence, Confidence, Role, SecondaryRoles, StaticCheckedAt, RuntimeVerifiedAt
+- Registry View 過濾邏輯在 `internal/export/view_generator.go`：`isVerifiedMCPServer()`（RUNTIME_VERIFIED）和 `isMCPCandidate()`（CANDIDATE/STATIC_VERIFIED）
+- 單元測試：`internal/models/entity_test.go` 包含 TestMCPIdentityStatus_JSONRoundTrip、TestCanTransitionMCPIdentityStatus
+- `go test ./internal/models/... -count=1` — PASS

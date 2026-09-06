@@ -1,11 +1,21 @@
 ---
 github_issue: N/A
 title: Registry View Generator — taiwan-ai-ecosystem.md, taiwan-mcp.md, taiwan-ai-agents.md, etc.
-assignee: pi
+assignee: pi with opencode
 type: feat
 priority: high
 status: done
-depends_on: ["T065", "T066", "T067", "T068", "T070", "T072", "T074", "T078", "T079", "T082"]
+depends_on:
+  - T065
+  - T066
+  - T067
+  - T068
+  - T070
+  - T072
+  - T074
+  - T078
+  - T079
+  - T082
 created: 2026-09-05
 updated: 2026-09-05
 ---

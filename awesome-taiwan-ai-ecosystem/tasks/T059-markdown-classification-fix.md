@@ -2,12 +2,14 @@
 github_issue: N/A
 title: 修復 Markdown Export 分類錯配
 type: fix
+priority: medium
 status: done
-depends_on: [T028]
-assignee: pi
+depends_on:
+assignee: pi with opencode
 created: 2026-09-05
 updated: 2026-09-05
 ---
+
 
 # T059 - 修復 Markdown Export 分類錯配
 

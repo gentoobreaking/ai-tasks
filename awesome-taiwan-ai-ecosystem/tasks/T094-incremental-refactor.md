@@ -4,11 +4,12 @@ title: Crawler Incremental 重構 - 適配新 Entity 模型與增量爬蟲邏輯
 type: refactor
 priority: high
 status: done
-assignee: pi
+assignee: pi with opencode
 created: 2026-09-05
 updated: 2026-09-05
+depends_on:
+  - T093
 ---
-
 # T094 - Crawler Incremental 重構 - 適配新 Entity 模型與增量爬蟲邏輯修復
 
 ## 目標

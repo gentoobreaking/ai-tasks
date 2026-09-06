@@ -1,11 +1,14 @@
 ---
 github_issue: N/A
 title: MCP Runtime Verifier — initialize + tools/list handshake
-assignee: pi
+assignee: pi with opencode
 type: feat
 priority: high
 status: done
-depends_on: ["T065", "T074", "T076"]
+depends_on:
+  - T065
+  - T074
+  - T076
 created: 2026-09-05
 updated: 2026-09-06
 ---

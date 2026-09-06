@@ -1,11 +1,12 @@
 ---
 github_issue: N/A
 title: URL Evidence Tracking — Record why each URL was classified
-assignee: pi
+assignee: pi with opencode
 type: feat
 priority: high
 status: done
-depends_on: ["T076"]
+depends_on:
+  - T076
 created: 2026-09-05
 updated: 2026-09-06
 ---

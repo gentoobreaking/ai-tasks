@@ -1,11 +1,13 @@
 ---
 github_issue: N/A
 title: Backward Compatibility — Keep awesome-taiwan-mcp.md as generated view
-assignee: pi
+assignee: pi with opencode
 type: feat
 priority: medium
 status: done
-depends_on: ["T083", "T085"]
+depends_on:
+  - T083
+  - T085
 created: 2026-09-05
 updated: 2026-09-06
 ---

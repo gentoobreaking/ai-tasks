@@ -4,8 +4,9 @@ title: 整合惡意偵測進掃描管線
 type: feat
 priority: high
 status: done
-depends_on: [T060]
-assignee: pi
+depends_on:
+
+assignee: pi with opencode
 created: 2026-09-05
 updated: 2026-09-05
 ---

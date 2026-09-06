@@ -1,11 +1,12 @@
 ---
 github_issue: N/A
 title: Source Adapter Updates — Treat registries as discovery sources, not proof
-assignee: pi
+assignee: pi with opencode
 type: feat
 priority: high
 status: done
-depends_on: ["T089"]
+depends_on:
+  - T089
 created: 2026-09-05
 updated: 2026-09-05
 ---

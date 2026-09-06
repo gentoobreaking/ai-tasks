@@ -1,11 +1,14 @@
 ---
 github_issue: N/A
 title: CLI & Coordinator Updates — New pipeline stages
-assignee: pi
+assignee: pi with opencode
 type: feat
 priority: high
 status: done
-depends_on: ["T089", "T065", "T084"]
+depends_on:
+  - T089
+  - T065
+  - T084
 created: 2026-09-05
 updated: 2026-09-06
 ---

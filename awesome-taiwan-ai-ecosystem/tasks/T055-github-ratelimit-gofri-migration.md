@@ -4,8 +4,9 @@ title: 修復 GitHub Rate Limit — 遷移至 go-github-ratelimit
 type: fix
 priority: high
 status: done
-depends_on: [T007]
-assignee: pi
+depends_on:
+
+assignee: pi with opencode
 created: 2026-09-05
 updated: 2026-09-05
 ---

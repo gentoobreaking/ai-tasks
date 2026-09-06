@@ -5,7 +5,8 @@ assignee: pi with opencode
 type: feat
 priority: low
 status: done
-depends_on: []
+depends_on:
+
 blocked_on:
 - "Phase 1 complete (all T001–T046 tasks done)"
 created: 2026-09-05

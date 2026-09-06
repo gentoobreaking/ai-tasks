@@ -1,11 +1,19 @@
 ---
 github_issue: N/A
 title: Migration Pipeline — Load, normalize, classify, score, verify existing records
-assignee: pi
+assignee: pi with opencode
 type: feat
 priority: high
 status: done
-depends_on: ["T084", "T068", "T070", "T072", "T074", "T078", "T080", "T082"]
+depends_on:
+  - T084
+  - T068
+  - T070
+  - T072
+  - T074
+  - T078
+  - T080
+  - T082
 created: 2026-09-05
 updated: 2026-09-06
 ---

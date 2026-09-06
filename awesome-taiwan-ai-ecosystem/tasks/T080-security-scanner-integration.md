@@ -1,11 +1,13 @@
 ---
 github_issue: N/A
 title: Security Scanner Integration — Detect obfuscation, credential extraction, remote binary download
-assignee: pi
+assignee: pi with opencode
 type: feat
 priority: high
 status: done
-depends_on: ["T065", "T067"]
+depends_on:
+  - T065
+  - T067
 created: 2026-09-05
 updated: 2026-09-06
 ---

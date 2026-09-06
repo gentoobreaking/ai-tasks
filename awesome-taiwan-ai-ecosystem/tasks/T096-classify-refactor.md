@@ -4,8 +4,9 @@ title: Classify/LLM 分類器與 Rules 完善 - 適配新模型
 type: refactor
 priority: medium
 status: done
-assignee: pi
+assignee: pi with opencode
 created: 2026-09-05
+depends_on: []
 updated: 2026-09-05
 ---
 

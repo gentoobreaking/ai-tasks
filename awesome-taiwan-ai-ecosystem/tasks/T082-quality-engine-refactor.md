@@ -1,11 +1,19 @@
 ---
 github_issue: N/A
 title: Quality Engine Refactor — Independent from classification, per spec weights
-assignee: pi
+assignee: pi with opencode
 type: feat
 priority: high
 status: done
-depends_on: ["T065", "T066", "T067", "T068", "T070", "T074", "T078", "T080"]
+depends_on:
+  - T065
+  - T066
+  - T067
+  - T068
+  - T070
+  - T074
+  - T078
+  - T080
 created: 2026-09-05
 updated: 2026-09-06
 ---

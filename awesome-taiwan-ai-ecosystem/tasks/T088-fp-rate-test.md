@@ -1,11 +1,13 @@
 ---
 github_issue: N/A
 title: MCP False Positive Rate Test — Target <5%
-assignee: pi
+assignee: pi with opencode
 type: test
 priority: high
 status: done
-depends_on: ["T085", "T087"]
+depends_on:
+  - T085
+  - T087
 created: 2026-09-05
 updated: 2026-09-06
 ---

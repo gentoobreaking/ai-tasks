@@ -5,7 +5,8 @@ assignee: pi with opencode
 type: feat
 priority: low
 status: pending
-depends_on: []
+depends_on:
+
 blocked_on:
 - "Phase 1+2+3 complete (crawler, historical snapshots, web UI foundation)"
 created: 2026-09-05

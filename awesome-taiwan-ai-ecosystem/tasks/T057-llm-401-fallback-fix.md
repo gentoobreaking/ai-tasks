@@ -4,8 +4,9 @@ title: 修復 LLM API 401 — 模型名 typo 與 Docker 環境錯配
 type: fix
 priority: high
 status: done
-depends_on: [T035]
-assignee: pi
+depends_on:
+
+assignee: pi with opencode
 created: 2026-09-05
 updated: 2026-09-05
 ---

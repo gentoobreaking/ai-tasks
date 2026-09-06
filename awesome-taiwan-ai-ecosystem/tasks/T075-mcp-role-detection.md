@@ -1,11 +1,12 @@
 ---
 github_issue: N/A
 title: MCP Role Detection — CLIENT, HOST, SDK, SKILL, EXTENSION separation
-assignee: pi
+assignee: pi with opencode
 type: feat
 priority: high
 status: done
-depends_on: ["T074"]
+depends_on:
+  - T074
 created: 2026-09-05
 updated: 2026-09-06
 ---

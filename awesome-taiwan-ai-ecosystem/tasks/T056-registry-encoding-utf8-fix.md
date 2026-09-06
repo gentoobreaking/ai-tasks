@@ -4,8 +4,9 @@ title: 修復 REGISTRY.md charset=unknown-8bit 編碼混亂
 type: fix
 priority: high
 status: done
-depends_on: [T028]
-assignee: pi
+depends_on:
+
+assignee: pi with opencode
 created: 2026-09-05
 updated: 2026-09-05
 ---
