@@ -51,6 +51,8 @@
 | Final Verification — full build + test + crawl + export validation |
 | Regression Golden Dataset — TST-068 classification/identity/dedup accuracy |
 | > ⛔ Historical Snapshots — crawl run history + time-series data (Phase 2) |
+| REST API — HTTP API for registry search + metadata (Phase 4) |
+| Web UI — registry browse + Taiwan AI Ecosystem Registry discovery dashboard (Phase 4) |
 | Static Analysis CI — golangci-lint + gosec security linting |
 | Performance Benchmark — 10k candidates, <10min, no OOM |
 | Production Smoke Test — live GitHub + Registry crawl + export |
@@ -115,8 +117,7 @@
 
 | Task | 名稱 | 說明 |
 |------|------|------|
-| [T48-rest-api](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T048-rest-api.md) | > ⛔ REST API — HTTP API for registry search + metadata (Phase 4) | |
-| [T49-web-ui](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T049-web-ui.md) | > ⛔ Web UI — registry browse + Taiwan AI Ecosystem Registry discovery dashboard (Phase 4) | |
+| | | |
 
 ## Task 列表
 
@@ -169,8 +170,8 @@
 | [T45-final-verification](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T045-final-verification.md) | Final Verification — full build + test + crawl + export validation | ✅ done |
 | [T46-regression-golden](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T046-regression-golden.md) | Regression Golden Dataset — TST-068 classification/identity/dedup accuracy | ✅ done |
 | [T47-historical-snapshots](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T047-historical-snapshots.md) | > ⛔ Historical Snapshots — crawl run history + time-series data (Phase 2) | ✅ done |
-| [T48-rest-api](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T048-rest-api.md) | > ⛔ REST API — HTTP API for registry search + metadata (Phase 4) | 📋 pending |
-| [T49-web-ui](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T049-web-ui.md) | > ⛔ Web UI — registry browse + Taiwan AI Ecosystem Registry discovery dashboard (Phase 4) | 📋 pending |
+| [T48-rest-api](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T048-rest-api.md) | REST API — HTTP API for registry search + metadata (Phase 4) | ✅ done |
+| [T49-web-ui](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T049-web-ui.md) | Web UI — registry browse + Taiwan AI Ecosystem Registry discovery dashboard (Phase 4) | ✅ done |
 | [T50-static-analysis-ci](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T050-static-analysis-ci.md) | Static Analysis CI — golangci-lint + gosec security linting | ✅ done |
 | [T51-performance-benchmark](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T051-performance-benchmark.md) | Performance Benchmark — 10k candidates, <10min, no OOM | ✅ done |
 | [T52-production-smoke](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T052-production-smoke.md) | Production Smoke Test — live GitHub + Registry crawl + export | ✅ done |
@@ -219,6 +220,6 @@
 | [T95-storage-refactor](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T095-storage-refactor.md) | Storage Store 重構 - 適配新 Entity 模型與存儲邏輯修復 | ✅ done |
 | [T96-classify-refactor](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T096-classify-refactor.md) | Classify/LLM 分類器與 Rules 完善 - 適配新模型 | ✅ done |
 
-**✅ done: 94 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 2**
+**✅ done: 96 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 0**
 
-> 自動生成於 2026-09-06 20:03
+> 自動生成於 2026-09-06 22:10
