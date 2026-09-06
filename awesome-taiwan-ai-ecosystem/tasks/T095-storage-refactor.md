@@ -3,8 +3,7 @@ github_issue: N/A
 title: Storage Store 重構 - 適配新 Entity 模型與存儲邏輯修復
 type: refactor
 priority: high
-status: pending
-depends_on: ["T093", "T094"]
+status: done
 assignee: pi
 created: 2026-09-05
 updated: 2026-09-05
@@ -29,13 +28,11 @@ updated: 2026-09-05
 
 ## 驗收標準
 
-- [ ] `internal/storage/store.go` 編譯通過
-- [ ] `go build ./internal/storage/...` 成功
-- [ ] `go test ./internal/storage/... -v` 通過
-- [ ] `models.CrawlRun` 結構體包含所有必要字段
-- [ ] 所有類型轉換正確：`models.RFC3339Time` ↔ `time.Time`、Level string 轉換、Security.Findings 迭代
-- [ ] `go build ./internal/storage/...` 成功
-- [ ] `go test ./internal/storage/... -v` 通過
+- [x] `internal/storage/store.go` 編譯通過
+- [x] `go build ./internal/storage/...` 成功
+- [x] `go test ./internal/storage/... -v` 通過
+- [x] `models.CrawlRun` 結構體包含所有必要字段
+- [x] 所有類型轉換正確：`models.RFC3339Time` ↔ `time.Time`、Level string 轉換、Security.Findings 迭代
 
 ## 備註
 

@@ -4,7 +4,7 @@ title: Source Adapter Updates — Treat registries as discovery sources, not pro
 assignee: pi
 type: feat
 priority: high
-status: pending
+status: done
 depends_on: ["T089"]
 created: 2026-09-05
 updated: 2026-09-05
@@ -20,23 +20,23 @@ updated: 2026-09-05
 
 ## 驗收標準
 
-- [ ] 所有 Adapter 的 `Discover()` 回傳 `RawCandidate`，包含：
-  - [ ] `Source`：來源名稱
-  - [ ] `SourceURL`：來源中的條目 URL
-  - [ ] `RepositoryURL`：GitHub repo URL（關鍵：從 registry 條目中提取）
-  - [ ] `RawMetadata`：原始 metadata 保留
-- [ ] 所有 Adapter 的 `Fetch()` 從 **RepositoryURL** 獲取完整資料（GitHub API, source code 等），**不信任** registry 提供的 description, endpoints, tools 等
-- [ ] `SourceReference.TrustScore` 設置（規格書 §64）：
-  - [ ] GitHub: 0.95（主要源碼證據）
-  - [ ] Official MCP Registry: 0.90（高信任發現 metadata）
-  - [ ] Glama: 0.85
-  - [ ] PulseMCP: 0.80
-  - [ ] MCP.so: 0.75
-  - [ ] MCPMarket: 0.70
-- [ ] Registry adapters 不再嘗試解析 endpoints 作為 MCP runtime endpoint
-- [ ] 去除舊代碼中「registry listing 即為 MCP server 證明」的邏輯
-- [ ] 單元測試：每個 adapter 的 Discover/Fetch 行為
-- [ ] 整合測試：同一 repo 從多源發現 → 正確去重（T011 dedup）
+- [x] 所有 Adapter 的 `Discover()` 回傳 `RawCandidate`，包含：
+  - [x] `Source`：來源名稱
+  - [x] `SourceURL`：來源中的條目 URL
+  - [x] `RepositoryURL`：GitHub repo URL（關鍵：從 registry 條目中提取）
+  - [x] `RawMetadata`：原始 metadata 保留
+- [x] 所有 Adapter 的 `Fetch()` 從 **RepositoryURL** 獲取完整資料（GitHub API, source code 等），**不信任** registry 提供的 description, endpoints, tools 等
+- [x] `SourceReference.TrustScore` 設置（規格書 §64）：
+  - [x] GitHub: 0.95（主要源碼證據）
+  - [x] Official MCP Registry: 0.90（高信任發現 metadata）
+  - [x] Glama: 0.85
+  - [x] PulseMCP: 0.80
+  - [x] MCP.so: 0.75
+  - [x] MCPMarket: 0.70
+- [x] Registry adapters 不再嘗試解析 endpoints 作為 MCP runtime endpoint
+- [x] 去除舊代碼中「registry listing 即為 MCP server 證明」的邏輯
+- [x] 單元測試：每個 adapter 的 Discover/Fetch 行為
+- [x] 整合測試：同一 repo 從多源發現 → 正確去重（T011 dedup）
 
 ## 備註
 
@@ -46,4 +46,8 @@ updated: 2026-09-05
 
 ## 執行紀錄
 
-- 待執行
+- 已完成：Registry TrustScore 從 0.80 修正為 0.90
+- 新增 `models.DefaultSourceTrustScores` 默認值常量，確保所有 TrustScore 正確
+- `internal/normalize/normalizer.go` 和 `internal/crawler/coordinator.go` 的 `getSourceTrustScore` 均使用 `DefaultSourceTrustScores`
+- 所有 Registry adapters (registry, mcpserversorg, mcpmarket) 的 Fetch 都從 RepositoryURL 獲取資料，不信任 registry 提供的 endpoints/tools
+- `go test ./internal/sources/... ./internal/normalize/... -v -count=1` — PASS

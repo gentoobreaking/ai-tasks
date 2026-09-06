@@ -3,8 +3,7 @@ github_issue: N/A
 title: Classify/LLM 分類器與 Rules 完善 - 適配新模型
 type: refactor
 priority: medium
-status: pending
-depends_on: ["T093", "T094", "T095"]
+status: done
 assignee: pi
 created: 2026-09-05
 updated: 2026-09-05
@@ -26,11 +25,18 @@ updated: 2026-09-05
 
 ## 驗收標準
 
-- [ ] `internal/classify/llm.go` 編譯通過
-- [ ] `internal/classify/rules.go` 編譯通過
-- [ ] `go build ./internal/classify/...` 成功
-- [ ] `go test ./internal/classify/... -v` 通過
+- [x] `internal/classify/llm.go` 編譯通過
+- [x] `internal/classify/llm.go` 編譯通過
+- [x] `internal/classify/rules.go` 編譯通過
+- [x] `go build ./internal/classify/...` 成功
+- [x] `go test ./internal/classify/... -v` 通過
 
+## 執行紀錄
+
+- 修復 `llm_test.go` 中的類型轉換：`isValidLevel(string(result.Level))` 而非 `isValidLevel(result.Level)`，因為 `result.Level` 是 `models.TaiwanRelevanceLevel` 類型而非 `string`
+- 確認 `models.RFC3339Time(time.Now().UTC())` 轉換已正確應用於 `rules.go`
+- 確認 `server.Category` 而非 `server.TopicList` 已在 `buildLLMPrompt` 中使用
+- `go test ./internal/classify/... -v -count=1` — PASS (all tests)
 ## 備註
 
 - 依賴 T093、T094、T095 完成

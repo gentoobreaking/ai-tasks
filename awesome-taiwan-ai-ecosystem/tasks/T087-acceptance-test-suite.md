@@ -4,10 +4,10 @@ title: Acceptance Test Suite — 12 test cases from spec §56
 assignee: pi
 type: test
 priority: high
-status: pending
+status: done
 depends_on: ["T065", "T072", "T074", "T076", "T078", "T080", "T085"]
 created: 2026-09-05
-updated: 2026-09-05
+updated: 2026-09-06
 ---
 
 # T087 - Acceptance Test Suite — 12 test cases from spec §56

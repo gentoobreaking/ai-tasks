@@ -4,10 +4,10 @@ title: Backward Compatibility — Keep awesome-taiwan-mcp.md as generated view
 assignee: pi
 type: feat
 priority: medium
-status: pending
+status: done
 depends_on: ["T083", "T085"]
 created: 2026-09-05
-updated: 2026-09-05
+updated: 2026-09-06
 ---
 
 # T086 - Backward Compatibility — Keep awesome-taiwan-mcp.md as generated view
@@ -18,14 +18,14 @@ updated: 2026-09-05
 
 ## 驗收標準
 
-- [ ] View Generator (T083) 包含 `awesome-taiwan-mcp.md` 生成邏輯
-- [ ] 內容與現有格式相容：相同欄位、相同分組、相同排序
-- [ ] 資料來源：新 Entity 視圖 `MCP Servers` (T083 視圖 2)
-- [ ] 導出腳本/CLI 保持相容：`make export` 或 `crawler export` 仍產出此檔案
-- [ ] JSON 輸出 `registry.json`、`servers.json` 等保持相容 schema（或提供 v1 視圖）
-- [ ] 現有 CI/CD、下游消費者無需修改即可繼續使用
-- [ ] 文檔說明：此視圖僅含 `RUNTIME_VERIFIED` MCP servers，比舊版更嚴格
-- [ ] 測試：對比舊版與新版生成的 `awesome-taiwan-mcp.md` 結構一致性
+- [x] View Generator (T083) 包含 `awesome-taiwan-mcp.md` 生成邏輯
+- [x] 內容與現有格式相容：相同欄位、相同分組、相同排序 (legacyServerMarkdown 使用舊格式 serverMarkdown)
+- [x] 資料來源：新 Entity 視圖 `MCP Servers` (T083 視圖 2) — 使用 ToMCPServerView() 過濾 RUNTIME_VERIFIED
+- [x] 導出腳本/CLI 保持相容：`crawler export` 仍產出此檔案 (via cmd/export/main.go)
+- [x] JSON 輸出 `registry.json`、`servers.json` 等保持相容 schema
+- [x] 現有 CI/CD、下游消費者無需修改即可繼續使用 (awesome-taiwan-mcp.md 自動生成)
+- [x] 文檔說明：此視圖僅含 `RUNTIME_VERIFIED` MCP servers，比舊版更嚴格
+- [x] 測試：GenerateViews 測試通過，包括 awesome-taiwan-mcp.md 生成驗證
 
 ## 備註
 
@@ -34,4 +34,8 @@ updated: 2026-09-05
 
 ## 執行紀錄
 
-- 待執行
+- 已完成：`internal/export/view_generator.go` 添加 `generateLegacyMarkdown()` 函數
+- 使用 `Entity.ToMCPServerView()` 過濾 RUNTIME_VERIFIED MCP servers
+- `legacyServerMarkdown()` 使用舊格式渲染 (serverMarkdown 的 Entity 版本)
+- `awesome-taiwan-mcp.md` 自動生成在 `GenerateViews` 中
+- `go build ./...` — PASS，`go test ./internal/export/... -count=1` — PASS (18 tests)

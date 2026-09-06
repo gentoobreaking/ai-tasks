@@ -3,8 +3,7 @@ github_issue: N/A
 title: Crawler Incremental 重構 - 適配新 Entity 模型與增量爬蟲邏輯修復
 type: refactor
 priority: high
-status: pending
-depends_on: ["T093"]
+status: done
 assignee: pi
 created: 2026-09-05
 updated: 2026-09-05
@@ -23,11 +22,11 @@ updated: 2026-09-05
 
 ## 驗收標準
 
-- [ ] `internal/crawler/incremental.go` 編譯通過
-- [ ] `go build ./internal/crawler/...` 成功
-- [ ] `go test ./internal/crawler/... -v` 通過
-- [ ] `models.RFC3339Time` 添加 `After` 方法或使用 `.Time().After()`
-- [ ] 所有類型轉換正確：`models.RFC3339Time` → `time.Time`
+- [x] `internal/crawler/incremental.go` 編譯通過
+- [x] `go build ./internal/crawler/...` 成功
+- [x] `go test ./internal/crawler/... -v` 通過
+- [x] `models.RFC3339Time` 添加 `After` 方法或使用 `.Time().After()` — 已使用 `.Time().After()`
+- [x] 所有類型轉換正確：`models.RFC3339Time` → `time.Time`
 
 ## 備註
 

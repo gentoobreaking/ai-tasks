@@ -4,7 +4,7 @@ title: Database Schema Migration — SQLite schema for new entity model
 assignee: pi
 type: feat
 priority: high
-status: pending
+status: done
 depends_on: ["T065", "T066", "T067", "T079", "T081"]
 created: 2026-09-05
 updated: 2026-09-05

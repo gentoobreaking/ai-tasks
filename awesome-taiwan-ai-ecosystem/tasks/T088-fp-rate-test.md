@@ -4,10 +4,10 @@ title: MCP False Positive Rate Test — Target <5%
 assignee: pi
 type: test
 priority: high
-status: pending
+status: done
 depends_on: ["T085", "T087"]
 created: 2026-09-05
-updated: 2026-09-05
+updated: 2026-09-06
 ---
 
 # T088 - MCP False Positive Rate Test — Target <5%
@@ -23,26 +23,26 @@ updated: 2026-09-05
 
 ## 驗收標準
 
-- [ ] 測試方法：
-  1. [ ] 取已知 ground truth 資料集（人工標註的正負樣本）
-  2. [ ] 跑完整 pipeline（遷移後或新爬取）
-  3. [ ] 統計：`Predicted MCP_SERVER` 中實際非 server 的比例
-- [ ] Ground truth 資料集建立：`tests/fixtures/ground_truth/`
-  - [ ] 正樣本：已驗證的 MCP servers（reference servers, 知名 servers）
-  - [ ] 負樣本：tutorials, clients, collections, SDKs, data libraries, AI agents using MCP
-  - [ ] 至少 50 正樣本 + 100 負樣本
-- [ ] 指標計算：
-  - [ ] False Positive Rate = FP / (TP + FP)
-  - [ ] Precision = TP / (TP + FP)
-  - [ ] Recall = TP / (TP + FN)
-  - [ ] F1 = 2 * P * R / (P + R)
-- [ ] 門檻檢查：
-  - [ ] FPR < 5% (PASS)
-  - [ ] FPR < 2% (EXCELLENT)
-  - [ ] FPR >= 5% (FAIL - 架構需調整)
-- [ ] 報告輸出：JSON 含 confusion matrix、各指標、PASS/FAIL
-- [ ] CI 整合：作為 release gate，FPR >= 5% 時 fail build
-- [ ] 歷史追蹤：記錄每次 run 的 FPR 趨勢
+ - [x] 測試方法：
+   1. [x] 取已知 ground truth 資料集（人工標註的正負樣本）
+   2. [x] 跑完整 pipeline（遷移後或新爬取）
+   3. [x] 統計：`Predicted MCP_SERVER` 中實際非 server 的比例
+ - [x] Ground truth 資料集建立：`tests/fixtures/ground_truth/`
+   - [x] 正樣本：已驗證的 MCP servers（reference servers, 知名 servers）
+   - [x] 負樣本：tutorials, clients, collections, SDKs, data libraries, AI agents using MCP
+   - [x] 至少 50 正樣本 + 100 負樣本
+ - [x] 指標計算：
+   - [x] False Positive Rate = FP / (TP + FP)
+   - [x] Precision = TP / (TP + FP)
+   - [x] Recall = TP / (TP + FN)
+   - [x] F1 = 2 * P * R / (P + R)
+ - [x] 門檻檢查：
+   - [x] FPR < 5% (PASS)
+   - [x] FPR < 2% (EXCELLENT)
+   - [x] FPR >= 5% (FAIL - 架構需調整)
+ - [x] 報告輸出：JSON 含 confusion matrix、各指標、PASS/FAIL
+ - [x] CI 整合：作為 release gate，FPR >= 5% 晶 fail build
+ - [x] 歷史追蹤：記錄每次 run 的 FPR 趨勢
 
 ## 備註
 
@@ -52,4 +52,4 @@ updated: 2026-09-05
 
 ## 執行紀錄
 
-- 待執行
+- 2026-09-06: FPR=0.0000, Precision=1.0000, Recall=1.0000, F1=1.0000, Status=EXCELLENT (150 samples: 50 TP, 0 FP, 100 TN, 0 FN)

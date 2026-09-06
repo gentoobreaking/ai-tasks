@@ -4,7 +4,7 @@ title: Registry View Generator — taiwan-ai-ecosystem.md, taiwan-mcp.md, taiwan
 assignee: pi
 type: feat
 priority: high
-status: pending
+status: done
 depends_on: ["T065", "T066", "T067", "T068", "T070", "T072", "T074", "T078", "T079", "T082"]
 created: 2026-09-05
 updated: 2026-09-05
@@ -20,41 +20,41 @@ updated: 2026-09-05
 
 ## 驗收標準
 
-- [ ] `internal/export/view_generator.go` 新建：
-  - [ ] `GenerateViews(entities []*Entity, outputDir string) error`
-  - [ ] 從 Entity 過濾生成 6 個視圖（規格書 §44, §53, §60）：
+- [x] `internal/export/view_generator.go` 新建：
+  - [x] `GenerateViews(entities []*models.Entity, outputDir string) error`
+  - [x] 從 Entity 過濾生成 6 個視圖（規格書 §44, §53, §60）：
 
 ### 1. taiwan-ai-ecosystem.md / .json
-  - [ ] 所有 Taiwan AI 實體（TaiwanRelevance.Level >= T1）
-  - [ ] 分組：MCP, AI, Data, Other（規格書 §60）
+  - [x] 所有 Taiwan AI 實體（TaiwanRelevance.Level >= T1）
+  - [x] 分組：MCP, AI, Data, Other（規格書 §60）
 
 ### 2. taiwan-mcp.md / .json (Verified MCP Servers)
-  - [ ] 條件：`Classification.Primary == MCP_SERVER` AND `MCPIdentity.Status == RUNTIME_VERIFIED` AND `TaiwanRelevance.Level >= T1` AND `SecurityStatus != BLOCKED`
-  - [ ] 對應規格書 §44 "MCP Servers", §54
+  - [x] 條件：`Classification.Primary == MCP_SERVER` AND `MCPIdentity.Status == RUNTIME_VERIFIED` AND `TaiwanRelevance.Level >= T1` AND `SecurityStatus != BLOCKED`
+  - [x] 對應規格書 §44 "MCP Servers", §54
 
 ### 3. taiwan-mcp-candidates.md / .json
-  - [ ] 條件：`Classification.Primary == MCP_SERVER` AND `MCPIdentity.Status IN (CANDIDATE, STATIC_VERIFIED)`
-  - [ ] 對應規格書 §44 "MCP Candidates"
+  - [x] 條件：`Classification.Primary == MCP_SERVER` AND `MCPIdentity.Status IN (CANDIDATE, STATIC_VERIFIED)`
+  - [x] 對應規格書 §44 "MCP Candidates"
 
 ### 4. taiwan-ai-agents.md / .json
-  - [ ] 條件：`Classification.Primary == AI_AGENT` AND `TaiwanRelevance.Level >= T1`
+  - [x] 條件：`Classification.Primary == AI_AGENT` AND `TaiwanRelevance.Level >= T1`
 
 ### 5. taiwan-ai-tools.md / .json
-  - [ ] 條件：`Classification.Primary IN (AI_TOOL, AI_SDK, AI_FRAMEWORK, AI_PLUGIN)` AND `TaiwanRelevance.Level >= T1`
+  - [x] 條件：`Classification.Primary IN (AI_TOOL, AI_SDK, AI_FRAMEWORK, AI_PLUGIN)` AND `TaiwanRelevance.Level >= T1`
 
 ### 6. taiwan-ai-data.md / .json
-  - [ ] 條件：`Classification.Primary IN (AI_DATASET, DATA_LIBRARY, AI_KNOWLEDGE_BASE, AI_API)` AND `TaiwanRelevance.Level >= T1`
+  - [x] 條件：`Classification.Primary IN (AI_DATASET, DATA_LIBRARY, AI_KNOWLEDGE_BASE, AI_API)` AND `TaiwanRelevance.Level >= T1`
 
-- [ ] 額外視圖（規格書 §53, §60）：
-  - [ ] `taiwan-ai-skills.md` (AI_SKILL, MCP_SKILL)
-  - [ ] `taiwan-ai-infrastructure.md` (AI_INFRASTRUCTURE)
-  - [ ] `taiwan-ai-tutorials.md` (AI_TUTORIAL, AI_EXAMPLE)
-  - [ ] `taiwan-ai-collections.md` (AI_COLLECTION, AI_REGISTRY, MCP_COLLECTION)
-- [ ] JSON 輸出：schema version, generated_at, entities array
-- [ ] Markdown 輸出：分組、表格、統計摘要
-- [ ] 向後相容：保留 `awesome-taiwan-mcp.md` 生成（規格書 §53）
-- [ ] 單元測試：各視圖過濾邏輯、輸出格式
-- [ ] 整合測試：完整 pipeline 生成所有視圖
+- [x] 額外視圖（規格書 §53, §60）：
+  - [x] `taiwan-ai-skills.md` (AI_SKILL, MCP_SKILL)
+  - [x] `taiwan-ai-infrastructure.md` (AI_INFRASTRUCTURE)
+  - [x] `taiwan-ai-tutorials.md` (AI_TUTORIAL, AI_EXAMPLE)
+  - [x] `taiwan-ai-collections.md` (AI_COLLECTION, AI_REGISTRY, MCP_COLLECTION)
+- [x] JSON 輸出：schema version, generated_at, entities array
+- [x] Markdown 輸出：分組、表格、統計摘要
+- [x] 向後相容：保留 `awesome-taiwan-mcp.md` 生成（規格書 §53）
+- [x] 單元測試：各視圖過濾邏輯、輸出格式
+- [x] 整合測試：完整 pipeline 生成所有視圖
 
 ## 備註
 
@@ -64,4 +64,6 @@ updated: 2026-09-05
 
 ## 執行紀錄
 
-- 待執行
+- 已完成：`internal/export/view_generator.go`（10 views, GenerateViews, JSON+Markdown output）
+- 已完成：`internal/export/view_generator_test.go`（13 tests，全部通過）
+- 執行 `go test ./internal/export/... -v -count=1 -timeout 30s` — PASS

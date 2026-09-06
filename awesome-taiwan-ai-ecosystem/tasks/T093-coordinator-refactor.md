@@ -2,9 +2,7 @@
 github_issue: N/A
 title: Crawler Coordinator 重構 - 適配新 Entity 模型與協調器邏輯修復
 type: refactor
-priority: high
-status: pending
-depends_on: ["T072", "T074", "T078"]
+status: done
 assignee: pi
 created: 2026-09-05
 updated: 2026-09-05
@@ -35,17 +33,19 @@ updated: 2026-09-05
 
 ## 驗收標準
 
-- [ ] `internal/crawler/coordinator.go` 編譯通過
-- [ ] `internal/crawler/incremental.go` 編譯通過
-- [ ] `internal/crawler` 套件編譯通過
-- [ ] 爬蟲管線 Run() 函數結構完整，所有階段在 Run 函數內部
-- [ ] 所有類型轉換正確：`models.RFC3339Time` ↔ `time.Time`、Level string 轉換、SourceTrustScores 查詢
-- [ ] 所有舊字段引用更新：`TopicList`→`Category`、`GetReadme()`→`Readme`、`SourceTrustScores[source]`→`getSourceTrustScore(source)`
-- [ ] `go build ./internal/crawler/...` 成功
-- [ ] `go test ./internal/crawler/... -v` 通過
+- [x] `internal/crawler/coordinator.go` 編譯通過
+- [x] `internal/crawler/incremental.go` 編譯通過
+- [x] `internal/crawler` 套件編譯通過
+- [x] 爬蟲管線 Run() 函數結構完整，所有階段在 Run 函數內部
+- [x] 所有類型轉換正確：`models.RFC3339Time` ↔ `time.Time`、Level string 轉換、SourceTrustScores 查詢
+- [x] 所有舊字段引用更新：`TopicList`→`Category`、`GetReadme()`→`Readme`、`SourceTrustScores[source]`→`getSourceTrustScore(source)`
+- [x] `go build ./internal/crawler/...` 成功
+- [x] `go test ./internal/crawler/... -v` 通過
 
-## 備註
-
+- 已完成：檢查 `internal/crawler/coordinator.go` 和 `incremental.go`
+- 確認 `go build ./internal/crawler/...` 成功
+- 確認 `go test ./internal/crawler/... -v` 全部通過 (21 tests)
+- 所有類型轉換已正確：`models.RFC3339Time` ↔ `time.Time`、`SourceTrustScores` 查詢、`TaiwanRelevanceLevel` 轉換
 - 核心模型已完善：models、engines、normalize、scoring、verify、classify、search、evidence、export、security、config、sources、crawler/run 均編譯通過
 - 需要重點修復 `internal/crawler/coordinator.go` 的 Run 函數結構，確保所有階段代碼在 Run 函數內部
 - `internal/crawler/incremental.go` 和 `storage/store.go` 也有類似類型錯誤需同步修復
