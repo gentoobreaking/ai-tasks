@@ -15,11 +15,11 @@ updated: 2026-09-06
 
 # T049 - Web UI — registry browse + Taiwan MCP discovery dashboard
 
-## Goal
+## 目標
 
 建立 Web UI dashboard。對應 CRAWLER_AGENT_TASKS.md §49 TASK-049, §49 Web UI, §67 MVP Scope Phase 4。
 
-## Acceptance Criteria
+## 驗收標準
 
 - [x] `web/` 目錄建立 (React + Vite + TypeScript + Tailwind CSS)
 - [x] `GET /` → registry browse page (server list, search, filter by level/category/health/quality)

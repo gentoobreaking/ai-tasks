@@ -15,11 +15,11 @@ updated: 2026-09-06
 
 # T048 - REST API — HTTP API for registry search + metadata
 
-## Goal
+## 目標
 
 建立 REST API server。對應 CRAWLER_AGENT_TASKS.md §48 TASK-048, §48 REST API, §67 MVP Scope Phase 4。
 
-## Acceptance Criteria
+## 驗收標準
 
 - [x] `cmd/api/` 目錄建立, Go HTTP server (standard library)
 - [x] `GET /health` and `GET /api/v1/health` → `{"status":"ok","timestamp":"...","version":"v0.1","db_count":N}`
