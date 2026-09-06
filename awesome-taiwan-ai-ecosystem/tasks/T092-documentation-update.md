@@ -36,15 +36,15 @@ updated: 2026-09-06
   - [ ] 與 `TAIWAN_AI_ECOSYSTEM_REGISTRY_SPEC.md` 對齊
   - [ ] 移除舊的 MCP-centric 描述
   - [ ] 更新 schema 參考新 Entity 模型
-- [x] `AGENTS.md` 更新（如存在）：
-  - [x] 專案結構說明
-  - [x] 開發命令、測試命令
-  - [x] 代碼風格、審查標準
-- [ ] 遷移指南：`docs/migration.md` — **未完成**，docs/ 目錄不存在
-  - [ ] 舊版到新版的變更摘要
-  - [ ] 如何運行遷移腳本
-  - [ ] Breaking changes 列表
-- [ ] API 文檔：`docs/api.md`（REST API 若有，T048） — **未完成**，docs/ 目錄不存在
+- [ ] `AGENTS.md` 更新（如存在）： — 未建立 AGENTS.md，條件不符合
+- [ ] 專案結構說明
+  - [ ] 開發命令、測試命令
+  - [ ] 代碼風格、審查標準
+- [x] 遷移指南：`docs/migration.md`
+  - [x] 舊版到新版的變更摘要
+  - [x] 如何運行遷移腳本
+  - [x] Breaking changes 列表
+  - [x] API 文檔：`docs/api.md`（REST API 若有，T048） — 已建立，但標記為 "Planned (Phase 4)"，T048 仍未實作
 - [x] 變更日誌：`CHANGELOG.md` 新增 v1.0.0 版本條目
 
 ## 備註
@@ -55,4 +55,4 @@ updated: 2026-09-06
 ## 執行紀錄
 
 - 2026-09-06: 完成 README.md 更新（專案定位、架構圖、實體類型、Registry Views、CLI 命令、資料模型、測試指令、Coverage 表格）。建立 CHANGELOG.md 包含 v1.0.0。`go build ./...` 和 `go test ./... -count=1` 皆通過 (26 packages ok, 6 no tests). Commit fcd7809。
-- **未完成**：`docs/migration.md` 和 `docs/api.md` 未建立（docs/ 目錄不存在）。`spec.md` 和 `AGENTS.md` 也未建立。待 T048 REST API 完成後補上 API 文檔。
+  - **未完成**：`spec.md` 和 `AGENTS.md` 未建立。`docs/api.md` 已建立但標記為 "Planned (Phase 4)"，T048 尚未實作。

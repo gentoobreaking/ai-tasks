@@ -34,6 +34,7 @@ updated: 2026-09-05
 - 預設開啟，配合 `--malicious-threshold=HIGH` 可僅輸出高風險
 - 輸出目錄結構：`registry/malicious/{MALICIOUS_REPORT.md, blocklist.txt}`
 
+
 ## 執行紀錄
 
 - 2026-09-06: 完成實作成果。
