@@ -117,7 +117,21 @@
 
 | Task | 名稱 | 說明 |
 |------|------|------|
-| | | |
+| [T97-gap-analysis](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T097-gap-analysis.md) | Crawler↔Spec 差距分析與補完清單（§64 DoD 阻塞項） | |
+| [T98-persist-entities](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T098-persist-entities.md) | Coordinator 主流程持久化 Entity 到 DB（P0-1 阻塞項） | |
+| [T99-export-entitystore](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T099-export-entitystore.md) | cmd/crawler runExport 改讀 EntityStore（P0-2 阻塞項） | |
+| [T100-runtime-verifier-http](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T100-runtime-verifier-http.md) | Runtime Verifier 補 SSE / streamable_http 傳輸握手（P1-1 阻塞項） | |
+| [T101-discovery-keyword-split](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T101-discovery-keyword-split.md) | GitHub KeywordMatrix 拆成兩階段 discovery，去除 MCP 字串依賴（DoD #1） | |
+| [T102-mcp-verified-state](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T102-mcp-verified-state.md) | 加 MCPIdentityStatusVerified 第 5 個 enum（DoD #15） | |
+| [T103-registry-adapter-url](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T103-registry-adapter-url.md) | 官方 MCP registry adapter URL 與可用性修補（P0-3） | |
+| [T104-entity-schema-align](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T104-entity-schema-align.md) | Entity schema 補 SourceReference.Primary 與 MCPIdentity.Related（§37 對齊） | |
+| [T105-mcpmarket-default-disabled](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T105-mcpmarket-default-disabled.md) | mcpmarket adapter 預設 disabled（Vercel WAF 永久失敗污染 log） | |
+| [T106-schema-v2](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T106-schema-v2.md) | schema/registry.json 升級到 v2.0（Entity wrapper） | |
+| [T107-fp-rate-validation](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T107-fp-rate-validation.md) | 用 migrator reclassify 561 legacy records 驗證 FP rate < 5%（§58 KPI） | |
+| [T108-llm-fallback-wiring](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T108-llm-fallback-wiring.md) | Classifier 接入 LLM fallback 主流程 | |
+| [T109-evidence-based-classification](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T109-evidence-based-classification.md) | Evidence-based classification 落實 spec §4.4 | |
+| [T110-mcp-identity-evidence-weighting](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T110-mcp-identity-evidence-weighting.md) | MCP Identity 實作 spec §27 evidence weighting | |
+| [T111-data-library-guard](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T111-data-library-guard.md) | Data Library / SDK / Infrastructure 防誤判（spec §22、§23、§48） | |
 
 ## Task 列表
 
@@ -219,7 +233,22 @@
 | [T94-incremental-refactor](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T094-incremental-refactor.md) | Crawler Incremental 重構 - 適配新 Entity 模型與增量爬蟲邏輯修復 | ✅ done |
 | [T95-storage-refactor](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T095-storage-refactor.md) | Storage Store 重構 - 適配新 Entity 模型與存儲邏輯修復 | ✅ done |
 | [T96-classify-refactor](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T096-classify-refactor.md) | Classify/LLM 分類器與 Rules 完善 - 適配新模型 | ✅ done |
+| [T97-gap-analysis](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T097-gap-analysis.md) | Crawler↔Spec 差距分析與補完清單（§64 DoD 阻塞項） | 📋 pending |
+| [T98-persist-entities](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T098-persist-entities.md) | Coordinator 主流程持久化 Entity 到 DB（P0-1 阻塞項） | 📋 pending |
+| [T99-export-entitystore](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T099-export-entitystore.md) | cmd/crawler runExport 改讀 EntityStore（P0-2 阻塞項） | 📋 pending |
+| [T100-runtime-verifier-http](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T100-runtime-verifier-http.md) | Runtime Verifier 補 SSE / streamable_http 傳輸握手（P1-1 阻塞項） | 📋 pending |
+| [T101-discovery-keyword-split](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T101-discovery-keyword-split.md) | GitHub KeywordMatrix 拆成兩階段 discovery，去除 MCP 字串依賴（DoD #1） | 📋 pending |
+| [T102-mcp-verified-state](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T102-mcp-verified-state.md) | 加 MCPIdentityStatusVerified 第 5 個 enum（DoD #15） | 📋 pending |
+| [T103-registry-adapter-url](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T103-registry-adapter-url.md) | 官方 MCP registry adapter URL 與可用性修補（P0-3） | 📋 pending |
+| [T104-entity-schema-align](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T104-entity-schema-align.md) | Entity schema 補 SourceReference.Primary 與 MCPIdentity.Related（§37 對齊） | 📋 pending |
+| [T105-mcpmarket-default-disabled](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T105-mcpmarket-default-disabled.md) | mcpmarket adapter 預設 disabled（Vercel WAF 永久失敗污染 log） | 📋 pending |
+| [T106-schema-v2](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T106-schema-v2.md) | schema/registry.json 升級到 v2.0（Entity wrapper） | 📋 pending |
+| [T107-fp-rate-validation](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T107-fp-rate-validation.md) | 用 migrator reclassify 561 legacy records 驗證 FP rate < 5%（§58 KPI） | 📋 pending |
+| [T108-llm-fallback-wiring](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T108-llm-fallback-wiring.md) | Classifier 接入 LLM fallback 主流程 | 📋 pending |
+| [T109-evidence-based-classification](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T109-evidence-based-classification.md) | Evidence-based classification 落實 spec §4.4 | 📋 pending |
+| [T110-mcp-identity-evidence-weighting](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T110-mcp-identity-evidence-weighting.md) | MCP Identity 實作 spec §27 evidence weighting | 📋 pending |
+| [T111-data-library-guard](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T111-data-library-guard.md) | Data Library / SDK / Infrastructure 防誤判（spec §22、§23、§48） | 📋 pending |
 
-**✅ done: 96 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 0**
+**✅ done: 96 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 15**
 
-> 自動生成於 2026-09-07 17:14
+> 自動生成於 2026-09-07 20:08

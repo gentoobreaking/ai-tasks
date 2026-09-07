@@ -1,6 +1,6 @@
 # 📁 Projects Dashboard
 
-> 最後更新: 2026-09-07 17:14 · 自動生成
+> 最後更新: 2026-09-07 20:08 · 自動生成
 
 ---
 
@@ -9,12 +9,48 @@
 | 指標 | 數量 |
 |------|------|
 | 專案數 | 63 |
-| 任務總數 | 1686 |
+| 任務總數 | 1701 |
 | ✅ 已完成 | 1623 |
-| ⬜ 待處理 | 0 |
+| ⬜ 待處理 | 15 |
 | 🔄 進行中 | 0 |
 | ⏭️ 跳過 | 63 |
-| 總完成率 | 100% |
+| 總完成率 | 99% |
+
+## 🔥 待處理高優先級任務
+
+| 專案 | 任務 | 標題 |
+|------|------|------|
+| awesome-taiwan-ai-ecosystem | [T097-gap-analysis](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T097-gap-analysis.md) | Crawler↔Spec 差距分析與補完清單（§64 DoD 阻塞項） |
+| awesome-taiwan-ai-ecosystem | [T098-persist-entities](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T098-persist-entities.md) | Coordinator 主流程持久化 Entity 到 DB（P0-1 阻塞項） |
+| awesome-taiwan-ai-ecosystem | [T099-export-entitystore](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T099-export-entitystore.md) | cmd/crawler runExport 改讀 EntityStore（P0-2 阻塞項） |
+| awesome-taiwan-ai-ecosystem | [T100-runtime-verifier-http](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T100-runtime-verifier-http.md) | Runtime Verifier 補 SSE / streamable_http 傳輸握手（P1-1 阻塞項） |
+| awesome-taiwan-ai-ecosystem | [T101-discovery-keyword-split](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T101-discovery-keyword-split.md) | GitHub KeywordMatrix 拆成兩階段 discovery，去除 MCP 字串依賴（DoD |
+| awesome-taiwan-ai-ecosystem | [T102-mcp-verified-state](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T102-mcp-verified-state.md) | 加 MCPIdentityStatusVerified 第 5 個 enum（DoD |
+| awesome-taiwan-ai-ecosystem | [T107-fp-rate-validation](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T107-fp-rate-validation.md) | 用 migrator reclassify 561 legacy records 驗證 FP rate < 5%（§58 KPI） |
+| awesome-taiwan-ai-ecosystem | [T108-llm-fallback-wiring](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T108-llm-fallback-wiring.md) | Classifier 接入 LLM fallback 主流程 |
+
+---
+
+
+## ⬜ 待處理
+
+| 專案 | 任務 | 標題 | 狀態 |
+|------|------|------|------|
+| awesome-taiwan-ai-ecosystem | [T097-gap-analysis](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T097-gap-analysis.md) | Crawler↔Spec 差距分析與補完清單（§64 DoD 阻塞項） | ⬜ |
+| awesome-taiwan-ai-ecosystem | [T098-persist-entities](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T098-persist-entities.md) | Coordinator 主流程持久化 Entity 到 DB（P0-1 阻塞項） | ⬜ |
+| awesome-taiwan-ai-ecosystem | [T099-export-entitystore](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T099-export-entitystore.md) | cmd/crawler runExport 改讀 EntityStore（P0-2 阻塞項） | ⬜ |
+| awesome-taiwan-ai-ecosystem | [T100-runtime-verifier-http](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T100-runtime-verifier-http.md) | Runtime Verifier 補 SSE / streamable_http 傳輸握手（P1-1 阻塞項） | ⬜ |
+| awesome-taiwan-ai-ecosystem | [T101-discovery-keyword-split](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T101-discovery-keyword-split.md) | GitHub KeywordMatrix 拆成兩階段 discovery，去除 MCP 字串依賴（DoD | ⬜ |
+| awesome-taiwan-ai-ecosystem | [T102-mcp-verified-state](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T102-mcp-verified-state.md) | 加 MCPIdentityStatusVerified 第 5 個 enum（DoD | ⬜ |
+| awesome-taiwan-ai-ecosystem | [T103-registry-adapter-url](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T103-registry-adapter-url.md) | 官方 MCP registry adapter URL 與可用性修補（P0-3） | ⬜ |
+| awesome-taiwan-ai-ecosystem | [T104-entity-schema-align](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T104-entity-schema-align.md) | Entity schema 補 SourceReference.Primary 與 MCPIdentity.Related（§37 對齊） | ⬜ |
+| awesome-taiwan-ai-ecosystem | [T105-mcpmarket-default-disabled](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T105-mcpmarket-default-disabled.md) | mcpmarket adapter 預設 disabled（Vercel WAF 永久失敗污染 log） | ⬜ |
+| awesome-taiwan-ai-ecosystem | [T106-schema-v2](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T106-schema-v2.md) | schema/registry.json 升級到 v2.0（Entity wrapper） | ⬜ |
+| awesome-taiwan-ai-ecosystem | [T107-fp-rate-validation](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T107-fp-rate-validation.md) | 用 migrator reclassify 561 legacy records 驗證 FP rate < 5%（§58 KPI） | ⬜ |
+| awesome-taiwan-ai-ecosystem | [T108-llm-fallback-wiring](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T108-llm-fallback-wiring.md) | Classifier 接入 LLM fallback 主流程 | ⬜ |
+| awesome-taiwan-ai-ecosystem | [T109-evidence-based-classification](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T109-evidence-based-classification.md) | Evidence-based classification 落實 spec §4.4 | ⬜ |
+| awesome-taiwan-ai-ecosystem | [T110-mcp-identity-evidence-weighting](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T110-mcp-identity-evidence-weighting.md) | MCP Identity 實作 spec §27 evidence weighting | ⬜ |
+| awesome-taiwan-ai-ecosystem | [T111-data-library-guard](https://github.com/gentoobreaking/ai-tasks/blob/main/awesome-taiwan-ai-ecosystem/tasks/T111-data-library-guard.md) | Data Library / SDK / Infrastructure 防誤判（spec §22、§23、§48） | ⬜ |
 
 ---
 
@@ -45,7 +81,7 @@ xychart-beta
 | ✅ | [agent-config](https://github.com/gentoobreaking/ai-tasks/tree/main/agent-config) | 9 | 9 | 0 | 0 | 0 | ████████████████████ 100% | 2026-04-09 |
 | ✅ | [ai-oncall](https://github.com/gentoobreaking/ai-tasks/tree/main/ai-oncall) | 22 | 22 | 0 | 0 | 0 | ████████████████████ 100% | 2026-08-26 |
 | ✅ | [automation-tools](https://github.com/gentoobreaking/ai-tasks/tree/main/automation-tools) | 1 | 1 | 0 | 0 | 0 | ████████████████████ 100% | 2026-05-16 |
-| ✅ | [awesome-taiwan-ai-ecosystem](https://github.com/gentoobreaking/ai-tasks/tree/main/awesome-taiwan-ai-ecosystem) | 96 | 96 | 0 | 0 | 0 | ████████████████████ 100% | 2026-09-06 |
+| ⬜ | [awesome-taiwan-ai-ecosystem](https://github.com/gentoobreaking/ai-tasks/tree/main/awesome-taiwan-ai-ecosystem) | 111 | 96 | 15 | 0 | 0 | █████████████████░░░ 86% | 2026-09-07 |
 | ✅ | [backup-system](https://github.com/gentoobreaking/ai-tasks/tree/main/backup-system) | 5 | 5 | 0 | 0 | 0 | ████████████████████ 100% | 2026-04-15 |
 | ✅ | [claw-sessions-issue](https://github.com/gentoobreaking/ai-tasks/tree/main/claw-sessions-issue) | 1 | 1 | 0 | 0 | 0 | ████████████████████ 100% | 2026-04-16 |
 | ✅ | [clawhub-oauth-investigation](https://github.com/gentoobreaking/ai-tasks/tree/main/clawhub-oauth-investigation) | 2 | 2 | 0 | 0 | 0 | ████████████████████ 100% | 2026-04-22 |
