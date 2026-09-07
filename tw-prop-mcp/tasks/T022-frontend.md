@@ -3,12 +3,12 @@ github_issue: ""
 title: Frontend — Search/Filter UI + Provider Toggle
 type: task
 priority: high
-status: in-progress
+status: done
 depends_on:
   - T017
 assignee: "pi"
 created: 2026-09-06
-updated: 2026-09-06
+updated: 2026-09-07
 ---
 
 # T022 - Frontend Implementation

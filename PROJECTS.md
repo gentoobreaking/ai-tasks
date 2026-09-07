@@ -1,6 +1,6 @@
 # 📁 Projects Dashboard
 
-> 最後更新: 2026-09-07 01:15 · 自動生成
+> 最後更新: 2026-09-07 10:07 · 自動生成
 
 ---
 
@@ -10,39 +10,11 @@
 |------|------|
 | 專案數 | 63 |
 | 任務總數 | 1686 |
-| ✅ 已完成 | 1617 |
-| ⬜ 待處理 | 5 |
-| 🔄 進行中 | 1 |
+| ✅ 已完成 | 1623 |
+| ⬜ 待處理 | 0 |
+| 🔄 進行中 | 0 |
 | ⏭️ 跳過 | 63 |
-| 總完成率 | 99% |
-
-## 🔥 待處理高優先級任務
-
-| 專案 | 任務 | 標題 |
-|------|------|------|
-| tw-prop-mcp | [T022-frontend](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T022-frontend.md) | Frontend — Search/Filter UI + Provider Toggle |
-| tw-prop-mcp | [T030-frontend-search](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T030-frontend-search.md) | Frontend — Parcel Search UI |
-| tw-prop-mcp | [T032-frontend-map](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T032-frontend-map.md) | Frontend — Map Interaction + Layers |
-| tw-prop-mcp | [T033-frontend-valuation](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T033-frontend-valuation.md) | Frontend — Valuation + Provenance UI |
-
----
-
-
-## ⬜ 待處理
-
-| 專案 | 任務 | 標題 | 狀態 |
-|------|------|------|------|
-| tw-prop-mcp | [T030-frontend-search](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T030-frontend-search.md) | Frontend — Parcel Search UI | ⬜ |
-| tw-prop-mcp | [T031-frontend-filter](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T031-frontend-filter.md) | Frontend — Transaction / Filter UI | ⬜ |
-| tw-prop-mcp | [T032-frontend-map](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T032-frontend-map.md) | Frontend — Map Interaction + Layers | ⬜ |
-| tw-prop-mcp | [T033-frontend-valuation](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T033-frontend-valuation.md) | Frontend — Valuation + Provenance UI | ⬜ |
-| tw-prop-mcp | [T034-frontend-state](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T034-frontend-state.md) | Frontend — State Management + Error Handling | ⬜ |
-
-## 🔄 進行中
-
-| 專案 | 任務 | 標題 | 狀態 |
-|------|------|------|------|
-| tw-prop-mcp | [T022-frontend](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T022-frontend.md) | Frontend — Search/Filter UI + Provider Toggle | 🔄 |
+| 總完成率 | 100% |
 
 ---
 
@@ -50,8 +22,8 @@
 
 | 指標 | 數值 |
 |------|------|
-| 過去 7 天完成 | 246 |
-| 過去 30 天完成 | 838 |
+| 過去 7 天完成 | 252 |
+| 過去 30 天完成 | 844 |
 | 平均週期時間 | 2.6 天 |
 | 週期時間中位數 | 0.0 天 |
 
@@ -61,10 +33,10 @@ xychart-beta
     title "過去 14 天任務完成趨勢"
     x-axis ["08-25", "08-26", "08-27", "08-28", "08-29", "08-30", "08-31", "09-01", "09-02", "09-03", "09-04", "09-05", "09-06", "09-07"]
     y-axis "完成數" 0 --> 165
-    line [165, 69, 0, 23, 0, 30, 24, 0, 0, 17, 103, 83, 19, 0]
+    line [165, 69, 0, 23, 0, 30, 24, 0, 0, 17, 103, 83, 19, 6]
 ```
 
-📊 總計: 533 | 日均: 38.1 | 本週: 222 | 📉 下降中
+📊 總計: 539 | 日均: 38.5 | 本週: 228 | 📉 下降中
 
 ## 📋 專案列表
 
@@ -120,7 +92,7 @@ xychart-beta
 | ✅ | [taolive-ios](https://github.com/gentoobreaking/ai-tasks/tree/main/taolive-ios) | 67 | 19 | 0 | 0 | 48 | ████████████████████ 100% | 2026-05-14 |
 | ✅ | [task-url-repair](https://github.com/gentoobreaking/ai-tasks/tree/main/task-url-repair) | 1 | 1 | 0 | 0 | 0 | ████████████████████ 100% | 2026-04-20 |
 | ✅ | [tasks-executor](https://github.com/gentoobreaking/ai-tasks/tree/main/tasks-executor) | 8 | 8 | 0 | 0 | 0 | ████████████████████ 100% | 2026-05-12 |
-| 🔄 | [tw-prop-mcp](https://github.com/gentoobreaking/ai-tasks/tree/main/tw-prop-mcp) | 34 | 28 | 5 | 1 | 0 | ████████████████░░░░ 82% | 2026-09-06 |
+| ✅ | [tw-prop-mcp](https://github.com/gentoobreaking/ai-tasks/tree/main/tw-prop-mcp) | 34 | 34 | 0 | 0 | 0 | ████████████████████ 100% | 2026-09-07 |
 | ✅ | [tw-quant](https://github.com/gentoobreaking/ai-tasks/tree/main/tw-quant) | 14 | 14 | 0 | 0 | 0 | ████████████████████ 100% | 2026-08-25 |
 | ✅ | [tw-quant-daybrain](https://github.com/gentoobreaking/ai-tasks/tree/main/tw-quant-daybrain) | 28 | 28 | 0 | 0 | 0 | ████████████████████ 100% | 2026-08-12 |
 | ✅ | [tw-quant-db](https://github.com/gentoobreaking/ai-tasks/tree/main/tw-quant-db) | 38 | 37 | 0 | 0 | 1 | ████████████████████ 100% | 2026-09-02T05:45:00Z |

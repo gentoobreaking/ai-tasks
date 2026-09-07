@@ -3,7 +3,8 @@ github_issue: ""
 title: Frontend — Parcel Search UI
 type: task
 priority: high
-status: pending
+status: done
+updated: 2026-09-07
 depends_on:
   - T022
 assignee: "pi"

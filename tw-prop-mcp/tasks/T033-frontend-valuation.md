@@ -3,12 +3,12 @@ github_issue: ""
 title: Frontend — Valuation + Provenance UI
 type: task
 priority: high
-status: pending
+status: done
 depends_on:
   - T022
 assignee: "pi"
 created: 2026-09-06
-updated: 2026-09-06
+updated: 2026-09-07
 ---
 
 # T033 - Valuation + Provenance UI

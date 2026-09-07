@@ -25,6 +25,7 @@
 | Reproducibility Tests |
 | Artifact Lock Tests |
 | AI Isolation Tests |
+| Frontend — Search/Filter UI + Provider Toggle |
 | Kubernetes / OpenShift Deployment |
 | Observability Implementation |
 | End-to-End Acceptance Test |
@@ -32,6 +33,11 @@
 | GIS 匯入管線（Parcel / Road） |
 | Algorithm / Valuation Config 版本化與鎖定 |
 | Comparable / Valuation 結果持久化 |
+| Frontend — Parcel Search UI |
+| Frontend — Transaction / Filter UI |
+| Frontend — Map Interaction + Layers |
+| Frontend — Valuation + Provenance UI |
+| Frontend — State Management + Error Handling |
 
 ## Skip 項目
 
@@ -43,17 +49,13 @@
 
 | Task | 名稱 | 說明 |
 |------|------|------|
-| [T22-frontend](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T022-frontend.md) | Frontend — Search/Filter UI + Provider Toggle | |
+| | | |
 
 ## 待實作
 
 | Task | 名稱 | 說明 |
 |------|------|------|
-| [T30-frontend-search](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T030-frontend-search.md) | Frontend — Parcel Search UI | |
-| [T31-frontend-filter](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T031-frontend-filter.md) | Frontend — Transaction / Filter UI | |
-| [T32-frontend-map](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T032-frontend-map.md) | Frontend — Map Interaction + Layers | |
-| [T33-frontend-valuation](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T033-frontend-valuation.md) | Frontend — Valuation + Provenance UI | |
-| [T34-frontend-state](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T034-frontend-state.md) | Frontend — State Management + Error Handling | |
+| | | |
 
 ## Task 列表
 
@@ -80,7 +82,7 @@
 | [T19-reproducibility-tests](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T019-reproducibility-tests.md) | Reproducibility Tests | ✅ done |
 | [T20-artifact-lock-tests](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T020-artifact-lock-tests.md) | Artifact Lock Tests | ✅ done |
 | [T21-ai-isolation-tests](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T021-ai-isolation-tests.md) | AI Isolation Tests | ✅ done |
-| [T22-frontend](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T022-frontend.md) | Frontend — Search/Filter UI + Provider Toggle | 🔧 in-progress |
+| [T22-frontend](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T022-frontend.md) | Frontend — Search/Filter UI + Provider Toggle | ✅ done |
 | [T23-k8s-deployment](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T023-k8s-deployment.md) | Kubernetes / OpenShift Deployment | ✅ done |
 | [T24-observability](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T024-observability.md) | Observability Implementation | ✅ done |
 | [T25-e2e-acceptance-test](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T025-e2e-acceptance-test.md) | End-to-End Acceptance Test | ✅ done |
@@ -88,12 +90,12 @@
 | [T27-gis-import-pipeline](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T027-gis-import-pipeline.md) | GIS 匯入管線（Parcel / Road） | ✅ done |
 | [T28-algorithm-config-versioning](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T028-algorithm-config-versioning.md) | Algorithm / Valuation Config 版本化與鎖定 | ✅ done |
 | [T29-comparable-valuation-persistence](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T029-comparable-valuation-persistence.md) | Comparable / Valuation 結果持久化 | ✅ done |
-| [T30-frontend-search](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T030-frontend-search.md) | Frontend — Parcel Search UI | 📋 pending |
-| [T31-frontend-filter](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T031-frontend-filter.md) | Frontend — Transaction / Filter UI | 📋 pending |
-| [T32-frontend-map](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T032-frontend-map.md) | Frontend — Map Interaction + Layers | 📋 pending |
-| [T33-frontend-valuation](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T033-frontend-valuation.md) | Frontend — Valuation + Provenance UI | 📋 pending |
-| [T34-frontend-state](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T034-frontend-state.md) | Frontend — State Management + Error Handling | 📋 pending |
+| [T30-frontend-search](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T030-frontend-search.md) | Frontend — Parcel Search UI | ✅ done |
+| [T31-frontend-filter](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T031-frontend-filter.md) | Frontend — Transaction / Filter UI | ✅ done |
+| [T32-frontend-map](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T032-frontend-map.md) | Frontend — Map Interaction + Layers | ✅ done |
+| [T33-frontend-valuation](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T033-frontend-valuation.md) | Frontend — Valuation + Provenance UI | ✅ done |
+| [T34-frontend-state](https://github.com/gentoobreaking/ai-tasks/blob/main/tw-prop-mcp/tasks/T034-frontend-state.md) | Frontend — State Management + Error Handling | ✅ done |
 
-**✅ done: 28 | 🔧 in-progress: 1 | ⏭️ skip: 0 | 📋 pending: 5**
+**✅ done: 34 | 🔧 in-progress: 0 | ⏭️ skip: 0 | 📋 pending: 0**
 
-> 自動生成於 2026-09-07 01:15
+> 自動生成於 2026-09-07 10:07
